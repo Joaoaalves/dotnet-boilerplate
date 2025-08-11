@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.INotification
+  commentId: T:Project.Domain.SeedWork.INotification
+  id: INotification
+  parent: Project.Domain.SeedWork
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: INotification
+  nameWithType: INotification
+  fullName: Project.Domain.SeedWork.INotification
+  type: Interface
+  source:
+    id: INotification
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\INotification.cs
+    startLine: 2
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: public interface INotification
+    content.vb: Public Interface INotification
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html

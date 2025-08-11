@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.IDomainEvent
+  commentId: T:Project.Domain.SeedWork.IDomainEvent
+  id: IDomainEvent
+  parent: Project.Domain.SeedWork
+  children:
+  - Project.Domain.SeedWork.IDomainEvent.OccurredOn
+  langs:
+  - csharp
+  - vb
+  name: IDomainEvent
+  nameWithType: IDomainEvent
+  fullName: Project.Domain.SeedWork.IDomainEvent
+  type: Interface
+  source:
+    id: IDomainEvent
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IDomainEvent.cs
+    startLine: 2
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: 'public interface IDomainEvent : INotification'
+    content.vb: Public Interface IDomainEvent Inherits INotification
+- uid: Project.Domain.SeedWork.IDomainEvent.OccurredOn
+  commentId: P:Project.Domain.SeedWork.IDomainEvent.OccurredOn
+  id: OccurredOn
+  parent: Project.Domain.SeedWork.IDomainEvent
+  langs:
+  - csharp
+  - vb
+  name: OccurredOn
+  nameWithType: IDomainEvent.OccurredOn
+  fullName: Project.Domain.SeedWork.IDomainEvent.OccurredOn
+  type: Property
+  source:
+    id: OccurredOn
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IDomainEvent.cs
+    startLine: 4
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: DateTime OccurredOn { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property OccurredOn As Date
+  overload: Project.Domain.SeedWork.IDomainEvent.OccurredOn*
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Domain.SeedWork.IDomainEvent.OccurredOn*
+  commentId: Overload:Project.Domain.SeedWork.IDomainEvent.OccurredOn
+  href: Project.Domain.SeedWork.IDomainEvent.html#Project_Domain_SeedWork_IDomainEvent_OccurredOn
+  name: OccurredOn
+  nameWithType: IDomainEvent.OccurredOn
+  fullName: Project.Domain.SeedWork.IDomainEvent.OccurredOn
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

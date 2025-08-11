@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.IBusinessRule
+  commentId: T:Project.Domain.SeedWork.IBusinessRule
+  id: IBusinessRule
+  parent: Project.Domain.SeedWork
+  children:
+  - Project.Domain.SeedWork.IBusinessRule.IsBroken
+  - Project.Domain.SeedWork.IBusinessRule.Message
+  langs:
+  - csharp
+  - vb
+  name: IBusinessRule
+  nameWithType: IBusinessRule
+  fullName: Project.Domain.SeedWork.IBusinessRule
+  type: Interface
+  source:
+    id: IBusinessRule
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IBusinessRule.cs
+    startLine: 2
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: public interface IBusinessRule
+    content.vb: Public Interface IBusinessRule
+- uid: Project.Domain.SeedWork.IBusinessRule.IsBroken
+  commentId: M:Project.Domain.SeedWork.IBusinessRule.IsBroken
+  id: IsBroken
+  parent: Project.Domain.SeedWork.IBusinessRule
+  langs:
+  - csharp
+  - vb
+  name: IsBroken()
+  nameWithType: IBusinessRule.IsBroken()
+  fullName: Project.Domain.SeedWork.IBusinessRule.IsBroken()
+  type: Method
+  source:
+    id: IsBroken
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IBusinessRule.cs
+    startLine: 4
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: bool IsBroken()
+    return:
+      type: System.Boolean
+    content.vb: Function IsBroken() As Boolean
+  overload: Project.Domain.SeedWork.IBusinessRule.IsBroken*
+- uid: Project.Domain.SeedWork.IBusinessRule.Message
+  commentId: P:Project.Domain.SeedWork.IBusinessRule.Message
+  id: Message
+  parent: Project.Domain.SeedWork.IBusinessRule
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: IBusinessRule.Message
+  fullName: Project.Domain.SeedWork.IBusinessRule.Message
+  type: Property
+  source:
+    id: Message
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IBusinessRule.cs
+    startLine: 5
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: string Message { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Message As String
+  overload: Project.Domain.SeedWork.IBusinessRule.Message*
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Domain.SeedWork.IBusinessRule.IsBroken*
+  commentId: Overload:Project.Domain.SeedWork.IBusinessRule.IsBroken
+  href: Project.Domain.SeedWork.IBusinessRule.html#Project_Domain_SeedWork_IBusinessRule_IsBroken
+  name: IsBroken
+  nameWithType: IBusinessRule.IsBroken
+  fullName: Project.Domain.SeedWork.IBusinessRule.IsBroken
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SeedWork.IBusinessRule.Message*
+  commentId: Overload:Project.Domain.SeedWork.IBusinessRule.Message
+  href: Project.Domain.SeedWork.IBusinessRule.html#Project_Domain_SeedWork_IBusinessRule_Message
+  name: Message
+  nameWithType: IBusinessRule.Message
+  fullName: Project.Domain.SeedWork.IBusinessRule.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

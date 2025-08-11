@@ -1,0 +1,49 @@
+services:
+  api:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    container_name: project_api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5000:5000"
+    restart: always
+    networks:
+      - appnet
+
+  docs:
+    build:
+      context: ./docs
+      dockerfile: Dockerfile
+    container_name: project_docs
+    environment:
+      - DOMAIN=${DOMAIN}
+    ports:
+      - "8080:80"
+    restart: always
+    networks:
+      - appnet
+
+  nginx:
+    image: nginx:alpine
+    container_name: project_nginx
+    depends_on:
+      - api
+      - docs
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./certs:/etc/nginx/certs
+    environment:
+      - DOMAIN=${DOMAIN}
+    restart: always
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge

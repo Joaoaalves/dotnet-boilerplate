@@ -1,0 +1,55 @@
+### YamlMime:TableOfContent
+items:
+- uid: Project.Application
+  name: Project.Application
+  type: Namespace
+  items:
+  - uid: Project.Application.Class1
+    name: Class1
+    type: Class
+- uid: Project.Domain.SeedWork
+  name: Project.Domain.SeedWork
+  type: Namespace
+  items:
+  - uid: Project.Domain.SeedWork.BusinessRuleValidationException
+    name: BusinessRuleValidationException
+    type: Class
+  - uid: Project.Domain.SeedWork.Entity2
+    name: Entity2
+    type: Class
+  - uid: Project.Domain.SeedWork.IAggregateRoot
+    name: IAggregateRoot
+    type: Interface
+  - uid: Project.Domain.SeedWork.IBusinessRule
+    name: IBusinessRule
+    type: Interface
+  - uid: Project.Domain.SeedWork.IDomainEvent
+    name: IDomainEvent
+    type: Interface
+  - uid: Project.Domain.SeedWork.INotification
+    name: INotification
+    type: Interface
+  - uid: Project.Domain.SeedWork.IgnoreMemberAttribute
+    name: IgnoreMemberAttribute
+    type: Class
+  - uid: Project.Domain.SeedWork.TypedIdValueBase
+    name: TypedIdValueBase
+    type: Class
+  - uid: Project.Domain.SeedWork.ValueObject
+    name: ValueObject
+    type: Class
+- uid: Project.Infrastructure
+  name: Project.Infrastructure
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Class1
+    name: Class1
+    type: Class
+- uid: Project.Tests
+  name: Project.Tests
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTest1
+    name: UnitTest1
+    type: Class
+memberLayout: SamePage

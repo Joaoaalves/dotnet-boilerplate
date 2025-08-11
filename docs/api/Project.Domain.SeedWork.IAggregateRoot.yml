@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.IAggregateRoot
+  commentId: T:Project.Domain.SeedWork.IAggregateRoot
+  id: IAggregateRoot
+  parent: Project.Domain.SeedWork
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAggregateRoot
+  nameWithType: IAggregateRoot
+  fullName: Project.Domain.SeedWork.IAggregateRoot
+  type: Interface
+  source:
+    id: IAggregateRoot
+    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IAggregateRoot.cs
+    startLine: 2
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: public interface IAggregateRoot
+    content.vb: Public Interface IAggregateRoot
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html

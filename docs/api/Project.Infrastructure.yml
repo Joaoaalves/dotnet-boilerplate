@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure
+  commentId: N:Project.Infrastructure
+  id: Project.Infrastructure
+  children:
+  - Project.Infrastructure.Class1
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure
+  nameWithType: Project.Infrastructure
+  fullName: Project.Infrastructure
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Class1
+  commentId: T:Project.Infrastructure.Class1
+  href: Project.Infrastructure.Class1.html
+  name: Class1
+  nameWithType: Class1
+  fullName: Project.Infrastructure.Class1
