@@ -15,12 +15,9 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Generating documentation..."
-docfx docs/docfx.json > /dev/null 2>&1
-git add docs/_site
+make clean-docs
+make docs
 
-if ! git diff --quiet --exit-code docs/_site; then
-  echo "Documentation is outdated. Run 'make docs' to update it."
-  exit 1
-fi
+git add docs/_site
 
 exit 0

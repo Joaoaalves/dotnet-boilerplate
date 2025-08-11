@@ -1,0 +1,326 @@
+{
+  "source_base_path": "D:/Projects/dotnet-boilerplate/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Class1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Class1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Class1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.BusinessRuleValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.BusinessRuleValidationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.BusinessRuleValidationException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.Entity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.Entity",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SeedWork.Entity.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for all entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.Entity2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.Entity2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.Entity2",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SeedWork.Entity2.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for all entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IAggregateRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IAggregateRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IAggregateRoot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IBusinessRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IBusinessRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IBusinessRule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IDomainEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IDomainEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IDomainEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.INotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.INotification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.INotification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IgnoreMemberAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IgnoreMemberAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IgnoreMemberAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.TypedIdValueBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.TypedIdValueBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.TypedIdValueBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.ValueObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.ValueObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.ValueObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Class1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Class1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Class1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTest1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTest1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTest1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

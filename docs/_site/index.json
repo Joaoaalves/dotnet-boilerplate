@@ -1,0 +1,102 @@
+{
+  "api/Project.Application.Class1.html": {
+    "href": "api/Project.Application.Class1.html",
+    "title": "Class Class1 | project",
+    "summary": "Class Class1 Namespace Project.Application Assembly Project.Application.dll public class Class1 Inheritance object Class1 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/Project.Application.html": {
+    "href": "api/Project.Application.html",
+    "title": "Namespace Project.Application | project",
+    "summary": "Namespace Project.Application Classes Class1"
+  },
+  "api/Project.Domain.SeedWork.BusinessRuleValidationException.html": {
+    "href": "api/Project.Domain.SeedWork.BusinessRuleValidationException.html",
+    "title": "Class BusinessRuleValidationException | project",
+    "summary": "Class BusinessRuleValidationException Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public class BusinessRuleValidationException : Exception, ISerializable Inheritance object Exception BusinessRuleValidationException Implements ISerializable Inherited Members Exception.GetBaseException() Exception.GetType() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Message Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState object.Equals(object) object.Equals(object, object) object.GetHashCode() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors BusinessRuleValidationException(IBusinessRule) public BusinessRuleValidationException(IBusinessRule brokenRule) Parameters brokenRule IBusinessRule Properties BrokenRule public IBusinessRule BrokenRule { get; } Property Value IBusinessRule Details public string Details { get; } Property Value string Methods ToString() Creates and returns a string representation of the current exception. public override string ToString() Returns string A string representation of the current exception."
+  },
+  "api/Project.Domain.SeedWork.Entity.html": {
+    "href": "api/Project.Domain.SeedWork.Entity.html",
+    "title": "Class Entity | project",
+    "summary": "Class Entity Namespace Project.Domain.SeedWork Assembly Project.Domain.dll Represents an abstract base class for all entities. public abstract class Entity Inheritance object Entity Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties DomainEvents public IReadOnlyCollection<IDomainEvent>? DomainEvents { get; } Property Value IReadOnlyCollection<IDomainEvent> Methods AddDomainEvent(IDomainEvent) protected void AddDomainEvent(IDomainEvent domainEvent) Parameters domainEvent IDomainEvent CheckRule(IBusinessRule) protected static void CheckRule(IBusinessRule rule) Parameters rule IBusinessRule ClearDomainEvents() public void ClearDomainEvents()"
+  },
+  "api/Project.Domain.SeedWork.Entity2.html": {
+    "href": "api/Project.Domain.SeedWork.Entity2.html",
+    "title": "Class Entity2 | project",
+    "summary": "Class Entity2 Namespace Project.Domain.SeedWork Assembly Project.Domain.dll Represents an abstract base class for all entities. public abstract class Entity2 Inheritance object Entity2 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties DomainEvents public IReadOnlyCollection<IDomainEvent>? DomainEvents { get; } Property Value IReadOnlyCollection<IDomainEvent> Methods AddDomainEvent(IDomainEvent) protected void AddDomainEvent(IDomainEvent domainEvent) Parameters domainEvent IDomainEvent CheckRule(IBusinessRule) protected static void CheckRule(IBusinessRule rule) Parameters rule IBusinessRule ClearDomainEvents() public void ClearDomainEvents()"
+  },
+  "api/Project.Domain.SeedWork.IAggregateRoot.html": {
+    "href": "api/Project.Domain.SeedWork.IAggregateRoot.html",
+    "title": "Interface IAggregateRoot | project",
+    "summary": "Interface IAggregateRoot Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IAggregateRoot"
+  },
+  "api/Project.Domain.SeedWork.IBusinessRule.html": {
+    "href": "api/Project.Domain.SeedWork.IBusinessRule.html",
+    "title": "Interface IBusinessRule | project",
+    "summary": "Interface IBusinessRule Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IBusinessRule Properties Message string Message { get; } Property Value string Methods IsBroken() bool IsBroken() Returns bool"
+  },
+  "api/Project.Domain.SeedWork.IDomainEvent.html": {
+    "href": "api/Project.Domain.SeedWork.IDomainEvent.html",
+    "title": "Interface IDomainEvent | project",
+    "summary": "Interface IDomainEvent Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IDomainEvent : INotification Properties OccurredOn DateTime OccurredOn { get; } Property Value DateTime"
+  },
+  "api/Project.Domain.SeedWork.INotification.html": {
+    "href": "api/Project.Domain.SeedWork.INotification.html",
+    "title": "Interface INotification | project",
+    "summary": "Interface INotification Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface INotification"
+  },
+  "api/Project.Domain.SeedWork.IgnoreMemberAttribute.html": {
+    "href": "api/Project.Domain.SeedWork.IgnoreMemberAttribute.html",
+    "title": "Class IgnoreMemberAttribute | project",
+    "summary": "Class IgnoreMemberAttribute Namespace Project.Domain.SeedWork Assembly Project.Domain.dll [AttributeUsage(AttributeTargets.Property|AttributeTargets.Field)] public sealed class IgnoreMemberAttribute : Attribute Inheritance object Attribute IgnoreMemberAttribute Inherited Members Attribute.Equals(object) Attribute.GetCustomAttribute(Assembly, Type) Attribute.GetCustomAttribute(Assembly, Type, bool) Attribute.GetCustomAttribute(MemberInfo, Type) Attribute.GetCustomAttribute(MemberInfo, Type, bool) Attribute.GetCustomAttribute(Module, Type) Attribute.GetCustomAttribute(Module, Type, bool) Attribute.GetCustomAttribute(ParameterInfo, Type) Attribute.GetCustomAttribute(ParameterInfo, Type, bool) Attribute.GetCustomAttributes(Assembly) Attribute.GetCustomAttributes(Assembly, bool) Attribute.GetCustomAttributes(Assembly, Type) Attribute.GetCustomAttributes(Assembly, Type, bool) Attribute.GetCustomAttributes(MemberInfo) Attribute.GetCustomAttributes(MemberInfo, bool) Attribute.GetCustomAttributes(MemberInfo, Type) Attribute.GetCustomAttributes(MemberInfo, Type, bool) Attribute.GetCustomAttributes(Module) Attribute.GetCustomAttributes(Module, bool) Attribute.GetCustomAttributes(Module, Type) Attribute.GetCustomAttributes(Module, Type, bool) Attribute.GetCustomAttributes(ParameterInfo) Attribute.GetCustomAttributes(ParameterInfo, bool) Attribute.GetCustomAttributes(ParameterInfo, Type) Attribute.GetCustomAttributes(ParameterInfo, Type, bool) Attribute.GetHashCode() Attribute.IsDefaultAttribute() Attribute.IsDefined(Assembly, Type) Attribute.IsDefined(Assembly, Type, bool) Attribute.IsDefined(MemberInfo, Type) Attribute.IsDefined(MemberInfo, Type, bool) Attribute.IsDefined(Module, Type) Attribute.IsDefined(Module, Type, bool) Attribute.IsDefined(ParameterInfo, Type) Attribute.IsDefined(ParameterInfo, Type, bool) Attribute.Match(object) Attribute.TypeId object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/Project.Domain.SeedWork.TypedIdValueBase.html": {
+    "href": "api/Project.Domain.SeedWork.TypedIdValueBase.html",
+    "title": "Class TypedIdValueBase | project",
+    "summary": "Class TypedIdValueBase Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public abstract class TypedIdValueBase : IEquatable<TypedIdValueBase> Inheritance object TypedIdValueBase Implements IEquatable<TypedIdValueBase> Inherited Members object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TypedIdValueBase(Guid) protected TypedIdValueBase(Guid value) Parameters value Guid Properties Value public Guid Value { get; } Property Value Guid Methods Equals(TypedIdValueBase?) Indicates whether the current object is equal to another object of the same type. public bool Equals(TypedIdValueBase? other) Parameters other TypedIdValueBase An object to compare with this object. Returns bool true if the current object is equal to the other parameter; otherwise, false. Equals(object?) Determines whether the specified object is equal to the current object. public override bool Equals(object? obj) Parameters obj object The object to compare with the current object. Returns bool true if the specified object is equal to the current object; otherwise, false. GetHashCode() Serves as the default hash function. public override int GetHashCode() Returns int A hash code for the current object. Operators operator ==(TypedIdValueBase, TypedIdValueBase) public static bool operator ==(TypedIdValueBase obj1, TypedIdValueBase obj2) Parameters obj1 TypedIdValueBase obj2 TypedIdValueBase Returns bool operator !=(TypedIdValueBase, TypedIdValueBase) public static bool operator !=(TypedIdValueBase x, TypedIdValueBase y) Parameters x TypedIdValueBase y TypedIdValueBase Returns bool"
+  },
+  "api/Project.Domain.SeedWork.ValueObject.html": {
+    "href": "api/Project.Domain.SeedWork.ValueObject.html",
+    "title": "Class ValueObject | project",
+    "summary": "Class ValueObject Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public abstract class ValueObject : IEquatable<ValueObject> Inheritance object ValueObject Implements IEquatable<ValueObject> Inherited Members object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CheckRule(IBusinessRule) protected static void CheckRule(IBusinessRule rule) Parameters rule IBusinessRule Equals(ValueObject?) Indicates whether the current object is equal to another object of the same type. public bool Equals(ValueObject? obj) Parameters obj ValueObject Returns bool true if the current object is equal to the other parameter; otherwise, false. Equals(object?) Determines whether the specified object is equal to the current object. public override bool Equals(object? obj) Parameters obj object The object to compare with the current object. Returns bool true if the specified object is equal to the current object; otherwise, false. GetHashCode() Serves as the default hash function. public override int GetHashCode() Returns int A hash code for the current object. Operators operator ==(ValueObject?, ValueObject?) public static bool operator ==(ValueObject? obj1, ValueObject? obj2) Parameters obj1 ValueObject obj2 ValueObject Returns bool operator !=(ValueObject?, ValueObject?) public static bool operator !=(ValueObject? obj1, ValueObject? obj2) Parameters obj1 ValueObject obj2 ValueObject Returns bool"
+  },
+  "api/Project.Domain.SeedWork.html": {
+    "href": "api/Project.Domain.SeedWork.html",
+    "title": "Namespace Project.Domain.SeedWork | project",
+    "summary": "Namespace Project.Domain.SeedWork Classes BusinessRuleValidationException Entity2 Represents an abstract base class for all entities. IgnoreMemberAttribute TypedIdValueBase ValueObject Interfaces IAggregateRoot IBusinessRule IDomainEvent INotification"
+  },
+  "api/Project.Infrastructure.Class1.html": {
+    "href": "api/Project.Infrastructure.Class1.html",
+    "title": "Class Class1 | project",
+    "summary": "Class Class1 Namespace Project.Infrastructure Assembly Project.Infrastructure.dll public class Class1 Inheritance object Class1 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/Project.Infrastructure.html": {
+    "href": "api/Project.Infrastructure.html",
+    "title": "Namespace Project.Infrastructure | project",
+    "summary": "Namespace Project.Infrastructure Classes Class1"
+  },
+  "api/Project.Tests.UnitTest1.html": {
+    "href": "api/Project.Tests.UnitTest1.html",
+    "title": "Class UnitTest1 | project",
+    "summary": "Class UnitTest1 Namespace Project.Tests Assembly Project.Tests.dll public class UnitTest1 Inheritance object UnitTest1 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Test1() [Fact] public void Test1()"
+  },
+  "api/Project.Tests.html": {
+    "href": "api/Project.Tests.html",
+    "title": "Namespace Project.Tests | project",
+    "summary": "Namespace Project.Tests Classes UnitTest1"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | project",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | project",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | project",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}
