@@ -13,8 +13,12 @@ items:
   fullName: Project.Domain.SeedWork.INotification
   type: Interface
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/INotification.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: INotification
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\INotification.cs
+    path: ../src/Project.Domain/SeedWork/INotification.cs
     startLine: 2
   assemblies:
   - Project.Domain

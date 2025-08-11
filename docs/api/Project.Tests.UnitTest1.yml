@@ -14,8 +14,12 @@ items:
   fullName: Project.Tests.UnitTest1
   type: Class
   source:
+    remote:
+      path: src/Project.Tests/UnitTest1.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UnitTest1
-    path: D:\Projects\dotnet-boilerplate\src\Project.Tests\UnitTest1.cs
+    path: ../src/Project.Tests/UnitTest1.cs
     startLine: 2
   assemblies:
   - Project.Tests
@@ -45,8 +49,12 @@ items:
   fullName: Project.Tests.UnitTest1.Test1()
   type: Method
   source:
+    remote:
+      path: src/Project.Tests/UnitTest1.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Test1
-    path: D:\Projects\dotnet-boilerplate\src\Project.Tests\UnitTest1.cs
+    path: ../src/Project.Tests/UnitTest1.cs
     startLine: 4
   assemblies:
   - Project.Tests

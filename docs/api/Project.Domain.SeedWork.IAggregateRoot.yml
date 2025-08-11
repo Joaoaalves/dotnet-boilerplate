@@ -13,8 +13,12 @@ items:
   fullName: Project.Domain.SeedWork.IAggregateRoot
   type: Interface
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/IAggregateRoot.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IAggregateRoot
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IAggregateRoot.cs
+    path: ../src/Project.Domain/SeedWork/IAggregateRoot.cs
     startLine: 2
   assemblies:
   - Project.Domain

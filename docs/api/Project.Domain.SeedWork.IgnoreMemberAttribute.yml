@@ -13,8 +13,12 @@ items:
   fullName: Project.Domain.SeedWork.IgnoreMemberAttribute
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/IgnoreMemberAttribute.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IgnoreMemberAttribute
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IgnoreMemberAttribute.cs
+    path: ../src/Project.Domain/SeedWork/IgnoreMemberAttribute.cs
     startLine: 2
   assemblies:
   - Project.Domain

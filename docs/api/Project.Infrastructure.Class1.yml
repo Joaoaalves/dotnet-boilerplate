@@ -13,8 +13,12 @@ items:
   fullName: Project.Infrastructure.Class1
   type: Class
   source:
+    remote:
+      path: src/Project.Infrastructure/Class1.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Class1
-    path: D:\Projects\dotnet-boilerplate\src\Project.Infrastructure\Class1.cs
+    path: ../src/Project.Infrastructure/Class1.cs
     startLine: 2
   assemblies:
   - Project.Infrastructure

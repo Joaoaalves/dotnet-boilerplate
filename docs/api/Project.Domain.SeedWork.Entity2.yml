@@ -17,8 +17,12 @@ items:
   fullName: Project.Domain.SeedWork.Entity2
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Entity2
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\Entity.cs
+    path: ../src/Project.Domain/SeedWork/Entity.cs
     startLine: 5
   assemblies:
   - Project.Domain
@@ -50,8 +54,12 @@ items:
   fullName: Project.Domain.SeedWork.Entity2.DomainEvents
   type: Property
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: DomainEvents
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\Entity.cs
+    path: ../src/Project.Domain/SeedWork/Entity.cs
     startLine: 9
   assemblies:
   - Project.Domain
@@ -75,8 +83,12 @@ items:
   fullName: Project.Domain.SeedWork.Entity2.AddDomainEvent(Project.Domain.SeedWork.IDomainEvent)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddDomainEvent
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\Entity.cs
+    path: ../src/Project.Domain/SeedWork/Entity.cs
     startLine: 11
   assemblies:
   - Project.Domain
@@ -100,8 +112,12 @@ items:
   fullName: Project.Domain.SeedWork.Entity2.CheckRule(Project.Domain.SeedWork.IBusinessRule)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CheckRule
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\Entity.cs
+    path: ../src/Project.Domain/SeedWork/Entity.cs
     startLine: 17
   assemblies:
   - Project.Domain
@@ -125,8 +141,12 @@ items:
   fullName: Project.Domain.SeedWork.Entity2.ClearDomainEvents()
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ClearDomainEvents
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\Entity.cs
+    path: ../src/Project.Domain/SeedWork/Entity.cs
     startLine: 24
   assemblies:
   - Project.Domain

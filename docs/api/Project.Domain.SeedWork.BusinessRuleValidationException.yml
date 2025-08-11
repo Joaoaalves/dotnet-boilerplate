@@ -17,8 +17,12 @@ items:
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: BusinessRuleValidationException
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\BusinessRuleValidationException.cs
+    path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
     startLine: 2
   assemblies:
   - Project.Domain
@@ -60,8 +64,12 @@ items:
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException.BusinessRuleValidationException(Project.Domain.SeedWork.IBusinessRule)
   type: Constructor
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\BusinessRuleValidationException.cs
+    path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
     startLine: 2
   assemblies:
   - Project.Domain
@@ -88,8 +96,12 @@ items:
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException.BrokenRule
   type: Property
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: BrokenRule
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\BusinessRuleValidationException.cs
+    path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
     startLine: 4
   assemblies:
   - Project.Domain
@@ -113,8 +125,12 @@ items:
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException.Details
   type: Property
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Details
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\BusinessRuleValidationException.cs
+    path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
     startLine: 6
   assemblies:
   - Project.Domain
@@ -138,8 +154,12 @@ items:
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException.ToString()
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ToString
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\BusinessRuleValidationException.cs
+    path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
     startLine: 8
   assemblies:
   - Project.Domain

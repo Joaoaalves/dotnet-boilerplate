@@ -19,8 +19,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ValueObject
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 5
   assemblies:
   - Project.Domain
@@ -50,8 +54,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject.operator ==(Project.Domain.SeedWork.ValueObject?, Project.Domain.SeedWork.ValueObject?)
   type: Operator
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Equality
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 10
   assemblies:
   - Project.Domain
@@ -82,8 +90,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject.operator !=(Project.Domain.SeedWork.ValueObject?, Project.Domain.SeedWork.ValueObject?)
   type: Operator
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Inequality
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 23
   assemblies:
   - Project.Domain
@@ -114,8 +126,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject?)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 28
   assemblies:
   - Project.Domain
@@ -149,8 +165,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject.Equals(object?)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 36
   assemblies:
   - Project.Domain
@@ -184,8 +204,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject.GetHashCode()
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetHashCode
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 73
   assemblies:
   - Project.Domain
@@ -212,8 +236,12 @@ items:
   fullName: Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/ValueObject.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CheckRule
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\ValueObject.cs
+    path: ../src/Project.Domain/SeedWork/ValueObject.cs
     startLine: 100
   assemblies:
   - Project.Domain

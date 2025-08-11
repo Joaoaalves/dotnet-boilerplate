@@ -14,8 +14,12 @@ items:
   fullName: Project.Domain.SeedWork.IDomainEvent
   type: Interface
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/IDomainEvent.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IDomainEvent
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IDomainEvent.cs
+    path: ../src/Project.Domain/SeedWork/IDomainEvent.cs
     startLine: 2
   assemblies:
   - Project.Domain
@@ -35,8 +39,12 @@ items:
   fullName: Project.Domain.SeedWork.IDomainEvent.OccurredOn
   type: Property
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/IDomainEvent.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: OccurredOn
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\IDomainEvent.cs
+    path: ../src/Project.Domain/SeedWork/IDomainEvent.cs
     startLine: 4
   assemblies:
   - Project.Domain

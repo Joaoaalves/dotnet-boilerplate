@@ -20,8 +20,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: TypedIdValueBase
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 2
   assemblies:
   - Project.Domain
@@ -51,8 +55,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.TypedIdValueBase(System.Guid)
   type: Constructor
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 2
   assemblies:
   - Project.Domain
@@ -79,8 +87,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.Value
   type: Property
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Value
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 4
   assemblies:
   - Project.Domain
@@ -104,8 +116,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.Equals(object?)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 6
   assemblies:
   - Project.Domain
@@ -139,8 +155,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.GetHashCode()
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetHashCode
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 12
   assemblies:
   - Project.Domain
@@ -167,8 +187,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase?)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 17
   assemblies:
   - Project.Domain
@@ -203,8 +227,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.operator ==(Project.Domain.SeedWork.TypedIdValueBase, Project.Domain.SeedWork.TypedIdValueBase)
   type: Operator
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Equality
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 25
   assemblies:
   - Project.Domain
@@ -235,8 +263,12 @@ items:
   fullName: Project.Domain.SeedWork.TypedIdValueBase.operator !=(Project.Domain.SeedWork.TypedIdValueBase, Project.Domain.SeedWork.TypedIdValueBase)
   type: Operator
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/TypedIdValueBase.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Inequality
-    path: D:\Projects\dotnet-boilerplate\src\Project.Domain\SeedWork\TypedIdValueBase.cs
+    path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
     startLine: 37
   assemblies:
   - Project.Domain
