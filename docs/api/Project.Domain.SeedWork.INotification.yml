@@ -19,10 +19,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: INotification
     path: ../src/Project.Domain/SeedWork/INotification.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Marker interface for domain events and notifications.
+
+    Used to support the mediator pattern and event dispatching.
+  example: []
   syntax:
     content: public interface INotification
     content.vb: Public Interface INotification

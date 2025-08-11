@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Entity | project ">
       
-      <meta name="description" content="Represents an abstract base class for all entities.">
+      <meta name="description" content="Represents the base class for all entities in the domain layer. Provides common behavior such as domain event handling and business rule validation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Domain_SeedWork_Entity.md&amp;value=---%0Auid%3A%20Project.Domain.SeedWork.Entity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Domain_SeedWork_Entity" data-uid="Project.Domain.SeedWork.Entity" class="text-break">
-Class Entity  
+Class Entity  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Entity
   <dl><dt>Assembly</dt><dd>Project.Domain.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents an abstract base class for all entities.</p>
+  <div class="markdown summary"><p>Represents the base class for all entities in the domain layer.
+Provides common behavior such as domain event handling and business rule validation.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -157,10 +158,11 @@ Class Entity
 
   <h3 id="Project_Domain_SeedWork_Entity_DomainEvents" data-uid="Project.Domain.SeedWork.Entity.DomainEvents">
   DomainEvents
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a read-only collection of domain events that have been raised by this entity.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -192,10 +194,12 @@ Class Entity
 
   <h3 id="Project_Domain_SeedWork_Entity_AddDomainEvent_Project_Domain_SeedWork_IDomainEvent_" data-uid="Project.Domain.SeedWork.Entity.AddDomainEvent(Project.Domain.SeedWork.IDomainEvent)">
   AddDomainEvent(IDomainEvent)
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a domain event to the entity's list of events.
+This should be called whenever a significant change occurs in the entity that other parts of the system should react to.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,7 +209,8 @@ Class Entity
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>domainEvent</code> <a class="xref" href="Project.Domain.SeedWork.IDomainEvent.html">IDomainEvent</a></dt>
-    <dd></dd>
+    <dd><p>The domain event to add.</p>
+</dd>
   </dl>
 
 
@@ -223,10 +228,12 @@ Class Entity
 
   <h3 id="Project_Domain_SeedWork_Entity_CheckRule_Project_Domain_SeedWork_IBusinessRule_" data-uid="Project.Domain.SeedWork.Entity.CheckRule(Project.Domain.SeedWork.IBusinessRule)">
   CheckRule(IBusinessRule)
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks a business rule and throws a <a class="xref" href="Project.Domain.SeedWork.BusinessRuleValidationException.html">BusinessRuleValidationException</a> if the rule is broken.
+Use this to enforce domain invariants before performing operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -236,7 +243,8 @@ Class Entity
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rule</code> <a class="xref" href="Project.Domain.SeedWork.IBusinessRule.html">IBusinessRule</a></dt>
-    <dd></dd>
+    <dd><p>The business rule to validate.</p>
+</dd>
   </dl>
 
 
@@ -247,6 +255,12 @@ Class Entity
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Project.Domain.SeedWork.BusinessRuleValidationException.html">BusinessRuleValidationException</a></dt>
+    <dd><p>Thrown when the business rule is broken.</p>
+</dd>
+  </dl>
 
 
 
@@ -254,10 +268,12 @@ Class Entity
 
   <h3 id="Project_Domain_SeedWork_Entity_ClearDomainEvents" data-uid="Project.Domain.SeedWork.Entity.ClearDomainEvents">
   ClearDomainEvents()
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears all domain events associated with this entity.
+This is typically called after the events have been dispatched.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -280,6 +296,7 @@ Class Entity
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

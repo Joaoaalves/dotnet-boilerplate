@@ -20,10 +20,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IDomainEvent
     path: ../src/Project.Domain/SeedWork/IDomainEvent.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Represents a domain event that indicates something important has happened within the domain.
+
+    Domain events are used to notify other parts of the system about changes in state.
+  example: []
   syntax:
     content: 'public interface IDomainEvent : INotification'
     content.vb: Public Interface IDomainEvent Inherits INotification
@@ -45,10 +50,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: OccurredOn
     path: ../src/Project.Domain/SeedWork/IDomainEvent.cs
-    startLine: 4
+    startLine: 11
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Gets the timestamp indicating when the domain event occurred.
+  example: []
   syntax:
     content: DateTime OccurredOn { get; }
     parameters: []

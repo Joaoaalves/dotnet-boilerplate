@@ -25,10 +25,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ValueObject
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Represents a base class for value objects.
+
+    Value objects are immutable and compared by the values of their properties and fields.
+  example: []
   syntax:
     content: 'public abstract class ValueObject : IEquatable<ValueObject>'
     content.vb: Public MustInherit Class ValueObject Implements IEquatable(Of ValueObject)
@@ -60,10 +65,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Equality
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 10
+    startLine: 16
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Equality operator for value objects.
+  example: []
   syntax:
     content: public static bool operator ==(ValueObject? obj1, ValueObject? obj2)
     parameters:
@@ -96,10 +103,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Inequality
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 23
+    startLine: 29
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Inequality operator for value objects.
+  example: []
   syntax:
     content: public static bool operator !=(ValueObject? obj1, ValueObject? obj2)
     parameters:
@@ -132,7 +141,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 28
+    startLine: 35
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
@@ -171,7 +180,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 36
+    startLine: 44
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
@@ -210,7 +219,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetHashCode
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 73
+    startLine: 82
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
@@ -242,17 +251,24 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CheckRule
     path: ../src/Project.Domain/SeedWork/ValueObject.cs
-    startLine: 100
+    startLine: 115
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Validates a business rule and throws a <xref href="Project.Domain.SeedWork.BusinessRuleValidationException" data-throw-if-not-resolved="false"></xref> if the rule is broken.
+  example: []
   syntax:
     content: protected static void CheckRule(IBusinessRule rule)
     parameters:
     - id: rule
       type: Project.Domain.SeedWork.IBusinessRule
+      description: The business rule to validate.
     content.vb: Protected Shared Sub CheckRule(rule As IBusinessRule)
   overload: Project.Domain.SeedWork.ValueObject.CheckRule*
+  exceptions:
+  - type: Project.Domain.SeedWork.BusinessRuleValidationException
+    commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+    description: Thrown if the rule is broken.
 references:
 - uid: Project.Domain.SeedWork
   commentId: N:Project.Domain.SeedWork
@@ -708,6 +724,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Project.Domain.SeedWork.BusinessRuleValidationException
+  commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+  href: Project.Domain.SeedWork.BusinessRuleValidationException.html
+  name: BusinessRuleValidationException
+  nameWithType: BusinessRuleValidationException
+  fullName: Project.Domain.SeedWork.BusinessRuleValidationException
 - uid: Project.Domain.SeedWork.ValueObject.CheckRule*
   commentId: Overload:Project.Domain.SeedWork.ValueObject.CheckRule
   href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_CheckRule_Project_Domain_SeedWork_IBusinessRule_

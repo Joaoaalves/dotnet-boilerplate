@@ -21,10 +21,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IBusinessRule
     path: ../src/Project.Domain/SeedWork/IBusinessRule.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Represents a business rule that can be validated.
+
+    Business rules encapsulate domain-specific logic that must be enforced.
+  example: []
   syntax:
     content: public interface IBusinessRule
     content.vb: Public Interface IBusinessRule
@@ -46,14 +51,17 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IsBroken
     path: ../src/Project.Domain/SeedWork/IBusinessRule.cs
-    startLine: 4
+    startLine: 12
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Determines whether the rule is broken.
+  example: []
   syntax:
     content: bool IsBroken()
     return:
       type: System.Boolean
+      description: <code>true</code> if the rule is broken; otherwise, <code>false</code>.
     content.vb: Function IsBroken() As Boolean
   overload: Project.Domain.SeedWork.IBusinessRule.IsBroken*
 - uid: Project.Domain.SeedWork.IBusinessRule.Message
@@ -74,10 +82,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Message
     path: ../src/Project.Domain/SeedWork/IBusinessRule.cs
-    startLine: 5
+    startLine: 17
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Gets the validation message describing why the rule is broken.
+  example: []
   syntax:
     content: string Message { get; }
     parameters: []

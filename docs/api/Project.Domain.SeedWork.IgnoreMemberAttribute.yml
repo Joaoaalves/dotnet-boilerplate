@@ -19,10 +19,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IgnoreMemberAttribute
     path: ../src/Project.Domain/SeedWork/IgnoreMemberAttribute.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Attribute used to exclude a field or property from equality and hash code calculations in value objects.
+  example: []
   syntax:
     content: >-
       [AttributeUsage(AttributeTargets.Property|AttributeTargets.Field)]

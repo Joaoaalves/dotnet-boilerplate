@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ValueObject | project ">
       
-      
+      <meta name="description" content="Represents a base class for value objects. Value objects are immutable and compared by the values of their properties and fields.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Domain_SeedWork_ValueObject" data-uid="Project.Domain.SeedWork.ValueObject" class="text-break">
-Class ValueObject  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class ValueObject  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>Project.Domain.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a base class for value objects.
+Value objects are immutable and compared by the values of their properties and fields.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +158,11 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Project_Domain_SeedWork_ValueObject_CheckRule_Project_Domain_SeedWork_IBusinessRule_" data-uid="Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)">
   CheckRule(IBusinessRule)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates a business rule and throws a <a class="xref" href="Project.Domain.SeedWork.BusinessRuleValidationException.html">BusinessRuleValidationException</a> if the rule is broken.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +172,8 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rule</code> <a class="xref" href="Project.Domain.SeedWork.IBusinessRule.html">IBusinessRule</a></dt>
-    <dd></dd>
+    <dd><p>The business rule to validate.</p>
+</dd>
   </dl>
 
 
@@ -180,6 +184,12 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Project.Domain.SeedWork.BusinessRuleValidationException.html">BusinessRuleValidationException</a></dt>
+    <dd><p>Thrown if the rule is broken.</p>
+</dd>
+  </dl>
 
 
 
@@ -187,7 +197,7 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Project_Domain_SeedWork_ValueObject_Equals_Project_Domain_SeedWork_ValueObject_" data-uid="Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)">
   Equals(ValueObject?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -225,7 +235,7 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Project_Domain_SeedWork_ValueObject_Equals_System_Object_" data-uid="Project.Domain.SeedWork.ValueObject.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -264,7 +274,7 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Project_Domain_SeedWork_ValueObject_GetHashCode" data-uid="Project.Domain.SeedWork.ValueObject.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
@@ -301,10 +311,11 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Project_Domain_SeedWork_ValueObject_op_Equality_Project_Domain_SeedWork_ValueObject_Project_Domain_SeedWork_ValueObject_" data-uid="Project.Domain.SeedWork.ValueObject.op_Equality(Project.Domain.SeedWork.ValueObject,Project.Domain.SeedWork.ValueObject)">
   operator ==(ValueObject?, ValueObject?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Equality operator for value objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -339,10 +350,11 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Project_Domain_SeedWork_ValueObject_op_Inequality_Project_Domain_SeedWork_ValueObject_Project_Domain_SeedWork_ValueObject_" data-uid="Project.Domain.SeedWork.ValueObject.op_Inequality(Project.Domain.SeedWork.ValueObject,Project.Domain.SeedWork.ValueObject)">
   operator !=(ValueObject?, ValueObject?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inequality operator for value objects.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -377,7 +389,7 @@ Class ValueObject  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/ValueObject.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

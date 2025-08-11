@@ -14,8 +14,8 @@ items:
   - uid: Project.Domain.SeedWork.BusinessRuleValidationException
     name: BusinessRuleValidationException
     type: Class
-  - uid: Project.Domain.SeedWork.Entity2
-    name: Entity2
+  - uid: Project.Domain.SeedWork.Entity
+    name: Entity
     type: Class
   - uid: Project.Domain.SeedWork.IAggregateRoot
     name: IAggregateRoot

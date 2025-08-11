@@ -1,31 +1,38 @@
 using System.Reflection;
 
-
 namespace Project.Domain.SeedWork
 {
+    /// <summary>
+    /// Represents a base class for value objects.
+    /// Value objects are immutable and compared by the values of their properties and fields.
+    /// </summary>
     public abstract class ValueObject : IEquatable<ValueObject>
     {
         private List<PropertyInfo> _properties = [];
         private List<FieldInfo> _fields = [];
 
+        /// <summary>
+        /// Equality operator for value objects.
+        /// </summary>
         public static bool operator ==(ValueObject? obj1, ValueObject? obj2)
         {
             if (Equals(obj1, null))
             {
-                if (Equals(obj2, null))
-                {
-                    return true;
-                }
-                return false;
+                return Equals(obj2, null);
             }
+
             return obj1.Equals(obj2);
         }
 
+        /// <summary>
+        /// Inequality operator for value objects.
+        /// </summary>
         public static bool operator !=(ValueObject? obj1, ValueObject? obj2)
         {
             return !(obj1 == obj2);
         }
 
+        /// <inheritdoc />
         public bool Equals(ValueObject? obj)
         {
             if (obj is null)
@@ -34,6 +41,7 @@ namespace Project.Domain.SeedWork
             return Equals((object)obj);
         }
 
+        /// <inheritdoc />
         public override bool Equals(object? obj)
         {
             if (obj == null || GetType() != obj.GetType()) return false;
@@ -65,17 +73,19 @@ namespace Project.Domain.SeedWork
         private List<FieldInfo> GetFields()
         {
             _fields ??= GetType().GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)
-                    .Where(p => p.GetCustomAttribute<IgnoreMemberAttribute>() == null)
-                    .ToList();
+                .Where(f => f.GetCustomAttribute<IgnoreMemberAttribute>() == null)
+                .ToList();
 
             return _fields;
         }
 
+        /// <inheritdoc />
         public override int GetHashCode()
         {
             unchecked
             {
                 int hash = 17;
+
                 foreach (var prop in GetProperties())
                 {
                     var value = prop.GetValue(this, null);
@@ -98,6 +108,11 @@ namespace Project.Domain.SeedWork
             return seed * 23 + currentHash;
         }
 
+        /// <summary>
+        /// Validates a business rule and throws a <see cref="BusinessRuleValidationException"/> if the rule is broken.
+        /// </summary>
+        /// <param name="rule">The business rule to validate.</param>
+        /// <exception cref="BusinessRuleValidationException">Thrown if the rule is broken.</exception>
         protected static void CheckRule(IBusinessRule rule)
         {
             if (rule.IsBroken())

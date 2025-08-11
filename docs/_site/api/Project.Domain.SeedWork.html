@@ -96,43 +96,59 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.BusinessRuleValidationException.html">BusinessRuleValidationException</a></dt>
-      <dd></dd>
+      <dd><p>Exception thrown when a business rule is violated.
+Contains the broken rule and a message describing the violation.</p>
+</dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Project.Domain.SeedWork.Entity2.html">Entity2</a></dt>
-      <dd><p>Represents an abstract base class for all entities.</p>
+      <dt><a class="xref" href="Project.Domain.SeedWork.Entity.html">Entity</a></dt>
+      <dd><p>Represents the base class for all entities in the domain layer.
+Provides common behavior such as domain event handling and business rule validation.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.IgnoreMemberAttribute.html">IgnoreMemberAttribute</a></dt>
-      <dd></dd>
+      <dd><p>Attribute used to exclude a field or property from equality and hash code calculations in value objects.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.TypedIdValueBase.html">TypedIdValueBase</a></dt>
-      <dd></dd>
+      <dd><p>Base class for strongly-typed identifier value objects.
+Ensures consistent equality and hash code logic for identifiers.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.ValueObject.html">ValueObject</a></dt>
-      <dd></dd>
+      <dd><p>Represents a base class for value objects.
+Value objects are immutable and compared by the values of their properties and fields.</p>
+</dd>
     </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.IAggregateRoot.html">IAggregateRoot</a></dt>
-      <dd></dd>
+      <dd><p>Marker interface used to indicate that an entity is an aggregate root.
+Aggregate roots are the entry point to a cluster of domain objects and enforce consistency rules.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.IBusinessRule.html">IBusinessRule</a></dt>
-      <dd></dd>
+      <dd><p>Represents a business rule that can be validated.
+Business rules encapsulate domain-specific logic that must be enforced.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.IDomainEvent.html">IDomainEvent</a></dt>
-      <dd></dd>
+      <dd><p>Represents a domain event that indicates something important has happened within the domain.
+Domain events are used to notify other parts of the system about changes in state.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Project.Domain.SeedWork.INotification.html">INotification</a></dt>
-      <dd></dd>
+      <dd><p>Marker interface for domain events and notifications.
+Used to support the mediator pattern and event dispatching.</p>
+</dd>
     </dl>
 
 

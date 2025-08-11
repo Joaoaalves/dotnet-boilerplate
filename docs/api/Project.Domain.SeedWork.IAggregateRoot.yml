@@ -19,10 +19,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IAggregateRoot
     path: ../src/Project.Domain/SeedWork/IAggregateRoot.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Marker interface used to indicate that an entity is an aggregate root.
+
+    Aggregate roots are the entry point to a cluster of domain objects and enforce consistency rules.
+  example: []
   syntax:
     content: public interface IAggregateRoot
     content.vb: Public Interface IAggregateRoot

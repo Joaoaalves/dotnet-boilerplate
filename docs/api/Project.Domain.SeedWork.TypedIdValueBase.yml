@@ -26,10 +26,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: TypedIdValueBase
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Base class for strongly-typed identifier value objects.
+
+    Ensures consistent equality and hash code logic for identifiers.
+  example: []
   syntax:
     content: 'public abstract class TypedIdValueBase : IEquatable<TypedIdValueBase>'
     content.vb: Public MustInherit Class TypedIdValueBase Implements IEquatable(Of TypedIdValueBase)
@@ -61,10 +66,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Base class for strongly-typed identifier value objects.
+
+    Ensures consistent equality and hash code logic for identifiers.
+  example: []
   syntax:
     content: protected TypedIdValueBase(Guid value)
     parameters:
@@ -93,10 +103,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Value
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 4
+    startLine: 11
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Gets the underlying GUID value of the identifier.
+  example: []
   syntax:
     content: public Guid Value { get; }
     parameters: []
@@ -122,7 +134,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 6
+    startLine: 14
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
@@ -161,7 +173,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetHashCode
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 12
+    startLine: 21
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
@@ -193,7 +205,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 17
+    startLine: 27
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
@@ -233,10 +245,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Equality
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 25
+    startLine: 38
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Checks equality between two TypedIdValueBase instances.
+  example: []
   syntax:
     content: public static bool operator ==(TypedIdValueBase obj1, TypedIdValueBase obj2)
     parameters:
@@ -269,10 +283,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Inequality
     path: ../src/Project.Domain/SeedWork/TypedIdValueBase.cs
-    startLine: 37
+    startLine: 51
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Checks inequality between two TypedIdValueBase instances.
+  example: []
   syntax:
     content: public static bool operator !=(TypedIdValueBase x, TypedIdValueBase y)
     parameters:

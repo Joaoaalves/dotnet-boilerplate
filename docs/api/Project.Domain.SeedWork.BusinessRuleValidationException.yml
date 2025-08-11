@@ -23,10 +23,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: BusinessRuleValidationException
     path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Exception thrown when a business rule is violated.
+
+    Contains the broken rule and a message describing the violation.
+  example: []
   syntax:
     content: 'public class BusinessRuleValidationException : Exception, ISerializable'
     content.vb: Public Class BusinessRuleValidationException Inherits Exception Implements ISerializable
@@ -70,10 +75,15 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
-    startLine: 2
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Exception thrown when a business rule is violated.
+
+    Contains the broken rule and a message describing the violation.
+  example: []
   syntax:
     content: public BusinessRuleValidationException(IBusinessRule brokenRule)
     parameters:
@@ -102,10 +112,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: BrokenRule
     path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
-    startLine: 4
+    startLine: 11
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Gets the broken business rule that caused the exception.
+  example: []
   syntax:
     content: public IBusinessRule BrokenRule { get; }
     parameters: []
@@ -131,10 +143,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Details
     path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
-    startLine: 6
+    startLine: 16
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Gets the message describing why the rule was broken.
+  example: []
   syntax:
     content: public string Details { get; }
     parameters: []
@@ -160,17 +174,20 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ToString
     path: ../src/Project.Domain/SeedWork/BusinessRuleValidationException.cs
-    startLine: 8
+    startLine: 23
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
-  summary: Creates and returns a string representation of the current exception.
+  summary: >-
+    Returns a string that represents the current exception.
+
+    Includes the type and message of the broken rule.
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
-      description: A string representation of the current exception.
+      description: A string representation of the exception.
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Exception.ToString
   overload: Project.Domain.SeedWork.BusinessRuleValidationException.ToString*

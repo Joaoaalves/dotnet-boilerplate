@@ -17,13 +17,20 @@ items:
   fullName: Project.Domain.SeedWork.Entity
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Entity
-    path: /app/src/Project.Domain/SeedWork/Entity.cs
-    startLine: 5
+    path: ../src/Project.Domain/SeedWork/Entity.cs
+    startLine: 6
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
-  summary: Represents an abstract base class for all entities.
+  summary: >-
+    Represents the base class for all entities in the domain layer.
+
+    Provides common behavior such as domain event handling and business rule validation.
   example: []
   syntax:
     content: public abstract class Entity
@@ -50,12 +57,18 @@ items:
   fullName: Project.Domain.SeedWork.Entity.DomainEvents
   type: Property
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: DomainEvents
-    path: /app/src/Project.Domain/SeedWork/Entity.cs
-    startLine: 9
+    path: ../src/Project.Domain/SeedWork/Entity.cs
+    startLine: 13
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: Gets a read-only collection of domain events that have been raised by this entity.
+  example: []
   syntax:
     content: public IReadOnlyCollection<IDomainEvent>? DomainEvents { get; }
     parameters: []
@@ -75,17 +88,27 @@ items:
   fullName: Project.Domain.SeedWork.Entity.AddDomainEvent(Project.Domain.SeedWork.IDomainEvent)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddDomainEvent
-    path: /app/src/Project.Domain/SeedWork/Entity.cs
-    startLine: 11
+    path: ../src/Project.Domain/SeedWork/Entity.cs
+    startLine: 20
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Adds a domain event to the entity's list of events.
+
+    This should be called whenever a significant change occurs in the entity that other parts of the system should react to.
+  example: []
   syntax:
     content: protected void AddDomainEvent(IDomainEvent domainEvent)
     parameters:
     - id: domainEvent
       type: Project.Domain.SeedWork.IDomainEvent
+      description: The domain event to add.
     content.vb: Protected Sub AddDomainEvent(domainEvent As IDomainEvent)
   overload: Project.Domain.SeedWork.Entity.AddDomainEvent*
 - uid: Project.Domain.SeedWork.Entity.CheckRule(Project.Domain.SeedWork.IBusinessRule)
@@ -100,19 +123,33 @@ items:
   fullName: Project.Domain.SeedWork.Entity.CheckRule(Project.Domain.SeedWork.IBusinessRule)
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CheckRule
-    path: /app/src/Project.Domain/SeedWork/Entity.cs
-    startLine: 17
+    path: ../src/Project.Domain/SeedWork/Entity.cs
+    startLine: 32
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Checks a business rule and throws a <xref href="Project.Domain.SeedWork.BusinessRuleValidationException" data-throw-if-not-resolved="false"></xref> if the rule is broken.
+
+    Use this to enforce domain invariants before performing operations.
+  example: []
   syntax:
     content: protected static void CheckRule(IBusinessRule rule)
     parameters:
     - id: rule
       type: Project.Domain.SeedWork.IBusinessRule
+      description: The business rule to validate.
     content.vb: Protected Shared Sub CheckRule(rule As IBusinessRule)
   overload: Project.Domain.SeedWork.Entity.CheckRule*
+  exceptions:
+  - type: Project.Domain.SeedWork.BusinessRuleValidationException
+    commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+    description: Thrown when the business rule is broken.
 - uid: Project.Domain.SeedWork.Entity.ClearDomainEvents
   commentId: M:Project.Domain.SeedWork.Entity.ClearDomainEvents
   id: ClearDomainEvents
@@ -125,12 +162,21 @@ items:
   fullName: Project.Domain.SeedWork.Entity.ClearDomainEvents()
   type: Method
   source:
+    remote:
+      path: src/Project.Domain/SeedWork/Entity.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ClearDomainEvents
-    path: /app/src/Project.Domain/SeedWork/Entity.cs
-    startLine: 24
+    path: ../src/Project.Domain/SeedWork/Entity.cs
+    startLine: 44
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SeedWork
+  summary: >-
+    Clears all domain events associated with this entity.
+
+    This is typically called after the events have been dispatched.
+  example: []
   syntax:
     content: public void ClearDomainEvents()
     content.vb: Public Sub ClearDomainEvents()
@@ -520,6 +566,12 @@ references:
   name: IDomainEvent
   nameWithType: IDomainEvent
   fullName: Project.Domain.SeedWork.IDomainEvent
+- uid: Project.Domain.SeedWork.BusinessRuleValidationException
+  commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+  href: Project.Domain.SeedWork.BusinessRuleValidationException.html
+  name: BusinessRuleValidationException
+  nameWithType: BusinessRuleValidationException
+  fullName: Project.Domain.SeedWork.BusinessRuleValidationException
 - uid: Project.Domain.SeedWork.Entity.CheckRule*
   commentId: Overload:Project.Domain.SeedWork.Entity.CheckRule
   href: Project.Domain.SeedWork.Entity.html#Project_Domain_SeedWork_Entity_CheckRule_Project_Domain_SeedWork_IBusinessRule_

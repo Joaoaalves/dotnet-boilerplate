@@ -5,7 +5,7 @@ items:
   id: Project.Domain.SeedWork
   children:
   - Project.Domain.SeedWork.BusinessRuleValidationException
-  - Project.Domain.SeedWork.Entity2
+  - Project.Domain.SeedWork.Entity
   - Project.Domain.SeedWork.IAggregateRoot
   - Project.Domain.SeedWork.IBusinessRule
   - Project.Domain.SeedWork.IDomainEvent
@@ -29,12 +29,12 @@ references:
   name: BusinessRuleValidationException
   nameWithType: BusinessRuleValidationException
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException
-- uid: Project.Domain.SeedWork.Entity2
-  commentId: T:Project.Domain.SeedWork.Entity2
-  href: Project.Domain.SeedWork.Entity2.html
-  name: Entity2
-  nameWithType: Entity2
-  fullName: Project.Domain.SeedWork.Entity2
+- uid: Project.Domain.SeedWork.Entity
+  commentId: T:Project.Domain.SeedWork.Entity
+  href: Project.Domain.SeedWork.Entity.html
+  name: Entity
+  nameWithType: Entity
+  fullName: Project.Domain.SeedWork.Entity
 - uid: Project.Domain.SeedWork.IAggregateRoot
   commentId: T:Project.Domain.SeedWork.IAggregateRoot
   href: Project.Domain.SeedWork.IAggregateRoot.html
