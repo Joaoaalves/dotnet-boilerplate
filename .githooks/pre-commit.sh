@@ -1,25 +1,25 @@
 #!/bin/sh
 
-echo "Rodando dotnet format..."
+echo "Running dotnet format..."
 dotnet format --verify-no-changes
 if [ $? -ne 0 ]; then
-  echo "Código não está formatado. Rode 'dotnet format' antes de commitar."
+  echo "Code is not formatted. Run 'dotnet format' before committing."
   exit 1
 fi
 
-echo "Rodando dotnet test..."
+echo "Running dotnet test..."
 dotnet test --no-build --verbosity minimal
 if [ $? -ne 0 ]; then
-  echo "Testes falharam. Corrija antes de commitar."
+  echo "Tests failed. Fix them before committing."
   exit 1
 fi
 
-echo "Gerando documentação..."
+echo "Generating documentation..."
 docfx docs/docfx.json > /dev/null 2>&1
 git add docs/_site
 
 if ! git diff --quiet --exit-code docs/_site; then
-  echo "Documentação desatualizada. Rode 'make docs' para atualizar."
+  echo "Documentation is outdated. Run 'make docs' to update it."
   exit 1
 fi
 
