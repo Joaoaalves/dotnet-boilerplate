@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ve+GCC9u7Hw=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Api\\Project.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joaoa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\joaoa\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
