@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/app/src/Project.Domain/Project.Domain.csproj": {}
+    "D:\\Projects\\dotnet-boilerplate\\src\\Project.Domain\\Project.Domain.csproj": {}
   },
   "projects": {
-    "/app/src/Project.Domain/Project.Domain.csproj": {
+    "D:\\Projects\\dotnet-boilerplate\\src\\Project.Domain\\Project.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/app/src/Project.Domain/Project.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Domain\\Project.Domain.csproj",
         "projectName": "Project.Domain",
-        "projectPath": "/app/src/Project.Domain/Project.Domain.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/app/src/Project.Domain/obj/",
+        "projectPath": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Domain\\Project.Domain.csproj",
+        "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

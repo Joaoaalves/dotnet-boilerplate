@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j8MZjABPGrY=",
+  "dgSpecHash": "Orkip5oBowc=",
   "success": true,
-  "projectFilePath": "/app/src/Project.Application/Project.Application.csproj",
+  "projectFilePath": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Application\\Project.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

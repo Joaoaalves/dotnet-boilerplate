@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RPPEp042gPM=",
+  "dgSpecHash": "+BGigtpcRcQ=",
   "success": true,
-  "projectFilePath": "/app/src/Project.Domain/Project.Domain.csproj",
+  "projectFilePath": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Domain\\Project.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

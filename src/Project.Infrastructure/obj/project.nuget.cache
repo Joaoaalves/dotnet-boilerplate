@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UFzK/DkmC/o=",
+  "dgSpecHash": "l2/m00avPcw=",
   "success": true,
-  "projectFilePath": "/app/src/Project.Infrastructure/Project.Infrastructure.csproj",
+  "projectFilePath": "D:\\Projects\\dotnet-boilerplate\\src\\Project.Infrastructure\\Project.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
