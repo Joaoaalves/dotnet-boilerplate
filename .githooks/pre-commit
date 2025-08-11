@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "Running dotnet format..."
+cd src
 dotnet format --verify-no-changes
 if [ $? -ne 0 ]; then
   echo "Code is not formatted. Run 'dotnet format' before committing."
@@ -13,7 +14,7 @@ if [ $? -ne 0 ]; then
   echo "Tests failed. Fix them before committing."
   exit 1
 fi
-
+cd ..
 echo "Generating documentation..."
 make clean-docs
 make docs
