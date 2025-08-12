@@ -529,7 +529,6 @@ references:
 - uid: Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
   commentId: P:Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
   parent: Project.Application.Configuration.IExecutionContextAccessor
-  href: Project.Application.Configuration.IExecutionContextAccessor.html#Project_Application_Configuration_IExecutionContextAccessor_CorrelationId
   name: CorrelationId
   nameWithType: IExecutionContextAccessor.CorrelationId
   fullName: Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
@@ -550,7 +549,6 @@ references:
 - uid: Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
   commentId: P:Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
   parent: Project.Application.Configuration.IExecutionContextAccessor
-  href: Project.Application.Configuration.IExecutionContextAccessor.html#Project_Application_Configuration_IExecutionContextAccessor_IsAvailable
   name: IsAvailable
   nameWithType: IExecutionContextAccessor.IsAvailable
   fullName: Project.Application.Configuration.IExecutionContextAccessor.IsAvailable

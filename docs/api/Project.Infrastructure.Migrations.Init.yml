@@ -17,11 +17,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Project.Infrastructure/Migrations/20250812001619_Init.Designer.cs
+      path: src/Project.Infrastructure/Migrations/20250812211505_Init.Designer.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Init
-    path: ../src/Project.Infrastructure/Migrations/20250812001619_Init.Designer.cs
+    path: ../src/Project.Infrastructure/Migrations/20250812211505_Init.Designer.cs
     startLine: 13
   assemblies:
   - Project.Infrastructure
@@ -33,13 +33,13 @@ items:
     content: >-
       [DbContext(typeof(ApplicationDbContext))]
 
-      [Migration("20250812001619_Init")]
+      [Migration("20250812211505_Init")]
 
       public class Init : Migration
     content.vb: >-
       <DbContext(GetType(ApplicationDbContext))>
 
-      <Migration("20250812001619_Init")>
+      <Migration("20250812211505_Init")>
 
       Public Class Init Inherits Migration
   inheritance:
@@ -68,7 +68,7 @@ items:
     ctor: Microsoft.EntityFrameworkCore.Migrations.MigrationAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: 20250812001619_Init
+      value: 20250812211505_Init
 - uid: Project.Infrastructure.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   commentId: M:Project.Infrastructure.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   id: Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
@@ -82,11 +82,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/Migrations/20250812001619_Init.cs
+      path: src/Project.Infrastructure/Migrations/20250812211505_Init.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Up
-    path: ../src/Project.Infrastructure/Migrations/20250812001619_Init.cs
+    path: ../src/Project.Infrastructure/Migrations/20250812211505_Init.cs
     startLine: 12
   assemblies:
   - Project.Infrastructure
@@ -128,12 +128,12 @@ items:
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/Migrations/20250812001619_Init.cs
+      path: src/Project.Infrastructure/Migrations/20250812211505_Init.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Down
-    path: ../src/Project.Infrastructure/Migrations/20250812001619_Init.cs
-    startLine: 212
+    path: ../src/Project.Infrastructure/Migrations/20250812211505_Init.cs
+    startLine: 200
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Migrations
@@ -176,11 +176,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/Migrations/20250812001619_Init.Designer.cs
+      path: src/Project.Infrastructure/Migrations/20250812211505_Init.Designer.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: BuildTargetModel
-    path: ../src/Project.Infrastructure/Migrations/20250812001619_Init.Designer.cs
+    path: ../src/Project.Infrastructure/Migrations/20250812211505_Init.Designer.cs
     startLine: 18
   assemblies:
   - Project.Infrastructure

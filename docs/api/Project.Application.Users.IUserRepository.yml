@@ -7,9 +7,9 @@ items:
   children:
   - Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
   - Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
-  - Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  - Project.Application.Users.IUserRepository.DeleteAsync(System.String)
   - Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
-  - Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  - Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
   - Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
   - Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
   langs:
@@ -73,16 +73,16 @@ items:
   nameWithType.vb: IUserRepository.GetByEmailAsync(String)
   fullName.vb: Project.Application.Users.IUserRepository.GetByEmailAsync(String)
   name.vb: GetByEmailAsync(String)
-- uid: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  commentId: M:Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  id: GetByIdAsync(Project.Domain.Users.UserId)
+- uid: Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  id: GetByIdAsync(System.String)
   parent: Project.Application.Users.IUserRepository
   langs:
   - csharp
   - vb
-  name: GetByIdAsync(UserId)
-  nameWithType: IUserRepository.GetByIdAsync(UserId)
-  fullName: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  name: GetByIdAsync(string)
+  nameWithType: IUserRepository.GetByIdAsync(string)
+  fullName: Project.Application.Users.IUserRepository.GetByIdAsync(string)
   type: Method
   source:
     remote:
@@ -98,16 +98,19 @@ items:
   summary: Retrieves a user by their unique identifier.
   example: []
   syntax:
-    content: Task<User?> GetByIdAsync(UserId userId)
+    content: Task<User?> GetByIdAsync(string userId)
     parameters:
     - id: userId
-      type: Project.Domain.Users.UserId
+      type: System.String
       description: The user's unique identifier.
     return:
       type: System.Threading.Tasks.Task{Project.Domain.Users.User}
       description: The user if found; otherwise, <code>null</code>.
-    content.vb: Function GetByIdAsync(userId As UserId) As Task(Of User)
+    content.vb: Function GetByIdAsync(userId As String) As Task(Of User)
   overload: Project.Application.Users.IUserRepository.GetByIdAsync*
+  nameWithType.vb: IUserRepository.GetByIdAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.GetByIdAsync(String)
+  name.vb: GetByIdAsync(String)
 - uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
   commentId: M:Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
   id: GetUserByUsernameAsync(System.String)
@@ -263,16 +266,16 @@ items:
       description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
     content.vb: Function UpdateAsync(user As User) As Task(Of IdentityResult)
   overload: Project.Application.Users.IUserRepository.UpdateAsync*
-- uid: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  commentId: M:Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  id: DeleteAsync(Project.Domain.Users.UserId)
+- uid: Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  id: DeleteAsync(System.String)
   parent: Project.Application.Users.IUserRepository
   langs:
   - csharp
   - vb
-  name: DeleteAsync(UserId)
-  nameWithType: IUserRepository.DeleteAsync(UserId)
-  fullName: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  name: DeleteAsync(string)
+  nameWithType: IUserRepository.DeleteAsync(string)
+  fullName: Project.Application.Users.IUserRepository.DeleteAsync(string)
   type: Method
   source:
     remote:
@@ -288,16 +291,19 @@ items:
   summary: Deletes a user by their unique identifier.
   example: []
   syntax:
-    content: Task<IdentityResult> DeleteAsync(UserId userId)
+    content: Task<IdentityResult> DeleteAsync(string userId)
     parameters:
     - id: userId
-      type: Project.Domain.Users.UserId
+      type: System.String
       description: The identifier of the user to delete.
     return:
       type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
       description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
-    content.vb: Function DeleteAsync(userId As UserId) As Task(Of IdentityResult)
+    content.vb: Function DeleteAsync(userId As String) As Task(Of IdentityResult)
   overload: Project.Application.Users.IUserRepository.DeleteAsync*
+  nameWithType.vb: IUserRepository.DeleteAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.DeleteAsync(String)
+  name.vb: DeleteAsync(String)
 references:
 - uid: Project.Application.Users
   commentId: N:Project.Application.Users
@@ -451,47 +457,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: Project.Application.Users.IUserRepository.GetByIdAsync*
   commentId: Overload:Project.Application.Users.IUserRepository.GetByIdAsync
-  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_Project_Domain_Users_UserId_
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_System_String_
   name: GetByIdAsync
   nameWithType: IUserRepository.GetByIdAsync
   fullName: Project.Application.Users.IUserRepository.GetByIdAsync
-- uid: Project.Domain.Users.UserId
-  commentId: T:Project.Domain.Users.UserId
-  parent: Project.Domain.Users
-  href: Project.Domain.Users.UserId.html
-  name: UserId
-  nameWithType: UserId
-  fullName: Project.Domain.Users.UserId
-- uid: Project.Domain.Users
-  commentId: N:Project.Domain.Users
-  href: Project.html
-  name: Project.Domain.Users
-  nameWithType: Project.Domain.Users
-  fullName: Project.Domain.Users
-  spec.csharp:
-  - uid: Project
-    name: Project
-    href: Project.html
-  - name: .
-  - uid: Project.Domain
-    name: Domain
-    href: Project.Domain.html
-  - name: .
-  - uid: Project.Domain.Users
-    name: Users
-    href: Project.Domain.Users.html
-  spec.vb:
-  - uid: Project
-    name: Project
-    href: Project.html
-  - name: .
-  - uid: Project.Domain
-    name: Domain
-    href: Project.Domain.html
-  - name: .
-  - uid: Project.Domain.Users
-    name: Users
-    href: Project.Domain.Users.html
 - uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync*
   commentId: Overload:Project.Application.Users.IUserRepository.GetUserByUsernameAsync
   href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetUserByUsernameAsync_System_String_
@@ -546,6 +515,36 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: Project.Domain.Users
+  commentId: N:Project.Domain.Users
+  href: Project.html
+  name: Project.Domain.Users
+  nameWithType: Project.Domain.Users
+  fullName: Project.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
 - uid: Microsoft.AspNetCore.Identity.IdentityResult
   commentId: T:Microsoft.AspNetCore.Identity.IdentityResult
   isExternal: true
@@ -602,7 +601,7 @@ references:
   fullName: Project.Application.Users.IUserRepository.UpdateAsync
 - uid: Project.Application.Users.IUserRepository.DeleteAsync*
   commentId: Overload:Project.Application.Users.IUserRepository.DeleteAsync
-  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_Project_Domain_Users_UserId_
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_System_String_
   name: DeleteAsync
   nameWithType: IUserRepository.DeleteAsync
   fullName: Project.Application.Users.IUserRepository.DeleteAsync

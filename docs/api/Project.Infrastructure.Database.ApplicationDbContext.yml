@@ -31,15 +31,15 @@ items:
     integrating with ASP.NET Identity and custom domain configurations.
   example: []
   syntax:
-    content: 'public class ApplicationDbContext : IdentityDbContext<IdentityUserAdapter>, IInfrastructure<IServiceProvider>, IDbContextDependencies, IDbSetCache, IDbContextPoolable, IResettableService, IDisposable, IAsyncDisposable'
-    content.vb: Public Class ApplicationDbContext Inherits IdentityDbContext(Of IdentityUserAdapter) Implements IInfrastructure(Of IServiceProvider), IDbContextDependencies, IDbSetCache, IDbContextPoolable, IResettableService, IDisposable, IAsyncDisposable
+    content: 'public class ApplicationDbContext : IdentityDbContext<User>, IInfrastructure<IServiceProvider>, IDbContextDependencies, IDbSetCache, IDbContextPoolable, IResettableService, IDisposable, IAsyncDisposable'
+    content.vb: Public Class ApplicationDbContext Inherits IdentityDbContext(Of User) Implements IInfrastructure(Of IServiceProvider), IDbContextDependencies, IDbSetCache, IDbContextPoolable, IResettableService, IDisposable, IAsyncDisposable
   inheritance:
   - System.Object
   - Microsoft.EntityFrameworkCore.DbContext
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String}
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter}
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String}
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User}
   implements:
   - Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure{System.IServiceProvider}
   - Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies
@@ -49,16 +49,16 @@ items:
   - System.IDisposable
   - System.IAsyncDisposable
   inheritedMembers:
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserRoles
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Roles
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.RoleClaims
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Users
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserClaims
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserLogins
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserTokens
-  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.SchemaVersion
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserRoles
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Roles
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.RoleClaims
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Users
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserClaims
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserLogins
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserTokens
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.SchemaVersion
   - Microsoft.EntityFrameworkCore.DbContext.Set``1
   - Microsoft.EntityFrameworkCore.DbContext.Set``1(System.String)
   - Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
@@ -180,7 +180,7 @@ items:
       type: Microsoft.EntityFrameworkCore.ModelBuilder
       description: The model builder used to configure entity mappings.
     content.vb: Protected Overrides Sub OnModelCreating(builder As ModelBuilder)
-  overridden: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  overridden: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   overload: Project.Infrastructure.Database.ApplicationDbContext.OnModelCreating*
 references:
 - uid: Project.Infrastructure.Database
@@ -232,26 +232,25 @@ references:
   name: DbContext
   nameWithType: DbContext
   fullName: Microsoft.EntityFrameworkCore.DbContext
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
-  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5
-  name: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String))
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String))
-  name.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String))
+  name: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String))
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String))
+  name.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String))
   spec.csharp:
   - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5
     name: IdentityUserContext
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5
   - name: <
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: ','
   - name: " "
   - uid: System.String
@@ -303,9 +302,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: ','
   - name: " "
   - uid: System.String
@@ -355,26 +353,25 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   - name: )
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
-  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8
-  name: IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>
-  nameWithType: IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String))
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String))
-  name.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String))
+  name: IdentityDbContext<User, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>
+  nameWithType: IdentityDbContext<User, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>
+  nameWithType.vb: IdentityDbContext(Of User, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String))
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String))
+  name.vb: IdentityDbContext(Of User, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String))
   spec.csharp:
   - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8
     name: IdentityDbContext
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8
   - name: <
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: ','
   - name: " "
   - uid: Microsoft.AspNetCore.Identity.IdentityRole
@@ -456,9 +453,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: ','
   - name: " "
   - uid: Microsoft.AspNetCore.Identity.IdentityRole
@@ -542,26 +538,25 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   - name: )
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String}
-  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String}
+  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String}
   parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`3
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-3
-  name: IdentityDbContext<IdentityUserAdapter, IdentityRole, string>
-  nameWithType: IdentityDbContext<IdentityUserAdapter, IdentityRole, string>
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, string>
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String)
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, String)
-  name.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String)
+  name: IdentityDbContext<User, IdentityRole, string>
+  nameWithType: IdentityDbContext<User, IdentityRole, string>
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, string>
+  nameWithType.vb: IdentityDbContext(Of User, IdentityRole, String)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, String)
+  name.vb: IdentityDbContext(Of User, IdentityRole, String)
   spec.csharp:
   - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`3
     name: IdentityDbContext
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-3
   - name: <
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: ','
   - name: " "
   - uid: Microsoft.AspNetCore.Identity.IdentityRole
@@ -583,9 +578,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: ','
   - name: " "
   - uid: Microsoft.AspNetCore.Identity.IdentityRole
@@ -599,26 +593,25 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter}
-  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User}
+  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User}
   parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`1
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-1
-  name: IdentityDbContext<IdentityUserAdapter>
-  nameWithType: IdentityDbContext<IdentityUserAdapter>
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter>
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter)
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter)
-  name.vb: IdentityDbContext(Of IdentityUserAdapter)
+  name: IdentityDbContext<User>
+  nameWithType: IdentityDbContext<User>
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User>
+  nameWithType.vb: IdentityDbContext(Of User)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User)
+  name.vb: IdentityDbContext(Of User)
   spec.csharp:
   - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`1
     name: IdentityDbContext
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-1
   - name: <
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: '>'
   spec.vb:
   - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`1
@@ -628,9 +621,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
-    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - uid: Project.Domain.Users.User
+    name: User
   - name: )
 - uid: Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure{System.IServiceProvider}
   commentId: T:Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure{System.IServiceProvider}
@@ -715,18 +707,18 @@ references:
   name: IAsyncDisposable
   nameWithType: IAsyncDisposable
   fullName: System.IAsyncDisposable
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8.onmodelcreating
   name: OnModelCreating(ModelBuilder)
-  nameWithType: IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.OnModelCreating(ModelBuilder)
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).OnModelCreating(ModelBuilder)
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: IdentityDbContext<User, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.OnModelCreating(ModelBuilder)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType.vb: IdentityDbContext(Of User, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).OnModelCreating(ModelBuilder)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
     name: OnModelCreating
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8.onmodelcreating
@@ -737,7 +729,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
     name: OnModelCreating
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8.onmodelcreating
@@ -747,48 +739,48 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
   - name: )
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserRoles
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserRoles
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserRoles
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserRoles
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.UserRoles
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8.userroles
   name: UserRoles
-  nameWithType: IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.UserRoles
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserRoles
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).UserRoles
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserRoles
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Roles
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Roles
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityDbContext<User, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.UserRoles
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserRoles
+  nameWithType.vb: IdentityDbContext(Of User, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).UserRoles
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserRoles
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Roles
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Roles
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.Roles
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8.roles
   name: Roles
-  nameWithType: IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.Roles
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.Roles
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).Roles
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).Roles
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.RoleClaims
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.RoleClaims
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Infrastructure.Users.IdentityUserAdapter,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityDbContext<User, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.Roles
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.Roles
+  nameWithType.vb: IdentityDbContext(Of User, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).Roles
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).Roles
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.RoleClaims
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.RoleClaims
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext{Project.Domain.Users.User,Microsoft.AspNetCore.Identity.IdentityRole,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserRole{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityRoleClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.RoleClaims
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identitydbcontext-8.roleclaims
   name: RoleClaims
-  nameWithType: IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.RoleClaims
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.RoleClaims
-  nameWithType.vb: IdentityDbContext(Of IdentityUserAdapter, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).RoleClaims
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Infrastructure.Users.IdentityUserAdapter, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).RoleClaims
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityDbContext<User, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.RoleClaims
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext<Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserRole<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.RoleClaims
+  nameWithType.vb: IdentityDbContext(Of User, IdentityRole, String, IdentityUserClaim(Of String), IdentityUserRole(Of String), IdentityUserLogin(Of String), IdentityRoleClaim(Of String), IdentityUserToken(Of String)).RoleClaims
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext(Of Project.Domain.Users.User, Microsoft.AspNetCore.Identity.IdentityRole, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserRole(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityRoleClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).RoleClaims
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.onmodelcreating
   name: OnModelCreating(ModelBuilder)
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.OnModelCreating(ModelBuilder)
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).OnModelCreating(ModelBuilder)
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.OnModelCreating(ModelBuilder)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).OnModelCreating(ModelBuilder)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
     name: OnModelCreating
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.onmodelcreating
@@ -799,7 +791,7 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
     name: OnModelCreating
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.onmodelcreating
@@ -809,56 +801,56 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
   - name: )
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Users
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Users
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Users
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.Users
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5.Users
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.users
   name: Users
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.Users
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.Users
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).Users
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).Users
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserClaims
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserClaims
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.Users
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.Users
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).Users
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).Users
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserClaims
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserClaims
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5.UserClaims
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.userclaims
   name: UserClaims
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserClaims
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserClaims
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).UserClaims
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserClaims
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserLogins
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserLogins
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserClaims
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserClaims
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).UserClaims
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserClaims
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserLogins
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserLogins
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5.UserLogins
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.userlogins
   name: UserLogins
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserLogins
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserLogins
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).UserLogins
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserLogins
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserTokens
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserTokens
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserLogins
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserLogins
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).UserLogins
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserLogins
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserTokens
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.UserTokens
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5.UserTokens
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.usertokens
   name: UserTokens
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserTokens
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserTokens
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).UserTokens
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserTokens
-- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.SchemaVersion
-  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.SchemaVersion
-  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Infrastructure.Users.IdentityUserAdapter,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserTokens
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.UserTokens
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).UserTokens
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).UserTokens
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.SchemaVersion
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}.SchemaVersion
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext{Project.Domain.Users.User,System.String,Microsoft.AspNetCore.Identity.IdentityUserClaim{System.String},Microsoft.AspNetCore.Identity.IdentityUserLogin{System.String},Microsoft.AspNetCore.Identity.IdentityUserToken{System.String}}
   definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5.SchemaVersion
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.entityframeworkcore.identityusercontext-5.schemaversion
   name: SchemaVersion
-  nameWithType: IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.SchemaVersion
-  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Infrastructure.Users.IdentityUserAdapter, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.SchemaVersion
-  nameWithType.vb: IdentityUserContext(Of IdentityUserAdapter, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).SchemaVersion
-  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Infrastructure.Users.IdentityUserAdapter, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).SchemaVersion
+  nameWithType: IdentityUserContext<User, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.SchemaVersion
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext<Project.Domain.Users.User, string, Microsoft.AspNetCore.Identity.IdentityUserClaim<string>, Microsoft.AspNetCore.Identity.IdentityUserLogin<string>, Microsoft.AspNetCore.Identity.IdentityUserToken<string>>.SchemaVersion
+  nameWithType.vb: IdentityUserContext(Of User, String, IdentityUserClaim(Of String), IdentityUserLogin(Of String), IdentityUserToken(Of String)).SchemaVersion
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext(Of Project.Domain.Users.User, String, Microsoft.AspNetCore.Identity.IdentityUserClaim(Of String), Microsoft.AspNetCore.Identity.IdentityUserLogin(Of String), Microsoft.AspNetCore.Identity.IdentityUserToken(Of String)).SchemaVersion
 - uid: Microsoft.EntityFrameworkCore.DbContext.Set``1
   commentId: M:Microsoft.EntityFrameworkCore.DbContext.Set``1
   parent: Microsoft.EntityFrameworkCore.DbContext

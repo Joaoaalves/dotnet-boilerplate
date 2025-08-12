@@ -40,8 +40,6 @@ items:
     content.vb: Public MustInherit Class TypedIdValueBase Implements IEquatable(Of TypedIdValueBase)
   inheritance:
   - System.Object
-  derivedClasses:
-  - Project.Domain.Users.UserId
   implements:
   - System.IEquatable{Project.Domain.SeedWork.TypedIdValueBase}
   inheritedMembers:

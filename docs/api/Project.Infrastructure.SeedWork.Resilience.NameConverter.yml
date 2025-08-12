@@ -1,0 +1,765 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter
+  commentId: T:Project.Infrastructure.SeedWork.Resilience.NameConverter
+  id: NameConverter
+  parent: Project.Infrastructure.SeedWork.Resilience
+  children:
+  - Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  langs:
+  - csharp
+  - vb
+  name: NameConverter
+  nameWithType: NameConverter
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter
+  type: Class
+  source:
+    remote:
+      path: src/Project.Infrastructure/SeedWork/Resilience/NameConverter.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: NameConverter
+    path: ../src/Project.Infrastructure/SeedWork/Resilience/NameConverter.cs
+    startLine: 5
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.SeedWork.Resilience
+  syntax:
+    content: 'public sealed class NameConverter : ValueConverter<Name, string>'
+    content.vb: Public NotInheritable Class NameConverter Inherits ValueConverter(Of Name, String)
+  inheritance:
+  - System.Object
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  inheritedMembers:
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProvider
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProvider
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProviderTyped
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProviderTyped
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProviderExpression
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProviderExpression
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ModelClrType
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ProviderClrType
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConstructorExpression
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ComposeWith(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter)
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProvider
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProvider
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProviderExpression
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProviderExpression
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ModelClrType
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ProviderClrType
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.MappingHints
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertsNulls
+  - Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConstructorExpression
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  commentId: M:Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  id: '#ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)'
+  parent: Project.Infrastructure.SeedWork.Resilience.NameConverter
+  langs:
+  - csharp
+  - vb
+  name: NameConverter(ConverterMappingHints?)
+  nameWithType: NameConverter.NameConverter(ConverterMappingHints?)
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter.NameConverter(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Infrastructure/SeedWork/Resilience/NameConverter.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Infrastructure/SeedWork/Resilience/NameConverter.cs
+    startLine: 5
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.SeedWork.Resilience
+  syntax:
+    content: public NameConverter(ConverterMappingHints? mappingHints = null)
+    parameters:
+    - id: mappingHints
+      type: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints
+    content.vb: Public Sub New(mappingHints As ConverterMappingHints = Nothing)
+  overload: Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor*
+  nameWithType.vb: NameConverter.New(ConverterMappingHints)
+  fullName.vb: Project.Infrastructure.SeedWork.Resilience.NameConverter.New(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  name.vb: New(ConverterMappingHints)
+references:
+- uid: Project.Infrastructure.SeedWork.Resilience
+  commentId: N:Project.Infrastructure.SeedWork.Resilience
+  href: Project.html
+  name: Project.Infrastructure.SeedWork.Resilience
+  nameWithType: Project.Infrastructure.SeedWork.Resilience
+  fullName: Project.Infrastructure.SeedWork.Resilience
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.SeedWork
+    name: SeedWork
+    href: Project.Infrastructure.SeedWork.html
+  - name: .
+  - uid: Project.Infrastructure.SeedWork.Resilience
+    name: Resilience
+    href: Project.Infrastructure.SeedWork.Resilience.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.SeedWork
+    name: SeedWork
+    href: Project.Infrastructure.SeedWork.html
+  - name: .
+  - uid: Project.Infrastructure.SeedWork.Resilience
+    name: Resilience
+    href: Project.Infrastructure.SeedWork.Resilience.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  commentId: T:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter
+  name: ValueConverter
+  nameWithType: ValueConverter
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  commentId: T:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2
+  name: ValueConverter<Name, string>
+  nameWithType: ValueConverter<Name, string>
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>
+  nameWithType.vb: ValueConverter(Of Name, String)
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String)
+  name.vb: ValueConverter(Of Name, String)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+    name: ValueConverter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2
+  - name: <
+  - uid: Project.Domain.SharedKernel.Users.Name
+    name: Name
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+    name: ValueConverter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Name
+    name: Name
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProvider
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProvider
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProvider
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.converttoprovider
+  name: ConvertToProvider
+  nameWithType: ValueConverter<Name, string>.ConvertToProvider
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConvertToProvider
+  nameWithType.vb: ValueConverter(Of Name, String).ConvertToProvider
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConvertToProvider
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProvider
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProvider
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProvider
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.convertfromprovider
+  name: ConvertFromProvider
+  nameWithType: ValueConverter<Name, string>.ConvertFromProvider
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConvertFromProvider
+  nameWithType.vb: ValueConverter(Of Name, String).ConvertFromProvider
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConvertFromProvider
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProviderTyped
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProviderTyped
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProviderTyped
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.converttoprovidertyped
+  name: ConvertToProviderTyped
+  nameWithType: ValueConverter<Name, string>.ConvertToProviderTyped
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConvertToProviderTyped
+  nameWithType.vb: ValueConverter(Of Name, String).ConvertToProviderTyped
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConvertToProviderTyped
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProviderTyped
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProviderTyped
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProviderTyped
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.convertfromprovidertyped
+  name: ConvertFromProviderTyped
+  nameWithType: ValueConverter<Name, string>.ConvertFromProviderTyped
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConvertFromProviderTyped
+  nameWithType.vb: ValueConverter(Of Name, String).ConvertFromProviderTyped
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConvertFromProviderTyped
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProviderExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertToProviderExpression
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProviderExpression
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.converttoproviderexpression
+  name: ConvertToProviderExpression
+  nameWithType: ValueConverter<Name, string>.ConvertToProviderExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConvertToProviderExpression
+  nameWithType.vb: ValueConverter(Of Name, String).ConvertToProviderExpression
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConvertToProviderExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProviderExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConvertFromProviderExpression
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProviderExpression
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.convertfromproviderexpression
+  name: ConvertFromProviderExpression
+  nameWithType: ValueConverter<Name, string>.ConvertFromProviderExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConvertFromProviderExpression
+  nameWithType.vb: ValueConverter(Of Name, String).ConvertFromProviderExpression
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConvertFromProviderExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ModelClrType
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ModelClrType
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ModelClrType
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.modelclrtype
+  name: ModelClrType
+  nameWithType: ValueConverter<Name, string>.ModelClrType
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ModelClrType
+  nameWithType.vb: ValueConverter(Of Name, String).ModelClrType
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ModelClrType
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ProviderClrType
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ProviderClrType
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ProviderClrType
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.providerclrtype
+  name: ProviderClrType
+  nameWithType: ValueConverter<Name, string>.ProviderClrType
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ProviderClrType
+  nameWithType.vb: ValueConverter(Of Name, String).ProviderClrType
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ProviderClrType
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConstructorExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}.ConstructorExpression
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter{Project.Domain.SharedKernel.Users.Name,System.String}
+  definition: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConstructorExpression
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.constructorexpression
+  name: ConstructorExpression
+  nameWithType: ValueConverter<Name, string>.ConstructorExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<Project.Domain.SharedKernel.Users.Name, string>.ConstructorExpression
+  nameWithType.vb: ValueConverter(Of Name, String).ConstructorExpression
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of Project.Domain.SharedKernel.Users.Name, String).ConstructorExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ComposeWith(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter)
+  commentId: M:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ComposeWith(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter)
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.composewith
+  name: ComposeWith(ValueConverter)
+  nameWithType: ValueConverter.ComposeWith(ValueConverter)
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ComposeWith(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ComposeWith(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter)
+    name: ComposeWith
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.composewith
+  - name: (
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+    name: ValueConverter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter
+  - name: )
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ComposeWith(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter)
+    name: ComposeWith
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.composewith
+  - name: (
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+    name: ValueConverter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProvider
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProvider
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.converttoprovider
+  name: ConvertToProvider
+  nameWithType: ValueConverter.ConvertToProvider
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProvider
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProvider
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProvider
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.convertfromprovider
+  name: ConvertFromProvider
+  nameWithType: ValueConverter.ConvertFromProvider
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProvider
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProviderExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProviderExpression
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.converttoproviderexpression
+  name: ConvertToProviderExpression
+  nameWithType: ValueConverter.ConvertToProviderExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertToProviderExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProviderExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProviderExpression
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.convertfromproviderexpression
+  name: ConvertFromProviderExpression
+  nameWithType: ValueConverter.ConvertFromProviderExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertFromProviderExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ModelClrType
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ModelClrType
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.modelclrtype
+  name: ModelClrType
+  nameWithType: ValueConverter.ModelClrType
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ModelClrType
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ProviderClrType
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ProviderClrType
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.providerclrtype
+  name: ProviderClrType
+  nameWithType: ValueConverter.ProviderClrType
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ProviderClrType
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.MappingHints
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.MappingHints
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.mappinghints
+  name: MappingHints
+  nameWithType: ValueConverter.MappingHints
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.MappingHints
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertsNulls
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertsNulls
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.convertsnulls
+  name: ConvertsNulls
+  nameWithType: ValueConverter.ConvertsNulls
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConvertsNulls
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConstructorExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConstructorExpression
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter.constructorexpression
+  name: ConstructorExpression
+  nameWithType: ValueConverter.ConstructorExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter.ConstructorExpression
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  commentId: N:Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  nameWithType: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+    name: ValueConversion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+    name: ValueConversion
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+  commentId: T:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2
+  name: ValueConverter<TModel, TProvider>
+  nameWithType: ValueConverter<TModel, TProvider>
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>
+  nameWithType.vb: ValueConverter(Of TModel, TProvider)
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider)
+  name.vb: ValueConverter(Of TModel, TProvider)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+    name: ValueConverter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2
+  - name: <
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: TProvider
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2
+    name: ValueConverter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TModel
+  - name: ','
+  - name: " "
+  - name: TProvider
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProvider
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProvider
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.converttoprovider
+  name: ConvertToProvider
+  nameWithType: ValueConverter<TModel, TProvider>.ConvertToProvider
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConvertToProvider
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConvertToProvider
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConvertToProvider
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProvider
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProvider
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.convertfromprovider
+  name: ConvertFromProvider
+  nameWithType: ValueConverter<TModel, TProvider>.ConvertFromProvider
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConvertFromProvider
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConvertFromProvider
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConvertFromProvider
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProviderTyped
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProviderTyped
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.converttoprovidertyped
+  name: ConvertToProviderTyped
+  nameWithType: ValueConverter<TModel, TProvider>.ConvertToProviderTyped
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConvertToProviderTyped
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConvertToProviderTyped
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConvertToProviderTyped
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProviderTyped
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProviderTyped
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.convertfromprovidertyped
+  name: ConvertFromProviderTyped
+  nameWithType: ValueConverter<TModel, TProvider>.ConvertFromProviderTyped
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConvertFromProviderTyped
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConvertFromProviderTyped
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConvertFromProviderTyped
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProviderExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertToProviderExpression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.converttoproviderexpression
+  name: ConvertToProviderExpression
+  nameWithType: ValueConverter<TModel, TProvider>.ConvertToProviderExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConvertToProviderExpression
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConvertToProviderExpression
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConvertToProviderExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProviderExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConvertFromProviderExpression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.convertfromproviderexpression
+  name: ConvertFromProviderExpression
+  nameWithType: ValueConverter<TModel, TProvider>.ConvertFromProviderExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConvertFromProviderExpression
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConvertFromProviderExpression
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConvertFromProviderExpression
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ModelClrType
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ModelClrType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.modelclrtype
+  name: ModelClrType
+  nameWithType: ValueConverter<TModel, TProvider>.ModelClrType
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ModelClrType
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ModelClrType
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ModelClrType
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ProviderClrType
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ProviderClrType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.providerclrtype
+  name: ProviderClrType
+  nameWithType: ValueConverter<TModel, TProvider>.ProviderClrType
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ProviderClrType
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ProviderClrType
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ProviderClrType
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConstructorExpression
+  commentId: P:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2.ConstructorExpression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.valueconverter-2.constructorexpression
+  name: ConstructorExpression
+  nameWithType: ValueConverter<TModel, TProvider>.ConstructorExpression
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<TModel, TProvider>.ConstructorExpression
+  nameWithType.vb: ValueConverter(Of TModel, TProvider).ConstructorExpression
+  fullName.vb: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter(Of TModel, TProvider).ConstructorExpression
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor*
+  commentId: Overload:Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor
+  href: Project.Infrastructure.SeedWork.Resilience.NameConverter.html#Project_Infrastructure_SeedWork_Resilience_NameConverter__ctor_Microsoft_EntityFrameworkCore_Storage_ValueConversion_ConverterMappingHints_
+  name: NameConverter
+  nameWithType: NameConverter.NameConverter
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter.NameConverter
+  nameWithType.vb: NameConverter.New
+  fullName.vb: Project.Infrastructure.SeedWork.Resilience.NameConverter.New
+  name.vb: New
+- uid: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints
+  commentId: T:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints
+  parent: Microsoft.EntityFrameworkCore.Storage.ValueConversion
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.storage.valueconversion.convertermappinghints
+  name: ConverterMappingHints
+  nameWithType: ConverterMappingHints
+  fullName: Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints

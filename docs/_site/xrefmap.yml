@@ -133,6 +133,63 @@ references:
   fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New
   nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails
   nameWithType.vb: InvalidCommandProblemDetails.New
+- uid: Project.Api.Controllers.Users
+  name: Project.Api.Controllers.Users
+  href: api/Project.Api.Controllers.Users.html
+  commentId: N:Project.Api.Controllers.Users
+  fullName: Project.Api.Controllers.Users
+  nameWithType: Project.Api.Controllers.Users
+- uid: Project.Api.Controllers.Users.AccountController
+  name: AccountController
+  href: api/Project.Api.Controllers.Users.AccountController.html
+  commentId: T:Project.Api.Controllers.Users.AccountController
+  fullName: Project.Api.Controllers.Users.AccountController
+  nameWithType: AccountController
+- uid: Project.Api.Controllers.Users.AccountController.#ctor(Project.Infrastructure.Processing.QueriesExecutor,Project.Infrastructure.Processing.CommandsExecutor)
+  name: AccountController(QueriesExecutor, CommandsExecutor)
+  href: api/Project.Api.Controllers.Users.AccountController.html#Project_Api_Controllers_Users_AccountController__ctor_Project_Infrastructure_Processing_QueriesExecutor_Project_Infrastructure_Processing_CommandsExecutor_
+  commentId: M:Project.Api.Controllers.Users.AccountController.#ctor(Project.Infrastructure.Processing.QueriesExecutor,Project.Infrastructure.Processing.CommandsExecutor)
+  name.vb: New(QueriesExecutor, CommandsExecutor)
+  fullName: Project.Api.Controllers.Users.AccountController.AccountController(Project.Infrastructure.Processing.QueriesExecutor, Project.Infrastructure.Processing.CommandsExecutor)
+  fullName.vb: Project.Api.Controllers.Users.AccountController.New(Project.Infrastructure.Processing.QueriesExecutor, Project.Infrastructure.Processing.CommandsExecutor)
+  nameWithType: AccountController.AccountController(QueriesExecutor, CommandsExecutor)
+  nameWithType.vb: AccountController.New(QueriesExecutor, CommandsExecutor)
+- uid: Project.Api.Controllers.Users.AccountController.#ctor*
+  name: AccountController
+  href: api/Project.Api.Controllers.Users.AccountController.html#Project_Api_Controllers_Users_AccountController__ctor_
+  commentId: Overload:Project.Api.Controllers.Users.AccountController.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Api.Controllers.Users.AccountController.AccountController
+  fullName.vb: Project.Api.Controllers.Users.AccountController.New
+  nameWithType: AccountController.AccountController
+  nameWithType.vb: AccountController.New
+- uid: Project.Api.Controllers.Users.AccountController.GetUserInfo
+  name: GetUserInfo()
+  href: api/Project.Api.Controllers.Users.AccountController.html#Project_Api_Controllers_Users_AccountController_GetUserInfo
+  commentId: M:Project.Api.Controllers.Users.AccountController.GetUserInfo
+  fullName: Project.Api.Controllers.Users.AccountController.GetUserInfo()
+  nameWithType: AccountController.GetUserInfo()
+- uid: Project.Api.Controllers.Users.AccountController.GetUserInfo*
+  name: GetUserInfo
+  href: api/Project.Api.Controllers.Users.AccountController.html#Project_Api_Controllers_Users_AccountController_GetUserInfo_
+  commentId: Overload:Project.Api.Controllers.Users.AccountController.GetUserInfo
+  isSpec: "True"
+  fullName: Project.Api.Controllers.Users.AccountController.GetUserInfo
+  nameWithType: AccountController.GetUserInfo
+- uid: Project.Api.Controllers.Users.AccountController.Register(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand)
+  name: Register(RegisterUserCommand)
+  href: api/Project.Api.Controllers.Users.AccountController.html#Project_Api_Controllers_Users_AccountController_Register_Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_
+  commentId: M:Project.Api.Controllers.Users.AccountController.Register(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand)
+  fullName: Project.Api.Controllers.Users.AccountController.Register(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand)
+  nameWithType: AccountController.Register(RegisterUserCommand)
+- uid: Project.Api.Controllers.Users.AccountController.Register*
+  name: Register
+  href: api/Project.Api.Controllers.Users.AccountController.html#Project_Api_Controllers_Users_AccountController_Register_
+  commentId: Overload:Project.Api.Controllers.Users.AccountController.Register
+  isSpec: "True"
+  fullName: Project.Api.Controllers.Users.AccountController.Register
+  nameWithType: AccountController.Register
 - uid: Project.Api.Extensions
   name: Project.Api.Extensions
   href: api/Project.Api.Extensions.html
@@ -842,6 +899,127 @@ references:
   commentId: N:Project.Application.Users
   fullName: Project.Application.Users
   nameWithType: Project.Application.Users
+- uid: Project.Application.Users.Commands.RegisterUser
+  name: Project.Application.Users.Commands.RegisterUser
+  href: api/Project.Application.Users.Commands.RegisterUser.html
+  commentId: N:Project.Application.Users.Commands.RegisterUser
+  fullName: Project.Application.Users.Commands.RegisterUser
+  nameWithType: Project.Application.Users.Commands.RegisterUser
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  name: RegisterUserCommand
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  nameWithType: RegisterUserCommand
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor(System.String,System.String,System.String,System.String)
+  name: RegisterUserCommand(string, string, string, string)
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand__ctor_System_String_System_String_System_String_System_String_
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor(System.String,System.String,System.String,System.String)
+  name.vb: New(String, String, String, String)
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.RegisterUserCommand(string, string, string, string)
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.New(String, String, String, String)
+  nameWithType: RegisterUserCommand.RegisterUserCommand(string, string, string, string)
+  nameWithType.vb: RegisterUserCommand.New(String, String, String, String)
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor*
+  name: RegisterUserCommand
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand__ctor_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.RegisterUserCommand
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.New
+  nameWithType: RegisterUserCommand.RegisterUserCommand
+  nameWithType.vb: RegisterUserCommand.New
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  name: Email
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_Email
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  nameWithType: RegisterUserCommand.Email
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email*
+  name: Email
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_Email_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  isSpec: "True"
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  nameWithType: RegisterUserCommand.Email
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  name: FirstName
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_FirstName
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  nameWithType: RegisterUserCommand.FirstName
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName*
+  name: FirstName
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_FirstName_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  isSpec: "True"
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  nameWithType: RegisterUserCommand.FirstName
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  name: LastName
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_LastName
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  nameWithType: RegisterUserCommand.LastName
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName*
+  name: LastName
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_LastName_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  isSpec: "True"
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  nameWithType: RegisterUserCommand.LastName
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  name: Password
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_Password
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  nameWithType: RegisterUserCommand.Password
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password*
+  name: Password
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_Password_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  isSpec: "True"
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  nameWithType: RegisterUserCommand.Password
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  name: RegisterUserCommandHandler
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  nameWithType: RegisterUserCommandHandler
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  name: RegisterUserCommandHandler(UserManager<User>)
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  name.vb: New(UserManager(Of User))
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
+  nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler(UserManager<User>)
+  nameWithType.vb: RegisterUserCommandHandler.New(UserManager(Of User))
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor*
+  name: RegisterUserCommandHandler
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.New
+  nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler
+  nameWithType.vb: RegisterUserCommandHandler.New
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)
+  name: Handle(RegisterUserCommand, CancellationToken)
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler_Handle_Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_System_Threading_CancellationToken_
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand, System.Threading.CancellationToken)
+  nameWithType: RegisterUserCommandHandler.Handle(RegisterUserCommand, CancellationToken)
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle*
+  name: Handle
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler_Handle_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle
+  isSpec: "True"
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle
+  nameWithType: RegisterUserCommandHandler.Handle
 - uid: Project.Application.Users.IUserRepository
   name: IUserRepository
   href: api/Project.Application.Users.IUserRepository.html
@@ -880,12 +1058,15 @@ references:
   isSpec: "True"
   fullName: Project.Application.Users.IUserRepository.CreateAsync
   nameWithType: IUserRepository.CreateAsync
-- uid: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  name: DeleteAsync(UserId)
-  href: api/Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_Project_Domain_Users_UserId_
-  commentId: M:Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  fullName: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  nameWithType: IUserRepository.DeleteAsync(UserId)
+- uid: Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  name: DeleteAsync(string)
+  href: api/Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_System_String_
+  commentId: M:Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  name.vb: DeleteAsync(String)
+  fullName: Project.Application.Users.IUserRepository.DeleteAsync(string)
+  fullName.vb: Project.Application.Users.IUserRepository.DeleteAsync(String)
+  nameWithType: IUserRepository.DeleteAsync(string)
+  nameWithType.vb: IUserRepository.DeleteAsync(String)
 - uid: Project.Application.Users.IUserRepository.DeleteAsync*
   name: DeleteAsync
   href: api/Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_
@@ -909,12 +1090,15 @@ references:
   isSpec: "True"
   fullName: Project.Application.Users.IUserRepository.GetByEmailAsync
   nameWithType: IUserRepository.GetByEmailAsync
-- uid: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  name: GetByIdAsync(UserId)
-  href: api/Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_Project_Domain_Users_UserId_
-  commentId: M:Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  fullName: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  nameWithType: IUserRepository.GetByIdAsync(UserId)
+- uid: Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  name: GetByIdAsync(string)
+  href: api/Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_System_String_
+  commentId: M:Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  name.vb: GetByIdAsync(String)
+  fullName: Project.Application.Users.IUserRepository.GetByIdAsync(string)
+  fullName.vb: Project.Application.Users.IUserRepository.GetByIdAsync(String)
+  nameWithType: IUserRepository.GetByIdAsync(string)
+  nameWithType.vb: IUserRepository.GetByIdAsync(String)
 - uid: Project.Application.Users.IUserRepository.GetByIdAsync*
   name: GetByIdAsync
   href: api/Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_
@@ -951,6 +1135,158 @@ references:
   isSpec: "True"
   fullName: Project.Application.Users.IUserRepository.UpdateAsync
   nameWithType: IUserRepository.UpdateAsync
+- uid: Project.Application.Users.Mappers
+  name: Project.Application.Users.Mappers
+  href: api/Project.Application.Users.Mappers.html
+  commentId: N:Project.Application.Users.Mappers
+  fullName: Project.Application.Users.Mappers
+  nameWithType: Project.Application.Users.Mappers
+- uid: Project.Application.Users.Mappers.UserMapper
+  name: UserMapper
+  href: api/Project.Application.Users.Mappers.UserMapper.html
+  commentId: T:Project.Application.Users.Mappers.UserMapper
+  fullName: Project.Application.Users.Mappers.UserMapper
+  nameWithType: UserMapper
+- uid: Project.Application.Users.Mappers.UserMapper.ToUserDetailsDTO(Project.Domain.Users.User)
+  name: ToUserDetailsDTO(User)
+  href: api/Project.Application.Users.Mappers.UserMapper.html#Project_Application_Users_Mappers_UserMapper_ToUserDetailsDTO_Project_Domain_Users_User_
+  commentId: M:Project.Application.Users.Mappers.UserMapper.ToUserDetailsDTO(Project.Domain.Users.User)
+  fullName: Project.Application.Users.Mappers.UserMapper.ToUserDetailsDTO(Project.Domain.Users.User)
+  nameWithType: UserMapper.ToUserDetailsDTO(User)
+- uid: Project.Application.Users.Mappers.UserMapper.ToUserDetailsDTO*
+  name: ToUserDetailsDTO
+  href: api/Project.Application.Users.Mappers.UserMapper.html#Project_Application_Users_Mappers_UserMapper_ToUserDetailsDTO_
+  commentId: Overload:Project.Application.Users.Mappers.UserMapper.ToUserDetailsDTO
+  isSpec: "True"
+  fullName: Project.Application.Users.Mappers.UserMapper.ToUserDetailsDTO
+  nameWithType: UserMapper.ToUserDetailsDTO
+- uid: Project.Application.Users.Queries.GetUserDetails
+  name: Project.Application.Users.Queries.GetUserDetails
+  href: api/Project.Application.Users.Queries.GetUserDetails.html
+  commentId: N:Project.Application.Users.Queries.GetUserDetails
+  fullName: Project.Application.Users.Queries.GetUserDetails
+  nameWithType: Project.Application.Users.Queries.GetUserDetails
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+  name: GetUserDetailsQuery
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html
+  commentId: T:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+  nameWithType: GetUserDetailsQuery
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.Security.Claims.ClaimsPrincipal)
+  name: GetUserDetailsQuery(ClaimsPrincipal)
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery__ctor_System_Security_Claims_ClaimsPrincipal_
+  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.Security.Claims.ClaimsPrincipal)
+  name.vb: New(ClaimsPrincipal)
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.GetUserDetailsQuery(System.Security.Claims.ClaimsPrincipal)
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New(System.Security.Claims.ClaimsPrincipal)
+  nameWithType: GetUserDetailsQuery.GetUserDetailsQuery(ClaimsPrincipal)
+  nameWithType.vb: GetUserDetailsQuery.New(ClaimsPrincipal)
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor*
+  name: GetUserDetailsQuery
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery__ctor_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.GetUserDetailsQuery
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New
+  nameWithType: GetUserDetailsQuery.GetUserDetailsQuery
+  nameWithType.vb: GetUserDetailsQuery.New
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  name: Principal
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal
+  commentId: P:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  nameWithType: GetUserDetailsQuery.Principal
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal*
+  name: Principal
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  isSpec: "True"
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  nameWithType: GetUserDetailsQuery.Principal
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+  name: GetUserDetailsQueryHandler
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html
+  commentId: T:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+  nameWithType: GetUserDetailsQueryHandler
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  name: GetUserDetailsQueryHandler(UserManager<User>)
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
+  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  name.vb: New(UserManager(Of User))
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
+  nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(UserManager<User>)
+  nameWithType.vb: GetUserDetailsQueryHandler.New(UserManager(Of User))
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor*
+  name: GetUserDetailsQueryHandler
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New
+  nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler
+  nameWithType.vb: GetUserDetailsQueryHandler.New
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)
+  name: Handle(GetUserDetailsQuery, CancellationToken)
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler_Handle_Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_System_Threading_CancellationToken_
+  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery, System.Threading.CancellationToken)
+  nameWithType: GetUserDetailsQueryHandler.Handle(GetUserDetailsQuery, CancellationToken)
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle*
+  name: Handle
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler_Handle_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle
+  isSpec: "True"
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle
+  nameWithType: GetUserDetailsQueryHandler.Handle
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+  name: UserDetailsDTO
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html
+  commentId: T:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+  nameWithType: UserDetailsDTO
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.Email
+  name: Email
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html#Project_Application_Users_Queries_GetUserDetails_UserDetailsDTO_Email
+  commentId: P:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.Email
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.Email
+  nameWithType: UserDetailsDTO.Email
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.Email*
+  name: Email
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html#Project_Application_Users_Queries_GetUserDetails_UserDetailsDTO_Email_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.Email
+  isSpec: "True"
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.Email
+  nameWithType: UserDetailsDTO.Email
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.FirstName
+  name: FirstName
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html#Project_Application_Users_Queries_GetUserDetails_UserDetailsDTO_FirstName
+  commentId: P:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.FirstName
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.FirstName
+  nameWithType: UserDetailsDTO.FirstName
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.FirstName*
+  name: FirstName
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html#Project_Application_Users_Queries_GetUserDetails_UserDetailsDTO_FirstName_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.FirstName
+  isSpec: "True"
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.FirstName
+  nameWithType: UserDetailsDTO.FirstName
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.LastName
+  name: LastName
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html#Project_Application_Users_Queries_GetUserDetails_UserDetailsDTO_LastName
+  commentId: P:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.LastName
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.LastName
+  nameWithType: UserDetailsDTO.LastName
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.LastName*
+  name: LastName
+  href: api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html#Project_Application_Users_Queries_GetUserDetails_UserDetailsDTO_LastName_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.LastName
+  isSpec: "True"
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.LastName
+  nameWithType: UserDetailsDTO.LastName
 - uid: Project.Domain.SeedWork
   name: Project.Domain.SeedWork
   href: api/Project.Domain.SeedWork.html
@@ -2032,6 +2368,34 @@ references:
   commentId: T:Project.Domain.Users.User
   fullName: Project.Domain.Users.User
   nameWithType: User
+- uid: Project.Domain.Users.User.#ctor
+  name: User()
+  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User__ctor
+  commentId: M:Project.Domain.Users.User.#ctor
+  name.vb: New()
+  fullName: Project.Domain.Users.User.User()
+  fullName.vb: Project.Domain.Users.User.New()
+  nameWithType: User.User()
+  nameWithType.vb: User.New()
+- uid: Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  name: User(string, string, Name, Name)
+  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User__ctor_System_String_System_String_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_
+  commentId: M:Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  name.vb: New(String, String, Name, Name)
+  fullName: Project.Domain.Users.User.User(string, string, Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
+  fullName.vb: Project.Domain.Users.User.New(String, String, Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
+  nameWithType: User.User(string, string, Name, Name)
+  nameWithType.vb: User.New(String, String, Name, Name)
+- uid: Project.Domain.Users.User.#ctor*
+  name: User
+  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User__ctor_
+  commentId: Overload:Project.Domain.Users.User.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Domain.Users.User.User
+  fullName.vb: Project.Domain.Users.User.New
+  nameWithType: User.User
+  nameWithType.vb: User.New
 - uid: Project.Domain.Users.User.Create(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.UserName,Project.Domain.SharedKernel.Users.Email)
   name: Create(Name, Name, UserName, Email)
   href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Create_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_UserName_Project_Domain_SharedKernel_Users_Email_
@@ -2045,19 +2409,6 @@ references:
   isSpec: "True"
   fullName: Project.Domain.Users.User.Create
   nameWithType: User.Create
-- uid: Project.Domain.Users.User.Email
-  name: Email
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Email
-  commentId: P:Project.Domain.Users.User.Email
-  fullName: Project.Domain.Users.User.Email
-  nameWithType: User.Email
-- uid: Project.Domain.Users.User.Email*
-  name: Email
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Email_
-  commentId: Overload:Project.Domain.Users.User.Email
-  isSpec: "True"
-  fullName: Project.Domain.Users.User.Email
-  nameWithType: User.Email
 - uid: Project.Domain.Users.User.FirstName
   name: FirstName
   href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_FirstName
@@ -2071,19 +2422,6 @@ references:
   isSpec: "True"
   fullName: Project.Domain.Users.User.FirstName
   nameWithType: User.FirstName
-- uid: Project.Domain.Users.User.Id
-  name: Id
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Id
-  commentId: P:Project.Domain.Users.User.Id
-  fullName: Project.Domain.Users.User.Id
-  nameWithType: User.Id
-- uid: Project.Domain.Users.User.Id*
-  name: Id
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Id_
-  commentId: Overload:Project.Domain.Users.User.Id
-  isSpec: "True"
-  fullName: Project.Domain.Users.User.Id
-  nameWithType: User.Id
 - uid: Project.Domain.Users.User.LastName
   name: LastName
   href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_LastName
@@ -2097,19 +2435,6 @@ references:
   isSpec: "True"
   fullName: Project.Domain.Users.User.LastName
   nameWithType: User.LastName
-- uid: Project.Domain.Users.User.UserName
-  name: UserName
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_UserName
-  commentId: P:Project.Domain.Users.User.UserName
-  fullName: Project.Domain.Users.User.UserName
-  nameWithType: User.UserName
-- uid: Project.Domain.Users.User.UserName*
-  name: UserName
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_UserName_
-  commentId: Overload:Project.Domain.Users.User.UserName
-  isSpec: "True"
-  fullName: Project.Domain.Users.User.UserName
-  nameWithType: User.UserName
 - uid: Project.Domain.Users.UserId
   name: UserId
   href: api/Project.Domain.Users.UserId.html
@@ -2289,15 +2614,15 @@ references:
   commentId: T:Project.Infrastructure.Domain.Users.UserRepository
   fullName: Project.Infrastructure.Domain.Users.UserRepository
   nameWithType: UserRepository
-- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter},Project.Infrastructure.Database.ApplicationDbContext)
-  name: UserRepository(UserManager<IdentityUserAdapter>, ApplicationDbContext)
-  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Infrastructure_Users_IdentityUserAdapter__Project_Infrastructure_Database_ApplicationDbContext_
-  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter},Project.Infrastructure.Database.ApplicationDbContext)
-  name.vb: New(UserManager(Of IdentityUserAdapter), ApplicationDbContext)
-  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Infrastructure.Users.IdentityUserAdapter>, Project.Infrastructure.Database.ApplicationDbContext)
-  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Infrastructure.Users.IdentityUserAdapter), Project.Infrastructure.Database.ApplicationDbContext)
-  nameWithType: UserRepository.UserRepository(UserManager<IdentityUserAdapter>, ApplicationDbContext)
-  nameWithType.vb: UserRepository.New(UserManager(Of IdentityUserAdapter), ApplicationDbContext)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
+  name: UserRepository(UserManager<User>, ApplicationDbContext)
+  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Project_Infrastructure_Database_ApplicationDbContext_
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
+  name.vb: New(UserManager(Of User), ApplicationDbContext)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Project.Infrastructure.Database.ApplicationDbContext)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Project.Infrastructure.Database.ApplicationDbContext)
+  nameWithType: UserRepository.UserRepository(UserManager<User>, ApplicationDbContext)
+  nameWithType.vb: UserRepository.New(UserManager(Of User), ApplicationDbContext)
 - uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor*
   name: UserRepository
   href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_
@@ -2340,12 +2665,15 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync
   nameWithType: UserRepository.CreateAsync
-- uid: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  name: DeleteAsync(UserId)
-  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_DeleteAsync_Project_Domain_Users_UserId_
-  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  fullName: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
-  nameWithType: UserRepository.DeleteAsync(UserId)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(System.String)
+  name: DeleteAsync(string)
+  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_DeleteAsync_System_String_
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(System.String)
+  name.vb: DeleteAsync(String)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(string)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(String)
+  nameWithType: UserRepository.DeleteAsync(string)
+  nameWithType.vb: UserRepository.DeleteAsync(String)
 - uid: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync*
   name: DeleteAsync
   href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_DeleteAsync_
@@ -2369,12 +2697,15 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync
   nameWithType: UserRepository.GetByEmailAsync
-- uid: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  name: GetByIdAsync(UserId)
-  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_GetByIdAsync_Project_Domain_Users_UserId_
-  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
-  nameWithType: UserRepository.GetByIdAsync(UserId)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(System.String)
+  name: GetByIdAsync(string)
+  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_GetByIdAsync_System_String_
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(System.String)
+  name.vb: GetByIdAsync(String)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(string)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(String)
+  nameWithType: UserRepository.GetByIdAsync(string)
+  nameWithType.vb: UserRepository.GetByIdAsync(String)
 - uid: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync*
   name: GetByIdAsync
   href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_GetByIdAsync_
@@ -2730,6 +3061,37 @@ references:
   commentId: N:Project.Infrastructure.SeedWork
   fullName: Project.Infrastructure.SeedWork
   nameWithType: Project.Infrastructure.SeedWork
+- uid: Project.Infrastructure.SeedWork.Resilience
+  name: Project.Infrastructure.SeedWork.Resilience
+  href: api/Project.Infrastructure.SeedWork.Resilience.html
+  commentId: N:Project.Infrastructure.SeedWork.Resilience
+  fullName: Project.Infrastructure.SeedWork.Resilience
+  nameWithType: Project.Infrastructure.SeedWork.Resilience
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter
+  name: NameConverter
+  href: api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html
+  commentId: T:Project.Infrastructure.SeedWork.Resilience.NameConverter
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter
+  nameWithType: NameConverter
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  name: NameConverter(ConverterMappingHints?)
+  href: api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html#Project_Infrastructure_SeedWork_Resilience_NameConverter__ctor_Microsoft_EntityFrameworkCore_Storage_ValueConversion_ConverterMappingHints_
+  commentId: M:Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  name.vb: New(ConverterMappingHints)
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter.NameConverter(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints?)
+  fullName.vb: Project.Infrastructure.SeedWork.Resilience.NameConverter.New(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
+  nameWithType: NameConverter.NameConverter(ConverterMappingHints?)
+  nameWithType.vb: NameConverter.New(ConverterMappingHints)
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor*
+  name: NameConverter
+  href: api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html#Project_Infrastructure_SeedWork_Resilience_NameConverter__ctor_
+  commentId: Overload:Project.Infrastructure.SeedWork.Resilience.NameConverter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter.NameConverter
+  fullName.vb: Project.Infrastructure.SeedWork.Resilience.NameConverter.New
+  nameWithType: NameConverter.NameConverter
+  nameWithType.vb: NameConverter.New
 - uid: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
   name: StronglyTypedIdValueConverterSelector
   href: api/Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.html

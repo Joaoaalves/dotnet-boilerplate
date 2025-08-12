@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Project.Infrastructure.Users;
+using Project.Domain.Users;
 
 namespace Project.Infrastructure.Database
 {
@@ -9,7 +9,7 @@ namespace Project.Infrastructure.Database
     /// integrating with ASP.NET Identity and custom domain configurations.
     /// </summary>
     public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : IdentityDbContext<IdentityUserAdapter>(options)
+        : IdentityDbContext<User>(options)
     {
         /// <summary>
         /// Configures the entity models and applies all configurations found in the assembly.

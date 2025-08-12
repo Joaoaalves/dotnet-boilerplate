@@ -22,6 +22,7 @@ items:
 references:
 - uid: Project.Infrastructure.Processing.CommandsExecutor
   commentId: T:Project.Infrastructure.Processing.CommandsExecutor
+  parent: Project.Infrastructure.Processing
   href: Project.Infrastructure.Processing.CommandsExecutor.html
   name: CommandsExecutor
   nameWithType: CommandsExecutor
@@ -53,6 +54,7 @@ references:
   fullName: Project.Infrastructure.Processing.MediatorModule
 - uid: Project.Infrastructure.Processing.QueriesExecutor
   commentId: T:Project.Infrastructure.Processing.QueriesExecutor
+  parent: Project.Infrastructure.Processing
   href: Project.Infrastructure.Processing.QueriesExecutor.html
   name: QueriesExecutor
   nameWithType: QueriesExecutor

@@ -1,8 +1,8 @@
 using Project.Api.Extensions;
 using Project.API.Configurations;
+using Project.Domain.Users;
 using Project.Infrastructure.Database;
 using Project.Infrastructure.Processing;
-using Project.Infrastructure.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +42,6 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-var identityApi = app.MapIdentityApi<IdentityUserAdapter>();
+var identityApi = app.MapIdentityApi<User>();
 
 app.Run();

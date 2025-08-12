@@ -207,8 +207,8 @@ Interface IUserRepository  <a class="header-action link-secondary" title="View s
 
   <a id="Project_Application_Users_IUserRepository_DeleteAsync_" data-uid="Project.Application.Users.IUserRepository.DeleteAsync*"></a>
 
-  <h3 id="Project_Application_Users_IUserRepository_DeleteAsync_Project_Domain_Users_UserId_" data-uid="Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)">
-  DeleteAsync(UserId)
+  <h3 id="Project_Application_Users_IUserRepository_DeleteAsync_System_String_" data-uid="Project.Application.Users.IUserRepository.DeleteAsync(System.String)">
+  DeleteAsync(string)
   <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/IUserRepository.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -217,12 +217,12 @@ Interface IUserRepository  <a class="header-action link-secondary" title="View s
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;IdentityResult&gt; DeleteAsync(UserId userId)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;IdentityResult&gt; DeleteAsync(string userId)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>userId</code> <a class="xref" href="Project.Domain.Users.UserId.html">UserId</a></dt>
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The identifier of the user to delete.</p>
 </dd>
   </dl>
@@ -285,8 +285,8 @@ Interface IUserRepository  <a class="header-action link-secondary" title="View s
 
   <a id="Project_Application_Users_IUserRepository_GetByIdAsync_" data-uid="Project.Application.Users.IUserRepository.GetByIdAsync*"></a>
 
-  <h3 id="Project_Application_Users_IUserRepository_GetByIdAsync_Project_Domain_Users_UserId_" data-uid="Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)">
-  GetByIdAsync(UserId)
+  <h3 id="Project_Application_Users_IUserRepository_GetByIdAsync_System_String_" data-uid="Project.Application.Users.IUserRepository.GetByIdAsync(System.String)">
+  GetByIdAsync(string)
   <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/IUserRepository.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -295,12 +295,12 @@ Interface IUserRepository  <a class="header-action link-secondary" title="View s
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;User?&gt; GetByIdAsync(UserId userId)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;User?&gt; GetByIdAsync(string userId)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>userId</code> <a class="xref" href="Project.Domain.Users.UserId.html">UserId</a></dt>
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The user's unique identifier.</p>
 </dd>
   </dl>

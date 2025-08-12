@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Users.Commands.RegisterUser
+  commentId: N:Project.Application.Users.Commands.RegisterUser
+  id: Project.Application.Users.Commands.RegisterUser
+  children:
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Users.Commands.RegisterUser
+  nameWithType: Project.Application.Users.Commands.RegisterUser
+  fullName: Project.Application.Users.Commands.RegisterUser
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  parent: Project.Application.Users.Commands.RegisterUser
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html
+  name: RegisterUserCommand
+  nameWithType: RegisterUserCommand
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html
+  name: RegisterUserCommandHandler
+  nameWithType: RegisterUserCommandHandler
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+- uid: Project.Application.Users.Commands.RegisterUser
+  commentId: N:Project.Application.Users.Commands.RegisterUser
+  href: Project.html
+  name: Project.Application.Users.Commands.RegisterUser
+  nameWithType: Project.Application.Users.Commands.RegisterUser
+  fullName: Project.Application.Users.Commands.RegisterUser
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  - name: .
+  - uid: Project.Application.Users.Commands
+    name: Commands
+    href: Project.Application.Users.Commands.html
+  - name: .
+  - uid: Project.Application.Users.Commands.RegisterUser
+    name: RegisterUser
+    href: Project.Application.Users.Commands.RegisterUser.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  - name: .
+  - uid: Project.Application.Users.Commands
+    name: Commands
+    href: Project.Application.Users.Commands.html
+  - name: .
+  - uid: Project.Application.Users.Commands.RegisterUser
+    name: RegisterUser
+    href: Project.Application.Users.Commands.RegisterUser.html

@@ -1,0 +1,938 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  id: RegisterUserCommand
+  parent: Project.Application.Users.Commands.RegisterUser
+  children:
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor(System.String,System.String,System.String,System.String)
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  langs:
+  - csharp
+  - vb
+  name: RegisterUserCommand
+  nameWithType: RegisterUserCommand
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  type: Class
+  source:
+    remote:
+      path: src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RegisterUserCommand
+    path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+    startLine: 5
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Users.Commands.RegisterUser
+  syntax:
+    content: 'public class RegisterUserCommand : BaseCommand<(string userId, IEnumerable<string> Errors)>, ICommand<(string userId, IEnumerable<string> Errors)>, IRequest<(string userId, IEnumerable<string> Errors)>'
+    content.vb: Public Class RegisterUserCommand Inherits BaseCommand(Of (userId As String, Errors As IEnumerable(Of String))) Implements ICommand(Of (userId As String, Errors As IEnumerable(Of String))), IRequest(Of (userId As String, Errors As IEnumerable(Of String)))
+  inheritance:
+  - System.Object
+  - Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  implements:
+  - Project.Application.Configuration.Commands.ICommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  - Project.Domain.SeedWork.IRequest{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  inheritedMembers:
+  - Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}.Id
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor(System.String,System.String,System.String,System.String)
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  langs:
+  - csharp
+  - vb
+  name: RegisterUserCommand(string, string, string, string)
+  nameWithType: RegisterUserCommand.RegisterUserCommand(string, string, string, string)
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.RegisterUserCommand(string, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+    startLine: 5
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Users.Commands.RegisterUser
+  syntax:
+    content: public RegisterUserCommand(string firstName, string lastName, string email, string password)
+    parameters:
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    content.vb: Public Sub New(firstName As String, lastName As String, email As String, password As String)
+  overload: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor*
+  nameWithType.vb: RegisterUserCommand.New(String, String, String, String)
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.New(String, String, String, String)
+  name.vb: New(String, String, String, String)
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  id: FirstName
+  parent: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  langs:
+  - csharp
+  - vb
+  name: FirstName
+  nameWithType: RegisterUserCommand.FirstName
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: FirstName
+    path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+    startLine: 12
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Users.Commands.RegisterUser
+  syntax:
+    content: public string FirstName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FirstName As String
+  overload: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName*
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  id: LastName
+  parent: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  langs:
+  - csharp
+  - vb
+  name: LastName
+  nameWithType: RegisterUserCommand.LastName
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LastName
+    path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+    startLine: 13
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Users.Commands.RegisterUser
+  syntax:
+    content: public string LastName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LastName As String
+  overload: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName*
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  id: Email
+  parent: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: RegisterUserCommand.Email
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Email
+    path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+    startLine: 14
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Users.Commands.RegisterUser
+  syntax:
+    content: public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Email As String
+  overload: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email*
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  commentId: P:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  id: Password
+  parent: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: RegisterUserCommand.Password
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Password
+    path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
+    startLine: 15
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Users.Commands.RegisterUser
+  syntax:
+    content: public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Password As String
+  overload: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password*
+references:
+- uid: Project.Application.Users.Commands.RegisterUser
+  commentId: N:Project.Application.Users.Commands.RegisterUser
+  href: Project.html
+  name: Project.Application.Users.Commands.RegisterUser
+  nameWithType: Project.Application.Users.Commands.RegisterUser
+  fullName: Project.Application.Users.Commands.RegisterUser
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  - name: .
+  - uid: Project.Application.Users.Commands
+    name: Commands
+    href: Project.Application.Users.Commands.html
+  - name: .
+  - uid: Project.Application.Users.Commands.RegisterUser
+    name: RegisterUser
+    href: Project.Application.Users.Commands.RegisterUser.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  - name: .
+  - uid: Project.Application.Users.Commands
+    name: Commands
+    href: Project.Application.Users.Commands.html
+  - name: .
+  - uid: Project.Application.Users.Commands.RegisterUser
+    name: RegisterUser
+    href: Project.Application.Users.Commands.RegisterUser.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  commentId: T:Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  parent: Project.Application.Configuration.Commands
+  definition: Project.Application.Configuration.Commands.BaseCommand`1
+  href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  name: BaseCommand<(string userId, IEnumerable<string> Errors)>
+  nameWithType: BaseCommand<(string userId, IEnumerable<string> Errors)>
+  fullName: Project.Application.Configuration.Commands.BaseCommand<(string userId, System.Collections.Generic.IEnumerable<string> Errors)>
+  nameWithType.vb: BaseCommand(Of (userId As String, Errors As IEnumerable(Of String)))
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of (userId As String, Errors As System.Collections.Generic.IEnumerable(Of String)))
+  name.vb: BaseCommand(Of (userId As String, Errors As IEnumerable(Of String)))
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand
+    href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.userId
+    name: userId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.userid
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.Errors
+    name: Errors
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.errors
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand
+    href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.userId
+    name: userId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.userid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.Errors
+    name: Errors
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.errors
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: Project.Application.Configuration.Commands.ICommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  commentId: T:Project.Application.Configuration.Commands.ICommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  parent: Project.Application.Configuration.Commands
+  definition: Project.Application.Configuration.Commands.ICommand`1
+  href: Project.Application.Configuration.Commands.ICommand-1.html
+  name: ICommand<(string userId, IEnumerable<string> Errors)>
+  nameWithType: ICommand<(string userId, IEnumerable<string> Errors)>
+  fullName: Project.Application.Configuration.Commands.ICommand<(string userId, System.Collections.Generic.IEnumerable<string> Errors)>
+  nameWithType.vb: ICommand(Of (userId As String, Errors As IEnumerable(Of String)))
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of (userId As String, Errors As System.Collections.Generic.IEnumerable(Of String)))
+  name.vb: ICommand(Of (userId As String, Errors As IEnumerable(Of String)))
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand
+    href: Project.Application.Configuration.Commands.ICommand-1.html
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.userId
+    name: userId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.userid
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.Errors
+    name: Errors
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.errors
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand
+    href: Project.Application.Configuration.Commands.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.userId
+    name: userId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.userid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.Errors
+    name: Errors
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.errors
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: Project.Domain.SeedWork.IRequest{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  commentId: T:Project.Domain.SeedWork.IRequest{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  parent: Project.Domain.SeedWork
+  definition: Project.Domain.SeedWork.IRequest`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: IRequest<(string userId, IEnumerable<string> Errors)>
+  nameWithType: IRequest<(string userId, IEnumerable<string> Errors)>
+  fullName: Project.Domain.SeedWork.IRequest<(string userId, System.Collections.Generic.IEnumerable<string> Errors)>
+  nameWithType.vb: IRequest(Of (userId As String, Errors As IEnumerable(Of String)))
+  fullName.vb: Project.Domain.SeedWork.IRequest(Of (userId As String, Errors As System.Collections.Generic.IEnumerable(Of String)))
+  name.vb: IRequest(Of (userId As String, Errors As IEnumerable(Of String)))
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.userId
+    name: userId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.userid
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.Errors
+    name: Errors
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.errors
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.userId
+    name: userId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.userid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}.Errors
+    name: Errors
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.collections.generic.ienumerable-system.string--.errors
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}.Id
+  commentId: P:Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}.Id
+  parent: Project.Application.Configuration.Commands.BaseCommand{System.ValueTuple{System.String,System.Collections.Generic.IEnumerable{System.String}}}
+  definition: Project.Application.Configuration.Commands.BaseCommand`1.Id
+  href: Project.Application.Configuration.Commands.BaseCommand-1.html#Project_Application_Configuration_Commands_BaseCommand_1_Id
+  name: Id
+  nameWithType: BaseCommand<(string userId, IEnumerable<string> Errors)>.Id
+  fullName: Project.Application.Configuration.Commands.BaseCommand<(string userId, System.Collections.Generic.IEnumerable<string> Errors)>.Id
+  nameWithType.vb: BaseCommand(Of (userId As String, Errors As IEnumerable(Of String))).Id
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of (userId As String, Errors As System.Collections.Generic.IEnumerable(Of String))).Id
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Application.Configuration.Commands.BaseCommand`1
+  commentId: T:Project.Application.Configuration.Commands.BaseCommand`1
+  href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  name: BaseCommand<TResult>
+  nameWithType: BaseCommand<TResult>
+  fullName: Project.Application.Configuration.Commands.BaseCommand<TResult>
+  nameWithType.vb: BaseCommand(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of TResult)
+  name.vb: BaseCommand(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand
+    href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand
+    href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  href: Project.html
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+- uid: Project.Application.Configuration.Commands.ICommand`1
+  commentId: T:Project.Application.Configuration.Commands.ICommand`1
+  href: Project.Application.Configuration.Commands.ICommand-1.html
+  name: ICommand<TResult>
+  nameWithType: ICommand<TResult>
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>
+  nameWithType.vb: ICommand(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult)
+  name.vb: ICommand(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand
+    href: Project.Application.Configuration.Commands.ICommand-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand
+    href: Project.Application.Configuration.Commands.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Domain.SeedWork.IRequest`1
+  commentId: T:Project.Domain.SeedWork.IRequest`1
+  href: Project.Domain.SeedWork.IRequest-1.html
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: Project.Domain.SeedWork.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Application.Configuration.Commands.BaseCommand`1.Id
+  commentId: P:Project.Application.Configuration.Commands.BaseCommand`1.Id
+  href: Project.Application.Configuration.Commands.BaseCommand-1.html#Project_Application_Configuration_Commands_BaseCommand_1_Id
+  name: Id
+  nameWithType: BaseCommand<TResult>.Id
+  fullName: Project.Application.Configuration.Commands.BaseCommand<TResult>.Id
+  nameWithType.vb: BaseCommand(Of TResult).Id
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of TResult).Id
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor*
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.#ctor
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand__ctor_System_String_System_String_System_String_System_String_
+  name: RegisterUserCommand
+  nameWithType: RegisterUserCommand.RegisterUserCommand
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.RegisterUserCommand
+  nameWithType.vb: RegisterUserCommand.New
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName*
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_FirstName
+  name: FirstName
+  nameWithType: RegisterUserCommand.FirstName
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.FirstName
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName*
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_LastName
+  name: LastName
+  nameWithType: RegisterUserCommand.LastName
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.LastName
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email*
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_Email
+  name: Email
+  nameWithType: RegisterUserCommand.Email
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Email
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password*
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_Password
+  name: Password
+  nameWithType: RegisterUserCommand.Password
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.Password

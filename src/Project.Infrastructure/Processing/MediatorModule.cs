@@ -1,5 +1,7 @@
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
+using Project.Application.Configuration.Commands.Behaviors;
+using Project.Application.Configuration.Queries.Behaviors;
 using Project.Domain.SeedWork;
 
 namespace Project.Infrastructure.Processing
@@ -16,6 +18,11 @@ namespace Project.Infrastructure.Processing
             RegisterHandlers(services, assemblies, typeof(INotificationHandler<>));
             RegisterHandlers(services, assemblies, typeof(IRequestHandler<,>));
 
+            services.AddScoped<CommandsExecutor>();
+            services.AddScoped<QueriesExecutor>();
+
+            services.AddScoped(typeof(ICommandPipelineBehavior<,>), typeof(UserInjectionCommandBehavior<,>));
+            services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UserInjectionQueryBehavior<,>));
             return services;
         }
 

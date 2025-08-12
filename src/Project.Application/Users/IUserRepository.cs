@@ -20,7 +20,7 @@ namespace Project.Application.Users
         /// </summary>
         /// <param name="userId">The user's unique identifier.</param>
         /// <returns>The user if found; otherwise, <c>null</c>.</returns>
-        Task<User?> GetByIdAsync(UserId userId);
+        Task<User?> GetByIdAsync(string userId);
 
         /// <summary>
         /// Retrieves a user by their username.
@@ -57,6 +57,6 @@ namespace Project.Application.Users
         /// </summary>
         /// <param name="userId">The identifier of the user to delete.</param>
         /// <returns>An <see cref="IdentityResult"/> indicating the result of the operation.</returns>
-        Task<IdentityResult> DeleteAsync(UserId userId);
+        Task<IdentityResult> DeleteAsync(string userId);
     }
 }

@@ -1,11 +1,10 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microsoft.Extensions.DependencyInjection;
 using Project.Application.Users;
+using Project.Domain.Users;
 using Project.Infrastructure.Domain.Users;
 using Project.Infrastructure.SeedWork;
-using Project.Infrastructure.Users;
 
 namespace Project.Infrastructure.Database
 {
@@ -28,7 +27,7 @@ namespace Project.Infrastructure.Database
             });
 
             // Add Identity API EndPoints
-            services.AddIdentityApiEndpoints<IdentityUserAdapter>()
+            services.AddIdentityApiEndpoints<User>()
                     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 

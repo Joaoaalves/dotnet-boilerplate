@@ -20,6 +20,13 @@ items:
   - uid: Project.API.SeedWork.InvalidCommandProblemDetails
     name: InvalidCommandProblemDetails
     type: Class
+- uid: Project.Api.Controllers.Users
+  name: Project.Api.Controllers.Users
+  type: Namespace
+  items:
+  - uid: Project.Api.Controllers.Users.AccountController
+    name: AccountController
+    type: Class
 - uid: Project.Api.Extensions
   name: Project.Api.Extensions
   type: Namespace
@@ -122,6 +129,36 @@ items:
   - uid: Project.Application.Users.IUserRepository
     name: IUserRepository
     type: Interface
+- uid: Project.Application.Users.Commands.RegisterUser
+  name: Project.Application.Users.Commands.RegisterUser
+  type: Namespace
+  items:
+  - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
+    name: RegisterUserCommand
+    type: Class
+  - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+    name: RegisterUserCommandHandler
+    type: Class
+- uid: Project.Application.Users.Mappers
+  name: Project.Application.Users.Mappers
+  type: Namespace
+  items:
+  - uid: Project.Application.Users.Mappers.UserMapper
+    name: UserMapper
+    type: Class
+- uid: Project.Application.Users.Queries.GetUserDetails
+  name: Project.Application.Users.Queries.GetUserDetails
+  type: Namespace
+  items:
+  - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+    name: GetUserDetailsQuery
+    type: Class
+  - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+    name: GetUserDetailsQueryHandler
+    type: Class
+  - uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+    name: UserDetailsDTO
+    type: Class
 - uid: Project.Domain.SeedWork
   name: Project.Domain.SeedWork
   type: Namespace
@@ -207,9 +244,6 @@ items:
   - uid: Project.Domain.Users.User
     name: User
     type: Class
-  - uid: Project.Domain.Users.UserId
-    name: UserId
-    type: Class
 - uid: Project.Infrastructure.Database
   name: Project.Infrastructure.Database
   type: Namespace
@@ -273,12 +307,12 @@ items:
   - uid: Project.Infrastructure.SeedWork.TypedIdValueConverter`1
     name: TypedIdValueConverter<TTypedIdValue>
     type: Class
-- uid: Project.Infrastructure.Users
-  name: Project.Infrastructure.Users
+- uid: Project.Infrastructure.SeedWork.Resilience
+  name: Project.Infrastructure.SeedWork.Resilience
   type: Namespace
   items:
-  - uid: Project.Infrastructure.Users.IdentityUserAdapter
-    name: IdentityUserAdapter
+  - uid: Project.Infrastructure.SeedWork.Resilience.NameConverter
+    name: NameConverter
     type: Class
 - uid: Project.Tests
   name: Project.Tests

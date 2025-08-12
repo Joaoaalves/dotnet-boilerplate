@@ -1,41 +1,28 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Project.Infrastructure.Users;
+using Project.Domain.Users;
+using Project.Infrastructure.SeedWork.Resilience;
 
 namespace Project.Infrastructure.Domain.Users
 {
     /// <summary>
     /// Entity configuration for <see cref="IdentityUserAdapter"/>.
     /// </summary>
-    internal sealed class UserTypeConfiguration : IEntityTypeConfiguration<IdentityUserAdapter>
+    internal sealed class UserTypeConfiguration : IEntityTypeConfiguration<User>
     {
-        public void Configure(EntityTypeBuilder<IdentityUserAdapter> builder)
+        public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("AspNetUsers");
 
-            // Key configuration with TypedId conversion
-            builder.HasKey(u => u.Id);
-            builder.Property(u => u.Id)
-                .ValueGeneratedNever();
-
             builder.Property(u => u.FirstName)
                 .IsRequired()
+                .HasConversion(new NameConverter())
                 .HasMaxLength(100);
 
             builder.Property(u => u.LastName)
                 .IsRequired()
+                .HasConversion(new NameConverter())
                 .HasMaxLength(100);
-
-            builder.Property(u => u.Email)
-                .IsRequired()
-                .HasMaxLength(255);
-
-            builder.Property(u => u.UserName)
-                .IsRequired()
-                .HasMaxLength(100);
-
-            builder.HasIndex(u => u.Email).IsUnique();
-            builder.HasIndex(u => u.UserName).IsUnique();
         }
     }
 }

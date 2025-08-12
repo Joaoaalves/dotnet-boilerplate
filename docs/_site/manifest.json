@@ -96,6 +96,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Controllers.Users.AccountController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Controllers.Users.AccountController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Controllers.Users.AccountController",
+      "Summary": "<p sourcefile=\"api/Project.Api.Controllers.Users.AccountController.yml\" sourcestartlinenumber=\"1\">Controller responsible for handling user account-related endpoints such as registration and user info retrieval.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Controllers.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Controllers.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Controllers.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Api.Extensions.SwaggerExtensions.yml",
       "output": {
         ".html": {
@@ -502,6 +530,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Commands.RegisterUser.RegisterUserCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Commands.RegisterUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Commands.RegisterUser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Commands.RegisterUser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Application.Users.IUserRepository.yml",
       "output": {
         ".html": {
@@ -513,6 +583,90 @@
       "IsMRef": true,
       "Title": "Project.Application.Users.IUserRepository",
       "Summary": "<p sourcefile=\"api/Project.Application.Users.IUserRepository.yml\" sourcestartlinenumber=\"1\">Defines the contract for user-related data operations in the domain layer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Mappers.UserMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Mappers.UserMapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Mappers.UserMapper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Mappers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Mappers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Mappers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Queries.GetUserDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Queries.GetUserDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Queries.GetUserDetails",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -890,7 +1044,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Domain.Users.User",
-      "Summary": "<p sourcefile=\"api/Project.Domain.Users.User.yml\" sourcestartlinenumber=\"1\">Represents a domain user.</p>\n"
+      "Summary": "<p sourcefile=\"api/Project.Domain.Users.User.yml\" sourcestartlinenumber=\"1\">Represents the application user, inheriting from IdentityUser to use ASP.NET Core Identity features directly.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1142,6 +1296,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.SeedWork.Resilience.NameConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.SeedWork.Resilience.NameConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.SeedWork.Resilience.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.SeedWork.Resilience.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.SeedWork.Resilience",
       "Summary": null
     },
     {

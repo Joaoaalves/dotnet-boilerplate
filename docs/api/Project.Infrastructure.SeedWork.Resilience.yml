@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.SeedWork.Resilience
+  commentId: N:Project.Infrastructure.SeedWork.Resilience
+  id: Project.Infrastructure.SeedWork.Resilience
+  children:
+  - Project.Infrastructure.SeedWork.Resilience.NameConverter
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.SeedWork.Resilience
+  nameWithType: Project.Infrastructure.SeedWork.Resilience
+  fullName: Project.Infrastructure.SeedWork.Resilience
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.SeedWork.Resilience.NameConverter
+  commentId: T:Project.Infrastructure.SeedWork.Resilience.NameConverter
+  href: Project.Infrastructure.SeedWork.Resilience.NameConverter.html
+  name: NameConverter
+  nameWithType: NameConverter
+  fullName: Project.Infrastructure.SeedWork.Resilience.NameConverter

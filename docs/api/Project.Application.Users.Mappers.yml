@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Users.Mappers
+  commentId: N:Project.Application.Users.Mappers
+  id: Project.Application.Users.Mappers
+  children:
+  - Project.Application.Users.Mappers.UserMapper
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Users.Mappers
+  nameWithType: Project.Application.Users.Mappers
+  fullName: Project.Application.Users.Mappers
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Users.Mappers.UserMapper
+  commentId: T:Project.Application.Users.Mappers.UserMapper
+  href: Project.Application.Users.Mappers.UserMapper.html
+  name: UserMapper
+  nameWithType: UserMapper
+  fullName: Project.Application.Users.Mappers.UserMapper

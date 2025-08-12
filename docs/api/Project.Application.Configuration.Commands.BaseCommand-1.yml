@@ -31,6 +31,8 @@ items:
     content.vb: Public Class BaseCommand(Of TResult) Implements ICommand(Of TResult), IRequest(Of TResult)
   inheritance:
   - System.Object
+  derivedClasses:
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
   implements:
   - Project.Application.Configuration.Commands.ICommand{{TResult}}
   - Project.Domain.SeedWork.IRequest{{TResult}}

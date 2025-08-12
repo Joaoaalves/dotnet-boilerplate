@@ -5,7 +5,6 @@ items:
   id: Project.Domain.Users
   children:
   - Project.Domain.Users.User
-  - Project.Domain.Users.UserId
   langs:
   - csharp
   - vb
@@ -23,13 +22,6 @@ references:
   name: User
   nameWithType: User
   fullName: Project.Domain.Users.User
-- uid: Project.Domain.Users.UserId
-  commentId: T:Project.Domain.Users.UserId
-  parent: Project.Domain.Users
-  href: Project.Domain.Users.UserId.html
-  name: UserId
-  nameWithType: UserId
-  fullName: Project.Domain.Users.UserId
 - uid: Project.Domain.Users
   commentId: N:Project.Domain.Users
   href: Project.html

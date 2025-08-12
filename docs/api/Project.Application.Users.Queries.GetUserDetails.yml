@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Users.Queries.GetUserDetails
+  commentId: N:Project.Application.Users.Queries.GetUserDetails
+  id: Project.Application.Users.Queries.GetUserDetails
+  children:
+  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+  - Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Users.Queries.GetUserDetails
+  nameWithType: Project.Application.Users.Queries.GetUserDetails
+  fullName: Project.Application.Users.Queries.GetUserDetails
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+  commentId: T:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+  parent: Project.Application.Users.Queries.GetUserDetails
+  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html
+  name: GetUserDetailsQuery
+  nameWithType: GetUserDetailsQuery
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+  commentId: T:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html
+  name: GetUserDetailsQueryHandler
+  nameWithType: GetUserDetailsQueryHandler
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
+- uid: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+  commentId: T:Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+  parent: Project.Application.Users.Queries.GetUserDetails
+  href: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO.html
+  name: UserDetailsDTO
+  nameWithType: UserDetailsDTO
+  fullName: Project.Application.Users.Queries.GetUserDetails.UserDetailsDTO
+- uid: Project.Application.Users.Queries.GetUserDetails
+  commentId: N:Project.Application.Users.Queries.GetUserDetails
+  href: Project.html
+  name: Project.Application.Users.Queries.GetUserDetails
+  nameWithType: Project.Application.Users.Queries.GetUserDetails
+  fullName: Project.Application.Users.Queries.GetUserDetails
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  - name: .
+  - uid: Project.Application.Users.Queries
+    name: Queries
+    href: Project.Application.Users.Queries.html
+  - name: .
+  - uid: Project.Application.Users.Queries.GetUserDetails
+    name: GetUserDetails
+    href: Project.Application.Users.Queries.GetUserDetails.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  - name: .
+  - uid: Project.Application.Users.Queries
+    name: Queries
+    href: Project.Application.Users.Queries.html
+  - name: .
+  - uid: Project.Application.Users.Queries.GetUserDetails
+    name: GetUserDetails
+    href: Project.Application.Users.Queries.GetUserDetails.html

@@ -20,7 +20,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: DataAccessModule
     path: ../src/Project.Infrastructure/Database/DataAccessModule.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Database
@@ -56,7 +56,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddDataAccessModule
     path: ../src/Project.Infrastructure/Database/DataAccessModule.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Database
