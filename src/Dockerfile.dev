@@ -3,5 +3,8 @@ WORKDIR /app
 
 COPY . .
 
+RUN dotnet tool install --global dotnet-ef \
+    && echo "export PATH=\"$PATH:/root/.dotnet/tools\"" >> /root/.bashrc
+
 WORKDIR /app
 CMD ["sh", "-c", "dotnet watch run --urls http://0.0.0.0:5000 --project src/Project.Api/Project.Api.csproj"]

@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  commentId: T:Project.Infrastructure.Processing.IDomainEventsDispatcher
+  id: IDomainEventsDispatcher
+  parent: Project.Infrastructure.Processing
+  children:
+  - Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  langs:
+  - csharp
+  - vb
+  name: IDomainEventsDispatcher
+  nameWithType: IDomainEventsDispatcher
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Infrastructure/Processing/IDomainEventsDispatcher.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IDomainEventsDispatcher
+    path: ../src/Project.Infrastructure/Processing/IDomainEventsDispatcher.cs
+    startLine: 2
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Processing
+  syntax:
+    content: public interface IDomainEventsDispatcher
+    content.vb: Public Interface IDomainEventsDispatcher
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  commentId: M:Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  id: DispatchEventsAsync
+  parent: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  langs:
+  - csharp
+  - vb
+  name: DispatchEventsAsync()
+  nameWithType: IDomainEventsDispatcher.DispatchEventsAsync()
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Processing/IDomainEventsDispatcher.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DispatchEventsAsync
+    path: ../src/Project.Infrastructure/Processing/IDomainEventsDispatcher.cs
+    startLine: 4
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Processing
+  syntax:
+    content: Task DispatchEventsAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DispatchEventsAsync() As Task
+  overload: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync*
+references:
+- uid: Project.Infrastructure.Processing
+  commentId: N:Project.Infrastructure.Processing
+  href: Project.html
+  name: Project.Infrastructure.Processing
+  nameWithType: Project.Infrastructure.Processing
+  fullName: Project.Infrastructure.Processing
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync*
+  commentId: Overload:Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  href: Project.Infrastructure.Processing.IDomainEventsDispatcher.html#Project_Infrastructure_Processing_IDomainEventsDispatcher_DispatchEventsAsync
+  name: DispatchEventsAsync
+  nameWithType: IDomainEventsDispatcher.DispatchEventsAsync
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

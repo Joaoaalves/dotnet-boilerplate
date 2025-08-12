@@ -1,37 +1,47 @@
+using Project.Api.Extensions;
+using Project.API.Configurations;
+using Project.Infrastructure.Database;
+using Project.Infrastructure.Processing;
+using Project.Infrastructure.Users;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var isProductionEnv = Environment.GetEnvironmentVariable("PRODUCTION") ?? "false";
+var isDevelopment = isProductionEnv == "false";
+
+var services = builder.Services;
+
+// Cors
+services.AddCorsConfiguration();
+
+services.AddSwaggerConfiguration();
+services.AddEndpointsApiExplorer();
+
+services.AddControllers();
+
+services.AddDataAccessModule();
+services.AddMediatorModule();
+
 var app = builder.Build();
+
+if (isDevelopment)
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Endpoint Healthcheck
 app.MapGet("/health", () => Results.Ok("Healthy"))
    .WithName("HealthCheck")
    .WithTags("Health");
 
-// Endpoint exemplo de previsão do tempo
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild",
-    "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.UseCors("PublicPolicy");
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast(
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
+app.MapControllers();
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+
+var identityApi = app.MapIdentityApi<IdentityUserAdapter>();
 
 app.Run();
-
-public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Commands.ICommand`1
+  commentId: T:Project.Application.Configuration.Commands.ICommand`1
+  id: ICommand`1
+  parent: Project.Application.Configuration.Commands
+  children:
+  - Project.Application.Configuration.Commands.ICommand`1.Id
+  langs:
+  - csharp
+  - vb
+  name: ICommand<TResult>
+  nameWithType: ICommand<TResult>
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ICommand
+    path: ../src/Project.Application/Configuration/Commands/ICommand.cs
+    startLine: 9
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Commands
+  syntax:
+    content: 'public interface ICommand<TResult> : IRequest<TResult>'
+    typeParameters:
+    - id: TResult
+    content.vb: Public Interface ICommand(Of TResult) Inherits IRequest(Of TResult)
+  nameWithType.vb: ICommand(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult)
+  name.vb: ICommand(Of TResult)
+- uid: Project.Application.Configuration.Commands.ICommand`1.Id
+  commentId: P:Project.Application.Configuration.Commands.ICommand`1.Id
+  id: Id
+  parent: Project.Application.Configuration.Commands.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ICommand<TResult>.Id
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>.Id
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Id
+    path: ../src/Project.Application/Configuration/Commands/ICommand.cs
+    startLine: 11
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Commands
+  syntax:
+    content: Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property Id As Guid
+  overload: Project.Application.Configuration.Commands.ICommand`1.Id*
+  nameWithType.vb: ICommand(Of TResult).Id
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult).Id
+references:
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  href: Project.html
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+- uid: Project.Application.Configuration.Commands.ICommand`1.Id*
+  commentId: Overload:Project.Application.Configuration.Commands.ICommand`1.Id
+  href: Project.Application.Configuration.Commands.ICommand-1.html#Project_Application_Configuration_Commands_ICommand_1_Id
+  name: Id
+  nameWithType: ICommand<TResult>.Id
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>.Id
+  nameWithType.vb: ICommand(Of TResult).Id
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult).Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.DomainEvents
+  commentId: N:Project.Application.Configuration.DomainEvents
+  id: Project.Application.Configuration.DomainEvents
+  children:
+  - Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+  - Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  - Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Configuration.DomainEvents
+  nameWithType: Project.Application.Configuration.DomainEvents
+  fullName: Project.Application.Configuration.DomainEvents
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+  commentId: T:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+  href: Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html
+  name: DomainNotificationBase<T>
+  nameWithType: DomainNotificationBase<T>
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>
+  nameWithType.vb: DomainNotificationBase(Of T)
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T)
+  name.vb: DomainNotificationBase(Of T)
+  spec.csharp:
+  - uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+    name: DomainNotificationBase
+    href: Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+    name: DomainNotificationBase
+    href: Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  href: Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html
+  name: IDomainEventNotification<TEventType>
+  nameWithType: IDomainEventNotification<TEventType>
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>
+  nameWithType.vb: IDomainEventNotification(Of TEventType)
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType)
+  name.vb: IDomainEventNotification(Of TEventType)
+  spec.csharp:
+  - uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+    name: IDomainEventNotification
+    href: Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html
+  - name: <
+  - name: TEventType
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+    name: IDomainEventNotification
+    href: Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventType
+  - name: )
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  parent: Project.Application.Configuration.DomainEvents
+  href: Project.Application.Configuration.DomainEvents.IDomainEventNotification.html
+  name: IDomainEventNotification
+  nameWithType: IDomainEventNotification
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+- uid: Project.Application.Configuration.DomainEvents
+  commentId: N:Project.Application.Configuration.DomainEvents
+  href: Project.html
+  name: Project.Application.Configuration.DomainEvents
+  nameWithType: Project.Application.Configuration.DomainEvents
+  fullName: Project.Application.Configuration.DomainEvents
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.DomainEvents
+    name: DomainEvents
+    href: Project.Application.Configuration.DomainEvents.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.DomainEvents
+    name: DomainEvents
+    href: Project.Application.Configuration.DomainEvents.html

@@ -1,6 +1,841 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Project.API.Configurations
+  name: Project.API.Configurations
+  href: api/Project.API.Configurations.html
+  commentId: N:Project.API.Configurations
+  fullName: Project.API.Configurations
+  nameWithType: Project.API.Configurations
+- uid: Project.API.Configurations.CorsConfiguration
+  name: CorsConfiguration
+  href: api/Project.API.Configurations.CorsConfiguration.html
+  commentId: T:Project.API.Configurations.CorsConfiguration
+  fullName: Project.API.Configurations.CorsConfiguration
+  nameWithType: CorsConfiguration
+- uid: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddCorsConfiguration(IServiceCollection)
+  href: api/Project.API.Configurations.CorsConfiguration.html#Project_API_Configurations_CorsConfiguration_AddCorsConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.API.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: CorsConfiguration.AddCorsConfiguration(IServiceCollection)
+- uid: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration*
+  name: AddCorsConfiguration
+  href: api/Project.API.Configurations.CorsConfiguration.html#Project_API_Configurations_CorsConfiguration_AddCorsConfiguration_
+  commentId: Overload:Project.API.Configurations.CorsConfiguration.AddCorsConfiguration
+  isSpec: "True"
+  fullName: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration
+  nameWithType: CorsConfiguration.AddCorsConfiguration
+- uid: Project.API.Configurations.ExecutionContextAccessor
+  name: ExecutionContextAccessor
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html
+  commentId: T:Project.API.Configurations.ExecutionContextAccessor
+  fullName: Project.API.Configurations.ExecutionContextAccessor
+  nameWithType: ExecutionContextAccessor
+- uid: Project.API.Configurations.ExecutionContextAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name: ExecutionContextAccessor(IHttpContextAccessor)
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_
+  commentId: M:Project.API.Configurations.ExecutionContextAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name.vb: New(IHttpContextAccessor)
+  fullName: Project.API.Configurations.ExecutionContextAccessor.ExecutionContextAccessor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  fullName.vb: Project.API.Configurations.ExecutionContextAccessor.New(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  nameWithType: ExecutionContextAccessor.ExecutionContextAccessor(IHttpContextAccessor)
+  nameWithType.vb: ExecutionContextAccessor.New(IHttpContextAccessor)
+- uid: Project.API.Configurations.ExecutionContextAccessor.#ctor*
+  name: ExecutionContextAccessor
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor__ctor_
+  commentId: Overload:Project.API.Configurations.ExecutionContextAccessor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.API.Configurations.ExecutionContextAccessor.ExecutionContextAccessor
+  fullName.vb: Project.API.Configurations.ExecutionContextAccessor.New
+  nameWithType: ExecutionContextAccessor.ExecutionContextAccessor
+  nameWithType.vb: ExecutionContextAccessor.New
+- uid: Project.API.Configurations.ExecutionContextAccessor.CorrelationId
+  name: CorrelationId
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_CorrelationId
+  commentId: P:Project.API.Configurations.ExecutionContextAccessor.CorrelationId
+  fullName: Project.API.Configurations.ExecutionContextAccessor.CorrelationId
+  nameWithType: ExecutionContextAccessor.CorrelationId
+- uid: Project.API.Configurations.ExecutionContextAccessor.CorrelationId*
+  name: CorrelationId
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_CorrelationId_
+  commentId: Overload:Project.API.Configurations.ExecutionContextAccessor.CorrelationId
+  isSpec: "True"
+  fullName: Project.API.Configurations.ExecutionContextAccessor.CorrelationId
+  nameWithType: ExecutionContextAccessor.CorrelationId
+- uid: Project.API.Configurations.ExecutionContextAccessor.IsAvailable
+  name: IsAvailable
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_IsAvailable
+  commentId: P:Project.API.Configurations.ExecutionContextAccessor.IsAvailable
+  fullName: Project.API.Configurations.ExecutionContextAccessor.IsAvailable
+  nameWithType: ExecutionContextAccessor.IsAvailable
+- uid: Project.API.Configurations.ExecutionContextAccessor.IsAvailable*
+  name: IsAvailable
+  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_IsAvailable_
+  commentId: Overload:Project.API.Configurations.ExecutionContextAccessor.IsAvailable
+  isSpec: "True"
+  fullName: Project.API.Configurations.ExecutionContextAccessor.IsAvailable
+  nameWithType: ExecutionContextAccessor.IsAvailable
+- uid: Project.API.SeedWork
+  name: Project.API.SeedWork
+  href: api/Project.API.SeedWork.html
+  commentId: N:Project.API.SeedWork
+  fullName: Project.API.SeedWork
+  nameWithType: Project.API.SeedWork
+- uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  name: BusinessRuleValidationExceptionProblemDetails
+  href: api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html
+  commentId: T:Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  fullName: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  nameWithType: BusinessRuleValidationExceptionProblemDetails
+- uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor(Project.Domain.SeedWork.BusinessRuleValidationException)
+  name: BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException)
+  href: api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html#Project_API_SeedWork_BusinessRuleValidationExceptionProblemDetails__ctor_Project_Domain_SeedWork_BusinessRuleValidationException_
+  commentId: M:Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor(Project.Domain.SeedWork.BusinessRuleValidationException)
+  name.vb: New(BusinessRuleValidationException)
+  fullName: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails(Project.Domain.SeedWork.BusinessRuleValidationException)
+  fullName.vb: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.New(Project.Domain.SeedWork.BusinessRuleValidationException)
+  nameWithType: BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException)
+  nameWithType.vb: BusinessRuleValidationExceptionProblemDetails.New(BusinessRuleValidationException)
+- uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor*
+  name: BusinessRuleValidationExceptionProblemDetails
+  href: api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html#Project_API_SeedWork_BusinessRuleValidationExceptionProblemDetails__ctor_
+  commentId: Overload:Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails
+  fullName.vb: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.New
+  nameWithType: BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails
+  nameWithType.vb: BusinessRuleValidationExceptionProblemDetails.New
+- uid: Project.API.SeedWork.InvalidCommandProblemDetails
+  name: InvalidCommandProblemDetails
+  href: api/Project.API.SeedWork.InvalidCommandProblemDetails.html
+  commentId: T:Project.API.SeedWork.InvalidCommandProblemDetails
+  fullName: Project.API.SeedWork.InvalidCommandProblemDetails
+  nameWithType: InvalidCommandProblemDetails
+- uid: Project.API.SeedWork.InvalidCommandProblemDetails.#ctor(Project.Application.Configuration.Validation.InvalidCommandException)
+  name: InvalidCommandProblemDetails(InvalidCommandException)
+  href: api/Project.API.SeedWork.InvalidCommandProblemDetails.html#Project_API_SeedWork_InvalidCommandProblemDetails__ctor_Project_Application_Configuration_Validation_InvalidCommandException_
+  commentId: M:Project.API.SeedWork.InvalidCommandProblemDetails.#ctor(Project.Application.Configuration.Validation.InvalidCommandException)
+  name.vb: New(InvalidCommandException)
+  fullName: Project.API.SeedWork.InvalidCommandProblemDetails.InvalidCommandProblemDetails(Project.Application.Configuration.Validation.InvalidCommandException)
+  fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New(Project.Application.Configuration.Validation.InvalidCommandException)
+  nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails(InvalidCommandException)
+  nameWithType.vb: InvalidCommandProblemDetails.New(InvalidCommandException)
+- uid: Project.API.SeedWork.InvalidCommandProblemDetails.#ctor*
+  name: InvalidCommandProblemDetails
+  href: api/Project.API.SeedWork.InvalidCommandProblemDetails.html#Project_API_SeedWork_InvalidCommandProblemDetails__ctor_
+  commentId: Overload:Project.API.SeedWork.InvalidCommandProblemDetails.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.API.SeedWork.InvalidCommandProblemDetails.InvalidCommandProblemDetails
+  fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New
+  nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails
+  nameWithType.vb: InvalidCommandProblemDetails.New
+- uid: Project.Api.Extensions
+  name: Project.Api.Extensions
+  href: api/Project.Api.Extensions.html
+  commentId: N:Project.Api.Extensions
+  fullName: Project.Api.Extensions
+  nameWithType: Project.Api.Extensions
+- uid: Project.Api.Extensions.SwaggerExtensions
+  name: SwaggerExtensions
+  href: api/Project.Api.Extensions.SwaggerExtensions.html
+  commentId: T:Project.Api.Extensions.SwaggerExtensions
+  fullName: Project.Api.Extensions.SwaggerExtensions
+  nameWithType: SwaggerExtensions
+- uid: Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddSwaggerConfiguration(IServiceCollection)
+  href: api/Project.Api.Extensions.SwaggerExtensions.html#Project_Api_Extensions_SwaggerExtensions_AddSwaggerConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: SwaggerExtensions.AddSwaggerConfiguration(IServiceCollection)
+- uid: Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration*
+  name: AddSwaggerConfiguration
+  href: api/Project.Api.Extensions.SwaggerExtensions.html#Project_Api_Extensions_SwaggerExtensions_AddSwaggerConfiguration_
+  commentId: Overload:Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration
+  isSpec: "True"
+  fullName: Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration
+  nameWithType: SwaggerExtensions.AddSwaggerConfiguration
+- uid: Project.Application.Configuration
+  name: Project.Application.Configuration
+  href: api/Project.Application.Configuration.html
+  commentId: N:Project.Application.Configuration
+  fullName: Project.Application.Configuration
+  nameWithType: Project.Application.Configuration
+- uid: Project.Application.Configuration.Commands
+  name: Project.Application.Configuration.Commands
+  href: api/Project.Application.Configuration.Commands.html
+  commentId: N:Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+- uid: Project.Application.Configuration.Commands.BaseCommand`1
+  name: BaseCommand<TResult>
+  href: api/Project.Application.Configuration.Commands.BaseCommand-1.html
+  commentId: T:Project.Application.Configuration.Commands.BaseCommand`1
+  name.vb: BaseCommand(Of TResult)
+  fullName: Project.Application.Configuration.Commands.BaseCommand<TResult>
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of TResult)
+  nameWithType: BaseCommand<TResult>
+  nameWithType.vb: BaseCommand(Of TResult)
+- uid: Project.Application.Configuration.Commands.BaseCommand`1.Id
+  name: Id
+  href: api/Project.Application.Configuration.Commands.BaseCommand-1.html#Project_Application_Configuration_Commands_BaseCommand_1_Id
+  commentId: P:Project.Application.Configuration.Commands.BaseCommand`1.Id
+  fullName: Project.Application.Configuration.Commands.BaseCommand<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of TResult).Id
+  nameWithType: BaseCommand<TResult>.Id
+  nameWithType.vb: BaseCommand(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.BaseCommand`1.Id*
+  name: Id
+  href: api/Project.Application.Configuration.Commands.BaseCommand-1.html#Project_Application_Configuration_Commands_BaseCommand_1_Id_
+  commentId: Overload:Project.Application.Configuration.Commands.BaseCommand`1.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.BaseCommand<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of TResult).Id
+  nameWithType: BaseCommand<TResult>.Id
+  nameWithType.vb: BaseCommand(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.Behaviors
+  name: Project.Application.Configuration.Commands.Behaviors
+  href: api/Project.Application.Configuration.Commands.Behaviors.html
+  commentId: N:Project.Application.Configuration.Commands.Behaviors
+  fullName: Project.Application.Configuration.Commands.Behaviors
+  nameWithType: Project.Application.Configuration.Commands.Behaviors
+- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
+  name: ICommandPipelineBehavior<TCommand, TResult>
+  href: api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
+  commentId: T:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
+  name.vb: ICommandPipelineBehavior(Of TCommand, TResult)
+  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult)
+  nameWithType: ICommandPipelineBehavior<TCommand, TResult>
+  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  href: api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle_
+  commentId: Overload:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>.Handle
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle
+  nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle
+  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle
+- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
+  name: LoggingBehavior<TCommand, TResult>
+  href: api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html
+  commentId: T:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
+  name.vb: LoggingBehavior(Of TCommand, TResult)
+  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult)
+  nameWithType: LoggingBehavior<TCommand, TResult>
+  nameWithType.vb: LoggingBehavior(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  href: api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_LoggingBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: LoggingBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  nameWithType.vb: LoggingBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_LoggingBehavior_2_Handle_
+  commentId: Overload:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>.Handle
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult).Handle
+  nameWithType: LoggingBehavior<TCommand, TResult>.Handle
+  nameWithType.vb: LoggingBehavior(Of TCommand, TResult).Handle
+- uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
+  name: UserInjectionCommandBehavior<TCommand, TResult>
+  href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html
+  commentId: T:Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
+  name.vb: UserInjectionCommandBehavior(Of TCommand, TResult)
+  fullName: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult)
+  nameWithType: UserInjectionCommandBehavior<TCommand, TResult>
+  nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Project.Application.Users.IUserRepository)
+  name: UserInjectionCommandBehavior(IHttpContextAccessor, IUserRepository)
+  href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_UserInjectionCommandBehavior_2__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Project_Application_Users_IUserRepository_
+  commentId: M:Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Project.Application.Users.IUserRepository)
+  name.vb: New(IHttpContextAccessor, IUserRepository)
+  fullName: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>.UserInjectionCommandBehavior(Microsoft.AspNetCore.Http.IHttpContextAccessor, Project.Application.Users.IUserRepository)
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult).New(Microsoft.AspNetCore.Http.IHttpContextAccessor, Project.Application.Users.IUserRepository)
+  nameWithType: UserInjectionCommandBehavior<TCommand, TResult>.UserInjectionCommandBehavior(IHttpContextAccessor, IUserRepository)
+  nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult).New(IHttpContextAccessor, IUserRepository)
+- uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.#ctor*
+  name: UserInjectionCommandBehavior
+  href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_UserInjectionCommandBehavior_2__ctor_
+  commentId: Overload:Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>.UserInjectionCommandBehavior
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult).New
+  nameWithType: UserInjectionCommandBehavior<TCommand, TResult>.UserInjectionCommandBehavior
+  nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult).New
+- uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_UserInjectionCommandBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+  fullName: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: UserInjectionCommandBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+- uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_UserInjectionCommandBehavior_2_Handle_
+  commentId: Overload:Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>.Handle
+  fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult).Handle
+  nameWithType: UserInjectionCommandBehavior<TCommand, TResult>.Handle
+  nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult).Handle
+- uid: Project.Application.Configuration.Commands.ICommand
+  name: ICommand
+  href: api/Project.Application.Configuration.Commands.ICommand.html
+  commentId: T:Project.Application.Configuration.Commands.ICommand
+  fullName: Project.Application.Configuration.Commands.ICommand
+  nameWithType: ICommand
+- uid: Project.Application.Configuration.Commands.ICommand.Id
+  name: Id
+  href: api/Project.Application.Configuration.Commands.ICommand.html#Project_Application_Configuration_Commands_ICommand_Id
+  commentId: P:Project.Application.Configuration.Commands.ICommand.Id
+  fullName: Project.Application.Configuration.Commands.ICommand.Id
+  nameWithType: ICommand.Id
+- uid: Project.Application.Configuration.Commands.ICommand.Id*
+  name: Id
+  href: api/Project.Application.Configuration.Commands.ICommand.html#Project_Application_Configuration_Commands_ICommand_Id_
+  commentId: Overload:Project.Application.Configuration.Commands.ICommand.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.ICommand.Id
+  nameWithType: ICommand.Id
+- uid: Project.Application.Configuration.Commands.ICommandHandler`2
+  name: ICommandHandler<TCommand, TResult>
+  href: api/Project.Application.Configuration.Commands.ICommandHandler-2.html
+  commentId: T:Project.Application.Configuration.Commands.ICommandHandler`2
+  name.vb: ICommandHandler(Of TCommand, TResult)
+  fullName: Project.Application.Configuration.Commands.ICommandHandler<TCommand, TResult>
+  fullName.vb: Project.Application.Configuration.Commands.ICommandHandler(Of TCommand, TResult)
+  nameWithType: ICommandHandler<TCommand, TResult>
+  nameWithType.vb: ICommandHandler(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.ICommand`1
+  name: ICommand<TResult>
+  href: api/Project.Application.Configuration.Commands.ICommand-1.html
+  commentId: T:Project.Application.Configuration.Commands.ICommand`1
+  name.vb: ICommand(Of TResult)
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult)
+  nameWithType: ICommand<TResult>
+  nameWithType.vb: ICommand(Of TResult)
+- uid: Project.Application.Configuration.Commands.ICommand`1.Id
+  name: Id
+  href: api/Project.Application.Configuration.Commands.ICommand-1.html#Project_Application_Configuration_Commands_ICommand_1_Id
+  commentId: P:Project.Application.Configuration.Commands.ICommand`1.Id
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult).Id
+  nameWithType: ICommand<TResult>.Id
+  nameWithType.vb: ICommand(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.ICommand`1.Id*
+  name: Id
+  href: api/Project.Application.Configuration.Commands.ICommand-1.html#Project_Application_Configuration_Commands_ICommand_1_Id_
+  commentId: Overload:Project.Application.Configuration.Commands.ICommand`1.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult).Id
+  nameWithType: ICommand<TResult>.Id
+  nameWithType.vb: ICommand(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1
+  name: InternalCommandBase<TResult>
+  href: api/Project.Application.Configuration.Commands.InternalCommandBase-1.html
+  commentId: T:Project.Application.Configuration.Commands.InternalCommandBase`1
+  name.vb: InternalCommandBase(Of TResult)
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult)
+  nameWithType: InternalCommandBase<TResult>
+  nameWithType.vb: InternalCommandBase(Of TResult)
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1.#ctor
+  name: InternalCommandBase()
+  href: api/Project.Application.Configuration.Commands.InternalCommandBase-1.html#Project_Application_Configuration_Commands_InternalCommandBase_1__ctor
+  commentId: M:Project.Application.Configuration.Commands.InternalCommandBase`1.#ctor
+  name.vb: New()
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>.InternalCommandBase()
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult).New()
+  nameWithType: InternalCommandBase<TResult>.InternalCommandBase()
+  nameWithType.vb: InternalCommandBase(Of TResult).New()
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1.#ctor(System.Guid)
+  name: InternalCommandBase(Guid)
+  href: api/Project.Application.Configuration.Commands.InternalCommandBase-1.html#Project_Application_Configuration_Commands_InternalCommandBase_1__ctor_System_Guid_
+  commentId: M:Project.Application.Configuration.Commands.InternalCommandBase`1.#ctor(System.Guid)
+  name.vb: New(Guid)
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>.InternalCommandBase(System.Guid)
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult).New(System.Guid)
+  nameWithType: InternalCommandBase<TResult>.InternalCommandBase(Guid)
+  nameWithType.vb: InternalCommandBase(Of TResult).New(Guid)
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1.#ctor*
+  name: InternalCommandBase
+  href: api/Project.Application.Configuration.Commands.InternalCommandBase-1.html#Project_Application_Configuration_Commands_InternalCommandBase_1__ctor_
+  commentId: Overload:Project.Application.Configuration.Commands.InternalCommandBase`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>.InternalCommandBase
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult).New
+  nameWithType: InternalCommandBase<TResult>.InternalCommandBase
+  nameWithType.vb: InternalCommandBase(Of TResult).New
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1.Id
+  name: Id
+  href: api/Project.Application.Configuration.Commands.InternalCommandBase-1.html#Project_Application_Configuration_Commands_InternalCommandBase_1_Id
+  commentId: P:Project.Application.Configuration.Commands.InternalCommandBase`1.Id
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult).Id
+  nameWithType: InternalCommandBase<TResult>.Id
+  nameWithType.vb: InternalCommandBase(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1.Id*
+  name: Id
+  href: api/Project.Application.Configuration.Commands.InternalCommandBase-1.html#Project_Application_Configuration_Commands_InternalCommandBase_1_Id_
+  commentId: Overload:Project.Application.Configuration.Commands.InternalCommandBase`1.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult).Id
+  nameWithType: InternalCommandBase<TResult>.Id
+  nameWithType.vb: InternalCommandBase(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.Unit
+  name: Unit
+  href: api/Project.Application.Configuration.Commands.Unit.html
+  commentId: T:Project.Application.Configuration.Commands.Unit
+  fullName: Project.Application.Configuration.Commands.Unit
+  nameWithType: Unit
+- uid: Project.Application.Configuration.Commands.Unit.Value
+  name: Value
+  href: api/Project.Application.Configuration.Commands.Unit.html#Project_Application_Configuration_Commands_Unit_Value
+  commentId: F:Project.Application.Configuration.Commands.Unit.Value
+  fullName: Project.Application.Configuration.Commands.Unit.Value
+  nameWithType: Unit.Value
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1
+  name: UserAwareCommand<TResult>
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html
+  commentId: T:Project.Application.Configuration.Commands.UserAwareCommand`1
+  name.vb: UserAwareCommand(Of TResult)
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult)
+  nameWithType: UserAwareCommand<TResult>
+  nameWithType.vb: UserAwareCommand(Of TResult)
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1.Id
+  name: Id
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html#Project_Application_Configuration_Commands_UserAwareCommand_1_Id
+  commentId: P:Project.Application.Configuration.Commands.UserAwareCommand`1.Id
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult).Id
+  nameWithType: UserAwareCommand<TResult>.Id
+  nameWithType.vb: UserAwareCommand(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1.Id*
+  name: Id
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html#Project_Application_Configuration_Commands_UserAwareCommand_1_Id_
+  commentId: Overload:Project.Application.Configuration.Commands.UserAwareCommand`1.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>.Id
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult).Id
+  nameWithType: UserAwareCommand<TResult>.Id
+  nameWithType.vb: UserAwareCommand(Of TResult).Id
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1.InjectUser(Project.Domain.Users.User)
+  name: InjectUser(User)
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html#Project_Application_Configuration_Commands_UserAwareCommand_1_InjectUser_Project_Domain_Users_User_
+  commentId: M:Project.Application.Configuration.Commands.UserAwareCommand`1.InjectUser(Project.Domain.Users.User)
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>.InjectUser(Project.Domain.Users.User)
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult).InjectUser(Project.Domain.Users.User)
+  nameWithType: UserAwareCommand<TResult>.InjectUser(User)
+  nameWithType.vb: UserAwareCommand(Of TResult).InjectUser(User)
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1.InjectUser*
+  name: InjectUser
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html#Project_Application_Configuration_Commands_UserAwareCommand_1_InjectUser_
+  commentId: Overload:Project.Application.Configuration.Commands.UserAwareCommand`1.InjectUser
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>.InjectUser
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult).InjectUser
+  nameWithType: UserAwareCommand<TResult>.InjectUser
+  nameWithType.vb: UserAwareCommand(Of TResult).InjectUser
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1.User
+  name: User
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html#Project_Application_Configuration_Commands_UserAwareCommand_1_User
+  commentId: P:Project.Application.Configuration.Commands.UserAwareCommand`1.User
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>.User
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult).User
+  nameWithType: UserAwareCommand<TResult>.User
+  nameWithType.vb: UserAwareCommand(Of TResult).User
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1.User*
+  name: User
+  href: api/Project.Application.Configuration.Commands.UserAwareCommand-1.html#Project_Application_Configuration_Commands_UserAwareCommand_1_User_
+  commentId: Overload:Project.Application.Configuration.Commands.UserAwareCommand`1.User
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>.User
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult).User
+  nameWithType: UserAwareCommand<TResult>.User
+  nameWithType.vb: UserAwareCommand(Of TResult).User
+- uid: Project.Application.Configuration.DomainEvents
+  name: Project.Application.Configuration.DomainEvents
+  href: api/Project.Application.Configuration.DomainEvents.html
+  commentId: N:Project.Application.Configuration.DomainEvents
+  fullName: Project.Application.Configuration.DomainEvents
+  nameWithType: Project.Application.Configuration.DomainEvents
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+  name: DomainNotificationBase<T>
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html
+  commentId: T:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+  name.vb: DomainNotificationBase(Of T)
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T)
+  nameWithType: DomainNotificationBase<T>
+  nameWithType.vb: DomainNotificationBase(Of T)
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.#ctor(`0)
+  name: DomainNotificationBase(T)
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html#Project_Application_Configuration_DomainEvents_DomainNotificationBase_1__ctor__0_
+  commentId: M:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>.DomainNotificationBase(T)
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T).New(T)
+  nameWithType: DomainNotificationBase<T>.DomainNotificationBase(T)
+  nameWithType.vb: DomainNotificationBase(Of T).New(T)
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.#ctor*
+  name: DomainNotificationBase
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html#Project_Application_Configuration_DomainEvents_DomainNotificationBase_1__ctor_
+  commentId: Overload:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>.DomainNotificationBase
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T).New
+  nameWithType: DomainNotificationBase<T>.DomainNotificationBase
+  nameWithType.vb: DomainNotificationBase(Of T).New
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.DomainEvent
+  name: DomainEvent
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html#Project_Application_Configuration_DomainEvents_DomainNotificationBase_1_DomainEvent
+  commentId: P:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.DomainEvent
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>.DomainEvent
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T).DomainEvent
+  nameWithType: DomainNotificationBase<T>.DomainEvent
+  nameWithType.vb: DomainNotificationBase(Of T).DomainEvent
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.DomainEvent*
+  name: DomainEvent
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html#Project_Application_Configuration_DomainEvents_DomainNotificationBase_1_DomainEvent_
+  commentId: Overload:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.DomainEvent
+  isSpec: "True"
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>.DomainEvent
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T).DomainEvent
+  nameWithType: DomainNotificationBase<T>.DomainEvent
+  nameWithType.vb: DomainNotificationBase(Of T).DomainEvent
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.Id
+  name: Id
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html#Project_Application_Configuration_DomainEvents_DomainNotificationBase_1_Id
+  commentId: P:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.Id
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>.Id
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T).Id
+  nameWithType: DomainNotificationBase<T>.Id
+  nameWithType.vb: DomainNotificationBase(Of T).Id
+- uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.Id*
+  name: Id
+  href: api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html#Project_Application_Configuration_DomainEvents_DomainNotificationBase_1_Id_
+  commentId: Overload:Project.Application.Configuration.DomainEvents.DomainNotificationBase`1.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>.Id
+  fullName.vb: Project.Application.Configuration.DomainEvents.DomainNotificationBase(Of T).Id
+  nameWithType: DomainNotificationBase<T>.Id
+  nameWithType.vb: DomainNotificationBase(Of T).Id
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  name: IDomainEventNotification
+  href: api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.html
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  nameWithType: IDomainEventNotification
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  name: Id
+  href: api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_Id
+  commentId: P:Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  nameWithType: IDomainEventNotification.Id
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id*
+  name: Id
+  href: api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_Id_
+  commentId: Overload:Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  isSpec: "True"
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  nameWithType: IDomainEventNotification.Id
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  name: IDomainEventNotification<TEventType>
+  href: api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  name.vb: IDomainEventNotification(Of TEventType)
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType)
+  nameWithType: IDomainEventNotification<TEventType>
+  nameWithType.vb: IDomainEventNotification(Of TEventType)
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  name: DomainEvent
+  href: api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_1_DomainEvent
+  commentId: P:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>.DomainEvent
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType).DomainEvent
+  nameWithType: IDomainEventNotification<TEventType>.DomainEvent
+  nameWithType.vb: IDomainEventNotification(Of TEventType).DomainEvent
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent*
+  name: DomainEvent
+  href: api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_1_DomainEvent_
+  commentId: Overload:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  isSpec: "True"
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>.DomainEvent
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType).DomainEvent
+  nameWithType: IDomainEventNotification<TEventType>.DomainEvent
+  nameWithType.vb: IDomainEventNotification(Of TEventType).DomainEvent
+- uid: Project.Application.Configuration.IExecutionContextAccessor
+  name: IExecutionContextAccessor
+  href: api/Project.Application.Configuration.IExecutionContextAccessor.html
+  commentId: T:Project.Application.Configuration.IExecutionContextAccessor
+  fullName: Project.Application.Configuration.IExecutionContextAccessor
+  nameWithType: IExecutionContextAccessor
+- uid: Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
+  name: CorrelationId
+  href: api/Project.Application.Configuration.IExecutionContextAccessor.html#Project_Application_Configuration_IExecutionContextAccessor_CorrelationId
+  commentId: P:Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
+  fullName: Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
+  nameWithType: IExecutionContextAccessor.CorrelationId
+- uid: Project.Application.Configuration.IExecutionContextAccessor.CorrelationId*
+  name: CorrelationId
+  href: api/Project.Application.Configuration.IExecutionContextAccessor.html#Project_Application_Configuration_IExecutionContextAccessor_CorrelationId_
+  commentId: Overload:Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
+  isSpec: "True"
+  fullName: Project.Application.Configuration.IExecutionContextAccessor.CorrelationId
+  nameWithType: IExecutionContextAccessor.CorrelationId
+- uid: Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
+  name: IsAvailable
+  href: api/Project.Application.Configuration.IExecutionContextAccessor.html#Project_Application_Configuration_IExecutionContextAccessor_IsAvailable
+  commentId: P:Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
+  fullName: Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
+  nameWithType: IExecutionContextAccessor.IsAvailable
+- uid: Project.Application.Configuration.IExecutionContextAccessor.IsAvailable*
+  name: IsAvailable
+  href: api/Project.Application.Configuration.IExecutionContextAccessor.html#Project_Application_Configuration_IExecutionContextAccessor_IsAvailable_
+  commentId: Overload:Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
+  isSpec: "True"
+  fullName: Project.Application.Configuration.IExecutionContextAccessor.IsAvailable
+  nameWithType: IExecutionContextAccessor.IsAvailable
+- uid: Project.Application.Configuration.Queries
+  name: Project.Application.Configuration.Queries
+  href: api/Project.Application.Configuration.Queries.html
+  commentId: N:Project.Application.Configuration.Queries
+  fullName: Project.Application.Configuration.Queries
+  nameWithType: Project.Application.Configuration.Queries
+- uid: Project.Application.Configuration.Queries.Behaviors
+  name: Project.Application.Configuration.Queries.Behaviors
+  href: api/Project.Application.Configuration.Queries.Behaviors.html
+  commentId: N:Project.Application.Configuration.Queries.Behaviors
+  fullName: Project.Application.Configuration.Queries.Behaviors
+  nameWithType: Project.Application.Configuration.Queries.Behaviors
+- uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+  name: UserInjectionQueryBehavior<TQuery, TResult>
+  href: api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html
+  commentId: T:Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+  name.vb: UserInjectionQueryBehavior(Of TQuery, TResult)
+  fullName: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>
+  fullName.vb: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior(Of TQuery, TResult)
+  nameWithType: UserInjectionQueryBehavior<TQuery, TResult>
+  nameWithType.vb: UserInjectionQueryBehavior(Of TQuery, TResult)
+- uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  name: UserInjectionQueryBehavior(IHttpContextAccessor, UserManager<User>)
+  href: api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html#Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
+  commentId: M:Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  name.vb: New(IHttpContextAccessor, UserManager(Of User))
+  fullName: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>.UserInjectionQueryBehavior(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
+  fullName.vb: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior(Of TQuery, TResult).New(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
+  nameWithType: UserInjectionQueryBehavior<TQuery, TResult>.UserInjectionQueryBehavior(IHttpContextAccessor, UserManager<User>)
+  nameWithType.vb: UserInjectionQueryBehavior(Of TQuery, TResult).New(IHttpContextAccessor, UserManager(Of User))
+- uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor*
+  name: UserInjectionQueryBehavior
+  href: api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html#Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2__ctor_
+  commentId: Overload:Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>.UserInjectionQueryBehavior
+  fullName.vb: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior(Of TQuery, TResult).New
+  nameWithType: UserInjectionQueryBehavior<TQuery, TResult>.UserInjectionQueryBehavior
+  nameWithType.vb: UserInjectionQueryBehavior(Of TQuery, TResult).New
+- uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TQuery, Func<Task<TResult>>, CancellationToken)
+  href: api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html#Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TQuery, Func(Of Task(Of TResult)), CancellationToken)
+  fullName: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>.Handle(TQuery, System.Func<System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior(Of TQuery, TResult).Handle(TQuery, System.Func(Of System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: UserInjectionQueryBehavior<TQuery, TResult>.Handle(TQuery, Func<Task<TResult>>, CancellationToken)
+  nameWithType.vb: UserInjectionQueryBehavior(Of TQuery, TResult).Handle(TQuery, Func(Of Task(Of TResult)), CancellationToken)
+- uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html#Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2_Handle_
+  commentId: Overload:Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>.Handle
+  fullName.vb: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior(Of TQuery, TResult).Handle
+  nameWithType: UserInjectionQueryBehavior<TQuery, TResult>.Handle
+  nameWithType.vb: UserInjectionQueryBehavior(Of TQuery, TResult).Handle
+- uid: Project.Application.Configuration.Queries.IQueryHandler`2
+  name: IQueryHandler<TQuery, TResult>
+  href: api/Project.Application.Configuration.Queries.IQueryHandler-2.html
+  commentId: T:Project.Application.Configuration.Queries.IQueryHandler`2
+  name.vb: IQueryHandler(Of TQuery, TResult)
+  fullName: Project.Application.Configuration.Queries.IQueryHandler<TQuery, TResult>
+  fullName.vb: Project.Application.Configuration.Queries.IQueryHandler(Of TQuery, TResult)
+  nameWithType: IQueryHandler<TQuery, TResult>
+  nameWithType.vb: IQueryHandler(Of TQuery, TResult)
+- uid: Project.Application.Configuration.Queries.IQuery`1
+  name: IQuery<TResult>
+  href: api/Project.Application.Configuration.Queries.IQuery-1.html
+  commentId: T:Project.Application.Configuration.Queries.IQuery`1
+  name.vb: IQuery(Of TResult)
+  fullName: Project.Application.Configuration.Queries.IQuery<TResult>
+  fullName.vb: Project.Application.Configuration.Queries.IQuery(Of TResult)
+  nameWithType: IQuery<TResult>
+  nameWithType.vb: IQuery(Of TResult)
+- uid: Project.Application.Configuration.Queries.UserAwareQuery`1
+  name: UserAwareQuery<TResult>
+  href: api/Project.Application.Configuration.Queries.UserAwareQuery-1.html
+  commentId: T:Project.Application.Configuration.Queries.UserAwareQuery`1
+  name.vb: UserAwareQuery(Of TResult)
+  fullName: Project.Application.Configuration.Queries.UserAwareQuery<TResult>
+  fullName.vb: Project.Application.Configuration.Queries.UserAwareQuery(Of TResult)
+  nameWithType: UserAwareQuery<TResult>
+  nameWithType.vb: UserAwareQuery(Of TResult)
+- uid: Project.Application.Configuration.Queries.UserAwareQuery`1.InjectUser(Project.Domain.Users.User)
+  name: InjectUser(User)
+  href: api/Project.Application.Configuration.Queries.UserAwareQuery-1.html#Project_Application_Configuration_Queries_UserAwareQuery_1_InjectUser_Project_Domain_Users_User_
+  commentId: M:Project.Application.Configuration.Queries.UserAwareQuery`1.InjectUser(Project.Domain.Users.User)
+  fullName: Project.Application.Configuration.Queries.UserAwareQuery<TResult>.InjectUser(Project.Domain.Users.User)
+  fullName.vb: Project.Application.Configuration.Queries.UserAwareQuery(Of TResult).InjectUser(Project.Domain.Users.User)
+  nameWithType: UserAwareQuery<TResult>.InjectUser(User)
+  nameWithType.vb: UserAwareQuery(Of TResult).InjectUser(User)
+- uid: Project.Application.Configuration.Queries.UserAwareQuery`1.InjectUser*
+  name: InjectUser
+  href: api/Project.Application.Configuration.Queries.UserAwareQuery-1.html#Project_Application_Configuration_Queries_UserAwareQuery_1_InjectUser_
+  commentId: Overload:Project.Application.Configuration.Queries.UserAwareQuery`1.InjectUser
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Queries.UserAwareQuery<TResult>.InjectUser
+  fullName.vb: Project.Application.Configuration.Queries.UserAwareQuery(Of TResult).InjectUser
+  nameWithType: UserAwareQuery<TResult>.InjectUser
+  nameWithType.vb: UserAwareQuery(Of TResult).InjectUser
+- uid: Project.Application.Configuration.Queries.UserAwareQuery`1.User
+  name: User
+  href: api/Project.Application.Configuration.Queries.UserAwareQuery-1.html#Project_Application_Configuration_Queries_UserAwareQuery_1_User
+  commentId: P:Project.Application.Configuration.Queries.UserAwareQuery`1.User
+  fullName: Project.Application.Configuration.Queries.UserAwareQuery<TResult>.User
+  fullName.vb: Project.Application.Configuration.Queries.UserAwareQuery(Of TResult).User
+  nameWithType: UserAwareQuery<TResult>.User
+  nameWithType.vb: UserAwareQuery(Of TResult).User
+- uid: Project.Application.Configuration.Queries.UserAwareQuery`1.User*
+  name: User
+  href: api/Project.Application.Configuration.Queries.UserAwareQuery-1.html#Project_Application_Configuration_Queries_UserAwareQuery_1_User_
+  commentId: Overload:Project.Application.Configuration.Queries.UserAwareQuery`1.User
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Queries.UserAwareQuery<TResult>.User
+  fullName.vb: Project.Application.Configuration.Queries.UserAwareQuery(Of TResult).User
+  nameWithType: UserAwareQuery<TResult>.User
+  nameWithType.vb: UserAwareQuery(Of TResult).User
+- uid: Project.Application.Configuration.Validation
+  name: Project.Application.Configuration.Validation
+  href: api/Project.Application.Configuration.Validation.html
+  commentId: N:Project.Application.Configuration.Validation
+  fullName: Project.Application.Configuration.Validation
+  nameWithType: Project.Application.Configuration.Validation
+- uid: Project.Application.Configuration.Validation.InvalidCommandException
+  name: InvalidCommandException
+  href: api/Project.Application.Configuration.Validation.InvalidCommandException.html
+  commentId: T:Project.Application.Configuration.Validation.InvalidCommandException
+  fullName: Project.Application.Configuration.Validation.InvalidCommandException
+  nameWithType: InvalidCommandException
+- uid: Project.Application.Configuration.Validation.InvalidCommandException.#ctor(System.String,System.String)
+  name: InvalidCommandException(string, string)
+  href: api/Project.Application.Configuration.Validation.InvalidCommandException.html#Project_Application_Configuration_Validation_InvalidCommandException__ctor_System_String_System_String_
+  commentId: M:Project.Application.Configuration.Validation.InvalidCommandException.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: Project.Application.Configuration.Validation.InvalidCommandException.InvalidCommandException(string, string)
+  fullName.vb: Project.Application.Configuration.Validation.InvalidCommandException.New(String, String)
+  nameWithType: InvalidCommandException.InvalidCommandException(string, string)
+  nameWithType.vb: InvalidCommandException.New(String, String)
+- uid: Project.Application.Configuration.Validation.InvalidCommandException.#ctor*
+  name: InvalidCommandException
+  href: api/Project.Application.Configuration.Validation.InvalidCommandException.html#Project_Application_Configuration_Validation_InvalidCommandException__ctor_
+  commentId: Overload:Project.Application.Configuration.Validation.InvalidCommandException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Configuration.Validation.InvalidCommandException.InvalidCommandException
+  fullName.vb: Project.Application.Configuration.Validation.InvalidCommandException.New
+  nameWithType: InvalidCommandException.InvalidCommandException
+  nameWithType.vb: InvalidCommandException.New
+- uid: Project.Application.Configuration.Validation.InvalidCommandException.Details
+  name: Details
+  href: api/Project.Application.Configuration.Validation.InvalidCommandException.html#Project_Application_Configuration_Validation_InvalidCommandException_Details
+  commentId: P:Project.Application.Configuration.Validation.InvalidCommandException.Details
+  fullName: Project.Application.Configuration.Validation.InvalidCommandException.Details
+  nameWithType: InvalidCommandException.Details
+- uid: Project.Application.Configuration.Validation.InvalidCommandException.Details*
+  name: Details
+  href: api/Project.Application.Configuration.Validation.InvalidCommandException.html#Project_Application_Configuration_Validation_InvalidCommandException_Details_
+  commentId: Overload:Project.Application.Configuration.Validation.InvalidCommandException.Details
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Validation.InvalidCommandException.Details
+  nameWithType: InvalidCommandException.Details
+- uid: Project.Application.Configuration.Validation.ValidationBehavior`2
+  name: ValidationBehavior<TRequest, TResponse>
+  href: api/Project.Application.Configuration.Validation.ValidationBehavior-2.html
+  commentId: T:Project.Application.Configuration.Validation.ValidationBehavior`2
+  name.vb: ValidationBehavior(Of TRequest, TResponse)
+  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>
+  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse)
+  nameWithType: ValidationBehavior<TRequest, TResponse>
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse)
+- uid: Project.Application.Configuration.Validation.ValidationBehavior`2.#ctor(System.Collections.Generic.IEnumerable{FluentValidation.IValidator{`0}})
+  name: ValidationBehavior(IEnumerable<IValidator<TRequest>>)
+  href: api/Project.Application.Configuration.Validation.ValidationBehavior-2.html#Project_Application_Configuration_Validation_ValidationBehavior_2__ctor_System_Collections_Generic_IEnumerable_FluentValidation_IValidator__0___
+  commentId: M:Project.Application.Configuration.Validation.ValidationBehavior`2.#ctor(System.Collections.Generic.IEnumerable{FluentValidation.IValidator{`0}})
+  name.vb: New(IEnumerable(Of IValidator(Of TRequest)))
+  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>.ValidationBehavior(System.Collections.Generic.IEnumerable<FluentValidation.IValidator<TRequest>>)
+  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse).New(System.Collections.Generic.IEnumerable(Of FluentValidation.IValidator(Of TRequest)))
+  nameWithType: ValidationBehavior<TRequest, TResponse>.ValidationBehavior(IEnumerable<IValidator<TRequest>>)
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse).New(IEnumerable(Of IValidator(Of TRequest)))
+- uid: Project.Application.Configuration.Validation.ValidationBehavior`2.#ctor*
+  name: ValidationBehavior
+  href: api/Project.Application.Configuration.Validation.ValidationBehavior-2.html#Project_Application_Configuration_Validation_ValidationBehavior_2__ctor_
+  commentId: Overload:Project.Application.Configuration.Validation.ValidationBehavior`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>.ValidationBehavior
+  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse).New
+  nameWithType: ValidationBehavior<TRequest, TResponse>.ValidationBehavior
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse).New
+- uid: Project.Application.Configuration.Validation.ValidationBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  href: api/Project.Application.Configuration.Validation.ValidationBehavior-2.html#Project_Application_Configuration_Validation_ValidationBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Application.Configuration.Validation.ValidationBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  nameWithType: ValidationBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+- uid: Project.Application.Configuration.Validation.ValidationBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Application.Configuration.Validation.ValidationBehavior-2.html#Project_Application_Configuration_Validation_ValidationBehavior_2_Handle_
+  commentId: Overload:Project.Application.Configuration.Validation.ValidationBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>.Handle
+  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse).Handle
+  nameWithType: ValidationBehavior<TRequest, TResponse>.Handle
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse).Handle
 - uid: Project.Application.Users
   name: Project.Application.Users
   href: api/Project.Application.Users.html
@@ -301,12 +1136,189 @@ references:
   isSpec: "True"
   fullName: Project.Domain.SeedWork.IDomainEvent.OccurredOn
   nameWithType: IDomainEvent.OccurredOn
+- uid: Project.Domain.SeedWork.IMediator
+  name: IMediator
+  href: api/Project.Domain.SeedWork.IMediator.html
+  commentId: T:Project.Domain.SeedWork.IMediator
+  fullName: Project.Domain.SeedWork.IMediator
+  nameWithType: IMediator
+- uid: Project.Domain.SeedWork.IMediator.Publish*
+  name: Publish
+  href: api/Project.Domain.SeedWork.IMediator.html#Project_Domain_SeedWork_IMediator_Publish_
+  commentId: Overload:Project.Domain.SeedWork.IMediator.Publish
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IMediator.Publish
+  nameWithType: IMediator.Publish
+- uid: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+  name: Publish<TNotification>(TNotification, CancellationToken)
+  href: api/Project.Domain.SeedWork.IMediator.html#Project_Domain_SeedWork_IMediator_Publish__1___0_System_Threading_CancellationToken_
+  commentId: M:Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+  name.vb: Publish(Of TNotification)(TNotification, CancellationToken)
+  fullName: Project.Domain.SeedWork.IMediator.Publish<TNotification>(TNotification, System.Threading.CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IMediator.Publish(Of TNotification)(TNotification, System.Threading.CancellationToken)
+  nameWithType: IMediator.Publish<TNotification>(TNotification, CancellationToken)
+  nameWithType.vb: IMediator.Publish(Of TNotification)(TNotification, CancellationToken)
+- uid: Project.Domain.SeedWork.IMediator.Send*
+  name: Send
+  href: api/Project.Domain.SeedWork.IMediator.html#Project_Domain_SeedWork_IMediator_Send_
+  commentId: Overload:Project.Domain.SeedWork.IMediator.Send
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IMediator.Send
+  nameWithType: IMediator.Send
+- uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  name: Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  href: api/Project.Domain.SeedWork.IMediator.html#Project_Domain_SeedWork_IMediator_Send__1_Project_Domain_SeedWork_IRequest___0__System_Threading_CancellationToken_
+  commentId: M:Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  name.vb: Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  fullName: Project.Domain.SeedWork.IMediator.Send<TResponse>(Project.Domain.SeedWork.IRequest<TResponse>, System.Threading.CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IMediator.Send(Of TResponse)(Project.Domain.SeedWork.IRequest(Of TResponse), System.Threading.CancellationToken)
+  nameWithType: IMediator.Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  nameWithType.vb: IMediator.Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
 - uid: Project.Domain.SeedWork.INotification
   name: INotification
   href: api/Project.Domain.SeedWork.INotification.html
   commentId: T:Project.Domain.SeedWork.INotification
   fullName: Project.Domain.SeedWork.INotification
   nameWithType: INotification
+- uid: Project.Domain.SeedWork.INotificationHandler`1
+  name: INotificationHandler<TNotification>
+  href: api/Project.Domain.SeedWork.INotificationHandler-1.html
+  commentId: T:Project.Domain.SeedWork.INotificationHandler`1
+  name.vb: INotificationHandler(Of TNotification)
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification)
+  nameWithType: INotificationHandler<TNotification>
+  nameWithType.vb: INotificationHandler(Of TNotification)
+- uid: Project.Domain.SeedWork.INotificationHandler`1.Handle(`0,System.Threading.CancellationToken)
+  name: Handle(TNotification, CancellationToken)
+  href: api/Project.Domain.SeedWork.INotificationHandler-1.html#Project_Domain_SeedWork_INotificationHandler_1_Handle__0_System_Threading_CancellationToken_
+  commentId: M:Project.Domain.SeedWork.INotificationHandler`1.Handle(`0,System.Threading.CancellationToken)
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>.Handle(TNotification, System.Threading.CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification).Handle(TNotification, System.Threading.CancellationToken)
+  nameWithType: INotificationHandler<TNotification>.Handle(TNotification, CancellationToken)
+  nameWithType.vb: INotificationHandler(Of TNotification).Handle(TNotification, CancellationToken)
+- uid: Project.Domain.SeedWork.INotificationHandler`1.Handle*
+  name: Handle
+  href: api/Project.Domain.SeedWork.INotificationHandler-1.html#Project_Domain_SeedWork_INotificationHandler_1_Handle_
+  commentId: Overload:Project.Domain.SeedWork.INotificationHandler`1.Handle
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>.Handle
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification).Handle
+  nameWithType: INotificationHandler<TNotification>.Handle
+  nameWithType.vb: INotificationHandler(Of TNotification).Handle
+- uid: Project.Domain.SeedWork.IRequestHandler`2
+  name: IRequestHandler<TRequest, TResponse>
+  href: api/Project.Domain.SeedWork.IRequestHandler-2.html
+  commentId: T:Project.Domain.SeedWork.IRequestHandler`2
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse)
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+- uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  name: Handle(TRequest, CancellationToken)
+  href: api/Project.Domain.SeedWork.IRequestHandler-2.html#Project_Domain_SeedWork_IRequestHandler_2_Handle__0_System_Threading_CancellationToken_
+  commentId: M:Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+- uid: Project.Domain.SeedWork.IRequestHandler`2.Handle*
+  name: Handle
+  href: api/Project.Domain.SeedWork.IRequestHandler-2.html#Project_Domain_SeedWork_IRequestHandler_2_Handle_
+  commentId: Overload:Project.Domain.SeedWork.IRequestHandler`2.Handle
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>.Handle
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse).Handle
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  name: IRequestPipelineBehavior<TRequest, TResponse>
+  href: api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  commentId: T:Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  name.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse)
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  href: api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.html#Project_Domain_SeedWork_IRequestPipelineBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.html#Project_Domain_SeedWork_IRequestPipelineBehavior_2_Handle_
+  commentId: Overload:Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>.Handle
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse).Handle
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>.Handle
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse).Handle
+- uid: Project.Domain.SeedWork.IRequest`1
+  name: IRequest<TResponse>
+  href: api/Project.Domain.SeedWork.IRequest-1.html
+  commentId: T:Project.Domain.SeedWork.IRequest`1
+  name.vb: IRequest(Of TResponse)
+  fullName: Project.Domain.SeedWork.IRequest<TResponse>
+  fullName.vb: Project.Domain.SeedWork.IRequest(Of TResponse)
+  nameWithType: IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+- uid: Project.Domain.SeedWork.IUnitOfWork
+  name: IUnitOfWork
+  href: api/Project.Domain.SeedWork.IUnitOfWork.html
+  commentId: T:Project.Domain.SeedWork.IUnitOfWork
+  fullName: Project.Domain.SeedWork.IUnitOfWork
+  nameWithType: IUnitOfWork
+- uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  name: CommitAsync(CancellationToken)
+  href: api/Project.Domain.SeedWork.IUnitOfWork.html#Project_Domain_SeedWork_IUnitOfWork_CommitAsync_System_Threading_CancellationToken_
+  commentId: M:Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  fullName: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  nameWithType: IUnitOfWork.CommitAsync(CancellationToken)
+- uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync*
+  name: CommitAsync
+  href: api/Project.Domain.SeedWork.IUnitOfWork.html#Project_Domain_SeedWork_IUnitOfWork_CommitAsync_
+  commentId: Overload:Project.Domain.SeedWork.IUnitOfWork.CommitAsync
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IUnitOfWork.CommitAsync
+  nameWithType: IUnitOfWork.CommitAsync
+- uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  name: RevertAsync()
+  href: api/Project.Domain.SeedWork.IUnitOfWork.html#Project_Domain_SeedWork_IUnitOfWork_RevertAsync
+  commentId: M:Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  fullName: Project.Domain.SeedWork.IUnitOfWork.RevertAsync()
+  nameWithType: IUnitOfWork.RevertAsync()
+- uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync*
+  name: RevertAsync
+  href: api/Project.Domain.SeedWork.IUnitOfWork.html#Project_Domain_SeedWork_IUnitOfWork_RevertAsync_
+  commentId: Overload:Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  nameWithType: IUnitOfWork.RevertAsync
+- uid: Project.Domain.SeedWork.IUserAware
+  name: IUserAware
+  href: api/Project.Domain.SeedWork.IUserAware.html
+  commentId: T:Project.Domain.SeedWork.IUserAware
+  fullName: Project.Domain.SeedWork.IUserAware
+  nameWithType: IUserAware
+- uid: Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  name: InjectUser(User)
+  href: api/Project.Domain.SeedWork.IUserAware.html#Project_Domain_SeedWork_IUserAware_InjectUser_Project_Domain_Users_User_
+  commentId: M:Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  fullName: Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  nameWithType: IUserAware.InjectUser(User)
+- uid: Project.Domain.SeedWork.IUserAware.InjectUser*
+  name: InjectUser
+  href: api/Project.Domain.SeedWork.IUserAware.html#Project_Domain_SeedWork_IUserAware_InjectUser_
+  commentId: Overload:Project.Domain.SeedWork.IUserAware.InjectUser
+  isSpec: "True"
+  fullName: Project.Domain.SeedWork.IUserAware.InjectUser
+  nameWithType: IUserAware.InjectUser
 - uid: Project.Domain.SeedWork.IgnoreMemberAttribute
   name: IgnoreMemberAttribute
   href: api/Project.Domain.SeedWork.IgnoreMemberAttribute.html
@@ -1145,12 +2157,6 @@ references:
   isSpec: "True"
   fullName: Project.Domain.Users.UserId.NewId
   nameWithType: UserId.NewId
-- uid: Project.Infrastructure
-  name: Project.Infrastructure
-  href: api/Project.Infrastructure.html
-  commentId: N:Project.Infrastructure
-  fullName: Project.Infrastructure
-  nameWithType: Project.Infrastructure
 - uid: Project.Infrastructure.Database
   name: Project.Infrastructure.Database
   href: api/Project.Infrastructure.Database.html
@@ -1195,6 +2201,82 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Database.ApplicationDbContext.OnModelCreating
   nameWithType: ApplicationDbContext.OnModelCreating
+- uid: Project.Infrastructure.Database.DataAccessModule
+  name: DataAccessModule
+  href: api/Project.Infrastructure.Database.DataAccessModule.html
+  commentId: T:Project.Infrastructure.Database.DataAccessModule
+  fullName: Project.Infrastructure.Database.DataAccessModule
+  nameWithType: DataAccessModule
+- uid: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddDataAccessModule(IServiceCollection)
+  href: api/Project.Infrastructure.Database.DataAccessModule.html#Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DataAccessModule.AddDataAccessModule(IServiceCollection)
+- uid: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule*
+  name: AddDataAccessModule
+  href: api/Project.Infrastructure.Database.DataAccessModule.html#Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_
+  commentId: Overload:Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule
+  isSpec: "True"
+  fullName: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule
+  nameWithType: DataAccessModule.AddDataAccessModule
+- uid: Project.Infrastructure.Domain
+  name: Project.Infrastructure.Domain
+  href: api/Project.Infrastructure.Domain.html
+  commentId: N:Project.Infrastructure.Domain
+  fullName: Project.Infrastructure.Domain
+  nameWithType: Project.Infrastructure.Domain
+- uid: Project.Infrastructure.Domain.UnitOfWork
+  name: UnitOfWork
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html
+  commentId: T:Project.Infrastructure.Domain.UnitOfWork
+  fullName: Project.Infrastructure.Domain.UnitOfWork
+  nameWithType: UnitOfWork
+- uid: Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  name: UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork__ctor_Project_Infrastructure_Database_ApplicationDbContext_Project_Infrastructure_Processing_IDomainEventsDispatcher_
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  name.vb: New(ApplicationDbContext, IDomainEventsDispatcher)
+  fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork(Project.Infrastructure.Database.ApplicationDbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New(Project.Infrastructure.Database.ApplicationDbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  nameWithType: UnitOfWork.UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
+  nameWithType.vb: UnitOfWork.New(ApplicationDbContext, IDomainEventsDispatcher)
+- uid: Project.Infrastructure.Domain.UnitOfWork.#ctor*
+  name: UnitOfWork
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork__ctor_
+  commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork
+  fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New
+  nameWithType: UnitOfWork.UnitOfWork
+  nameWithType.vb: UnitOfWork.New
+- uid: Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  name: CommitAsync(CancellationToken)
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork_CommitAsync_System_Threading_CancellationToken_
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  fullName: Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  nameWithType: UnitOfWork.CommitAsync(CancellationToken)
+- uid: Project.Infrastructure.Domain.UnitOfWork.CommitAsync*
+  name: CommitAsync
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork_CommitAsync_
+  commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.CommitAsync
+  isSpec: "True"
+  fullName: Project.Infrastructure.Domain.UnitOfWork.CommitAsync
+  nameWithType: UnitOfWork.CommitAsync
+- uid: Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  name: RevertAsync()
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork_RevertAsync
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  fullName: Project.Infrastructure.Domain.UnitOfWork.RevertAsync()
+  nameWithType: UnitOfWork.RevertAsync()
+- uid: Project.Infrastructure.Domain.UnitOfWork.RevertAsync*
+  name: RevertAsync
+  href: api/Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork_RevertAsync_
+  commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  isSpec: "True"
+  fullName: Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  nameWithType: UnitOfWork.RevertAsync
 - uid: Project.Infrastructure.Domain.Users
   name: Project.Infrastructure.Domain.Users
   href: api/Project.Infrastructure.Domain.Users.html
@@ -1329,25 +2411,6 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync
   nameWithType: UserRepository.UpdateAsync
-- uid: Project.Infrastructure.InfrastructureServices
-  name: InfrastructureServices
-  href: api/Project.Infrastructure.InfrastructureServices.html
-  commentId: T:Project.Infrastructure.InfrastructureServices
-  fullName: Project.Infrastructure.InfrastructureServices
-  nameWithType: InfrastructureServices
-- uid: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
-  name: AddInfrastructureServices(IServiceCollection, IConfiguration)
-  href: api/Project.Infrastructure.InfrastructureServices.html#Project_Infrastructure_InfrastructureServices_AddInfrastructureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
-  fullName: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: InfrastructureServices.AddInfrastructureServices(IServiceCollection, IConfiguration)
-- uid: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices*
-  name: AddInfrastructureServices
-  href: api/Project.Infrastructure.InfrastructureServices.html#Project_Infrastructure_InfrastructureServices_AddInfrastructureServices_
-  commentId: Overload:Project.Infrastructure.InfrastructureServices.AddInfrastructureServices
-  isSpec: "True"
-  fullName: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices
-  nameWithType: InfrastructureServices.AddInfrastructureServices
 - uid: Project.Infrastructure.Migrations
   name: Project.Infrastructure.Migrations
   href: api/Project.Infrastructure.Migrations.html
@@ -1399,6 +2462,268 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Migrations.Init.Up
   nameWithType: Init.Up
+- uid: Project.Infrastructure.Processing
+  name: Project.Infrastructure.Processing
+  href: api/Project.Infrastructure.Processing.html
+  commentId: N:Project.Infrastructure.Processing
+  fullName: Project.Infrastructure.Processing
+  nameWithType: Project.Infrastructure.Processing
+- uid: Project.Infrastructure.Processing.CommandsExecutor
+  name: CommandsExecutor
+  href: api/Project.Infrastructure.Processing.CommandsExecutor.html
+  commentId: T:Project.Infrastructure.Processing.CommandsExecutor
+  fullName: Project.Infrastructure.Processing.CommandsExecutor
+  nameWithType: CommandsExecutor
+- uid: Project.Infrastructure.Processing.CommandsExecutor.#ctor(System.IServiceProvider)
+  name: CommandsExecutor(IServiceProvider)
+  href: api/Project.Infrastructure.Processing.CommandsExecutor.html#Project_Infrastructure_Processing_CommandsExecutor__ctor_System_IServiceProvider_
+  commentId: M:Project.Infrastructure.Processing.CommandsExecutor.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Project.Infrastructure.Processing.CommandsExecutor.CommandsExecutor(System.IServiceProvider)
+  fullName.vb: Project.Infrastructure.Processing.CommandsExecutor.New(System.IServiceProvider)
+  nameWithType: CommandsExecutor.CommandsExecutor(IServiceProvider)
+  nameWithType.vb: CommandsExecutor.New(IServiceProvider)
+- uid: Project.Infrastructure.Processing.CommandsExecutor.#ctor*
+  name: CommandsExecutor
+  href: api/Project.Infrastructure.Processing.CommandsExecutor.html#Project_Infrastructure_Processing_CommandsExecutor__ctor_
+  commentId: Overload:Project.Infrastructure.Processing.CommandsExecutor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Processing.CommandsExecutor.CommandsExecutor
+  fullName.vb: Project.Infrastructure.Processing.CommandsExecutor.New
+  nameWithType: CommandsExecutor.CommandsExecutor
+  nameWithType.vb: CommandsExecutor.New
+- uid: Project.Infrastructure.Processing.CommandsExecutor.Execute(Project.Application.Configuration.Commands.ICommand)
+  name: Execute(ICommand)
+  href: api/Project.Infrastructure.Processing.CommandsExecutor.html#Project_Infrastructure_Processing_CommandsExecutor_Execute_Project_Application_Configuration_Commands_ICommand_
+  commentId: M:Project.Infrastructure.Processing.CommandsExecutor.Execute(Project.Application.Configuration.Commands.ICommand)
+  fullName: Project.Infrastructure.Processing.CommandsExecutor.Execute(Project.Application.Configuration.Commands.ICommand)
+  nameWithType: CommandsExecutor.Execute(ICommand)
+- uid: Project.Infrastructure.Processing.CommandsExecutor.Execute*
+  name: Execute
+  href: api/Project.Infrastructure.Processing.CommandsExecutor.html#Project_Infrastructure_Processing_CommandsExecutor_Execute_
+  commentId: Overload:Project.Infrastructure.Processing.CommandsExecutor.Execute
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.CommandsExecutor.Execute
+  nameWithType: CommandsExecutor.Execute
+- uid: Project.Infrastructure.Processing.CommandsExecutor.Execute``1(Project.Application.Configuration.Commands.ICommand{``0})
+  name: Execute<TResult>(ICommand<TResult>)
+  href: api/Project.Infrastructure.Processing.CommandsExecutor.html#Project_Infrastructure_Processing_CommandsExecutor_Execute__1_Project_Application_Configuration_Commands_ICommand___0__
+  commentId: M:Project.Infrastructure.Processing.CommandsExecutor.Execute``1(Project.Application.Configuration.Commands.ICommand{``0})
+  name.vb: Execute(Of TResult)(ICommand(Of TResult))
+  fullName: Project.Infrastructure.Processing.CommandsExecutor.Execute<TResult>(Project.Application.Configuration.Commands.ICommand<TResult>)
+  fullName.vb: Project.Infrastructure.Processing.CommandsExecutor.Execute(Of TResult)(Project.Application.Configuration.Commands.ICommand(Of TResult))
+  nameWithType: CommandsExecutor.Execute<TResult>(ICommand<TResult>)
+  nameWithType.vb: CommandsExecutor.Execute(Of TResult)(ICommand(Of TResult))
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher
+  name: DomainEventsDispatcher
+  href: api/Project.Infrastructure.Processing.DomainEventsDispatcher.html
+  commentId: T:Project.Infrastructure.Processing.DomainEventsDispatcher
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher
+  nameWithType: DomainEventsDispatcher
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)
+  name: DomainEventsDispatcher(IMediator, ApplicationDbContext)
+  href: api/Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_Project_Domain_SeedWork_IMediator_Project_Infrastructure_Database_ApplicationDbContext_
+  commentId: M:Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)
+  name.vb: New(IMediator, ApplicationDbContext)
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DomainEventsDispatcher(Project.Domain.SeedWork.IMediator, Project.Infrastructure.Database.ApplicationDbContext)
+  fullName.vb: Project.Infrastructure.Processing.DomainEventsDispatcher.New(Project.Domain.SeedWork.IMediator, Project.Infrastructure.Database.ApplicationDbContext)
+  nameWithType: DomainEventsDispatcher.DomainEventsDispatcher(IMediator, ApplicationDbContext)
+  nameWithType.vb: DomainEventsDispatcher.New(IMediator, ApplicationDbContext)
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor*
+  name: DomainEventsDispatcher
+  href: api/Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_
+  commentId: Overload:Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DomainEventsDispatcher
+  fullName.vb: Project.Infrastructure.Processing.DomainEventsDispatcher.New
+  nameWithType: DomainEventsDispatcher.DomainEventsDispatcher
+  nameWithType.vb: DomainEventsDispatcher.New
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
+  name: DispatchEventsAsync()
+  href: api/Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher_DispatchEventsAsync
+  commentId: M:Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync()
+  nameWithType: DomainEventsDispatcher.DispatchEventsAsync()
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync*
+  name: DispatchEventsAsync
+  href: api/Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher_DispatchEventsAsync_
+  commentId: Overload:Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
+  nameWithType: DomainEventsDispatcher.DispatchEventsAsync
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  name: IDomainEventsDispatcher
+  href: api/Project.Infrastructure.Processing.IDomainEventsDispatcher.html
+  commentId: T:Project.Infrastructure.Processing.IDomainEventsDispatcher
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  nameWithType: IDomainEventsDispatcher
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  name: DispatchEventsAsync()
+  href: api/Project.Infrastructure.Processing.IDomainEventsDispatcher.html#Project_Infrastructure_Processing_IDomainEventsDispatcher_DispatchEventsAsync
+  commentId: M:Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync()
+  nameWithType: IDomainEventsDispatcher.DispatchEventsAsync()
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync*
+  name: DispatchEventsAsync
+  href: api/Project.Infrastructure.Processing.IDomainEventsDispatcher.html#Project_Infrastructure_Processing_IDomainEventsDispatcher_DispatchEventsAsync_
+  commentId: Overload:Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher.DispatchEventsAsync
+  nameWithType: IDomainEventsDispatcher.DispatchEventsAsync
+- uid: Project.Infrastructure.Processing.Mediator
+  name: Mediator
+  href: api/Project.Infrastructure.Processing.Mediator.html
+  commentId: T:Project.Infrastructure.Processing.Mediator
+  fullName: Project.Infrastructure.Processing.Mediator
+  nameWithType: Mediator
+- uid: Project.Infrastructure.Processing.Mediator.#ctor(System.IServiceProvider)
+  name: Mediator(IServiceProvider)
+  href: api/Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator__ctor_System_IServiceProvider_
+  commentId: M:Project.Infrastructure.Processing.Mediator.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Project.Infrastructure.Processing.Mediator.Mediator(System.IServiceProvider)
+  fullName.vb: Project.Infrastructure.Processing.Mediator.New(System.IServiceProvider)
+  nameWithType: Mediator.Mediator(IServiceProvider)
+  nameWithType.vb: Mediator.New(IServiceProvider)
+- uid: Project.Infrastructure.Processing.Mediator.#ctor*
+  name: Mediator
+  href: api/Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator__ctor_
+  commentId: Overload:Project.Infrastructure.Processing.Mediator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Processing.Mediator.Mediator
+  fullName.vb: Project.Infrastructure.Processing.Mediator.New
+  nameWithType: Mediator.Mediator
+  nameWithType.vb: Mediator.New
+- uid: Project.Infrastructure.Processing.Mediator.Publish*
+  name: Publish
+  href: api/Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator_Publish_
+  commentId: Overload:Project.Infrastructure.Processing.Mediator.Publish
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.Mediator.Publish
+  nameWithType: Mediator.Publish
+- uid: Project.Infrastructure.Processing.Mediator.Publish``1(``0,System.Threading.CancellationToken)
+  name: Publish<TNotification>(TNotification, CancellationToken)
+  href: api/Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator_Publish__1___0_System_Threading_CancellationToken_
+  commentId: M:Project.Infrastructure.Processing.Mediator.Publish``1(``0,System.Threading.CancellationToken)
+  name.vb: Publish(Of TNotification)(TNotification, CancellationToken)
+  fullName: Project.Infrastructure.Processing.Mediator.Publish<TNotification>(TNotification, System.Threading.CancellationToken)
+  fullName.vb: Project.Infrastructure.Processing.Mediator.Publish(Of TNotification)(TNotification, System.Threading.CancellationToken)
+  nameWithType: Mediator.Publish<TNotification>(TNotification, CancellationToken)
+  nameWithType.vb: Mediator.Publish(Of TNotification)(TNotification, CancellationToken)
+- uid: Project.Infrastructure.Processing.Mediator.Send*
+  name: Send
+  href: api/Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator_Send_
+  commentId: Overload:Project.Infrastructure.Processing.Mediator.Send
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.Mediator.Send
+  nameWithType: Mediator.Send
+- uid: Project.Infrastructure.Processing.Mediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  name: Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  href: api/Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator_Send__1_Project_Domain_SeedWork_IRequest___0__System_Threading_CancellationToken_
+  commentId: M:Project.Infrastructure.Processing.Mediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  name.vb: Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  fullName: Project.Infrastructure.Processing.Mediator.Send<TResponse>(Project.Domain.SeedWork.IRequest<TResponse>, System.Threading.CancellationToken)
+  fullName.vb: Project.Infrastructure.Processing.Mediator.Send(Of TResponse)(Project.Domain.SeedWork.IRequest(Of TResponse), System.Threading.CancellationToken)
+  nameWithType: Mediator.Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  nameWithType.vb: Mediator.Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+- uid: Project.Infrastructure.Processing.MediatorModule
+  name: MediatorModule
+  href: api/Project.Infrastructure.Processing.MediatorModule.html
+  commentId: T:Project.Infrastructure.Processing.MediatorModule
+  fullName: Project.Infrastructure.Processing.MediatorModule
+  nameWithType: MediatorModule
+- uid: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object[])
+  name: AddMediatorModule(IServiceCollection, params object[])
+  href: api/Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_AddMediatorModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Object___
+  commentId: M:Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object[])
+  name.vb: AddMediatorModule(IServiceCollection, ParamArray Object())
+  fullName: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, params object[])
+  fullName.vb: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, ParamArray Object())
+  nameWithType: MediatorModule.AddMediatorModule(IServiceCollection, params object[])
+  nameWithType.vb: MediatorModule.AddMediatorModule(IServiceCollection, ParamArray Object())
+- uid: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule*
+  name: AddMediatorModule
+  href: api/Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_AddMediatorModule_
+  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
+  nameWithType: MediatorModule.AddMediatorModule
+- uid: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[],System.Type)
+  name: RegisterHandlers(IServiceCollection, Assembly[], Type)
+  href: api/Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_RegisterHandlers_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Reflection_Assembly___System_Type_
+  commentId: M:Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[],System.Type)
+  name.vb: RegisterHandlers(IServiceCollection, Assembly(), Type)
+  fullName: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Reflection.Assembly[], System.Type)
+  fullName.vb: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Reflection.Assembly(), System.Type)
+  nameWithType: MediatorModule.RegisterHandlers(IServiceCollection, Assembly[], Type)
+  nameWithType.vb: MediatorModule.RegisterHandlers(IServiceCollection, Assembly(), Type)
+- uid: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers*
+  name: RegisterHandlers
+  href: api/Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_RegisterHandlers_
+  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.RegisterHandlers
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers
+  nameWithType: MediatorModule.RegisterHandlers
+- uid: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(System.Object[])
+  name: ResolveAssemblies(object[])
+  href: api/Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_ResolveAssemblies_System_Object___
+  commentId: M:Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(System.Object[])
+  name.vb: ResolveAssemblies(Object())
+  fullName: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(object[])
+  fullName.vb: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(Object())
+  nameWithType: MediatorModule.ResolveAssemblies(object[])
+  nameWithType.vb: MediatorModule.ResolveAssemblies(Object())
+- uid: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies*
+  name: ResolveAssemblies
+  href: api/Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_ResolveAssemblies_
+  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies
+  nameWithType: MediatorModule.ResolveAssemblies
+- uid: Project.Infrastructure.Processing.QueriesExecutor
+  name: QueriesExecutor
+  href: api/Project.Infrastructure.Processing.QueriesExecutor.html
+  commentId: T:Project.Infrastructure.Processing.QueriesExecutor
+  fullName: Project.Infrastructure.Processing.QueriesExecutor
+  nameWithType: QueriesExecutor
+- uid: Project.Infrastructure.Processing.QueriesExecutor.#ctor(System.IServiceProvider)
+  name: QueriesExecutor(IServiceProvider)
+  href: api/Project.Infrastructure.Processing.QueriesExecutor.html#Project_Infrastructure_Processing_QueriesExecutor__ctor_System_IServiceProvider_
+  commentId: M:Project.Infrastructure.Processing.QueriesExecutor.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Project.Infrastructure.Processing.QueriesExecutor.QueriesExecutor(System.IServiceProvider)
+  fullName.vb: Project.Infrastructure.Processing.QueriesExecutor.New(System.IServiceProvider)
+  nameWithType: QueriesExecutor.QueriesExecutor(IServiceProvider)
+  nameWithType.vb: QueriesExecutor.New(IServiceProvider)
+- uid: Project.Infrastructure.Processing.QueriesExecutor.#ctor*
+  name: QueriesExecutor
+  href: api/Project.Infrastructure.Processing.QueriesExecutor.html#Project_Infrastructure_Processing_QueriesExecutor__ctor_
+  commentId: Overload:Project.Infrastructure.Processing.QueriesExecutor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Processing.QueriesExecutor.QueriesExecutor
+  fullName.vb: Project.Infrastructure.Processing.QueriesExecutor.New
+  nameWithType: QueriesExecutor.QueriesExecutor
+  nameWithType.vb: QueriesExecutor.New
+- uid: Project.Infrastructure.Processing.QueriesExecutor.Execute*
+  name: Execute
+  href: api/Project.Infrastructure.Processing.QueriesExecutor.html#Project_Infrastructure_Processing_QueriesExecutor_Execute_
+  commentId: Overload:Project.Infrastructure.Processing.QueriesExecutor.Execute
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.QueriesExecutor.Execute
+  nameWithType: QueriesExecutor.Execute
+- uid: Project.Infrastructure.Processing.QueriesExecutor.Execute``1(Project.Application.Configuration.Queries.IQuery{``0})
+  name: Execute<TResult>(IQuery<TResult>)
+  href: api/Project.Infrastructure.Processing.QueriesExecutor.html#Project_Infrastructure_Processing_QueriesExecutor_Execute__1_Project_Application_Configuration_Queries_IQuery___0__
+  commentId: M:Project.Infrastructure.Processing.QueriesExecutor.Execute``1(Project.Application.Configuration.Queries.IQuery{``0})
+  name.vb: Execute(Of TResult)(IQuery(Of TResult))
+  fullName: Project.Infrastructure.Processing.QueriesExecutor.Execute<TResult>(Project.Application.Configuration.Queries.IQuery<TResult>)
+  fullName.vb: Project.Infrastructure.Processing.QueriesExecutor.Execute(Of TResult)(Project.Application.Configuration.Queries.IQuery(Of TResult))
+  nameWithType: QueriesExecutor.Execute<TResult>(IQuery<TResult>)
+  nameWithType.vb: QueriesExecutor.Execute(Of TResult)(IQuery(Of TResult))
 - uid: Project.Infrastructure.SeedWork
   name: Project.Infrastructure.SeedWork
   href: api/Project.Infrastructure.SeedWork.html

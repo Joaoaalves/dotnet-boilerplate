@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Api.Extensions
+  commentId: N:Project.Api.Extensions
+  id: Project.Api.Extensions
+  children:
+  - Project.Api.Extensions.SwaggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Project.Api.Extensions
+  nameWithType: Project.Api.Extensions
+  fullName: Project.Api.Extensions
+  type: Namespace
+  assemblies:
+  - Project.Api
+references:
+- uid: Project.Api.Extensions.SwaggerExtensions
+  commentId: T:Project.Api.Extensions.SwaggerExtensions
+  href: Project.Api.Extensions.SwaggerExtensions.html
+  name: SwaggerExtensions
+  nameWithType: SwaggerExtensions
+  fullName: Project.Api.Extensions.SwaggerExtensions

@@ -9,7 +9,14 @@ items:
   - Project.Domain.SeedWork.IAggregateRoot
   - Project.Domain.SeedWork.IBusinessRule
   - Project.Domain.SeedWork.IDomainEvent
+  - Project.Domain.SeedWork.IMediator
   - Project.Domain.SeedWork.INotification
+  - Project.Domain.SeedWork.INotificationHandler`1
+  - Project.Domain.SeedWork.IRequestHandler`2
+  - Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  - Project.Domain.SeedWork.IRequest`1
+  - Project.Domain.SeedWork.IUnitOfWork
+  - Project.Domain.SeedWork.IUserAware
   - Project.Domain.SeedWork.IgnoreMemberAttribute
   - Project.Domain.SeedWork.TypedIdValueBase
   - Project.Domain.SeedWork.ValueObject
@@ -25,6 +32,7 @@ items:
 references:
 - uid: Project.Domain.SeedWork.BusinessRuleValidationException
   commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+  parent: Project.Domain.SeedWork
   href: Project.Domain.SeedWork.BusinessRuleValidationException.html
   name: BusinessRuleValidationException
   nameWithType: BusinessRuleValidationException
@@ -62,12 +70,146 @@ references:
   name: IgnoreMemberAttribute
   nameWithType: IgnoreMemberAttribute
   fullName: Project.Domain.SeedWork.IgnoreMemberAttribute
+- uid: Project.Domain.SeedWork.IMediator
+  commentId: T:Project.Domain.SeedWork.IMediator
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.IMediator.html
+  name: IMediator
+  nameWithType: IMediator
+  fullName: Project.Domain.SeedWork.IMediator
 - uid: Project.Domain.SeedWork.INotification
   commentId: T:Project.Domain.SeedWork.INotification
+  parent: Project.Domain.SeedWork
   href: Project.Domain.SeedWork.INotification.html
   name: INotification
   nameWithType: INotification
   fullName: Project.Domain.SeedWork.INotification
+- uid: Project.Domain.SeedWork.INotificationHandler`1
+  commentId: T:Project.Domain.SeedWork.INotificationHandler`1
+  href: Project.Domain.SeedWork.INotificationHandler-1.html
+  name: INotificationHandler<TNotification>
+  nameWithType: INotificationHandler<TNotification>
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>
+  nameWithType.vb: INotificationHandler(Of TNotification)
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification)
+  name.vb: INotificationHandler(Of TNotification)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.INotificationHandler`1
+    name: INotificationHandler
+    href: Project.Domain.SeedWork.INotificationHandler-1.html
+  - name: <
+  - name: TNotification
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.INotificationHandler`1
+    name: INotificationHandler
+    href: Project.Domain.SeedWork.INotificationHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNotification
+  - name: )
+- uid: Project.Domain.SeedWork.IRequest`1
+  commentId: T:Project.Domain.SeedWork.IRequest`1
+  href: Project.Domain.SeedWork.IRequest-1.html
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: Project.Domain.SeedWork.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler`2
+  commentId: T:Project.Domain.SeedWork.IRequestHandler`2
+  href: Project.Domain.SeedWork.IRequestHandler-2.html
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+    href: Project.Domain.SeedWork.IRequestHandler-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+    href: Project.Domain.SeedWork.IRequestHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  commentId: T:Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  href: Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  name: IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse)
+  name.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior
+    href: Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior
+    href: Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork.IUnitOfWork
+  commentId: T:Project.Domain.SeedWork.IUnitOfWork
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.IUnitOfWork.html
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Project.Domain.SeedWork.IUnitOfWork
+- uid: Project.Domain.SeedWork.IUserAware
+  commentId: T:Project.Domain.SeedWork.IUserAware
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.IUserAware.html
+  name: IUserAware
+  nameWithType: IUserAware
+  fullName: Project.Domain.SeedWork.IUserAware
 - uid: Project.Domain.SeedWork.TypedIdValueBase
   commentId: T:Project.Domain.SeedWork.TypedIdValueBase
   parent: Project.Domain.SeedWork

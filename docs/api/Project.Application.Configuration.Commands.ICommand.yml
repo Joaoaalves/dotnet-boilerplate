@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Commands.ICommand
+  commentId: T:Project.Application.Configuration.Commands.ICommand
+  id: ICommand
+  parent: Project.Application.Configuration.Commands
+  children:
+  - Project.Application.Configuration.Commands.ICommand.Id
+  langs:
+  - csharp
+  - vb
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Project.Application.Configuration.Commands.ICommand
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ICommand
+    path: ../src/Project.Application/Configuration/Commands/ICommand.cs
+    startLine: 4
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Commands
+  syntax:
+    content: 'public interface ICommand : IRequest<Unit>'
+    content.vb: Public Interface ICommand Inherits IRequest(Of Unit)
+- uid: Project.Application.Configuration.Commands.ICommand.Id
+  commentId: P:Project.Application.Configuration.Commands.ICommand.Id
+  id: Id
+  parent: Project.Application.Configuration.Commands.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ICommand.Id
+  fullName: Project.Application.Configuration.Commands.ICommand.Id
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Id
+    path: ../src/Project.Application/Configuration/Commands/ICommand.cs
+    startLine: 6
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Commands
+  syntax:
+    content: Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property Id As Guid
+  overload: Project.Application.Configuration.Commands.ICommand.Id*
+references:
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  href: Project.html
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+- uid: Project.Application.Configuration.Commands.ICommand.Id*
+  commentId: Overload:Project.Application.Configuration.Commands.ICommand.Id
+  href: Project.Application.Configuration.Commands.ICommand.html#Project_Application_Configuration_Commands_ICommand_Id
+  name: Id
+  nameWithType: ICommand.Id
+  fullName: Project.Application.Configuration.Commands.ICommand.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

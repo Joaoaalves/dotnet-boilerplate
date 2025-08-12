@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Queries.IQueryHandler`2
+  commentId: T:Project.Application.Configuration.Queries.IQueryHandler`2
+  id: IQueryHandler`2
+  parent: Project.Application.Configuration.Queries
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IQueryHandler<TQuery, TResult>
+  nameWithType: IQueryHandler<TQuery, TResult>
+  fullName: Project.Application.Configuration.Queries.IQueryHandler<TQuery, TResult>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Queries/IQueryHandler.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IQueryHandler
+    path: ../src/Project.Application/Configuration/Queries/IQueryHandler.cs
+    startLine: 4
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Queries
+  syntax:
+    content: 'public interface IQueryHandler<in TQuery, TResult> : IRequestHandler<TQuery, TResult> where TQuery : IQuery<TResult>'
+    typeParameters:
+    - id: TQuery
+    - id: TResult
+    content.vb: Public Interface IQueryHandler(Of In TQuery As IQuery(Of TResult), TResult) Inherits IRequestHandler(Of TQuery, TResult)
+  inheritedMembers:
+  - Project.Domain.SeedWork.IRequestHandler{{TQuery},{TResult}}.Handle({TQuery},System.Threading.CancellationToken)
+  nameWithType.vb: IQueryHandler(Of TQuery, TResult)
+  fullName.vb: Project.Application.Configuration.Queries.IQueryHandler(Of TQuery, TResult)
+  name.vb: IQueryHandler(Of TQuery, TResult)
+references:
+- uid: Project.Application.Configuration.Queries
+  commentId: N:Project.Application.Configuration.Queries
+  href: Project.html
+  name: Project.Application.Configuration.Queries
+  nameWithType: Project.Application.Configuration.Queries
+  fullName: Project.Application.Configuration.Queries
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Queries
+    name: Queries
+    href: Project.Application.Configuration.Queries.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Queries
+    name: Queries
+    href: Project.Application.Configuration.Queries.html
+- uid: Project.Domain.SeedWork.IRequestHandler{{TQuery},{TResult}}.Handle({TQuery},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IRequestHandler{`0,`1}.Handle(`0,System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IRequestHandler{{TQuery},{TResult}}
+  definition: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TQuery, CancellationToken)
+  nameWithType: IRequestHandler<TQuery, TResult>.Handle(TQuery, CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestHandler<TQuery, TResult>.Handle(TQuery, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TQuery, TResult).Handle(TQuery, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TQuery, TResult).Handle(TQuery, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler{`0,`1}.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler{`0,`1}.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler{{TQuery},{TResult}}
+  commentId: T:Project.Domain.SeedWork.IRequestHandler{`0,`1}
+  parent: Project.Domain.SeedWork
+  definition: Project.Domain.SeedWork.IRequestHandler`2
+  name: IRequestHandler<TQuery, TResult>
+  nameWithType: IRequestHandler<TQuery, TResult>
+  fullName: Project.Domain.SeedWork.IRequestHandler<TQuery, TResult>
+  nameWithType.vb: IRequestHandler(Of TQuery, TResult)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TQuery, TResult)
+  name.vb: IRequestHandler(Of TQuery, TResult)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+  - name: <
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler`2
+  commentId: T:Project.Domain.SeedWork.IRequestHandler`2
+  href: Project.Domain.SeedWork.IRequestHandler-2.html
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+    href: Project.Domain.SeedWork.IRequestHandler-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+    href: Project.Domain.SeedWork.IRequestHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html

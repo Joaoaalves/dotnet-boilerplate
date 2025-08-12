@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Queries.IQuery`1
+  commentId: T:Project.Application.Configuration.Queries.IQuery`1
+  id: IQuery`1
+  parent: Project.Application.Configuration.Queries
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IQuery<TResult>
+  nameWithType: IQuery<TResult>
+  fullName: Project.Application.Configuration.Queries.IQuery<TResult>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Queries/IQuery.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IQuery
+    path: ../src/Project.Application/Configuration/Queries/IQuery.cs
+    startLine: 4
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Queries
+  syntax:
+    content: 'public interface IQuery<TResult> : IRequest<TResult>'
+    typeParameters:
+    - id: TResult
+    content.vb: Public Interface IQuery(Of TResult) Inherits IRequest(Of TResult)
+  nameWithType.vb: IQuery(Of TResult)
+  fullName.vb: Project.Application.Configuration.Queries.IQuery(Of TResult)
+  name.vb: IQuery(Of TResult)
+references:
+- uid: Project.Application.Configuration.Queries
+  commentId: N:Project.Application.Configuration.Queries
+  href: Project.html
+  name: Project.Application.Configuration.Queries
+  nameWithType: Project.Application.Configuration.Queries
+  fullName: Project.Application.Configuration.Queries
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Queries
+    name: Queries
+    href: Project.Application.Configuration.Queries.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Queries
+    name: Queries
+    href: Project.Application.Configuration.Queries.html

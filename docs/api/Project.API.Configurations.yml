@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.API.Configurations
+  commentId: N:Project.API.Configurations
+  id: Project.API.Configurations
+  children:
+  - Project.API.Configurations.CorsConfiguration
+  - Project.API.Configurations.ExecutionContextAccessor
+  langs:
+  - csharp
+  - vb
+  name: Project.API.Configurations
+  nameWithType: Project.API.Configurations
+  fullName: Project.API.Configurations
+  type: Namespace
+  assemblies:
+  - Project.Api
+references:
+- uid: Project.API.Configurations.CorsConfiguration
+  commentId: T:Project.API.Configurations.CorsConfiguration
+  href: Project.API.Configurations.CorsConfiguration.html
+  name: CorsConfiguration
+  nameWithType: CorsConfiguration
+  fullName: Project.API.Configurations.CorsConfiguration
+- uid: Project.API.Configurations.ExecutionContextAccessor
+  commentId: T:Project.API.Configurations.ExecutionContextAccessor
+  href: Project.API.Configurations.ExecutionContextAccessor.html
+  name: ExecutionContextAccessor
+  nameWithType: ExecutionContextAccessor
+  fullName: Project.API.Configurations.ExecutionContextAccessor

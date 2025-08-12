@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  id: IDomainEventNotification
+  parent: Project.Application.Configuration.DomainEvents
+  children:
+  - Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  langs:
+  - csharp
+  - vb
+  name: IDomainEventNotification
+  nameWithType: IDomainEventNotification
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IDomainEventNotification
+    path: ../src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+    startLine: 9
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.DomainEvents
+  syntax:
+    content: 'public interface IDomainEventNotification : INotification'
+    content.vb: Public Interface IDomainEventNotification Inherits INotification
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  commentId: P:Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  id: Id
+  parent: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IDomainEventNotification.Id
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Id
+    path: ../src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+    startLine: 11
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.DomainEvents
+  syntax:
+    content: Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property Id As Guid
+  overload: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id*
+references:
+- uid: Project.Application.Configuration.DomainEvents
+  commentId: N:Project.Application.Configuration.DomainEvents
+  href: Project.html
+  name: Project.Application.Configuration.DomainEvents
+  nameWithType: Project.Application.Configuration.DomainEvents
+  fullName: Project.Application.Configuration.DomainEvents
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.DomainEvents
+    name: DomainEvents
+    href: Project.Application.Configuration.DomainEvents.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.DomainEvents
+    name: DomainEvents
+    href: Project.Application.Configuration.DomainEvents.html
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id*
+  commentId: Overload:Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  href: Project.Application.Configuration.DomainEvents.IDomainEventNotification.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_Id
+  name: Id
+  nameWithType: IDomainEventNotification.Id
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

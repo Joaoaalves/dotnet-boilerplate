@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.IUnitOfWork
+  commentId: T:Project.Domain.SeedWork.IUnitOfWork
+  id: IUnitOfWork
+  parent: Project.Domain.SeedWork
+  children:
+  - Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  - Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  langs:
+  - csharp
+  - vb
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Project.Domain.SeedWork.IUnitOfWork
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IUnitOfWork
+    path: ../src/Project.Domain/SeedWork/IUnitOfWork.cs
+    startLine: 2
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: public interface IUnitOfWork
+    content.vb: Public Interface IUnitOfWork
+- uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  id: CommitAsync(System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IUnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: CommitAsync(CancellationToken)
+  nameWithType: IUnitOfWork.CommitAsync(CancellationToken)
+  fullName: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CommitAsync
+    path: ../src/Project.Domain/SeedWork/IUnitOfWork.cs
+    startLine: 4
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: Task<int> CommitAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function CommitAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
+  overload: Project.Domain.SeedWork.IUnitOfWork.CommitAsync*
+- uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  commentId: M:Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  id: RevertAsync
+  parent: Project.Domain.SeedWork.IUnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync()
+  nameWithType: IUnitOfWork.RevertAsync()
+  fullName: Project.Domain.SeedWork.IUnitOfWork.RevertAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync
+    path: ../src/Project.Domain/SeedWork/IUnitOfWork.cs
+    startLine: 5
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: Task RevertAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RevertAsync() As Task
+  overload: Project.Domain.SeedWork.IUnitOfWork.RevertAsync*
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync*
+  commentId: Overload:Project.Domain.SeedWork.IUnitOfWork.CommitAsync
+  href: Project.Domain.SeedWork.IUnitOfWork.html#Project_Domain_SeedWork_IUnitOfWork_CommitAsync_System_Threading_CancellationToken_
+  name: CommitAsync
+  nameWithType: IUnitOfWork.CommitAsync
+  fullName: Project.Domain.SeedWork.IUnitOfWork.CommitAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync*
+  commentId: Overload:Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  href: Project.Domain.SeedWork.IUnitOfWork.html#Project_Domain_SeedWork_IUnitOfWork_RevertAsync
+  name: RevertAsync
+  nameWithType: IUnitOfWork.RevertAsync
+  fullName: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

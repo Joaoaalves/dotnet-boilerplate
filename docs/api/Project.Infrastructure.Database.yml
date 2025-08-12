@@ -5,6 +5,7 @@ items:
   id: Project.Infrastructure.Database
   children:
   - Project.Infrastructure.Database.ApplicationDbContext
+  - Project.Infrastructure.Database.DataAccessModule
   langs:
   - csharp
   - vb
@@ -22,6 +23,12 @@ references:
   name: ApplicationDbContext
   nameWithType: ApplicationDbContext
   fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Project.Infrastructure.Database.DataAccessModule
+  commentId: T:Project.Infrastructure.Database.DataAccessModule
+  href: Project.Infrastructure.Database.DataAccessModule.html
+  name: DataAccessModule
+  nameWithType: DataAccessModule
+  fullName: Project.Infrastructure.Database.DataAccessModule
 - uid: Project.Infrastructure.Database
   commentId: N:Project.Infrastructure.Database
   href: Project.html

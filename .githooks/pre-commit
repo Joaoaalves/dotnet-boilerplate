@@ -19,6 +19,6 @@ echo "Generating documentation..."
 make clean-docs
 make docs
 
-git add docs/_site
+git add .
 
 exit 0

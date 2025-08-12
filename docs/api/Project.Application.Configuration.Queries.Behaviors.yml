@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Queries.Behaviors
+  commentId: N:Project.Application.Configuration.Queries.Behaviors
+  id: Project.Application.Configuration.Queries.Behaviors
+  children:
+  - Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Configuration.Queries.Behaviors
+  nameWithType: Project.Application.Configuration.Queries.Behaviors
+  fullName: Project.Application.Configuration.Queries.Behaviors
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+  commentId: T:Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+  href: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html
+  name: UserInjectionQueryBehavior<TQuery, TResult>
+  nameWithType: UserInjectionQueryBehavior<TQuery, TResult>
+  fullName: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>
+  nameWithType.vb: UserInjectionQueryBehavior(Of TQuery, TResult)
+  fullName.vb: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior(Of TQuery, TResult)
+  name.vb: UserInjectionQueryBehavior(Of TQuery, TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+    name: UserInjectionQueryBehavior
+    href: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html
+  - name: <
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+    name: UserInjectionQueryBehavior
+    href: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

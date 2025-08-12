@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Validation
+  commentId: N:Project.Application.Configuration.Validation
+  id: Project.Application.Configuration.Validation
+  children:
+  - Project.Application.Configuration.Validation.InvalidCommandException
+  - Project.Application.Configuration.Validation.ValidationBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Configuration.Validation
+  nameWithType: Project.Application.Configuration.Validation
+  fullName: Project.Application.Configuration.Validation
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Configuration.Validation.ValidationBehavior`2
+  commentId: T:Project.Application.Configuration.Validation.ValidationBehavior`2
+  href: Project.Application.Configuration.Validation.ValidationBehavior-2.html
+  name: ValidationBehavior<TRequest, TResponse>
+  nameWithType: ValidationBehavior<TRequest, TResponse>
+  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse)
+  name.vb: ValidationBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Validation.ValidationBehavior`2
+    name: ValidationBehavior
+    href: Project.Application.Configuration.Validation.ValidationBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Validation.ValidationBehavior`2
+    name: ValidationBehavior
+    href: Project.Application.Configuration.Validation.ValidationBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Application.Configuration.Validation.InvalidCommandException
+  commentId: T:Project.Application.Configuration.Validation.InvalidCommandException
+  parent: Project.Application.Configuration.Validation
+  href: Project.Application.Configuration.Validation.InvalidCommandException.html
+  name: InvalidCommandException
+  nameWithType: InvalidCommandException
+  fullName: Project.Application.Configuration.Validation.InvalidCommandException
+- uid: Project.Application.Configuration.Validation
+  commentId: N:Project.Application.Configuration.Validation
+  href: Project.html
+  name: Project.Application.Configuration.Validation
+  nameWithType: Project.Application.Configuration.Validation
+  fullName: Project.Application.Configuration.Validation
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Validation
+    name: Validation
+    href: Project.Application.Configuration.Validation.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Validation
+    name: Validation
+    href: Project.Application.Configuration.Validation.html

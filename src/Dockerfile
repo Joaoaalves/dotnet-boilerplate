@@ -2,14 +2,18 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-# Copia csproj e restaura dependências
+# Install dotnet-ef tool globally
+RUN dotnet tool install --global dotnet-ef \
+    && export PATH="$PATH:/root/.dotnet/tools"
+
+# Copy csproj files and restore dependencies
 COPY ./Project.Api/*.csproj ./Project.Api/
 COPY ./Project.Application/*.csproj ./Project.Application/
 COPY ./Project.Domain/*.csproj ./Project.Domain/
 COPY ./Project.Infrastructure/*.csproj ./Project.Infrastructure/
 RUN dotnet restore ./Project.Api/Project.Api.csproj
 
-# Copia tudo e builda release
+# Copy everything and publish
 COPY . .
 WORKDIR /app/Project.Api
 RUN dotnet publish -c Release -o /app/publish
@@ -18,4 +22,8 @@ RUN dotnet publish -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
+
+# Make sure the PATH includes dotnet tools (for EF commands if running here)
+ENV PATH="$PATH:/root/.dotnet/tools"
+
 ENTRYPOINT ["dotnet", "Project.Api.dll"]

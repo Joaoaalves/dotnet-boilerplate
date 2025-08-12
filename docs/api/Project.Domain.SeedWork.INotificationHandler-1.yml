@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.INotificationHandler`1
+  commentId: T:Project.Domain.SeedWork.INotificationHandler`1
+  id: INotificationHandler`1
+  parent: Project.Domain.SeedWork
+  children:
+  - Project.Domain.SeedWork.INotificationHandler`1.Handle(`0,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: INotificationHandler<TNotification>
+  nameWithType: INotificationHandler<TNotification>
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/INotificationHandler.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: INotificationHandler
+    path: ../src/Project.Domain/SeedWork/INotificationHandler.cs
+    startLine: 2
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: 'public interface INotificationHandler<TNotification> where TNotification : INotification'
+    typeParameters:
+    - id: TNotification
+    content.vb: Public Interface INotificationHandler(Of TNotification As INotification)
+  nameWithType.vb: INotificationHandler(Of TNotification)
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification)
+  name.vb: INotificationHandler(Of TNotification)
+- uid: Project.Domain.SeedWork.INotificationHandler`1.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.INotificationHandler`1.Handle(`0,System.Threading.CancellationToken)
+  id: Handle(`0,System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.INotificationHandler`1
+  langs:
+  - csharp
+  - vb
+  name: Handle(TNotification, CancellationToken)
+  nameWithType: INotificationHandler<TNotification>.Handle(TNotification, CancellationToken)
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>.Handle(TNotification, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/INotificationHandler.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Handle
+    path: ../src/Project.Domain/SeedWork/INotificationHandler.cs
+    startLine: 4
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: Task Handle(TNotification notification, CancellationToken cancellationToken)
+    parameters:
+    - id: notification
+      type: '{TNotification}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Handle(notification As TNotification, cancellationToken As CancellationToken) As Task
+  overload: Project.Domain.SeedWork.INotificationHandler`1.Handle*
+  nameWithType.vb: INotificationHandler(Of TNotification).Handle(TNotification, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification).Handle(TNotification, System.Threading.CancellationToken)
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Domain.SeedWork.INotificationHandler`1.Handle*
+  commentId: Overload:Project.Domain.SeedWork.INotificationHandler`1.Handle
+  href: Project.Domain.SeedWork.INotificationHandler-1.html#Project_Domain_SeedWork_INotificationHandler_1_Handle__0_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: INotificationHandler<TNotification>.Handle
+  fullName: Project.Domain.SeedWork.INotificationHandler<TNotification>.Handle
+  nameWithType.vb: INotificationHandler(Of TNotification).Handle
+  fullName.vb: Project.Domain.SeedWork.INotificationHandler(Of TNotification).Handle
+- uid: '{TNotification}'
+  commentId: '!:TNotification'
+  definition: TNotification
+  name: TNotification
+  nameWithType: TNotification
+  fullName: TNotification
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TNotification
+  name: TNotification
+  nameWithType: TNotification
+  fullName: TNotification
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

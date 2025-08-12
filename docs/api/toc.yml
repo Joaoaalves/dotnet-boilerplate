@@ -1,5 +1,120 @@
 ### YamlMime:TableOfContent
 items:
+- uid: Project.API.Configurations
+  name: Project.API.Configurations
+  type: Namespace
+  items:
+  - uid: Project.API.Configurations.CorsConfiguration
+    name: CorsConfiguration
+    type: Class
+  - uid: Project.API.Configurations.ExecutionContextAccessor
+    name: ExecutionContextAccessor
+    type: Class
+- uid: Project.API.SeedWork
+  name: Project.API.SeedWork
+  type: Namespace
+  items:
+  - uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
+    name: BusinessRuleValidationExceptionProblemDetails
+    type: Class
+  - uid: Project.API.SeedWork.InvalidCommandProblemDetails
+    name: InvalidCommandProblemDetails
+    type: Class
+- uid: Project.Api.Extensions
+  name: Project.Api.Extensions
+  type: Namespace
+  items:
+  - uid: Project.Api.Extensions.SwaggerExtensions
+    name: SwaggerExtensions
+    type: Class
+- uid: Project.Application.Configuration
+  name: Project.Application.Configuration
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.IExecutionContextAccessor
+    name: IExecutionContextAccessor
+    type: Interface
+- uid: Project.Application.Configuration.Commands
+  name: Project.Application.Configuration.Commands
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand<TResult>
+    type: Class
+  - uid: Project.Application.Configuration.Commands.ICommand
+    name: ICommand
+    type: Interface
+  - uid: Project.Application.Configuration.Commands.ICommandHandler`2
+    name: ICommandHandler<TCommand, TResult>
+    type: Interface
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand<TResult>
+    type: Interface
+  - uid: Project.Application.Configuration.Commands.InternalCommandBase`1
+    name: InternalCommandBase<TResult>
+    type: Class
+  - uid: Project.Application.Configuration.Commands.Unit
+    name: Unit
+    type: Struct
+  - uid: Project.Application.Configuration.Commands.UserAwareCommand`1
+    name: UserAwareCommand<TResult>
+    type: Class
+- uid: Project.Application.Configuration.Commands.Behaviors
+  name: Project.Application.Configuration.Commands.Behaviors
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
+    name: ICommandPipelineBehavior<TCommand, TResult>
+    type: Interface
+  - uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
+    name: LoggingBehavior<TCommand, TResult>
+    type: Class
+  - uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
+    name: UserInjectionCommandBehavior<TCommand, TResult>
+    type: Class
+- uid: Project.Application.Configuration.DomainEvents
+  name: Project.Application.Configuration.DomainEvents
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.DomainEvents.DomainNotificationBase`1
+    name: DomainNotificationBase<T>
+    type: Class
+  - uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+    name: IDomainEventNotification
+    type: Interface
+  - uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+    name: IDomainEventNotification<TEventType>
+    type: Interface
+- uid: Project.Application.Configuration.Queries
+  name: Project.Application.Configuration.Queries
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.Queries.IQueryHandler`2
+    name: IQueryHandler<TQuery, TResult>
+    type: Interface
+  - uid: Project.Application.Configuration.Queries.IQuery`1
+    name: IQuery<TResult>
+    type: Interface
+  - uid: Project.Application.Configuration.Queries.UserAwareQuery`1
+    name: UserAwareQuery<TResult>
+    type: Class
+- uid: Project.Application.Configuration.Queries.Behaviors
+  name: Project.Application.Configuration.Queries.Behaviors
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2
+    name: UserInjectionQueryBehavior<TQuery, TResult>
+    type: Class
+- uid: Project.Application.Configuration.Validation
+  name: Project.Application.Configuration.Validation
+  type: Namespace
+  items:
+  - uid: Project.Application.Configuration.Validation.InvalidCommandException
+    name: InvalidCommandException
+    type: Class
+  - uid: Project.Application.Configuration.Validation.ValidationBehavior`2
+    name: ValidationBehavior<TRequest, TResponse>
+    type: Class
 - uid: Project.Application.Users
   name: Project.Application.Users
   type: Namespace
@@ -26,8 +141,29 @@ items:
   - uid: Project.Domain.SeedWork.IDomainEvent
     name: IDomainEvent
     type: Interface
+  - uid: Project.Domain.SeedWork.IMediator
+    name: IMediator
+    type: Interface
   - uid: Project.Domain.SeedWork.INotification
     name: INotification
+    type: Interface
+  - uid: Project.Domain.SeedWork.INotificationHandler`1
+    name: INotificationHandler<TNotification>
+    type: Interface
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler<TRequest, TResponse>
+    type: Interface
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior<TRequest, TResponse>
+    type: Interface
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest<TResponse>
+    type: Interface
+  - uid: Project.Domain.SeedWork.IUnitOfWork
+    name: IUnitOfWork
+    type: Interface
+  - uid: Project.Domain.SeedWork.IUserAware
+    name: IUserAware
     type: Interface
   - uid: Project.Domain.SeedWork.IgnoreMemberAttribute
     name: IgnoreMemberAttribute
@@ -74,19 +210,22 @@ items:
   - uid: Project.Domain.Users.UserId
     name: UserId
     type: Class
-- uid: Project.Infrastructure
-  name: Project.Infrastructure
-  type: Namespace
-  items:
-  - uid: Project.Infrastructure.InfrastructureServices
-    name: InfrastructureServices
-    type: Class
 - uid: Project.Infrastructure.Database
   name: Project.Infrastructure.Database
   type: Namespace
   items:
   - uid: Project.Infrastructure.Database.ApplicationDbContext
     name: ApplicationDbContext
+    type: Class
+  - uid: Project.Infrastructure.Database.DataAccessModule
+    name: DataAccessModule
+    type: Class
+- uid: Project.Infrastructure.Domain
+  name: Project.Infrastructure.Domain
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Domain.UnitOfWork
+    name: UnitOfWork
     type: Class
 - uid: Project.Infrastructure.Domain.Users
   name: Project.Infrastructure.Domain.Users
@@ -101,6 +240,28 @@ items:
   items:
   - uid: Project.Infrastructure.Migrations.Init
     name: Init
+    type: Class
+- uid: Project.Infrastructure.Processing
+  name: Project.Infrastructure.Processing
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Processing.CommandsExecutor
+    name: CommandsExecutor
+    type: Class
+  - uid: Project.Infrastructure.Processing.DomainEventsDispatcher
+    name: DomainEventsDispatcher
+    type: Class
+  - uid: Project.Infrastructure.Processing.IDomainEventsDispatcher
+    name: IDomainEventsDispatcher
+    type: Interface
+  - uid: Project.Infrastructure.Processing.Mediator
+    name: Mediator
+    type: Class
+  - uid: Project.Infrastructure.Processing.MediatorModule
+    name: MediatorModule
+    type: Class
+  - uid: Project.Infrastructure.Processing.QueriesExecutor
+    name: QueriesExecutor
     type: Class
 - uid: Project.Infrastructure.SeedWork
   name: Project.Infrastructure.SeedWork

@@ -12,6 +12,496 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.API.Configurations.CorsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.API.Configurations.CorsConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.API.Configurations.CorsConfiguration",
+      "Summary": "<p sourcefile=\"api/Project.API.Configurations.CorsConfiguration.yml\" sourcestartlinenumber=\"1\">Provides CORS configuration methods for the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.API.Configurations.ExecutionContextAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.API.Configurations.ExecutionContextAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.API.Configurations.ExecutionContextAccessor",
+      "Summary": "<p sourcefile=\"api/Project.API.Configurations.ExecutionContextAccessor.yml\" sourcestartlinenumber=\"1\">Provides access to the current execution context, specifically the correlation ID from the HTTP request.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.API.Configurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.API.Configurations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.API.Configurations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails",
+      "Summary": "<p sourcefile=\"api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.yml\" sourcestartlinenumber=\"1\">Represents a standardized HTTP response for business rule validation exceptions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.API.SeedWork.InvalidCommandProblemDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.API.SeedWork.InvalidCommandProblemDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.API.SeedWork.InvalidCommandProblemDetails",
+      "Summary": "<p sourcefile=\"api/Project.API.SeedWork.InvalidCommandProblemDetails.yml\" sourcestartlinenumber=\"1\">Represents problem details for an <xref href=\"Project.Application.Configuration.Validation.InvalidCommandException\" data-throw-if-not-resolved=\"false\"></xref> error.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.API.SeedWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.API.SeedWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.API.SeedWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Extensions.SwaggerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Extensions.SwaggerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Extensions.SwaggerExtensions",
+      "Summary": "<p sourcefile=\"api/Project.Api.Extensions.SwaggerExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods to configure Swagger for the API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.BaseCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.BaseCommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.BaseCommand<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.Behaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.Behaviors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.Behaviors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.ICommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.ICommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.ICommand<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.ICommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.ICommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.ICommandHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.ICommandHandler-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.ICommandHandler<TCommand, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.InternalCommandBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.InternalCommandBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.InternalCommandBase<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.Unit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.Unit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.UserAwareCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.UserAwareCommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.UserAwareCommand<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.DomainEvents.DomainNotificationBase<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.DomainEvents.IDomainEventNotification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.DomainEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.DomainEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.DomainEvents",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.IExecutionContextAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.IExecutionContextAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.IExecutionContextAccessor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior<TQuery, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Queries.Behaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Queries.Behaviors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Queries.Behaviors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Queries.IQuery-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Queries.IQuery-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Queries.IQuery<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Queries.IQueryHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Queries.IQueryHandler-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Queries.IQueryHandler<TQuery, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Queries.UserAwareQuery-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Queries.UserAwareQuery-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Queries.UserAwareQuery<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Queries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Queries",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Validation.InvalidCommandException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Validation.InvalidCommandException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Validation.InvalidCommandException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Validation.ValidationBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Validation.ValidationBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Validation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Validation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Application.Users.IUserRepository.yml",
       "output": {
         ".html": {
@@ -110,6 +600,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IMediator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IMediator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IMediator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Domain.SeedWork.INotification.yml",
       "output": {
         ".html": {
@@ -121,6 +625,90 @@
       "IsMRef": true,
       "Title": "Project.Domain.SeedWork.INotification",
       "Summary": "<p sourcefile=\"api/Project.Domain.SeedWork.INotification.yml\" sourcestartlinenumber=\"1\">Marker interface for domain events and notifications.\nUsed to support the mediator pattern and event dispatching.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.INotificationHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.INotificationHandler-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.INotificationHandler<TNotification>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IRequest-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IRequest<TResponse>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IRequestHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IRequestHandler-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IUnitOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IUnitOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IUnitOfWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SeedWork.IUserAware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SeedWork.IUserAware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SeedWork.IUserAware",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -348,6 +936,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Database.DataAccessModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Database.DataAccessModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Database.DataAccessModule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Infrastructure.Database.yml",
       "output": {
         ".html": {
@@ -358,6 +960,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Database",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Domain.UnitOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Domain.UnitOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Domain.UnitOfWork",
       "Summary": null
     },
     {
@@ -390,17 +1006,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.InfrastructureServices.yml",
+      "source_relative_path": "api/Project.Infrastructure.Domain.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Infrastructure.InfrastructureServices.html"
+          "relative_path": "api/Project.Infrastructure.Domain.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Infrastructure.InfrastructureServices",
-      "Summary": "<p sourcefile=\"api/Project.Infrastructure.InfrastructureServices.yml\" sourcestartlinenumber=\"1\">Provides extension methods to register infrastructure services in the dependency injection container.</p>\n"
+      "Title": "Project.Infrastructure.Domain",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -428,6 +1044,104 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.CommandsExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.CommandsExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.CommandsExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.DomainEventsDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.DomainEventsDispatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.DomainEventsDispatcher",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.IDomainEventsDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.IDomainEventsDispatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.IDomainEventsDispatcher",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.Mediator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.Mediator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.Mediator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.MediatorModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.MediatorModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.MediatorModule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.QueriesExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.QueriesExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.QueriesExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing",
       "Summary": null
     },
     {
@@ -498,20 +1212,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Users",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Infrastructure.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Infrastructure",
       "Summary": null
     },
     {

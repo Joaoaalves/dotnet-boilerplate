@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  id: IDomainEventNotification`1
+  parent: Project.Application.Configuration.DomainEvents
+  children:
+  - Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  langs:
+  - csharp
+  - vb
+  name: IDomainEventNotification<TEventType>
+  nameWithType: IDomainEventNotification<TEventType>
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IDomainEventNotification
+    path: ../src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+    startLine: 4
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.DomainEvents
+  syntax:
+    content: 'public interface IDomainEventNotification<TEventType> : IDomainEventNotification, INotification'
+    typeParameters:
+    - id: TEventType
+    content.vb: Public Interface IDomainEventNotification(Of TEventType) Inherits IDomainEventNotification, INotification
+  inheritedMembers:
+  - Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  nameWithType.vb: IDomainEventNotification(Of TEventType)
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType)
+  name.vb: IDomainEventNotification(Of TEventType)
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  commentId: P:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  id: DomainEvent
+  parent: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1
+  langs:
+  - csharp
+  - vb
+  name: DomainEvent
+  nameWithType: IDomainEventNotification<TEventType>.DomainEvent
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>.DomainEvent
+  type: Property
+  source:
+    remote:
+      path: src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DomainEvent
+    path: ../src/Project.Application/Configuration/DomainEvents/IDomainEventNotification.cs
+    startLine: 6
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.DomainEvents
+  syntax:
+    content: TEventType DomainEvent { get; }
+    parameters: []
+    return:
+      type: '{TEventType}'
+    content.vb: ReadOnly Property DomainEvent As TEventType
+  overload: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent*
+  nameWithType.vb: IDomainEventNotification(Of TEventType).DomainEvent
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType).DomainEvent
+references:
+- uid: Project.Application.Configuration.DomainEvents
+  commentId: N:Project.Application.Configuration.DomainEvents
+  href: Project.html
+  name: Project.Application.Configuration.DomainEvents
+  nameWithType: Project.Application.Configuration.DomainEvents
+  fullName: Project.Application.Configuration.DomainEvents
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.DomainEvents
+    name: DomainEvents
+    href: Project.Application.Configuration.DomainEvents.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.DomainEvents
+    name: DomainEvents
+    href: Project.Application.Configuration.DomainEvents.html
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  commentId: P:Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+  parent: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  href: Project.Application.Configuration.DomainEvents.IDomainEventNotification.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_Id
+  name: Id
+  nameWithType: IDomainEventNotification.Id
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification.Id
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  commentId: T:Project.Application.Configuration.DomainEvents.IDomainEventNotification
+  parent: Project.Application.Configuration.DomainEvents
+  href: Project.Application.Configuration.DomainEvents.IDomainEventNotification.html
+  name: IDomainEventNotification
+  nameWithType: IDomainEventNotification
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification
+- uid: Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent*
+  commentId: Overload:Project.Application.Configuration.DomainEvents.IDomainEventNotification`1.DomainEvent
+  href: Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html#Project_Application_Configuration_DomainEvents_IDomainEventNotification_1_DomainEvent
+  name: DomainEvent
+  nameWithType: IDomainEventNotification<TEventType>.DomainEvent
+  fullName: Project.Application.Configuration.DomainEvents.IDomainEventNotification<TEventType>.DomainEvent
+  nameWithType.vb: IDomainEventNotification(Of TEventType).DomainEvent
+  fullName.vb: Project.Application.Configuration.DomainEvents.IDomainEventNotification(Of TEventType).DomainEvent
+- uid: '{TEventType}'
+  commentId: '!:TEventType'
+  definition: TEventType
+  name: TEventType
+  nameWithType: TEventType
+  fullName: TEventType
+- uid: TEventType
+  commentId: '!:TEventType'
+  name: TEventType
+  nameWithType: TEventType
+  fullName: TEventType

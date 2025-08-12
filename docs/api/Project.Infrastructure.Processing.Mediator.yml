@@ -1,0 +1,880 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Processing.Mediator
+  commentId: T:Project.Infrastructure.Processing.Mediator
+  id: Mediator
+  parent: Project.Infrastructure.Processing
+  children:
+  - Project.Infrastructure.Processing.Mediator.#ctor(System.IServiceProvider)
+  - Project.Infrastructure.Processing.Mediator.Publish``1(``0,System.Threading.CancellationToken)
+  - Project.Infrastructure.Processing.Mediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: Mediator
+  nameWithType: Mediator
+  fullName: Project.Infrastructure.Processing.Mediator
+  type: Class
+  source:
+    remote:
+      path: src/Project.Infrastructure/Processing/Mediator.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Mediator
+    path: ../src/Project.Infrastructure/Processing/Mediator.cs
+    startLine: 5
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Processing
+  syntax:
+    content: 'public class Mediator : IMediator'
+    content.vb: Public Class Mediator Implements IMediator
+  inheritance:
+  - System.Object
+  implements:
+  - Project.Domain.SeedWork.IMediator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Infrastructure.Processing.Mediator.#ctor(System.IServiceProvider)
+  commentId: M:Project.Infrastructure.Processing.Mediator.#ctor(System.IServiceProvider)
+  id: '#ctor(System.IServiceProvider)'
+  parent: Project.Infrastructure.Processing.Mediator
+  langs:
+  - csharp
+  - vb
+  name: Mediator(IServiceProvider)
+  nameWithType: Mediator.Mediator(IServiceProvider)
+  fullName: Project.Infrastructure.Processing.Mediator.Mediator(System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Infrastructure/Processing/Mediator.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Infrastructure/Processing/Mediator.cs
+    startLine: 5
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Processing
+  syntax:
+    content: public Mediator(IServiceProvider provider)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    content.vb: Public Sub New(provider As IServiceProvider)
+  overload: Project.Infrastructure.Processing.Mediator.#ctor*
+  nameWithType.vb: Mediator.New(IServiceProvider)
+  fullName.vb: Project.Infrastructure.Processing.Mediator.New(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+- uid: Project.Infrastructure.Processing.Mediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  commentId: M:Project.Infrastructure.Processing.Mediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  id: Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  parent: Project.Infrastructure.Processing.Mediator
+  langs:
+  - csharp
+  - vb
+  name: Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  nameWithType: Mediator.Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  fullName: Project.Infrastructure.Processing.Mediator.Send<TResponse>(Project.Domain.SeedWork.IRequest<TResponse>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Processing/Mediator.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Send
+    path: ../src/Project.Infrastructure/Processing/Mediator.cs
+    startLine: 8
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Processing
+  example: []
+  syntax:
+    content: public Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Project.Domain.SeedWork.IRequest{{TResponse}}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: TResponse
+    return:
+      type: System.Threading.Tasks.Task{{TResponse}}
+    content.vb: Public Function Send(Of TResponse)(request As IRequest(Of TResponse), cancellationToken As CancellationToken = Nothing) As Task(Of TResponse)
+  overload: Project.Infrastructure.Processing.Mediator.Send*
+  implements:
+  - Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{{TResponse}},System.Threading.CancellationToken)
+  nameWithType.vb: Mediator.Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  fullName.vb: Project.Infrastructure.Processing.Mediator.Send(Of TResponse)(Project.Domain.SeedWork.IRequest(Of TResponse), System.Threading.CancellationToken)
+  name.vb: Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+- uid: Project.Infrastructure.Processing.Mediator.Publish``1(``0,System.Threading.CancellationToken)
+  commentId: M:Project.Infrastructure.Processing.Mediator.Publish``1(``0,System.Threading.CancellationToken)
+  id: Publish``1(``0,System.Threading.CancellationToken)
+  parent: Project.Infrastructure.Processing.Mediator
+  langs:
+  - csharp
+  - vb
+  name: Publish<TNotification>(TNotification, CancellationToken)
+  nameWithType: Mediator.Publish<TNotification>(TNotification, CancellationToken)
+  fullName: Project.Infrastructure.Processing.Mediator.Publish<TNotification>(TNotification, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Processing/Mediator.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Publish
+    path: ../src/Project.Infrastructure/Processing/Mediator.cs
+    startLine: 31
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Processing
+  example: []
+  syntax:
+    content: 'public Task Publish<TNotification>(TNotification notification, CancellationToken cancellationToken = default) where TNotification : INotification'
+    parameters:
+    - id: notification
+      type: '{TNotification}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: TNotification
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Publish(Of TNotification As INotification)(notification As TNotification, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Project.Infrastructure.Processing.Mediator.Publish*
+  implements:
+  - Project.Domain.SeedWork.IMediator.Publish``1({TNotification},System.Threading.CancellationToken)
+  nameWithType.vb: Mediator.Publish(Of TNotification)(TNotification, CancellationToken)
+  fullName.vb: Project.Infrastructure.Processing.Mediator.Publish(Of TNotification)(TNotification, System.Threading.CancellationToken)
+  name.vb: Publish(Of TNotification)(TNotification, CancellationToken)
+references:
+- uid: Project.Infrastructure.Processing
+  commentId: N:Project.Infrastructure.Processing
+  href: Project.html
+  name: Project.Infrastructure.Processing
+  nameWithType: Project.Infrastructure.Processing
+  fullName: Project.Infrastructure.Processing
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Domain.SeedWork.IMediator
+  commentId: T:Project.Domain.SeedWork.IMediator
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.IMediator.html
+  name: IMediator
+  nameWithType: IMediator
+  fullName: Project.Domain.SeedWork.IMediator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Infrastructure.Processing.Mediator.#ctor*
+  commentId: Overload:Project.Infrastructure.Processing.Mediator.#ctor
+  href: Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator__ctor_System_IServiceProvider_
+  name: Mediator
+  nameWithType: Mediator.Mediator
+  fullName: Project.Infrastructure.Processing.Mediator.Mediator
+  nameWithType.vb: Mediator.New
+  fullName.vb: Project.Infrastructure.Processing.Mediator.New
+  name.vb: New
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Project.Infrastructure.Processing.Mediator.Send*
+  commentId: Overload:Project.Infrastructure.Processing.Mediator.Send
+  href: Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator_Send__1_Project_Domain_SeedWork_IRequest___0__System_Threading_CancellationToken_
+  name: Send
+  nameWithType: Mediator.Send
+  fullName: Project.Infrastructure.Processing.Mediator.Send
+- uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{{TResponse}},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IMediator
+  definition: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  nameWithType: IMediator.Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  fullName: Project.Domain.SeedWork.IMediator.Send<TResponse>(Project.Domain.SeedWork.IRequest<TResponse>, System.Threading.CancellationToken)
+  nameWithType.vb: IMediator.Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IMediator.Send(Of TResponse)(Project.Domain.SeedWork.IRequest(Of TResponse), System.Threading.CancellationToken)
+  name.vb: Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+    name: Send
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: (
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+    name: Send
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: (
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Project.Domain.SeedWork.IRequest{{TResponse}}
+  commentId: T:Project.Domain.SeedWork.IRequest{``0}
+  parent: Project.Domain.SeedWork
+  definition: Project.Domain.SeedWork.IRequest`1
+  href: Project.Domain.SeedWork.IRequest-1.html
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: Project.Domain.SeedWork.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{TResponse}}
+  commentId: T:System.Threading.Tasks.Task{`1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResponse>
+  nameWithType: Task<TResponse>
+  fullName: System.Threading.Tasks.Task<TResponse>
+  nameWithType.vb: Task(Of TResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of TResponse)
+  name.vb: Task(Of TResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  nameWithType: IMediator.Send<TResponse>(IRequest<TResponse>, CancellationToken)
+  fullName: Project.Domain.SeedWork.IMediator.Send<TResponse>(Project.Domain.SeedWork.IRequest<TResponse>, System.Threading.CancellationToken)
+  nameWithType.vb: IMediator.Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IMediator.Send(Of TResponse)(Project.Domain.SeedWork.IRequest(Of TResponse), System.Threading.CancellationToken)
+  name.vb: Send(Of TResponse)(IRequest(Of TResponse), CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+    name: Send
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: (
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IMediator.Send``1(Project.Domain.SeedWork.IRequest{``0},System.Threading.CancellationToken)
+    name: Send
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: (
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Project.Domain.SeedWork.IRequest`1
+  commentId: T:Project.Domain.SeedWork.IRequest`1
+  href: Project.Domain.SeedWork.IRequest-1.html
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: Project.Domain.SeedWork.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequest`1
+    name: IRequest
+    href: Project.Domain.SeedWork.IRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Infrastructure.Processing.Mediator.Publish*
+  commentId: Overload:Project.Infrastructure.Processing.Mediator.Publish
+  href: Project.Infrastructure.Processing.Mediator.html#Project_Infrastructure_Processing_Mediator_Publish__1___0_System_Threading_CancellationToken_
+  name: Publish
+  nameWithType: Mediator.Publish
+  fullName: Project.Infrastructure.Processing.Mediator.Publish
+- uid: Project.Domain.SeedWork.IMediator.Publish``1({TNotification},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IMediator
+  definition: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Publish<TNotification>(TNotification, CancellationToken)
+  nameWithType: IMediator.Publish<TNotification>(TNotification, CancellationToken)
+  fullName: Project.Domain.SeedWork.IMediator.Publish<TNotification>(TNotification, System.Threading.CancellationToken)
+  nameWithType.vb: IMediator.Publish(Of TNotification)(TNotification, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IMediator.Publish(Of TNotification)(TNotification, System.Threading.CancellationToken)
+  name.vb: Publish(Of TNotification)(TNotification, CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+    name: Publish
+  - name: <
+  - name: TNotification
+  - name: '>'
+  - name: (
+  - name: TNotification
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+    name: Publish
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNotification
+  - name: )
+  - name: (
+  - name: TNotification
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{TNotification}'
+  commentId: '!:TNotification'
+  definition: TNotification
+  name: TNotification
+  nameWithType: TNotification
+  fullName: TNotification
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Publish<TNotification>(TNotification, CancellationToken)
+  nameWithType: IMediator.Publish<TNotification>(TNotification, CancellationToken)
+  fullName: Project.Domain.SeedWork.IMediator.Publish<TNotification>(TNotification, System.Threading.CancellationToken)
+  nameWithType.vb: IMediator.Publish(Of TNotification)(TNotification, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IMediator.Publish(Of TNotification)(TNotification, System.Threading.CancellationToken)
+  name.vb: Publish(Of TNotification)(TNotification, CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+    name: Publish
+  - name: <
+  - name: TNotification
+  - name: '>'
+  - name: (
+  - name: TNotification
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IMediator.Publish``1(``0,System.Threading.CancellationToken)
+    name: Publish
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TNotification
+  - name: )
+  - name: (
+  - name: TNotification
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: TNotification
+  name: TNotification
+  nameWithType: TNotification
+  fullName: TNotification

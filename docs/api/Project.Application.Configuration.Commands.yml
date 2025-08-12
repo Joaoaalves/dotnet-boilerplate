@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  id: Project.Application.Configuration.Commands
+  children:
+  - Project.Application.Configuration.Commands.BaseCommand`1
+  - Project.Application.Configuration.Commands.ICommand
+  - Project.Application.Configuration.Commands.ICommandHandler`2
+  - Project.Application.Configuration.Commands.ICommand`1
+  - Project.Application.Configuration.Commands.InternalCommandBase`1
+  - Project.Application.Configuration.Commands.Unit
+  - Project.Application.Configuration.Commands.UserAwareCommand`1
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Configuration.Commands.BaseCommand`1
+  commentId: T:Project.Application.Configuration.Commands.BaseCommand`1
+  href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  name: BaseCommand<TResult>
+  nameWithType: BaseCommand<TResult>
+  fullName: Project.Application.Configuration.Commands.BaseCommand<TResult>
+  nameWithType.vb: BaseCommand(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.BaseCommand(Of TResult)
+  name.vb: BaseCommand(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand
+    href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.BaseCommand`1
+    name: BaseCommand
+    href: Project.Application.Configuration.Commands.BaseCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands.ICommand
+  commentId: T:Project.Application.Configuration.Commands.ICommand
+  parent: Project.Application.Configuration.Commands
+  href: Project.Application.Configuration.Commands.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Project.Application.Configuration.Commands.ICommand
+- uid: Project.Application.Configuration.Commands.ICommand`1
+  commentId: T:Project.Application.Configuration.Commands.ICommand`1
+  href: Project.Application.Configuration.Commands.ICommand-1.html
+  name: ICommand<TResult>
+  nameWithType: ICommand<TResult>
+  fullName: Project.Application.Configuration.Commands.ICommand<TResult>
+  nameWithType.vb: ICommand(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommand(Of TResult)
+  name.vb: ICommand(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand
+    href: Project.Application.Configuration.Commands.ICommand-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.ICommand`1
+    name: ICommand
+    href: Project.Application.Configuration.Commands.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands.Unit
+  commentId: T:Project.Application.Configuration.Commands.Unit
+  parent: Project.Application.Configuration.Commands
+  href: Project.Application.Configuration.Commands.Unit.html
+  name: Unit
+  nameWithType: Unit
+  fullName: Project.Application.Configuration.Commands.Unit
+- uid: Project.Application.Configuration.Commands.ICommandHandler`2
+  commentId: T:Project.Application.Configuration.Commands.ICommandHandler`2
+  href: Project.Application.Configuration.Commands.ICommandHandler-2.html
+  name: ICommandHandler<TCommand, TResult>
+  nameWithType: ICommandHandler<TCommand, TResult>
+  fullName: Project.Application.Configuration.Commands.ICommandHandler<TCommand, TResult>
+  nameWithType.vb: ICommandHandler(Of TCommand, TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandHandler(Of TCommand, TResult)
+  name.vb: ICommandHandler(Of TCommand, TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.ICommandHandler`2
+    name: ICommandHandler
+    href: Project.Application.Configuration.Commands.ICommandHandler-2.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.ICommandHandler`2
+    name: ICommandHandler
+    href: Project.Application.Configuration.Commands.ICommandHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands.InternalCommandBase`1
+  commentId: T:Project.Application.Configuration.Commands.InternalCommandBase`1
+  href: Project.Application.Configuration.Commands.InternalCommandBase-1.html
+  name: InternalCommandBase<TResult>
+  nameWithType: InternalCommandBase<TResult>
+  fullName: Project.Application.Configuration.Commands.InternalCommandBase<TResult>
+  nameWithType.vb: InternalCommandBase(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.InternalCommandBase(Of TResult)
+  name.vb: InternalCommandBase(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.InternalCommandBase`1
+    name: InternalCommandBase
+    href: Project.Application.Configuration.Commands.InternalCommandBase-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.InternalCommandBase`1
+    name: InternalCommandBase
+    href: Project.Application.Configuration.Commands.InternalCommandBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands.UserAwareCommand`1
+  commentId: T:Project.Application.Configuration.Commands.UserAwareCommand`1
+  href: Project.Application.Configuration.Commands.UserAwareCommand-1.html
+  name: UserAwareCommand<TResult>
+  nameWithType: UserAwareCommand<TResult>
+  fullName: Project.Application.Configuration.Commands.UserAwareCommand<TResult>
+  nameWithType.vb: UserAwareCommand(Of TResult)
+  fullName.vb: Project.Application.Configuration.Commands.UserAwareCommand(Of TResult)
+  name.vb: UserAwareCommand(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.UserAwareCommand`1
+    name: UserAwareCommand
+    href: Project.Application.Configuration.Commands.UserAwareCommand-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.UserAwareCommand`1
+    name: UserAwareCommand
+    href: Project.Application.Configuration.Commands.UserAwareCommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  href: Project.html
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html

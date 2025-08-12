@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Processing
+  commentId: N:Project.Infrastructure.Processing
+  id: Project.Infrastructure.Processing
+  children:
+  - Project.Infrastructure.Processing.CommandsExecutor
+  - Project.Infrastructure.Processing.DomainEventsDispatcher
+  - Project.Infrastructure.Processing.IDomainEventsDispatcher
+  - Project.Infrastructure.Processing.Mediator
+  - Project.Infrastructure.Processing.MediatorModule
+  - Project.Infrastructure.Processing.QueriesExecutor
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.Processing
+  nameWithType: Project.Infrastructure.Processing
+  fullName: Project.Infrastructure.Processing
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Processing.CommandsExecutor
+  commentId: T:Project.Infrastructure.Processing.CommandsExecutor
+  href: Project.Infrastructure.Processing.CommandsExecutor.html
+  name: CommandsExecutor
+  nameWithType: CommandsExecutor
+  fullName: Project.Infrastructure.Processing.CommandsExecutor
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher
+  commentId: T:Project.Infrastructure.Processing.DomainEventsDispatcher
+  href: Project.Infrastructure.Processing.DomainEventsDispatcher.html
+  name: DomainEventsDispatcher
+  nameWithType: DomainEventsDispatcher
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  commentId: T:Project.Infrastructure.Processing.IDomainEventsDispatcher
+  parent: Project.Infrastructure.Processing
+  href: Project.Infrastructure.Processing.IDomainEventsDispatcher.html
+  name: IDomainEventsDispatcher
+  nameWithType: IDomainEventsDispatcher
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher
+- uid: Project.Infrastructure.Processing.Mediator
+  commentId: T:Project.Infrastructure.Processing.Mediator
+  href: Project.Infrastructure.Processing.Mediator.html
+  name: Mediator
+  nameWithType: Mediator
+  fullName: Project.Infrastructure.Processing.Mediator
+- uid: Project.Infrastructure.Processing.MediatorModule
+  commentId: T:Project.Infrastructure.Processing.MediatorModule
+  href: Project.Infrastructure.Processing.MediatorModule.html
+  name: MediatorModule
+  nameWithType: MediatorModule
+  fullName: Project.Infrastructure.Processing.MediatorModule
+- uid: Project.Infrastructure.Processing.QueriesExecutor
+  commentId: T:Project.Infrastructure.Processing.QueriesExecutor
+  href: Project.Infrastructure.Processing.QueriesExecutor.html
+  name: QueriesExecutor
+  nameWithType: QueriesExecutor
+  fullName: Project.Infrastructure.Processing.QueriesExecutor
+- uid: Project.Infrastructure.Processing
+  commentId: N:Project.Infrastructure.Processing
+  href: Project.html
+  name: Project.Infrastructure.Processing
+  nameWithType: Project.Infrastructure.Processing
+  fullName: Project.Infrastructure.Processing
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html

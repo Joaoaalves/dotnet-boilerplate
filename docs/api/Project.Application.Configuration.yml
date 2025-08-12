@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration
+  commentId: N:Project.Application.Configuration
+  id: Project.Application.Configuration
+  children:
+  - Project.Application.Configuration.IExecutionContextAccessor
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Configuration
+  nameWithType: Project.Application.Configuration
+  fullName: Project.Application.Configuration
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Configuration.IExecutionContextAccessor
+  commentId: T:Project.Application.Configuration.IExecutionContextAccessor
+  parent: Project.Application.Configuration
+  href: Project.Application.Configuration.IExecutionContextAccessor.html
+  name: IExecutionContextAccessor
+  nameWithType: IExecutionContextAccessor
+  fullName: Project.Application.Configuration.IExecutionContextAccessor
+- uid: Project.Application.Configuration
+  commentId: N:Project.Application.Configuration
+  href: Project.html
+  name: Project.Application.Configuration
+  nameWithType: Project.Application.Configuration
+  fullName: Project.Application.Configuration
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html

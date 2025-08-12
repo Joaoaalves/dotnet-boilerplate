@@ -1,0 +1,33 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Error",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "AllowedHosts": "*",
+    "JWT": {
+        "Issuer": "http://localhost:5246",
+        "Audience": "http://localhost:5246",
+        "SignInKey": ""
+    },
+    "Encryption": {
+        "Key": ""
+    },
+    "Stripe": {
+        "SecretKey": "",
+        "WebhookSecret": "",
+        "Prices": {
+            "Enhanced": {
+                "Monthly": "",
+                "SemiAnnualy": "",
+                "Yearly": ""
+            },
+            "Ascend": {
+                "Monthly": "",
+                "SemiAnnualy": "",
+                "Yearly": ""
+            }
+        }
+    },
+}

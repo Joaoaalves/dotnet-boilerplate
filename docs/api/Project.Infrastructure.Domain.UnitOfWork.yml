@@ -1,0 +1,727 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Domain.UnitOfWork
+  commentId: T:Project.Infrastructure.Domain.UnitOfWork
+  id: UnitOfWork
+  parent: Project.Infrastructure.Domain
+  children:
+  - Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  - Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  - Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Project.Infrastructure.Domain.UnitOfWork
+  type: Class
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UnitOfWork
+    path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
+    startLine: 7
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain
+  syntax:
+    content: 'public class UnitOfWork : IUnitOfWork'
+    content.vb: Public Class UnitOfWork Implements IUnitOfWork
+  inheritance:
+  - System.Object
+  implements:
+  - Project.Domain.SeedWork.IUnitOfWork
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  id: '#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)'
+  parent: Project.Infrastructure.Domain.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
+  nameWithType: UnitOfWork.UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
+  fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork(Project.Infrastructure.Database.ApplicationDbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
+    startLine: 7
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain
+  syntax:
+    content: public UnitOfWork(ApplicationDbContext ordersContext, IDomainEventsDispatcher domainEventsDispatcher)
+    parameters:
+    - id: ordersContext
+      type: Project.Infrastructure.Database.ApplicationDbContext
+    - id: domainEventsDispatcher
+      type: Project.Infrastructure.Processing.IDomainEventsDispatcher
+    content.vb: Public Sub New(ordersContext As ApplicationDbContext, domainEventsDispatcher As IDomainEventsDispatcher)
+  overload: Project.Infrastructure.Domain.UnitOfWork.#ctor*
+  nameWithType.vb: UnitOfWork.New(ApplicationDbContext, IDomainEventsDispatcher)
+  fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New(Project.Infrastructure.Database.ApplicationDbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  name.vb: New(ApplicationDbContext, IDomainEventsDispatcher)
+- uid: Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  id: CommitAsync(System.Threading.CancellationToken)
+  parent: Project.Infrastructure.Domain.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: CommitAsync(CancellationToken)
+  nameWithType: UnitOfWork.CommitAsync(CancellationToken)
+  fullName: Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CommitAsync
+    path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
+    startLine: 13
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain
+  example: []
+  syntax:
+    content: public Task<int> CommitAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Public Function CommitAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
+  overload: Project.Infrastructure.Domain.UnitOfWork.CommitAsync*
+  implements:
+  - Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+- uid: Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  id: RevertAsync
+  parent: Project.Infrastructure.Domain.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync()
+  nameWithType: UnitOfWork.RevertAsync()
+  fullName: Project.Infrastructure.Domain.UnitOfWork.RevertAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync
+    path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
+    startLine: 19
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain
+  example: []
+  syntax:
+    content: public Task RevertAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RevertAsync() As Task
+  overload: Project.Infrastructure.Domain.UnitOfWork.RevertAsync*
+  implements:
+  - Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+references:
+- uid: Project.Infrastructure.Domain
+  commentId: N:Project.Infrastructure.Domain
+  href: Project.html
+  name: Project.Infrastructure.Domain
+  nameWithType: Project.Infrastructure.Domain
+  fullName: Project.Infrastructure.Domain
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Domain
+    name: Domain
+    href: Project.Infrastructure.Domain.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Domain
+    name: Domain
+    href: Project.Infrastructure.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Domain.SeedWork.IUnitOfWork
+  commentId: T:Project.Domain.SeedWork.IUnitOfWork
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.IUnitOfWork.html
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Project.Domain.SeedWork.IUnitOfWork
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Infrastructure.Domain.UnitOfWork.#ctor*
+  commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.#ctor
+  href: Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork__ctor_Project_Infrastructure_Database_ApplicationDbContext_Project_Infrastructure_Processing_IDomainEventsDispatcher_
+  name: UnitOfWork
+  nameWithType: UnitOfWork.UnitOfWork
+  fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork
+  nameWithType.vb: UnitOfWork.New
+  fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New
+  name.vb: New
+- uid: Project.Infrastructure.Database.ApplicationDbContext
+  commentId: T:Project.Infrastructure.Database.ApplicationDbContext
+  parent: Project.Infrastructure.Database
+  href: Project.Infrastructure.Database.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Project.Infrastructure.Processing.IDomainEventsDispatcher
+  commentId: T:Project.Infrastructure.Processing.IDomainEventsDispatcher
+  parent: Project.Infrastructure.Processing
+  href: Project.Infrastructure.Processing.IDomainEventsDispatcher.html
+  name: IDomainEventsDispatcher
+  nameWithType: IDomainEventsDispatcher
+  fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher
+- uid: Project.Infrastructure.Database
+  commentId: N:Project.Infrastructure.Database
+  href: Project.html
+  name: Project.Infrastructure.Database
+  nameWithType: Project.Infrastructure.Database
+  fullName: Project.Infrastructure.Database
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Database
+    name: Database
+    href: Project.Infrastructure.Database.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Database
+    name: Database
+    href: Project.Infrastructure.Database.html
+- uid: Project.Infrastructure.Processing
+  commentId: N:Project.Infrastructure.Processing
+  href: Project.html
+  name: Project.Infrastructure.Processing
+  nameWithType: Project.Infrastructure.Processing
+  fullName: Project.Infrastructure.Processing
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Processing
+    name: Processing
+    href: Project.Infrastructure.Processing.html
+- uid: Project.Infrastructure.Domain.UnitOfWork.CommitAsync*
+  commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.CommitAsync
+  href: Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork_CommitAsync_System_Threading_CancellationToken_
+  name: CommitAsync
+  nameWithType: UnitOfWork.CommitAsync
+  fullName: Project.Infrastructure.Domain.UnitOfWork.CommitAsync
+- uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IUnitOfWork
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CommitAsync(CancellationToken)
+  nameWithType: IUnitOfWork.CommitAsync(CancellationToken)
+  fullName: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+    name: CommitAsync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IUnitOfWork.CommitAsync(System.Threading.CancellationToken)
+    name: CommitAsync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Infrastructure.Domain.UnitOfWork.RevertAsync*
+  commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+  href: Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork_RevertAsync
+  name: RevertAsync
+  nameWithType: UnitOfWork.RevertAsync
+  fullName: Project.Infrastructure.Domain.UnitOfWork.RevertAsync
+- uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  commentId: M:Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+  parent: Project.Domain.SeedWork.IUnitOfWork
+  name: RevertAsync()
+  nameWithType: IUnitOfWork.RevertAsync()
+  fullName: Project.Domain.SeedWork.IUnitOfWork.RevertAsync()
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+    name: RevertAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IUnitOfWork.RevertAsync
+    name: RevertAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

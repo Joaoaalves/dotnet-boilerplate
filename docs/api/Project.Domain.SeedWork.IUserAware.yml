@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SeedWork.IUserAware
+  commentId: T:Project.Domain.SeedWork.IUserAware
+  id: IUserAware
+  parent: Project.Domain.SeedWork
+  children:
+  - Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  langs:
+  - csharp
+  - vb
+  name: IUserAware
+  nameWithType: IUserAware
+  fullName: Project.Domain.SeedWork.IUserAware
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/IUserAware.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IUserAware
+    path: ../src/Project.Domain/SeedWork/IUserAware.cs
+    startLine: 4
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: public interface IUserAware
+    content.vb: Public Interface IUserAware
+- uid: Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  commentId: M:Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  id: InjectUser(Project.Domain.Users.User)
+  parent: Project.Domain.SeedWork.IUserAware
+  langs:
+  - csharp
+  - vb
+  name: InjectUser(User)
+  nameWithType: IUserAware.InjectUser(User)
+  fullName: Project.Domain.SeedWork.IUserAware.InjectUser(Project.Domain.Users.User)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SeedWork/IUserAware.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: InjectUser
+    path: ../src/Project.Domain/SeedWork/IUserAware.cs
+    startLine: 6
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SeedWork
+  syntax:
+    content: void InjectUser(User user)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+    content.vb: Sub InjectUser(user As User)
+  overload: Project.Domain.SeedWork.IUserAware.InjectUser*
+references:
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Domain.SeedWork.IUserAware.InjectUser*
+  commentId: Overload:Project.Domain.SeedWork.IUserAware.InjectUser
+  href: Project.Domain.SeedWork.IUserAware.html#Project_Domain_SeedWork_IUserAware_InjectUser_Project_Domain_Users_User_
+  name: InjectUser
+  nameWithType: IUserAware.InjectUser
+  fullName: Project.Domain.SeedWork.IUserAware.InjectUser
+- uid: Project.Domain.Users.User
+  commentId: T:Project.Domain.Users.User
+  parent: Project.Domain.Users
+  href: Project.Domain.Users.User.html
+  name: User
+  nameWithType: User
+  fullName: Project.Domain.Users.User
+- uid: Project.Domain.Users
+  commentId: N:Project.Domain.Users
+  href: Project.html
+  name: Project.Domain.Users
+  nameWithType: Project.Domain.Users
+  fullName: Project.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html

@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Commands.ICommandHandler`2
+  commentId: T:Project.Application.Configuration.Commands.ICommandHandler`2
+  id: ICommandHandler`2
+  parent: Project.Application.Configuration.Commands
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICommandHandler<TCommand, TResult>
+  nameWithType: ICommandHandler<TCommand, TResult>
+  fullName: Project.Application.Configuration.Commands.ICommandHandler<TCommand, TResult>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Application/Configuration/Commands/ICommandHandler.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ICommandHandler
+    path: ../src/Project.Application/Configuration/Commands/ICommandHandler.cs
+    startLine: 4
+  assemblies:
+  - Project.Application
+  namespace: Project.Application.Configuration.Commands
+  syntax:
+    content: 'public interface ICommandHandler<in TCommand, TResult> : IRequestHandler<TCommand, TResult> where TCommand : ICommand<TResult>'
+    typeParameters:
+    - id: TCommand
+    - id: TResult
+    content.vb: Public Interface ICommandHandler(Of In TCommand As ICommand(Of TResult), TResult) Inherits IRequestHandler(Of TCommand, TResult)
+  inheritedMembers:
+  - Project.Domain.SeedWork.IRequestHandler{{TCommand},{TResult}}.Handle({TCommand},System.Threading.CancellationToken)
+  nameWithType.vb: ICommandHandler(Of TCommand, TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandHandler(Of TCommand, TResult)
+  name.vb: ICommandHandler(Of TCommand, TResult)
+references:
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  href: Project.html
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+- uid: Project.Domain.SeedWork.IRequestHandler{{TCommand},{TResult}}.Handle({TCommand},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IRequestHandler{`0,`1}.Handle(`0,System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IRequestHandler{{TCommand},{TResult}}
+  definition: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TCommand, CancellationToken)
+  nameWithType: IRequestHandler<TCommand, TResult>.Handle(TCommand, CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestHandler<TCommand, TResult>.Handle(TCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TCommand, TResult).Handle(TCommand, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TCommand, TResult).Handle(TCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler{`0,`1}.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler{`0,`1}.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler{{TCommand},{TResult}}
+  commentId: T:Project.Domain.SeedWork.IRequestHandler{`0,`1}
+  parent: Project.Domain.SeedWork
+  definition: Project.Domain.SeedWork.IRequestHandler`2
+  name: IRequestHandler<TCommand, TResult>
+  nameWithType: IRequestHandler<TCommand, TResult>
+  fullName: Project.Domain.SeedWork.IRequestHandler<TCommand, TResult>
+  nameWithType.vb: IRequestHandler(Of TCommand, TResult)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TCommand, TResult)
+  name.vb: IRequestHandler(Of TCommand, TResult)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestHandler`2
+  commentId: T:Project.Domain.SeedWork.IRequestHandler`2
+  href: Project.Domain.SeedWork.IRequestHandler-2.html
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: Project.Domain.SeedWork.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+    href: Project.Domain.SeedWork.IRequestHandler-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestHandler`2
+    name: IRequestHandler
+    href: Project.Domain.SeedWork.IRequestHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html

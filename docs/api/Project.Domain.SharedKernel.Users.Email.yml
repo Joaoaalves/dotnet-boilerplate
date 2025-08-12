@@ -672,6 +672,7 @@ references:
   fullName: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
 - uid: Project.Domain.SeedWork.BusinessRuleValidationException
   commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+  parent: Project.Domain.SeedWork
   href: Project.Domain.SeedWork.BusinessRuleValidationException.html
   name: BusinessRuleValidationException
   nameWithType: BusinessRuleValidationException

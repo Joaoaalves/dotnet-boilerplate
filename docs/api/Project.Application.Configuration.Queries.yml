@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Configuration.Queries
+  commentId: N:Project.Application.Configuration.Queries
+  id: Project.Application.Configuration.Queries
+  children:
+  - Project.Application.Configuration.Queries.IQueryHandler`2
+  - Project.Application.Configuration.Queries.IQuery`1
+  - Project.Application.Configuration.Queries.UserAwareQuery`1
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Configuration.Queries
+  nameWithType: Project.Application.Configuration.Queries
+  fullName: Project.Application.Configuration.Queries
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Configuration.Queries.IQuery`1
+  commentId: T:Project.Application.Configuration.Queries.IQuery`1
+  href: Project.Application.Configuration.Queries.IQuery-1.html
+  name: IQuery<TResult>
+  nameWithType: IQuery<TResult>
+  fullName: Project.Application.Configuration.Queries.IQuery<TResult>
+  nameWithType.vb: IQuery(Of TResult)
+  fullName.vb: Project.Application.Configuration.Queries.IQuery(Of TResult)
+  name.vb: IQuery(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Queries.IQuery`1
+    name: IQuery
+    href: Project.Application.Configuration.Queries.IQuery-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Queries.IQuery`1
+    name: IQuery
+    href: Project.Application.Configuration.Queries.IQuery-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Queries.IQueryHandler`2
+  commentId: T:Project.Application.Configuration.Queries.IQueryHandler`2
+  href: Project.Application.Configuration.Queries.IQueryHandler-2.html
+  name: IQueryHandler<TQuery, TResult>
+  nameWithType: IQueryHandler<TQuery, TResult>
+  fullName: Project.Application.Configuration.Queries.IQueryHandler<TQuery, TResult>
+  nameWithType.vb: IQueryHandler(Of TQuery, TResult)
+  fullName.vb: Project.Application.Configuration.Queries.IQueryHandler(Of TQuery, TResult)
+  name.vb: IQueryHandler(Of TQuery, TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Queries.IQueryHandler`2
+    name: IQueryHandler
+    href: Project.Application.Configuration.Queries.IQueryHandler-2.html
+  - name: <
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Queries.IQueryHandler`2
+    name: IQueryHandler
+    href: Project.Application.Configuration.Queries.IQueryHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TQuery
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Queries.UserAwareQuery`1
+  commentId: T:Project.Application.Configuration.Queries.UserAwareQuery`1
+  href: Project.Application.Configuration.Queries.UserAwareQuery-1.html
+  name: UserAwareQuery<TResult>
+  nameWithType: UserAwareQuery<TResult>
+  fullName: Project.Application.Configuration.Queries.UserAwareQuery<TResult>
+  nameWithType.vb: UserAwareQuery(Of TResult)
+  fullName.vb: Project.Application.Configuration.Queries.UserAwareQuery(Of TResult)
+  name.vb: UserAwareQuery(Of TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Queries.UserAwareQuery`1
+    name: UserAwareQuery
+    href: Project.Application.Configuration.Queries.UserAwareQuery-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Queries.UserAwareQuery`1
+    name: UserAwareQuery
+    href: Project.Application.Configuration.Queries.UserAwareQuery-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

@@ -1,4 +1,179 @@
 {
+  "api/Project.API.Configurations.CorsConfiguration.html": {
+    "href": "api/Project.API.Configurations.CorsConfiguration.html",
+    "title": "Class CorsConfiguration | Project",
+    "summary": "Class CorsConfiguration Namespace Project.API.Configurations Assembly Project.Api.dll Provides CORS configuration methods for the application. public static class CorsConfiguration Inheritance object CorsConfiguration Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddCorsConfiguration(IServiceCollection) Adds CORS policies to the service collection. public static IServiceCollection AddCorsConfiguration(this IServiceCollection services) Parameters services IServiceCollection The service collection to which the CORS policies will be added. Returns IServiceCollection The same IServiceCollection instance, enabling method chaining. Remarks This method configures two CORS policies: \"CorsPolicy\" Dynamically allows origins based on environment and request origin. In development mode, it allows \"localhost\" and local IPs (192.168.*). In production, it allows only the origin specified in the \"CLIENT_URL\" environment variable. \"PublicPolicy\"Allows any origin, header, and method — intended for public access."
+  },
+  "api/Project.API.Configurations.ExecutionContextAccessor.html": {
+    "href": "api/Project.API.Configurations.ExecutionContextAccessor.html",
+    "title": "Class ExecutionContextAccessor | Project",
+    "summary": "Class ExecutionContextAccessor Namespace Project.API.Configurations Assembly Project.Api.dll Provides access to the current execution context, specifically the correlation ID from the HTTP request. public class ExecutionContextAccessor : IExecutionContextAccessor Inheritance object ExecutionContextAccessor Implements IExecutionContextAccessor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ExecutionContextAccessor(IHttpContextAccessor) Initializes a new instance of the ExecutionContextAccessor class. public ExecutionContextAccessor(IHttpContextAccessor httpContextAccessor) Parameters httpContextAccessor IHttpContextAccessor An accessor to retrieve the current HTTP context. Properties CorrelationId Gets the correlation ID from the incoming HTTP request headers. public Guid CorrelationId { get; } Property Value Guid Exceptions ApplicationException Thrown if the HTTP context or correlation ID is not available in the request. IsAvailable Gets a value indicating whether the HTTP context is currently available. public bool IsAvailable { get; } Property Value bool"
+  },
+  "api/Project.API.Configurations.html": {
+    "href": "api/Project.API.Configurations.html",
+    "title": "Namespace Project.API.Configurations | Project",
+    "summary": "Namespace Project.API.Configurations Classes CorsConfiguration Provides CORS configuration methods for the application. ExecutionContextAccessor Provides access to the current execution context, specifically the correlation ID from the HTTP request."
+  },
+  "api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html": {
+    "href": "api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html",
+    "title": "Class BusinessRuleValidationExceptionProblemDetails | Project",
+    "summary": "Class BusinessRuleValidationExceptionProblemDetails Namespace Project.API.SeedWork Assembly Project.Api.dll Represents a standardized HTTP response for business rule validation exceptions. public class BusinessRuleValidationExceptionProblemDetails : ProblemDetails Inheritance object ProblemDetails BusinessRuleValidationExceptionProblemDetails Inherited Members ProblemDetails.Type ProblemDetails.Title ProblemDetails.Status ProblemDetails.Detail ProblemDetails.Instance ProblemDetails.Extensions object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Remarks This class extends ProblemDetails to provide consistent error responses when a BusinessRuleValidationException is thrown within the domain layer. It sets the HTTP status code to 409 Conflict and includes details from the exception. Constructors BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException) Initializes a new instance of the BusinessRuleValidationExceptionProblemDetails class using the provided BusinessRuleValidationException. public BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException exception) Parameters exception BusinessRuleValidationException The business rule validation exception containing error details. Remarks The Title is set to \"Business rule validation error\", the Status is set to 409 Conflict, and the Detail is populated with Details."
+  },
+  "api/Project.API.SeedWork.InvalidCommandProblemDetails.html": {
+    "href": "api/Project.API.SeedWork.InvalidCommandProblemDetails.html",
+    "title": "Class InvalidCommandProblemDetails | Project",
+    "summary": "Class InvalidCommandProblemDetails Namespace Project.API.SeedWork Assembly Project.Api.dll Represents problem details for an InvalidCommandException error. public class InvalidCommandProblemDetails : ProblemDetails Inheritance object ProblemDetails InvalidCommandProblemDetails Inherited Members ProblemDetails.Type ProblemDetails.Title ProblemDetails.Status ProblemDetails.Detail ProblemDetails.Instance ProblemDetails.Extensions object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors InvalidCommandProblemDetails(InvalidCommandException) Initializes a new instance of the InvalidCommandProblemDetails class using the details from the specified InvalidCommandException. public InvalidCommandProblemDetails(InvalidCommandException exception) Parameters exception InvalidCommandException The exception containing validation failure details."
+  },
+  "api/Project.API.SeedWork.html": {
+    "href": "api/Project.API.SeedWork.html",
+    "title": "Namespace Project.API.SeedWork | Project",
+    "summary": "Namespace Project.API.SeedWork Classes BusinessRuleValidationExceptionProblemDetails Represents a standardized HTTP response for business rule validation exceptions. InvalidCommandProblemDetails Represents problem details for an InvalidCommandException error."
+  },
+  "api/Project.Api.Extensions.SwaggerExtensions.html": {
+    "href": "api/Project.Api.Extensions.SwaggerExtensions.html",
+    "title": "Class SwaggerExtensions | Project",
+    "summary": "Class SwaggerExtensions Namespace Project.Api.Extensions Assembly Project.Api.dll Provides extension methods to configure Swagger for the API. public static class SwaggerExtensions Inheritance object SwaggerExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddSwaggerConfiguration(IServiceCollection) Adds Swagger and OpenAPI configuration to the service collection. public static IServiceCollection AddSwaggerConfiguration(this IServiceCollection services) Parameters services IServiceCollection The service collection to which Swagger services will be added. Returns IServiceCollection The same IServiceCollection instance, allowing method chaining. Remarks This method registers Swagger services including: Swagger generationRegisters Swagger generators and UI endpoints. JWT Bearer authenticationAdds security definitions and requirements for using JWT Bearer tokens in API requests."
+  },
+  "api/Project.Api.Extensions.html": {
+    "href": "api/Project.Api.Extensions.html",
+    "title": "Namespace Project.Api.Extensions | Project",
+    "summary": "Namespace Project.Api.Extensions Classes SwaggerExtensions Provides extension methods to configure Swagger for the API."
+  },
+  "api/Project.Application.Configuration.Commands.BaseCommand-1.html": {
+    "href": "api/Project.Application.Configuration.Commands.BaseCommand-1.html",
+    "title": "Class BaseCommand<TResult> | Project",
+    "summary": "Class BaseCommand<TResult> Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public class BaseCommand<TResult> : ICommand<TResult>, IRequest<TResult> Type Parameters TResult Inheritance object BaseCommand<TResult> Implements ICommand<TResult> IRequest<TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Id public Guid Id { get; } Property Value Guid"
+  },
+  "api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html": {
+    "href": "api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html",
+    "title": "Interface ICommandPipelineBehavior<TCommand, TResult> | Project",
+    "summary": "Interface ICommandPipelineBehavior<TCommand, TResult> Namespace Project.Application.Configuration.Commands.Behaviors Assembly Project.Application.dll public interface ICommandPipelineBehavior<TCommand, TResult> where TCommand : ICommand<TResult> Type Parameters TCommand TResult Methods Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken) Task<TResult> Handle(TCommand command, Func<TCommand, Task<TResult>> next, CancellationToken cancellationToken) Parameters command TCommand next Func<TCommand, Task<TResult>> cancellationToken CancellationToken Returns Task<TResult>"
+  },
+  "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html": {
+    "href": "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html",
+    "title": "Class LoggingBehavior<TCommand, TResult> | Project",
+    "summary": "Class LoggingBehavior<TCommand, TResult> Namespace Project.Application.Configuration.Commands.Behaviors Assembly Project.Application.dll public class LoggingBehavior<TCommand, TResult> : ICommandPipelineBehavior<TCommand, TResult> where TCommand : ICommand<TResult> Type Parameters TCommand TResult Inheritance object LoggingBehavior<TCommand, TResult> Implements ICommandPipelineBehavior<TCommand, TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken) public Task<TResult> Handle(TCommand command, Func<TCommand, Task<TResult>> next, CancellationToken cancellationToken) Parameters command TCommand next Func<TCommand, Task<TResult>> cancellationToken CancellationToken Returns Task<TResult>"
+  },
+  "api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html": {
+    "href": "api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html",
+    "title": "Class UserInjectionCommandBehavior<TCommand, TResult> | Project",
+    "summary": "Class UserInjectionCommandBehavior<TCommand, TResult> Namespace Project.Application.Configuration.Commands.Behaviors Assembly Project.Application.dll public class UserInjectionCommandBehavior<TCommand, TResult> : ICommandPipelineBehavior<TCommand, TResult> where TCommand : ICommand<TResult> Type Parameters TCommand TResult Inheritance object UserInjectionCommandBehavior<TCommand, TResult> Implements ICommandPipelineBehavior<TCommand, TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors UserInjectionCommandBehavior(IHttpContextAccessor, IUserRepository) public UserInjectionCommandBehavior(IHttpContextAccessor httpContextAccessor, IUserRepository userRepository) Parameters httpContextAccessor IHttpContextAccessor userRepository IUserRepository Methods Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken) public Task<TResult> Handle(TCommand command, Func<TCommand, Task<TResult>> next, CancellationToken cancellationToken) Parameters command TCommand next Func<TCommand, Task<TResult>> cancellationToken CancellationToken Returns Task<TResult>"
+  },
+  "api/Project.Application.Configuration.Commands.Behaviors.html": {
+    "href": "api/Project.Application.Configuration.Commands.Behaviors.html",
+    "title": "Namespace Project.Application.Configuration.Commands.Behaviors | Project",
+    "summary": "Namespace Project.Application.Configuration.Commands.Behaviors Classes LoggingBehavior<TCommand, TResult> UserInjectionCommandBehavior<TCommand, TResult> Interfaces ICommandPipelineBehavior<TCommand, TResult>"
+  },
+  "api/Project.Application.Configuration.Commands.ICommand-1.html": {
+    "href": "api/Project.Application.Configuration.Commands.ICommand-1.html",
+    "title": "Interface ICommand<TResult> | Project",
+    "summary": "Interface ICommand<TResult> Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public interface ICommand<TResult> : IRequest<TResult> Type Parameters TResult Properties Id Guid Id { get; } Property Value Guid"
+  },
+  "api/Project.Application.Configuration.Commands.ICommand.html": {
+    "href": "api/Project.Application.Configuration.Commands.ICommand.html",
+    "title": "Interface ICommand | Project",
+    "summary": "Interface ICommand Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public interface ICommand : IRequest<Unit> Properties Id Guid Id { get; } Property Value Guid"
+  },
+  "api/Project.Application.Configuration.Commands.ICommandHandler-2.html": {
+    "href": "api/Project.Application.Configuration.Commands.ICommandHandler-2.html",
+    "title": "Interface ICommandHandler<TCommand, TResult> | Project",
+    "summary": "Interface ICommandHandler<TCommand, TResult> Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public interface ICommandHandler<in TCommand, TResult> : IRequestHandler<TCommand, TResult> where TCommand : ICommand<TResult> Type Parameters TCommand TResult Inherited Members IRequestHandler<TCommand, TResult>.Handle(TCommand, CancellationToken)"
+  },
+  "api/Project.Application.Configuration.Commands.InternalCommandBase-1.html": {
+    "href": "api/Project.Application.Configuration.Commands.InternalCommandBase-1.html",
+    "title": "Class InternalCommandBase<TResult> | Project",
+    "summary": "Class InternalCommandBase<TResult> Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public abstract class InternalCommandBase<TResult> : ICommand<TResult>, IRequest<TResult> Type Parameters TResult Inheritance object InternalCommandBase<TResult> Implements ICommand<TResult> IRequest<TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors InternalCommandBase() protected InternalCommandBase() InternalCommandBase(Guid) protected InternalCommandBase(Guid id) Parameters id Guid Properties Id public Guid Id { get; } Property Value Guid"
+  },
+  "api/Project.Application.Configuration.Commands.Unit.html": {
+    "href": "api/Project.Application.Configuration.Commands.Unit.html",
+    "title": "Struct Unit | Project",
+    "summary": "Struct Unit Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public readonly struct Unit Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields Value public static readonly Unit Value Field Value Unit"
+  },
+  "api/Project.Application.Configuration.Commands.UserAwareCommand-1.html": {
+    "href": "api/Project.Application.Configuration.Commands.UserAwareCommand-1.html",
+    "title": "Class UserAwareCommand<TResult> | Project",
+    "summary": "Class UserAwareCommand<TResult> Namespace Project.Application.Configuration.Commands Assembly Project.Application.dll public abstract class UserAwareCommand<TResult> : IUserAware, ICommand<TResult>, IRequest<TResult> Type Parameters TResult Inheritance object UserAwareCommand<TResult> Implements IUserAware ICommand<TResult> IRequest<TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Id public Guid Id { get; } Property Value Guid User public User User { get; } Property Value User Methods InjectUser(User) public void InjectUser(User user) Parameters user User"
+  },
+  "api/Project.Application.Configuration.Commands.html": {
+    "href": "api/Project.Application.Configuration.Commands.html",
+    "title": "Namespace Project.Application.Configuration.Commands | Project",
+    "summary": "Namespace Project.Application.Configuration.Commands Classes BaseCommand<TResult> InternalCommandBase<TResult> UserAwareCommand<TResult> Structs Unit Interfaces ICommand ICommandHandler<TCommand, TResult> ICommand<TResult>"
+  },
+  "api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html": {
+    "href": "api/Project.Application.Configuration.DomainEvents.DomainNotificationBase-1.html",
+    "title": "Class DomainNotificationBase<T> | Project",
+    "summary": "Class DomainNotificationBase<T> Namespace Project.Application.Configuration.DomainEvents Assembly Project.Application.dll public class DomainNotificationBase<T> : IDomainEventNotification<T>, IDomainEventNotification, INotification where T : IDomainEvent Type Parameters T Inheritance object DomainNotificationBase<T> Implements IDomainEventNotification<T> IDomainEventNotification INotification Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors DomainNotificationBase(T) public DomainNotificationBase(T domainEvent) Parameters domainEvent T Properties DomainEvent [JsonIgnore] public T DomainEvent { get; } Property Value T Id public Guid Id { get; } Property Value Guid"
+  },
+  "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html": {
+    "href": "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification-1.html",
+    "title": "Interface IDomainEventNotification<TEventType> | Project",
+    "summary": "Interface IDomainEventNotification<TEventType> Namespace Project.Application.Configuration.DomainEvents Assembly Project.Application.dll public interface IDomainEventNotification<TEventType> : IDomainEventNotification, INotification Type Parameters TEventType Inherited Members IDomainEventNotification.Id Properties DomainEvent TEventType DomainEvent { get; } Property Value TEventType"
+  },
+  "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.html": {
+    "href": "api/Project.Application.Configuration.DomainEvents.IDomainEventNotification.html",
+    "title": "Interface IDomainEventNotification | Project",
+    "summary": "Interface IDomainEventNotification Namespace Project.Application.Configuration.DomainEvents Assembly Project.Application.dll public interface IDomainEventNotification : INotification Properties Id Guid Id { get; } Property Value Guid"
+  },
+  "api/Project.Application.Configuration.DomainEvents.html": {
+    "href": "api/Project.Application.Configuration.DomainEvents.html",
+    "title": "Namespace Project.Application.Configuration.DomainEvents | Project",
+    "summary": "Namespace Project.Application.Configuration.DomainEvents Classes DomainNotificationBase<T> Interfaces IDomainEventNotification IDomainEventNotification<TEventType>"
+  },
+  "api/Project.Application.Configuration.IExecutionContextAccessor.html": {
+    "href": "api/Project.Application.Configuration.IExecutionContextAccessor.html",
+    "title": "Interface IExecutionContextAccessor | Project",
+    "summary": "Interface IExecutionContextAccessor Namespace Project.Application.Configuration Assembly Project.Application.dll public interface IExecutionContextAccessor Properties CorrelationId Guid CorrelationId { get; } Property Value Guid IsAvailable bool IsAvailable { get; } Property Value bool"
+  },
+  "api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html": {
+    "href": "api/Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior-2.html",
+    "title": "Class UserInjectionQueryBehavior<TQuery, TResult> | Project",
+    "summary": "Class UserInjectionQueryBehavior<TQuery, TResult> Namespace Project.Application.Configuration.Queries.Behaviors Assembly Project.Application.dll public class UserInjectionQueryBehavior<TQuery, TResult> : IRequestPipelineBehavior<TQuery, TResult> where TQuery : IRequest<TResult> Type Parameters TQuery TResult Inheritance object UserInjectionQueryBehavior<TQuery, TResult> Implements IRequestPipelineBehavior<TQuery, TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors UserInjectionQueryBehavior(IHttpContextAccessor, UserManager<User>) public UserInjectionQueryBehavior(IHttpContextAccessor httpContextAccessor, UserManager<User> userManager) Parameters httpContextAccessor IHttpContextAccessor userManager UserManager<User> Methods Handle(TQuery, Func<Task<TResult>>, CancellationToken) public Task<TResult> Handle(TQuery query, Func<Task<TResult>> next, CancellationToken cancellationToken) Parameters query TQuery next Func<Task<TResult>> cancellationToken CancellationToken Returns Task<TResult>"
+  },
+  "api/Project.Application.Configuration.Queries.Behaviors.html": {
+    "href": "api/Project.Application.Configuration.Queries.Behaviors.html",
+    "title": "Namespace Project.Application.Configuration.Queries.Behaviors | Project",
+    "summary": "Namespace Project.Application.Configuration.Queries.Behaviors Classes UserInjectionQueryBehavior<TQuery, TResult>"
+  },
+  "api/Project.Application.Configuration.Queries.IQuery-1.html": {
+    "href": "api/Project.Application.Configuration.Queries.IQuery-1.html",
+    "title": "Interface IQuery<TResult> | Project",
+    "summary": "Interface IQuery<TResult> Namespace Project.Application.Configuration.Queries Assembly Project.Application.dll public interface IQuery<TResult> : IRequest<TResult> Type Parameters TResult"
+  },
+  "api/Project.Application.Configuration.Queries.IQueryHandler-2.html": {
+    "href": "api/Project.Application.Configuration.Queries.IQueryHandler-2.html",
+    "title": "Interface IQueryHandler<TQuery, TResult> | Project",
+    "summary": "Interface IQueryHandler<TQuery, TResult> Namespace Project.Application.Configuration.Queries Assembly Project.Application.dll public interface IQueryHandler<in TQuery, TResult> : IRequestHandler<TQuery, TResult> where TQuery : IQuery<TResult> Type Parameters TQuery TResult Inherited Members IRequestHandler<TQuery, TResult>.Handle(TQuery, CancellationToken)"
+  },
+  "api/Project.Application.Configuration.Queries.UserAwareQuery-1.html": {
+    "href": "api/Project.Application.Configuration.Queries.UserAwareQuery-1.html",
+    "title": "Class UserAwareQuery<TResult> | Project",
+    "summary": "Class UserAwareQuery<TResult> Namespace Project.Application.Configuration.Queries Assembly Project.Application.dll public class UserAwareQuery<TResult> : IUserAware, IQuery<TResult>, IRequest<TResult> Type Parameters TResult Inheritance object UserAwareQuery<TResult> Implements IUserAware IQuery<TResult> IRequest<TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties User public User User { get; } Property Value User Methods InjectUser(User) public void InjectUser(User user) Parameters user User"
+  },
+  "api/Project.Application.Configuration.Queries.html": {
+    "href": "api/Project.Application.Configuration.Queries.html",
+    "title": "Namespace Project.Application.Configuration.Queries | Project",
+    "summary": "Namespace Project.Application.Configuration.Queries Classes UserAwareQuery<TResult> Interfaces IQueryHandler<TQuery, TResult> IQuery<TResult>"
+  },
+  "api/Project.Application.Configuration.Validation.InvalidCommandException.html": {
+    "href": "api/Project.Application.Configuration.Validation.InvalidCommandException.html",
+    "title": "Class InvalidCommandException | Project",
+    "summary": "Class InvalidCommandException Namespace Project.Application.Configuration.Validation Assembly Project.Application.dll public class InvalidCommandException : Exception, ISerializable Inheritance object Exception InvalidCommandException Implements ISerializable Inherited Members Exception.GetBaseException() Exception.GetType() Exception.ToString() Exception.Data Exception.HelpLink Exception.HResult Exception.InnerException Exception.Message Exception.Source Exception.StackTrace Exception.TargetSite Exception.SerializeObjectState object.Equals(object) object.Equals(object, object) object.GetHashCode() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors InvalidCommandException(string, string) public InvalidCommandException(string message, string details) Parameters message string details string Properties Details public string Details { get; } Property Value string"
+  },
+  "api/Project.Application.Configuration.Validation.ValidationBehavior-2.html": {
+    "href": "api/Project.Application.Configuration.Validation.ValidationBehavior-2.html",
+    "title": "Class ValidationBehavior<TRequest, TResponse> | Project",
+    "summary": "Class ValidationBehavior<TRequest, TResponse> Namespace Project.Application.Configuration.Validation Assembly Project.Application.dll public class ValidationBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse> Type Parameters TRequest TResponse Inheritance object ValidationBehavior<TRequest, TResponse> Implements IRequestPipelineBehavior<TRequest, TResponse> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ValidationBehavior(IEnumerable<IValidator<TRequest>>) public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators) Parameters validators IEnumerable<IValidator<TRequest>> Methods Handle(TRequest, Func<Task<TResponse>>, CancellationToken) public Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next, CancellationToken cancellationToken) Parameters request TRequest next Func<Task<TResponse>> cancellationToken CancellationToken Returns Task<TResponse>"
+  },
+  "api/Project.Application.Configuration.Validation.html": {
+    "href": "api/Project.Application.Configuration.Validation.html",
+    "title": "Namespace Project.Application.Configuration.Validation | Project",
+    "summary": "Namespace Project.Application.Configuration.Validation Classes InvalidCommandException ValidationBehavior<TRequest, TResponse>"
+  },
+  "api/Project.Application.Configuration.html": {
+    "href": "api/Project.Application.Configuration.html",
+    "title": "Namespace Project.Application.Configuration | Project",
+    "summary": "Namespace Project.Application.Configuration Interfaces IExecutionContextAccessor"
+  },
   "api/Project.Application.Users.IUserRepository.html": {
     "href": "api/Project.Application.Users.IUserRepository.html",
     "title": "Interface IUserRepository | Project",
@@ -34,10 +209,45 @@
     "title": "Interface IDomainEvent | Project",
     "summary": "Interface IDomainEvent Namespace Project.Domain.SeedWork Assembly Project.Domain.dll Represents a domain event that indicates something important has happened within the domain. Domain events are used to notify other parts of the system about changes in state. public interface IDomainEvent : INotification Properties OccurredOn Gets the timestamp indicating when the domain event occurred. DateTime OccurredOn { get; } Property Value DateTime"
   },
+  "api/Project.Domain.SeedWork.IMediator.html": {
+    "href": "api/Project.Domain.SeedWork.IMediator.html",
+    "title": "Interface IMediator | Project",
+    "summary": "Interface IMediator Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IMediator Methods Publish<TNotification>(TNotification, CancellationToken) Task Publish<TNotification>(TNotification notification, CancellationToken cancellationToken = default) where TNotification : INotification Parameters notification TNotification cancellationToken CancellationToken Returns Task Type Parameters TNotification Send<TResponse>(IRequest<TResponse>, CancellationToken) Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default) Parameters request IRequest<TResponse> cancellationToken CancellationToken Returns Task<TResponse> Type Parameters TResponse"
+  },
   "api/Project.Domain.SeedWork.INotification.html": {
     "href": "api/Project.Domain.SeedWork.INotification.html",
     "title": "Interface INotification | Project",
     "summary": "Interface INotification Namespace Project.Domain.SeedWork Assembly Project.Domain.dll Marker interface for domain events and notifications. Used to support the mediator pattern and event dispatching. public interface INotification"
+  },
+  "api/Project.Domain.SeedWork.INotificationHandler-1.html": {
+    "href": "api/Project.Domain.SeedWork.INotificationHandler-1.html",
+    "title": "Interface INotificationHandler<TNotification> | Project",
+    "summary": "Interface INotificationHandler<TNotification> Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface INotificationHandler<TNotification> where TNotification : INotification Type Parameters TNotification Methods Handle(TNotification, CancellationToken) Task Handle(TNotification notification, CancellationToken cancellationToken) Parameters notification TNotification cancellationToken CancellationToken Returns Task"
+  },
+  "api/Project.Domain.SeedWork.IRequest-1.html": {
+    "href": "api/Project.Domain.SeedWork.IRequest-1.html",
+    "title": "Interface IRequest<TResponse> | Project",
+    "summary": "Interface IRequest<TResponse> Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IRequest<TResponse> Type Parameters TResponse"
+  },
+  "api/Project.Domain.SeedWork.IRequestHandler-2.html": {
+    "href": "api/Project.Domain.SeedWork.IRequestHandler-2.html",
+    "title": "Interface IRequestHandler<TRequest, TResponse> | Project",
+    "summary": "Interface IRequestHandler<TRequest, TResponse> Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IRequestHandler<in TRequest, TResponse> where TRequest : IRequest<TResponse> Type Parameters TRequest TResponse Methods Handle(TRequest, CancellationToken) Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken) Parameters request TRequest cancellationToken CancellationToken Returns Task<TResponse>"
+  },
+  "api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.html": {
+    "href": "api/Project.Domain.SeedWork.IRequestPipelineBehavior-2.html",
+    "title": "Interface IRequestPipelineBehavior<TRequest, TResponse> | Project",
+    "summary": "Interface IRequestPipelineBehavior<TRequest, TResponse> Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IRequestPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse> Type Parameters TRequest TResponse Methods Handle(TRequest, Func<Task<TResponse>>, CancellationToken) Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next, CancellationToken cancellationToken) Parameters request TRequest next Func<Task<TResponse>> cancellationToken CancellationToken Returns Task<TResponse>"
+  },
+  "api/Project.Domain.SeedWork.IUnitOfWork.html": {
+    "href": "api/Project.Domain.SeedWork.IUnitOfWork.html",
+    "title": "Interface IUnitOfWork | Project",
+    "summary": "Interface IUnitOfWork Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IUnitOfWork Methods CommitAsync(CancellationToken) Task<int> CommitAsync(CancellationToken cancellationToken = default) Parameters cancellationToken CancellationToken Returns Task<int> RevertAsync() Task RevertAsync() Returns Task"
+  },
+  "api/Project.Domain.SeedWork.IUserAware.html": {
+    "href": "api/Project.Domain.SeedWork.IUserAware.html",
+    "title": "Interface IUserAware | Project",
+    "summary": "Interface IUserAware Namespace Project.Domain.SeedWork Assembly Project.Domain.dll public interface IUserAware Methods InjectUser(User) void InjectUser(User user) Parameters user User"
   },
   "api/Project.Domain.SeedWork.IgnoreMemberAttribute.html": {
     "href": "api/Project.Domain.SeedWork.IgnoreMemberAttribute.html",
@@ -57,7 +267,7 @@
   "api/Project.Domain.SeedWork.html": {
     "href": "api/Project.Domain.SeedWork.html",
     "title": "Namespace Project.Domain.SeedWork | Project",
-    "summary": "Namespace Project.Domain.SeedWork Classes BusinessRuleValidationException Exception thrown when a business rule is violated. Contains the broken rule and a message describing the violation. Entity Represents the base class for all entities in the domain layer. Provides common behavior such as domain event handling and business rule validation. IgnoreMemberAttribute Attribute used to exclude a field or property from equality and hash code calculations in value objects. TypedIdValueBase Base class for strongly-typed identifier value objects. Ensures consistent equality and hash code logic for identifiers. ValueObject Represents a base class for value objects. Value objects are immutable and compared by the values of their properties and fields. Interfaces IAggregateRoot Marker interface used to indicate that an entity is an aggregate root. Aggregate roots are the entry point to a cluster of domain objects and enforce consistency rules. IBusinessRule Represents a business rule that can be validated. Business rules encapsulate domain-specific logic that must be enforced. IDomainEvent Represents a domain event that indicates something important has happened within the domain. Domain events are used to notify other parts of the system about changes in state. INotification Marker interface for domain events and notifications. Used to support the mediator pattern and event dispatching."
+    "summary": "Namespace Project.Domain.SeedWork Classes BusinessRuleValidationException Exception thrown when a business rule is violated. Contains the broken rule and a message describing the violation. Entity Represents the base class for all entities in the domain layer. Provides common behavior such as domain event handling and business rule validation. IgnoreMemberAttribute Attribute used to exclude a field or property from equality and hash code calculations in value objects. TypedIdValueBase Base class for strongly-typed identifier value objects. Ensures consistent equality and hash code logic for identifiers. ValueObject Represents a base class for value objects. Value objects are immutable and compared by the values of their properties and fields. Interfaces IAggregateRoot Marker interface used to indicate that an entity is an aggregate root. Aggregate roots are the entry point to a cluster of domain objects and enforce consistency rules. IBusinessRule Represents a business rule that can be validated. Business rules encapsulate domain-specific logic that must be enforced. IDomainEvent Represents a domain event that indicates something important has happened within the domain. Domain events are used to notify other parts of the system about changes in state. IMediator INotification Marker interface for domain events and notifications. Used to support the mediator pattern and event dispatching. INotificationHandler<TNotification> IRequestHandler<TRequest, TResponse> IRequestPipelineBehavior<TRequest, TResponse> IRequest<TResponse> IUnitOfWork IUserAware"
   },
   "api/Project.Domain.SharedKernel.Users.Email.html": {
     "href": "api/Project.Domain.SharedKernel.Users.Email.html",
@@ -119,10 +329,20 @@
     "title": "Class ApplicationDbContext | Project",
     "summary": "Class ApplicationDbContext Namespace Project.Infrastructure.Database Assembly Project.Infrastructure.dll Represents the Entity Framework Core database context for the application, integrating with ASP.NET Identity and custom domain configurations. public class ApplicationDbContext : IdentityDbContext<IdentityUserAdapter>, IInfrastructure<IServiceProvider>, IDbContextDependencies, IDbSetCache, IDbContextPoolable, IResettableService, IDisposable, IAsyncDisposable Inheritance object DbContext IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>> IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>> IdentityDbContext<IdentityUserAdapter, IdentityRole, string> IdentityDbContext<IdentityUserAdapter> ApplicationDbContext Implements IInfrastructure<IServiceProvider> IDbContextDependencies IDbSetCache IDbContextPoolable IResettableService IDisposable IAsyncDisposable Inherited Members IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.OnModelCreating(ModelBuilder) IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.UserRoles IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.Roles IdentityDbContext<IdentityUserAdapter, IdentityRole, string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>.RoleClaims IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.OnModelCreating(ModelBuilder) IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.Users IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserClaims IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserLogins IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.UserTokens IdentityUserContext<IdentityUserAdapter, string, IdentityUserClaim<string>, IdentityUserLogin<string>, IdentityUserToken<string>>.SchemaVersion DbContext.Set<TEntity>() DbContext.Set<TEntity>(string) DbContext.OnConfiguring(DbContextOptionsBuilder) DbContext.ConfigureConventions(ModelConfigurationBuilder) DbContext.SaveChanges() DbContext.SaveChanges(bool) DbContext.SaveChangesAsync(CancellationToken) DbContext.SaveChangesAsync(bool, CancellationToken) DbContext.Dispose() DbContext.DisposeAsync() DbContext.Entry<TEntity>(TEntity) DbContext.Entry(object) DbContext.Add<TEntity>(TEntity) DbContext.AddAsync<TEntity>(TEntity, CancellationToken) DbContext.Attach<TEntity>(TEntity) DbContext.Update<TEntity>(TEntity) DbContext.Remove<TEntity>(TEntity) DbContext.Add(object) DbContext.AddAsync(object, CancellationToken) DbContext.Attach(object) DbContext.Update(object) DbContext.Remove(object) DbContext.AddRange(params object[]) DbContext.AddRangeAsync(params object[]) DbContext.AttachRange(params object[]) DbContext.UpdateRange(params object[]) DbContext.RemoveRange(params object[]) DbContext.AddRange(IEnumerable<object>) DbContext.AddRangeAsync(IEnumerable<object>, CancellationToken) DbContext.AttachRange(IEnumerable<object>) DbContext.UpdateRange(IEnumerable<object>) DbContext.RemoveRange(IEnumerable<object>) DbContext.Find(Type, params object[]) DbContext.FindAsync(Type, params object[]) DbContext.FindAsync(Type, object[], CancellationToken) DbContext.Find<TEntity>(params object[]) DbContext.FindAsync<TEntity>(params object[]) DbContext.FindAsync<TEntity>(object[], CancellationToken) DbContext.FromExpression<TResult>(Expression<Func<IQueryable<TResult>>>) DbContext.Database DbContext.ChangeTracker DbContext.Model DbContext.ContextId DbContext.SavingChanges DbContext.SavedChanges DbContext.SaveChangesFailed object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ApplicationDbContext(DbContextOptions<ApplicationDbContext>) Represents the Entity Framework Core database context for the application, integrating with ASP.NET Identity and custom domain configurations. public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) Parameters options DbContextOptions<ApplicationDbContext> Methods OnModelCreating(ModelBuilder) Configures the entity models and applies all configurations found in the assembly. protected override void OnModelCreating(ModelBuilder builder) Parameters builder ModelBuilder The model builder used to configure entity mappings."
   },
+  "api/Project.Infrastructure.Database.DataAccessModule.html": {
+    "href": "api/Project.Infrastructure.Database.DataAccessModule.html",
+    "title": "Class DataAccessModule | Project",
+    "summary": "Class DataAccessModule Namespace Project.Infrastructure.Database Assembly Project.Infrastructure.dll public static class DataAccessModule Inheritance object DataAccessModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddDataAccessModule(IServiceCollection) public static IServiceCollection AddDataAccessModule(this IServiceCollection services) Parameters services IServiceCollection Returns IServiceCollection"
+  },
   "api/Project.Infrastructure.Database.html": {
     "href": "api/Project.Infrastructure.Database.html",
     "title": "Namespace Project.Infrastructure.Database | Project",
-    "summary": "Namespace Project.Infrastructure.Database Classes ApplicationDbContext Represents the Entity Framework Core database context for the application, integrating with ASP.NET Identity and custom domain configurations."
+    "summary": "Namespace Project.Infrastructure.Database Classes ApplicationDbContext Represents the Entity Framework Core database context for the application, integrating with ASP.NET Identity and custom domain configurations. DataAccessModule"
+  },
+  "api/Project.Infrastructure.Domain.UnitOfWork.html": {
+    "href": "api/Project.Infrastructure.Domain.UnitOfWork.html",
+    "title": "Class UnitOfWork | Project",
+    "summary": "Class UnitOfWork Namespace Project.Infrastructure.Domain Assembly Project.Infrastructure.dll public class UnitOfWork : IUnitOfWork Inheritance object UnitOfWork Implements IUnitOfWork Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher) public UnitOfWork(ApplicationDbContext ordersContext, IDomainEventsDispatcher domainEventsDispatcher) Parameters ordersContext ApplicationDbContext domainEventsDispatcher IDomainEventsDispatcher Methods CommitAsync(CancellationToken) public Task<int> CommitAsync(CancellationToken cancellationToken = default) Parameters cancellationToken CancellationToken Returns Task<int> RevertAsync() public Task RevertAsync() Returns Task"
   },
   "api/Project.Infrastructure.Domain.Users.UserRepository.html": {
     "href": "api/Project.Infrastructure.Domain.Users.UserRepository.html",
@@ -134,10 +354,10 @@
     "title": "Namespace Project.Infrastructure.Domain.Users | Project",
     "summary": "Namespace Project.Infrastructure.Domain.Users Classes UserRepository Provides an implementation of IUserRepository using Entity Framework Core and ASP.NET Identity."
   },
-  "api/Project.Infrastructure.InfrastructureServices.html": {
-    "href": "api/Project.Infrastructure.InfrastructureServices.html",
-    "title": "Class InfrastructureServices | Project",
-    "summary": "Class InfrastructureServices Namespace Project.Infrastructure Assembly Project.Infrastructure.dll Provides extension methods to register infrastructure services in the dependency injection container. public static class InfrastructureServices Inheritance object InfrastructureServices Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddInfrastructureServices(IServiceCollection, IConfiguration) Adds infrastructure layer services including database context and repositories to the dependency injection container. public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration) Parameters services IServiceCollection The IServiceCollection to add services to. configuration IConfiguration The IConfiguration instance used to access configuration values. Returns IServiceCollection The updated IServiceCollection."
+  "api/Project.Infrastructure.Domain.html": {
+    "href": "api/Project.Infrastructure.Domain.html",
+    "title": "Namespace Project.Infrastructure.Domain | Project",
+    "summary": "Namespace Project.Infrastructure.Domain Classes UnitOfWork"
   },
   "api/Project.Infrastructure.Migrations.Init.html": {
     "href": "api/Project.Infrastructure.Migrations.Init.html",
@@ -148,6 +368,41 @@
     "href": "api/Project.Infrastructure.Migrations.html",
     "title": "Namespace Project.Infrastructure.Migrations | Project",
     "summary": "Namespace Project.Infrastructure.Migrations Classes Init A base class inherited by each EF Core migration."
+  },
+  "api/Project.Infrastructure.Processing.CommandsExecutor.html": {
+    "href": "api/Project.Infrastructure.Processing.CommandsExecutor.html",
+    "title": "Class CommandsExecutor | Project",
+    "summary": "Class CommandsExecutor Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public class CommandsExecutor Inheritance object CommandsExecutor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors CommandsExecutor(IServiceProvider) public CommandsExecutor(IServiceProvider provider) Parameters provider IServiceProvider Methods Execute(ICommand) public Task Execute(ICommand command) Parameters command ICommand Returns Task Execute<TResult>(ICommand<TResult>) public Task<TResult> Execute<TResult>(ICommand<TResult> command) Parameters command ICommand<TResult> Returns Task<TResult> Type Parameters TResult"
+  },
+  "api/Project.Infrastructure.Processing.DomainEventsDispatcher.html": {
+    "href": "api/Project.Infrastructure.Processing.DomainEventsDispatcher.html",
+    "title": "Class DomainEventsDispatcher | Project",
+    "summary": "Class DomainEventsDispatcher Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public class DomainEventsDispatcher : IDomainEventsDispatcher Inheritance object DomainEventsDispatcher Implements IDomainEventsDispatcher Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors DomainEventsDispatcher(IMediator, ApplicationDbContext) public DomainEventsDispatcher(IMediator mediator, ApplicationDbContext context) Parameters mediator IMediator context ApplicationDbContext Methods DispatchEventsAsync() public Task DispatchEventsAsync() Returns Task"
+  },
+  "api/Project.Infrastructure.Processing.IDomainEventsDispatcher.html": {
+    "href": "api/Project.Infrastructure.Processing.IDomainEventsDispatcher.html",
+    "title": "Interface IDomainEventsDispatcher | Project",
+    "summary": "Interface IDomainEventsDispatcher Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public interface IDomainEventsDispatcher Methods DispatchEventsAsync() Task DispatchEventsAsync() Returns Task"
+  },
+  "api/Project.Infrastructure.Processing.Mediator.html": {
+    "href": "api/Project.Infrastructure.Processing.Mediator.html",
+    "title": "Class Mediator | Project",
+    "summary": "Class Mediator Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public class Mediator : IMediator Inheritance object Mediator Implements IMediator Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Mediator(IServiceProvider) public Mediator(IServiceProvider provider) Parameters provider IServiceProvider Methods Publish<TNotification>(TNotification, CancellationToken) public Task Publish<TNotification>(TNotification notification, CancellationToken cancellationToken = default) where TNotification : INotification Parameters notification TNotification cancellationToken CancellationToken Returns Task Type Parameters TNotification Send<TResponse>(IRequest<TResponse>, CancellationToken) public Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default) Parameters request IRequest<TResponse> cancellationToken CancellationToken Returns Task<TResponse> Type Parameters TResponse"
+  },
+  "api/Project.Infrastructure.Processing.MediatorModule.html": {
+    "href": "api/Project.Infrastructure.Processing.MediatorModule.html",
+    "title": "Class MediatorModule | Project",
+    "summary": "Class MediatorModule Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public static class MediatorModule Inheritance object MediatorModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddMediatorModule(IServiceCollection, params object[]) public static IServiceCollection AddMediatorModule(this IServiceCollection services, params object[] args) Parameters services IServiceCollection args object[] Returns IServiceCollection RegisterHandlers(IServiceCollection, Assembly[], Type) public static void RegisterHandlers(IServiceCollection services, Assembly[] assemblies, Type handlerInterface) Parameters services IServiceCollection assemblies Assembly[] handlerInterface Type ResolveAssemblies(object[]) public static Assembly[] ResolveAssemblies(object[] args) Parameters args object[] Returns Assembly[]"
+  },
+  "api/Project.Infrastructure.Processing.QueriesExecutor.html": {
+    "href": "api/Project.Infrastructure.Processing.QueriesExecutor.html",
+    "title": "Class QueriesExecutor | Project",
+    "summary": "Class QueriesExecutor Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public class QueriesExecutor Inheritance object QueriesExecutor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors QueriesExecutor(IServiceProvider) public QueriesExecutor(IServiceProvider provider) Parameters provider IServiceProvider Methods Execute<TResult>(IQuery<TResult>) public Task<TResult> Execute<TResult>(IQuery<TResult> query) Parameters query IQuery<TResult> Returns Task<TResult> Type Parameters TResult"
+  },
+  "api/Project.Infrastructure.Processing.html": {
+    "href": "api/Project.Infrastructure.Processing.html",
+    "title": "Namespace Project.Infrastructure.Processing | Project",
+    "summary": "Namespace Project.Infrastructure.Processing Classes CommandsExecutor DomainEventsDispatcher Mediator MediatorModule QueriesExecutor Interfaces IDomainEventsDispatcher"
   },
   "api/Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.html": {
     "href": "api/Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.html",
@@ -173,11 +428,6 @@
     "href": "api/Project.Infrastructure.Users.html",
     "title": "Namespace Project.Infrastructure.Users | Project",
     "summary": "Namespace Project.Infrastructure.Users Classes IdentityUserAdapter"
-  },
-  "api/Project.Infrastructure.html": {
-    "href": "api/Project.Infrastructure.html",
-    "title": "Namespace Project.Infrastructure | Project",
-    "summary": "Namespace Project.Infrastructure Classes InfrastructureServices Provides extension methods to register infrastructure services in the dependency injection container."
   },
   "api/Project.Tests.UnitTest1.html": {
     "href": "api/Project.Tests.UnitTest1.html",
