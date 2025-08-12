@@ -37,6 +37,7 @@ references:
   fullName: Project.Domain.SeedWork.Entity
 - uid: Project.Domain.SeedWork.IAggregateRoot
   commentId: T:Project.Domain.SeedWork.IAggregateRoot
+  parent: Project.Domain.SeedWork
   href: Project.Domain.SeedWork.IAggregateRoot.html
   name: IAggregateRoot
   nameWithType: IAggregateRoot

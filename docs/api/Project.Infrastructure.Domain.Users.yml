@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Domain.Users
+  commentId: N:Project.Infrastructure.Domain.Users
+  id: Project.Infrastructure.Domain.Users
+  children:
+  - Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.Domain.Users
+  nameWithType: Project.Infrastructure.Domain.Users
+  fullName: Project.Infrastructure.Domain.Users
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Domain.Users.UserRepository
+  commentId: T:Project.Infrastructure.Domain.Users.UserRepository
+  href: Project.Infrastructure.Domain.Users.UserRepository.html
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: Project.Infrastructure.Domain.Users.UserRepository

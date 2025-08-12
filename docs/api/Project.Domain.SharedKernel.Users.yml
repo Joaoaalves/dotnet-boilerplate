@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SharedKernel.Users
+  commentId: N:Project.Domain.SharedKernel.Users
+  id: Project.Domain.SharedKernel.Users
+  children:
+  - Project.Domain.SharedKernel.Users.Email
+  - Project.Domain.SharedKernel.Users.Name
+  - Project.Domain.SharedKernel.Users.UserName
+  langs:
+  - csharp
+  - vb
+  name: Project.Domain.SharedKernel.Users
+  nameWithType: Project.Domain.SharedKernel.Users
+  fullName: Project.Domain.SharedKernel.Users
+  type: Namespace
+  assemblies:
+  - Project.Domain
+references:
+- uid: Project.Domain.SharedKernel.Users.Email
+  commentId: T:Project.Domain.SharedKernel.Users.Email
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.Email.html
+  name: Email
+  nameWithType: Email
+  fullName: Project.Domain.SharedKernel.Users.Email
+- uid: Project.Domain.SharedKernel.Users.Name
+  commentId: T:Project.Domain.SharedKernel.Users.Name
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.Name.html
+  name: Name
+  nameWithType: Name
+  fullName: Project.Domain.SharedKernel.Users.Name
+- uid: Project.Domain.SharedKernel.Users.UserName
+  commentId: T:Project.Domain.SharedKernel.Users.UserName
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.UserName.html
+  name: UserName
+  nameWithType: UserName
+  fullName: Project.Domain.SharedKernel.Users.UserName
+- uid: Project.Domain.SharedKernel.Users
+  commentId: N:Project.Domain.SharedKernel.Users
+  href: Project.html
+  name: Project.Domain.SharedKernel.Users
+  nameWithType: Project.Domain.SharedKernel.Users
+  fullName: Project.Domain.SharedKernel.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html

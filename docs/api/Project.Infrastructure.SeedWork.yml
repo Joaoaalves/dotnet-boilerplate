@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.SeedWork
+  commentId: N:Project.Infrastructure.SeedWork
+  id: Project.Infrastructure.SeedWork
+  children:
+  - Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
+  - Project.Infrastructure.SeedWork.TypedIdValueConverter`1
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.SeedWork
+  nameWithType: Project.Infrastructure.SeedWork
+  fullName: Project.Infrastructure.SeedWork
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
+  commentId: T:Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
+  href: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.html
+  name: StronglyTypedIdValueConverterSelector
+  nameWithType: StronglyTypedIdValueConverterSelector
+  fullName: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
+- uid: Project.Infrastructure.SeedWork.TypedIdValueConverter`1
+  commentId: T:Project.Infrastructure.SeedWork.TypedIdValueConverter`1
+  href: Project.Infrastructure.SeedWork.TypedIdValueConverter-1.html
+  name: TypedIdValueConverter<TTypedIdValue>
+  nameWithType: TypedIdValueConverter<TTypedIdValue>
+  fullName: Project.Infrastructure.SeedWork.TypedIdValueConverter<TTypedIdValue>
+  nameWithType.vb: TypedIdValueConverter(Of TTypedIdValue)
+  fullName.vb: Project.Infrastructure.SeedWork.TypedIdValueConverter(Of TTypedIdValue)
+  name.vb: TypedIdValueConverter(Of TTypedIdValue)
+  spec.csharp:
+  - uid: Project.Infrastructure.SeedWork.TypedIdValueConverter`1
+    name: TypedIdValueConverter
+    href: Project.Infrastructure.SeedWork.TypedIdValueConverter-1.html
+  - name: <
+  - name: TTypedIdValue
+  - name: '>'
+  spec.vb:
+  - uid: Project.Infrastructure.SeedWork.TypedIdValueConverter`1
+    name: TypedIdValueConverter
+    href: Project.Infrastructure.SeedWork.TypedIdValueConverter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTypedIdValue
+  - name: )

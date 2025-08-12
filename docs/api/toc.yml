@@ -1,12 +1,12 @@
 ### YamlMime:TableOfContent
 items:
-- uid: Project.Application
-  name: Project.Application
+- uid: Project.Application.Users
+  name: Project.Application.Users
   type: Namespace
   items:
-  - uid: Project.Application.Class1
-    name: Class1
-    type: Class
+  - uid: Project.Application.Users.IUserRepository
+    name: IUserRepository
+    type: Interface
 - uid: Project.Domain.SeedWork
   name: Project.Domain.SeedWork
   type: Namespace
@@ -38,12 +38,86 @@ items:
   - uid: Project.Domain.SeedWork.ValueObject
     name: ValueObject
     type: Class
+- uid: Project.Domain.SharedKernel.Users
+  name: Project.Domain.SharedKernel.Users
+  type: Namespace
+  items:
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+    type: Class
+  - uid: Project.Domain.SharedKernel.Users.Name
+    name: Name
+    type: Class
+  - uid: Project.Domain.SharedKernel.Users.UserName
+    name: UserName
+    type: Class
+- uid: Project.Domain.SharedKernel.Users.Rules
+  name: Project.Domain.SharedKernel.Users.Rules
+  type: Namespace
+  items:
+  - uid: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+    name: EmailMustBeValidRule
+    type: Class
+  - uid: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule
+    name: NameMustBeValidRule
+    type: Class
+  - uid: Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule
+    name: UserNameMustBeValidRule
+    type: Class
+- uid: Project.Domain.Users
+  name: Project.Domain.Users
+  type: Namespace
+  items:
+  - uid: Project.Domain.Users.User
+    name: User
+    type: Class
+  - uid: Project.Domain.Users.UserId
+    name: UserId
+    type: Class
 - uid: Project.Infrastructure
   name: Project.Infrastructure
   type: Namespace
   items:
-  - uid: Project.Infrastructure.Class1
-    name: Class1
+  - uid: Project.Infrastructure.InfrastructureServices
+    name: InfrastructureServices
+    type: Class
+- uid: Project.Infrastructure.Database
+  name: Project.Infrastructure.Database
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Database.ApplicationDbContext
+    name: ApplicationDbContext
+    type: Class
+- uid: Project.Infrastructure.Domain.Users
+  name: Project.Infrastructure.Domain.Users
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Domain.Users.UserRepository
+    name: UserRepository
+    type: Class
+- uid: Project.Infrastructure.Migrations
+  name: Project.Infrastructure.Migrations
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Migrations.Init
+    name: Init
+    type: Class
+- uid: Project.Infrastructure.SeedWork
+  name: Project.Infrastructure.SeedWork
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
+    name: StronglyTypedIdValueConverterSelector
+    type: Class
+  - uid: Project.Infrastructure.SeedWork.TypedIdValueConverter`1
+    name: TypedIdValueConverter<TTypedIdValue>
+    type: Class
+- uid: Project.Infrastructure.Users
+  name: Project.Infrastructure.Users
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Users.IdentityUserAdapter
+    name: IdentityUserAdapter
     type: Class
 - uid: Project.Tests
   name: Project.Tests

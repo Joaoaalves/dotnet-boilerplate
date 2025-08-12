@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Application.Users
+  commentId: N:Project.Application.Users
+  id: Project.Application.Users
+  children:
+  - Project.Application.Users.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: Project.Application.Users
+  nameWithType: Project.Application.Users
+  fullName: Project.Application.Users
+  type: Namespace
+  assemblies:
+  - Project.Application
+references:
+- uid: Project.Application.Users.IUserRepository
+  commentId: T:Project.Application.Users.IUserRepository
+  parent: Project.Application.Users
+  href: Project.Application.Users.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Project.Application.Users.IUserRepository
+- uid: Project.Application.Users
+  commentId: N:Project.Application.Users
+  href: Project.html
+  name: Project.Application.Users
+  nameWithType: Project.Application.Users
+  fullName: Project.Application.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html

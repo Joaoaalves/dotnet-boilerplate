@@ -39,6 +39,10 @@ items:
     content.vb: Public MustInherit Class ValueObject Implements IEquatable(Of ValueObject)
   inheritance:
   - System.Object
+  derivedClasses:
+  - Project.Domain.SharedKernel.Users.Email
+  - Project.Domain.SharedKernel.Users.Name
+  - Project.Domain.SharedKernel.Users.UserName
   implements:
   - System.IEquatable{Project.Domain.SeedWork.ValueObject}
   inheritedMembers:

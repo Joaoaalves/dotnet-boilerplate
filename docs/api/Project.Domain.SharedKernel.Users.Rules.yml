@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SharedKernel.Users.Rules
+  commentId: N:Project.Domain.SharedKernel.Users.Rules
+  id: Project.Domain.SharedKernel.Users.Rules
+  children:
+  - Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+  - Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule
+  - Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule
+  langs:
+  - csharp
+  - vb
+  name: Project.Domain.SharedKernel.Users.Rules
+  nameWithType: Project.Domain.SharedKernel.Users.Rules
+  fullName: Project.Domain.SharedKernel.Users.Rules
+  type: Namespace
+  assemblies:
+  - Project.Domain
+references:
+- uid: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+  commentId: T:Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+  href: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule.html
+  name: EmailMustBeValidRule
+  nameWithType: EmailMustBeValidRule
+  fullName: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+- uid: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule
+  commentId: T:Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule
+  href: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule.html
+  name: NameMustBeValidRule
+  nameWithType: NameMustBeValidRule
+  fullName: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule
+- uid: Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule
+  commentId: T:Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule
+  href: Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.html
+  name: UserNameMustBeValidRule
+  nameWithType: UserNameMustBeValidRule
+  fullName: Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule

@@ -1,31 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Project.Application.Class1
-  commentId: T:Project.Application.Class1
-  id: Class1
-  parent: Project.Application
-  children: []
+- uid: Project.Infrastructure.InfrastructureServices
+  commentId: T:Project.Infrastructure.InfrastructureServices
+  id: InfrastructureServices
+  parent: Project.Infrastructure
+  children:
+  - Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   langs:
   - csharp
   - vb
-  name: Class1
-  nameWithType: Class1
-  fullName: Project.Application.Class1
+  name: InfrastructureServices
+  nameWithType: InfrastructureServices
+  fullName: Project.Infrastructure.InfrastructureServices
   type: Class
   source:
     remote:
-      path: src/Project.Application/Class1.cs
+      path: src/Project.Infrastructure/ServicesConfiguration.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: Class1
-    path: ../src/Project.Application/Class1.cs
-    startLine: 2
+    id: InfrastructureServices
+    path: ../src/Project.Infrastructure/ServicesConfiguration.cs
+    startLine: 18
   assemblies:
-  - Project.Application
-  namespace: Project.Application
+  - Project.Infrastructure
+  namespace: Project.Infrastructure
+  summary: Provides extension methods to register infrastructure services in the dependency injection container.
+  example: []
   syntax:
-    content: public class Class1
-    content.vb: Public Class Class1
+    content: public static class InfrastructureServices
+    content.vb: Public Module InfrastructureServices
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,29 +39,68 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  id: AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  isExtensionMethod: true
+  parent: Project.Infrastructure.InfrastructureServices
+  langs:
+  - csharp
+  - vb
+  name: AddInfrastructureServices(IServiceCollection, IConfiguration)
+  nameWithType: InfrastructureServices.AddInfrastructureServices(IServiceCollection, IConfiguration)
+  fullName: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/ServicesConfiguration.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: AddInfrastructureServices
+    path: ../src/Project.Infrastructure/ServicesConfiguration.cs
+    startLine: 26
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure
+  summary: Adds infrastructure layer services including database context and repositories to the dependency injection container.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> to add services to.
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+      description: The <xref href="Microsoft.Extensions.Configuration.IConfiguration" data-throw-if-not-resolved="false"></xref> instance used to access configuration values.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function AddInfrastructureServices(services As IServiceCollection, configuration As IConfiguration) As IServiceCollection
+  overload: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices*
 references:
-- uid: Project.Application
-  commentId: N:Project.Application
+- uid: Project.Infrastructure
+  commentId: N:Project.Infrastructure
   href: Project.html
-  name: Project.Application
-  nameWithType: Project.Application
-  fullName: Project.Application
+  name: Project.Infrastructure
+  nameWithType: Project.Infrastructure
+  fullName: Project.Infrastructure
   spec.csharp:
   - uid: Project
     name: Project
     href: Project.html
   - name: .
-  - uid: Project.Application
-    name: Application
-    href: Project.Application.html
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
   spec.vb:
   - uid: Project
     name: Project
     href: Project.html
   - name: .
-  - uid: Project.Application
-    name: Application
-    href: Project.Application.html
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -296,3 +338,99 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices*
+  commentId: Overload:Project.Infrastructure.InfrastructureServices.AddInfrastructureServices
+  href: Project.Infrastructure.InfrastructureServices.html#Project_Infrastructure_InfrastructureServices_AddInfrastructureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  name: AddInfrastructureServices
+  nameWithType: InfrastructureServices.AddInfrastructureServices
+  fullName: Project.Infrastructure.InfrastructureServices.AddInfrastructureServices
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration

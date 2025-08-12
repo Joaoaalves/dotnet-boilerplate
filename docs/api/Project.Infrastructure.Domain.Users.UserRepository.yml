@@ -1,0 +1,1299 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Domain.Users.UserRepository
+  commentId: T:Project.Infrastructure.Domain.Users.UserRepository
+  id: UserRepository
+  parent: Project.Infrastructure.Domain.Users
+  children:
+  - Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter},Project.Infrastructure.Database.ApplicationDbContext)
+  - Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  - Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  - Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  - Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync(System.String)
+  - Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  - Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync(System.String)
+  - Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync(Project.Domain.Users.User)
+  langs:
+  - csharp
+  - vb
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: Project.Infrastructure.Domain.Users.UserRepository
+  type: Class
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UserRepository
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 15
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Provides an implementation of <xref href="Project.Application.Users.IUserRepository" data-throw-if-not-resolved="false"></xref> using Entity Framework Core and ASP.NET Identity.
+  example: []
+  syntax:
+    content: 'public class UserRepository : IUserRepository'
+    content.vb: Public Class UserRepository Implements IUserRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Project.Application.Users.IUserRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter},Project.Infrastructure.Database.ApplicationDbContext)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter},Project.Infrastructure.Database.ApplicationDbContext)
+  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter},Project.Infrastructure.Database.ApplicationDbContext)'
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: UserRepository(UserManager<IdentityUserAdapter>, ApplicationDbContext)
+  nameWithType: UserRepository.UserRepository(UserManager<IdentityUserAdapter>, ApplicationDbContext)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Infrastructure.Users.IdentityUserAdapter>, Project.Infrastructure.Database.ApplicationDbContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 15
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Provides an implementation of <xref href="Project.Application.Users.IUserRepository" data-throw-if-not-resolved="false"></xref> using Entity Framework Core and ASP.NET Identity.
+  example: []
+  syntax:
+    content: public UserRepository(UserManager<IdentityUserAdapter> userManager, ApplicationDbContext applicationDbContext)
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter}
+    - id: applicationDbContext
+      type: Project.Infrastructure.Database.ApplicationDbContext
+    content.vb: Public Sub New(userManager As UserManager(Of IdentityUserAdapter), applicationDbContext As ApplicationDbContext)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.#ctor*
+  nameWithType.vb: UserRepository.New(UserManager(Of IdentityUserAdapter), ApplicationDbContext)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Infrastructure.Users.IdentityUserAdapter), Project.Infrastructure.Database.ApplicationDbContext)
+  name.vb: New(UserManager(Of IdentityUserAdapter), ApplicationDbContext)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  id: CreateAsync(Project.Domain.Users.User,System.String)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(User, string)
+  nameWithType: UserRepository.CreateAsync(User, string)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User, string)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CreateAsync
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 24
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Creates a new user with the specified password.
+  example: []
+  syntax:
+    content: public Task<IdentityResult> CreateAsync(User user, string password)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+      description: The user to create.
+    - id: password
+      type: System.String
+      description: The user's password.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
+    content.vb: Public Function CreateAsync(user As User, password As String) As Task(Of IdentityResult)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  nameWithType.vb: UserRepository.CreateAsync(User, String)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User, String)
+  name.vb: CreateAsync(User, String)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  id: DeleteAsync(Project.Domain.Users.UserId)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(UserId)
+  nameWithType: UserRepository.DeleteAsync(UserId)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DeleteAsync
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 31
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Deletes a user by their unique identifier.
+  example: []
+  syntax:
+    content: public Task<IdentityResult> DeleteAsync(UserId userId)
+    parameters:
+    - id: userId
+      type: Project.Domain.Users.UserId
+      description: The identifier of the user to delete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
+    content.vb: Public Function DeleteAsync(userId As UserId) As Task(Of IdentityResult)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync(System.String)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync(System.String)
+  id: GetByEmailAsync(System.String)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByEmailAsync(string)
+  nameWithType: UserRepository.GetByEmailAsync(string)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetByEmailAsync
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 41
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Retrieves a user by email address.
+  example: []
+  syntax:
+    content: public Task<User?> GetByEmailAsync(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: The email address to search for.
+    return:
+      type: System.Threading.Tasks.Task{Project.Domain.Users.User}
+      description: The user if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetByEmailAsync(email As String) As Task(Of User)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+  nameWithType.vb: UserRepository.GetByEmailAsync(String)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync(String)
+  name.vb: GetByEmailAsync(String)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  id: GetByIdAsync(Project.Domain.Users.UserId)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(UserId)
+  nameWithType: UserRepository.GetByIdAsync(UserId)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetByIdAsync
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 50
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Retrieves a user by their unique identifier.
+  example: []
+  syntax:
+    content: public Task<User?> GetByIdAsync(UserId userId)
+    parameters:
+    - id: userId
+      type: Project.Domain.Users.UserId
+      description: The user's unique identifier.
+    return:
+      type: System.Threading.Tasks.Task{Project.Domain.Users.User}
+      description: The user if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetByIdAsync(userId As UserId) As Task(Of User)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync(System.String)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync(System.String)
+  id: GetUserByUsernameAsync(System.String)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByUsernameAsync(string)
+  nameWithType: UserRepository.GetUserByUsernameAsync(string)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetUserByUsernameAsync
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 59
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Retrieves a user by their username.
+  example: []
+  syntax:
+    content: public Task<User?> GetUserByUsernameAsync(string username)
+    parameters:
+    - id: username
+      type: System.String
+      description: The username to search for.
+    return:
+      type: System.Threading.Tasks.Task{Project.Domain.Users.User}
+      description: The user if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetUserByUsernameAsync(username As String) As Task(Of User)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+  nameWithType.vb: UserRepository.GetUserByUsernameAsync(String)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync(String)
+  name.vb: GetUserByUsernameAsync(String)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync(Project.Domain.Users.User)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync(Project.Domain.Users.User)
+  id: UpdateAsync(Project.Domain.Users.User)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(User)
+  nameWithType: UserRepository.UpdateAsync(User)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync(Project.Domain.Users.User)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UpdateAsync
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 67
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Updates an existing user.
+  example: []
+  syntax:
+    content: public Task<IdentityResult> UpdateAsync(User user)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+      description: The user with updated data.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
+    content.vb: Public Function UpdateAsync(user As User) As Task(Of IdentityResult)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  id: CheckPassowrd(Project.Domain.Users.User,System.String)
+  parent: Project.Infrastructure.Domain.Users.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: CheckPassowrd(User, string)
+  nameWithType: UserRepository.CheckPassowrd(User, string)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd(Project.Domain.Users.User, string)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Domain/Users/UserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CheckPassowrd
+    path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
+    startLine: 76
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Domain.Users
+  summary: Validates the provided password against the stored credentials for the specified user.
+  example: []
+  syntax:
+    content: public Task<bool> CheckPassowrd(User user, string password)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+      description: The user to validate.
+    - id: password
+      type: System.String
+      description: The plain-text password to check.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the password is valid; otherwise, <code>false</code>.
+    content.vb: Public Function CheckPassowrd(user As User, password As String) As Task(Of Boolean)
+  overload: Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd*
+  implements:
+  - Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  nameWithType.vb: UserRepository.CheckPassowrd(User, String)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd(Project.Domain.Users.User, String)
+  name.vb: CheckPassowrd(User, String)
+references:
+- uid: Project.Application.Users.IUserRepository
+  commentId: T:Project.Application.Users.IUserRepository
+  parent: Project.Application.Users
+  href: Project.Application.Users.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Project.Application.Users.IUserRepository
+- uid: Project.Infrastructure.Domain.Users
+  commentId: N:Project.Infrastructure.Domain.Users
+  href: Project.html
+  name: Project.Infrastructure.Domain.Users
+  nameWithType: Project.Infrastructure.Domain.Users
+  fullName: Project.Infrastructure.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Domain
+    name: Domain
+    href: Project.Infrastructure.Domain.html
+  - name: .
+  - uid: Project.Infrastructure.Domain.Users
+    name: Users
+    href: Project.Infrastructure.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Domain
+    name: Domain
+    href: Project.Infrastructure.Domain.html
+  - name: .
+  - uid: Project.Infrastructure.Domain.Users
+    name: Users
+    href: Project.Infrastructure.Domain.Users.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Project.Application.Users
+  commentId: N:Project.Application.Users
+  href: Project.html
+  name: Project.Application.Users
+  nameWithType: Project.Application.Users
+  fullName: Project.Application.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.#ctor
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Infrastructure_Users_IdentityUserAdapter__Project_Infrastructure_Database_ApplicationDbContext_
+  name: UserRepository
+  nameWithType: UserRepository.UserRepository
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository
+  nameWithType.vb: UserRepository.New
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter}
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager{Project.Infrastructure.Users.IdentityUserAdapter}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.UserManager`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
+  name: UserManager<IdentityUserAdapter>
+  nameWithType: UserManager<IdentityUserAdapter>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<Project.Infrastructure.Users.IdentityUserAdapter>
+  nameWithType.vb: UserManager(Of IdentityUserAdapter)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of Project.Infrastructure.Users.IdentityUserAdapter)
+  name.vb: UserManager(Of IdentityUserAdapter)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
+  - name: <
+  - uid: Project.Infrastructure.Users.IdentityUserAdapter
+    name: IdentityUserAdapter
+    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Infrastructure.Users.IdentityUserAdapter
+    name: IdentityUserAdapter
+    href: Project.Infrastructure.Users.IdentityUserAdapter.html
+  - name: )
+- uid: Project.Infrastructure.Database.ApplicationDbContext
+  commentId: T:Project.Infrastructure.Database.ApplicationDbContext
+  parent: Project.Infrastructure.Database
+  href: Project.Infrastructure.Database.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Microsoft.AspNetCore.Identity.UserManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
+  name: UserManager<TUser>
+  nameWithType: UserManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<TUser>
+  nameWithType.vb: UserManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of TUser)
+  name.vb: UserManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
+  - name: <
+  - name: TUser
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TUser
+  - name: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Identity
+    name: Identity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Identity
+    name: Identity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
+- uid: Project.Infrastructure.Database
+  commentId: N:Project.Infrastructure.Database
+  href: Project.html
+  name: Project.Infrastructure.Database
+  nameWithType: Project.Infrastructure.Database
+  fullName: Project.Infrastructure.Database
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Database
+    name: Database
+    href: Project.Infrastructure.Database.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Database
+    name: Database
+    href: Project.Infrastructure.Database.html
+- uid: Microsoft.AspNetCore.Identity.IdentityResult
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityResult
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult
+  name: IdentityResult
+  nameWithType: IdentityResult
+  fullName: Microsoft.AspNetCore.Identity.IdentityResult
+- uid: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.CreateAsync
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_CreateAsync_Project_Domain_Users_User_System_String_
+  name: CreateAsync
+  nameWithType: UserRepository.CreateAsync
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync
+- uid: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_CreateAsync_Project_Domain_Users_User_System_String_
+  name: CreateAsync(User, string)
+  nameWithType: IUserRepository.CreateAsync(User, string)
+  fullName: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User, string)
+  nameWithType.vb: IUserRepository.CreateAsync(User, String)
+  fullName.vb: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User, String)
+  name.vb: CreateAsync(User, String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+    name: CreateAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_CreateAsync_Project_Domain_Users_User_System_String_
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+    name: CreateAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_CreateAsync_Project_Domain_Users_User_System_String_
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Project.Domain.Users.User
+  commentId: T:Project.Domain.Users.User
+  parent: Project.Domain.Users
+  href: Project.Domain.Users.User.html
+  name: User
+  nameWithType: User
+  fullName: Project.Domain.Users.User
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IdentityResult>
+  nameWithType: Task<IdentityResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult>
+  nameWithType.vb: Task(Of IdentityResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Identity.IdentityResult)
+  name.vb: Task(Of IdentityResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Identity.IdentityResult
+    name: IdentityResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Identity.IdentityResult
+    name: IdentityResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult
+  - name: )
+- uid: Project.Domain.Users
+  commentId: N:Project.Domain.Users
+  href: Project.html
+  name: Project.Domain.Users
+  nameWithType: Project.Domain.Users
+  fullName: Project.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_DeleteAsync_Project_Domain_Users_UserId_
+  name: DeleteAsync
+  nameWithType: UserRepository.DeleteAsync
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync
+- uid: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  commentId: M:Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  parent: Project.Application.Users.IUserRepository
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_Project_Domain_Users_UserId_
+  name: DeleteAsync(UserId)
+  nameWithType: IUserRepository.DeleteAsync(UserId)
+  fullName: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+    name: DeleteAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_Project_Domain_Users_UserId_
+  - name: (
+  - uid: Project.Domain.Users.UserId
+    name: UserId
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.DeleteAsync(Project.Domain.Users.UserId)
+    name: DeleteAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_DeleteAsync_Project_Domain_Users_UserId_
+  - name: (
+  - uid: Project.Domain.Users.UserId
+    name: UserId
+  - name: )
+- uid: Project.Domain.Users.UserId
+  commentId: T:Project.Domain.Users.UserId
+  parent: Project.Domain.Users
+  href: Project.Domain.Users.UserId.html
+  name: UserId
+  nameWithType: UserId
+  fullName: Project.Domain.Users.UserId
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_GetByEmailAsync_System_String_
+  name: GetByEmailAsync
+  nameWithType: UserRepository.GetByEmailAsync
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByEmailAsync
+- uid: Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByEmailAsync_System_String_
+  name: GetByEmailAsync(string)
+  nameWithType: IUserRepository.GetByEmailAsync(string)
+  fullName: Project.Application.Users.IUserRepository.GetByEmailAsync(string)
+  nameWithType.vb: IUserRepository.GetByEmailAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.GetByEmailAsync(String)
+  name.vb: GetByEmailAsync(String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+    name: GetByEmailAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByEmailAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+    name: GetByEmailAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByEmailAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Project.Domain.Users.User}
+  commentId: T:System.Threading.Tasks.Task{Project.Domain.Users.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<Project.Domain.Users.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of Project.Domain.Users.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: )
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_GetByIdAsync_Project_Domain_Users_UserId_
+  name: GetByIdAsync
+  nameWithType: UserRepository.GetByIdAsync
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetByIdAsync
+- uid: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  commentId: M:Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  parent: Project.Application.Users.IUserRepository
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_Project_Domain_Users_UserId_
+  name: GetByIdAsync(UserId)
+  nameWithType: IUserRepository.GetByIdAsync(UserId)
+  fullName: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+    name: GetByIdAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_Project_Domain_Users_UserId_
+  - name: (
+  - uid: Project.Domain.Users.UserId
+    name: UserId
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.GetByIdAsync(Project.Domain.Users.UserId)
+    name: GetByIdAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetByIdAsync_Project_Domain_Users_UserId_
+  - name: (
+  - uid: Project.Domain.Users.UserId
+    name: UserId
+  - name: )
+- uid: Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_GetUserByUsernameAsync_System_String_
+  name: GetUserByUsernameAsync
+  nameWithType: UserRepository.GetUserByUsernameAsync
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.GetUserByUsernameAsync
+- uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetUserByUsernameAsync_System_String_
+  name: GetUserByUsernameAsync(string)
+  nameWithType: IUserRepository.GetUserByUsernameAsync(string)
+  fullName: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(string)
+  nameWithType.vb: IUserRepository.GetUserByUsernameAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(String)
+  name.vb: GetUserByUsernameAsync(String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+    name: GetUserByUsernameAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetUserByUsernameAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+    name: GetUserByUsernameAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_GetUserByUsernameAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_UpdateAsync_Project_Domain_Users_User_
+  name: UpdateAsync
+  nameWithType: UserRepository.UpdateAsync
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync
+- uid: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+  commentId: M:Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+  parent: Project.Application.Users.IUserRepository
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_UpdateAsync_Project_Domain_Users_User_
+  name: UpdateAsync(User)
+  nameWithType: IUserRepository.UpdateAsync(User)
+  fullName: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+    name: UpdateAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_UpdateAsync_Project_Domain_Users_User_
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+    name: UpdateAsync
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_UpdateAsync_Project_Domain_Users_User_
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: )
+- uid: Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd*
+  commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository_CheckPassowrd_Project_Domain_Users_User_System_String_
+  name: CheckPassowrd
+  nameWithType: UserRepository.CheckPassowrd
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd
+- uid: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_CheckPassowrd_Project_Domain_Users_User_System_String_
+  name: CheckPassowrd(User, string)
+  nameWithType: IUserRepository.CheckPassowrd(User, string)
+  fullName: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User, string)
+  nameWithType.vb: IUserRepository.CheckPassowrd(User, String)
+  fullName.vb: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User, String)
+  name.vb: CheckPassowrd(User, String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+    name: CheckPassowrd
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_CheckPassowrd_Project_Domain_Users_User_System_String_
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+    name: CheckPassowrd
+    href: Project.Application.Users.IUserRepository.html#Project_Application_Users_IUserRepository_CheckPassowrd_Project_Domain_Users_User_System_String_
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

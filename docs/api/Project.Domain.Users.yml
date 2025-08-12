@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.Users
+  commentId: N:Project.Domain.Users
+  id: Project.Domain.Users
+  children:
+  - Project.Domain.Users.User
+  - Project.Domain.Users.UserId
+  langs:
+  - csharp
+  - vb
+  name: Project.Domain.Users
+  nameWithType: Project.Domain.Users
+  fullName: Project.Domain.Users
+  type: Namespace
+  assemblies:
+  - Project.Domain
+references:
+- uid: Project.Domain.Users.User
+  commentId: T:Project.Domain.Users.User
+  parent: Project.Domain.Users
+  href: Project.Domain.Users.User.html
+  name: User
+  nameWithType: User
+  fullName: Project.Domain.Users.User
+- uid: Project.Domain.Users.UserId
+  commentId: T:Project.Domain.Users.UserId
+  parent: Project.Domain.Users
+  href: Project.Domain.Users.UserId.html
+  name: UserId
+  nameWithType: UserId
+  fullName: Project.Domain.Users.UserId
+- uid: Project.Domain.Users
+  commentId: N:Project.Domain.Users
+  href: Project.html
+  name: Project.Domain.Users
+  nameWithType: Project.Domain.Users
+  fullName: Project.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html

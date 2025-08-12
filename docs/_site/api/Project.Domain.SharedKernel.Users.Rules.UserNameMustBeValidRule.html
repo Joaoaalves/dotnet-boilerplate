@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Entity2 | project </title>
+      <title>Class UserNameMustBeValidRule | Project </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Entity2 | project ">
+      <meta name="title" content="Class UserNameMustBeValidRule | Project ">
       
-      <meta name="description" content="Represents an abstract base class for all entities.">
+      <meta name="description" content="Business rule to ensure a username is valid.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Domain_SeedWork_Entity2.md&amp;value=---%0Auid%3A%20Project.Domain.SeedWork.Entity2%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -44,8 +44,8 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="project">
-            project
+            <img id="logo" class="svg" src="../logo.svg" alt="Project">
+            Project
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
@@ -84,25 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Project.Domain.SeedWork.Entity2">
+        <article data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule">
 
 
 
-  <h1 id="Project_Domain_SeedWork_Entity2" data-uid="Project.Domain.SeedWork.Entity2" class="text-break">
-Class Entity2  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule" class="text-break">
+Class UserNameMustBeValidRule  
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Domain.html">Domain</a>.<a class="xref" href="Project.Domain.SeedWork.html">SeedWork</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Domain.html">Domain</a>.<a class="xref" href="Project.Domain.SharedKernel.html">SharedKernel</a>.<a class="xref" href="Project.Domain.SharedKernel.Users.html">Users</a>.<a class="xref" href="Project.Domain.SharedKernel.Users.Rules.html">Rules</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Project.Domain.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents an abstract base class for all entities.</p>
+  <div class="markdown summary"><p>Business rule to ensure a username is valid.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Entity2</code></pre>
+    <pre><code class="lang-csharp hljs">public class UserNameMustBeValidRule : IBusinessRule</code></pre>
   </div>
 
 
@@ -112,10 +112,16 @@ Class Entity2  <a class="header-action link-secondary" title="View source" href=
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Entity2</span></div>
+      <div><span class="xref">UserNameMustBeValidRule</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Project.Domain.SeedWork.IBusinessRule.html">IBusinessRule</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -149,22 +155,59 @@ Class Entity2  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule__ctor_" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.#ctor*"></a>
+
+  <h3 id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule__ctor_System_String_" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.#ctor(System.String)">
+  UserNameMustBeValidRule(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Business rule to ensure a username is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserNameMustBeValidRule(string userName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="Project_Domain_SeedWork_Entity2_DomainEvents_" data-uid="Project.Domain.SeedWork.Entity2.DomainEvents*"></a>
+  <a id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule_Message_" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.Message*"></a>
 
-  <h3 id="Project_Domain_SeedWork_Entity2_DomainEvents" data-uid="Project.Domain.SeedWork.Entity2.DomainEvents">
-  DomainEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule_Message" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.Message">
+  Message
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the validation message if the rule is broken.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;IDomainEvent&gt;? DomainEvents { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Message { get; }</code></pre>
   </div>
 
 
@@ -173,7 +216,7 @@ Class Entity2  <a class="header-action link-secondary" title="View source" href=
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Project.Domain.SeedWork.IDomainEvent.html">IDomainEvent</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -188,83 +231,28 @@ Class Entity2  <a class="header-action link-secondary" title="View source" href=
 </h2>
 
 
-  <a id="Project_Domain_SeedWork_Entity2_AddDomainEvent_" data-uid="Project.Domain.SeedWork.Entity2.AddDomainEvent*"></a>
+  <a id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule_IsBroken_" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.IsBroken*"></a>
 
-  <h3 id="Project_Domain_SeedWork_Entity2_AddDomainEvent_Project_Domain_SeedWork_IDomainEvent_" data-uid="Project.Domain.SeedWork.Entity2.AddDomainEvent(Project.Domain.SeedWork.IDomainEvent)">
-  AddDomainEvent(IDomainEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Domain_SharedKernel_Users_Rules_UserNameMustBeValidRule_IsBroken" data-uid="Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.IsBroken">
+  IsBroken()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the rule is broken based on length and allowed characters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void AddDomainEvent(IDomainEvent domainEvent)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsBroken()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+  <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><code>domainEvent</code> <a class="xref" href="Project.Domain.SeedWork.IDomainEvent.html">IDomainEvent</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the username is invalid; otherwise, <code>false</code>.</p>
+</dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Project_Domain_SeedWork_Entity2_CheckRule_" data-uid="Project.Domain.SeedWork.Entity2.CheckRule*"></a>
-
-  <h3 id="Project_Domain_SeedWork_Entity2_CheckRule_Project_Domain_SeedWork_IBusinessRule_" data-uid="Project.Domain.SeedWork.Entity2.CheckRule(Project.Domain.SeedWork.IBusinessRule)">
-  CheckRule(IBusinessRule)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L18"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static void CheckRule(IBusinessRule rule)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>rule</code> <a class="xref" href="Project.Domain.SeedWork.IBusinessRule.html">IBusinessRule</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Project_Domain_SeedWork_Entity2_ClearDomainEvents_" data-uid="Project.Domain.SeedWork.Entity2.ClearDomainEvents*"></a>
-
-  <h3 id="Project_Domain_SeedWork_Entity2_ClearDomainEvents" data-uid="Project.Domain.SeedWork.Entity2.ClearDomainEvents">
-  ClearDomainEvents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L25"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ClearDomainEvents()</code></pre>
-  </div>
-
-
 
 
 
@@ -280,7 +268,6 @@ Class Entity2  <a class="header-action link-secondary" title="View source" href=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Domain/SeedWork/Entity.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

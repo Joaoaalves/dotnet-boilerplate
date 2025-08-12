@@ -1,0 +1,804 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Domain.SharedKernel.Users.Email
+  commentId: T:Project.Domain.SharedKernel.Users.Email
+  id: Email
+  parent: Project.Domain.SharedKernel.Users
+  children:
+  - Project.Domain.SharedKernel.Users.Email.#ctor
+  - Project.Domain.SharedKernel.Users.Email.#ctor(System.String)
+  - Project.Domain.SharedKernel.Users.Email.Equals(System.Object)
+  - Project.Domain.SharedKernel.Users.Email.GetHashCode
+  - Project.Domain.SharedKernel.Users.Email.ToString
+  - Project.Domain.SharedKernel.Users.Email.Value
+  - Project.Domain.SharedKernel.Users.Email.op_Implicit(Project.Domain.SharedKernel.Users.Email)~System.String
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: Email
+  fullName: Project.Domain.SharedKernel.Users.Email
+  type: Class
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Email
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 7
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Represents a domain-specific email address value object.
+  example: []
+  syntax:
+    content: 'public class Email : ValueObject, IEquatable<ValueObject>'
+    content.vb: Public Class Email Inherits ValueObject Implements IEquatable(Of ValueObject)
+  inheritance:
+  - System.Object
+  - Project.Domain.SeedWork.ValueObject
+  implements:
+  - System.IEquatable{Project.Domain.SeedWork.ValueObject}
+  inheritedMembers:
+  - Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)
+  - Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Project.Domain.SharedKernel.Users.Email.Value
+  commentId: P:Project.Domain.SharedKernel.Users.Email.Value
+  id: Value
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Email.Value
+  fullName: Project.Domain.SharedKernel.Users.Email.Value
+  type: Property
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Value
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 12
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Gets the underlying string value of the email address.
+  example: []
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Project.Domain.SharedKernel.Users.Email.Value*
+- uid: Project.Domain.SharedKernel.Users.Email.#ctor
+  commentId: M:Project.Domain.SharedKernel.Users.Email.#ctor
+  id: '#ctor'
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: Email()
+  nameWithType: Email.Email()
+  fullName: Project.Domain.SharedKernel.Users.Email.Email()
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 17
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Required by Entity Framework. Do not use directly.
+  example: []
+  syntax:
+    content: protected Email()
+    content.vb: Protected Sub New()
+  overload: Project.Domain.SharedKernel.Users.Email.#ctor*
+  nameWithType.vb: Email.New()
+  fullName.vb: Project.Domain.SharedKernel.Users.Email.New()
+  name.vb: New()
+- uid: Project.Domain.SharedKernel.Users.Email.#ctor(System.String)
+  commentId: M:Project.Domain.SharedKernel.Users.Email.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: Email(string)
+  nameWithType: Email.Email(string)
+  fullName: Project.Domain.SharedKernel.Users.Email.Email(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 26
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Initializes a new instance of the <xref href="Project.Domain.SharedKernel.Users.Email" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public Email(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The email address string.
+    content.vb: Public Sub New(value As String)
+  overload: Project.Domain.SharedKernel.Users.Email.#ctor*
+  exceptions:
+  - type: Project.Domain.SeedWork.BusinessRuleValidationException
+    commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+    description: Thrown when the email does not satisfy the <xref href="Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Email.New(String)
+  fullName.vb: Project.Domain.SharedKernel.Users.Email.New(String)
+  name.vb: New(String)
+- uid: Project.Domain.SharedKernel.Users.Email.op_Implicit(Project.Domain.SharedKernel.Users.Email)~System.String
+  commentId: M:Project.Domain.SharedKernel.Users.Email.op_Implicit(Project.Domain.SharedKernel.Users.Email)~System.String
+  id: op_Implicit(Project.Domain.SharedKernel.Users.Email)~System.String
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(Email)
+  nameWithType: Email.implicit operator string(Email)
+  fullName: Project.Domain.SharedKernel.Users.Email.implicit operator string(Project.Domain.SharedKernel.Users.Email)
+  type: Operator
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: op_Implicit
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 36
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Implicit conversion from <xref href="Project.Domain.SharedKernel.Users.Email" data-throw-if-not-resolved="false"></xref> to <xref href="System.String" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static implicit operator string(Email email)
+    parameters:
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The <xref href="Project.Domain.SharedKernel.Users.Email" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(email As Email) As String
+  overload: Project.Domain.SharedKernel.Users.Email.op_Implicit*
+  nameWithType.vb: Email.CType(Email)
+  fullName.vb: Project.Domain.SharedKernel.Users.Email.CType(Project.Domain.SharedKernel.Users.Email)
+  name.vb: CType(Email)
+- uid: Project.Domain.SharedKernel.Users.Email.ToString
+  commentId: M:Project.Domain.SharedKernel.Users.Email.ToString
+  id: ToString
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Email.ToString()
+  fullName: Project.Domain.SharedKernel.Users.Email.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ToString
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 42
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Project.Domain.SharedKernel.Users.Email.ToString*
+- uid: Project.Domain.SharedKernel.Users.Email.Equals(System.Object)
+  commentId: M:Project.Domain.SharedKernel.Users.Email.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Email.Equals(object?)
+  fullName: Project.Domain.SharedKernel.Users.Email.Equals(object?)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 45
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Project.Domain.SeedWork.ValueObject.Equals(System.Object)
+  overload: Project.Domain.SharedKernel.Users.Email.Equals*
+  nameWithType.vb: Email.Equals(Object)
+  fullName.vb: Project.Domain.SharedKernel.Users.Email.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Project.Domain.SharedKernel.Users.Email.GetHashCode
+  commentId: M:Project.Domain.SharedKernel.Users.Email.GetHashCode
+  id: GetHashCode
+  parent: Project.Domain.SharedKernel.Users.Email
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Email.GetHashCode()
+  fullName: Project.Domain.SharedKernel.Users.Email.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Email.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode
+    path: ../src/Project.Domain/SharedKernel/Users/Email.cs
+    startLine: 55
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.SharedKernel.Users
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Project.Domain.SeedWork.ValueObject.GetHashCode
+  overload: Project.Domain.SharedKernel.Users.Email.GetHashCode*
+references:
+- uid: Project.Domain.SharedKernel.Users
+  commentId: N:Project.Domain.SharedKernel.Users
+  href: Project.html
+  name: Project.Domain.SharedKernel.Users
+  nameWithType: Project.Domain.SharedKernel.Users
+  fullName: Project.Domain.SharedKernel.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Domain.SeedWork.ValueObject
+  commentId: T:Project.Domain.SeedWork.ValueObject
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.ValueObject.html
+  name: ValueObject
+  nameWithType: ValueObject
+  fullName: Project.Domain.SeedWork.ValueObject
+- uid: System.IEquatable{Project.Domain.SeedWork.ValueObject}
+  commentId: T:System.IEquatable{Project.Domain.SeedWork.ValueObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ValueObject>
+  nameWithType: IEquatable<ValueObject>
+  fullName: System.IEquatable<Project.Domain.SeedWork.ValueObject>
+  nameWithType.vb: IEquatable(Of ValueObject)
+  fullName.vb: System.IEquatable(Of Project.Domain.SeedWork.ValueObject)
+  name.vb: IEquatable(Of ValueObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Project.Domain.SeedWork.ValueObject
+    name: ValueObject
+    href: Project.Domain.SeedWork.ValueObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Domain.SeedWork.ValueObject
+    name: ValueObject
+    href: Project.Domain.SeedWork.ValueObject.html
+  - name: )
+- uid: Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)
+  commentId: M:Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)
+  parent: Project.Domain.SeedWork.ValueObject
+  href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_Equals_Project_Domain_SeedWork_ValueObject_
+  name: Equals(ValueObject)
+  nameWithType: ValueObject.Equals(ValueObject)
+  fullName: Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)
+    name: Equals
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_Equals_Project_Domain_SeedWork_ValueObject_
+  - name: (
+  - uid: Project.Domain.SeedWork.ValueObject
+    name: ValueObject
+    href: Project.Domain.SeedWork.ValueObject.html
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.ValueObject.Equals(Project.Domain.SeedWork.ValueObject)
+    name: Equals
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_Equals_Project_Domain_SeedWork_ValueObject_
+  - name: (
+  - uid: Project.Domain.SeedWork.ValueObject
+    name: ValueObject
+    href: Project.Domain.SeedWork.ValueObject.html
+  - name: )
+- uid: Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
+  commentId: M:Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
+  parent: Project.Domain.SeedWork.ValueObject
+  href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_CheckRule_Project_Domain_SeedWork_IBusinessRule_
+  name: CheckRule(IBusinessRule)
+  nameWithType: ValueObject.CheckRule(IBusinessRule)
+  fullName: Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
+    name: CheckRule
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_CheckRule_Project_Domain_SeedWork_IBusinessRule_
+  - name: (
+  - uid: Project.Domain.SeedWork.IBusinessRule
+    name: IBusinessRule
+    href: Project.Domain.SeedWork.IBusinessRule.html
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.ValueObject.CheckRule(Project.Domain.SeedWork.IBusinessRule)
+    name: CheckRule
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_CheckRule_Project_Domain_SeedWork_IBusinessRule_
+  - name: (
+  - uid: Project.Domain.SeedWork.IBusinessRule
+    name: IBusinessRule
+    href: Project.Domain.SeedWork.IBusinessRule.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Domain.SharedKernel.Users.Email.Value*
+  commentId: Overload:Project.Domain.SharedKernel.Users.Email.Value
+  href: Project.Domain.SharedKernel.Users.Email.html#Project_Domain_SharedKernel_Users_Email_Value
+  name: Value
+  nameWithType: Email.Value
+  fullName: Project.Domain.SharedKernel.Users.Email.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Domain.SharedKernel.Users.Email.#ctor*
+  commentId: Overload:Project.Domain.SharedKernel.Users.Email.#ctor
+  href: Project.Domain.SharedKernel.Users.Email.html#Project_Domain_SharedKernel_Users_Email__ctor
+  name: Email
+  nameWithType: Email.Email
+  fullName: Project.Domain.SharedKernel.Users.Email.Email
+  nameWithType.vb: Email.New
+  fullName.vb: Project.Domain.SharedKernel.Users.Email.New
+  name.vb: New
+- uid: Project.Domain.SharedKernel.Users.Email
+  commentId: T:Project.Domain.SharedKernel.Users.Email
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.Email.html
+  name: Email
+  nameWithType: Email
+  fullName: Project.Domain.SharedKernel.Users.Email
+- uid: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+  commentId: T:Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+  href: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule.html
+  name: EmailMustBeValidRule
+  nameWithType: EmailMustBeValidRule
+  fullName: Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule
+- uid: Project.Domain.SeedWork.BusinessRuleValidationException
+  commentId: T:Project.Domain.SeedWork.BusinessRuleValidationException
+  href: Project.Domain.SeedWork.BusinessRuleValidationException.html
+  name: BusinessRuleValidationException
+  nameWithType: BusinessRuleValidationException
+  fullName: Project.Domain.SeedWork.BusinessRuleValidationException
+- uid: Project.Domain.SharedKernel.Users.Email.op_Implicit*
+  commentId: Overload:Project.Domain.SharedKernel.Users.Email.op_Implicit
+  name: implicit operator
+  nameWithType: Email.implicit operator
+  fullName: Project.Domain.SharedKernel.Users.Email.implicit operator
+  nameWithType.vb: Email.CType
+  fullName.vb: Project.Domain.SharedKernel.Users.Email.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Project.Domain.SharedKernel.Users.Email.ToString*
+  commentId: Overload:Project.Domain.SharedKernel.Users.Email.ToString
+  href: Project.Domain.SharedKernel.Users.Email.html#Project_Domain_SharedKernel_Users_Email_ToString
+  name: ToString
+  nameWithType: Email.ToString
+  fullName: Project.Domain.SharedKernel.Users.Email.ToString
+- uid: Project.Domain.SeedWork.ValueObject.Equals(System.Object)
+  commentId: M:Project.Domain.SeedWork.ValueObject.Equals(System.Object)
+  parent: Project.Domain.SeedWork.ValueObject
+  isExternal: true
+  href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ValueObject.Equals(object)
+  fullName: Project.Domain.SeedWork.ValueObject.Equals(object)
+  nameWithType.vb: ValueObject.Equals(Object)
+  fullName.vb: Project.Domain.SeedWork.ValueObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.ValueObject.Equals(System.Object)
+    name: Equals
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.ValueObject.Equals(System.Object)
+    name: Equals
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Project.Domain.SharedKernel.Users.Email.Equals*
+  commentId: Overload:Project.Domain.SharedKernel.Users.Email.Equals
+  href: Project.Domain.SharedKernel.Users.Email.html#Project_Domain_SharedKernel_Users_Email_Equals_System_Object_
+  name: Equals
+  nameWithType: Email.Equals
+  fullName: Project.Domain.SharedKernel.Users.Email.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Project.Domain.SeedWork.ValueObject.GetHashCode
+  commentId: M:Project.Domain.SeedWork.ValueObject.GetHashCode
+  parent: Project.Domain.SeedWork.ValueObject
+  href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ValueObject.GetHashCode()
+  fullName: Project.Domain.SeedWork.ValueObject.GetHashCode()
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.ValueObject.GetHashCode
+    name: GetHashCode
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.ValueObject.GetHashCode
+    name: GetHashCode
+    href: Project.Domain.SeedWork.ValueObject.html#Project_Domain_SeedWork_ValueObject_GetHashCode
+  - name: (
+  - name: )
+- uid: Project.Domain.SharedKernel.Users.Email.GetHashCode*
+  commentId: Overload:Project.Domain.SharedKernel.Users.Email.GetHashCode
+  href: Project.Domain.SharedKernel.Users.Email.html#Project_Domain_SharedKernel_Users_Email_GetHashCode
+  name: GetHashCode
+  nameWithType: Email.GetHashCode
+  fullName: Project.Domain.SharedKernel.Users.Email.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

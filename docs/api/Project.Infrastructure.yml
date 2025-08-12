@@ -4,7 +4,7 @@ items:
   commentId: N:Project.Infrastructure
   id: Project.Infrastructure
   children:
-  - Project.Infrastructure.Class1
+  - Project.Infrastructure.InfrastructureServices
   langs:
   - csharp
   - vb
@@ -15,9 +15,9 @@ items:
   assemblies:
   - Project.Infrastructure
 references:
-- uid: Project.Infrastructure.Class1
-  commentId: T:Project.Infrastructure.Class1
-  href: Project.Infrastructure.Class1.html
-  name: Class1
-  nameWithType: Class1
-  fullName: Project.Infrastructure.Class1
+- uid: Project.Infrastructure.InfrastructureServices
+  commentId: T:Project.Infrastructure.InfrastructureServices
+  href: Project.Infrastructure.InfrastructureServices.html
+  name: InfrastructureServices
+  nameWithType: InfrastructureServices
+  fullName: Project.Infrastructure.InfrastructureServices

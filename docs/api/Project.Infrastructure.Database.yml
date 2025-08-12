@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Database
+  commentId: N:Project.Infrastructure.Database
+  id: Project.Infrastructure.Database
+  children:
+  - Project.Infrastructure.Database.ApplicationDbContext
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.Database
+  nameWithType: Project.Infrastructure.Database
+  fullName: Project.Infrastructure.Database
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Database.ApplicationDbContext
+  commentId: T:Project.Infrastructure.Database.ApplicationDbContext
+  parent: Project.Infrastructure.Database
+  href: Project.Infrastructure.Database.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Project.Infrastructure.Database
+  commentId: N:Project.Infrastructure.Database
+  href: Project.html
+  name: Project.Infrastructure.Database
+  nameWithType: Project.Infrastructure.Database
+  fullName: Project.Infrastructure.Database
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Database
+    name: Database
+    href: Project.Infrastructure.Database.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Database
+    name: Database
+    href: Project.Infrastructure.Database.html

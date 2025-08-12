@@ -12,30 +12,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Application.Class1.yml",
+      "source_relative_path": "api/Project.Application.Users.IUserRepository.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Application.Class1.html"
+          "relative_path": "api/Project.Application.Users.IUserRepository.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Application.Class1",
-      "Summary": null
+      "Title": "Project.Application.Users.IUserRepository",
+      "Summary": "<p sourcefile=\"api/Project.Application.Users.IUserRepository.yml\" sourcestartlinenumber=\"1\">Defines the contract for user-related data operations in the domain layer.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Application.yml",
+      "source_relative_path": "api/Project.Application.Users.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Application.html"
+          "relative_path": "api/Project.Application.Users.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Application",
+      "Title": "Project.Application.Users",
       "Summary": null
     },
     {
@@ -65,20 +65,6 @@
       "IsMRef": true,
       "Title": "Project.Domain.SeedWork.Entity",
       "Summary": "<p sourcefile=\"api/Project.Domain.SeedWork.Entity.yml\" sourcestartlinenumber=\"1\">Represents the base class for all entities in the domain layer.\nProvides common behavior such as domain event handling and business rule validation.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Domain.SeedWork.Entity2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Domain.SeedWork.Entity2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Domain.SeedWork.Entity2",
-      "Summary": "<p sourcefile=\"api/Project.Domain.SeedWork.Entity2.yml\" sourcestartlinenumber=\"1\">Represents an abstract base class for all entities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -194,16 +180,324 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.Class1.yml",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.Email.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Infrastructure.Class1.html"
+          "relative_path": "api/Project.Domain.SharedKernel.Users.Email.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Infrastructure.Class1",
+      "Title": "Project.Domain.SharedKernel.Users.Email",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SharedKernel.Users.Email.yml\" sourcestartlinenumber=\"1\">Represents a domain-specific email address value object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.Name.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.Name.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users.Name",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SharedKernel.Users.Name.yml\" sourcestartlinenumber=\"1\">Represents a domain-specific name value object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SharedKernel.Users.Rules.EmailMustBeValidRule.yml\" sourcestartlinenumber=\"1\">Business rule to ensure an email address is valid.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule.yml\" sourcestartlinenumber=\"1\">Business rule to ensure a name is valid.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule.yml\" sourcestartlinenumber=\"1\">Business rule to ensure a username is valid.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.Rules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.Rules.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users.Rules",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.UserName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.UserName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users.UserName",
+      "Summary": "<p sourcefile=\"api/Project.Domain.SharedKernel.Users.UserName.yml\" sourcestartlinenumber=\"1\">Represents a domain-specific username value object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.SharedKernel.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.SharedKernel.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.SharedKernel.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.Users.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.Users.User.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.Users.User",
+      "Summary": "<p sourcefile=\"api/Project.Domain.Users.User.yml\" sourcestartlinenumber=\"1\">Represents a domain user.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.Users.UserId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.Users.UserId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.Users.UserId",
+      "Summary": "<p sourcefile=\"api/Project.Domain.Users.UserId.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed identifier for the User aggregate.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Domain.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Domain.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Domain.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Database.ApplicationDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Database.ApplicationDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Database.ApplicationDbContext",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Database.ApplicationDbContext.yml\" sourcestartlinenumber=\"1\">Represents the Entity Framework Core database context for the application,\nintegrating with ASP.NET Identity and custom domain configurations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Database.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Database",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Domain.Users.UserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Domain.Users.UserRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Domain.Users.UserRepository",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Domain.Users.UserRepository.yml\" sourcestartlinenumber=\"1\">Provides an implementation of <xref href=\"Project.Application.Users.IUserRepository\" data-throw-if-not-resolved=\"false\"></xref> using Entity Framework Core and ASP.NET Identity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Domain.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Domain.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Domain.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.InfrastructureServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.InfrastructureServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.InfrastructureServices",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.InfrastructureServices.yml\" sourcestartlinenumber=\"1\">Provides extension methods to register infrastructure services in the dependency injection container.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Migrations.Init.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Migrations.Init.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Migrations.Init",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Migrations.Init.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.SeedWork.TypedIdValueConverter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.SeedWork.TypedIdValueConverter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.SeedWork.TypedIdValueConverter<TTypedIdValue>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.SeedWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.SeedWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.SeedWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Users.IdentityUserAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Users.IdentityUserAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Users.IdentityUserAdapter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Users",
       "Summary": null
     },
     {
