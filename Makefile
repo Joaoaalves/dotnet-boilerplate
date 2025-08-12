@@ -1,7 +1,9 @@
 include .env
 .PHONY: docs clean-docs
+
 docs:
-	docfx docs/docfx.json
+	docfx metadata docs/docfx.json
+	docfx build docs/docfx.json
 
 ifeq ($(OS),Windows_NT)
 clean-docs:
