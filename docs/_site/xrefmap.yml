@@ -2435,53 +2435,6 @@ references:
   isSpec: "True"
   fullName: Project.Domain.Users.User.LastName
   nameWithType: User.LastName
-- uid: Project.Domain.Users.UserId
-  name: UserId
-  href: api/Project.Domain.Users.UserId.html
-  commentId: T:Project.Domain.Users.UserId
-  fullName: Project.Domain.Users.UserId
-  nameWithType: UserId
-- uid: Project.Domain.Users.UserId.#ctor(System.Guid)
-  name: UserId(Guid)
-  href: api/Project.Domain.Users.UserId.html#Project_Domain_Users_UserId__ctor_System_Guid_
-  commentId: M:Project.Domain.Users.UserId.#ctor(System.Guid)
-  name.vb: New(Guid)
-  fullName: Project.Domain.Users.UserId.UserId(System.Guid)
-  fullName.vb: Project.Domain.Users.UserId.New(System.Guid)
-  nameWithType: UserId.UserId(Guid)
-  nameWithType.vb: UserId.New(Guid)
-- uid: Project.Domain.Users.UserId.#ctor(System.String)
-  name: UserId(string)
-  href: api/Project.Domain.Users.UserId.html#Project_Domain_Users_UserId__ctor_System_String_
-  commentId: M:Project.Domain.Users.UserId.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Project.Domain.Users.UserId.UserId(string)
-  fullName.vb: Project.Domain.Users.UserId.New(String)
-  nameWithType: UserId.UserId(string)
-  nameWithType.vb: UserId.New(String)
-- uid: Project.Domain.Users.UserId.#ctor*
-  name: UserId
-  href: api/Project.Domain.Users.UserId.html#Project_Domain_Users_UserId__ctor_
-  commentId: Overload:Project.Domain.Users.UserId.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Project.Domain.Users.UserId.UserId
-  fullName.vb: Project.Domain.Users.UserId.New
-  nameWithType: UserId.UserId
-  nameWithType.vb: UserId.New
-- uid: Project.Domain.Users.UserId.NewId
-  name: NewId()
-  href: api/Project.Domain.Users.UserId.html#Project_Domain_Users_UserId_NewId
-  commentId: M:Project.Domain.Users.UserId.NewId
-  fullName: Project.Domain.Users.UserId.NewId()
-  nameWithType: UserId.NewId()
-- uid: Project.Domain.Users.UserId.NewId*
-  name: NewId
-  href: api/Project.Domain.Users.UserId.html#Project_Domain_Users_UserId_NewId_
-  commentId: Overload:Project.Domain.Users.UserId.NewId
-  isSpec: "True"
-  fullName: Project.Domain.Users.UserId.NewId
-  nameWithType: UserId.NewId
 - uid: Project.Infrastructure.Database
   name: Project.Infrastructure.Database
   href: api/Project.Infrastructure.Database.html
@@ -2793,6 +2746,31 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Migrations.Init.Up
   nameWithType: Init.Up
+- uid: Project.Infrastructure.Observability
+  name: Project.Infrastructure.Observability
+  href: api/Project.Infrastructure.Observability.html
+  commentId: N:Project.Infrastructure.Observability
+  fullName: Project.Infrastructure.Observability
+  nameWithType: Project.Infrastructure.Observability
+- uid: Project.Infrastructure.Observability.ObservabilityModule
+  name: ObservabilityModule
+  href: api/Project.Infrastructure.Observability.ObservabilityModule.html
+  commentId: T:Project.Infrastructure.Observability.ObservabilityModule
+  fullName: Project.Infrastructure.Observability.ObservabilityModule
+  nameWithType: ObservabilityModule
+- uid: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddObservabilityModule(IServiceCollection)
+  href: api/Project.Infrastructure.Observability.ObservabilityModule.html#Project_Infrastructure_Observability_ObservabilityModule_AddObservabilityModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ObservabilityModule.AddObservabilityModule(IServiceCollection)
+- uid: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule*
+  name: AddObservabilityModule
+  href: api/Project.Infrastructure.Observability.ObservabilityModule.html#Project_Infrastructure_Observability_ObservabilityModule_AddObservabilityModule_
+  commentId: Overload:Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule
+  isSpec: "True"
+  fullName: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule
+  nameWithType: ObservabilityModule.AddObservabilityModule
 - uid: Project.Infrastructure.Processing
   name: Project.Infrastructure.Processing
   href: api/Project.Infrastructure.Processing.html
@@ -3161,70 +3139,6 @@ references:
   fullName.vb: Project.Infrastructure.SeedWork.TypedIdValueConverter(Of TTypedIdValue).New
   nameWithType: TypedIdValueConverter<TTypedIdValue>.TypedIdValueConverter
   nameWithType.vb: TypedIdValueConverter(Of TTypedIdValue).New
-- uid: Project.Infrastructure.Users
-  name: Project.Infrastructure.Users
-  href: api/Project.Infrastructure.Users.html
-  commentId: N:Project.Infrastructure.Users
-  fullName: Project.Infrastructure.Users
-  nameWithType: Project.Infrastructure.Users
-- uid: Project.Infrastructure.Users.IdentityUserAdapter
-  name: IdentityUserAdapter
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html
-  commentId: T:Project.Infrastructure.Users.IdentityUserAdapter
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter
-  nameWithType: IdentityUserAdapter
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.FirstName
-  name: FirstName
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_FirstName
-  commentId: P:Project.Infrastructure.Users.IdentityUserAdapter.FirstName
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.FirstName
-  nameWithType: IdentityUserAdapter.FirstName
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.FirstName*
-  name: FirstName
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_FirstName_
-  commentId: Overload:Project.Infrastructure.Users.IdentityUserAdapter.FirstName
-  isSpec: "True"
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.FirstName
-  nameWithType: IdentityUserAdapter.FirstName
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.FromDomain(Project.Domain.Users.User)
-  name: FromDomain(User)
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_FromDomain_Project_Domain_Users_User_
-  commentId: M:Project.Infrastructure.Users.IdentityUserAdapter.FromDomain(Project.Domain.Users.User)
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.FromDomain(Project.Domain.Users.User)
-  nameWithType: IdentityUserAdapter.FromDomain(User)
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.FromDomain*
-  name: FromDomain
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_FromDomain_
-  commentId: Overload:Project.Infrastructure.Users.IdentityUserAdapter.FromDomain
-  isSpec: "True"
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.FromDomain
-  nameWithType: IdentityUserAdapter.FromDomain
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.LastName
-  name: LastName
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_LastName
-  commentId: P:Project.Infrastructure.Users.IdentityUserAdapter.LastName
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.LastName
-  nameWithType: IdentityUserAdapter.LastName
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.LastName*
-  name: LastName
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_LastName_
-  commentId: Overload:Project.Infrastructure.Users.IdentityUserAdapter.LastName
-  isSpec: "True"
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.LastName
-  nameWithType: IdentityUserAdapter.LastName
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.ToDomain
-  name: ToDomain()
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_ToDomain
-  commentId: M:Project.Infrastructure.Users.IdentityUserAdapter.ToDomain
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.ToDomain()
-  nameWithType: IdentityUserAdapter.ToDomain()
-- uid: Project.Infrastructure.Users.IdentityUserAdapter.ToDomain*
-  name: ToDomain
-  href: api/Project.Infrastructure.Users.IdentityUserAdapter.html#Project_Infrastructure_Users_IdentityUserAdapter_ToDomain_
-  commentId: Overload:Project.Infrastructure.Users.IdentityUserAdapter.ToDomain
-  isSpec: "True"
-  fullName: Project.Infrastructure.Users.IdentityUserAdapter.ToDomain
-  nameWithType: IdentityUserAdapter.ToDomain
 - uid: Project.Tests
   name: Project.Tests
   href: api/Project.Tests.html

@@ -2,7 +2,9 @@ using Project.Api.Extensions;
 using Project.API.Configurations;
 using Project.Domain.Users;
 using Project.Infrastructure.Database;
+using Project.Infrastructure.Observability;
 using Project.Infrastructure.Processing;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,7 @@ services.AddControllers();
 
 services.AddDataAccessModule();
 services.AddMediatorModule();
+services.AddObservabilityModule();
 
 var app = builder.Build();
 
@@ -41,6 +44,7 @@ app.MapControllers();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseOpenTelemetryPrometheusScrapingEndpoint();
 
 var identityApi = app.MapIdentityApi<User>();
 

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Observability
+  commentId: N:Project.Infrastructure.Observability
+  id: Project.Infrastructure.Observability
+  children:
+  - Project.Infrastructure.Observability.ObservabilityModule
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.Observability
+  nameWithType: Project.Infrastructure.Observability
+  fullName: Project.Infrastructure.Observability
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Observability.ObservabilityModule
+  commentId: T:Project.Infrastructure.Observability.ObservabilityModule
+  href: Project.Infrastructure.Observability.ObservabilityModule.html
+  name: ObservabilityModule
+  nameWithType: ObservabilityModule
+  fullName: Project.Infrastructure.Observability.ObservabilityModule

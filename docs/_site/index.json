@@ -369,11 +369,6 @@
     "title": "Class User | Project",
     "summary": "Class User Namespace Project.Domain.Users Assembly Project.Domain.dll Represents the application user, inheriting from IdentityUser to use ASP.NET Core Identity features directly. public class User : IdentityUser, IAggregateRoot Inheritance object IdentityUser<string> IdentityUser User Implements IAggregateRoot Inherited Members IdentityUser<string>.ToString() IdentityUser<string>.Id IdentityUser<string>.UserName IdentityUser<string>.NormalizedUserName IdentityUser<string>.Email IdentityUser<string>.NormalizedEmail IdentityUser<string>.EmailConfirmed IdentityUser<string>.PasswordHash IdentityUser<string>.SecurityStamp IdentityUser<string>.ConcurrencyStamp IdentityUser<string>.PhoneNumber IdentityUser<string>.PhoneNumberConfirmed IdentityUser<string>.TwoFactorEnabled IdentityUser<string>.LockoutEnd IdentityUser<string>.LockoutEnabled IdentityUser<string>.AccessFailedCount object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors User() [Obsolete(\"Only for EF/Identity serialization\", true)] public User() User(string, string, Name, Name) public User(string userName, string email, Name firstName, Name lastName) Parameters userName string email string firstName Name lastName Name Properties FirstName public Name FirstName { get; } Property Value Name LastName public Name LastName { get; } Property Value Name Methods Create(Name, Name, UserName, Email) Factory method to create a new User instance. public static User Create(Name firstName, Name lastName, UserName userName, Email email) Parameters firstName Name lastName Name userName UserName email Email Returns User"
   },
-  "api/Project.Domain.Users.UserId.html": {
-    "href": "api/Project.Domain.Users.UserId.html",
-    "title": "Class UserId | Project",
-    "summary": "Class UserId Namespace Project.Domain.Users Assembly Project.Domain.dll Represents a strongly-typed identifier for the User aggregate. public sealed class UserId : TypedIdValueBase, IEquatable<TypedIdValueBase> Inheritance object TypedIdValueBase UserId Implements IEquatable<TypedIdValueBase> Inherited Members TypedIdValueBase.Value TypedIdValueBase.Equals(object) TypedIdValueBase.GetHashCode() TypedIdValueBase.Equals(TypedIdValueBase) object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors UserId(Guid) public UserId(Guid id) Parameters id Guid UserId(string) public UserId(string id) Parameters id string Methods NewId() Creates a new unique UserId. public static UserId NewId() Returns UserId"
-  },
   "api/Project.Domain.Users.html": {
     "href": "api/Project.Domain.Users.html",
     "title": "Namespace Project.Domain.Users | Project",
@@ -423,6 +418,16 @@
     "href": "api/Project.Infrastructure.Migrations.html",
     "title": "Namespace Project.Infrastructure.Migrations | Project",
     "summary": "Namespace Project.Infrastructure.Migrations Classes Init A base class inherited by each EF Core migration."
+  },
+  "api/Project.Infrastructure.Observability.ObservabilityModule.html": {
+    "href": "api/Project.Infrastructure.Observability.ObservabilityModule.html",
+    "title": "Class ObservabilityModule | Project",
+    "summary": "Class ObservabilityModule Namespace Project.Infrastructure.Observability Assembly Project.Infrastructure.dll public static class ObservabilityModule Inheritance object ObservabilityModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddObservabilityModule(IServiceCollection) public static IServiceCollection AddObservabilityModule(this IServiceCollection services) Parameters services IServiceCollection Returns IServiceCollection"
+  },
+  "api/Project.Infrastructure.Observability.html": {
+    "href": "api/Project.Infrastructure.Observability.html",
+    "title": "Namespace Project.Infrastructure.Observability | Project",
+    "summary": "Namespace Project.Infrastructure.Observability Classes ObservabilityModule"
   },
   "api/Project.Infrastructure.Processing.CommandsExecutor.html": {
     "href": "api/Project.Infrastructure.Processing.CommandsExecutor.html",
@@ -483,16 +488,6 @@
     "href": "api/Project.Infrastructure.SeedWork.html",
     "title": "Namespace Project.Infrastructure.SeedWork | Project",
     "summary": "Namespace Project.Infrastructure.SeedWork Classes StronglyTypedIdValueConverterSelector TypedIdValueConverter<TTypedIdValue>"
-  },
-  "api/Project.Infrastructure.Users.IdentityUserAdapter.html": {
-    "href": "api/Project.Infrastructure.Users.IdentityUserAdapter.html",
-    "title": "Class IdentityUserAdapter | Project",
-    "summary": "Class IdentityUserAdapter Namespace Project.Infrastructure.Users Assembly Project.Infrastructure.dll public class IdentityUserAdapter : IdentityUser Inheritance object IdentityUser<string> IdentityUser IdentityUserAdapter Inherited Members IdentityUser<string>.ToString() IdentityUser<string>.Id IdentityUser<string>.UserName IdentityUser<string>.NormalizedUserName IdentityUser<string>.Email IdentityUser<string>.NormalizedEmail IdentityUser<string>.EmailConfirmed IdentityUser<string>.PasswordHash IdentityUser<string>.SecurityStamp IdentityUser<string>.ConcurrencyStamp IdentityUser<string>.PhoneNumber IdentityUser<string>.PhoneNumberConfirmed IdentityUser<string>.TwoFactorEnabled IdentityUser<string>.LockoutEnd IdentityUser<string>.LockoutEnabled IdentityUser<string>.AccessFailedCount object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Properties FirstName public string FirstName { get; set; } Property Value string LastName public string LastName { get; set; } Property Value string Methods FromDomain(User) public static IdentityUserAdapter FromDomain(User user) Parameters user User Returns IdentityUserAdapter ToDomain() public User ToDomain() Returns User"
-  },
-  "api/Project.Infrastructure.Users.html": {
-    "href": "api/Project.Infrastructure.Users.html",
-    "title": "Namespace Project.Infrastructure.Users | Project",
-    "summary": "Namespace Project.Infrastructure.Users Classes IdentityUserAdapter"
   },
   "api/Project.Tests.UnitTest1.html": {
     "href": "api/Project.Tests.UnitTest1.html",

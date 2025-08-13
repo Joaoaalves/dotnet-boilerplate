@@ -275,6 +275,13 @@ items:
   - uid: Project.Infrastructure.Migrations.Init
     name: Init
     type: Class
+- uid: Project.Infrastructure.Observability
+  name: Project.Infrastructure.Observability
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Observability.ObservabilityModule
+    name: ObservabilityModule
+    type: Class
 - uid: Project.Infrastructure.Processing
   name: Project.Infrastructure.Processing
   type: Namespace

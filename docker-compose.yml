@@ -7,7 +7,8 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:5000
-      DATABASE_CONNECTION_STRING: ${DATABASE_CONNECTION_STRING}
+    env_file:
+      - .env
     ports:
       - "5000:5000"
     restart: always
@@ -16,7 +17,7 @@ services:
         condition: service_healthy
         restart: true
     networks:
-      - appnet
+      - internal
 
   docs:
     build:
@@ -29,7 +30,7 @@ services:
       - "8080:80"
     restart: always
     networks:
-      - appnet
+      - internal
 
   nginx:
     image: nginx:alpine
@@ -47,7 +48,7 @@ services:
       - DOMAIN=${DOMAIN}
     restart: always
     networks:
-      - appnet
+      - internal
   postgres:
     image: postgres:13
     environment:
@@ -58,15 +59,48 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - internal
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d database"]
       interval: 5s
       timeout: 5s
       retries: 5
       start_period: 10s
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    profiles: ["observability"]
+    ports:
+      - "${PROMETHEUS_PORT}:9090"
+    volumes:
+      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: unless-stopped
+    networks:
+      - internal
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    profiles: ["observability"]
+    ports:
+      - "${GRAFANA_PORT}:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./observability/grafana/provisioning:/etc/grafana/provisioning
+    depends_on:
+      - prometheus
+    networks:
+      - internal
+    restart: unless-stopped
+
 networks:
-  appnet:
+  internal:
     driver: bridge
 
 volumes:
   postgres_data:
+  grafana_data:

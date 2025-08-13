@@ -1048,20 +1048,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Domain.Users.UserId.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Domain.Users.UserId.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Domain.Users.UserId",
-      "Summary": "<p sourcefile=\"api/Project.Domain.Users.UserId.yml\" sourcestartlinenumber=\"1\">Represents a strongly-typed identifier for the User aggregate.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Project.Domain.Users.yml",
       "output": {
         ".html": {
@@ -1198,6 +1184,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Observability.ObservabilityModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Observability.ObservabilityModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Observability.ObservabilityModule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Observability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Observability.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Observability",
       "Summary": null
     },
     {
@@ -1366,34 +1380,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.SeedWork",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.Users.IdentityUserAdapter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Infrastructure.Users.IdentityUserAdapter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Infrastructure.Users.IdentityUserAdapter",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.Users.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Infrastructure.Users.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Infrastructure.Users",
       "Summary": null
     },
     {

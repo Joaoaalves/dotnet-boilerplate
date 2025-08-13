@@ -62,4 +62,14 @@ Example content of `.env` in `.env.example`
 
 ---
 
+## Observability
+
+If you want to enable and run the observability module, edit the .env file and set it to true, then start the docker with the correct profile
+
+```bash
+docker compose -f docker-compose.dev.yml --profile observability up
+```
+
+---
+
 If you have questions or need help, open an issue in the repository!
