@@ -2,7 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microsoft.Extensions.DependencyInjection;
 using Project.Application.Users;
+using Project.Domain.SeedWork;
 using Project.Domain.Users;
+using Project.Infrastructure.Domain;
 using Project.Infrastructure.Domain.Users;
 using Project.Infrastructure.SeedWork;
 
@@ -25,6 +27,8 @@ namespace Project.Infrastructure.Database
                 // Strongly Typed Id Converter
                 options.ReplaceService<IValueConverterSelector, StronglyTypedIdValueConverterSelector>();
             });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // Add Identity API EndPoints
             services.AddIdentityApiEndpoints<User>()

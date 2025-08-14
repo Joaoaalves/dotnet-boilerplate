@@ -9,8 +9,8 @@
     "title": "Class ExecutionContextAccessor | Project",
     "summary": "Class ExecutionContextAccessor Namespace Project.API.Configurations Assembly Project.Api.dll Provides access to the current execution context, specifically the correlation ID from the HTTP request. public class ExecutionContextAccessor : IExecutionContextAccessor Inheritance object ExecutionContextAccessor Implements IExecutionContextAccessor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ExecutionContextAccessor(IHttpContextAccessor) Initializes a new instance of the ExecutionContextAccessor class. public ExecutionContextAccessor(IHttpContextAccessor httpContextAccessor) Parameters httpContextAccessor IHttpContextAccessor An accessor to retrieve the current HTTP context. Properties CorrelationId Gets the correlation ID from the incoming HTTP request headers. public Guid CorrelationId { get; } Property Value Guid Exceptions ApplicationException Thrown if the HTTP context or correlation ID is not available in the request. IsAvailable Gets a value indicating whether the HTTP context is currently available. public bool IsAvailable { get; } Property Value bool"
   },
-  "api/Project.API.Configurations.html": {
-    "href": "api/Project.API.Configurations.html",
+  "api/Project.API.Configurations_1.html": {
+    "href": "api/Project.API.Configurations_1.html",
     "title": "Namespace Project.API.Configurations | Project",
     "summary": "Namespace Project.API.Configurations Classes CorsConfiguration Provides CORS configuration methods for the application. ExecutionContextAccessor Provides access to the current execution context, specifically the correlation ID from the HTTP request."
   },
@@ -28,6 +28,16 @@
     "href": "api/Project.API.SeedWork.html",
     "title": "Namespace Project.API.SeedWork | Project",
     "summary": "Namespace Project.API.SeedWork Classes BusinessRuleValidationExceptionProblemDetails Represents a standardized HTTP response for business rule validation exceptions. InvalidCommandProblemDetails Represents problem details for an InvalidCommandException error."
+  },
+  "api/Project.Api.Configurations.ConfigurationsModule.html": {
+    "href": "api/Project.Api.Configurations.ConfigurationsModule.html",
+    "title": "Class ConfigurationsModule | Project",
+    "summary": "Class ConfigurationsModule Namespace Project.Api.Configurations Assembly Project.Api.dll public static class ConfigurationsModule Inheritance object ConfigurationsModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddConfigurations(IServiceCollection) public static IServiceCollection AddConfigurations(this IServiceCollection services) Parameters services IServiceCollection Returns IServiceCollection"
+  },
+  "api/Project.Api.Configurations.html": {
+    "href": "api/Project.Api.Configurations.html",
+    "title": "Namespace Project.Api.Configurations | Project",
+    "summary": "Namespace Project.Api.Configurations Classes ConfigurationsModule"
   },
   "api/Project.Api.Controllers.Users.AccountController.html": {
     "href": "api/Project.Api.Controllers.Users.AccountController.html",
@@ -59,11 +69,6 @@
     "title": "Interface ICommandPipelineBehavior<TCommand, TResult> | Project",
     "summary": "Interface ICommandPipelineBehavior<TCommand, TResult> Namespace Project.Application.Configuration.Commands.Behaviors Assembly Project.Application.dll public interface ICommandPipelineBehavior<TCommand, TResult> where TCommand : ICommand<TResult> Type Parameters TCommand TResult Methods Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken) Task<TResult> Handle(TCommand command, Func<TCommand, Task<TResult>> next, CancellationToken cancellationToken) Parameters command TCommand next Func<TCommand, Task<TResult>> cancellationToken CancellationToken Returns Task<TResult>"
   },
-  "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html": {
-    "href": "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html",
-    "title": "Class LoggingBehavior<TCommand, TResult> | Project",
-    "summary": "Class LoggingBehavior<TCommand, TResult> Namespace Project.Application.Configuration.Commands.Behaviors Assembly Project.Application.dll public class LoggingBehavior<TCommand, TResult> : ICommandPipelineBehavior<TCommand, TResult> where TCommand : ICommand<TResult> Type Parameters TCommand TResult Inheritance object LoggingBehavior<TCommand, TResult> Implements ICommandPipelineBehavior<TCommand, TResult> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken) public Task<TResult> Handle(TCommand command, Func<TCommand, Task<TResult>> next, CancellationToken cancellationToken) Parameters command TCommand next Func<TCommand, Task<TResult>> cancellationToken CancellationToken Returns Task<TResult>"
-  },
   "api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html": {
     "href": "api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html",
     "title": "Class UserInjectionCommandBehavior<TCommand, TResult> | Project",
@@ -72,7 +77,7 @@
   "api/Project.Application.Configuration.Commands.Behaviors.html": {
     "href": "api/Project.Application.Configuration.Commands.Behaviors.html",
     "title": "Namespace Project.Application.Configuration.Commands.Behaviors | Project",
-    "summary": "Namespace Project.Application.Configuration.Commands.Behaviors Classes LoggingBehavior<TCommand, TResult> UserInjectionCommandBehavior<TCommand, TResult> Interfaces ICommandPipelineBehavior<TCommand, TResult>"
+    "summary": "Namespace Project.Application.Configuration.Commands.Behaviors Classes UserInjectionCommandBehavior<TCommand, TResult> Interfaces ICommandPipelineBehavior<TCommand, TResult>"
   },
   "api/Project.Application.Configuration.Commands.ICommand-1.html": {
     "href": "api/Project.Application.Configuration.Commands.ICommand-1.html",
@@ -409,6 +414,21 @@
     "title": "Namespace Project.Infrastructure.Domain | Project",
     "summary": "Namespace Project.Infrastructure.Domain Classes UnitOfWork"
   },
+  "api/Project.Infrastructure.Logging.LoggingModule.html": {
+    "href": "api/Project.Infrastructure.Logging.LoggingModule.html",
+    "title": "Class LoggingModule | Project",
+    "summary": "Class LoggingModule Namespace Project.Infrastructure.Logging Assembly Project.Infrastructure.dll public static class LoggingModule Inheritance object LoggingModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SetupLoggingModule(IHostBuilder) public static void SetupLoggingModule(this IHostBuilder hostBuilder) Parameters hostBuilder IHostBuilder"
+  },
+  "api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html": {
+    "href": "api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html",
+    "title": "Class LoggingPipelineBehavior<TRequest, TResponse> | Project",
+    "summary": "Class LoggingPipelineBehavior<TRequest, TResponse> Namespace Project.Infrastructure.Logging Assembly Project.Infrastructure.dll public class LoggingPipelineBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse> where TRequest : ICommand<TResponse> Type Parameters TRequest TResponse Inheritance object LoggingPipelineBehavior<TRequest, TResponse> Implements IRequestPipelineBehavior<TRequest, TResponse> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>>, IExecutionContextAccessor) public LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>> logger, IExecutionContextAccessor contextAccessor) Parameters logger ILogger<LoggingPipelineBehavior<TRequest, TResponse>> contextAccessor IExecutionContextAccessor Methods Handle(TRequest, Func<Task<TResponse>>, CancellationToken) public Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next, CancellationToken cancellationToken) Parameters request TRequest next Func<Task<TResponse>> cancellationToken CancellationToken Returns Task<TResponse>"
+  },
+  "api/Project.Infrastructure.Logging.html": {
+    "href": "api/Project.Infrastructure.Logging.html",
+    "title": "Namespace Project.Infrastructure.Logging | Project",
+    "summary": "Namespace Project.Infrastructure.Logging Classes LoggingModule LoggingPipelineBehavior<TRequest, TResponse>"
+  },
   "api/Project.Infrastructure.Migrations.Init.html": {
     "href": "api/Project.Infrastructure.Migrations.Init.html",
     "title": "Class Init | Project",
@@ -419,15 +439,15 @@
     "title": "Namespace Project.Infrastructure.Migrations | Project",
     "summary": "Namespace Project.Infrastructure.Migrations Classes Init A base class inherited by each EF Core migration."
   },
-  "api/Project.Infrastructure.Observability.ObservabilityModule.html": {
-    "href": "api/Project.Infrastructure.Observability.ObservabilityModule.html",
-    "title": "Class ObservabilityModule | Project",
-    "summary": "Class ObservabilityModule Namespace Project.Infrastructure.Observability Assembly Project.Infrastructure.dll public static class ObservabilityModule Inheritance object ObservabilityModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddObservabilityModule(IServiceCollection) public static IServiceCollection AddObservabilityModule(this IServiceCollection services) Parameters services IServiceCollection Returns IServiceCollection"
+  "api/Project.Infrastructure.Monitoring.MonitoringModule.html": {
+    "href": "api/Project.Infrastructure.Monitoring.MonitoringModule.html",
+    "title": "Class MonitoringModule | Project",
+    "summary": "Class MonitoringModule Namespace Project.Infrastructure.Monitoring Assembly Project.Infrastructure.dll public static class MonitoringModule Inheritance object MonitoringModule Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddMonitoringModule(IServiceCollection) public static IServiceCollection AddMonitoringModule(this IServiceCollection services) Parameters services IServiceCollection Returns IServiceCollection"
   },
-  "api/Project.Infrastructure.Observability.html": {
-    "href": "api/Project.Infrastructure.Observability.html",
-    "title": "Namespace Project.Infrastructure.Observability | Project",
-    "summary": "Namespace Project.Infrastructure.Observability Classes ObservabilityModule"
+  "api/Project.Infrastructure.Monitoring.html": {
+    "href": "api/Project.Infrastructure.Monitoring.html",
+    "title": "Namespace Project.Infrastructure.Monitoring | Project",
+    "summary": "Namespace Project.Infrastructure.Monitoring Classes MonitoringModule"
   },
   "api/Project.Infrastructure.Processing.CommandsExecutor.html": {
     "href": "api/Project.Infrastructure.Processing.CommandsExecutor.html",
@@ -459,10 +479,15 @@
     "title": "Class QueriesExecutor | Project",
     "summary": "Class QueriesExecutor Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public class QueriesExecutor Inheritance object QueriesExecutor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors QueriesExecutor(IServiceProvider) public QueriesExecutor(IServiceProvider provider) Parameters provider IServiceProvider Methods Execute<TResult>(IQuery<TResult>) public Task<TResult> Execute<TResult>(IQuery<TResult> query) Parameters query IQuery<TResult> Returns Task<TResult> Type Parameters TResult"
   },
+  "api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html": {
+    "href": "api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html",
+    "title": "Class UnitOfWorkPipelineBehavior<TRequest, TResponse> | Project",
+    "summary": "Class UnitOfWorkPipelineBehavior<TRequest, TResponse> Namespace Project.Infrastructure.Processing Assembly Project.Infrastructure.dll public class UnitOfWorkPipelineBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse> where TRequest : ICommand<TResponse> Type Parameters TRequest TResponse Inheritance object UnitOfWorkPipelineBehavior<TRequest, TResponse> Implements IRequestPipelineBehavior<TRequest, TResponse> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors UnitOfWorkPipelineBehavior(IServiceProvider) public UnitOfWorkPipelineBehavior(IServiceProvider serviceProvider) Parameters serviceProvider IServiceProvider Methods Handle(TRequest, Func<Task<TResponse>>, CancellationToken) public Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next, CancellationToken cancellationToken) Parameters request TRequest next Func<Task<TResponse>> cancellationToken CancellationToken Returns Task<TResponse>"
+  },
   "api/Project.Infrastructure.Processing.html": {
     "href": "api/Project.Infrastructure.Processing.html",
     "title": "Namespace Project.Infrastructure.Processing | Project",
-    "summary": "Namespace Project.Infrastructure.Processing Classes CommandsExecutor DomainEventsDispatcher Mediator MediatorModule QueriesExecutor Interfaces IDomainEventsDispatcher"
+    "summary": "Namespace Project.Infrastructure.Processing Classes CommandsExecutor DomainEventsDispatcher Mediator MediatorModule QueriesExecutor UnitOfWorkPipelineBehavior<TRequest, TResponse> Interfaces IDomainEventsDispatcher"
   },
   "api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html": {
     "href": "api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html",
@@ -508,6 +533,11 @@
     "href": "docs/introduction.html",
     "title": "Introduction | Project",
     "summary": "Introduction"
+  },
+  "docs/observability.html": {
+    "href": "docs/observability.html",
+    "title": "| Project",
+    "summary": ""
   },
   "index.html": {
     "href": "index.html",

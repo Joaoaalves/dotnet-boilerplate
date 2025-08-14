@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DataAccessModule | Project </title>
+      <title>Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt; | Project </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DataAccessModule | Project ">
+      <meta name="title" content="Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt; | Project ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Infrastructure_Database_DataAccessModule.md&amp;value=---%0Auid%3A%20Project.Infrastructure.Database.DataAccessModule%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Infrastructure_Logging_LoggingPipelineBehavior_2.md&amp;value=---%0Auid%3A%20Project.Infrastructure.Logging.LoggingPipelineBehavior%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Project.Infrastructure.Database.DataAccessModule">
+        <article data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2">
 
 
 
-  <h1 id="Project_Infrastructure_Database_DataAccessModule" data-uid="Project.Infrastructure.Database.DataAccessModule" class="text-break">
-Class DataAccessModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Database/DataAccessModule.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2" class="text-break">
+Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Project.Infrastructure.Database.html">Database</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Project.Infrastructure.Logging.html">Logging</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Project.Infrastructure.dll</dd></dl>
   </div>
 
@@ -101,20 +101,33 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DataAccessModule</code></pre>
+    <pre><code class="lang-csharp hljs">public class LoggingPipelineBehavior&lt;TRequest, TResponse&gt; : IRequestPipelineBehavior&lt;TRequest, TResponse&gt; where TRequest : ICommand&lt;TResponse&gt;</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRequest</code></dt>
+    <dd></dd>
+    <dt><code>TResponse</code></dt>
+    <dd></dd>
+  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DataAccessModule</span></div>
+      <div><span class="xref">LoggingPipelineBehavior&lt;TRequest, TResponse&gt;</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Project.Domain.SeedWork.IRequestPipelineBehavior-2.html">IRequestPipelineBehavior</a>&lt;TRequest, TResponse&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -148,33 +161,74 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_" data-uid="Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule*"></a>
+  <a id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor*"></a>
 
-  <h3 id="Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-  AddDataAccessModule(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Database/DataAccessModule.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_Microsoft_Extensions_Logging_ILogger_Project_Infrastructure_Logging_LoggingPipelineBehavior__0__1___Project_Application_Configuration_IExecutionContextAccessor_" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)">
+  LoggingPipelineBehavior(ILogger&lt;LoggingPipelineBehavior&lt;TRequest, TResponse&gt;&gt;, IExecutionContextAccessor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddDataAccessModule(this IServiceCollection services)</code></pre>
+    <pre><code class="lang-csharp hljs">public LoggingPipelineBehavior(ILogger&lt;LoggingPipelineBehavior&lt;TRequest, TResponse&gt;&gt; logger, IExecutionContextAccessor contextAccessor)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html">LoggingPipelineBehavior</a>&lt;TRequest, TResponse&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>contextAccessor</code> <a class="xref" href="Project.Application.Configuration.IExecutionContextAccessor.html">IExecutionContextAccessor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2_Handle_" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle*"></a>
+
+  <h3 id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)">
+  Handle(TRequest, Func&lt;Task&lt;TResponse&gt;&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TResponse&gt; Handle(TRequest request, Func&lt;Task&lt;TResponse&gt;&gt; next, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <span class="xref">TRequest</span></dt>
+    <dd></dd>
+    <dt><code>next</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResponse&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -192,7 +246,7 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Database/DataAccessModule.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

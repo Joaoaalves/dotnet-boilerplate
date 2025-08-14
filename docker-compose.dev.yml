@@ -15,7 +15,7 @@ services:
         condition: service_healthy
         restart: true
     ports:
-      - "5000:5000"
+      - "8080:5000"
     volumes:
       - ./:/app
     healthcheck:
@@ -27,6 +27,7 @@ services:
     networks:
       - internal
       - monitoring
+      - logging
   docs:
     build:
       context: ./docs
@@ -37,9 +38,6 @@ services:
     volumes:
       - ./docs/_site:/usr/share/nginx/html:ro
     restart: unless-stopped
-    depends_on:
-      api:
-        condition: service_healthy
     networks:
       - internal
   
@@ -62,9 +60,13 @@ services:
     networks:
       - internal
       - monitoring
+
+#
+# MONITORING
+#
   postgresql-exporter:
     image: prometheuscommunity/postgres-exporter
-    profiles: ["observability"]
+    profiles: ["observability", "monitoring"]
     ports:
       - "9187:9187"
     environment:
@@ -79,7 +81,7 @@ services:
       - monitoring
   prometheus:
     image: prom/prometheus
-    profiles: ["observability"]
+    profiles: ["observability", "monitoring"]
     ports:
       - "${PROMETHEUS_PORT}:9090"
     environment:
@@ -91,7 +93,7 @@ services:
       - monitoring
   grafana:
     image: grafana/grafana
-    profiles: ["observability"]
+    profiles: ["observability", "monitoring"]
     ports:
       - "${GRAFANA_PORT}:3000"
     environment:
@@ -109,7 +111,7 @@ services:
 
   node_exporter:
     image: quay.io/prometheus/node-exporter:v1.5.0
-    profiles: ["observability"]
+    profiles: ["observability", "monitoring"]
     command: '--path.rootfs=/host'
     pid: host
     restart: unless-stopped
@@ -119,16 +121,97 @@ services:
       - /:/rootfs:ro
     networks:
       - monitoring
+#
+# LOGGING
+#
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.1
+    profiles: ["observability", "logging"]
+    environment:
+      discovery.type: single-node
+      bootstrap.memory_lock: true
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+      xpack.security.enabled: false
+    volumes:
+      - elastic_data:/usr/share/elasticsearch/data
+      - ./observability/elasticsearch/init:/usr/share/elasticsearch/init:ro
+    ports:
+      - "9200:9200"
+    networks:
+      - logging
+    restart: unless-stopped
 
+  kibana:
+    image: docker.elastic.co/kibana/kibana:9.1.1
+    profiles: ["observability", "logging"]
+    environment:
+      ELASTICSEARCH_HOSTS: ${ELASTICSEARCH_URL}
+      xpack.security.enabled: false
+    ports:
+      - "5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_started
+        restart: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5601/api/status"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - logging
+    restart: unless-stopped
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:9.1.1
+    profiles: ["observability", "logging"]
+    volumes:
+      - ./observability/logstash/pipeline:/usr/share/logstash/pipeline
+    ports:
+      - "5044:5044"  # Beats input (Filebeat, etc)
+      - "5000:5000"  # TCP input
+    depends_on:
+      elasticsearch:
+        condition: service_started
+        restart: true
+    networks:
+      - logging
+    restart: unless-stopped
+
+  kibana-importer:
+    image: curlimages/curl:latest
+    profiles: ["observability", "logging"]
+    command: 
+      - "-X"
+      - "POST"
+      - "http://kibana:5601/api/saved_objects/_import?overwrite=true"
+      - "-H"
+      - "kbn-xsrf: true"
+      - "--form"
+      - "file=@/import/export.ndjson"
+    volumes:
+      - ./observability/kibana/dashboard.ndjson:/import/export.ndjson:ro
+    depends_on:
+      kibana:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_started
+    networks:
+      - logging
+    restart: "no"
 networks:
   internal:
     driver: bridge
   monitoring:
     driver: bridge
-
+  logging:
+    driver: bridge
 volumes:
   postgres_data:
   grafana_data:
     driver: local
   prometheus_data:
+    driver: local
+  elastic_data:
     driver: local

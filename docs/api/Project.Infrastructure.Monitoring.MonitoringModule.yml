@@ -1,32 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Project.Infrastructure.Observability.ObservabilityModule
-  commentId: T:Project.Infrastructure.Observability.ObservabilityModule
-  id: ObservabilityModule
-  parent: Project.Infrastructure.Observability
+- uid: Project.Infrastructure.Monitoring.MonitoringModule
+  commentId: T:Project.Infrastructure.Monitoring.MonitoringModule
+  id: MonitoringModule
+  parent: Project.Infrastructure.Monitoring
   children:
-  - Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   langs:
   - csharp
   - vb
-  name: ObservabilityModule
-  nameWithType: ObservabilityModule
-  fullName: Project.Infrastructure.Observability.ObservabilityModule
+  name: MonitoringModule
+  nameWithType: MonitoringModule
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule
   type: Class
   source:
     remote:
-      path: src/Project.Infrastructure/Observability/ObservabilityModule.cs
+      path: src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: ObservabilityModule
-    path: ../src/Project.Infrastructure/Observability/ObservabilityModule.cs
+    id: MonitoringModule
+    path: ../src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
     startLine: 7
   assemblies:
   - Project.Infrastructure
-  namespace: Project.Infrastructure.Observability
+  namespace: Project.Infrastructure.Monitoring
   syntax:
-    content: public static class ObservabilityModule
-    content.vb: Public Module ObservabilityModule
+    content: public static class MonitoringModule
+    content.vb: Public Module MonitoringModule
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,45 +37,45 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  commentId: M:Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  id: AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   isExtensionMethod: true
-  parent: Project.Infrastructure.Observability.ObservabilityModule
+  parent: Project.Infrastructure.Monitoring.MonitoringModule
   langs:
   - csharp
   - vb
-  name: AddObservabilityModule(IServiceCollection)
-  nameWithType: ObservabilityModule.AddObservabilityModule(IServiceCollection)
-  fullName: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddMonitoringModule(IServiceCollection)
+  nameWithType: MonitoringModule.AddMonitoringModule(IServiceCollection)
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/Observability/ObservabilityModule.cs
+      path: src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: AddObservabilityModule
-    path: ../src/Project.Infrastructure/Observability/ObservabilityModule.cs
+    id: AddMonitoringModule
+    path: ../src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
     startLine: 9
   assemblies:
   - Project.Infrastructure
-  namespace: Project.Infrastructure.Observability
+  namespace: Project.Infrastructure.Monitoring
   syntax:
-    content: public static IServiceCollection AddObservabilityModule(this IServiceCollection services)
+    content: public static IServiceCollection AddMonitoringModule(this IServiceCollection services)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    content.vb: Public Shared Function AddObservabilityModule(services As IServiceCollection) As IServiceCollection
-  overload: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule*
+    content.vb: Public Shared Function AddMonitoringModule(services As IServiceCollection) As IServiceCollection
+  overload: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
 references:
-- uid: Project.Infrastructure.Observability
-  commentId: N:Project.Infrastructure.Observability
+- uid: Project.Infrastructure.Monitoring
+  commentId: N:Project.Infrastructure.Monitoring
   href: Project.html
-  name: Project.Infrastructure.Observability
-  nameWithType: Project.Infrastructure.Observability
-  fullName: Project.Infrastructure.Observability
+  name: Project.Infrastructure.Monitoring
+  nameWithType: Project.Infrastructure.Monitoring
+  fullName: Project.Infrastructure.Monitoring
   spec.csharp:
   - uid: Project
     name: Project
@@ -85,9 +85,9 @@ references:
     name: Infrastructure
     href: Project.Infrastructure.html
   - name: .
-  - uid: Project.Infrastructure.Observability
-    name: Observability
-    href: Project.Infrastructure.Observability.html
+  - uid: Project.Infrastructure.Monitoring
+    name: Monitoring
+    href: Project.Infrastructure.Monitoring.html
   spec.vb:
   - uid: Project
     name: Project
@@ -97,9 +97,9 @@ references:
     name: Infrastructure
     href: Project.Infrastructure.html
   - name: .
-  - uid: Project.Infrastructure.Observability
-    name: Observability
-    href: Project.Infrastructure.Observability.html
+  - uid: Project.Infrastructure.Monitoring
+    name: Monitoring
+    href: Project.Infrastructure.Monitoring.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -337,12 +337,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule*
-  commentId: Overload:Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule
-  href: Project.Infrastructure.Observability.ObservabilityModule.html#Project_Infrastructure_Observability_ObservabilityModule_AddObservabilityModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  name: AddObservabilityModule
-  nameWithType: ObservabilityModule.AddObservabilityModule
-  fullName: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule
+- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
+  commentId: Overload:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
+  href: Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddMonitoringModule
+  nameWithType: MonitoringModule.AddMonitoringModule
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
   parent: Microsoft.Extensions.DependencyInjection

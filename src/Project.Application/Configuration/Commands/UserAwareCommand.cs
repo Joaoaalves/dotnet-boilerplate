@@ -13,5 +13,4 @@ namespace Project.Application.Configuration.Commands
             User = user;
         }
     }
-
 }

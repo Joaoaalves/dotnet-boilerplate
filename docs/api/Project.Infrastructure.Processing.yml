@@ -10,6 +10,7 @@ items:
   - Project.Infrastructure.Processing.Mediator
   - Project.Infrastructure.Processing.MediatorModule
   - Project.Infrastructure.Processing.QueriesExecutor
+  - Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
   langs:
   - csharp
   - vb
@@ -59,6 +60,37 @@ references:
   name: QueriesExecutor
   nameWithType: QueriesExecutor
   fullName: Project.Infrastructure.Processing.QueriesExecutor
+- uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+  commentId: T:Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+  href: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html
+  name: UnitOfWorkPipelineBehavior<TRequest, TResponse>
+  nameWithType: UnitOfWorkPipelineBehavior<TRequest, TResponse>
+  fullName: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior(Of TRequest, TResponse)
+  name.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+    name: UnitOfWorkPipelineBehavior
+    href: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+    name: UnitOfWorkPipelineBehavior
+    href: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
 - uid: Project.Infrastructure.Processing
   commentId: N:Project.Infrastructure.Processing
   href: Project.html

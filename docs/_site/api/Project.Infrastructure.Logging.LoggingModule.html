@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DataAccessModule | Project </title>
+      <title>Class LoggingModule | Project </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DataAccessModule | Project ">
+      <meta name="title" content="Class LoggingModule | Project ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Infrastructure_Database_DataAccessModule.md&amp;value=---%0Auid%3A%20Project.Infrastructure.Database.DataAccessModule%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Infrastructure_Logging_LoggingModule.md&amp;value=---%0Auid%3A%20Project.Infrastructure.Logging.LoggingModule%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Project.Infrastructure.Database.DataAccessModule">
+        <article data-uid="Project.Infrastructure.Logging.LoggingModule">
 
 
 
-  <h1 id="Project_Infrastructure_Database_DataAccessModule" data-uid="Project.Infrastructure.Database.DataAccessModule" class="text-break">
-Class DataAccessModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Database/DataAccessModule.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Project_Infrastructure_Logging_LoggingModule" data-uid="Project.Infrastructure.Logging.LoggingModule" class="text-break">
+Class LoggingModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Project.Infrastructure.Database.html">Database</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Infrastructure.html">Infrastructure</a>.<a class="xref" href="Project.Infrastructure.Logging.html">Logging</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Project.Infrastructure.dll</dd></dl>
   </div>
 
@@ -101,7 +101,7 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DataAccessModule</code></pre>
+    <pre><code class="lang-csharp hljs">public static class LoggingModule</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DataAccessModule</span></div>
+      <div><span class="xref">LoggingModule</span></div>
     </dd>
   </dl>
 
@@ -152,31 +152,26 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
 </h2>
 
 
-  <a id="Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_" data-uid="Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule*"></a>
+  <a id="Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_" data-uid="Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*"></a>
 
-  <h3 id="Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-  AddDataAccessModule(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Database/DataAccessModule.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)">
+  SetupLoggingModule(IHostBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddDataAccessModule(this IServiceCollection services)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetupLoggingModule(this IHostBuilder hostBuilder)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
     <dd></dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -192,7 +187,7 @@ Class DataAccessModule  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Database/DataAccessModule.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

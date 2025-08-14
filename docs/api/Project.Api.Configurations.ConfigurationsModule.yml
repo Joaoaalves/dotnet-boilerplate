@@ -1,34 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Project.Infrastructure.Processing.MediatorModule
-  commentId: T:Project.Infrastructure.Processing.MediatorModule
-  id: MediatorModule
-  parent: Project.Infrastructure.Processing
+- uid: Project.Api.Configurations.ConfigurationsModule
+  commentId: T:Project.Api.Configurations.ConfigurationsModule
+  id: ConfigurationsModule
+  parent: Project.Api.Configurations
   children:
-  - Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object[])
-  - Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[],System.Type)
-  - Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(System.Object[])
+  - Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   langs:
   - csharp
   - vb
-  name: MediatorModule
-  nameWithType: MediatorModule
-  fullName: Project.Infrastructure.Processing.MediatorModule
+  name: ConfigurationsModule
+  nameWithType: ConfigurationsModule
+  fullName: Project.Api.Configurations.ConfigurationsModule
   type: Class
   source:
     remote:
-      path: src/Project.Infrastructure/Processing/MediatorModule.cs
+      path: src/Project.Api/Configurations/ConfigurationsModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: MediatorModule
-    path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 11
+    id: ConfigurationsModule
+    path: ../src/Project.Api/Configurations/ConfigurationsModule.cs
+    startLine: 5
   assemblies:
-  - Project.Infrastructure
-  namespace: Project.Infrastructure.Processing
+  - Project.Api
+  namespace: Project.Api.Configurations
   syntax:
-    content: public static class MediatorModule
-    content.vb: Public Module MediatorModule
+    content: public static class ConfigurationsModule
+    content.vb: Public Module ConfigurationsModule
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,144 +37,69 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object[])
-  commentId: M:Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object[])
-  id: AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object[])
+- uid: Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   isExtensionMethod: true
-  parent: Project.Infrastructure.Processing.MediatorModule
+  parent: Project.Api.Configurations.ConfigurationsModule
   langs:
   - csharp
   - vb
-  name: AddMediatorModule(IServiceCollection, params object[])
-  nameWithType: MediatorModule.AddMediatorModule(IServiceCollection, params object[])
-  fullName: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, params object[])
+  name: AddConfigurations(IServiceCollection)
+  nameWithType: ConfigurationsModule.AddConfigurations(IServiceCollection)
+  fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/Processing/MediatorModule.cs
+      path: src/Project.Api/Configurations/ConfigurationsModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: AddMediatorModule
-    path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 13
+    id: AddConfigurations
+    path: ../src/Project.Api/Configurations/ConfigurationsModule.cs
+    startLine: 7
   assemblies:
-  - Project.Infrastructure
-  namespace: Project.Infrastructure.Processing
+  - Project.Api
+  namespace: Project.Api.Configurations
   syntax:
-    content: public static IServiceCollection AddMediatorModule(this IServiceCollection services, params object[] args)
+    content: public static IServiceCollection AddConfigurations(this IServiceCollection services)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    - id: args
-      type: System.Object[]
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    content.vb: Public Shared Function AddMediatorModule(services As IServiceCollection, ParamArray args As Object()) As IServiceCollection
-  overload: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule*
-  nameWithType.vb: MediatorModule.AddMediatorModule(IServiceCollection, ParamArray Object())
-  fullName.vb: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, ParamArray Object())
-  name.vb: AddMediatorModule(IServiceCollection, ParamArray Object())
-- uid: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(System.Object[])
-  commentId: M:Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(System.Object[])
-  id: ResolveAssemblies(System.Object[])
-  parent: Project.Infrastructure.Processing.MediatorModule
-  langs:
-  - csharp
-  - vb
-  name: ResolveAssemblies(object[])
-  nameWithType: MediatorModule.ResolveAssemblies(object[])
-  fullName: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(object[])
-  type: Method
-  source:
-    remote:
-      path: src/Project.Infrastructure/Processing/MediatorModule.cs
-      branch: main
-      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: ResolveAssemblies
-    path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 34
-  assemblies:
-  - Project.Infrastructure
-  namespace: Project.Infrastructure.Processing
-  syntax:
-    content: public static Assembly[] ResolveAssemblies(object[] args)
-    parameters:
-    - id: args
-      type: System.Object[]
-    return:
-      type: System.Reflection.Assembly[]
-    content.vb: Public Shared Function ResolveAssemblies(args As Object()) As Assembly()
-  overload: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies*
-  nameWithType.vb: MediatorModule.ResolveAssemblies(Object())
-  fullName.vb: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies(Object())
-  name.vb: ResolveAssemblies(Object())
-- uid: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[],System.Type)
-  commentId: M:Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[],System.Type)
-  id: RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[],System.Type)
-  parent: Project.Infrastructure.Processing.MediatorModule
-  langs:
-  - csharp
-  - vb
-  name: RegisterHandlers(IServiceCollection, Assembly[], Type)
-  nameWithType: MediatorModule.RegisterHandlers(IServiceCollection, Assembly[], Type)
-  fullName: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Reflection.Assembly[], System.Type)
-  type: Method
-  source:
-    remote:
-      path: src/Project.Infrastructure/Processing/MediatorModule.cs
-      branch: main
-      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: RegisterHandlers
-    path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 62
-  assemblies:
-  - Project.Infrastructure
-  namespace: Project.Infrastructure.Processing
-  syntax:
-    content: public static void RegisterHandlers(IServiceCollection services, Assembly[] assemblies, Type handlerInterface)
-    parameters:
-    - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    - id: assemblies
-      type: System.Reflection.Assembly[]
-    - id: handlerInterface
-      type: System.Type
-    content.vb: Public Shared Sub RegisterHandlers(services As IServiceCollection, assemblies As Assembly(), handlerInterface As Type)
-  overload: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers*
-  nameWithType.vb: MediatorModule.RegisterHandlers(IServiceCollection, Assembly(), Type)
-  fullName.vb: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Reflection.Assembly(), System.Type)
-  name.vb: RegisterHandlers(IServiceCollection, Assembly(), Type)
+    content.vb: Public Shared Function AddConfigurations(services As IServiceCollection) As IServiceCollection
+  overload: Project.Api.Configurations.ConfigurationsModule.AddConfigurations*
 references:
-- uid: Project.Infrastructure.Processing
-  commentId: N:Project.Infrastructure.Processing
+- uid: Project.Api.Configurations
+  commentId: N:Project.Api.Configurations
   href: Project.html
-  name: Project.Infrastructure.Processing
-  nameWithType: Project.Infrastructure.Processing
-  fullName: Project.Infrastructure.Processing
+  name: Project.Api.Configurations
+  nameWithType: Project.Api.Configurations
+  fullName: Project.Api.Configurations
   spec.csharp:
   - uid: Project
     name: Project
     href: Project.html
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
+  - uid: Project.Api
+    name: Api
+    href: Project.Api.html
   - name: .
-  - uid: Project.Infrastructure.Processing
-    name: Processing
-    href: Project.Infrastructure.Processing.html
+  - uid: Project.Api.Configurations
+    name: Configurations
+    href: Project.Api.Configurations.html
   spec.vb:
   - uid: Project
     name: Project
     href: Project.html
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
+  - uid: Project.Api
+    name: Api
+    href: Project.Api.html
   - name: .
-  - uid: Project.Infrastructure.Processing
-    name: Processing
-    href: Project.Infrastructure.Processing.html
+  - uid: Project.Api.Configurations
+    name: Configurations
+    href: Project.Api.Configurations.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -414,12 +337,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule*
-  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
-  href: Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_AddMediatorModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Object___
-  name: AddMediatorModule
-  nameWithType: MediatorModule.AddMediatorModule
-  fullName: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
+- uid: Project.Api.Configurations.ConfigurationsModule.AddConfigurations*
+  commentId: Overload:Project.Api.Configurations.ConfigurationsModule.AddConfigurations
+  href: Project.Api.Configurations.ConfigurationsModule.html#Project_Api_Configurations_ConfigurationsModule_AddConfigurations_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddConfigurations
+  nameWithType: ConfigurationsModule.AddConfigurations
+  fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
   parent: Microsoft.Extensions.DependencyInjection
@@ -428,29 +351,6 @@ references:
   name: IServiceCollection
   nameWithType: IServiceCollection
   fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
-- uid: System.Object[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object[]
-  nameWithType: object[]
-  fullName: object[]
-  nameWithType.vb: Object()
-  fullName.vb: Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: (
-  - name: )
 - uid: Microsoft.Extensions.DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   isExternal: true
@@ -488,46 +388,3 @@ references:
     name: DependencyInjection
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
-- uid: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies*
-  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies
-  href: Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_ResolveAssemblies_System_Object___
-  name: ResolveAssemblies
-  nameWithType: MediatorModule.ResolveAssemblies
-  fullName: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies
-- uid: System.Reflection.Assembly[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  name: Assembly[]
-  nameWithType: Assembly[]
-  fullName: System.Reflection.Assembly[]
-  nameWithType.vb: Assembly()
-  fullName.vb: System.Reflection.Assembly()
-  name.vb: Assembly()
-  spec.csharp:
-  - uid: System.Reflection.Assembly
-    name: Assembly
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Reflection.Assembly
-    name: Assembly
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
-  - name: (
-  - name: )
-- uid: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers*
-  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.RegisterHandlers
-  href: Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_RegisterHandlers_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Reflection_Assembly___System_Type_
-  name: RegisterHandlers
-  nameWithType: MediatorModule.RegisterHandlers
-  fullName: Project.Infrastructure.Processing.MediatorModule.RegisterHandlers
-- uid: System.Type
-  commentId: T:System.Type
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.type
-  name: Type
-  nameWithType: Type
-  fullName: System.Type

@@ -40,10 +40,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.Configurations.yml",
+      "source_relative_path": "api/Project.API.Configurations_1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.API.Configurations.html"
+          "relative_path": "api/Project.API.Configurations_1.html"
         }
       },
       "version": "",
@@ -92,6 +92,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.API.SeedWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Configurations.ConfigurationsModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Configurations.ConfigurationsModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Configurations.ConfigurationsModule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Configurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Configurations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Configurations",
       "Summary": null
     },
     {
@@ -176,20 +204,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>",
       "Summary": null
     },
     {
@@ -1160,6 +1174,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Logging.LoggingModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Logging.LoggingModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Logging.LoggingModule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Logging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Logging",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Infrastructure.Migrations.Init.yml",
       "output": {
         ".html": {
@@ -1188,30 +1244,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.Observability.ObservabilityModule.yml",
+      "source_relative_path": "api/Project.Infrastructure.Monitoring.MonitoringModule.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Infrastructure.Observability.ObservabilityModule.html"
+          "relative_path": "api/Project.Infrastructure.Monitoring.MonitoringModule.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Infrastructure.Observability.ObservabilityModule",
+      "Title": "Project.Infrastructure.Monitoring.MonitoringModule",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.Observability.yml",
+      "source_relative_path": "api/Project.Infrastructure.Monitoring.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Infrastructure.Observability.html"
+          "relative_path": "api/Project.Infrastructure.Monitoring.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Infrastructure.Observability",
+      "Title": "Project.Infrastructure.Monitoring",
       "Summary": null
     },
     {
@@ -1296,6 +1352,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.QueriesExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>",
       "Summary": null
     },
     {
@@ -1439,6 +1509,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/observability.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/observability.html"
         }
       },
       "version": ""

@@ -5,7 +5,6 @@ items:
   id: Project.Application.Configuration.Commands.Behaviors
   children:
   - Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-  - Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
   - Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
   langs:
   - csharp
@@ -40,37 +39,6 @@ references:
   - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
     name: ICommandPipelineBehavior
     href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TCommand
-  - name: ','
-  - name: " "
-  - name: TResult
-  - name: )
-- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-  commentId: T:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-  href: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html
-  name: LoggingBehavior<TCommand, TResult>
-  nameWithType: LoggingBehavior<TCommand, TResult>
-  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>
-  nameWithType.vb: LoggingBehavior(Of TCommand, TResult)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult)
-  name.vb: LoggingBehavior(Of TCommand, TResult)
-  spec.csharp:
-  - uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-    name: LoggingBehavior
-    href: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html
-  - name: <
-  - name: TCommand
-  - name: ','
-  - name: " "
-  - name: TResult
-  - name: '>'
-  spec.vb:
-  - uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-    name: LoggingBehavior
-    href: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html
   - name: (
   - name: Of
   - name: " "

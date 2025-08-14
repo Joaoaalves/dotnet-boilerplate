@@ -1,0 +1,995 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  commentId: T:Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  id: LoggingPipelineBehavior`2
+  parent: Project.Infrastructure.Logging
+  children:
+  - Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)
+  - Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: LoggingPipelineBehavior<TRequest, TResponse>
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>
+  type: Class
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LoggingPipelineBehavior
+    path: ../src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
+    startLine: 10
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging
+  syntax:
+    content: 'public class LoggingPipelineBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse> where TRequest : ICommand<TResponse>'
+    typeParameters:
+    - id: TRequest
+    - id: TResponse
+    content.vb: Public Class LoggingPipelineBehavior(Of TRequest As ICommand(Of TResponse), TResponse) Implements IRequestPipelineBehavior(Of TRequest, TResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - Project.Domain.SeedWork.IRequestPipelineBehavior{{TRequest},{TResponse}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse)
+  name.vb: LoggingPipelineBehavior(Of TRequest, TResponse)
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)
+  commentId: M:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)'
+  parent: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>>, IExecutionContextAccessor)
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>>, IExecutionContextAccessor)
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior(Microsoft.Extensions.Logging.ILogger<Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>>, Project.Application.Configuration.IExecutionContextAccessor)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
+    startLine: 16
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging
+  syntax:
+    content: public LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>> logger, IExecutionContextAccessor contextAccessor)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior`2}
+    - id: contextAccessor
+      type: Project.Application.Configuration.IExecutionContextAccessor
+    content.vb: Public Sub New(logger As ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse)), contextAccessor As IExecutionContextAccessor)
+  overload: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor*
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).New(ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse)), IExecutionContextAccessor)
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).New(Microsoft.Extensions.Logging.ILogger(Of Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse)), Project.Application.Configuration.IExecutionContextAccessor)
+  name.vb: New(ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse)), IExecutionContextAccessor)
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  commentId: M:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  id: Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  parent: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Handle
+    path: ../src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
+    startLine: 22
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging
+  example: []
+  syntax:
+    content: public Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: '{TRequest}'
+    - id: next
+      type: System.Func{System.Threading.Tasks.Task{{TResponse}}}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TResponse}}
+    content.vb: Public Function Handle(request As TRequest, [next] As Func(Of Task(Of TResponse)), cancellationToken As CancellationToken) As Task(Of TResponse)
+  overload: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle*
+  implements:
+  - Project.Domain.SeedWork.IRequestPipelineBehavior{{TRequest},{TResponse}}.Handle({TRequest},System.Func{System.Threading.Tasks.Task{{TResponse}}},System.Threading.CancellationToken)
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+references:
+- uid: Project.Infrastructure.Logging
+  commentId: N:Project.Infrastructure.Logging
+  href: Project.html
+  name: Project.Infrastructure.Logging
+  nameWithType: Project.Infrastructure.Logging
+  fullName: Project.Infrastructure.Logging
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Logging
+    name: Logging
+    href: Project.Infrastructure.Logging.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Logging
+    name: Logging
+    href: Project.Infrastructure.Logging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior{{TRequest},{TResponse}}
+  commentId: T:Project.Domain.SeedWork.IRequestPipelineBehavior{`0,`1}
+  parent: Project.Domain.SeedWork
+  definition: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  name: IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse)
+  name.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  commentId: T:Project.Domain.SeedWork.IRequestPipelineBehavior`2
+  href: Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  name: IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse)
+  name.vb: IRequestPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior
+    href: Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2
+    name: IRequestPipelineBehavior
+    href: Project.Domain.SeedWork.IRequestPipelineBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor*
+  commentId: Overload:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor
+  href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_Microsoft_Extensions_Logging_ILogger_Project_Infrastructure_Logging_LoggingPipelineBehavior__0__1___Project_Application_Configuration_IExecutionContextAccessor_
+  name: LoggingPipelineBehavior
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).New
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior`2}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior`2}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<LoggingPipelineBehavior<TRequest, TResponse>>
+  nameWithType: ILogger<LoggingPipelineBehavior<TRequest, TResponse>>
+  fullName: Microsoft.Extensions.Logging.ILogger<Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>>
+  nameWithType.vb: ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse))
+  name.vb: ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+    name: LoggingPipelineBehavior
+    href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+    name: LoggingPipelineBehavior
+    href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: )
+- uid: Project.Application.Configuration.IExecutionContextAccessor
+  commentId: T:Project.Application.Configuration.IExecutionContextAccessor
+  parent: Project.Application.Configuration
+  href: Project.Application.Configuration.IExecutionContextAccessor.html
+  name: IExecutionContextAccessor
+  nameWithType: IExecutionContextAccessor
+  fullName: Project.Application.Configuration.IExecutionContextAccessor
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Project.Application.Configuration
+  commentId: N:Project.Application.Configuration
+  href: Project.html
+  name: Project.Application.Configuration
+  nameWithType: Project.Application.Configuration
+  fullName: Project.Application.Configuration
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle*
+  commentId: Overload:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle
+  href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.Handle
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.Handle
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).Handle
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).Handle
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior{{TRequest},{TResponse}}.Handle({TRequest},System.Func{System.Threading.Tasks.Task{{TResponse}}},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IRequestPipelineBehavior{`0,`1}.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  parent: Project.Domain.SeedWork.IRequestPipelineBehavior{{TRequest},{TResponse}}
+  definition: Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior{`0,`1}.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior{`0,`1}.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{TRequest}'
+  commentId: '!:TRequest'
+  definition: TRequest
+  name: TRequest
+  nameWithType: TRequest
+  fullName: TRequest
+- uid: System.Func{System.Threading.Tasks.Task{{TResponse}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{`1}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task<TResponse>>
+  nameWithType: Func<Task<TResponse>>
+  fullName: System.Func<System.Threading.Tasks.Task<TResponse>>
+  nameWithType.vb: Func(Of Task(Of TResponse))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of TResponse))
+  name.vb: Func(Of Task(Of TResponse))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{TResponse}}
+  commentId: T:System.Threading.Tasks.Task{`1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResponse>
+  nameWithType: Task<TResponse>
+  fullName: System.Threading.Tasks.Task<TResponse>
+  nameWithType.vb: Task(Of TResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of TResponse)
+  name.vb: Task(Of TResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  commentId: M:Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType: IRequestPipelineBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  fullName: Project.Domain.SeedWork.IRequestPipelineBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName.vb: Project.Domain.SeedWork.IRequestPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.IRequestPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+    name: Handle
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: TRequest
+  name: TRequest
+  nameWithType: TRequest
+  fullName: TRequest
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

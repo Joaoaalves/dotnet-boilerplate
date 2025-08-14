@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Api.Configurations
+  commentId: N:Project.Api.Configurations
+  id: Project.Api.Configurations
+  children:
+  - Project.Api.Configurations.ConfigurationsModule
+  langs:
+  - csharp
+  - vb
+  name: Project.Api.Configurations
+  nameWithType: Project.Api.Configurations
+  fullName: Project.Api.Configurations
+  type: Namespace
+  assemblies:
+  - Project.Api
+references:
+- uid: Project.Api.Configurations.ConfigurationsModule
+  commentId: T:Project.Api.Configurations.ConfigurationsModule
+  href: Project.Api.Configurations.ConfigurationsModule.html
+  name: ConfigurationsModule
+  nameWithType: ConfigurationsModule
+  fullName: Project.Api.Configurations.ConfigurationsModule

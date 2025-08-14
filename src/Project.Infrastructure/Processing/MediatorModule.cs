@@ -1,8 +1,11 @@
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
+using Project.Application.Configuration;
+using Project.Application.Configuration.Commands;
 using Project.Application.Configuration.Commands.Behaviors;
 using Project.Application.Configuration.Queries.Behaviors;
 using Project.Domain.SeedWork;
+using Project.Infrastructure.Logging;
 
 namespace Project.Infrastructure.Processing
 {
@@ -23,6 +26,9 @@ namespace Project.Infrastructure.Processing
 
             services.AddScoped(typeof(ICommandPipelineBehavior<,>), typeof(UserInjectionCommandBehavior<,>));
             services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UserInjectionQueryBehavior<,>));
+
+            services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UnitOfWorkPipelineBehavior<,>));
+            services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(LoggingPipelineBehavior<,>));
             return services;
         }
 
@@ -59,7 +65,6 @@ namespace Project.Infrastructure.Processing
             var types = assemblies.SelectMany(a => a.GetTypes())
                 .Where(t => t.IsClass && !t.IsAbstract)
                 .ToList();
-
             foreach (var type in types)
             {
                 var interfaces = type.GetInterfaces()
@@ -67,7 +72,6 @@ namespace Project.Infrastructure.Processing
                         i.IsGenericType &&
                         i.GetGenericTypeDefinition() == handlerInterface
                     );
-
                 foreach (var intrfc in interfaces)
                 {
                     services.AddTransient(intrfc, type);

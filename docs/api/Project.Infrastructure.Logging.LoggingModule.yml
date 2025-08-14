@@ -1,32 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Project.Infrastructure.Database.DataAccessModule
-  commentId: T:Project.Infrastructure.Database.DataAccessModule
-  id: DataAccessModule
-  parent: Project.Infrastructure.Database
+- uid: Project.Infrastructure.Logging.LoggingModule
+  commentId: T:Project.Infrastructure.Logging.LoggingModule
+  id: LoggingModule
+  parent: Project.Infrastructure.Logging
   children:
-  - Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   langs:
   - csharp
   - vb
-  name: DataAccessModule
-  nameWithType: DataAccessModule
-  fullName: Project.Infrastructure.Database.DataAccessModule
+  name: LoggingModule
+  nameWithType: LoggingModule
+  fullName: Project.Infrastructure.Logging.LoggingModule
   type: Class
   source:
     remote:
-      path: src/Project.Infrastructure/Database/DataAccessModule.cs
+      path: src/Project.Infrastructure/Logging/LoggingModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: DataAccessModule
-    path: ../src/Project.Infrastructure/Database/DataAccessModule.cs
-    startLine: 13
+    id: LoggingModule
+    path: ../src/Project.Infrastructure/Logging/LoggingModule.cs
+    startLine: 9
   assemblies:
   - Project.Infrastructure
-  namespace: Project.Infrastructure.Database
+  namespace: Project.Infrastructure.Logging
   syntax:
-    content: public static class DataAccessModule
-    content.vb: Public Module DataAccessModule
+    content: public static class LoggingModule
+    content.vb: Public Module LoggingModule
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,45 +37,43 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  commentId: M:Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  id: AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
+  commentId: M:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
+  id: SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   isExtensionMethod: true
-  parent: Project.Infrastructure.Database.DataAccessModule
+  parent: Project.Infrastructure.Logging.LoggingModule
   langs:
   - csharp
   - vb
-  name: AddDataAccessModule(IServiceCollection)
-  nameWithType: DataAccessModule.AddDataAccessModule(IServiceCollection)
-  fullName: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: SetupLoggingModule(IHostBuilder)
+  nameWithType: LoggingModule.SetupLoggingModule(IHostBuilder)
+  fullName: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/Database/DataAccessModule.cs
+      path: src/Project.Infrastructure/Logging/LoggingModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: AddDataAccessModule
-    path: ../src/Project.Infrastructure/Database/DataAccessModule.cs
-    startLine: 15
+    id: SetupLoggingModule
+    path: ../src/Project.Infrastructure/Logging/LoggingModule.cs
+    startLine: 11
   assemblies:
   - Project.Infrastructure
-  namespace: Project.Infrastructure.Database
+  namespace: Project.Infrastructure.Logging
   syntax:
-    content: public static IServiceCollection AddDataAccessModule(this IServiceCollection services)
+    content: public static void SetupLoggingModule(this IHostBuilder hostBuilder)
     parameters:
-    - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    return:
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
-    content.vb: Public Shared Function AddDataAccessModule(services As IServiceCollection) As IServiceCollection
-  overload: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule*
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostBuilder
+    content.vb: Public Shared Sub SetupLoggingModule(hostBuilder As IHostBuilder)
+  overload: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
 references:
-- uid: Project.Infrastructure.Database
-  commentId: N:Project.Infrastructure.Database
+- uid: Project.Infrastructure.Logging
+  commentId: N:Project.Infrastructure.Logging
   href: Project.html
-  name: Project.Infrastructure.Database
-  nameWithType: Project.Infrastructure.Database
-  fullName: Project.Infrastructure.Database
+  name: Project.Infrastructure.Logging
+  nameWithType: Project.Infrastructure.Logging
+  fullName: Project.Infrastructure.Logging
   spec.csharp:
   - uid: Project
     name: Project
@@ -85,9 +83,9 @@ references:
     name: Infrastructure
     href: Project.Infrastructure.html
   - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Project.Infrastructure.Logging
+    name: Logging
+    href: Project.Infrastructure.Logging.html
   spec.vb:
   - uid: Project
     name: Project
@@ -97,9 +95,9 @@ references:
     name: Infrastructure
     href: Project.Infrastructure.html
   - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Project.Infrastructure.Logging
+    name: Logging
+    href: Project.Infrastructure.Logging.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -337,27 +335,27 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule*
-  commentId: Overload:Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule
-  href: Project.Infrastructure.Database.DataAccessModule.html#Project_Infrastructure_Database_DataAccessModule_AddDataAccessModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  name: AddDataAccessModule
-  nameWithType: DataAccessModule.AddDataAccessModule
-  fullName: Project.Infrastructure.Database.DataAccessModule.AddDataAccessModule
-- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
-  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
-  parent: Microsoft.Extensions.DependencyInjection
+- uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
+  commentId: Overload:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
+  href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_
+  name: SetupLoggingModule
+  nameWithType: LoggingModule.SetupLoggingModule
+  fullName: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
+- uid: Microsoft.Extensions.Hosting.IHostBuilder
+  commentId: T:Microsoft.Extensions.Hosting.IHostBuilder
+  parent: Microsoft.Extensions.Hosting
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
-  name: IServiceCollection
-  nameWithType: IServiceCollection
-  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
-- uid: Microsoft.Extensions.DependencyInjection
-  commentId: N:Microsoft.Extensions.DependencyInjection
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  name: IHostBuilder
+  nameWithType: IHostBuilder
+  fullName: Microsoft.Extensions.Hosting.IHostBuilder
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/microsoft
-  name: Microsoft.Extensions.DependencyInjection
-  nameWithType: Microsoft.Extensions.DependencyInjection
-  fullName: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
   spec.csharp:
   - uid: Microsoft
     name: Microsoft
@@ -369,10 +367,10 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
   - name: .
-  - uid: Microsoft.Extensions.DependencyInjection
-    name: DependencyInjection
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
   spec.vb:
   - uid: Microsoft
     name: Microsoft
@@ -384,7 +382,7 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
   - name: .
-  - uid: Microsoft.Extensions.DependencyInjection
-    name: DependencyInjection
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting

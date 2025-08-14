@@ -3,7 +3,7 @@ sorted: true
 references:
 - uid: Project.API.Configurations
   name: Project.API.Configurations
-  href: api/Project.API.Configurations.html
+  href: api/Project.API.Configurations_1.html
   commentId: N:Project.API.Configurations
   fullName: Project.API.Configurations
   nameWithType: Project.API.Configurations
@@ -133,6 +133,31 @@ references:
   fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New
   nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails
   nameWithType.vb: InvalidCommandProblemDetails.New
+- uid: Project.Api.Configurations
+  name: Project.Api.Configurations
+  href: api/Project.Api.Configurations.html
+  commentId: N:Project.Api.Configurations
+  fullName: Project.Api.Configurations
+  nameWithType: Project.Api.Configurations
+- uid: Project.Api.Configurations.ConfigurationsModule
+  name: ConfigurationsModule
+  href: api/Project.Api.Configurations.ConfigurationsModule.html
+  commentId: T:Project.Api.Configurations.ConfigurationsModule
+  fullName: Project.Api.Configurations.ConfigurationsModule
+  nameWithType: ConfigurationsModule
+- uid: Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddConfigurations(IServiceCollection)
+  href: api/Project.Api.Configurations.ConfigurationsModule.html#Project_Api_Configurations_ConfigurationsModule_AddConfigurations_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ConfigurationsModule.AddConfigurations(IServiceCollection)
+- uid: Project.Api.Configurations.ConfigurationsModule.AddConfigurations*
+  name: AddConfigurations
+  href: api/Project.Api.Configurations.ConfigurationsModule.html#Project_Api_Configurations_ConfigurationsModule_AddConfigurations_
+  commentId: Overload:Project.Api.Configurations.ConfigurationsModule.AddConfigurations
+  isSpec: "True"
+  fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations
+  nameWithType: ConfigurationsModule.AddConfigurations
 - uid: Project.Api.Controllers.Users
   name: Project.Api.Controllers.Users
   href: api/Project.Api.Controllers.Users.html
@@ -286,33 +311,6 @@ references:
   fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle
   nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle
   nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle
-- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-  name: LoggingBehavior<TCommand, TResult>
-  href: api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html
-  commentId: T:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-  name.vb: LoggingBehavior(Of TCommand, TResult)
-  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult)
-  nameWithType: LoggingBehavior<TCommand, TResult>
-  nameWithType.vb: LoggingBehavior(Of TCommand, TResult)
-- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  href: api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_LoggingBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
-  commentId: M:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
-  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
-  nameWithType: LoggingBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  nameWithType.vb: LoggingBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
-- uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle*
-  name: Handle
-  href: api/Project.Application.Configuration.Commands.Behaviors.LoggingBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_LoggingBehavior_2_Handle_
-  commentId: Overload:Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2.Handle
-  isSpec: "True"
-  fullName: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior<TCommand, TResult>.Handle
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior(Of TCommand, TResult).Handle
-  nameWithType: LoggingBehavior<TCommand, TResult>.Handle
-  nameWithType.vb: LoggingBehavior(Of TCommand, TResult).Handle
 - uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
   name: UserInjectionCommandBehavior<TCommand, TResult>
   href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html
@@ -2695,6 +2693,77 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Domain.Users.UserRepository.UpdateAsync
   nameWithType: UserRepository.UpdateAsync
+- uid: Project.Infrastructure.Logging
+  name: Project.Infrastructure.Logging
+  href: api/Project.Infrastructure.Logging.html
+  commentId: N:Project.Infrastructure.Logging
+  fullName: Project.Infrastructure.Logging
+  nameWithType: Project.Infrastructure.Logging
+- uid: Project.Infrastructure.Logging.LoggingModule
+  name: LoggingModule
+  href: api/Project.Infrastructure.Logging.LoggingModule.html
+  commentId: T:Project.Infrastructure.Logging.LoggingModule
+  fullName: Project.Infrastructure.Logging.LoggingModule
+  nameWithType: LoggingModule
+- uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: SetupLoggingModule(IHostBuilder)
+  href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: LoggingModule.SetupLoggingModule(IHostBuilder)
+- uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
+  name: SetupLoggingModule
+  href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_
+  commentId: Overload:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
+  nameWithType: LoggingModule.SetupLoggingModule
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  name: LoggingPipelineBehavior<TRequest, TResponse>
+  href: api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html
+  commentId: T:Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  name.vb: LoggingPipelineBehavior(Of TRequest, TResponse)
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse)
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse)
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)
+  name: LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>>, IExecutionContextAccessor)
+  href: api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_Microsoft_Extensions_Logging_ILogger_Project_Infrastructure_Logging_LoggingPipelineBehavior__0__1___Project_Application_Configuration_IExecutionContextAccessor_
+  commentId: M:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)
+  name.vb: New(ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse)), IExecutionContextAccessor)
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior(Microsoft.Extensions.Logging.ILogger<Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>>, Project.Application.Configuration.IExecutionContextAccessor)
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).New(Microsoft.Extensions.Logging.ILogger(Of Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse)), Project.Application.Configuration.IExecutionContextAccessor)
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>>, IExecutionContextAccessor)
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).New(ILogger(Of LoggingPipelineBehavior(Of TRequest, TResponse)), IExecutionContextAccessor)
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor*
+  name: LoggingPipelineBehavior
+  href: api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_
+  commentId: Overload:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).New
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.LoggingPipelineBehavior
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).New
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  href: api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2_Handle_
+  commentId: Overload:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>.Handle
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).Handle
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.Handle
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).Handle
 - uid: Project.Infrastructure.Migrations
   name: Project.Infrastructure.Migrations
   href: api/Project.Infrastructure.Migrations.html
@@ -2746,31 +2815,31 @@ references:
   isSpec: "True"
   fullName: Project.Infrastructure.Migrations.Init.Up
   nameWithType: Init.Up
-- uid: Project.Infrastructure.Observability
-  name: Project.Infrastructure.Observability
-  href: api/Project.Infrastructure.Observability.html
-  commentId: N:Project.Infrastructure.Observability
-  fullName: Project.Infrastructure.Observability
-  nameWithType: Project.Infrastructure.Observability
-- uid: Project.Infrastructure.Observability.ObservabilityModule
-  name: ObservabilityModule
-  href: api/Project.Infrastructure.Observability.ObservabilityModule.html
-  commentId: T:Project.Infrastructure.Observability.ObservabilityModule
-  fullName: Project.Infrastructure.Observability.ObservabilityModule
-  nameWithType: ObservabilityModule
-- uid: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddObservabilityModule(IServiceCollection)
-  href: api/Project.Infrastructure.Observability.ObservabilityModule.html#Project_Infrastructure_Observability_ObservabilityModule_AddObservabilityModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: ObservabilityModule.AddObservabilityModule(IServiceCollection)
-- uid: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule*
-  name: AddObservabilityModule
-  href: api/Project.Infrastructure.Observability.ObservabilityModule.html#Project_Infrastructure_Observability_ObservabilityModule_AddObservabilityModule_
-  commentId: Overload:Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule
+- uid: Project.Infrastructure.Monitoring
+  name: Project.Infrastructure.Monitoring
+  href: api/Project.Infrastructure.Monitoring.html
+  commentId: N:Project.Infrastructure.Monitoring
+  fullName: Project.Infrastructure.Monitoring
+  nameWithType: Project.Infrastructure.Monitoring
+- uid: Project.Infrastructure.Monitoring.MonitoringModule
+  name: MonitoringModule
+  href: api/Project.Infrastructure.Monitoring.MonitoringModule.html
+  commentId: T:Project.Infrastructure.Monitoring.MonitoringModule
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule
+  nameWithType: MonitoringModule
+- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddMonitoringModule(IServiceCollection)
+  href: api/Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: MonitoringModule.AddMonitoringModule(IServiceCollection)
+- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
+  name: AddMonitoringModule
+  href: api/Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_
+  commentId: Overload:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
   isSpec: "True"
-  fullName: Project.Infrastructure.Observability.ObservabilityModule.AddObservabilityModule
-  nameWithType: ObservabilityModule.AddObservabilityModule
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
+  nameWithType: MonitoringModule.AddMonitoringModule
 - uid: Project.Infrastructure.Processing
   name: Project.Infrastructure.Processing
   href: api/Project.Infrastructure.Processing.html
@@ -3033,6 +3102,52 @@ references:
   fullName.vb: Project.Infrastructure.Processing.QueriesExecutor.Execute(Of TResult)(Project.Application.Configuration.Queries.IQuery(Of TResult))
   nameWithType: QueriesExecutor.Execute<TResult>(IQuery<TResult>)
   nameWithType.vb: QueriesExecutor.Execute(Of TResult)(IQuery(Of TResult))
+- uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+  name: UnitOfWorkPipelineBehavior<TRequest, TResponse>
+  href: api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html
+  commentId: T:Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+  name.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse)
+  fullName: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>
+  fullName.vb: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior(Of TRequest, TResponse)
+  nameWithType: UnitOfWorkPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse)
+- uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.#ctor(System.IServiceProvider)
+  name: UnitOfWorkPipelineBehavior(IServiceProvider)
+  href: api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html#Project_Infrastructure_Processing_UnitOfWorkPipelineBehavior_2__ctor_System_IServiceProvider_
+  commentId: M:Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>.UnitOfWorkPipelineBehavior(System.IServiceProvider)
+  fullName.vb: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior(Of TRequest, TResponse).New(System.IServiceProvider)
+  nameWithType: UnitOfWorkPipelineBehavior<TRequest, TResponse>.UnitOfWorkPipelineBehavior(IServiceProvider)
+  nameWithType.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse).New(IServiceProvider)
+- uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.#ctor*
+  name: UnitOfWorkPipelineBehavior
+  href: api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html#Project_Infrastructure_Processing_UnitOfWorkPipelineBehavior_2__ctor_
+  commentId: Overload:Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>.UnitOfWorkPipelineBehavior
+  fullName.vb: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior(Of TRequest, TResponse).New
+  nameWithType: UnitOfWorkPipelineBehavior<TRequest, TResponse>.UnitOfWorkPipelineBehavior
+  nameWithType.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse).New
+- uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  href: api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html#Project_Infrastructure_Processing_UnitOfWorkPipelineBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+  fullName: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>.Handle(TRequest, System.Func<System.Threading.Tasks.Task<TResponse>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, System.Func(Of System.Threading.Tasks.Task(Of TResponse)), System.Threading.CancellationToken)
+  nameWithType: UnitOfWorkPipelineBehavior<TRequest, TResponse>.Handle(TRequest, Func<Task<TResponse>>, CancellationToken)
+  nameWithType.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, Func(Of Task(Of TResponse)), CancellationToken)
+- uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.Handle*
+  name: Handle
+  href: api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.html#Project_Infrastructure_Processing_UnitOfWorkPipelineBehavior_2_Handle_
+  commentId: Overload:Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2.Handle
+  isSpec: "True"
+  fullName: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>.Handle
+  fullName.vb: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior(Of TRequest, TResponse).Handle
+  nameWithType: UnitOfWorkPipelineBehavior<TRequest, TResponse>.Handle
+  nameWithType.vb: UnitOfWorkPipelineBehavior(Of TRequest, TResponse).Handle
 - uid: Project.Infrastructure.SeedWork
   name: Project.Infrastructure.SeedWork
   href: api/Project.Infrastructure.SeedWork.html

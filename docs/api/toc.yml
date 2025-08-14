@@ -20,6 +20,13 @@ items:
   - uid: Project.API.SeedWork.InvalidCommandProblemDetails
     name: InvalidCommandProblemDetails
     type: Class
+- uid: Project.Api.Configurations
+  name: Project.Api.Configurations
+  type: Namespace
+  items:
+  - uid: Project.Api.Configurations.ConfigurationsModule
+    name: ConfigurationsModule
+    type: Class
 - uid: Project.Api.Controllers.Users
   name: Project.Api.Controllers.Users
   type: Namespace
@@ -73,9 +80,6 @@ items:
   - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
     name: ICommandPipelineBehavior<TCommand, TResult>
     type: Interface
-  - uid: Project.Application.Configuration.Commands.Behaviors.LoggingBehavior`2
-    name: LoggingBehavior<TCommand, TResult>
-    type: Class
   - uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
     name: UserInjectionCommandBehavior<TCommand, TResult>
     type: Class
@@ -268,6 +272,16 @@ items:
   - uid: Project.Infrastructure.Domain.Users.UserRepository
     name: UserRepository
     type: Class
+- uid: Project.Infrastructure.Logging
+  name: Project.Infrastructure.Logging
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Logging.LoggingModule
+    name: LoggingModule
+    type: Class
+  - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+    name: LoggingPipelineBehavior<TRequest, TResponse>
+    type: Class
 - uid: Project.Infrastructure.Migrations
   name: Project.Infrastructure.Migrations
   type: Namespace
@@ -275,12 +289,12 @@ items:
   - uid: Project.Infrastructure.Migrations.Init
     name: Init
     type: Class
-- uid: Project.Infrastructure.Observability
-  name: Project.Infrastructure.Observability
+- uid: Project.Infrastructure.Monitoring
+  name: Project.Infrastructure.Monitoring
   type: Namespace
   items:
-  - uid: Project.Infrastructure.Observability.ObservabilityModule
-    name: ObservabilityModule
+  - uid: Project.Infrastructure.Monitoring.MonitoringModule
+    name: MonitoringModule
     type: Class
 - uid: Project.Infrastructure.Processing
   name: Project.Infrastructure.Processing
@@ -303,6 +317,9 @@ items:
     type: Class
   - uid: Project.Infrastructure.Processing.QueriesExecutor
     name: QueriesExecutor
+    type: Class
+  - uid: Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior`2
+    name: UnitOfWorkPipelineBehavior<TRequest, TResponse>
     type: Class
 - uid: Project.Infrastructure.SeedWork
   name: Project.Infrastructure.SeedWork

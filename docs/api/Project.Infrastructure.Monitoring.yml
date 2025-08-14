@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Monitoring
+  commentId: N:Project.Infrastructure.Monitoring
+  id: Project.Infrastructure.Monitoring
+  children:
+  - Project.Infrastructure.Monitoring.MonitoringModule
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.Monitoring
+  nameWithType: Project.Infrastructure.Monitoring
+  fullName: Project.Infrastructure.Monitoring
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Monitoring.MonitoringModule
+  commentId: T:Project.Infrastructure.Monitoring.MonitoringModule
+  href: Project.Infrastructure.Monitoring.MonitoringModule.html
+  name: MonitoringModule
+  nameWithType: MonitoringModule
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule

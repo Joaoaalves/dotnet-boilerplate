@@ -18,7 +18,8 @@ services:
         restart: true
     networks:
       - internal
-
+      - monitoring
+      - logging
   docs:
     build:
       context: ./docs
@@ -67,10 +68,29 @@ services:
       timeout: 5s
       retries: 5
       start_period: 10s
+
+#
+# MONITORING
+#
+  postgresql-exporter:
+    image: prometheuscommunity/postgres-exporter
+    profiles: ["monitoring", "observability"]
+    ports:
+      - "9187:9187"
+    environment:
+      DATA_SOURCE_NAME: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres/${POSTGRES_DB}?sslmode=disable"
+    depends_on:
+      prometheus:
+        condition: service_started
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - monitoring
   prometheus:
     image: prom/prometheus
     container_name: prometheus
-    profiles: ["observability"]
+    profiles: ["monitoring", "observability"]
     ports:
       - "${PROMETHEUS_PORT}:9090"
     volumes:
@@ -82,7 +102,7 @@ services:
   grafana:
     image: grafana/grafana
     container_name: grafana
-    profiles: ["observability"]
+    profiles: ["monitoring", "observability"]
     ports:
       - "${GRAFANA_PORT}:3000"
     environment:
@@ -96,11 +116,89 @@ services:
     networks:
       - internal
     restart: unless-stopped
+#
+# LOGGING
+#
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.1
+    profiles: ["observability", "logging"]
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elastic_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - logging
+    restart: unless-stopped
 
+  kibana:
+    image: docker.elastic.co/kibana/kibana:9.1.1
+    profiles: ["observability", "logging"]
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - logging
+    restart: unless-stopped
+
+  kibana-importer:
+    image: curlimages/curl:latest
+    profiles: ["observability", "logging"]
+    command: 
+      - "-X"
+      - "POST"
+      - "http://kibana:5601/api/saved_objects/_import?overwrite=true"
+      - "-H"
+      - "kbn-xsrf: true"
+      - "--form"
+      - "file=@/import/export.ndjson"
+    volumes:
+      - ./observability/kibana/export.ndjson:/import/export.ndjson:ro
+    depends_on:
+      kibana:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_started
+    networks:
+      - logging
+    restart: "no"
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:9.1.1
+    profiles: ["observability", "logging"]
+    volumes:
+      - ./observability/logstash/pipeline:/usr/share/logstash/pipeline
+    ports:
+      - "5044:5044"  # Beats input (Filebeat, etc)
+      - "5000:5000"  # TCP input
+    depends_on:
+      - elasticsearch
+    networks:
+      - logging
+    restart: unless-stopped
 networks:
   internal:
+    driver: bridge
+  monitoring:
+    driver: bridge
+  logging:
     driver: bridge
 
 volumes:
   postgres_data:
   grafana_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  elastic_data:
+    driver: local
