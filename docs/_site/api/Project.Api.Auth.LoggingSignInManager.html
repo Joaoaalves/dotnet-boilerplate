@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LoggingSignInManager | Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LoggingSignInManager | Project ">
+      
+      <meta name="description" content="Custom implementation of  that adds logging capabilities for user sign-in events.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Api_Auth_LoggingSignInManager.md&amp;value=---%0Auid%3A%20Project.Api.Auth.LoggingSignInManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Project">
+            Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Project.Api.Auth.LoggingSignInManager">
+
+
+
+  <h1 id="Project_Api_Auth_LoggingSignInManager" data-uid="Project.Api.Auth.LoggingSignInManager" class="text-break">
+Class LoggingSignInManager  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingSignInManager.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Api.html">Api</a>.<a class="xref" href="Project.Api.Auth.html">Auth</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Project.Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Custom implementation of <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1">SignInManager&lt;TUser&gt;</a> that adds logging capabilities
+for user sign-in events.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LoggingSignInManager : SignInManager&lt;User&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1">SignInManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</div>
+      <div><span class="xref">LoggingSignInManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.createuserprincipalasync">SignInManager&lt;User&gt;.CreateUserPrincipalAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.issignedin">SignInManager&lt;User&gt;.IsSignedIn(ClaimsPrincipal)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.cansigninasync">SignInManager&lt;User&gt;.CanSignInAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.refreshsigninasync">SignInManager&lt;User&gt;.RefreshSignInAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.signinasync#microsoft-aspnetcore-identity-signinmanager-1-signinasync(-0-system-boolean-system-string)">SignInManager&lt;User&gt;.SignInAsync(User, bool, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.signinasync#microsoft-aspnetcore-identity-signinmanager-1-signinasync(-0-microsoft-aspnetcore-authentication-authenticationproperties-system-string)">SignInManager&lt;User&gt;.SignInAsync(User, AuthenticationProperties, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.signinwithclaimsasync#microsoft-aspnetcore-identity-signinmanager-1-signinwithclaimsasync(-0-system-boolean-system-collections-generic-ienumerable((system-security-claims-claim)))">SignInManager&lt;User&gt;.SignInWithClaimsAsync(User, bool, IEnumerable&lt;Claim&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.signinwithclaimsasync#microsoft-aspnetcore-identity-signinmanager-1-signinwithclaimsasync(-0-microsoft-aspnetcore-authentication-authenticationproperties-system-collections-generic-ienumerable((system-security-claims-claim)))">SignInManager&lt;User&gt;.SignInWithClaimsAsync(User, AuthenticationProperties, IEnumerable&lt;Claim&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.signoutasync">SignInManager&lt;User&gt;.SignOutAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.validatesecuritystampasync#microsoft-aspnetcore-identity-signinmanager-1-validatesecuritystampasync(system-security-claims-claimsprincipal)">SignInManager&lt;User&gt;.ValidateSecurityStampAsync(ClaimsPrincipal)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.validatetwofactorsecuritystampasync">SignInManager&lt;User&gt;.ValidateTwoFactorSecurityStampAsync(ClaimsPrincipal)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.validatesecuritystampasync#microsoft-aspnetcore-identity-signinmanager-1-validatesecuritystampasync(-0-system-string)">SignInManager&lt;User&gt;.ValidateSecurityStampAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.passwordsigninasync#microsoft-aspnetcore-identity-signinmanager-1-passwordsigninasync(-0-system-string-system-boolean-system-boolean)">SignInManager&lt;User&gt;.PasswordSignInAsync(User, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.passwordsigninasync#microsoft-aspnetcore-identity-signinmanager-1-passwordsigninasync(system-string-system-string-system-boolean-system-boolean)">SignInManager&lt;User&gt;.PasswordSignInAsync(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.istwofactorclientrememberedasync">SignInManager&lt;User&gt;.IsTwoFactorClientRememberedAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.remembertwofactorclientasync">SignInManager&lt;User&gt;.RememberTwoFactorClientAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.forgettwofactorclientasync">SignInManager&lt;User&gt;.ForgetTwoFactorClientAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.twofactorrecoverycodesigninasync">SignInManager&lt;User&gt;.TwoFactorRecoveryCodeSignInAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.twofactorauthenticatorsigninasync">SignInManager&lt;User&gt;.TwoFactorAuthenticatorSignInAsync(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.twofactorsigninasync">SignInManager&lt;User&gt;.TwoFactorSignInAsync(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.gettwofactorauthenticationuserasync">SignInManager&lt;User&gt;.GetTwoFactorAuthenticationUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.externalloginsigninasync#microsoft-aspnetcore-identity-signinmanager-1-externalloginsigninasync(system-string-system-string-system-boolean)">SignInManager&lt;User&gt;.ExternalLoginSignInAsync(string, string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.externalloginsigninasync#microsoft-aspnetcore-identity-signinmanager-1-externalloginsigninasync(system-string-system-string-system-boolean-system-boolean)">SignInManager&lt;User&gt;.ExternalLoginSignInAsync(string, string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.getexternalauthenticationschemesasync">SignInManager&lt;User&gt;.GetExternalAuthenticationSchemesAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.getexternallogininfoasync">SignInManager&lt;User&gt;.GetExternalLoginInfoAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.updateexternalauthenticationtokensasync">SignInManager&lt;User&gt;.UpdateExternalAuthenticationTokensAsync(ExternalLoginInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.configureexternalauthenticationproperties">SignInManager&lt;User&gt;.ConfigureExternalAuthenticationProperties(string, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.istwofactorenabledasync">SignInManager&lt;User&gt;.IsTwoFactorEnabledAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.signinortwofactorasync">SignInManager&lt;User&gt;.SignInOrTwoFactorAsync(User, bool, string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.islockedout">SignInManager&lt;User&gt;.IsLockedOut(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.lockedout">SignInManager&lt;User&gt;.LockedOut(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.presignincheck">SignInManager&lt;User&gt;.PreSignInCheck(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.resetlockout">SignInManager&lt;User&gt;.ResetLockout(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.logger">SignInManager&lt;User&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.usermanager">SignInManager&lt;User&gt;.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.claimsfactory">SignInManager&lt;User&gt;.ClaimsFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.options">SignInManager&lt;User&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.authenticationscheme">SignInManager&lt;User&gt;.AuthenticationScheme</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1.context">SignInManager&lt;User&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Project_Api_Auth_LoggingSignInManager__ctor_" data-uid="Project.Api.Auth.LoggingSignInManager.#ctor*"></a>
+
+  <h3 id="Project_Api_Auth_LoggingSignInManager__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_Project_Domain_Users_User__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_SignInManager_Project_Domain_Users_User___Microsoft_AspNetCore_Authentication_IAuthenticationSchemeProvider_Microsoft_AspNetCore_Identity_IUserConfirmation_Project_Domain_Users_User__Project_Logging_Users_IUserLoggerService_" data-uid="Project.Api.Auth.LoggingSignInManager.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{Project.Domain.Users.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.SignInManager{Project.Domain.Users.User}},Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Identity.IUserConfirmation{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)">
+  LoggingSignInManager(UserManager&lt;User&gt;, IHttpContextAccessor, IUserClaimsPrincipalFactory&lt;User&gt;, IOptions&lt;IdentityOptions&gt;, ILogger&lt;SignInManager&lt;User&gt;&gt;, IAuthenticationSchemeProvider, IUserConfirmation&lt;User&gt;, IUserLoggerService)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingSignInManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Project.Api.Auth.LoggingSignInManager.html">LoggingSignInManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoggingSignInManager(UserManager&lt;User&gt; userManager, IHttpContextAccessor contextAccessor, IUserClaimsPrincipalFactory&lt;User&gt; claimsFactory, IOptions&lt;IdentityOptions&gt; optionsAccessor, ILogger&lt;SignInManager&lt;User&gt;&gt; logger, IAuthenticationSchemeProvider schemes, IUserConfirmation&lt;User&gt; confirmation, IUserLoggerService userLoggerService)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userManager</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dd><p>The user manager used to manage user accounts.</p>
+</dd>
+    <dt><code>contextAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor">IHttpContextAccessor</a></dt>
+    <dd><p>Provides access to the current HTTP context.</p>
+</dd>
+    <dt><code>claimsFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.iuserclaimsprincipalfactory-1">IUserClaimsPrincipalFactory</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dd><p>Factory to create claims principals for users.</p>
+</dd>
+    <dt><code>optionsAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityoptions">IdentityOptions</a>&gt;</dt>
+    <dd><p>Provides access to identity options.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1">SignInManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;&gt;</dt>
+    <dd><p>The logger used for logging user operations.</p>
+</dd>
+    <dt><code>schemes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationschemeprovider">IAuthenticationSchemeProvider</a></dt>
+    <dd><p>Authentication scheme provider.</p>
+</dd>
+    <dt><code>confirmation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.iuserconfirmation-1">IUserConfirmation</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dd><p>User confirmation service.</p>
+</dd>
+    <dt><code>userLoggerService</code> <a class="xref" href="Project.Logging.Users.IUserLoggerService.html">IUserLoggerService</a></dt>
+    <dd><p>Custom user logging service for tracking sign-in events.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Project_Api_Auth_LoggingSignInManager_CheckPasswordSignInAsync_" data-uid="Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync*"></a>
+
+  <h3 id="Project_Api_Auth_LoggingSignInManager_CheckPasswordSignInAsync_Project_Domain_Users_User_System_String_System_Boolean_" data-uid="Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync(Project.Domain.Users.User,System.String,System.Boolean)">
+  CheckPasswordSignInAsync(User, string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingSignInManager.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the specified password is valid for the given user and logs the login event if successful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;SignInResult&gt; CheckPasswordSignInAsync(User user, string password, bool lockoutOnFailure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="Project.Domain.Users.User.html">User</a></dt>
+    <dd><p>The user whose password is being checked.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The password to validate.</p>
+</dd>
+    <dt><code>lockoutOnFailure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to lock the user out on failure.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinresult">SignInResult</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.signinresult">SignInResult</a> indicating the result of the password validation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>Thrown when the user email is invalid or null.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingSignInManager.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

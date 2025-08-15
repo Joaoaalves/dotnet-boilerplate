@@ -22,10 +22,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CommandsExecutor
     path: ../src/Project.Infrastructure/Processing/CommandsExecutor.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes application commands, resolving the required handlers and behaviors via dependency injection.
+  example: []
   syntax:
     content: public class CommandsExecutor
     content.vb: Public Class CommandsExecutor
@@ -57,10 +59,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/Processing/CommandsExecutor.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes application commands, resolving the required handlers and behaviors via dependency injection.
+  example: []
   syntax:
     content: public CommandsExecutor(IServiceProvider provider)
     parameters:
@@ -89,19 +93,24 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Execute
     path: ../src/Project.Infrastructure/Processing/CommandsExecutor.cs
-    startLine: 11
+    startLine: 20
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes a command and returns a response using pipeline behaviors and command handlers.
+  example: []
   syntax:
     content: public Task<TResult> Execute<TResult>(ICommand<TResult> command)
     parameters:
     - id: command
       type: Project.Application.Configuration.Commands.ICommand{{TResult}}
+      description: The command to be executed.
     typeParameters:
     - id: TResult
+      description: The result type of the command.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
+      description: The command result.
     content.vb: Public Function Execute(Of TResult)(command As ICommand(Of TResult)) As Task(Of TResult)
   overload: Project.Infrastructure.Processing.CommandsExecutor.Execute*
   nameWithType.vb: CommandsExecutor.Execute(Of TResult)(ICommand(Of TResult))
@@ -125,15 +134,18 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Execute
     path: ../src/Project.Infrastructure/Processing/CommandsExecutor.cs
-    startLine: 34
+    startLine: 46
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes a command that does not return a result.
+  example: []
   syntax:
     content: public Task Execute(ICommand command)
     parameters:
     - id: command
       type: Project.Application.Configuration.Commands.ICommand
+      description: The command to be executed.
     return:
       type: System.Threading.Tasks.Task
     content.vb: Public Function Execute(command As ICommand) As Task

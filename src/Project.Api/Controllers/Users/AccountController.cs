@@ -21,6 +21,7 @@ namespace Project.Api.Controllers.Users
         private readonly QueriesExecutor _queriesExecutor = queriesExecutor;
         private readonly CommandsExecutor _commandsExecutor = commandsExecutor;
 
+
         /// <summary>
         /// Registers a new user with the provided registration data.
         /// </summary>

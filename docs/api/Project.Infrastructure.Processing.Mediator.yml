@@ -22,10 +22,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Mediator
     path: ../src/Project.Infrastructure/Processing/Mediator.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Implements a custom mediator to handle requests and notifications using runtime reflection.
+  example: []
   syntax:
     content: 'public class Mediator : IMediator'
     content.vb: Public Class Mediator Implements IMediator
@@ -59,10 +61,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/Processing/Mediator.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Implements a custom mediator to handle requests and notifications using runtime reflection.
+  example: []
   syntax:
     content: public Mediator(IServiceProvider provider)
     parameters:
@@ -91,7 +95,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Send
     path: ../src/Project.Infrastructure/Processing/Mediator.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
@@ -132,7 +136,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Publish
     path: ../src/Project.Infrastructure/Processing/Mediator.cs
-    startLine: 31
+    startLine: 37
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing

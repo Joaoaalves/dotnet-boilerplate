@@ -21,10 +21,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: StronglyTypedIdValueConverterSelector
     path: ../src/Project.Infrastructure/SeedWork/StronglyTypedIdValueConverterSelector.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork
+  summary: 'A custom value converter selector for strongly-typed ID support (e.g., UserId : TypedIdValueBase).'
+  example: []
   syntax:
     content: 'public class StronglyTypedIdValueConverterSelector : ValueConverterSelector, IValueConverterSelector'
     content.vb: Public Class StronglyTypedIdValueConverterSelector Inherits ValueConverterSelector Implements IValueConverterSelector
@@ -60,10 +62,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/SeedWork/StronglyTypedIdValueConverterSelector.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork
+  summary: 'A custom value converter selector for strongly-typed ID support (e.g., UserId : TypedIdValueBase).'
+  example: []
   syntax:
     content: public StronglyTypedIdValueConverterSelector(ValueConverterSelectorDependencies dependencies)
     parameters:
@@ -92,7 +96,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Select
     path: ../src/Project.Infrastructure/SeedWork/StronglyTypedIdValueConverterSelector.cs
-    startLine: 11
+    startLine: 15
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork

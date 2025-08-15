@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Logging.Users.IUserLoggerService
+  commentId: T:Project.Logging.Users.IUserLoggerService
+  id: IUserLoggerService
+  parent: Project.Logging.Users
+  children:
+  - Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  - Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  - Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  langs:
+  - csharp
+  - vb
+  name: IUserLoggerService
+  nameWithType: IUserLoggerService
+  fullName: Project.Logging.Users.IUserLoggerService
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Logging/Users/IUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IUserLoggerService
+    path: ../src/Project.Logging/Users/IUserLoggerService.cs
+    startLine: 7
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Defines a contract for logging user-related events to an external logging system (e.g., Elasticsearch).
+  example: []
+  syntax:
+    content: 'public interface IUserLoggerService : ILoggerService<UserLogEntry>'
+    content.vb: Public Interface IUserLoggerService Inherits ILoggerService(Of UserLogEntry)
+  inheritedMembers:
+  - Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+- uid: Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  id: LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Logging.Users.IUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogUserCreated(string, Email)
+  nameWithType: IUserLoggerService.LogUserCreated(string, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserCreated(string, Project.Domain.SharedKernel.Users.Email)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Logging/Users/IUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogUserCreated
+    path: ../src/Project.Logging/Users/IUserLoggerService.cs
+    startLine: 15
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Logs an event indicating that a new user has been created.
+  example: []
+  syntax:
+    content: Task LogUserCreated(string userId, Email email)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The unique identifier of the created user.
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The email address of the created user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Function LogUserCreated(userId As String, email As Email) As Task
+  overload: Project.Logging.Users.IUserLoggerService.LogUserCreated*
+  nameWithType.vb: IUserLoggerService.LogUserCreated(String, Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserCreated(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserCreated(String, Email)
+- uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  id: LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Logging.Users.IUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogUserLoggedIn(string, Email)
+  nameWithType: IUserLoggerService.LogUserLoggedIn(string, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(string, Project.Domain.SharedKernel.Users.Email)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Logging/Users/IUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogUserLoggedIn
+    path: ../src/Project.Logging/Users/IUserLoggerService.cs
+    startLine: 23
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Logs an event indicating that a user has successfully logged in.
+  example: []
+  syntax:
+    content: Task LogUserLoggedIn(string userId, Email email)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The unique identifier of the logged-in user.
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The email address of the logged-in user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Function LogUserLoggedIn(userId As String, email As Email) As Task
+  overload: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn*
+  nameWithType.vb: IUserLoggerService.LogUserLoggedIn(String, Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserLoggedIn(String, Email)
+- uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  id: LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Logging.Users.IUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogUserPasswordReset(string, Email)
+  nameWithType: IUserLoggerService.LogUserPasswordReset(string, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(string, Project.Domain.SharedKernel.Users.Email)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Logging/Users/IUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogUserPasswordReset
+    path: ../src/Project.Logging/Users/IUserLoggerService.cs
+    startLine: 31
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Logs an event indicating that a user's password has been reset.
+  example: []
+  syntax:
+    content: Task LogUserPasswordReset(string userId, Email email)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The unique identifier of the user whose password was reset.
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The email address of the user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Function LogUserPasswordReset(userId As String, email As Email) As Task
+  overload: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset*
+  nameWithType.vb: IUserLoggerService.LogUserPasswordReset(String, Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserPasswordReset(String, Email)
+references:
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  href: Project.html
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+- uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+  commentId: M:Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+  parent: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  definition: Project.Logging.ILoggerService`1.LogAsync(`0)
+  href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  name: LogAsync(UserLogEntry)
+  nameWithType: ILoggerService<UserLogEntry>.LogAsync(UserLogEntry)
+  fullName: Project.Logging.ILoggerService<Project.Logging.Users.UserLogEntry>.LogAsync(Project.Logging.Users.UserLogEntry)
+  nameWithType.vb: ILoggerService(Of UserLogEntry).LogAsync(UserLogEntry)
+  fullName.vb: Project.Logging.ILoggerService(Of Project.Logging.Users.UserLogEntry).LogAsync(Project.Logging.Users.UserLogEntry)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: )
+- uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+  commentId: M:Project.Logging.ILoggerService`1.LogAsync(`0)
+  href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  name: LogAsync(T)
+  nameWithType: ILoggerService<T>.LogAsync(T)
+  fullName: Project.Logging.ILoggerService<T>.LogAsync(T)
+  nameWithType.vb: ILoggerService(Of T).LogAsync(T)
+  fullName.vb: Project.Logging.ILoggerService(Of T).LogAsync(T)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  commentId: T:Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  parent: Project.Logging
+  definition: Project.Logging.ILoggerService`1
+  href: Project.Logging.ILoggerService-1.html
+  name: ILoggerService<UserLogEntry>
+  nameWithType: ILoggerService<UserLogEntry>
+  fullName: Project.Logging.ILoggerService<Project.Logging.Users.UserLogEntry>
+  nameWithType.vb: ILoggerService(Of UserLogEntry)
+  fullName.vb: Project.Logging.ILoggerService(Of Project.Logging.Users.UserLogEntry)
+  name.vb: ILoggerService(Of UserLogEntry)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: <
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: )
+- uid: Project.Logging.ILoggerService`1
+  commentId: T:Project.Logging.ILoggerService`1
+  href: Project.Logging.ILoggerService-1.html
+  name: ILoggerService<T>
+  nameWithType: ILoggerService<T>
+  fullName: Project.Logging.ILoggerService<T>
+  nameWithType.vb: ILoggerService(Of T)
+  fullName.vb: Project.Logging.ILoggerService(Of T)
+  name.vb: ILoggerService(Of T)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Logging
+  commentId: N:Project.Logging
+  href: Project.html
+  name: Project.Logging
+  nameWithType: Project.Logging
+  fullName: Project.Logging
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+- uid: Project.Logging.Users.IUserLoggerService.LogUserCreated*
+  commentId: Overload:Project.Logging.Users.IUserLoggerService.LogUserCreated
+  href: Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserCreated_System_String_Project_Domain_SharedKernel_Users_Email_
+  name: LogUserCreated
+  nameWithType: IUserLoggerService.LogUserCreated
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserCreated
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Domain.SharedKernel.Users.Email
+  commentId: T:Project.Domain.SharedKernel.Users.Email
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.Email.html
+  name: Email
+  nameWithType: Email
+  fullName: Project.Domain.SharedKernel.Users.Email
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SharedKernel.Users
+  commentId: N:Project.Domain.SharedKernel.Users
+  href: Project.html
+  name: Project.Domain.SharedKernel.Users
+  nameWithType: Project.Domain.SharedKernel.Users
+  fullName: Project.Domain.SharedKernel.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn*
+  commentId: Overload:Project.Logging.Users.IUserLoggerService.LogUserLoggedIn
+  href: Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserLoggedIn_System_String_Project_Domain_SharedKernel_Users_Email_
+  name: LogUserLoggedIn
+  nameWithType: IUserLoggerService.LogUserLoggedIn
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn
+- uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset*
+  commentId: Overload:Project.Logging.Users.IUserLoggerService.LogUserPasswordReset
+  href: Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserPasswordReset_System_String_Project_Domain_SharedKernel_Users_Email_
+  name: LogUserPasswordReset
+  nameWithType: IUserLoggerService.LogUserPasswordReset
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset

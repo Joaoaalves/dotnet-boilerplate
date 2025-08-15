@@ -5,6 +5,7 @@ items:
   id: LoggingModule
   parent: Project.Infrastructure.Logging
   children:
+  - Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   - Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   langs:
   - csharp
@@ -20,10 +21,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: LoggingModule
     path: ../src/Project.Infrastructure/Logging/LoggingModule.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Logging
+  summary: Provides methods to configure and register logging services, including Serilog and Elasticsearch integration.
+  example: []
   syntax:
     content: public static class LoggingModule
     content.vb: Public Module LoggingModule
@@ -37,6 +40,46 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Project.Infrastructure.Logging.LoggingModule
+  langs:
+  - csharp
+  - vb
+  name: AddLogginModule(IServiceCollection)
+  nameWithType: LoggingModule.AddLogginModule(IServiceCollection)
+  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/LoggingModule.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: AddLogginModule
+    path: ../src/Project.Infrastructure/Logging/LoggingModule.cs
+    startLine: 24
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging
+  summary: Registers services related to user logging into the application's dependency injection container.
+  remarks: >-
+    Registers a default or Elasticsearch-based implementation of <xref href="Project.Logging.Users.IUserLoggerService" data-throw-if-not-resolved="false"></xref>,
+
+    based on the ENABLE_LOGGING environment variable.
+  example: []
+  syntax:
+    content: public static IServiceCollection AddLogginModule(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection to register services into.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Shared Function AddLogginModule(services As IServiceCollection) As IServiceCollection
+  overload: Project.Infrastructure.Logging.LoggingModule.AddLogginModule*
 - uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   commentId: M:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   id: SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
@@ -56,15 +99,19 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: SetupLoggingModule
     path: ../src/Project.Infrastructure/Logging/LoggingModule.cs
-    startLine: 11
+    startLine: 60
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Logging
+  summary: Configures Serilog and Elasticsearch sinks during application startup.
+  remarks: Uses environment variables to control whether logging is enabled and to determine the Elasticsearch URL.
+  example: []
   syntax:
     content: public static void SetupLoggingModule(this IHostBuilder hostBuilder)
     parameters:
     - id: hostBuilder
       type: Microsoft.Extensions.Hosting.IHostBuilder
+      description: The host builder to apply logging configuration to.
     content.vb: Public Shared Sub SetupLoggingModule(hostBuilder As IHostBuilder)
   overload: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
 references:
@@ -335,6 +382,94 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Project.Logging.Users.IUserLoggerService
+  commentId: T:Project.Logging.Users.IUserLoggerService
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.IUserLoggerService.html
+  name: IUserLoggerService
+  nameWithType: IUserLoggerService
+  fullName: Project.Logging.Users.IUserLoggerService
+- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule*
+  commentId: Overload:Project.Infrastructure.Logging.LoggingModule.AddLogginModule
+  href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddLogginModule
+  nameWithType: LoggingModule.AddLogginModule
+  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  href: Project.html
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
 - uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
   commentId: Overload:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
   href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_

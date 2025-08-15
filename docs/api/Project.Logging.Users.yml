@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  id: Project.Logging.Users
+  children:
+  - Project.Logging.Users.IUserLoggerService
+  - Project.Logging.Users.UserEventType
+  - Project.Logging.Users.UserLogEntry
+  - Project.Logging.Users.UserLogIndexDefinition
+  langs:
+  - csharp
+  - vb
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  type: Namespace
+  assemblies:
+  - Project.Logging
+references:
+- uid: Project.Logging.Users.IUserLoggerService
+  commentId: T:Project.Logging.Users.IUserLoggerService
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.IUserLoggerService.html
+  name: IUserLoggerService
+  nameWithType: IUserLoggerService
+  fullName: Project.Logging.Users.IUserLoggerService
+- uid: Project.Logging.Users.UserEventType
+  commentId: T:Project.Logging.Users.UserEventType
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.UserEventType.html
+  name: UserEventType
+  nameWithType: UserEventType
+  fullName: Project.Logging.Users.UserEventType
+- uid: Project.Logging.Users.UserLogEntry
+  commentId: T:Project.Logging.Users.UserLogEntry
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.UserLogEntry.html
+  name: UserLogEntry
+  nameWithType: UserLogEntry
+  fullName: Project.Logging.Users.UserLogEntry
+- uid: Project.Logging.Users.UserLogIndexDefinition
+  commentId: T:Project.Logging.Users.UserLogIndexDefinition
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.UserLogIndexDefinition.html
+  name: UserLogIndexDefinition
+  nameWithType: UserLogIndexDefinition
+  fullName: Project.Logging.Users.UserLogIndexDefinition
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  href: Project.html
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html

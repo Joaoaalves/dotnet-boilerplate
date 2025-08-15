@@ -1,0 +1,900 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  commentId: T:Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  id: DefaultUserLoggerService
+  parent: Project.Infrastructure.Logging.Users
+  children:
+  - Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  - Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  - Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  - Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  langs:
+  - csharp
+  - vb
+  name: DefaultUserLoggerService
+  nameWithType: DefaultUserLoggerService
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  type: Class
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DefaultUserLoggerService
+    path: ../src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+    startLine: 9
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging.Users
+  summary: >-
+    Default implementation of <xref href="Project.Logging.Users.IUserLoggerService" data-throw-if-not-resolved="false"></xref> that logs user events to the console.
+
+    Used when logging is disabled or Elasticsearch is not configured.
+  example: []
+  syntax:
+    content: 'public class DefaultUserLoggerService : IUserLoggerService, ILoggerService<UserLogEntry>'
+    content.vb: Public Class DefaultUserLoggerService Implements IUserLoggerService, ILoggerService(Of UserLogEntry)
+  inheritance:
+  - System.Object
+  implements:
+  - Project.Logging.Users.IUserLoggerService
+  - Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  id: LogAsync(Project.Logging.Users.UserLogEntry)
+  parent: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogAsync(UserLogEntry)
+  nameWithType: DefaultUserLoggerService.LogAsync(UserLogEntry)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogAsync
+    path: ../src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+    startLine: 12
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging.Users
+  summary: Logs the specified entry asynchronously.
+  example: []
+  syntax:
+    content: public Task LogAsync(UserLogEntry entry)
+    parameters:
+    - id: entry
+      type: Project.Logging.Users.UserLogEntry
+      description: The log entry to be recorded.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Public Function LogAsync(entry As UserLogEntry) As Task
+  overload: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync*
+  implements:
+  - Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  id: LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogUserCreated(string, Email)
+  nameWithType: DefaultUserLoggerService.LogUserCreated(string, Email)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(string, Project.Domain.SharedKernel.Users.Email)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogUserCreated
+    path: ../src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+    startLine: 19
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging.Users
+  summary: Logs an event indicating that a new user has been created.
+  example: []
+  syntax:
+    content: public Task LogUserCreated(string userId, Email email)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The unique identifier of the created user.
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The email address of the created user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Public Function LogUserCreated(userId As String, email As Email) As Task
+  overload: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated*
+  implements:
+  - Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  nameWithType.vb: DefaultUserLoggerService.LogUserCreated(String, Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserCreated(String, Email)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  id: LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogUserLoggedIn(string, Email)
+  nameWithType: DefaultUserLoggerService.LogUserLoggedIn(string, Email)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(string, Project.Domain.SharedKernel.Users.Email)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogUserLoggedIn
+    path: ../src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+    startLine: 31
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging.Users
+  summary: Logs an event indicating that a user has successfully logged in.
+  example: []
+  syntax:
+    content: public Task LogUserLoggedIn(string userId, Email email)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The unique identifier of the logged-in user.
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The email address of the logged-in user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Public Function LogUserLoggedIn(userId As String, email As Email) As Task
+  overload: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn*
+  implements:
+  - Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  nameWithType.vb: DefaultUserLoggerService.LogUserLoggedIn(String, Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserLoggedIn(String, Email)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  id: LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: LogUserPasswordReset(string, Email)
+  nameWithType: DefaultUserLoggerService.LogUserPasswordReset(string, Email)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(string, Project.Domain.SharedKernel.Users.Email)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogUserPasswordReset
+    path: ../src/Project.Infrastructure/Logging/Users/DefaultUserLoggerService.cs
+    startLine: 43
+  assemblies:
+  - Project.Infrastructure
+  namespace: Project.Infrastructure.Logging.Users
+  summary: Logs an event indicating that a user's password has been reset.
+  example: []
+  syntax:
+    content: public Task LogUserPasswordReset(string userId, Email email)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The unique identifier of the user whose password was reset.
+    - id: email
+      type: Project.Domain.SharedKernel.Users.Email
+      description: The email address of the user.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Public Function LogUserPasswordReset(userId As String, email As Email) As Task
+  overload: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset*
+  implements:
+  - Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  nameWithType.vb: DefaultUserLoggerService.LogUserPasswordReset(String, Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserPasswordReset(String, Email)
+references:
+- uid: Project.Logging.Users.IUserLoggerService
+  commentId: T:Project.Logging.Users.IUserLoggerService
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.IUserLoggerService.html
+  name: IUserLoggerService
+  nameWithType: IUserLoggerService
+  fullName: Project.Logging.Users.IUserLoggerService
+- uid: Project.Infrastructure.Logging.Users
+  commentId: N:Project.Infrastructure.Logging.Users
+  href: Project.html
+  name: Project.Infrastructure.Logging.Users
+  nameWithType: Project.Infrastructure.Logging.Users
+  fullName: Project.Infrastructure.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Logging
+    name: Logging
+    href: Project.Infrastructure.Logging.html
+  - name: .
+  - uid: Project.Infrastructure.Logging.Users
+    name: Users
+    href: Project.Infrastructure.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Infrastructure
+    name: Infrastructure
+    href: Project.Infrastructure.html
+  - name: .
+  - uid: Project.Infrastructure.Logging
+    name: Logging
+    href: Project.Infrastructure.Logging.html
+  - name: .
+  - uid: Project.Infrastructure.Logging.Users
+    name: Users
+    href: Project.Infrastructure.Logging.Users.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  commentId: T:Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  parent: Project.Logging
+  definition: Project.Logging.ILoggerService`1
+  href: Project.Logging.ILoggerService-1.html
+  name: ILoggerService<UserLogEntry>
+  nameWithType: ILoggerService<UserLogEntry>
+  fullName: Project.Logging.ILoggerService<Project.Logging.Users.UserLogEntry>
+  nameWithType.vb: ILoggerService(Of UserLogEntry)
+  fullName.vb: Project.Logging.ILoggerService(Of Project.Logging.Users.UserLogEntry)
+  name.vb: ILoggerService(Of UserLogEntry)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: <
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  href: Project.html
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Logging.ILoggerService`1
+  commentId: T:Project.Logging.ILoggerService`1
+  href: Project.Logging.ILoggerService-1.html
+  name: ILoggerService<T>
+  nameWithType: ILoggerService<T>
+  fullName: Project.Logging.ILoggerService<T>
+  nameWithType.vb: ILoggerService(Of T)
+  fullName.vb: Project.Logging.ILoggerService(Of T)
+  name.vb: ILoggerService(Of T)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Logging
+  commentId: N:Project.Logging
+  href: Project.html
+  name: Project.Logging
+  nameWithType: Project.Logging
+  fullName: Project.Logging
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync*
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync
+  href: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogAsync_Project_Logging_Users_UserLogEntry_
+  name: LogAsync
+  nameWithType: DefaultUserLoggerService.LogAsync
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync
+- uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+  commentId: M:Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+  parent: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}
+  definition: Project.Logging.ILoggerService`1.LogAsync(`0)
+  href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  name: LogAsync(UserLogEntry)
+  nameWithType: ILoggerService<UserLogEntry>.LogAsync(UserLogEntry)
+  fullName: Project.Logging.ILoggerService<Project.Logging.Users.UserLogEntry>.LogAsync(Project.Logging.Users.UserLogEntry)
+  nameWithType.vb: ILoggerService(Of UserLogEntry).LogAsync(UserLogEntry)
+  fullName.vb: Project.Logging.ILoggerService(Of Project.Logging.Users.UserLogEntry).LogAsync(Project.Logging.Users.UserLogEntry)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.ILoggerService{Project.Logging.Users.UserLogEntry}.LogAsync(Project.Logging.Users.UserLogEntry)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    href: Project.Logging.Users.UserLogEntry.html
+  - name: )
+- uid: Project.Logging.Users.UserLogEntry
+  commentId: T:Project.Logging.Users.UserLogEntry
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.UserLogEntry.html
+  name: UserLogEntry
+  nameWithType: UserLogEntry
+  fullName: Project.Logging.Users.UserLogEntry
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+  commentId: M:Project.Logging.ILoggerService`1.LogAsync(`0)
+  href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  name: LogAsync(T)
+  nameWithType: ILoggerService<T>.LogAsync(T)
+  fullName: Project.Logging.ILoggerService<T>.LogAsync(T)
+  nameWithType.vb: ILoggerService(Of T).LogAsync(T)
+  fullName.vb: Project.Logging.ILoggerService(Of T).LogAsync(T)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+    name: LogAsync
+    href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated*
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated
+  href: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserCreated_System_String_Project_Domain_SharedKernel_Users_Email_
+  name: LogUserCreated
+  nameWithType: DefaultUserLoggerService.LogUserCreated
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated
+- uid: Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Logging.Users.IUserLoggerService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: LogUserCreated(string, Email)
+  nameWithType: IUserLoggerService.LogUserCreated(string, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserCreated(string, Project.Domain.SharedKernel.Users.Email)
+  nameWithType.vb: IUserLoggerService.LogUserCreated(String, Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserCreated(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserCreated(String, Email)
+  spec.csharp:
+  - uid: Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+    name: LogUserCreated
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+    name: LogUserCreated
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Domain.SharedKernel.Users.Email
+  commentId: T:Project.Domain.SharedKernel.Users.Email
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.Email.html
+  name: Email
+  nameWithType: Email
+  fullName: Project.Domain.SharedKernel.Users.Email
+- uid: Project.Domain.SharedKernel.Users
+  commentId: N:Project.Domain.SharedKernel.Users
+  href: Project.html
+  name: Project.Domain.SharedKernel.Users
+  nameWithType: Project.Domain.SharedKernel.Users
+  fullName: Project.Domain.SharedKernel.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn*
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn
+  href: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserLoggedIn_System_String_Project_Domain_SharedKernel_Users_Email_
+  name: LogUserLoggedIn
+  nameWithType: DefaultUserLoggerService.LogUserLoggedIn
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn
+- uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Logging.Users.IUserLoggerService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: LogUserLoggedIn(string, Email)
+  nameWithType: IUserLoggerService.LogUserLoggedIn(string, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(string, Project.Domain.SharedKernel.Users.Email)
+  nameWithType.vb: IUserLoggerService.LogUserLoggedIn(String, Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserLoggedIn(String, Email)
+  spec.csharp:
+  - uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+    name: LogUserLoggedIn
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+    name: LogUserLoggedIn
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+  - name: )
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset*
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset
+  href: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserPasswordReset_System_String_Project_Domain_SharedKernel_Users_Email_
+  name: LogUserPasswordReset
+  nameWithType: DefaultUserLoggerService.LogUserPasswordReset
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset
+- uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  parent: Project.Logging.Users.IUserLoggerService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: LogUserPasswordReset(string, Email)
+  nameWithType: IUserLoggerService.LogUserPasswordReset(string, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(string, Project.Domain.SharedKernel.Users.Email)
+  nameWithType.vb: IUserLoggerService.LogUserPasswordReset(String, Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(String, Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserPasswordReset(String, Email)
+  spec.csharp:
+  - uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+    name: LogUserPasswordReset
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+  - name: )
+  spec.vb:
+  - uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+    name: LogUserPasswordReset
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Project.Domain.SharedKernel.Users.Email
+    name: Email
+  - name: )

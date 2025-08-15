@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Logging.ILoggerService`1
+  commentId: T:Project.Logging.ILoggerService`1
+  id: ILoggerService`1
+  parent: Project.Logging
+  children:
+  - Project.Logging.ILoggerService`1.LogAsync(`0)
+  langs:
+  - csharp
+  - vb
+  name: ILoggerService<T>
+  nameWithType: ILoggerService<T>
+  fullName: Project.Logging.ILoggerService<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Logging/ILoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ILoggerService
+    path: ../src/Project.Logging/ILoggerService.cs
+    startLine: 6
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging
+  summary: Defines a contract for logging entries of type <code class="typeparamref">T</code> to an external system.
+  example: []
+  syntax:
+    content: 'public interface ILoggerService<T> where T : ILogEntry'
+    typeParameters:
+    - id: T
+      description: The type of log entry being logged, which must implement <xref href="Project.Logging.ILogEntry" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Interface ILoggerService(Of T As ILogEntry)
+  nameWithType.vb: ILoggerService(Of T)
+  fullName.vb: Project.Logging.ILoggerService(Of T)
+  name.vb: ILoggerService(Of T)
+- uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+  commentId: M:Project.Logging.ILoggerService`1.LogAsync(`0)
+  id: LogAsync(`0)
+  parent: Project.Logging.ILoggerService`1
+  langs:
+  - csharp
+  - vb
+  name: LogAsync(T)
+  nameWithType: ILoggerService<T>.LogAsync(T)
+  fullName: Project.Logging.ILoggerService<T>.LogAsync(T)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Logging/ILoggerService.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: LogAsync
+    path: ../src/Project.Logging/ILoggerService.cs
+    startLine: 13
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging
+  summary: Logs the specified entry asynchronously.
+  example: []
+  syntax:
+    content: Task LogAsync(T entry)
+    parameters:
+    - id: entry
+      type: '{T}'
+      description: The log entry to be recorded.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task representing the asynchronous logging operation.
+    content.vb: Function LogAsync(entry As T) As Task
+  overload: Project.Logging.ILoggerService`1.LogAsync*
+  nameWithType.vb: ILoggerService(Of T).LogAsync(T)
+  fullName.vb: Project.Logging.ILoggerService(Of T).LogAsync(T)
+references:
+- uid: Project.Logging.ILogEntry
+  commentId: T:Project.Logging.ILogEntry
+  parent: Project.Logging
+  href: Project.Logging.ILogEntry.html
+  name: ILogEntry
+  nameWithType: ILogEntry
+  fullName: Project.Logging.ILogEntry
+- uid: Project.Logging
+  commentId: N:Project.Logging
+  href: Project.html
+  name: Project.Logging
+  nameWithType: Project.Logging
+  fullName: Project.Logging
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+- uid: Project.Logging.ILoggerService`1.LogAsync*
+  commentId: Overload:Project.Logging.ILoggerService`1.LogAsync
+  href: Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  name: LogAsync
+  nameWithType: ILoggerService<T>.LogAsync
+  fullName: Project.Logging.ILoggerService<T>.LogAsync
+  nameWithType.vb: ILoggerService(Of T).LogAsync
+  fullName.vb: Project.Logging.ILoggerService(Of T).LogAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

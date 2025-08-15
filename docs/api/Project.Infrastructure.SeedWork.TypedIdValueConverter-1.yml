@@ -20,14 +20,17 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: TypedIdValueConverter
     path: ../src/Project.Infrastructure/SeedWork/TypedIdValueConverter.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork
+  summary: Converts a strongly typed ID (e.g., TypedIdValueBase) to and from a Guid for EF Core.
+  example: []
   syntax:
     content: 'public class TypedIdValueConverter<TTypedIdValue> : ValueConverter<TTypedIdValue, Guid> where TTypedIdValue : TypedIdValueBase'
     typeParameters:
     - id: TTypedIdValue
+      description: The strongly typed ID class.
     content.vb: Public Class TypedIdValueConverter(Of TTypedIdValue As TypedIdValueBase) Inherits ValueConverter(Of TTypedIdValue, Guid)
   inheritance:
   - System.Object
@@ -82,10 +85,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/SeedWork/TypedIdValueConverter.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork
+  summary: Converts a strongly typed ID (e.g., TypedIdValueBase) to and from a Guid for EF Core.
+  example: []
   syntax:
     content: public TypedIdValueConverter(ConverterMappingHints? mappingHints = null)
     parameters:

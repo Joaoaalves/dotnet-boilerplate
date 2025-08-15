@@ -21,10 +21,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: QueriesExecutor
     path: ../src/Project.Infrastructure/Processing/QueriesExecutor.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes queries using the registered pipeline behaviors and query handlers.
+  example: []
   syntax:
     content: public class QueriesExecutor
     content.vb: Public Class QueriesExecutor
@@ -56,10 +58,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/Processing/QueriesExecutor.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes queries using the registered pipeline behaviors and query handlers.
+  example: []
   syntax:
     content: public QueriesExecutor(IServiceProvider provider)
     parameters:
@@ -88,19 +92,24 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Execute
     path: ../src/Project.Infrastructure/Processing/QueriesExecutor.cs
-    startLine: 10
+    startLine: 19
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Executes a query using any applicable pipeline behaviors and returns a result.
+  example: []
   syntax:
     content: public Task<TResult> Execute<TResult>(IQuery<TResult> query)
     parameters:
     - id: query
       type: Project.Application.Configuration.Queries.IQuery{{TResult}}
+      description: The query to execute.
     typeParameters:
     - id: TResult
+      description: The type of result expected from the query.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
+      description: A task that represents the asynchronous operation, returning the query result.
     content.vb: Public Function Execute(Of TResult)(query As IQuery(Of TResult)) As Task(Of TResult)
   overload: Project.Infrastructure.Processing.QueriesExecutor.Execute*
   nameWithType.vb: QueriesExecutor.Execute(Of TResult)(IQuery(Of TResult))

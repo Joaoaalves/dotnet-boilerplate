@@ -1,3 +1,4 @@
+using Project.Api.Auth;
 using Project.Api.Configurations;
 using Project.Api.Extensions;
 using Project.API.Configurations;
@@ -9,7 +10,7 @@ using Project.Infrastructure.Processing;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 var isProductionEnv = Environment.GetEnvironmentVariable("PRODUCTION") ?? "false";
 var isDevelopment = isProductionEnv == "false";
 
@@ -25,11 +26,13 @@ services.AddSwaggerConfiguration();
 services.AddEndpointsApiExplorer();
 
 services.AddControllers();
+services.AddAuthModule();
 
 services.AddConfigurations();
 services.AddDataAccessModule();
 services.AddMediatorModule();
 services.AddMonitoringModule();
+services.AddLogginModule();
 
 var app = builder.Build();
 

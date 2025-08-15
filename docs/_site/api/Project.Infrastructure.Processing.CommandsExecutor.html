@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CommandsExecutor | Project ">
       
-      
+      <meta name="description" content="Executes application commands, resolving the required handlers and behaviors via dependency injection.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Infrastructure_Processing_CommandsExecutor" data-uid="Project.Infrastructure.Processing.CommandsExecutor" class="text-break">
-Class CommandsExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class CommandsExecutor  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>Project.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Executes application commands, resolving the required handlers and behaviors via dependency injection.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Project_Infrastructure_Processing_CommandsExecutor__ctor_System_IServiceProvider_" data-uid="Project.Infrastructure.Processing.CommandsExecutor.#ctor(System.IServiceProvider)">
   CommandsExecutor(IServiceProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes application commands, resolving the required handlers and behaviors via dependency injection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -191,10 +193,11 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Project_Infrastructure_Processing_CommandsExecutor_Execute_Project_Application_Configuration_Commands_ICommand_" data-uid="Project.Infrastructure.Processing.CommandsExecutor.Execute(Project.Application.Configuration.Commands.ICommand)">
   Execute(ICommand)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes a command that does not return a result.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -204,7 +207,8 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="Project.Application.Configuration.Commands.ICommand.html">ICommand</a></dt>
-    <dd></dd>
+    <dd><p>The command to be executed.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -227,10 +231,11 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Project_Infrastructure_Processing_CommandsExecutor_Execute__1_Project_Application_Configuration_Commands_ICommand___0__" data-uid="Project.Infrastructure.Processing.CommandsExecutor.Execute``1(Project.Application.Configuration.Commands.ICommand{``0})">
   Execute&lt;TResult&gt;(ICommand&lt;TResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes a command and returns a response using pipeline behaviors and command handlers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -240,19 +245,22 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>command</code> <a class="xref" href="Project.Application.Configuration.Commands.ICommand-1.html">ICommand</a>&lt;TResult&gt;</dt>
-    <dd></dd>
+    <dd><p>The command to be executed.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</dt>
-    <dd></dd>
+    <dd><p>The command result.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TResult</code></dt>
-    <dd></dd>
+    <dd><p>The result type of the command.</p>
+</dd>
   </dl>
 
 
@@ -268,7 +276,7 @@ Class CommandsExecutor  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/CommandsExecutor.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -20,10 +20,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: MonitoringModule
     path: ../src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Monitoring
+  summary: Provides extension methods to register monitoring and observability features using OpenTelemetry.
+  example: []
   syntax:
     content: public static class MonitoringModule
     content.vb: Public Module MonitoringModule
@@ -56,17 +58,25 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddMonitoringModule
     path: ../src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Monitoring
+  summary: Registers OpenTelemetry metrics exporters and instrumentation if monitoring is enabled.
+  remarks: >-
+    Monitoring is conditionally enabled via the ENABLE_MONITORING environment variable.
+
+    Metrics include ASP.NET Core, runtime, and process metrics with a Prometheus exporter.
+  example: []
   syntax:
     content: public static IServiceCollection AddMonitoringModule(this IServiceCollection services)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection used to register services.
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function AddMonitoringModule(services As IServiceCollection) As IServiceCollection
   overload: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
 references:
@@ -337,12 +347,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
-  commentId: Overload:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
-  href: Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  name: AddMonitoringModule
-  nameWithType: MonitoringModule.AddMonitoringModule
-  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
   parent: Microsoft.Extensions.DependencyInjection
@@ -351,6 +355,12 @@ references:
   name: IServiceCollection
   nameWithType: IServiceCollection
   fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
+  commentId: Overload:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
+  href: Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddMonitoringModule
+  nameWithType: MonitoringModule.AddMonitoringModule
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
 - uid: Microsoft.Extensions.DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   isExternal: true

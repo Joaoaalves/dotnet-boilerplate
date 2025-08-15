@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Logging.ILogIndexDefinition
+  commentId: T:Project.Logging.ILogIndexDefinition
+  id: ILogIndexDefinition
+  parent: Project.Logging
+  children:
+  - Project.Logging.ILogIndexDefinition.GetMapping
+  - Project.Logging.ILogIndexDefinition.IndexName
+  langs:
+  - csharp
+  - vb
+  name: ILogIndexDefinition
+  nameWithType: ILogIndexDefinition
+  fullName: Project.Logging.ILogIndexDefinition
+  type: Interface
+  source:
+    remote:
+      path: src/Project.Logging/ILogIndexDefinition.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ILogIndexDefinition
+    path: ../src/Project.Logging/ILogIndexDefinition.cs
+    startLine: 5
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging
+  summary: Defines the structure of an Elasticsearch index for storing logs.
+  example: []
+  syntax:
+    content: public interface ILogIndexDefinition
+    content.vb: Public Interface ILogIndexDefinition
+- uid: Project.Logging.ILogIndexDefinition.IndexName
+  commentId: P:Project.Logging.ILogIndexDefinition.IndexName
+  id: IndexName
+  parent: Project.Logging.ILogIndexDefinition
+  langs:
+  - csharp
+  - vb
+  name: IndexName
+  nameWithType: ILogIndexDefinition.IndexName
+  fullName: Project.Logging.ILogIndexDefinition.IndexName
+  type: Property
+  source:
+    remote:
+      path: src/Project.Logging/ILogIndexDefinition.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IndexName
+    path: ../src/Project.Logging/ILogIndexDefinition.cs
+    startLine: 10
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging
+  summary: Gets the name of the Elasticsearch index.
+  example: []
+  syntax:
+    content: string IndexName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property IndexName As String
+  overload: Project.Logging.ILogIndexDefinition.IndexName*
+- uid: Project.Logging.ILogIndexDefinition.GetMapping
+  commentId: M:Project.Logging.ILogIndexDefinition.GetMapping
+  id: GetMapping
+  parent: Project.Logging.ILogIndexDefinition
+  langs:
+  - csharp
+  - vb
+  name: GetMapping()
+  nameWithType: ILogIndexDefinition.GetMapping()
+  fullName: Project.Logging.ILogIndexDefinition.GetMapping()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Logging/ILogIndexDefinition.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetMapping
+    path: ../src/Project.Logging/ILogIndexDefinition.cs
+    startLine: 16
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging
+  summary: Returns the mapping configuration for the Elasticsearch index.
+  example: []
+  syntax:
+    content: object GetMapping()
+    return:
+      type: System.Object
+      description: An object representing the index mapping.
+    content.vb: Function GetMapping() As Object
+  overload: Project.Logging.ILogIndexDefinition.GetMapping*
+references:
+- uid: Project.Logging
+  commentId: N:Project.Logging
+  href: Project.html
+  name: Project.Logging
+  nameWithType: Project.Logging
+  fullName: Project.Logging
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+- uid: Project.Logging.ILogIndexDefinition.IndexName*
+  commentId: Overload:Project.Logging.ILogIndexDefinition.IndexName
+  href: Project.Logging.ILogIndexDefinition.html#Project_Logging_ILogIndexDefinition_IndexName
+  name: IndexName
+  nameWithType: ILogIndexDefinition.IndexName
+  fullName: Project.Logging.ILogIndexDefinition.IndexName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Logging.ILogIndexDefinition.GetMapping*
+  commentId: Overload:Project.Logging.ILogIndexDefinition.GetMapping
+  href: Project.Logging.ILogIndexDefinition.html#Project_Logging_ILogIndexDefinition_GetMapping
+  name: GetMapping
+  nameWithType: ILogIndexDefinition.GetMapping
+  fullName: Project.Logging.ILogIndexDefinition.GetMapping
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object

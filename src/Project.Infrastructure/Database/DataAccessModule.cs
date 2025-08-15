@@ -30,11 +30,6 @@ namespace Project.Infrastructure.Database
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            // Add Identity API EndPoints
-            services.AddIdentityApiEndpoints<User>()
-                    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-
             // Register repositories
             services.AddScoped<IUserRepository, UserRepository>();
 

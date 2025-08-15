@@ -20,6 +20,19 @@ items:
   - uid: Project.API.SeedWork.InvalidCommandProblemDetails
     name: InvalidCommandProblemDetails
     type: Class
+- uid: Project.Api.Auth
+  name: Project.Api.Auth
+  type: Namespace
+  items:
+  - uid: Project.Api.Auth.AuthModule
+    name: AuthModule
+    type: Class
+  - uid: Project.Api.Auth.LoggingSignInManager
+    name: LoggingSignInManager
+    type: Class
+  - uid: Project.Api.Auth.LoggingUserManager
+    name: LoggingUserManager
+    type: Class
 - uid: Project.Api.Configurations
   name: Project.Api.Configurations
   type: Namespace
@@ -282,6 +295,16 @@ items:
   - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
     name: LoggingPipelineBehavior<TRequest, TResponse>
     type: Class
+- uid: Project.Infrastructure.Logging.Users
+  name: Project.Infrastructure.Logging.Users
+  type: Namespace
+  items:
+  - uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+    name: DefaultUserLoggerService
+    type: Class
+  - uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+    name: ElasticUserLoggerService
+    type: Class
 - uid: Project.Infrastructure.Migrations
   name: Project.Infrastructure.Migrations
   type: Namespace
@@ -337,6 +360,44 @@ items:
   items:
   - uid: Project.Infrastructure.SeedWork.Resilience.NameConverter
     name: NameConverter
+    type: Class
+- uid: Project.Logging
+  name: Project.Logging
+  type: Namespace
+  items:
+  - uid: Project.Logging.BaseLogEntry
+    name: BaseLogEntry
+    type: Class
+  - uid: Project.Logging.BaseLogIndexDefinition
+    name: BaseLogIndexDefinition
+    type: Class
+  - uid: Project.Logging.ILogEntry
+    name: ILogEntry
+    type: Interface
+  - uid: Project.Logging.ILogIndexDefinition
+    name: ILogIndexDefinition
+    type: Interface
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService<T>
+    type: Interface
+  - uid: Project.Logging.LogEntry
+    name: LogEntry
+    type: Class
+- uid: Project.Logging.Users
+  name: Project.Logging.Users
+  type: Namespace
+  items:
+  - uid: Project.Logging.Users.IUserLoggerService
+    name: IUserLoggerService
+    type: Interface
+  - uid: Project.Logging.Users.UserEventType
+    name: UserEventType
+    type: Class
+  - uid: Project.Logging.Users.UserLogEntry
+    name: UserLogEntry
+    type: Class
+  - uid: Project.Logging.Users.UserLogIndexDefinition
+    name: UserLogIndexDefinition
     type: Class
 - uid: Project.Tests
   name: Project.Tests

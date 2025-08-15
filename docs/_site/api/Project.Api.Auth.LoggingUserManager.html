@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LoggingUserManager | Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LoggingUserManager | Project ">
+      
+      <meta name="description" content="Custom implementation of  that adds logging capabilities for user account events such as password resets.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/new/main/apiSpec/new?filename=Project_Api_Auth_LoggingUserManager.md&amp;value=---%0Auid%3A%20Project.Api.Auth.LoggingUserManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Project">
+            Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Project.Api.Auth.LoggingUserManager">
+
+
+
+  <h1 id="Project_Api_Auth_LoggingUserManager" data-uid="Project.Api.Auth.LoggingUserManager" class="text-break">
+Class LoggingUserManager  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingUserManager.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Project.html">Project</a>.<a class="xref" href="Project.Api.html">Api</a>.<a class="xref" href="Project.Api.Auth.html">Auth</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Project.Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Custom implementation of <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager&lt;TUser&gt;</a> that adds logging capabilities
+for user account events such as password resets.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LoggingUserManager : UserManager&lt;User&gt;, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</div>
+      <div><span class="xref">LoggingUserManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.resetpasswordtokenpurpose">UserManager&lt;User&gt;.ResetPasswordTokenPurpose</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.changephonenumbertokenpurpose">UserManager&lt;User&gt;.ChangePhoneNumberTokenPurpose</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.confirmemailtokenpurpose">UserManager&lt;User&gt;.ConfirmEmailTokenPurpose</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.dispose#microsoft-aspnetcore-identity-usermanager-1-dispose">UserManager&lt;User&gt;.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getusername">UserManager&lt;User&gt;.GetUserName(ClaimsPrincipal)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getuserid">UserManager&lt;User&gt;.GetUserId(ClaimsPrincipal)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getuserasync">UserManager&lt;User&gt;.GetUserAsync(ClaimsPrincipal)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generateconcurrencystampasync">UserManager&lt;User&gt;.GenerateConcurrencyStampAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.createasync#microsoft-aspnetcore-identity-usermanager-1-createasync(-0)">UserManager&lt;User&gt;.CreateAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.updateasync">UserManager&lt;User&gt;.UpdateAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.deleteasync">UserManager&lt;User&gt;.DeleteAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.findbyidasync">UserManager&lt;User&gt;.FindByIdAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.findbynameasync">UserManager&lt;User&gt;.FindByNameAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.createasync#microsoft-aspnetcore-identity-usermanager-1-createasync(-0-system-string)">UserManager&lt;User&gt;.CreateAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.normalizename">UserManager&lt;User&gt;.NormalizeName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.normalizeemail">UserManager&lt;User&gt;.NormalizeEmail(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.updatenormalizedusernameasync">UserManager&lt;User&gt;.UpdateNormalizedUserNameAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getusernameasync">UserManager&lt;User&gt;.GetUserNameAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.setusernameasync">UserManager&lt;User&gt;.SetUserNameAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getuseridasync">UserManager&lt;User&gt;.GetUserIdAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.checkpasswordasync">UserManager&lt;User&gt;.CheckPasswordAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.haspasswordasync">UserManager&lt;User&gt;.HasPasswordAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.addpasswordasync">UserManager&lt;User&gt;.AddPasswordAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.changepasswordasync">UserManager&lt;User&gt;.ChangePasswordAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removepasswordasync">UserManager&lt;User&gt;.RemovePasswordAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.verifypasswordasync">UserManager&lt;User&gt;.VerifyPasswordAsync(IUserPasswordStore&lt;User&gt;, User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getsecuritystampasync">UserManager&lt;User&gt;.GetSecurityStampAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.updatesecuritystampasync">UserManager&lt;User&gt;.UpdateSecurityStampAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generatepasswordresettokenasync">UserManager&lt;User&gt;.GeneratePasswordResetTokenAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.findbyloginasync">UserManager&lt;User&gt;.FindByLoginAsync(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removeloginasync">UserManager&lt;User&gt;.RemoveLoginAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.addloginasync">UserManager&lt;User&gt;.AddLoginAsync(User, UserLoginInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getloginsasync">UserManager&lt;User&gt;.GetLoginsAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.addclaimasync">UserManager&lt;User&gt;.AddClaimAsync(User, Claim)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.addclaimsasync">UserManager&lt;User&gt;.AddClaimsAsync(User, IEnumerable&lt;Claim&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.replaceclaimasync">UserManager&lt;User&gt;.ReplaceClaimAsync(User, Claim, Claim)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removeclaimasync">UserManager&lt;User&gt;.RemoveClaimAsync(User, Claim)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removeclaimsasync">UserManager&lt;User&gt;.RemoveClaimsAsync(User, IEnumerable&lt;Claim&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getclaimsasync">UserManager&lt;User&gt;.GetClaimsAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.addtoroleasync">UserManager&lt;User&gt;.AddToRoleAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.addtorolesasync">UserManager&lt;User&gt;.AddToRolesAsync(User, IEnumerable&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removefromroleasync">UserManager&lt;User&gt;.RemoveFromRoleAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removefromrolesasync">UserManager&lt;User&gt;.RemoveFromRolesAsync(User, IEnumerable&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getrolesasync">UserManager&lt;User&gt;.GetRolesAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.isinroleasync">UserManager&lt;User&gt;.IsInRoleAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getemailasync">UserManager&lt;User&gt;.GetEmailAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.setemailasync">UserManager&lt;User&gt;.SetEmailAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.findbyemailasync">UserManager&lt;User&gt;.FindByEmailAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.updatenormalizedemailasync">UserManager&lt;User&gt;.UpdateNormalizedEmailAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generateemailconfirmationtokenasync">UserManager&lt;User&gt;.GenerateEmailConfirmationTokenAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.confirmemailasync">UserManager&lt;User&gt;.ConfirmEmailAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.isemailconfirmedasync">UserManager&lt;User&gt;.IsEmailConfirmedAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generatechangeemailtokenasync">UserManager&lt;User&gt;.GenerateChangeEmailTokenAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.changeemailasync">UserManager&lt;User&gt;.ChangeEmailAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getphonenumberasync">UserManager&lt;User&gt;.GetPhoneNumberAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.setphonenumberasync">UserManager&lt;User&gt;.SetPhoneNumberAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.changephonenumberasync">UserManager&lt;User&gt;.ChangePhoneNumberAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.isphonenumberconfirmedasync">UserManager&lt;User&gt;.IsPhoneNumberConfirmedAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generatechangephonenumbertokenasync">UserManager&lt;User&gt;.GenerateChangePhoneNumberTokenAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.verifychangephonenumbertokenasync">UserManager&lt;User&gt;.VerifyChangePhoneNumberTokenAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.verifyusertokenasync">UserManager&lt;User&gt;.VerifyUserTokenAsync(User, string, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generateusertokenasync">UserManager&lt;User&gt;.GenerateUserTokenAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.registertokenprovider">UserManager&lt;User&gt;.RegisterTokenProvider(string, IUserTwoFactorTokenProvider&lt;User&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getvalidtwofactorprovidersasync">UserManager&lt;User&gt;.GetValidTwoFactorProvidersAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.verifytwofactortokenasync">UserManager&lt;User&gt;.VerifyTwoFactorTokenAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generatetwofactortokenasync">UserManager&lt;User&gt;.GenerateTwoFactorTokenAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.gettwofactorenabledasync">UserManager&lt;User&gt;.GetTwoFactorEnabledAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.settwofactorenabledasync">UserManager&lt;User&gt;.SetTwoFactorEnabledAsync(User, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.islockedoutasync">UserManager&lt;User&gt;.IsLockedOutAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.setlockoutenabledasync">UserManager&lt;User&gt;.SetLockoutEnabledAsync(User, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getlockoutenabledasync">UserManager&lt;User&gt;.GetLockoutEnabledAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getlockoutenddateasync">UserManager&lt;User&gt;.GetLockoutEndDateAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.setlockoutenddateasync">UserManager&lt;User&gt;.SetLockoutEndDateAsync(User, DateTimeOffset?)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.accessfailedasync">UserManager&lt;User&gt;.AccessFailedAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.resetaccessfailedcountasync">UserManager&lt;User&gt;.ResetAccessFailedCountAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getaccessfailedcountasync">UserManager&lt;User&gt;.GetAccessFailedCountAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getusersforclaimasync">UserManager&lt;User&gt;.GetUsersForClaimAsync(Claim)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getusersinroleasync">UserManager&lt;User&gt;.GetUsersInRoleAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getauthenticationtokenasync">UserManager&lt;User&gt;.GetAuthenticationTokenAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.setauthenticationtokenasync">UserManager&lt;User&gt;.SetAuthenticationTokenAsync(User, string, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.removeauthenticationtokenasync">UserManager&lt;User&gt;.RemoveAuthenticationTokenAsync(User, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getauthenticatorkeyasync">UserManager&lt;User&gt;.GetAuthenticatorKeyAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.resetauthenticatorkeyasync">UserManager&lt;User&gt;.ResetAuthenticatorKeyAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generatenewauthenticatorkey">UserManager&lt;User&gt;.GenerateNewAuthenticatorKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.generatenewtwofactorrecoverycodesasync">UserManager&lt;User&gt;.GenerateNewTwoFactorRecoveryCodesAsync(User, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.createtwofactorrecoverycode">UserManager&lt;User&gt;.CreateTwoFactorRecoveryCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.redeemtwofactorrecoverycodeasync">UserManager&lt;User&gt;.RedeemTwoFactorRecoveryCodeAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.countrecoverycodesasync">UserManager&lt;User&gt;.CountRecoveryCodesAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.dispose#microsoft-aspnetcore-identity-usermanager-1-dispose(system-boolean)">UserManager&lt;User&gt;.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.createsecuritytokenasync">UserManager&lt;User&gt;.CreateSecurityTokenAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.updatepasswordhash">UserManager&lt;User&gt;.UpdatePasswordHash(User, string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.getchangeemailtokenpurpose">UserManager&lt;User&gt;.GetChangeEmailTokenPurpose(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.validateuserasync">UserManager&lt;User&gt;.ValidateUserAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.validatepasswordasync">UserManager&lt;User&gt;.ValidatePasswordAsync(User, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.updateuserasync">UserManager&lt;User&gt;.UpdateUserAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.throwifdisposed">UserManager&lt;User&gt;.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.cancellationtoken">UserManager&lt;User&gt;.CancellationToken</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.store">UserManager&lt;User&gt;.Store</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.logger">UserManager&lt;User&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.passwordhasher">UserManager&lt;User&gt;.PasswordHasher</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.uservalidators">UserManager&lt;User&gt;.UserValidators</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.passwordvalidators">UserManager&lt;User&gt;.PasswordValidators</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.keynormalizer">UserManager&lt;User&gt;.KeyNormalizer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.errordescriber">UserManager&lt;User&gt;.ErrorDescriber</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.options">UserManager&lt;User&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserauthenticationtokens">UserManager&lt;User&gt;.SupportsUserAuthenticationTokens</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserauthenticatorkey">UserManager&lt;User&gt;.SupportsUserAuthenticatorKey</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsusertwofactorrecoverycodes">UserManager&lt;User&gt;.SupportsUserTwoFactorRecoveryCodes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsusertwofactor">UserManager&lt;User&gt;.SupportsUserTwoFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserpassword">UserManager&lt;User&gt;.SupportsUserPassword</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsusersecuritystamp">UserManager&lt;User&gt;.SupportsUserSecurityStamp</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserrole">UserManager&lt;User&gt;.SupportsUserRole</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserlogin">UserManager&lt;User&gt;.SupportsUserLogin</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuseremail">UserManager&lt;User&gt;.SupportsUserEmail</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserphonenumber">UserManager&lt;User&gt;.SupportsUserPhoneNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserclaim">UserManager&lt;User&gt;.SupportsUserClaim</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsuserlockout">UserManager&lt;User&gt;.SupportsUserLockout</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.supportsqueryableusers">UserManager&lt;User&gt;.SupportsQueryableUsers</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1.users">UserManager&lt;User&gt;.Users</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Project_Api_Auth_LoggingUserManager__ctor_" data-uid="Project.Api.Auth.LoggingUserManager.#ctor*"></a>
+
+  <h3 id="Project_Api_Auth_LoggingUserManager__ctor_Microsoft_AspNetCore_Identity_IUserStore_Project_Domain_Users_User__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Project_Domain_Users_User__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Project_Domain_Users_User___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Project_Domain_Users_User___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User___Project_Logging_Users_IUserLoggerService_" data-uid="Project.Api.Auth.LoggingUserManager.#ctor(Microsoft.AspNetCore.Identity.IUserStore{Project.Domain.Users.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{Project.Domain.Users.User},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{Project.Domain.Users.User}},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{Project.Domain.Users.User}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}},Project.Logging.Users.IUserLoggerService)">
+  LoggingUserManager(IUserStore&lt;User&gt;, IOptions&lt;IdentityOptions&gt;, IPasswordHasher&lt;User&gt;, IEnumerable&lt;IUserValidator&lt;User&gt;&gt;, IEnumerable&lt;IPasswordValidator&lt;User&gt;&gt;, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger&lt;UserManager&lt;User&gt;&gt;, IUserLoggerService)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingUserManager.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Project.Api.Auth.LoggingUserManager.html">LoggingUserManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoggingUserManager(IUserStore&lt;User&gt; store, IOptions&lt;IdentityOptions&gt; optionsAccessor, IPasswordHasher&lt;User&gt; passwordHasher, IEnumerable&lt;IUserValidator&lt;User&gt;&gt; userValidators, IEnumerable&lt;IPasswordValidator&lt;User&gt;&gt; passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger&lt;UserManager&lt;User&gt;&gt; logger, IUserLoggerService userLoggerService)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>store</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.iuserstore-1">IUserStore</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dd><p>The user store used to persist user information.</p>
+</dd>
+    <dt><code>optionsAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityoptions">IdentityOptions</a>&gt;</dt>
+    <dd><p>Provides access to identity options.</p>
+</dd>
+    <dt><code>passwordHasher</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.ipasswordhasher-1">IPasswordHasher</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dd><p>Hasher used to hash user passwords.</p>
+</dd>
+    <dt><code>userValidators</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.iuservalidator-1">IUserValidator</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;&gt;</dt>
+    <dd><p>List of user validators.</p>
+</dd>
+    <dt><code>passwordValidators</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.ipasswordvalidator-1">IPasswordValidator</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;&gt;</dt>
+    <dd><p>List of password validators.</p>
+</dd>
+    <dt><code>keyNormalizer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.ilookupnormalizer">ILookupNormalizer</a></dt>
+    <dd><p>Used to normalize keys for consistent lookup.</p>
+</dd>
+    <dt><code>errors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber">IdentityErrorDescriber</a></dt>
+    <dd><p>Provides identity error descriptions.</p>
+</dd>
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd><p>Service provider for dependency injection.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;&gt;</dt>
+    <dd><p>The logger used for logging internal identity operations.</p>
+</dd>
+    <dt><code>userLoggerService</code> <a class="xref" href="Project.Logging.Users.IUserLoggerService.html">IUserLoggerService</a></dt>
+    <dd><p>Custom user logging service for tracking account events.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Project_Api_Auth_LoggingUserManager_ResetPasswordAsync_" data-uid="Project.Api.Auth.LoggingUserManager.ResetPasswordAsync*"></a>
+
+  <h3 id="Project_Api_Auth_LoggingUserManager_ResetPasswordAsync_Project_Domain_Users_User_System_String_System_String_" data-uid="Project.Api.Auth.LoggingUserManager.ResetPasswordAsync(Project.Domain.Users.User,System.String,System.String)">
+  ResetPasswordAsync(User, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingUserManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the password for a user using the provided reset token and logs the operation if successful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IdentityResult&gt; ResetPasswordAsync(User user, string token, string newPassword)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="Project.Domain.Users.User.html">User</a></dt>
+    <dd><p>The user whose password is being reset.</p>
+</dd>
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The password reset token.</p>
+</dd>
+    <dt><code>newPassword</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new password to set for the user.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult">IdentityResult</a>&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult">IdentityResult</a> indicating whether the operation succeeded.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>Thrown when the user email is invalid or null.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Auth/LoggingUserManager.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -2,14 +2,17 @@ using Microsoft.AspNetCore.Identity;
 using Project.Application.Configuration.Commands;
 using Project.Domain.SharedKernel.Users;
 using Project.Domain.Users;
+using Project.Logging.Users;
 
 namespace Project.Application.Users.Commands.RegisterUser
 {
     public class RegisterUserCommandHandler(
-        UserManager<User> userManager
+        UserManager<User> userManager,
+        IUserLoggerService userLoggerService
     ) : ICommandHandler<RegisterUserCommand, (string userId, IEnumerable<string> Errors)>
     {
         private readonly UserManager<User> _userManager = userManager;
+        private readonly IUserLoggerService _userLoggerService = userLoggerService;
         public async Task<(string userId, IEnumerable<string> Errors)> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
         {
             var firstName = new Name(request.FirstName);
@@ -26,6 +29,7 @@ namespace Project.Application.Users.Commands.RegisterUser
 
             await _userManager.UpdateAsync(user);
 
+            await _userLoggerService.LogUserCreated(user.Id, email);
             return (user.Id, []);
         }
     }

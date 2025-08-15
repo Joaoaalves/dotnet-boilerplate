@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LoggingModule | Project ">
       
-      
+      <meta name="description" content="Provides methods to configure and register logging services, including Serilog and Elasticsearch integration.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Infrastructure_Logging_LoggingModule" data-uid="Project.Infrastructure.Logging.LoggingModule" class="text-break">
-Class LoggingModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class LoggingModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
   <dl><dt>Assembly</dt><dd>Project.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides methods to configure and register logging services, including Serilog and Elasticsearch integration.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -152,14 +153,58 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
 </h2>
 
 
+  <a id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_" data-uid="Project.Infrastructure.Logging.LoggingModule.AddLogginModule*"></a>
+
+  <h3 id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+  AddLogginModule(IServiceCollection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers services related to user logging into the application's dependency injection container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddLogginModule(this IServiceCollection services)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd><p>The service collection to register services into.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd><p>The updated <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Registers a default or Elasticsearch-based implementation of <a class="xref" href="Project.Logging.Users.IUserLoggerService.html">IUserLoggerService</a>,
+based on the ENABLE_LOGGING environment variable.</p>
+</div>
+
+
+
+
   <a id="Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_" data-uid="Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*"></a>
 
   <h3 id="Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)">
   SetupLoggingModule(IHostBuilder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Configures Serilog and Elasticsearch sinks during application startup.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,7 +214,8 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
+    <dd><p>The host builder to apply logging configuration to.</p>
+</dd>
   </dl>
 
 
@@ -179,6 +225,9 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
 
 
 
+  <h4 class="section" id="Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses environment variables to control whether logging is enabled and to determine the Elasticsearch URL.</p>
+</div>
 
 
 
@@ -187,7 +236,7 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

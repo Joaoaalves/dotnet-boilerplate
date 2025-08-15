@@ -20,10 +20,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IDomainEventsDispatcher
     path: ../src/Project.Infrastructure/Processing/IDomainEventsDispatcher.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Defines a service responsible for dispatching domain events.
+  example: []
   syntax:
     content: public interface IDomainEventsDispatcher
     content.vb: Public Interface IDomainEventsDispatcher
@@ -45,10 +47,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: DispatchEventsAsync
     path: ../src/Project.Infrastructure/Processing/IDomainEventsDispatcher.cs
-    startLine: 4
+    startLine: 10
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Dispatches all domain events that have been collected from tracked entities.
+  example: []
   syntax:
     content: Task DispatchEventsAsync()
     return:

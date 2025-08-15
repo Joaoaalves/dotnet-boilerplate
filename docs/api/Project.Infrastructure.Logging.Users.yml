@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Infrastructure.Logging.Users
+  commentId: N:Project.Infrastructure.Logging.Users
+  id: Project.Infrastructure.Logging.Users
+  children:
+  - Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  - Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+  langs:
+  - csharp
+  - vb
+  name: Project.Infrastructure.Logging.Users
+  nameWithType: Project.Infrastructure.Logging.Users
+  fullName: Project.Infrastructure.Logging.Users
+  type: Namespace
+  assemblies:
+  - Project.Infrastructure
+references:
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  commentId: T:Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  href: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html
+  name: DefaultUserLoggerService
+  nameWithType: DefaultUserLoggerService
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+  commentId: T:Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+  href: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html
+  name: ElasticUserLoggerService
+  nameWithType: ElasticUserLoggerService
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService

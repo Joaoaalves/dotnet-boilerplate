@@ -290,7 +290,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Register
     path: ../src/Project.Api/Controllers/Users/AccountController.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Project.Api
   namespace: Project.Api.Controllers.Users
@@ -344,7 +344,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetUserInfo
     path: ../src/Project.Api/Controllers/Users/AccountController.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Project.Api
   namespace: Project.Api.Controllers.Users

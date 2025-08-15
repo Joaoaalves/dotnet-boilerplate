@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Api.Auth
+  commentId: N:Project.Api.Auth
+  id: Project.Api.Auth
+  children:
+  - Project.Api.Auth.AuthModule
+  - Project.Api.Auth.LoggingSignInManager
+  - Project.Api.Auth.LoggingUserManager
+  langs:
+  - csharp
+  - vb
+  name: Project.Api.Auth
+  nameWithType: Project.Api.Auth
+  fullName: Project.Api.Auth
+  type: Namespace
+  assemblies:
+  - Project.Api
+references:
+- uid: Project.Api.Auth.AuthModule
+  commentId: T:Project.Api.Auth.AuthModule
+  href: Project.Api.Auth.AuthModule.html
+  name: AuthModule
+  nameWithType: AuthModule
+  fullName: Project.Api.Auth.AuthModule
+- uid: Project.Api.Auth.LoggingSignInManager
+  commentId: T:Project.Api.Auth.LoggingSignInManager
+  href: Project.Api.Auth.LoggingSignInManager.html
+  name: LoggingSignInManager
+  nameWithType: LoggingSignInManager
+  fullName: Project.Api.Auth.LoggingSignInManager
+- uid: Project.Api.Auth.LoggingUserManager
+  commentId: T:Project.Api.Auth.LoggingUserManager
+  href: Project.Api.Auth.LoggingUserManager.html
+  name: LoggingUserManager
+  nameWithType: LoggingUserManager
+  fullName: Project.Api.Auth.LoggingUserManager

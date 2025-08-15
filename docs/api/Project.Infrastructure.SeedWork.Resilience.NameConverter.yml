@@ -20,10 +20,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: NameConverter
     path: ../src/Project.Infrastructure/SeedWork/Resilience/NameConverter.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork.Resilience
+  summary: Converts between the domain-specific <xref href="Project.Domain.SharedKernel.Users.Name" data-throw-if-not-resolved="false"></xref> type and its string representation for persistence.
+  example: []
   syntax:
     content: 'public sealed class NameConverter : ValueConverter<Name, string>'
     content.vb: Public NotInheritable Class NameConverter Inherits ValueConverter(Of Name, String)
@@ -75,10 +77,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/SeedWork/Resilience/NameConverter.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.SeedWork.Resilience
+  summary: Converts between the domain-specific <xref href="Project.Domain.SharedKernel.Users.Name" data-throw-if-not-resolved="false"></xref> type and its string representation for persistence.
+  example: []
   syntax:
     content: public NameConverter(ConverterMappingHints? mappingHints = null)
     parameters:
@@ -90,6 +94,13 @@ items:
   fullName.vb: Project.Infrastructure.SeedWork.Resilience.NameConverter.New(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)
   name.vb: New(ConverterMappingHints)
 references:
+- uid: Project.Domain.SharedKernel.Users.Name
+  commentId: T:Project.Domain.SharedKernel.Users.Name
+  parent: Project.Domain.SharedKernel.Users
+  href: Project.Domain.SharedKernel.Users.Name.html
+  name: Name
+  nameWithType: Name
+  fullName: Project.Domain.SharedKernel.Users.Name
 - uid: Project.Infrastructure.SeedWork.Resilience
   commentId: N:Project.Infrastructure.SeedWork.Resilience
   href: Project.html
@@ -577,6 +588,44 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: Project.Domain.SharedKernel.Users
+  commentId: N:Project.Domain.SharedKernel.Users
+  href: Project.html
+  name: Project.Domain.SharedKernel.Users
+  nameWithType: Project.Domain.SharedKernel.Users
+  fullName: Project.Domain.SharedKernel.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Domain.SharedKernel.html
+  - name: .
+  - uid: Project.Domain.SharedKernel.Users
+    name: Users
+    href: Project.Domain.SharedKernel.Users.html
 - uid: System
   commentId: N:System
   isExternal: true

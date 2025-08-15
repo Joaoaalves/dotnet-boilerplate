@@ -21,15 +21,19 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UnitOfWorkPipelineBehavior
     path: ../src/Project.Infrastructure/Processing/UnitOfWorkPipelineBehaviour.cs
-    startLine: 6
+    startLine: 11
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Pipeline behavior that ensures Unit of Work is committed if the command succeeds, or reverted if an exception occurs.
+  example: []
   syntax:
     content: 'public class UnitOfWorkPipelineBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse> where TRequest : ICommand<TResponse>'
     typeParameters:
     - id: TRequest
+      description: The command type.
     - id: TResponse
+      description: The response type.
     content.vb: Public Class UnitOfWorkPipelineBehavior(Of TRequest As ICommand(Of TResponse), TResponse) Implements IRequestPipelineBehavior(Of TRequest, TResponse)
   inheritance:
   - System.Object
@@ -68,6 +72,8 @@ items:
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Pipeline behavior that ensures Unit of Work is committed if the command succeeds, or reverted if an exception occurs.
+  example: []
   syntax:
     content: public UnitOfWorkPipelineBehavior(IServiceProvider serviceProvider)
     parameters:
@@ -96,7 +102,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Handle
     path: ../src/Project.Infrastructure/Processing/UnitOfWorkPipelineBehaviour.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing

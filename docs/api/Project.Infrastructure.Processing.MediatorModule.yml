@@ -22,10 +22,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: MediatorModule
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Provides methods to configure the mediator module, including command/query handlers and pipeline behaviors.
+  example: []
   syntax:
     content: public static class MediatorModule
     content.vb: Public Module MediatorModule
@@ -58,19 +60,24 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddMediatorModule
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 13
+    startLine: 22
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Registers MediatR-like services and command/query processing pipeline.
+  example: []
   syntax:
     content: public static IServiceCollection AddMediatorModule(this IServiceCollection services, params object[] args)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The service collection.
     - id: args
       type: System.Object[]
+      description: Assemblies or assembly name prefixes to scan for handlers.
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function AddMediatorModule(services As IServiceCollection, ParamArray args As Object()) As IServiceCollection
   overload: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule*
   nameWithType.vb: MediatorModule.AddMediatorModule(IServiceCollection, ParamArray Object())
@@ -94,17 +101,21 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ResolveAssemblies
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 34
+    startLine: 47
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Resolves assemblies from input parameters to be scanned for handler types.
+  example: []
   syntax:
     content: public static Assembly[] ResolveAssemblies(object[] args)
     parameters:
     - id: args
       type: System.Object[]
+      description: Can be an array of assemblies or string prefixes.
     return:
       type: System.Reflection.Assembly[]
+      description: An array of resolved assemblies.
     content.vb: Public Shared Function ResolveAssemblies(args As Object()) As Assembly()
   overload: Project.Infrastructure.Processing.MediatorModule.ResolveAssemblies*
   nameWithType.vb: MediatorModule.ResolveAssemblies(Object())
@@ -128,10 +139,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: RegisterHandlers
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 62
+    startLine: 77
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
+  summary: Registers all types implementing a specific handler interface (e.g., IRequestHandler, INotificationHandler).
+  example: []
   syntax:
     content: public static void RegisterHandlers(IServiceCollection services, Assembly[] assemblies, Type handlerInterface)
     parameters:
@@ -414,12 +427,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule*
-  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
-  href: Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_AddMediatorModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Object___
-  name: AddMediatorModule
-  nameWithType: MediatorModule.AddMediatorModule
-  fullName: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
   parent: Microsoft.Extensions.DependencyInjection
@@ -428,6 +435,12 @@ references:
   name: IServiceCollection
   nameWithType: IServiceCollection
   fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule*
+  commentId: Overload:Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
+  href: Project.Infrastructure.Processing.MediatorModule.html#Project_Infrastructure_Processing_MediatorModule_AddMediatorModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Object___
+  name: AddMediatorModule
+  nameWithType: MediatorModule.AddMediatorModule
+  fullName: Project.Infrastructure.Processing.MediatorModule.AddMediatorModule
 - uid: System.Object[]
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.object

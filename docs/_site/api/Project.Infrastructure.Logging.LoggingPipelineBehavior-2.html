@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt; | Project ">
       
-      
+      <meta name="description" content="Pipeline behavior for logging command execution within the application. Logs execution start, success, and failure events using Serilog.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2" class="text-break">
-Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-actio
   <dl><dt>Assembly</dt><dd>Project.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Pipeline behavior for logging command execution within the application.
+Logs execution start, success, and failure events using Serilog.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -109,9 +111,11 @@ Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-actio
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TRequest</code></dt>
-    <dd></dd>
+    <dd><p>The type of the command.</p>
+</dd>
     <dt><code>TResponse</code></dt>
-    <dd></dd>
+    <dd><p>The type of the command response.</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -169,10 +173,11 @@ Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-actio
 
   <h3 id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_Microsoft_Extensions_Logging_ILogger_Project_Infrastructure_Logging_LoggingPipelineBehavior__0__1___Project_Application_Configuration_IExecutionContextAccessor_" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Project.Infrastructure.Logging.LoggingPipelineBehavior{`0,`1}},Project.Application.Configuration.IExecutionContextAccessor)">
   LoggingPipelineBehavior(ILogger&lt;LoggingPipelineBehavior&lt;TRequest, TResponse&gt;&gt;, IExecutionContextAccessor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html">LoggingPipelineBehavior&lt;TRequest, TResponse&gt;</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -206,7 +211,7 @@ Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-actio
 
   <h3 id="Project_Infrastructure_Logging_LoggingPipelineBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_" data-uid="Project.Infrastructure.Logging.LoggingPipelineBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)">
   Handle(TRequest, Func&lt;Task&lt;TResponse&gt;&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -246,7 +251,7 @@ Class LoggingPipelineBehavior&lt;TRequest, TResponse&gt;  <a class="header-actio
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

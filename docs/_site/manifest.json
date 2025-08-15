@@ -96,6 +96,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Auth.AuthModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Auth.AuthModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Auth.AuthModule",
+      "Summary": "<p sourcefile=\"api/Project.Api.Auth.AuthModule.yml\" sourcestartlinenumber=\"1\">Provides extension methods for configuring authentication and identity services for the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Auth.LoggingSignInManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Auth.LoggingSignInManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Auth.LoggingSignInManager",
+      "Summary": "<p sourcefile=\"api/Project.Api.Auth.LoggingSignInManager.yml\" sourcestartlinenumber=\"1\">Custom implementation of <xref href=\"Microsoft.AspNetCore.Identity.SignInManager%601\" data-throw-if-not-resolved=\"false\"></xref> that adds logging capabilities\nfor user sign-in events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Auth.LoggingUserManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Auth.LoggingUserManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Auth.LoggingUserManager",
+      "Summary": "<p sourcefile=\"api/Project.Api.Auth.LoggingUserManager.yml\" sourcestartlinenumber=\"1\">Custom implementation of <xref href=\"Microsoft.AspNetCore.Identity.UserManager%601\" data-throw-if-not-resolved=\"false\"></xref> that adds logging capabilities\nfor user account events such as password resets.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Auth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Auth",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Api.Configurations.ConfigurationsModule.yml",
       "output": {
         ".html": {
@@ -106,7 +162,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Api.Configurations.ConfigurationsModule",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Api.Configurations.ConfigurationsModule.yml\" sourcestartlinenumber=\"1\">Provides extension methods to register configuration-related services in the application's dependency injection container.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1184,7 +1240,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Logging.LoggingModule",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Logging.LoggingModule.yml\" sourcestartlinenumber=\"1\">Provides methods to configure and register logging services, including Serilog and Elasticsearch integration.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1198,6 +1254,48 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Logging.LoggingPipelineBehavior-2.yml\" sourcestartlinenumber=\"1\">Pipeline behavior for logging command execution within the application.\nLogs execution start, success, and failure events using Serilog.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Logging.Users.DefaultUserLoggerService",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.yml\" sourcestartlinenumber=\"1\">Default implementation of <xref href=\"Project.Logging.Users.IUserLoggerService\" data-throw-if-not-resolved=\"false\"></xref> that logs user events to the console.\nUsed when logging is disabled or Elasticsearch is not configured.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Logging.Users.ElasticUserLoggerService",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.yml\" sourcestartlinenumber=\"1\">Elasticsearch-based implementation of <xref href=\"Project.Logging.Users.IUserLoggerService\" data-throw-if-not-resolved=\"false\"></xref> for logging user events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Infrastructure.Logging.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Infrastructure.Logging.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Infrastructure.Logging.Users",
       "Summary": null
     },
     {
@@ -1254,7 +1352,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Monitoring.MonitoringModule",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Monitoring.MonitoringModule.yml\" sourcestartlinenumber=\"1\">Provides extension methods to register monitoring and observability features using OpenTelemetry.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1282,7 +1380,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.CommandsExecutor",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.CommandsExecutor.yml\" sourcestartlinenumber=\"1\">Executes application commands, resolving the required handlers and behaviors via dependency injection.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1296,7 +1394,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.DomainEventsDispatcher",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.DomainEventsDispatcher.yml\" sourcestartlinenumber=\"1\">Dispatches domain events collected from tracked entities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1310,7 +1408,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.IDomainEventsDispatcher",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.IDomainEventsDispatcher.yml\" sourcestartlinenumber=\"1\">Defines a service responsible for dispatching domain events.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1324,7 +1422,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.Mediator",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.Mediator.yml\" sourcestartlinenumber=\"1\">Implements a custom mediator to handle requests and notifications using runtime reflection.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1338,7 +1436,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.MediatorModule",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.MediatorModule.yml\" sourcestartlinenumber=\"1\">Provides methods to configure the mediator module, including command/query handlers and pipeline behaviors.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1352,7 +1450,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.QueriesExecutor",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.QueriesExecutor.yml\" sourcestartlinenumber=\"1\">Executes queries using the registered pipeline behaviors and query handlers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1366,7 +1464,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior<TRequest, TResponse>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.Processing.UnitOfWorkPipelineBehavior-2.yml\" sourcestartlinenumber=\"1\">Pipeline behavior that ensures Unit of Work is committed if the command succeeds, or reverted if an exception occurs.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1394,7 +1492,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.SeedWork.Resilience.NameConverter",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.SeedWork.Resilience.NameConverter.yml\" sourcestartlinenumber=\"1\">Converts between the domain-specific <xref href=\"Project.Domain.SharedKernel.Users.Name\" data-throw-if-not-resolved=\"false\"></xref> type and its string representation for persistence.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1422,7 +1520,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.yml\" sourcestartlinenumber=\"1\">A custom value converter selector for strongly-typed ID support (e.g., UserId : TypedIdValueBase).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1436,7 +1534,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.SeedWork.TypedIdValueConverter<TTypedIdValue>",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.SeedWork.TypedIdValueConverter-1.yml\" sourcestartlinenumber=\"1\">Converts a strongly typed ID (e.g., TypedIdValueBase) to and from a Guid for EF Core.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1450,6 +1548,174 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Infrastructure.SeedWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.BaseLogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.BaseLogEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.BaseLogEntry",
+      "Summary": "<p sourcefile=\"api/Project.Logging.BaseLogEntry.yml\" sourcestartlinenumber=\"1\">Represents a base log entry with common log information such as level, message, and source.\nInherits from <xref href=\"Project.Logging.LogEntry\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.BaseLogIndexDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.BaseLogIndexDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.BaseLogIndexDefinition",
+      "Summary": "<p sourcefile=\"api/Project.Logging.BaseLogIndexDefinition.yml\" sourcestartlinenumber=\"1\">Defines the Elasticsearch index configuration for storing general project log entries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.ILogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.ILogEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.ILogEntry",
+      "Summary": "<p sourcefile=\"api/Project.Logging.ILogEntry.yml\" sourcestartlinenumber=\"1\">Represents a base interface for a log entry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.ILogIndexDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.ILogIndexDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.ILogIndexDefinition",
+      "Summary": "<p sourcefile=\"api/Project.Logging.ILogIndexDefinition.yml\" sourcestartlinenumber=\"1\">Defines the structure of an Elasticsearch index for storing logs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.ILoggerService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.ILoggerService-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.ILoggerService<T>",
+      "Summary": "<p sourcefile=\"api/Project.Logging.ILoggerService-1.yml\" sourcestartlinenumber=\"1\">Defines a contract for logging entries of type <code class=\"typeparamref\">T</code> to an external system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.LogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.LogEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.LogEntry",
+      "Summary": "<p sourcefile=\"api/Project.Logging.LogEntry.yml\" sourcestartlinenumber=\"1\">Represents a generic log entry with an ID, timestamp, and optional metadata.\nImplements <xref href=\"Project.Logging.ILogEntry\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.Users.IUserLoggerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.Users.IUserLoggerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.Users.IUserLoggerService",
+      "Summary": "<p sourcefile=\"api/Project.Logging.Users.IUserLoggerService.yml\" sourcestartlinenumber=\"1\">Defines a contract for logging user-related events to an external logging system (e.g., Elasticsearch).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.Users.UserEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.Users.UserEventType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.Users.UserEventType",
+      "Summary": "<p sourcefile=\"api/Project.Logging.Users.UserEventType.yml\" sourcestartlinenumber=\"1\">Represents a type of user-related event to be logged.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.Users.UserLogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.Users.UserLogEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.Users.UserLogEntry",
+      "Summary": "<p sourcefile=\"api/Project.Logging.Users.UserLogEntry.yml\" sourcestartlinenumber=\"1\">Represents a log entry for a user-related event, containing essential user information and event details.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.Users.UserLogIndexDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.Users.UserLogIndexDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.Users.UserLogIndexDefinition",
+      "Summary": "<p sourcefile=\"api/Project.Logging.Users.UserLogIndexDefinition.yml\" sourcestartlinenumber=\"1\">Defines the Elasticsearch index configuration for logging user-related events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Logging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Logging",
       "Summary": null
     },
     {

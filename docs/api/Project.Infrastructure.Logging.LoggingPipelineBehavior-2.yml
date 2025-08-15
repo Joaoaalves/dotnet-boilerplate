@@ -21,15 +21,22 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: LoggingPipelineBehavior
     path: ../src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
-    startLine: 10
+    startLine: 16
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Logging
+  summary: >-
+    Pipeline behavior for logging command execution within the application.
+
+    Logs execution start, success, and failure events using Serilog.
+  example: []
   syntax:
     content: 'public class LoggingPipelineBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse> where TRequest : ICommand<TResponse>'
     typeParameters:
     - id: TRequest
+      description: The type of the command.
     - id: TResponse
+      description: The type of the command response.
     content.vb: Public Class LoggingPipelineBehavior(Of TRequest As ICommand(Of TResponse), TResponse) Implements IRequestPipelineBehavior(Of TRequest, TResponse)
   inheritance:
   - System.Object
@@ -64,10 +71,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
-    startLine: 16
+    startLine: 25
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Logging
+  summary: Initializes a new instance of the <xref href="Project.Infrastructure.Logging.LoggingPipelineBehavior%602" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>> logger, IExecutionContextAccessor contextAccessor)
     parameters:
@@ -98,7 +107,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Handle
     path: ../src/Project.Infrastructure/Logging/LoggingPipelineBehaviour.cs
-    startLine: 22
+    startLine: 32
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Logging
@@ -480,6 +489,37 @@ references:
   - uid: Project.Domain.SeedWork
     name: SeedWork
     href: Project.Domain.SeedWork.html
+- uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  commentId: T:Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+  href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html
+  name: LoggingPipelineBehavior<TRequest, TResponse>
+  nameWithType: LoggingPipelineBehavior<TRequest, TResponse>
+  fullName: Project.Infrastructure.Logging.LoggingPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse)
+  name.vb: LoggingPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+    name: LoggingPipelineBehavior
+    href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2
+    name: LoggingPipelineBehavior
+    href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
 - uid: Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor*
   commentId: Overload:Project.Infrastructure.Logging.LoggingPipelineBehavior`2.#ctor
   href: Project.Infrastructure.Logging.LoggingPipelineBehavior-2.html#Project_Infrastructure_Logging_LoggingPipelineBehavior_2__ctor_Microsoft_Extensions_Logging_ILogger_Project_Infrastructure_Logging_LoggingPipelineBehavior__0__1___Project_Application_Configuration_IExecutionContextAccessor_

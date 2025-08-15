@@ -20,10 +20,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ConfigurationsModule
     path: ../src/Project.Api/Configurations/ConfigurationsModule.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Project.Api
   namespace: Project.Api.Configurations
+  summary: Provides extension methods to register configuration-related services in the application's dependency injection container.
+  example: []
   syntax:
     content: public static class ConfigurationsModule
     content.vb: Public Module ConfigurationsModule
@@ -56,17 +58,25 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddConfigurations
     path: ../src/Project.Api/Configurations/ConfigurationsModule.cs
-    startLine: 7
+    startLine: 19
   assemblies:
   - Project.Api
   namespace: Project.Api.Configurations
+  summary: Registers application configuration services such as the <xref href="Project.Application.Configuration.IExecutionContextAccessor" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    This method ensures that infrastructure-level dependencies used for accessing execution context 
+
+    (e.g., current user or request context) are properly registered.
+  example: []
   syntax:
     content: public static IServiceCollection AddConfigurations(this IServiceCollection services)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> to which the services will be added.
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> instance.
     content.vb: Public Shared Function AddConfigurations(services As IServiceCollection) As IServiceCollection
   overload: Project.Api.Configurations.ConfigurationsModule.AddConfigurations*
 references:
@@ -337,12 +347,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Api.Configurations.ConfigurationsModule.AddConfigurations*
-  commentId: Overload:Project.Api.Configurations.ConfigurationsModule.AddConfigurations
-  href: Project.Api.Configurations.ConfigurationsModule.html#Project_Api_Configurations_ConfigurationsModule_AddConfigurations_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  name: AddConfigurations
-  nameWithType: ConfigurationsModule.AddConfigurations
-  fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations
+- uid: Project.Application.Configuration.IExecutionContextAccessor
+  commentId: T:Project.Application.Configuration.IExecutionContextAccessor
+  parent: Project.Application.Configuration
+  href: Project.Application.Configuration.IExecutionContextAccessor.html
+  name: IExecutionContextAccessor
+  nameWithType: IExecutionContextAccessor
+  fullName: Project.Application.Configuration.IExecutionContextAccessor
 - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
   commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
   parent: Microsoft.Extensions.DependencyInjection
@@ -351,6 +362,42 @@ references:
   name: IServiceCollection
   nameWithType: IServiceCollection
   fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Project.Api.Configurations.ConfigurationsModule.AddConfigurations*
+  commentId: Overload:Project.Api.Configurations.ConfigurationsModule.AddConfigurations
+  href: Project.Api.Configurations.ConfigurationsModule.html#Project_Api_Configurations_ConfigurationsModule_AddConfigurations_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddConfigurations
+  nameWithType: ConfigurationsModule.AddConfigurations
+  fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations
+- uid: Project.Application.Configuration
+  commentId: N:Project.Application.Configuration
+  href: Project.html
+  name: Project.Application.Configuration
+  nameWithType: Project.Application.Configuration
+  fullName: Project.Application.Configuration
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
 - uid: Microsoft.Extensions.DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   isExternal: true

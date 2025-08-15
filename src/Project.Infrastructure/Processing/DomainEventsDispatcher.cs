@@ -3,11 +3,17 @@ using Project.Infrastructure.Database;
 
 namespace Project.Infrastructure.Processing
 {
+    /// <summary>
+    /// Dispatches domain events collected from tracked entities.
+    /// </summary>
+    /// <param name="mediator">The mediator used to publish domain events.</param>
+    /// <param name="context">The database context from which domain events are collected.</param>
     public class DomainEventsDispatcher(IMediator mediator, ApplicationDbContext context) : IDomainEventsDispatcher
     {
         private readonly IMediator _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         private readonly ApplicationDbContext _context = context ?? throw new ArgumentNullException(nameof(context));
 
+        /// <inheritdoc />
         public async Task DispatchEventsAsync()
         {
             var domainEntities = _context.ChangeTracker
@@ -19,10 +25,8 @@ namespace Project.Infrastructure.Processing
                 .SelectMany(e => e.Entity.DomainEvents!)
                 .ToList();
 
-            // Clear to avoid re-sending events
             domainEntities.ForEach(e => e.Entity.ClearDomainEvents());
 
-            // Publish events via MediatR
             foreach (var domainEvent in domainEvents)
             {
                 await _mediator.Publish(domainEvent);

@@ -30,6 +30,7 @@ namespace Project.Domain.Users
         /// </summary>
         public static User Create(Name firstName, Name lastName, UserName userName, Email email)
         {
+
             return new User(userName.Value, email.Value, firstName, lastName);
         }
     }

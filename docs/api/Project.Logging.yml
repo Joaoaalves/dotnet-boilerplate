@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Logging
+  commentId: N:Project.Logging
+  id: Project.Logging
+  children:
+  - Project.Logging.BaseLogEntry
+  - Project.Logging.BaseLogIndexDefinition
+  - Project.Logging.ILogEntry
+  - Project.Logging.ILogIndexDefinition
+  - Project.Logging.ILoggerService`1
+  - Project.Logging.LogEntry
+  langs:
+  - csharp
+  - vb
+  name: Project.Logging
+  nameWithType: Project.Logging
+  fullName: Project.Logging
+  type: Namespace
+  assemblies:
+  - Project.Logging
+references:
+- uid: Project.Logging.BaseLogEntry
+  commentId: T:Project.Logging.BaseLogEntry
+  href: Project.Logging.BaseLogEntry.html
+  name: BaseLogEntry
+  nameWithType: BaseLogEntry
+  fullName: Project.Logging.BaseLogEntry
+- uid: Project.Logging.BaseLogIndexDefinition
+  commentId: T:Project.Logging.BaseLogIndexDefinition
+  href: Project.Logging.BaseLogIndexDefinition.html
+  name: BaseLogIndexDefinition
+  nameWithType: BaseLogIndexDefinition
+  fullName: Project.Logging.BaseLogIndexDefinition
+- uid: Project.Logging.ILogEntry
+  commentId: T:Project.Logging.ILogEntry
+  parent: Project.Logging
+  href: Project.Logging.ILogEntry.html
+  name: ILogEntry
+  nameWithType: ILogEntry
+  fullName: Project.Logging.ILogEntry
+- uid: Project.Logging.ILoggerService`1
+  commentId: T:Project.Logging.ILoggerService`1
+  href: Project.Logging.ILoggerService-1.html
+  name: ILoggerService<T>
+  nameWithType: ILoggerService<T>
+  fullName: Project.Logging.ILoggerService<T>
+  nameWithType.vb: ILoggerService(Of T)
+  fullName.vb: Project.Logging.ILoggerService(Of T)
+  name.vb: ILoggerService(Of T)
+  spec.csharp:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Project.Logging.ILoggerService`1
+    name: ILoggerService
+    href: Project.Logging.ILoggerService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Logging.ILogIndexDefinition
+  commentId: T:Project.Logging.ILogIndexDefinition
+  parent: Project.Logging
+  href: Project.Logging.ILogIndexDefinition.html
+  name: ILogIndexDefinition
+  nameWithType: ILogIndexDefinition
+  fullName: Project.Logging.ILogIndexDefinition
+- uid: Project.Logging.LogEntry
+  commentId: T:Project.Logging.LogEntry
+  parent: Project.Logging
+  href: Project.Logging.LogEntry.html
+  name: LogEntry
+  nameWithType: LogEntry
+  fullName: Project.Logging.LogEntry
+- uid: Project.Logging
+  commentId: N:Project.Logging
+  href: Project.html
+  name: Project.Logging
+  nameWithType: Project.Logging
+  fullName: Project.Logging
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html

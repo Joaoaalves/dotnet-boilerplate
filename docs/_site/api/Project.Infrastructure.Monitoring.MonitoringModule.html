@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class MonitoringModule | Project ">
       
-      
+      <meta name="description" content="Provides extension methods to register monitoring and observability features using OpenTelemetry.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Infrastructure_Monitoring_MonitoringModule" data-uid="Project.Infrastructure.Monitoring.MonitoringModule" class="text-break">
-Class MonitoringModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class MonitoringModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>Project.Infrastructure.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides extension methods to register monitoring and observability features using OpenTelemetry.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   AddMonitoringModule(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers OpenTelemetry metrics exporters and instrumentation if monitoring is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +171,15 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p>The service collection used to register services.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p>The updated <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
+</dd>
   </dl>
 
 
@@ -184,6 +188,10 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h4 class="section" id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Monitoring is conditionally enabled via the ENABLE_MONITORING environment variable.
+Metrics include ASP.NET Core, runtime, and process metrics with a Prometheus exporter.</p>
+</div>
 
 
 
@@ -192,7 +200,7 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

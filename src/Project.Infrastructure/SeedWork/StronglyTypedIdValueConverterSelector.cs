@@ -4,11 +4,15 @@ using Project.Domain.SeedWork;
 
 namespace Project.Infrastructure.SeedWork
 {
-    public class StronglyTypedIdValueConverterSelector(ValueConverterSelectorDependencies dependencies) : ValueConverterSelector(dependencies)
+    /// <summary>
+    /// A custom value converter selector for strongly-typed ID support (e.g., UserId : TypedIdValueBase).
+    /// </summary>
+    public class StronglyTypedIdValueConverterSelector(ValueConverterSelectorDependencies dependencies)
+        : ValueConverterSelector(dependencies)
     {
-        private readonly ConcurrentDictionary<(Type ModelClrType, Type ProviderClrType), ValueConverterInfo> _converters
-            = new();
+        private readonly ConcurrentDictionary<(Type, Type), ValueConverterInfo> _converters = new();
 
+        /// <inheritdoc />
         public override IEnumerable<ValueConverterInfo> Select(Type modelClrType, Type? providerClrType = null)
         {
             foreach (var converter in base.Select(modelClrType, providerClrType))

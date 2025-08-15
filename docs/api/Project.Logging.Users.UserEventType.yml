@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Logging.Users.UserEventType
+  commentId: T:Project.Logging.Users.UserEventType
+  id: UserEventType
+  parent: Project.Logging.Users
+  children:
+  - Project.Logging.Users.UserEventType.#ctor(System.String)
+  - Project.Logging.Users.UserEventType.ToString
+  - Project.Logging.Users.UserEventType.UserCreated
+  - Project.Logging.Users.UserEventType.UserLoggedIn
+  - Project.Logging.Users.UserEventType.UserPasswordReset
+  - Project.Logging.Users.UserEventType.Value
+  langs:
+  - csharp
+  - vb
+  name: UserEventType
+  nameWithType: UserEventType
+  fullName: Project.Logging.Users.UserEventType
+  type: Class
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UserEventType
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 5
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Represents a type of user-related event to be logged.
+  example: []
+  syntax:
+    content: public sealed class UserEventType
+    content.vb: Public NotInheritable Class UserEventType
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Project.Logging.Users.UserEventType.#ctor(System.String)
+  commentId: M:Project.Logging.Users.UserEventType.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Project.Logging.Users.UserEventType
+  langs:
+  - csharp
+  - vb
+  name: UserEventType(string)
+  nameWithType: UserEventType.UserEventType(string)
+  fullName: Project.Logging.Users.UserEventType.UserEventType(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 5
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Represents a type of user-related event to be logged.
+  example: []
+  syntax:
+    content: public UserEventType(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Public Sub New(value As String)
+  overload: Project.Logging.Users.UserEventType.#ctor*
+  nameWithType.vb: UserEventType.New(String)
+  fullName.vb: Project.Logging.Users.UserEventType.New(String)
+  name.vb: New(String)
+- uid: Project.Logging.Users.UserEventType.Value
+  commentId: P:Project.Logging.Users.UserEventType.Value
+  id: Value
+  parent: Project.Logging.Users.UserEventType
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: UserEventType.Value
+  fullName: Project.Logging.Users.UserEventType.Value
+  type: Property
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Value
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 10
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Gets the string value representing the event type.
+  example: []
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Project.Logging.Users.UserEventType.Value*
+- uid: Project.Logging.Users.UserEventType.UserCreated
+  commentId: P:Project.Logging.Users.UserEventType.UserCreated
+  id: UserCreated
+  parent: Project.Logging.Users.UserEventType
+  langs:
+  - csharp
+  - vb
+  name: UserCreated
+  nameWithType: UserEventType.UserCreated
+  fullName: Project.Logging.Users.UserEventType.UserCreated
+  type: Property
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UserCreated
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 15
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Gets the event type representing user creation.
+  example: []
+  syntax:
+    content: public static UserEventType UserCreated { get; }
+    parameters: []
+    return:
+      type: Project.Logging.Users.UserEventType
+    content.vb: Public Shared ReadOnly Property UserCreated As UserEventType
+  overload: Project.Logging.Users.UserEventType.UserCreated*
+- uid: Project.Logging.Users.UserEventType.UserLoggedIn
+  commentId: P:Project.Logging.Users.UserEventType.UserLoggedIn
+  id: UserLoggedIn
+  parent: Project.Logging.Users.UserEventType
+  langs:
+  - csharp
+  - vb
+  name: UserLoggedIn
+  nameWithType: UserEventType.UserLoggedIn
+  fullName: Project.Logging.Users.UserEventType.UserLoggedIn
+  type: Property
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UserLoggedIn
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 20
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Gets the event type representing user login.
+  example: []
+  syntax:
+    content: public static UserEventType UserLoggedIn { get; }
+    parameters: []
+    return:
+      type: Project.Logging.Users.UserEventType
+    content.vb: Public Shared ReadOnly Property UserLoggedIn As UserEventType
+  overload: Project.Logging.Users.UserEventType.UserLoggedIn*
+- uid: Project.Logging.Users.UserEventType.UserPasswordReset
+  commentId: P:Project.Logging.Users.UserEventType.UserPasswordReset
+  id: UserPasswordReset
+  parent: Project.Logging.Users.UserEventType
+  langs:
+  - csharp
+  - vb
+  name: UserPasswordReset
+  nameWithType: UserEventType.UserPasswordReset
+  fullName: Project.Logging.Users.UserEventType.UserPasswordReset
+  type: Property
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UserPasswordReset
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 25
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Gets the event type representing a password reset.
+  example: []
+  syntax:
+    content: public static UserEventType UserPasswordReset { get; }
+    parameters: []
+    return:
+      type: Project.Logging.Users.UserEventType
+    content.vb: Public Shared ReadOnly Property UserPasswordReset As UserEventType
+  overload: Project.Logging.Users.UserEventType.UserPasswordReset*
+- uid: Project.Logging.Users.UserEventType.ToString
+  commentId: M:Project.Logging.Users.UserEventType.ToString
+  id: ToString
+  parent: Project.Logging.Users.UserEventType
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: UserEventType.ToString()
+  fullName: Project.Logging.Users.UserEventType.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Project.Logging/Users/UserEventType.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ToString
+    path: ../src/Project.Logging/Users/UserEventType.cs
+    startLine: 31
+  assemblies:
+  - Project.Logging
+  namespace: Project.Logging.Users
+  summary: Returns the string representation of the event type.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string value of the event type.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Project.Logging.Users.UserEventType.ToString*
+references:
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  href: Project.html
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Logging.Users.UserEventType.#ctor*
+  commentId: Overload:Project.Logging.Users.UserEventType.#ctor
+  href: Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType__ctor_System_String_
+  name: UserEventType
+  nameWithType: UserEventType.UserEventType
+  fullName: Project.Logging.Users.UserEventType.UserEventType
+  nameWithType.vb: UserEventType.New
+  fullName.vb: Project.Logging.Users.UserEventType.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Logging.Users.UserEventType.Value*
+  commentId: Overload:Project.Logging.Users.UserEventType.Value
+  href: Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_Value
+  name: Value
+  nameWithType: UserEventType.Value
+  fullName: Project.Logging.Users.UserEventType.Value
+- uid: Project.Logging.Users.UserEventType.UserCreated*
+  commentId: Overload:Project.Logging.Users.UserEventType.UserCreated
+  href: Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserCreated
+  name: UserCreated
+  nameWithType: UserEventType.UserCreated
+  fullName: Project.Logging.Users.UserEventType.UserCreated
+- uid: Project.Logging.Users.UserEventType
+  commentId: T:Project.Logging.Users.UserEventType
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.UserEventType.html
+  name: UserEventType
+  nameWithType: UserEventType
+  fullName: Project.Logging.Users.UserEventType
+- uid: Project.Logging.Users.UserEventType.UserLoggedIn*
+  commentId: Overload:Project.Logging.Users.UserEventType.UserLoggedIn
+  href: Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserLoggedIn
+  name: UserLoggedIn
+  nameWithType: UserEventType.UserLoggedIn
+  fullName: Project.Logging.Users.UserEventType.UserLoggedIn
+- uid: Project.Logging.Users.UserEventType.UserPasswordReset*
+  commentId: Overload:Project.Logging.Users.UserEventType.UserPasswordReset
+  href: Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserPasswordReset
+  name: UserPasswordReset
+  nameWithType: UserEventType.UserPasswordReset
+  fullName: Project.Logging.Users.UserEventType.UserPasswordReset
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Project.Logging.Users.UserEventType.ToString*
+  commentId: Overload:Project.Logging.Users.UserEventType.ToString
+  href: Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_ToString
+  name: ToString
+  nameWithType: UserEventType.ToString
+  fullName: Project.Logging.Users.UserEventType.ToString

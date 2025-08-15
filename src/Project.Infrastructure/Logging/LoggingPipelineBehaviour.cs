@@ -8,18 +8,28 @@ using Serilog.Events;
 
 namespace Project.Infrastructure.Logging
 {
+    /// <summary>
+    /// Pipeline behavior for logging command execution within the application.
+    /// Logs execution start, success, and failure events using Serilog.
+    /// </summary>
+    /// <typeparam name="TRequest">The type of the command.</typeparam>
+    /// <typeparam name="TResponse">The type of the command response.</typeparam>
     public class LoggingPipelineBehavior<TRequest, TResponse> : IRequestPipelineBehavior<TRequest, TResponse>
         where TRequest : ICommand<TResponse>
     {
         private readonly ILogger<LoggingPipelineBehavior<TRequest, TResponse>> _logger;
         private readonly IExecutionContextAccessor _contextAccessor;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LoggingPipelineBehavior{TRequest, TResponse}"/> class.
+        /// </summary>
         public LoggingPipelineBehavior(ILogger<LoggingPipelineBehavior<TRequest, TResponse>> logger, IExecutionContextAccessor contextAccessor)
         {
             _logger = logger;
             _contextAccessor = contextAccessor;
         }
 
+        /// <inheritdoc />
         public async Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next, CancellationToken cancellationToken)
         {
             using (LogContext.Push(

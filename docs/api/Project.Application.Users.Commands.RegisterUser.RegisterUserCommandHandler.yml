@@ -5,7 +5,7 @@ items:
   id: RegisterUserCommandHandler
   parent: Project.Application.Users.Commands.RegisterUser
   children:
-  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
   - Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: RegisterUserCommandHandler
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommandHandler.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -41,16 +41,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})'
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
+  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)'
   parent: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
   langs:
   - csharp
   - vb
-  name: RegisterUserCommandHandler(UserManager<User>)
-  nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler(UserManager<User>)
-  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
+  name: RegisterUserCommandHandler(UserManager<User>, IUserLoggerService)
+  nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler(UserManager<User>, IUserLoggerService)
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Project.Logging.Users.IUserLoggerService)
   type: Constructor
   source:
     remote:
@@ -59,20 +59,22 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommandHandler.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
   syntax:
-    content: public RegisterUserCommandHandler(UserManager<User> userManager)
+    content: public RegisterUserCommandHandler(UserManager<User> userManager, IUserLoggerService userLoggerService)
     parameters:
     - id: userManager
       type: Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}
-    content.vb: Public Sub New(userManager As UserManager(Of User))
+    - id: userLoggerService
+      type: Project.Logging.Users.IUserLoggerService
+    content.vb: Public Sub New(userManager As UserManager(Of User), userLoggerService As IUserLoggerService)
   overload: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor*
-  nameWithType.vb: RegisterUserCommandHandler.New(UserManager(Of User))
-  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
-  name.vb: New(UserManager(Of User))
+  nameWithType.vb: RegisterUserCommandHandler.New(UserManager(Of User), IUserLoggerService)
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Project.Logging.Users.IUserLoggerService)
+  name.vb: New(UserManager(Of User), IUserLoggerService)
 - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)
   commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)
   id: Handle(Project.Application.Users.Commands.RegisterUser.RegisterUserCommand,System.Threading.CancellationToken)
@@ -91,7 +93,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Handle
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommandHandler.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -709,7 +711,7 @@ references:
     href: Project.Domain.SeedWork.html
 - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor*
   commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor
-  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Project_Logging_Users_IUserLoggerService_
   name: RegisterUserCommandHandler
   nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler
   fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler
@@ -747,6 +749,13 @@ references:
   - uid: Project.Domain.Users.User
     name: User
   - name: )
+- uid: Project.Logging.Users.IUserLoggerService
+  commentId: T:Project.Logging.Users.IUserLoggerService
+  parent: Project.Logging.Users
+  href: Project.Logging.Users.IUserLoggerService.html
+  name: IUserLoggerService
+  nameWithType: IUserLoggerService
+  fullName: Project.Logging.Users.IUserLoggerService
 - uid: Microsoft.AspNetCore.Identity.UserManager`1
   commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
   isExternal: true
@@ -812,6 +821,36 @@ references:
     name: Identity
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
+- uid: Project.Logging.Users
+  commentId: N:Project.Logging.Users
+  href: Project.html
+  name: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+  fullName: Project.Logging.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Logging
+    name: Logging
+    href: Project.Logging.html
+  - name: .
+  - uid: Project.Logging.Users
+    name: Users
+    href: Project.Logging.Users.html
 - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle*
   commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle
   href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler_Handle_Project_Application_Users_Commands_RegisterUser_RegisterUserCommand_System_Threading_CancellationToken_

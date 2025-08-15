@@ -133,6 +133,113 @@ references:
   fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New
   nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails
   nameWithType.vb: InvalidCommandProblemDetails.New
+- uid: Project.Api.Auth
+  name: Project.Api.Auth
+  href: api/Project.Api.Auth.html
+  commentId: N:Project.Api.Auth
+  fullName: Project.Api.Auth
+  nameWithType: Project.Api.Auth
+- uid: Project.Api.Auth.AuthModule
+  name: AuthModule
+  href: api/Project.Api.Auth.AuthModule.html
+  commentId: T:Project.Api.Auth.AuthModule
+  fullName: Project.Api.Auth.AuthModule
+  nameWithType: AuthModule
+- uid: Project.Api.Auth.AuthModule.AddAuthModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddAuthModule(IServiceCollection)
+  href: api/Project.Api.Auth.AuthModule.html#Project_Api_Auth_AuthModule_AddAuthModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Api.Auth.AuthModule.AddAuthModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Api.Auth.AuthModule.AddAuthModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: AuthModule.AddAuthModule(IServiceCollection)
+- uid: Project.Api.Auth.AuthModule.AddAuthModule*
+  name: AddAuthModule
+  href: api/Project.Api.Auth.AuthModule.html#Project_Api_Auth_AuthModule_AddAuthModule_
+  commentId: Overload:Project.Api.Auth.AuthModule.AddAuthModule
+  isSpec: "True"
+  fullName: Project.Api.Auth.AuthModule.AddAuthModule
+  nameWithType: AuthModule.AddAuthModule
+- uid: Project.Api.Auth.LoggingSignInManager
+  name: LoggingSignInManager
+  href: api/Project.Api.Auth.LoggingSignInManager.html
+  commentId: T:Project.Api.Auth.LoggingSignInManager
+  fullName: Project.Api.Auth.LoggingSignInManager
+  nameWithType: LoggingSignInManager
+- uid: Project.Api.Auth.LoggingSignInManager.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{Project.Domain.Users.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.SignInManager{Project.Domain.Users.User}},Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Identity.IUserConfirmation{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
+  name: LoggingSignInManager(UserManager<User>, IHttpContextAccessor, IUserClaimsPrincipalFactory<User>, IOptions<IdentityOptions>, ILogger<SignInManager<User>>, IAuthenticationSchemeProvider, IUserConfirmation<User>, IUserLoggerService)
+  href: api/Project.Api.Auth.LoggingSignInManager.html#Project_Api_Auth_LoggingSignInManager__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_Project_Domain_Users_User__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_SignInManager_Project_Domain_Users_User___Microsoft_AspNetCore_Authentication_IAuthenticationSchemeProvider_Microsoft_AspNetCore_Identity_IUserConfirmation_Project_Domain_Users_User__Project_Logging_Users_IUserLoggerService_
+  commentId: M:Project.Api.Auth.LoggingSignInManager.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{Project.Domain.Users.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.SignInManager{Project.Domain.Users.User}},Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Identity.IUserConfirmation{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
+  name.vb: New(UserManager(Of User), IHttpContextAccessor, IUserClaimsPrincipalFactory(Of User), IOptions(Of IdentityOptions), ILogger(Of SignInManager(Of User)), IAuthenticationSchemeProvider, IUserConfirmation(Of User), IUserLoggerService)
+  fullName: Project.Api.Auth.LoggingSignInManager.LoggingSignInManager(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory<Project.Domain.Users.User>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.SignInManager<Project.Domain.Users.User>>, Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider, Microsoft.AspNetCore.Identity.IUserConfirmation<Project.Domain.Users.User>, Project.Logging.Users.IUserLoggerService)
+  fullName.vb: Project.Api.Auth.LoggingSignInManager.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory(Of Project.Domain.Users.User), Microsoft.Extensions.Options.IOptions(Of Microsoft.AspNetCore.Identity.IdentityOptions), Microsoft.Extensions.Logging.ILogger(Of Microsoft.AspNetCore.Identity.SignInManager(Of Project.Domain.Users.User)), Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider, Microsoft.AspNetCore.Identity.IUserConfirmation(Of Project.Domain.Users.User), Project.Logging.Users.IUserLoggerService)
+  nameWithType: LoggingSignInManager.LoggingSignInManager(UserManager<User>, IHttpContextAccessor, IUserClaimsPrincipalFactory<User>, IOptions<IdentityOptions>, ILogger<SignInManager<User>>, IAuthenticationSchemeProvider, IUserConfirmation<User>, IUserLoggerService)
+  nameWithType.vb: LoggingSignInManager.New(UserManager(Of User), IHttpContextAccessor, IUserClaimsPrincipalFactory(Of User), IOptions(Of IdentityOptions), ILogger(Of SignInManager(Of User)), IAuthenticationSchemeProvider, IUserConfirmation(Of User), IUserLoggerService)
+- uid: Project.Api.Auth.LoggingSignInManager.#ctor*
+  name: LoggingSignInManager
+  href: api/Project.Api.Auth.LoggingSignInManager.html#Project_Api_Auth_LoggingSignInManager__ctor_
+  commentId: Overload:Project.Api.Auth.LoggingSignInManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Api.Auth.LoggingSignInManager.LoggingSignInManager
+  fullName.vb: Project.Api.Auth.LoggingSignInManager.New
+  nameWithType: LoggingSignInManager.LoggingSignInManager
+  nameWithType.vb: LoggingSignInManager.New
+- uid: Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync(Project.Domain.Users.User,System.String,System.Boolean)
+  name: CheckPasswordSignInAsync(User, string, bool)
+  href: api/Project.Api.Auth.LoggingSignInManager.html#Project_Api_Auth_LoggingSignInManager_CheckPasswordSignInAsync_Project_Domain_Users_User_System_String_System_Boolean_
+  commentId: M:Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync(Project.Domain.Users.User,System.String,System.Boolean)
+  name.vb: CheckPasswordSignInAsync(User, String, Boolean)
+  fullName: Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync(Project.Domain.Users.User, string, bool)
+  fullName.vb: Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync(Project.Domain.Users.User, String, Boolean)
+  nameWithType: LoggingSignInManager.CheckPasswordSignInAsync(User, string, bool)
+  nameWithType.vb: LoggingSignInManager.CheckPasswordSignInAsync(User, String, Boolean)
+- uid: Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync*
+  name: CheckPasswordSignInAsync
+  href: api/Project.Api.Auth.LoggingSignInManager.html#Project_Api_Auth_LoggingSignInManager_CheckPasswordSignInAsync_
+  commentId: Overload:Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync
+  isSpec: "True"
+  fullName: Project.Api.Auth.LoggingSignInManager.CheckPasswordSignInAsync
+  nameWithType: LoggingSignInManager.CheckPasswordSignInAsync
+- uid: Project.Api.Auth.LoggingUserManager
+  name: LoggingUserManager
+  href: api/Project.Api.Auth.LoggingUserManager.html
+  commentId: T:Project.Api.Auth.LoggingUserManager
+  fullName: Project.Api.Auth.LoggingUserManager
+  nameWithType: LoggingUserManager
+- uid: Project.Api.Auth.LoggingUserManager.#ctor(Microsoft.AspNetCore.Identity.IUserStore{Project.Domain.Users.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{Project.Domain.Users.User},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{Project.Domain.Users.User}},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{Project.Domain.Users.User}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}},Project.Logging.Users.IUserLoggerService)
+  name: LoggingUserManager(IUserStore<User>, IOptions<IdentityOptions>, IPasswordHasher<User>, IEnumerable<IUserValidator<User>>, IEnumerable<IPasswordValidator<User>>, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger<UserManager<User>>, IUserLoggerService)
+  href: api/Project.Api.Auth.LoggingUserManager.html#Project_Api_Auth_LoggingUserManager__ctor_Microsoft_AspNetCore_Identity_IUserStore_Project_Domain_Users_User__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Project_Domain_Users_User__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Project_Domain_Users_User___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Project_Domain_Users_User___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User___Project_Logging_Users_IUserLoggerService_
+  commentId: M:Project.Api.Auth.LoggingUserManager.#ctor(Microsoft.AspNetCore.Identity.IUserStore{Project.Domain.Users.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{Project.Domain.Users.User},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{Project.Domain.Users.User}},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{Project.Domain.Users.User}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}},Project.Logging.Users.IUserLoggerService)
+  name.vb: New(IUserStore(Of User), IOptions(Of IdentityOptions), IPasswordHasher(Of User), IEnumerable(Of IUserValidator(Of User)), IEnumerable(Of IPasswordValidator(Of User)), ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger(Of UserManager(Of User)), IUserLoggerService)
+  fullName: Project.Api.Auth.LoggingUserManager.LoggingUserManager(Microsoft.AspNetCore.Identity.IUserStore<Project.Domain.Users.User>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>, Microsoft.AspNetCore.Identity.IPasswordHasher<Project.Domain.Users.User>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Identity.IUserValidator<Project.Domain.Users.User>>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Identity.IPasswordValidator<Project.Domain.Users.User>>, Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, System.IServiceProvider, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>>, Project.Logging.Users.IUserLoggerService)
+  fullName.vb: Project.Api.Auth.LoggingUserManager.New(Microsoft.AspNetCore.Identity.IUserStore(Of Project.Domain.Users.User), Microsoft.Extensions.Options.IOptions(Of Microsoft.AspNetCore.Identity.IdentityOptions), Microsoft.AspNetCore.Identity.IPasswordHasher(Of Project.Domain.Users.User), System.Collections.Generic.IEnumerable(Of Microsoft.AspNetCore.Identity.IUserValidator(Of Project.Domain.Users.User)), System.Collections.Generic.IEnumerable(Of Microsoft.AspNetCore.Identity.IPasswordValidator(Of Project.Domain.Users.User)), Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, System.IServiceProvider, Microsoft.Extensions.Logging.ILogger(Of Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User)), Project.Logging.Users.IUserLoggerService)
+  nameWithType: LoggingUserManager.LoggingUserManager(IUserStore<User>, IOptions<IdentityOptions>, IPasswordHasher<User>, IEnumerable<IUserValidator<User>>, IEnumerable<IPasswordValidator<User>>, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger<UserManager<User>>, IUserLoggerService)
+  nameWithType.vb: LoggingUserManager.New(IUserStore(Of User), IOptions(Of IdentityOptions), IPasswordHasher(Of User), IEnumerable(Of IUserValidator(Of User)), IEnumerable(Of IPasswordValidator(Of User)), ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger(Of UserManager(Of User)), IUserLoggerService)
+- uid: Project.Api.Auth.LoggingUserManager.#ctor*
+  name: LoggingUserManager
+  href: api/Project.Api.Auth.LoggingUserManager.html#Project_Api_Auth_LoggingUserManager__ctor_
+  commentId: Overload:Project.Api.Auth.LoggingUserManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Api.Auth.LoggingUserManager.LoggingUserManager
+  fullName.vb: Project.Api.Auth.LoggingUserManager.New
+  nameWithType: LoggingUserManager.LoggingUserManager
+  nameWithType.vb: LoggingUserManager.New
+- uid: Project.Api.Auth.LoggingUserManager.ResetPasswordAsync(Project.Domain.Users.User,System.String,System.String)
+  name: ResetPasswordAsync(User, string, string)
+  href: api/Project.Api.Auth.LoggingUserManager.html#Project_Api_Auth_LoggingUserManager_ResetPasswordAsync_Project_Domain_Users_User_System_String_System_String_
+  commentId: M:Project.Api.Auth.LoggingUserManager.ResetPasswordAsync(Project.Domain.Users.User,System.String,System.String)
+  name.vb: ResetPasswordAsync(User, String, String)
+  fullName: Project.Api.Auth.LoggingUserManager.ResetPasswordAsync(Project.Domain.Users.User, string, string)
+  fullName.vb: Project.Api.Auth.LoggingUserManager.ResetPasswordAsync(Project.Domain.Users.User, String, String)
+  nameWithType: LoggingUserManager.ResetPasswordAsync(User, string, string)
+  nameWithType.vb: LoggingUserManager.ResetPasswordAsync(User, String, String)
+- uid: Project.Api.Auth.LoggingUserManager.ResetPasswordAsync*
+  name: ResetPasswordAsync
+  href: api/Project.Api.Auth.LoggingUserManager.html#Project_Api_Auth_LoggingUserManager_ResetPasswordAsync_
+  commentId: Overload:Project.Api.Auth.LoggingUserManager.ResetPasswordAsync
+  isSpec: "True"
+  fullName: Project.Api.Auth.LoggingUserManager.ResetPasswordAsync
+  nameWithType: LoggingUserManager.ResetPasswordAsync
 - uid: Project.Api.Configurations
   name: Project.Api.Configurations
   href: api/Project.Api.Configurations.html
@@ -986,15 +1093,15 @@ references:
   commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
   fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
   nameWithType: RegisterUserCommandHandler
-- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  name: RegisterUserCommandHandler(UserManager<User>)
-  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
-  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  name.vb: New(UserManager(Of User))
-  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
-  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
-  nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler(UserManager<User>)
-  nameWithType.vb: RegisterUserCommandHandler.New(UserManager(Of User))
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
+  name: RegisterUserCommandHandler(UserManager<User>, IUserLoggerService)
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Project_Logging_Users_IUserLoggerService_
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Logging.Users.IUserLoggerService)
+  name.vb: New(UserManager(Of User), IUserLoggerService)
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.RegisterUserCommandHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Project.Logging.Users.IUserLoggerService)
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Project.Logging.Users.IUserLoggerService)
+  nameWithType: RegisterUserCommandHandler.RegisterUserCommandHandler(UserManager<User>, IUserLoggerService)
+  nameWithType.vb: RegisterUserCommandHandler.New(UserManager(Of User), IUserLoggerService)
 - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.#ctor*
   name: RegisterUserCommandHandler
   href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandHandler__ctor_
@@ -2705,6 +2812,19 @@ references:
   commentId: T:Project.Infrastructure.Logging.LoggingModule
   fullName: Project.Infrastructure.Logging.LoggingModule
   nameWithType: LoggingModule
+- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddLogginModule(IServiceCollection)
+  href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: LoggingModule.AddLogginModule(IServiceCollection)
+- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule*
+  name: AddLogginModule
+  href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_
+  commentId: Overload:Project.Infrastructure.Logging.LoggingModule.AddLogginModule
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule
+  nameWithType: LoggingModule.AddLogginModule
 - uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   name: SetupLoggingModule(IHostBuilder)
   href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_
@@ -2764,6 +2884,165 @@ references:
   fullName.vb: Project.Infrastructure.Logging.LoggingPipelineBehavior(Of TRequest, TResponse).Handle
   nameWithType: LoggingPipelineBehavior<TRequest, TResponse>.Handle
   nameWithType.vb: LoggingPipelineBehavior(Of TRequest, TResponse).Handle
+- uid: Project.Infrastructure.Logging.Users
+  name: Project.Infrastructure.Logging.Users
+  href: api/Project.Infrastructure.Logging.Users.html
+  commentId: N:Project.Infrastructure.Logging.Users
+  fullName: Project.Infrastructure.Logging.Users
+  nameWithType: Project.Infrastructure.Logging.Users
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  name: DefaultUserLoggerService
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html
+  commentId: T:Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService
+  nameWithType: DefaultUserLoggerService
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  name: LogAsync(UserLogEntry)
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogAsync_Project_Logging_Users_UserLogEntry_
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  nameWithType: DefaultUserLoggerService.LogAsync(UserLogEntry)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync*
+  name: LogAsync
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogAsync_
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogAsync
+  nameWithType: DefaultUserLoggerService.LogAsync
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserCreated(string, Email)
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserCreated_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserCreated(String, Email)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: DefaultUserLoggerService.LogUserCreated(string, Email)
+  nameWithType.vb: DefaultUserLoggerService.LogUserCreated(String, Email)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated*
+  name: LogUserCreated
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserCreated_
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserCreated
+  nameWithType: DefaultUserLoggerService.LogUserCreated
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserLoggedIn(string, Email)
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserLoggedIn_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserLoggedIn(String, Email)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: DefaultUserLoggerService.LogUserLoggedIn(string, Email)
+  nameWithType.vb: DefaultUserLoggerService.LogUserLoggedIn(String, Email)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn*
+  name: LogUserLoggedIn
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserLoggedIn_
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserLoggedIn
+  nameWithType: DefaultUserLoggerService.LogUserLoggedIn
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserPasswordReset(string, Email)
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserPasswordReset_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserPasswordReset(String, Email)
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: DefaultUserLoggerService.LogUserPasswordReset(string, Email)
+  nameWithType.vb: DefaultUserLoggerService.LogUserPasswordReset(String, Email)
+- uid: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset*
+  name: LogUserPasswordReset
+  href: api/Project.Infrastructure.Logging.Users.DefaultUserLoggerService.html#Project_Infrastructure_Logging_Users_DefaultUserLoggerService_LogUserPasswordReset_
+  commentId: Overload:Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.DefaultUserLoggerService.LogUserPasswordReset
+  nameWithType: DefaultUserLoggerService.LogUserPasswordReset
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+  name: ElasticUserLoggerService
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html
+  commentId: T:Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService
+  nameWithType: ElasticUserLoggerService
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.#ctor(Nest.IElasticClient,Project.Logging.Users.UserLogIndexDefinition)
+  name: ElasticUserLoggerService(IElasticClient, UserLogIndexDefinition)
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService__ctor_Nest_IElasticClient_Project_Logging_Users_UserLogIndexDefinition_
+  commentId: M:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.#ctor(Nest.IElasticClient,Project.Logging.Users.UserLogIndexDefinition)
+  name.vb: New(IElasticClient, UserLogIndexDefinition)
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.ElasticUserLoggerService(Nest.IElasticClient, Project.Logging.Users.UserLogIndexDefinition)
+  fullName.vb: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.New(Nest.IElasticClient, Project.Logging.Users.UserLogIndexDefinition)
+  nameWithType: ElasticUserLoggerService.ElasticUserLoggerService(IElasticClient, UserLogIndexDefinition)
+  nameWithType.vb: ElasticUserLoggerService.New(IElasticClient, UserLogIndexDefinition)
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.#ctor*
+  name: ElasticUserLoggerService
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService__ctor_
+  commentId: Overload:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.ElasticUserLoggerService
+  fullName.vb: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.New
+  nameWithType: ElasticUserLoggerService.ElasticUserLoggerService
+  nameWithType.vb: ElasticUserLoggerService.New
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  name: LogAsync(UserLogEntry)
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogAsync_Project_Logging_Users_UserLogEntry_
+  commentId: M:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogAsync(Project.Logging.Users.UserLogEntry)
+  nameWithType: ElasticUserLoggerService.LogAsync(UserLogEntry)
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogAsync*
+  name: LogAsync
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogAsync_
+  commentId: Overload:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogAsync
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogAsync
+  nameWithType: ElasticUserLoggerService.LogAsync
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserCreated(string, Email)
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogUserCreated_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserCreated(String, Email)
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: ElasticUserLoggerService.LogUserCreated(string, Email)
+  nameWithType.vb: ElasticUserLoggerService.LogUserCreated(String, Email)
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated*
+  name: LogUserCreated
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogUserCreated_
+  commentId: Overload:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserCreated
+  nameWithType: ElasticUserLoggerService.LogUserCreated
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserLoggedIn(string, Email)
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogUserLoggedIn_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserLoggedIn(String, Email)
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: ElasticUserLoggerService.LogUserLoggedIn(string, Email)
+  nameWithType.vb: ElasticUserLoggerService.LogUserLoggedIn(String, Email)
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn*
+  name: LogUserLoggedIn
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogUserLoggedIn_
+  commentId: Overload:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserLoggedIn
+  nameWithType: ElasticUserLoggerService.LogUserLoggedIn
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserPasswordReset(string, Email)
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogUserPasswordReset_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserPasswordReset(String, Email)
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: ElasticUserLoggerService.LogUserPasswordReset(string, Email)
+  nameWithType.vb: ElasticUserLoggerService.LogUserPasswordReset(String, Email)
+- uid: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset*
+  name: LogUserPasswordReset
+  href: api/Project.Infrastructure.Logging.Users.ElasticUserLoggerService.html#Project_Infrastructure_Logging_Users_ElasticUserLoggerService_LogUserPasswordReset_
+  commentId: Overload:Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset
+  isSpec: "True"
+  fullName: Project.Infrastructure.Logging.Users.ElasticUserLoggerService.LogUserPasswordReset
+  nameWithType: ElasticUserLoggerService.LogUserPasswordReset
 - uid: Project.Infrastructure.Migrations
   name: Project.Infrastructure.Migrations
   href: api/Project.Infrastructure.Migrations.html
@@ -3254,6 +3533,495 @@ references:
   fullName.vb: Project.Infrastructure.SeedWork.TypedIdValueConverter(Of TTypedIdValue).New
   nameWithType: TypedIdValueConverter<TTypedIdValue>.TypedIdValueConverter
   nameWithType.vb: TypedIdValueConverter(Of TTypedIdValue).New
+- uid: Project.Logging
+  name: Project.Logging
+  href: api/Project.Logging.html
+  commentId: N:Project.Logging
+  fullName: Project.Logging
+  nameWithType: Project.Logging
+- uid: Project.Logging.BaseLogEntry
+  name: BaseLogEntry
+  href: api/Project.Logging.BaseLogEntry.html
+  commentId: T:Project.Logging.BaseLogEntry
+  fullName: Project.Logging.BaseLogEntry
+  nameWithType: BaseLogEntry
+- uid: Project.Logging.BaseLogEntry.#ctor(System.String,System.String,System.String)
+  name: BaseLogEntry(string, string, string)
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry__ctor_System_String_System_String_System_String_
+  commentId: M:Project.Logging.BaseLogEntry.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: Project.Logging.BaseLogEntry.BaseLogEntry(string, string, string)
+  fullName.vb: Project.Logging.BaseLogEntry.New(String, String, String)
+  nameWithType: BaseLogEntry.BaseLogEntry(string, string, string)
+  nameWithType.vb: BaseLogEntry.New(String, String, String)
+- uid: Project.Logging.BaseLogEntry.#ctor*
+  name: BaseLogEntry
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry__ctor_
+  commentId: Overload:Project.Logging.BaseLogEntry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Logging.BaseLogEntry.BaseLogEntry
+  fullName.vb: Project.Logging.BaseLogEntry.New
+  nameWithType: BaseLogEntry.BaseLogEntry
+  nameWithType.vb: BaseLogEntry.New
+- uid: Project.Logging.BaseLogEntry.Level
+  name: Level
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry_Level
+  commentId: P:Project.Logging.BaseLogEntry.Level
+  fullName: Project.Logging.BaseLogEntry.Level
+  nameWithType: BaseLogEntry.Level
+- uid: Project.Logging.BaseLogEntry.Level*
+  name: Level
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry_Level_
+  commentId: Overload:Project.Logging.BaseLogEntry.Level
+  isSpec: "True"
+  fullName: Project.Logging.BaseLogEntry.Level
+  nameWithType: BaseLogEntry.Level
+- uid: Project.Logging.BaseLogEntry.Message
+  name: Message
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry_Message
+  commentId: P:Project.Logging.BaseLogEntry.Message
+  fullName: Project.Logging.BaseLogEntry.Message
+  nameWithType: BaseLogEntry.Message
+- uid: Project.Logging.BaseLogEntry.Message*
+  name: Message
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry_Message_
+  commentId: Overload:Project.Logging.BaseLogEntry.Message
+  isSpec: "True"
+  fullName: Project.Logging.BaseLogEntry.Message
+  nameWithType: BaseLogEntry.Message
+- uid: Project.Logging.BaseLogEntry.Source
+  name: Source
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry_Source
+  commentId: P:Project.Logging.BaseLogEntry.Source
+  fullName: Project.Logging.BaseLogEntry.Source
+  nameWithType: BaseLogEntry.Source
+- uid: Project.Logging.BaseLogEntry.Source*
+  name: Source
+  href: api/Project.Logging.BaseLogEntry.html#Project_Logging_BaseLogEntry_Source_
+  commentId: Overload:Project.Logging.BaseLogEntry.Source
+  isSpec: "True"
+  fullName: Project.Logging.BaseLogEntry.Source
+  nameWithType: BaseLogEntry.Source
+- uid: Project.Logging.BaseLogIndexDefinition
+  name: BaseLogIndexDefinition
+  href: api/Project.Logging.BaseLogIndexDefinition.html
+  commentId: T:Project.Logging.BaseLogIndexDefinition
+  fullName: Project.Logging.BaseLogIndexDefinition
+  nameWithType: BaseLogIndexDefinition
+- uid: Project.Logging.BaseLogIndexDefinition.GetMapping
+  name: GetMapping()
+  href: api/Project.Logging.BaseLogIndexDefinition.html#Project_Logging_BaseLogIndexDefinition_GetMapping
+  commentId: M:Project.Logging.BaseLogIndexDefinition.GetMapping
+  fullName: Project.Logging.BaseLogIndexDefinition.GetMapping()
+  nameWithType: BaseLogIndexDefinition.GetMapping()
+- uid: Project.Logging.BaseLogIndexDefinition.GetMapping*
+  name: GetMapping
+  href: api/Project.Logging.BaseLogIndexDefinition.html#Project_Logging_BaseLogIndexDefinition_GetMapping_
+  commentId: Overload:Project.Logging.BaseLogIndexDefinition.GetMapping
+  isSpec: "True"
+  fullName: Project.Logging.BaseLogIndexDefinition.GetMapping
+  nameWithType: BaseLogIndexDefinition.GetMapping
+- uid: Project.Logging.BaseLogIndexDefinition.IndexName
+  name: IndexName
+  href: api/Project.Logging.BaseLogIndexDefinition.html#Project_Logging_BaseLogIndexDefinition_IndexName
+  commentId: P:Project.Logging.BaseLogIndexDefinition.IndexName
+  fullName: Project.Logging.BaseLogIndexDefinition.IndexName
+  nameWithType: BaseLogIndexDefinition.IndexName
+- uid: Project.Logging.BaseLogIndexDefinition.IndexName*
+  name: IndexName
+  href: api/Project.Logging.BaseLogIndexDefinition.html#Project_Logging_BaseLogIndexDefinition_IndexName_
+  commentId: Overload:Project.Logging.BaseLogIndexDefinition.IndexName
+  isSpec: "True"
+  fullName: Project.Logging.BaseLogIndexDefinition.IndexName
+  nameWithType: BaseLogIndexDefinition.IndexName
+- uid: Project.Logging.ILogEntry
+  name: ILogEntry
+  href: api/Project.Logging.ILogEntry.html
+  commentId: T:Project.Logging.ILogEntry
+  fullName: Project.Logging.ILogEntry
+  nameWithType: ILogEntry
+- uid: Project.Logging.ILogEntry.AddMetadata(System.Collections.Generic.Dictionary{System.String,System.Object})
+  name: AddMetadata(Dictionary<string, object>)
+  href: api/Project.Logging.ILogEntry.html#Project_Logging_ILogEntry_AddMetadata_System_Collections_Generic_Dictionary_System_String_System_Object__
+  commentId: M:Project.Logging.ILogEntry.AddMetadata(System.Collections.Generic.Dictionary{System.String,System.Object})
+  name.vb: AddMetadata(Dictionary(Of String, Object))
+  fullName: Project.Logging.ILogEntry.AddMetadata(System.Collections.Generic.Dictionary<string, object>)
+  fullName.vb: Project.Logging.ILogEntry.AddMetadata(System.Collections.Generic.Dictionary(Of String, Object))
+  nameWithType: ILogEntry.AddMetadata(Dictionary<string, object>)
+  nameWithType.vb: ILogEntry.AddMetadata(Dictionary(Of String, Object))
+- uid: Project.Logging.ILogEntry.AddMetadata*
+  name: AddMetadata
+  href: api/Project.Logging.ILogEntry.html#Project_Logging_ILogEntry_AddMetadata_
+  commentId: Overload:Project.Logging.ILogEntry.AddMetadata
+  isSpec: "True"
+  fullName: Project.Logging.ILogEntry.AddMetadata
+  nameWithType: ILogEntry.AddMetadata
+- uid: Project.Logging.ILogIndexDefinition
+  name: ILogIndexDefinition
+  href: api/Project.Logging.ILogIndexDefinition.html
+  commentId: T:Project.Logging.ILogIndexDefinition
+  fullName: Project.Logging.ILogIndexDefinition
+  nameWithType: ILogIndexDefinition
+- uid: Project.Logging.ILogIndexDefinition.GetMapping
+  name: GetMapping()
+  href: api/Project.Logging.ILogIndexDefinition.html#Project_Logging_ILogIndexDefinition_GetMapping
+  commentId: M:Project.Logging.ILogIndexDefinition.GetMapping
+  fullName: Project.Logging.ILogIndexDefinition.GetMapping()
+  nameWithType: ILogIndexDefinition.GetMapping()
+- uid: Project.Logging.ILogIndexDefinition.GetMapping*
+  name: GetMapping
+  href: api/Project.Logging.ILogIndexDefinition.html#Project_Logging_ILogIndexDefinition_GetMapping_
+  commentId: Overload:Project.Logging.ILogIndexDefinition.GetMapping
+  isSpec: "True"
+  fullName: Project.Logging.ILogIndexDefinition.GetMapping
+  nameWithType: ILogIndexDefinition.GetMapping
+- uid: Project.Logging.ILogIndexDefinition.IndexName
+  name: IndexName
+  href: api/Project.Logging.ILogIndexDefinition.html#Project_Logging_ILogIndexDefinition_IndexName
+  commentId: P:Project.Logging.ILogIndexDefinition.IndexName
+  fullName: Project.Logging.ILogIndexDefinition.IndexName
+  nameWithType: ILogIndexDefinition.IndexName
+- uid: Project.Logging.ILogIndexDefinition.IndexName*
+  name: IndexName
+  href: api/Project.Logging.ILogIndexDefinition.html#Project_Logging_ILogIndexDefinition_IndexName_
+  commentId: Overload:Project.Logging.ILogIndexDefinition.IndexName
+  isSpec: "True"
+  fullName: Project.Logging.ILogIndexDefinition.IndexName
+  nameWithType: ILogIndexDefinition.IndexName
+- uid: Project.Logging.ILoggerService`1
+  name: ILoggerService<T>
+  href: api/Project.Logging.ILoggerService-1.html
+  commentId: T:Project.Logging.ILoggerService`1
+  name.vb: ILoggerService(Of T)
+  fullName: Project.Logging.ILoggerService<T>
+  fullName.vb: Project.Logging.ILoggerService(Of T)
+  nameWithType: ILoggerService<T>
+  nameWithType.vb: ILoggerService(Of T)
+- uid: Project.Logging.ILoggerService`1.LogAsync(`0)
+  name: LogAsync(T)
+  href: api/Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync__0_
+  commentId: M:Project.Logging.ILoggerService`1.LogAsync(`0)
+  fullName: Project.Logging.ILoggerService<T>.LogAsync(T)
+  fullName.vb: Project.Logging.ILoggerService(Of T).LogAsync(T)
+  nameWithType: ILoggerService<T>.LogAsync(T)
+  nameWithType.vb: ILoggerService(Of T).LogAsync(T)
+- uid: Project.Logging.ILoggerService`1.LogAsync*
+  name: LogAsync
+  href: api/Project.Logging.ILoggerService-1.html#Project_Logging_ILoggerService_1_LogAsync_
+  commentId: Overload:Project.Logging.ILoggerService`1.LogAsync
+  isSpec: "True"
+  fullName: Project.Logging.ILoggerService<T>.LogAsync
+  fullName.vb: Project.Logging.ILoggerService(Of T).LogAsync
+  nameWithType: ILoggerService<T>.LogAsync
+  nameWithType.vb: ILoggerService(Of T).LogAsync
+- uid: Project.Logging.LogEntry
+  name: LogEntry
+  href: api/Project.Logging.LogEntry.html
+  commentId: T:Project.Logging.LogEntry
+  fullName: Project.Logging.LogEntry
+  nameWithType: LogEntry
+- uid: Project.Logging.LogEntry.AddMetadata(System.Collections.Generic.Dictionary{System.String,System.Object})
+  name: AddMetadata(Dictionary<string, object>)
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_AddMetadata_System_Collections_Generic_Dictionary_System_String_System_Object__
+  commentId: M:Project.Logging.LogEntry.AddMetadata(System.Collections.Generic.Dictionary{System.String,System.Object})
+  name.vb: AddMetadata(Dictionary(Of String, Object))
+  fullName: Project.Logging.LogEntry.AddMetadata(System.Collections.Generic.Dictionary<string, object>)
+  fullName.vb: Project.Logging.LogEntry.AddMetadata(System.Collections.Generic.Dictionary(Of String, Object))
+  nameWithType: LogEntry.AddMetadata(Dictionary<string, object>)
+  nameWithType.vb: LogEntry.AddMetadata(Dictionary(Of String, Object))
+- uid: Project.Logging.LogEntry.AddMetadata*
+  name: AddMetadata
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_AddMetadata_
+  commentId: Overload:Project.Logging.LogEntry.AddMetadata
+  isSpec: "True"
+  fullName: Project.Logging.LogEntry.AddMetadata
+  nameWithType: LogEntry.AddMetadata
+- uid: Project.Logging.LogEntry.Id
+  name: Id
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_Id
+  commentId: P:Project.Logging.LogEntry.Id
+  fullName: Project.Logging.LogEntry.Id
+  nameWithType: LogEntry.Id
+- uid: Project.Logging.LogEntry.Id*
+  name: Id
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_Id_
+  commentId: Overload:Project.Logging.LogEntry.Id
+  isSpec: "True"
+  fullName: Project.Logging.LogEntry.Id
+  nameWithType: LogEntry.Id
+- uid: Project.Logging.LogEntry.Metadata
+  name: Metadata
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_Metadata
+  commentId: P:Project.Logging.LogEntry.Metadata
+  fullName: Project.Logging.LogEntry.Metadata
+  nameWithType: LogEntry.Metadata
+- uid: Project.Logging.LogEntry.Metadata*
+  name: Metadata
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_Metadata_
+  commentId: Overload:Project.Logging.LogEntry.Metadata
+  isSpec: "True"
+  fullName: Project.Logging.LogEntry.Metadata
+  nameWithType: LogEntry.Metadata
+- uid: Project.Logging.LogEntry.Timestamp
+  name: Timestamp
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_Timestamp
+  commentId: P:Project.Logging.LogEntry.Timestamp
+  fullName: Project.Logging.LogEntry.Timestamp
+  nameWithType: LogEntry.Timestamp
+- uid: Project.Logging.LogEntry.Timestamp*
+  name: Timestamp
+  href: api/Project.Logging.LogEntry.html#Project_Logging_LogEntry_Timestamp_
+  commentId: Overload:Project.Logging.LogEntry.Timestamp
+  isSpec: "True"
+  fullName: Project.Logging.LogEntry.Timestamp
+  nameWithType: LogEntry.Timestamp
+- uid: Project.Logging.Users
+  name: Project.Logging.Users
+  href: api/Project.Logging.Users.html
+  commentId: N:Project.Logging.Users
+  fullName: Project.Logging.Users
+  nameWithType: Project.Logging.Users
+- uid: Project.Logging.Users.IUserLoggerService
+  name: IUserLoggerService
+  href: api/Project.Logging.Users.IUserLoggerService.html
+  commentId: T:Project.Logging.Users.IUserLoggerService
+  fullName: Project.Logging.Users.IUserLoggerService
+  nameWithType: IUserLoggerService
+- uid: Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserCreated(string, Email)
+  href: api/Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserCreated_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserCreated(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserCreated(String, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserCreated(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserCreated(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: IUserLoggerService.LogUserCreated(string, Email)
+  nameWithType.vb: IUserLoggerService.LogUserCreated(String, Email)
+- uid: Project.Logging.Users.IUserLoggerService.LogUserCreated*
+  name: LogUserCreated
+  href: api/Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserCreated_
+  commentId: Overload:Project.Logging.Users.IUserLoggerService.LogUserCreated
+  isSpec: "True"
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserCreated
+  nameWithType: IUserLoggerService.LogUserCreated
+- uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserLoggedIn(string, Email)
+  href: api/Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserLoggedIn_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserLoggedIn(String, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: IUserLoggerService.LogUserLoggedIn(string, Email)
+  nameWithType.vb: IUserLoggerService.LogUserLoggedIn(String, Email)
+- uid: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn*
+  name: LogUserLoggedIn
+  href: api/Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserLoggedIn_
+  commentId: Overload:Project.Logging.Users.IUserLoggerService.LogUserLoggedIn
+  isSpec: "True"
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserLoggedIn
+  nameWithType: IUserLoggerService.LogUserLoggedIn
+- uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  name: LogUserPasswordReset(string, Email)
+  href: api/Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserPasswordReset_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: LogUserPasswordReset(String, Email)
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(string, Project.Domain.SharedKernel.Users.Email)
+  fullName.vb: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset(String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: IUserLoggerService.LogUserPasswordReset(string, Email)
+  nameWithType.vb: IUserLoggerService.LogUserPasswordReset(String, Email)
+- uid: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset*
+  name: LogUserPasswordReset
+  href: api/Project.Logging.Users.IUserLoggerService.html#Project_Logging_Users_IUserLoggerService_LogUserPasswordReset_
+  commentId: Overload:Project.Logging.Users.IUserLoggerService.LogUserPasswordReset
+  isSpec: "True"
+  fullName: Project.Logging.Users.IUserLoggerService.LogUserPasswordReset
+  nameWithType: IUserLoggerService.LogUserPasswordReset
+- uid: Project.Logging.Users.UserEventType
+  name: UserEventType
+  href: api/Project.Logging.Users.UserEventType.html
+  commentId: T:Project.Logging.Users.UserEventType
+  fullName: Project.Logging.Users.UserEventType
+  nameWithType: UserEventType
+- uid: Project.Logging.Users.UserEventType.#ctor(System.String)
+  name: UserEventType(string)
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType__ctor_System_String_
+  commentId: M:Project.Logging.Users.UserEventType.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Project.Logging.Users.UserEventType.UserEventType(string)
+  fullName.vb: Project.Logging.Users.UserEventType.New(String)
+  nameWithType: UserEventType.UserEventType(string)
+  nameWithType.vb: UserEventType.New(String)
+- uid: Project.Logging.Users.UserEventType.#ctor*
+  name: UserEventType
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType__ctor_
+  commentId: Overload:Project.Logging.Users.UserEventType.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Logging.Users.UserEventType.UserEventType
+  fullName.vb: Project.Logging.Users.UserEventType.New
+  nameWithType: UserEventType.UserEventType
+  nameWithType.vb: UserEventType.New
+- uid: Project.Logging.Users.UserEventType.ToString
+  name: ToString()
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_ToString
+  commentId: M:Project.Logging.Users.UserEventType.ToString
+  fullName: Project.Logging.Users.UserEventType.ToString()
+  nameWithType: UserEventType.ToString()
+- uid: Project.Logging.Users.UserEventType.ToString*
+  name: ToString
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_ToString_
+  commentId: Overload:Project.Logging.Users.UserEventType.ToString
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserEventType.ToString
+  nameWithType: UserEventType.ToString
+- uid: Project.Logging.Users.UserEventType.UserCreated
+  name: UserCreated
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserCreated
+  commentId: P:Project.Logging.Users.UserEventType.UserCreated
+  fullName: Project.Logging.Users.UserEventType.UserCreated
+  nameWithType: UserEventType.UserCreated
+- uid: Project.Logging.Users.UserEventType.UserCreated*
+  name: UserCreated
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserCreated_
+  commentId: Overload:Project.Logging.Users.UserEventType.UserCreated
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserEventType.UserCreated
+  nameWithType: UserEventType.UserCreated
+- uid: Project.Logging.Users.UserEventType.UserLoggedIn
+  name: UserLoggedIn
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserLoggedIn
+  commentId: P:Project.Logging.Users.UserEventType.UserLoggedIn
+  fullName: Project.Logging.Users.UserEventType.UserLoggedIn
+  nameWithType: UserEventType.UserLoggedIn
+- uid: Project.Logging.Users.UserEventType.UserLoggedIn*
+  name: UserLoggedIn
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserLoggedIn_
+  commentId: Overload:Project.Logging.Users.UserEventType.UserLoggedIn
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserEventType.UserLoggedIn
+  nameWithType: UserEventType.UserLoggedIn
+- uid: Project.Logging.Users.UserEventType.UserPasswordReset
+  name: UserPasswordReset
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserPasswordReset
+  commentId: P:Project.Logging.Users.UserEventType.UserPasswordReset
+  fullName: Project.Logging.Users.UserEventType.UserPasswordReset
+  nameWithType: UserEventType.UserPasswordReset
+- uid: Project.Logging.Users.UserEventType.UserPasswordReset*
+  name: UserPasswordReset
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_UserPasswordReset_
+  commentId: Overload:Project.Logging.Users.UserEventType.UserPasswordReset
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserEventType.UserPasswordReset
+  nameWithType: UserEventType.UserPasswordReset
+- uid: Project.Logging.Users.UserEventType.Value
+  name: Value
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_Value
+  commentId: P:Project.Logging.Users.UserEventType.Value
+  fullName: Project.Logging.Users.UserEventType.Value
+  nameWithType: UserEventType.Value
+- uid: Project.Logging.Users.UserEventType.Value*
+  name: Value
+  href: api/Project.Logging.Users.UserEventType.html#Project_Logging_Users_UserEventType_Value_
+  commentId: Overload:Project.Logging.Users.UserEventType.Value
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserEventType.Value
+  nameWithType: UserEventType.Value
+- uid: Project.Logging.Users.UserLogEntry
+  name: UserLogEntry
+  href: api/Project.Logging.Users.UserLogEntry.html
+  commentId: T:Project.Logging.Users.UserLogEntry
+  fullName: Project.Logging.Users.UserLogEntry
+  nameWithType: UserLogEntry
+- uid: Project.Logging.Users.UserLogEntry.#ctor(Project.Logging.Users.UserEventType,System.String,Project.Domain.SharedKernel.Users.Email)
+  name: UserLogEntry(UserEventType, string, Email?)
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry__ctor_Project_Logging_Users_UserEventType_System_String_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Logging.Users.UserLogEntry.#ctor(Project.Logging.Users.UserEventType,System.String,Project.Domain.SharedKernel.Users.Email)
+  name.vb: New(UserEventType, String, Email)
+  fullName: Project.Logging.Users.UserLogEntry.UserLogEntry(Project.Logging.Users.UserEventType, string, Project.Domain.SharedKernel.Users.Email?)
+  fullName.vb: Project.Logging.Users.UserLogEntry.New(Project.Logging.Users.UserEventType, String, Project.Domain.SharedKernel.Users.Email)
+  nameWithType: UserLogEntry.UserLogEntry(UserEventType, string, Email?)
+  nameWithType.vb: UserLogEntry.New(UserEventType, String, Email)
+- uid: Project.Logging.Users.UserLogEntry.#ctor*
+  name: UserLogEntry
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry__ctor_
+  commentId: Overload:Project.Logging.Users.UserLogEntry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Logging.Users.UserLogEntry.UserLogEntry
+  fullName.vb: Project.Logging.Users.UserLogEntry.New
+  nameWithType: UserLogEntry.UserLogEntry
+  nameWithType.vb: UserLogEntry.New
+- uid: Project.Logging.Users.UserLogEntry.Email
+  name: Email
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry_Email
+  commentId: P:Project.Logging.Users.UserLogEntry.Email
+  fullName: Project.Logging.Users.UserLogEntry.Email
+  nameWithType: UserLogEntry.Email
+- uid: Project.Logging.Users.UserLogEntry.Email*
+  name: Email
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry_Email_
+  commentId: Overload:Project.Logging.Users.UserLogEntry.Email
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserLogEntry.Email
+  nameWithType: UserLogEntry.Email
+- uid: Project.Logging.Users.UserLogEntry.EventType
+  name: EventType
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry_EventType
+  commentId: P:Project.Logging.Users.UserLogEntry.EventType
+  fullName: Project.Logging.Users.UserLogEntry.EventType
+  nameWithType: UserLogEntry.EventType
+- uid: Project.Logging.Users.UserLogEntry.EventType*
+  name: EventType
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry_EventType_
+  commentId: Overload:Project.Logging.Users.UserLogEntry.EventType
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserLogEntry.EventType
+  nameWithType: UserLogEntry.EventType
+- uid: Project.Logging.Users.UserLogEntry.UserId
+  name: UserId
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry_UserId
+  commentId: P:Project.Logging.Users.UserLogEntry.UserId
+  fullName: Project.Logging.Users.UserLogEntry.UserId
+  nameWithType: UserLogEntry.UserId
+- uid: Project.Logging.Users.UserLogEntry.UserId*
+  name: UserId
+  href: api/Project.Logging.Users.UserLogEntry.html#Project_Logging_Users_UserLogEntry_UserId_
+  commentId: Overload:Project.Logging.Users.UserLogEntry.UserId
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserLogEntry.UserId
+  nameWithType: UserLogEntry.UserId
+- uid: Project.Logging.Users.UserLogIndexDefinition
+  name: UserLogIndexDefinition
+  href: api/Project.Logging.Users.UserLogIndexDefinition.html
+  commentId: T:Project.Logging.Users.UserLogIndexDefinition
+  fullName: Project.Logging.Users.UserLogIndexDefinition
+  nameWithType: UserLogIndexDefinition
+- uid: Project.Logging.Users.UserLogIndexDefinition.GetMapping
+  name: GetMapping()
+  href: api/Project.Logging.Users.UserLogIndexDefinition.html#Project_Logging_Users_UserLogIndexDefinition_GetMapping
+  commentId: M:Project.Logging.Users.UserLogIndexDefinition.GetMapping
+  fullName: Project.Logging.Users.UserLogIndexDefinition.GetMapping()
+  nameWithType: UserLogIndexDefinition.GetMapping()
+- uid: Project.Logging.Users.UserLogIndexDefinition.GetMapping*
+  name: GetMapping
+  href: api/Project.Logging.Users.UserLogIndexDefinition.html#Project_Logging_Users_UserLogIndexDefinition_GetMapping_
+  commentId: Overload:Project.Logging.Users.UserLogIndexDefinition.GetMapping
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserLogIndexDefinition.GetMapping
+  nameWithType: UserLogIndexDefinition.GetMapping
+- uid: Project.Logging.Users.UserLogIndexDefinition.IndexName
+  name: IndexName
+  href: api/Project.Logging.Users.UserLogIndexDefinition.html#Project_Logging_Users_UserLogIndexDefinition_IndexName
+  commentId: P:Project.Logging.Users.UserLogIndexDefinition.IndexName
+  fullName: Project.Logging.Users.UserLogIndexDefinition.IndexName
+  nameWithType: UserLogIndexDefinition.IndexName
+- uid: Project.Logging.Users.UserLogIndexDefinition.IndexName*
+  name: IndexName
+  href: api/Project.Logging.Users.UserLogIndexDefinition.html#Project_Logging_Users_UserLogIndexDefinition_IndexName_
+  commentId: Overload:Project.Logging.Users.UserLogIndexDefinition.IndexName
+  isSpec: "True"
+  fullName: Project.Logging.Users.UserLogIndexDefinition.IndexName
+  nameWithType: UserLogIndexDefinition.IndexName
 - uid: Project.Tests
   name: Project.Tests
   href: api/Project.Tests.html

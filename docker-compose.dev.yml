@@ -191,7 +191,7 @@ services:
       - "--form"
       - "file=@/import/export.ndjson"
     volumes:
-      - ./observability/kibana/dashboard.ndjson:/import/export.ndjson:ro
+      - ./observability/kibana/export.ndjson:/import/export.ndjson:ro
     depends_on:
       kibana:
         condition: service_healthy

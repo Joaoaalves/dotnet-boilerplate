@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ConfigurationsModule | Project ">
       
-      
+      <meta name="description" content="Provides extension methods to register configuration-related services in the application&#39;s dependency injection container.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Api_Configurations_ConfigurationsModule" data-uid="Project.Api.Configurations.ConfigurationsModule" class="text-break">
-Class ConfigurationsModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Configurations/ConfigurationsModule.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class ConfigurationsModule  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Configurations/ConfigurationsModule.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class ConfigurationsModule  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>Project.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides extension methods to register configuration-related services in the application's dependency injection container.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class ConfigurationsModule  <a class="header-action link-secondary" title="View 
 
   <h3 id="Project_Api_Configurations_ConfigurationsModule_AddConfigurations_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Api.Configurations.ConfigurationsModule.AddConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
   AddConfigurations(IServiceCollection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Configurations/ConfigurationsModule.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Configurations/ConfigurationsModule.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers application configuration services such as the <a class="xref" href="Project.Application.Configuration.IExecutionContextAccessor.html">IExecutionContextAccessor</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +171,15 @@ Class ConfigurationsModule  <a class="header-action link-secondary" title="View 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> to which the services will be added.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
-    <dd></dd>
+    <dd><p>The updated <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> instance.</p>
+</dd>
   </dl>
 
 
@@ -184,6 +188,10 @@ Class ConfigurationsModule  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="Project_Api_Configurations_ConfigurationsModule_AddConfigurations_Microsoft_Extensions_DependencyInjection_IServiceCollection__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method ensures that infrastructure-level dependencies used for accessing execution context
+(e.g., current user or request context) are properly registered.</p>
+</div>
 
 
 
@@ -192,7 +200,7 @@ Class ConfigurationsModule  <a class="header-action link-secondary" title="View 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Configurations/ConfigurationsModule.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Api/Configurations/ConfigurationsModule.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 
