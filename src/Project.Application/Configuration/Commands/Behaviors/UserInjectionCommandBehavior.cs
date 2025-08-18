@@ -3,13 +3,14 @@ using Microsoft.AspNetCore.Http;
 using Project.Domain.SeedWork;
 
 using Project.Application.Users;
+using Project.Application.Configuration.Commands;
 
 namespace Project.Application.Configuration.Commands.Behaviors
 {
     public class UserInjectionCommandBehavior<TCommand, TResult>(
         IHttpContextAccessor httpContextAccessor,
         IUserRepository userRepository)
-        : ICommandPipelineBehavior<TCommand, TResult>
+        : ICommandPipelineBehaviour<TCommand, TResult>
         where TCommand : ICommand<TResult>
     {
         private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
@@ -18,7 +19,8 @@ namespace Project.Application.Configuration.Commands.Behaviors
         public async Task<TResult> Handle(
             TCommand command,
             Func<TCommand, Task<TResult>> next,
-            CancellationToken cancellationToken)
+            CancellationToken cancellationToken
+        )
         {
             if (command is IUserAware userAware)
             {
@@ -35,5 +37,7 @@ namespace Project.Application.Configuration.Commands.Behaviors
 
             return await next(command);
         }
+
+
     }
 }

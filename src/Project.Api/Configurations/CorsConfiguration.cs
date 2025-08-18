@@ -1,4 +1,4 @@
-namespace Project.API.Configurations
+namespace Project.Api.Configurations
 {
     /// <summary>
     /// Provides CORS configuration methods for the application.

@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Unit.Domain.UsersTests
+  commentId: N:Project.Tests.Unit.Domain.UsersTests
+  id: Project.Tests.Unit.Domain.UsersTests
+  children:
+  - Project.Tests.Unit.Domain.UsersTests.EmailTests
+  - Project.Tests.Unit.Domain.UsersTests.NameTests
+  - Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  - Project.Tests.Unit.Domain.UsersTests.UserTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.Unit.Domain.UsersTests
+  nameWithType: Project.Tests.Unit.Domain.UsersTests
+  fullName: Project.Tests.Unit.Domain.UsersTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.Unit
+references:
+- uid: Project.Tests.Unit.Domain.UsersTests.EmailTests
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.EmailTests
+  href: Project.Tests.Unit.Domain.UsersTests.EmailTests.html
+  name: EmailTests
+  nameWithType: EmailTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.EmailTests
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.NameTests
+  href: Project.Tests.Unit.Domain.UsersTests.NameTests.html
+  name: NameTests
+  nameWithType: NameTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests
+- uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  href: Project.Tests.Unit.Domain.UsersTests.UserNameTests.html
+  name: UserNameTests
+  nameWithType: UserNameTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserNameTests
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.UserTests
+  href: Project.Tests.Unit.Domain.UsersTests.UserTests.html
+  name: UserTests
+  nameWithType: UserTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests

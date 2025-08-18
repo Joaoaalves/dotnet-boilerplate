@@ -5,7 +5,7 @@ items:
   id: GetUserDetailsQueryHandler
   parent: Project.Application.Users.Queries.GetUserDetails
   children:
-  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
+  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Project.Application.Users.IUserRepository)
   - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)
   langs:
   - csharp
@@ -21,12 +21,12 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetUserDetailsQueryHandler
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs
-    startLine: 9
+    startLine: 5
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
   syntax:
-    content: 'public class GetUserDetailsQueryHandler : IQueryHandler<GetUserDetailsQuery, UserDetailsDTO>, IRequestHandler<GetUserDetailsQuery, UserDetailsDTO>'
+    content: 'public class GetUserDetailsQueryHandler : IQueryHandler<GetUserDetailsQuery, UserDetailsDTO?>, IRequestHandler<GetUserDetailsQuery, UserDetailsDTO?>'
     content.vb: Public Class GetUserDetailsQueryHandler Implements IQueryHandler(Of GetUserDetailsQuery, UserDetailsDTO), IRequestHandler(Of GetUserDetailsQuery, UserDetailsDTO)
   inheritance:
   - System.Object
@@ -41,16 +41,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})'
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Project.Application.Users.IUserRepository)
+  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Project.Application.Users.IUserRepository)
+  id: '#ctor(Project.Application.Users.IUserRepository)'
   parent: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
   langs:
   - csharp
   - vb
-  name: GetUserDetailsQueryHandler(UserManager<User>)
-  nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(UserManager<User>)
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
+  name: GetUserDetailsQueryHandler(IUserRepository)
+  nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(IUserRepository)
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(Project.Application.Users.IUserRepository)
   type: Constructor
   source:
     remote:
@@ -59,20 +59,20 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs
-    startLine: 9
+    startLine: 5
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
   syntax:
-    content: public GetUserDetailsQueryHandler(UserManager<User> userManager)
+    content: public GetUserDetailsQueryHandler(IUserRepository userRepository)
     parameters:
-    - id: userManager
-      type: Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}
-    content.vb: Public Sub New(userManager As UserManager(Of User))
+    - id: userRepository
+      type: Project.Application.Users.IUserRepository
+    content.vb: Public Sub New(userRepository As IUserRepository)
   overload: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor*
-  nameWithType.vb: GetUserDetailsQueryHandler.New(UserManager(Of User))
-  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
-  name.vb: New(UserManager(Of User))
+  nameWithType.vb: GetUserDetailsQueryHandler.New(IUserRepository)
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New(Project.Application.Users.IUserRepository)
+  name.vb: New(IUserRepository)
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)
   commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)
   id: Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)
@@ -91,13 +91,13 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Handle
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs
-    startLine: 15
+    startLine: 11
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
   example: []
   syntax:
-    content: public Task<UserDetailsDTO> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
+    content: public Task<UserDetailsDTO?> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
     parameters:
     - id: request
       type: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
@@ -605,109 +605,50 @@ references:
     href: Project.Domain.SeedWork.html
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor*
   commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor
-  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
+  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Project_Application_Users_IUserRepository_
   name: GetUserDetailsQueryHandler
   nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler
   fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler
   nameWithType.vb: GetUserDetailsQueryHandler.New
   fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New
   name.vb: New
-- uid: Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}
-  commentId: T:Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}
-  parent: Microsoft.AspNetCore.Identity
-  definition: Microsoft.AspNetCore.Identity.UserManager`1
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
-  name: UserManager<User>
-  nameWithType: UserManager<User>
-  fullName: Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>
-  nameWithType.vb: UserManager(Of User)
-  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User)
-  name.vb: UserManager(Of User)
+- uid: Project.Application.Users.IUserRepository
+  commentId: T:Project.Application.Users.IUserRepository
+  parent: Project.Application.Users
+  href: Project.Application.Users.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Project.Application.Users.IUserRepository
+- uid: Project.Application.Users
+  commentId: N:Project.Application.Users
+  href: Project.html
+  name: Project.Application.Users
+  nameWithType: Project.Application.Users
+  fullName: Project.Application.Users
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Identity.UserManager`1
-    name: UserManager
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
-  - name: <
-  - uid: Project.Domain.Users.User
-    name: User
-  - name: '>'
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
   spec.vb:
-  - uid: Microsoft.AspNetCore.Identity.UserManager`1
-    name: UserManager
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Project.Domain.Users.User
-    name: User
-  - name: )
-- uid: Microsoft.AspNetCore.Identity.UserManager`1
-  commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
-  name: UserManager<TUser>
-  nameWithType: UserManager<TUser>
-  fullName: Microsoft.AspNetCore.Identity.UserManager<TUser>
-  nameWithType.vb: UserManager(Of TUser)
-  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of TUser)
-  name.vb: UserManager(Of TUser)
-  spec.csharp:
-  - uid: Microsoft.AspNetCore.Identity.UserManager`1
-    name: UserManager
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
-  - name: <
-  - name: TUser
-  - name: '>'
-  spec.vb:
-  - uid: Microsoft.AspNetCore.Identity.UserManager`1
-    name: UserManager
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TUser
-  - name: )
-- uid: Microsoft.AspNetCore.Identity
-  commentId: N:Microsoft.AspNetCore.Identity
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft
-  name: Microsoft.AspNetCore.Identity
-  nameWithType: Microsoft.AspNetCore.Identity
-  fullName: Microsoft.AspNetCore.Identity
-  spec.csharp:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - uid: Project
+    name: Project
+    href: Project.html
   - name: .
-  - uid: Microsoft.AspNetCore
-    name: AspNetCore
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
   - name: .
-  - uid: Microsoft.AspNetCore.Identity
-    name: Identity
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
-  spec.vb:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.AspNetCore
-    name: AspNetCore
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
-  - name: .
-  - uid: Microsoft.AspNetCore.Identity
-    name: Identity
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle*
   commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle
   href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler_Handle_Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_System_Threading_CancellationToken_

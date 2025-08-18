@@ -22,13 +22,13 @@ namespace Project.Infrastructure.Logging
         /// Registers a default or Elasticsearch-based implementation of <see cref="IUserLoggerService"/>,
         /// based on the ENABLE_LOGGING environment variable.
         /// </remarks>
-        public static IServiceCollection AddLogginModule(this IServiceCollection services)
+        public static IServiceCollection AddLogginModule(this IServiceCollection services, IHostEnvironment env)
         {
             services.AddSingleton<UserLogIndexDefinition>();
 
             var isLogginEnabled = Environment.GetEnvironmentVariable("ENABLE_LOGGING");
 
-            if (isLogginEnabled is null || isLogginEnabled != "true")
+            if (env.IsEnvironment("Testing") || isLogginEnabled is null || isLogginEnabled != "true")
             {
                 services.AddSingleton<IUserLoggerService, DefaultUserLoggerService>();
                 return services;

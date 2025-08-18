@@ -5,7 +5,7 @@ items:
   id: UserRepository
   parent: Project.Infrastructure.Domain.Users
   children:
-  - Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
+  - Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.EntityFrameworkCore.DbContext)
   - Project.Infrastructure.Domain.Users.UserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
   - Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User,System.String)
   - Project.Infrastructure.Domain.Users.UserRepository.DeleteAsync(System.String)
@@ -27,7 +27,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UserRepository
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -48,16 +48,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
-  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
-  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)'
+- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.EntityFrameworkCore.DbContext)
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.EntityFrameworkCore.DbContext)
+  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.EntityFrameworkCore.DbContext)'
   parent: Project.Infrastructure.Domain.Users.UserRepository
   langs:
   - csharp
   - vb
-  name: UserRepository(UserManager<User>, ApplicationDbContext)
-  nameWithType: UserRepository.UserRepository(UserManager<User>, ApplicationDbContext)
-  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Project.Infrastructure.Database.ApplicationDbContext)
+  name: UserRepository(UserManager<User>, DbContext)
+  nameWithType: UserRepository.UserRepository(UserManager<User>, DbContext)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Microsoft.EntityFrameworkCore.DbContext)
   type: Constructor
   source:
     remote:
@@ -66,24 +66,24 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
   summary: Provides an implementation of <xref href="Project.Application.Users.IUserRepository" data-throw-if-not-resolved="false"></xref> using Entity Framework Core and ASP.NET Identity.
   example: []
   syntax:
-    content: public UserRepository(UserManager<User> userManager, ApplicationDbContext applicationDbContext)
+    content: public UserRepository(UserManager<User> userManager, DbContext applicationDbContext)
     parameters:
     - id: userManager
       type: Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User}
     - id: applicationDbContext
-      type: Project.Infrastructure.Database.ApplicationDbContext
-    content.vb: Public Sub New(userManager As UserManager(Of User), applicationDbContext As ApplicationDbContext)
+      type: Microsoft.EntityFrameworkCore.DbContext
+    content.vb: Public Sub New(userManager As UserManager(Of User), applicationDbContext As DbContext)
   overload: Project.Infrastructure.Domain.Users.UserRepository.#ctor*
-  nameWithType.vb: UserRepository.New(UserManager(Of User), ApplicationDbContext)
-  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Project.Infrastructure.Database.ApplicationDbContext)
-  name.vb: New(UserManager(Of User), ApplicationDbContext)
+  nameWithType.vb: UserRepository.New(UserManager(Of User), DbContext)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Microsoft.EntityFrameworkCore.DbContext)
+  name.vb: New(UserManager(Of User), DbContext)
 - uid: Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User,System.String)
   commentId: M:Project.Infrastructure.Domain.Users.UserRepository.CreateAsync(Project.Domain.Users.User,System.String)
   id: CreateAsync(Project.Domain.Users.User,System.String)
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CreateAsync
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -145,7 +145,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: DeleteAsync
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -185,7 +185,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetByEmailAsync
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -225,7 +225,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetByIdAsync
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -265,7 +265,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetUserByUsernameAsync
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -305,7 +305,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UpdateAsync
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -342,7 +342,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CheckPassowrd
     path: ../src/Project.Infrastructure/Domain/Users/UserRepository.cs
-    startLine: 64
+    startLine: 65
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain.Users
@@ -682,7 +682,7 @@ references:
   fullName: System
 - uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor*
   commentId: Overload:Project.Infrastructure.Domain.Users.UserRepository.#ctor
-  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Project_Infrastructure_Database_ApplicationDbContext_
+  href: Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Microsoft_EntityFrameworkCore_DbContext_
   name: UserRepository
   nameWithType: UserRepository.UserRepository
   fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository
@@ -720,13 +720,14 @@ references:
   - uid: Project.Domain.Users.User
     name: User
   - name: )
-- uid: Project.Infrastructure.Database.ApplicationDbContext
-  commentId: T:Project.Infrastructure.Database.ApplicationDbContext
-  parent: Project.Infrastructure.Database
-  href: Project.Infrastructure.Database.ApplicationDbContext.html
-  name: ApplicationDbContext
-  nameWithType: ApplicationDbContext
-  fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Microsoft.EntityFrameworkCore.DbContext
+  commentId: T:Microsoft.EntityFrameworkCore.DbContext
+  parent: Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext
+  name: DbContext
+  nameWithType: DbContext
+  fullName: Microsoft.EntityFrameworkCore.DbContext
 - uid: Microsoft.AspNetCore.Identity.UserManager`1
   commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
   isExternal: true
@@ -792,36 +793,33 @@ references:
     name: Identity
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
-- uid: Project.Infrastructure.Database
-  commentId: N:Project.Infrastructure.Database
-  href: Project.html
-  name: Project.Infrastructure.Database
-  nameWithType: Project.Infrastructure.Database
-  fullName: Project.Infrastructure.Database
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
   spec.csharp:
-  - uid: Project
-    name: Project
-    href: Project.html
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
-  - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
   spec.vb:
-  - uid: Project
-    name: Project
-    href: Project.html
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
-  - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
 - uid: Microsoft.AspNetCore.Identity.IdentityResult
   commentId: T:Microsoft.AspNetCore.Identity.IdentityResult
   isExternal: true

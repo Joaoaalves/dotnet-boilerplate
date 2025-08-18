@@ -21,20 +21,20 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UserInjectionCommandBehavior
     path: ../src/Project.Application/Configuration/Commands/Behaviors/UserInjectionCommandBehavior.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Project.Application
   namespace: Project.Application.Configuration.Commands.Behaviors
   syntax:
-    content: 'public class UserInjectionCommandBehavior<TCommand, TResult> : ICommandPipelineBehavior<TCommand, TResult> where TCommand : ICommand<TResult>'
+    content: 'public class UserInjectionCommandBehavior<TCommand, TResult> : ICommandPipelineBehaviour<TCommand, TResult> where TCommand : ICommand<TResult>'
     typeParameters:
     - id: TCommand
     - id: TResult
-    content.vb: Public Class UserInjectionCommandBehavior(Of TCommand As ICommand(Of TResult), TResult) Implements ICommandPipelineBehavior(Of TCommand, TResult)
+    content.vb: Public Class UserInjectionCommandBehavior(Of TCommand As ICommand(Of TResult), TResult) Implements ICommandPipelineBehaviour(Of TCommand, TResult)
   inheritance:
   - System.Object
   implements:
-  - Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{{TCommand},{TResult}}
+  - Project.Application.Configuration.Commands.ICommandPipelineBehaviour{{TCommand},{TResult}}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Application/Configuration/Commands/Behaviors/UserInjectionCommandBehavior.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Project.Application
   namespace: Project.Application.Configuration.Commands.Behaviors
@@ -98,7 +98,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Handle
     path: ../src/Project.Application/Configuration/Commands/Behaviors/UserInjectionCommandBehavior.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Project.Application
   namespace: Project.Application.Configuration.Commands.Behaviors
@@ -117,7 +117,7 @@ items:
     content.vb: Public Function Handle(command As TCommand, [next] As Func(Of TCommand, Task(Of TResult)), cancellationToken As CancellationToken) As Task(Of TResult)
   overload: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.Handle*
   implements:
-  - Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{{TCommand},{TResult}}.Handle({TCommand},System.Func{{TCommand},System.Threading.Tasks.Task{{TResult}}},System.Threading.CancellationToken)
+  - Project.Application.Configuration.Commands.ICommandPipelineBehaviour{{TCommand},{TResult}}.Handle({TCommand},System.Func{{TCommand},System.Threading.Tasks.Task{{TResult}}},System.Threading.CancellationToken)
   nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
   fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
   name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
@@ -179,21 +179,21 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{{TCommand},{TResult}}
-  commentId: T:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{`0,`1}
-  parent: Project.Application.Configuration.Commands.Behaviors
-  definition: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-  href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
-  name: ICommandPipelineBehavior<TCommand, TResult>
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult)
-  name.vb: ICommandPipelineBehavior(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour{{TCommand},{TResult}}
+  commentId: T:Project.Application.Configuration.Commands.ICommandPipelineBehaviour{`0,`1}
+  parent: Project.Application.Configuration.Commands
+  definition: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
+  name: ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult)
+  name.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
   spec.csharp:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-    name: ICommandPipelineBehavior
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
   - name: <
   - name: TCommand
   - name: ','
@@ -201,9 +201,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-    name: ICommandPipelineBehavior
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
   - name: (
   - name: Of
   - name: " "
@@ -438,19 +438,19 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-  commentId: T:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-  href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
-  name: ICommandPipelineBehavior<TCommand, TResult>
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult)
-  name.vb: ICommandPipelineBehavior(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  commentId: T:Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
+  name: ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult)
+  name.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
   spec.csharp:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-    name: ICommandPipelineBehavior
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
   - name: <
   - name: TCommand
   - name: ','
@@ -458,9 +458,9 @@ references:
   - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-    name: ICommandPipelineBehavior
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
   - name: (
   - name: Of
   - name: " "
@@ -469,6 +469,44 @@ references:
   - name: " "
   - name: TResult
   - name: )
+- uid: Project.Application.Configuration.Commands
+  commentId: N:Project.Application.Configuration.Commands
+  href: Project.html
+  name: Project.Application.Configuration.Commands
+  nameWithType: Project.Application.Configuration.Commands
+  fullName: Project.Application.Configuration.Commands
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Configuration
+    name: Configuration
+    href: Project.Application.Configuration.html
+  - name: .
+  - uid: Project.Application.Configuration.Commands
+    name: Commands
+    href: Project.Application.Configuration.Commands.html
 - uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.#ctor*
   commentId: Overload:Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2.#ctor
   href: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_UserInjectionCommandBehavior_2__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Project_Application_Users_IUserRepository_
@@ -568,21 +606,21 @@ references:
   fullName: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior<TCommand, TResult>.Handle
   nameWithType.vb: UserInjectionCommandBehavior(Of TCommand, TResult).Handle
   fullName.vb: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior(Of TCommand, TResult).Handle
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{{TCommand},{TResult}}.Handle({TCommand},System.Func{{TCommand},System.Threading.Tasks.Task{{TResult}}},System.Threading.CancellationToken)
-  commentId: M:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{`0,`1}.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  parent: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{{TCommand},{TResult}}
-  definition: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour{{TCommand},{TResult}}.Handle({TCommand},System.Func{{TCommand},System.Threading.Tasks.Task{{TResult}}},System.Threading.CancellationToken)
+  commentId: M:Project.Application.Configuration.Commands.ICommandPipelineBehaviour{`0,`1}.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  parent: Project.Application.Configuration.Commands.ICommandPipelineBehaviour{{TCommand},{TResult}}
+  definition: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
   name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
   name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
   spec.csharp:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{`0,`1}.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour{`0,`1}.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
     name: Handle
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
   - name: (
   - name: TCommand
   - name: ','
@@ -611,9 +649,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
   spec.vb:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior{`0,`1}.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour{`0,`1}.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
     name: Handle
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
   - name: (
   - name: TCommand
   - name: ','
@@ -737,20 +775,20 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  commentId: M:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  commentId: M:Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
   isExternal: true
-  href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
   name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
   name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
   spec.csharp:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
     name: Handle
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
   - name: (
   - name: TCommand
   - name: ','
@@ -779,9 +817,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
   - name: )
   spec.vb:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
     name: Handle
-    href: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
   - name: (
   - name: TCommand
   - name: ','

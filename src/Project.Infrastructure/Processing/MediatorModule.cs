@@ -1,9 +1,9 @@
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
-using Project.Application.Configuration;
 using Project.Application.Configuration.Commands;
 using Project.Application.Configuration.Commands.Behaviors;
 using Project.Application.Configuration.Queries.Behaviors;
+using Project.Application.Configuration.Validation;
 using Project.Domain.SeedWork;
 using Project.Infrastructure.Logging;
 
@@ -32,7 +32,8 @@ namespace Project.Infrastructure.Processing
             services.AddScoped<CommandsExecutor>();
             services.AddScoped<QueriesExecutor>();
 
-            services.AddScoped(typeof(ICommandPipelineBehavior<,>), typeof(UserInjectionCommandBehavior<,>));
+            services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+            services.AddScoped(typeof(ICommandPipelineBehaviour<,>), typeof(UserInjectionCommandBehavior<,>));
             services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UserInjectionQueryBehavior<,>));
             services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UnitOfWorkPipelineBehavior<,>));
             services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(LoggingPipelineBehavior<,>));

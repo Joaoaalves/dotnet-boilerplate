@@ -72,7 +72,9 @@ items:
   assemblies:
   - Project.Logging
   namespace: Project.Logging
-  summary: Gets the unique identifier for the log entry.
+  summary: >-
+    -
+        Gets the unique identifier for the log entry.
   example: []
   syntax:
     content: public string Id { get; }

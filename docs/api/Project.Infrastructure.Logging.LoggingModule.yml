@@ -5,7 +5,7 @@ items:
   id: LoggingModule
   parent: Project.Infrastructure.Logging
   children:
-  - Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)
   - Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   langs:
   - csharp
@@ -40,17 +40,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  commentId: M:Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  id: AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)
+  commentId: M:Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)
+  id: AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)
   isExtensionMethod: true
   parent: Project.Infrastructure.Logging.LoggingModule
   langs:
   - csharp
   - vb
-  name: AddLogginModule(IServiceCollection)
-  nameWithType: LoggingModule.AddLogginModule(IServiceCollection)
-  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddLogginModule(IServiceCollection, IHostEnvironment)
+  nameWithType: LoggingModule.AddLogginModule(IServiceCollection, IHostEnvironment)
+  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Hosting.IHostEnvironment)
   type: Method
   source:
     remote:
@@ -70,15 +70,17 @@ items:
     based on the ENABLE_LOGGING environment variable.
   example: []
   syntax:
-    content: public static IServiceCollection AddLogginModule(this IServiceCollection services)
+    content: public static IServiceCollection AddLogginModule(this IServiceCollection services, IHostEnvironment env)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
       description: The service collection to register services into.
+    - id: env
+      type: Microsoft.Extensions.Hosting.IHostEnvironment
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
       description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> instance.
-    content.vb: Public Shared Function AddLogginModule(services As IServiceCollection) As IServiceCollection
+    content.vb: Public Shared Function AddLogginModule(services As IServiceCollection, env As IHostEnvironment) As IServiceCollection
   overload: Project.Infrastructure.Logging.LoggingModule.AddLogginModule*
 - uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
   commentId: M:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule(Microsoft.Extensions.Hosting.IHostBuilder)
@@ -399,10 +401,18 @@ references:
   fullName: Project.Logging.Users.IUserLoggerService
 - uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule*
   commentId: Overload:Project.Infrastructure.Logging.LoggingModule.AddLogginModule
-  href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Hosting_IHostEnvironment_
   name: AddLogginModule
   nameWithType: LoggingModule.AddLogginModule
   fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule
+- uid: Microsoft.Extensions.Hosting.IHostEnvironment
+  commentId: T:Microsoft.Extensions.Hosting.IHostEnvironment
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment
+  name: IHostEnvironment
+  nameWithType: IHostEnvironment
+  fullName: Microsoft.Extensions.Hosting.IHostEnvironment
 - uid: Microsoft.Extensions.DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   isExternal: true
@@ -470,20 +480,6 @@ references:
   - uid: Project.Logging.Users
     name: Users
     href: Project.Logging.Users.html
-- uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
-  commentId: Overload:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
-  href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_
-  name: SetupLoggingModule
-  nameWithType: LoggingModule.SetupLoggingModule
-  fullName: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
-- uid: Microsoft.Extensions.Hosting.IHostBuilder
-  commentId: T:Microsoft.Extensions.Hosting.IHostBuilder
-  parent: Microsoft.Extensions.Hosting
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
-  name: IHostBuilder
-  nameWithType: IHostBuilder
-  fullName: Microsoft.Extensions.Hosting.IHostBuilder
 - uid: Microsoft.Extensions.Hosting
   commentId: N:Microsoft.Extensions.Hosting
   isExternal: true
@@ -521,3 +517,17 @@ references:
     name: Hosting
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule*
+  commentId: Overload:Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
+  href: Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_SetupLoggingModule_Microsoft_Extensions_Hosting_IHostBuilder_
+  name: SetupLoggingModule
+  nameWithType: LoggingModule.SetupLoggingModule
+  fullName: Project.Infrastructure.Logging.LoggingModule.SetupLoggingModule
+- uid: Microsoft.Extensions.Hosting.IHostBuilder
+  commentId: T:Microsoft.Extensions.Hosting.IHostBuilder
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  name: IHostBuilder
+  nameWithType: IHostBuilder
+  fullName: Microsoft.Extensions.Hosting.IHostBuilder

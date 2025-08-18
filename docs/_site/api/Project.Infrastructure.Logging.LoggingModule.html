@@ -155,8 +155,8 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
 
   <a id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_" data-uid="Project.Infrastructure.Logging.LoggingModule.AddLogginModule*"></a>
 
-  <h3 id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-  AddLogginModule(IServiceCollection)
+  <h3 id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Hosting_IHostEnvironment_" data-uid="Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)">
+  AddLogginModule(IServiceCollection, IHostEnvironment)
   <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Logging/LoggingModule.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -165,7 +165,7 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddLogginModule(this IServiceCollection services)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddLogginModule(this IServiceCollection services, IHostEnvironment env)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -173,6 +173,8 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
     <dd><p>The service collection to register services into.</p>
 </dd>
+    <dt><code>env</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostenvironment">IHostEnvironment</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -188,7 +190,7 @@ Class LoggingModule  <a class="header-action link-secondary" title="View source"
 
 
 
-  <h4 class="section" id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection__remarks">Remarks</h4>
+  <h4 class="section" id="Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Hosting_IHostEnvironment__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Registers a default or Elasticsearch-based implementation of <a class="xref" href="Project.Logging.Users.IUserLoggerService.html">IUserLoggerService</a>,
 based on the ENABLE_LOGGING environment variable.</p>
 </div>

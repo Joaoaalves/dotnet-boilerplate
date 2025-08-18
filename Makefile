@@ -32,3 +32,15 @@ else
 	DATABASE_CONNECTION_STRING=$(DATABASE_CONNECTION_STRING) \
 	dotnet ef migrations add $(name) --project ./src/Project.Infrastructure --startup-project ./src/Project.Api
 endif
+
+
+###
+### TESTS
+###
+test-unit:
+	dotnet test src/tests/Project.Tests.Unit/Project.Tests.Unit.csproj
+
+test-integration:
+	dotnet test src/tests/Project.Tests.Integration/Project.Tests.Integration.csproj
+test:
+	dotnet test src

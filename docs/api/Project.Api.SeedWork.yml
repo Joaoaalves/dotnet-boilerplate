@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Api.SeedWork
+  commentId: N:Project.Api.SeedWork
+  id: Project.Api.SeedWork
+  children:
+  - Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  - Project.Api.SeedWork.InvalidCommandProblemDetails
+  langs:
+  - csharp
+  - vb
+  name: Project.Api.SeedWork
+  nameWithType: Project.Api.SeedWork
+  fullName: Project.Api.SeedWork
+  type: Namespace
+  assemblies:
+  - Project.Api
+references:
+- uid: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  commentId: T:Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  href: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.html
+  name: BusinessRuleValidationExceptionProblemDetails
+  nameWithType: BusinessRuleValidationExceptionProblemDetails
+  fullName: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+- uid: Project.Api.SeedWork.InvalidCommandProblemDetails
+  commentId: T:Project.Api.SeedWork.InvalidCommandProblemDetails
+  href: Project.Api.SeedWork.InvalidCommandProblemDetails.html
+  name: InvalidCommandProblemDetails
+  nameWithType: InvalidCommandProblemDetails
+  fullName: Project.Api.SeedWork.InvalidCommandProblemDetails

@@ -24,7 +24,7 @@ namespace Project.Infrastructure.Processing
 
             var mediator = scope.ServiceProvider.GetRequiredService<IMediator>();
 
-            var behaviorsType = typeof(ICommandPipelineBehavior<,>).MakeGenericType(command.GetType(), typeof(TResult));
+            var behaviorsType = typeof(ICommandPipelineBehaviour<,>).MakeGenericType(command.GetType(), typeof(TResult));
             var behaviors = scope.ServiceProvider.GetServices(behaviorsType)
                 .Cast<dynamic>()
                 .Reverse()

@@ -5,8 +5,8 @@ namespace Project.Application.Users.Queries.GetUserDetails
 {
     public class GetUserDetailsQuery(
         ClaimsPrincipal claimsPrincipal
-    ) : IQuery<UserDetailsDTO>
+    ) : IQuery<UserDetailsDTO?>
     {
-        public ClaimsPrincipal Principal { get; } = claimsPrincipal;
+        public string? Email { get; } = claimsPrincipal.FindFirstValue(ClaimTypes.Email);
     }
 }

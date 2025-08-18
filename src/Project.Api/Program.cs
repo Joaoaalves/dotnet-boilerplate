@@ -1,52 +1,50 @@
 using Project.Api.Auth;
 using Project.Api.Configurations;
 using Project.Api.Extensions;
-using Project.API.Configurations;
 using Project.Domain.Users;
 using Project.Infrastructure.Database;
 using Project.Infrastructure.Logging;
 using Project.Infrastructure.Monitoring;
 using Project.Infrastructure.Processing;
 
-
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
-var isProductionEnv = Environment.GetEnvironmentVariable("PRODUCTION") ?? "false";
-var isDevelopment = isProductionEnv == "false";
+var env = builder.Environment;
 
 var services = builder.Services;
 var host = builder.Host;
 
+// Setup logging (Serilog + Elasticsearch se habilitado via env)
 host.SetupLoggingModule();
 
-// Cors
+// Core services
 services.AddCorsConfiguration();
-
 services.AddSwaggerConfiguration();
+services.AddValidations();
 services.AddEndpointsApiExplorer();
 
 services.AddControllers();
+
 services.AddAuthModule();
 
 services.AddConfigurations();
 services.AddDataAccessModule();
 services.AddMediatorModule();
 services.AddMonitoringModule();
-services.AddLogginModule();
+
+// LoggingModule precisa do env
+services.AddLogginModule(env);
 
 var app = builder.Build();
 
-if (isDevelopment)
+if (env.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
 // Endpoint Healthcheck
-app.MapGet("/health", () =>
-{
-    Results.Ok("Healthy");
-})
+app.MapGet("/health", () => Results.Ok("Healthy"))
    .WithName("HealthCheck")
    .WithTags("Health");
 
@@ -58,6 +56,11 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseOpenTelemetryPrometheusScrapingEndpoint();
 
-var identityApi = app.MapIdentityApi<User>();
+app.MapIdentityApi<User>();
 
 app.Run();
+
+/// <summary>
+///  Needed for tests purpose
+/// </summary>
+public partial class Program { }

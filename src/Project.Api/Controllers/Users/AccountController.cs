@@ -5,6 +5,7 @@ using Project.Application.Users.Queries.GetUserDetails;
 using Project.Application.Users.Commands.RegisterUser;
 
 using Project.Infrastructure.Processing;
+using Project.Application.Configuration.Validation;
 
 namespace Project.Api.Controllers.Users
 {
@@ -33,19 +34,26 @@ namespace Project.Api.Controllers.Users
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterUserCommand command)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var (userId, errors) = await _commandsExecutor.Execute(command);
-
-            if (errors.Any())
+            try
             {
-                foreach (var error in errors)
-                    ModelState.AddModelError(string.Empty, error);
-                return BadRequest(ModelState);
-            }
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
-            return Ok(new { Message = "User registered successfully" });
+                var (userId, errors) = await _commandsExecutor.Execute(command);
+
+                if (errors.Any())
+                {
+                    foreach (var error in errors)
+                        ModelState.AddModelError(string.Empty, error);
+                    return BadRequest(ModelState);
+                }
+
+                return Created();
+            }
+            catch (InvalidCommandException exc)
+            {
+                return BadRequest(new { Message = exc.Details });
+            }
         }
 
         /// <summary>

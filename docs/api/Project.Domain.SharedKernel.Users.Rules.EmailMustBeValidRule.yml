@@ -22,7 +22,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: EmailMustBeValidRule
     path: ../src/Project.Domain/SharedKernel/Users/Rules/EmailMustBeValidRule.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -61,7 +61,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Domain/SharedKernel/Users/Rules/EmailMustBeValidRule.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -95,7 +95,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Message
     path: ../src/Project.Domain/SharedKernel/Users/Rules/EmailMustBeValidRule.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -128,7 +128,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IsBroken
     path: ../src/Project.Domain/SharedKernel/Users/Rules/EmailMustBeValidRule.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules

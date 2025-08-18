@@ -1,6 +1,6 @@
 ﻿using Project.Application.Configuration;
 
-namespace Project.API.Configurations
+namespace Project.Api.Configurations
 {
     /// <summary>
     /// Provides access to the current execution context, specifically the correlation ID from the HTTP request.

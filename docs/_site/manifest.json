@@ -12,90 +12,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.Configurations.CorsConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.API.Configurations.CorsConfiguration.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.API.Configurations.CorsConfiguration",
-      "Summary": "<p sourcefile=\"api/Project.API.Configurations.CorsConfiguration.yml\" sourcestartlinenumber=\"1\">Provides CORS configuration methods for the application.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.Configurations.ExecutionContextAccessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.API.Configurations.ExecutionContextAccessor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.API.Configurations.ExecutionContextAccessor",
-      "Summary": "<p sourcefile=\"api/Project.API.Configurations.ExecutionContextAccessor.yml\" sourcestartlinenumber=\"1\">Provides access to the current execution context, specifically the correlation ID from the HTTP request.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.Configurations_1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.API.Configurations_1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.API.Configurations",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails",
-      "Summary": "<p sourcefile=\"api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.yml\" sourcestartlinenumber=\"1\">Represents a standardized HTTP response for business rule validation exceptions.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.SeedWork.InvalidCommandProblemDetails.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.API.SeedWork.InvalidCommandProblemDetails.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.API.SeedWork.InvalidCommandProblemDetails",
-      "Summary": "<p sourcefile=\"api/Project.API.SeedWork.InvalidCommandProblemDetails.yml\" sourcestartlinenumber=\"1\">Represents problem details for an <xref href=\"Project.Application.Configuration.Validation.InvalidCommandException\" data-throw-if-not-resolved=\"false\"></xref> error.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.API.SeedWork.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.API.SeedWork.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.API.SeedWork",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Project.Api.Auth.AuthModule.yml",
       "output": {
         ".html": {
@@ -166,6 +82,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Configurations.CorsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Configurations.CorsConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Configurations.CorsConfiguration",
+      "Summary": "<p sourcefile=\"api/Project.Api.Configurations.CorsConfiguration.yml\" sourcestartlinenumber=\"1\">Provides CORS configuration methods for the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Configurations.ExecutionContextAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Configurations.ExecutionContextAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Configurations.ExecutionContextAccessor",
+      "Summary": "<p sourcefile=\"api/Project.Api.Configurations.ExecutionContextAccessor.yml\" sourcestartlinenumber=\"1\">Provides access to the current execution context, specifically the correlation ID from the HTTP request.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Api.Configurations.yml",
       "output": {
         ".html": {
@@ -222,6 +166,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.Extensions.ValidationExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.Extensions.ValidationExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.Extensions.ValidationExtension",
+      "Summary": "<p sourcefile=\"api/Project.Api.Extensions.ValidationExtension.yml\" sourcestartlinenumber=\"1\">Provides extension methods to configure validations for the API using FluentValidation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Api.Extensions.yml",
       "output": {
         ".html": {
@@ -236,6 +194,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails",
+      "Summary": "<p sourcefile=\"api/Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.yml\" sourcestartlinenumber=\"1\">Represents a standardized HTTP response for business rule validation exceptions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.SeedWork.InvalidCommandProblemDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.SeedWork.InvalidCommandProblemDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.SeedWork.InvalidCommandProblemDetails",
+      "Summary": "<p sourcefile=\"api/Project.Api.SeedWork.InvalidCommandProblemDetails.yml\" sourcestartlinenumber=\"1\">Represents problem details for an <xref href=\"Project.Application.Configuration.Validation.InvalidCommandException\" data-throw-if-not-resolved=\"false\"></xref> error.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Api.SeedWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Api.SeedWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Api.SeedWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Application.Configuration.Commands.BaseCommand-1.yml",
       "output": {
         ".html": {
@@ -246,20 +246,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Application.Configuration.Commands.BaseCommand<TResult>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>",
       "Summary": null
     },
     {
@@ -330,6 +316,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Application.Configuration.Commands.ICommandHandler<TCommand, TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>",
       "Summary": null
     },
     {
@@ -624,6 +624,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator",
       "Summary": null
     },
     {
@@ -1720,30 +1734,338 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.UnitTest1.yml",
+      "source_relative_path": "api/Project.Tests.Integration.Account.InfoTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.UnitTest1.html"
+          "relative_path": "api/Project.Tests.Integration.Account.InfoTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.UnitTest1",
+      "Title": "Project.Tests.Integration.Account.InfoTests",
+      "Summary": "<p sourcefile=\"api/Project.Tests.Integration.Account.InfoTests.yml\" sourcestartlinenumber=\"1\">Integration tests for the /api/info endpoint.\nThese tests ensure authentication and user retrieval logic work correctly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.Account.RegisterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.Account.RegisterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.Account.RegisterTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.yml",
+      "source_relative_path": "api/Project.Tests.Integration.Account.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.html"
+          "relative_path": "api/Project.Tests.Integration.Account.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests",
+      "Title": "Project.Tests.Integration.Account",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.IntegrationTestBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.IntegrationTestBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.IntegrationTestBase",
+      "Summary": "<p sourcefile=\"api/Project.Tests.Integration.IntegrationTestBase.yml\" sourcestartlinenumber=\"1\">Base class for integration tests.\nIt handles database setup, HttpClient initialization, and scoped services.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.Setup.CustomWebApplicationFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.Setup.EnvLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.Setup.EnvLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.Setup.EnvLoader",
+      "Summary": "<p sourcefile=\"api/Project.Tests.Integration.Setup.EnvLoader.yml\" sourcestartlinenumber=\"1\">Ensures .env variables from the solution root are loaded into the test environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.Setup.TestAuthHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.Setup.TestAuthHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.Setup.TestAuthHandler",
+      "Summary": "<p sourcefile=\"api/Project.Tests.Integration.Setup.TestAuthHandler.yml\" sourcestartlinenumber=\"1\">Custom authentication handler used for integration tests.\nIt bypasses JWT validation and creates a fake authenticated user based on the Authorization header.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.Setup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.Setup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.SharedDatabaseFixture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.SharedDatabaseFixture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration.SharedDatabaseFixture",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Integration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Integration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Integration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Application.UsersTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Application.UsersTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Application.UsersTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Builders.UserBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Builders.UserBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Builders.UserBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Builders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Builders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.EmailTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Domain.UsersTests.EmailTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.NameTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.NameTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Domain.UsersTests.NameTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Domain.UsersTests.UserNameTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Domain.UsersTests.UserTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Domain.UsersTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Fakes.FakeDbContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Fakes.FakeDbContext-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Fakes.FakeDbContext<TUser>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Fakes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Fakes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Fakes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Mocks.UserManagerMock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Mocks.UserManagerMock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Mocks.UserManagerMock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.Unit.Mocks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.Unit.Mocks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.Unit.Mocks",
       "Summary": null
     },
     {

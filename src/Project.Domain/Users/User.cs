@@ -17,7 +17,7 @@ namespace Project.Domain.Users
         [Obsolete("Only for EF/Identity serialization", true)]
         public User() { }
 
-        public User(string userName, string email, Name firstName, Name lastName)
+        private User(string userName, string email, Name firstName, Name lastName)
         {
             UserName = userName;
             Email = email;
@@ -32,6 +32,15 @@ namespace Project.Domain.Users
         {
 
             return new User(userName.Value, email.Value, firstName, lastName);
+        }
+
+        public void Rename(Name? firstName, Name? lastName)
+        {
+            if (firstName is not null)
+                FirstName = firstName;
+
+            if (lastName is not null)
+                LastName = lastName;
         }
     }
 }

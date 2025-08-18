@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Integration.Account.RegisterTests
+  commentId: T:Project.Tests.Integration.Account.RegisterTests
+  id: RegisterTests
+  parent: Project.Tests.Integration.Account
+  children:
+  - Project.Tests.Integration.Account.RegisterTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  - Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(System.String,System.String,System.String,System.String)
+  - Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(System.String,System.String,System.String,System.String)
+  - Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  - Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(System.String,System.String,System.String,System.String)
+  - Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: RegisterTests
+  nameWithType: RegisterTests
+  fullName: Project.Tests.Integration.Account.RegisterTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RegisterTests
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 8
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: 'public class RegisterTests : IntegrationTestBase, IClassFixture<SharedDatabaseFixture>, IAsyncLifetime'
+    content.vb: Public Class RegisterTests Inherits IntegrationTestBase Implements IClassFixture(Of SharedDatabaseFixture), IAsyncLifetime
+  inheritance:
+  - System.Object
+  - Project.Tests.Integration.IntegrationTestBase
+  implements:
+  - Xunit.IClassFixture{Project.Tests.Integration.SharedDatabaseFixture}
+  - Xunit.IAsyncLifetime
+  inheritedMembers:
+  - Project.Tests.Integration.IntegrationTestBase.DbFixture
+  - Project.Tests.Integration.IntegrationTestBase.Client
+  - Project.Tests.Integration.IntegrationTestBase.DbContext
+  - Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  - Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  - Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.Integration.Account.RegisterTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  id: '#ctor(Project.Tests.Integration.SharedDatabaseFixture)'
+  parent: Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: RegisterTests(SharedDatabaseFixture)
+  nameWithType: RegisterTests.RegisterTests(SharedDatabaseFixture)
+  fullName: Project.Tests.Integration.Account.RegisterTests.RegisterTests(Project.Tests.Integration.SharedDatabaseFixture)
+  type: Constructor
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 8
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: public RegisterTests(SharedDatabaseFixture fixture)
+    parameters:
+    - id: fixture
+      type: Project.Tests.Integration.SharedDatabaseFixture
+    content.vb: Public Sub New(fixture As SharedDatabaseFixture)
+  overload: Project.Tests.Integration.Account.RegisterTests.#ctor*
+  nameWithType.vb: RegisterTests.New(SharedDatabaseFixture)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.New(Project.Tests.Integration.SharedDatabaseFixture)
+  name.vb: New(SharedDatabaseFixture)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(System.String,System.String,System.String,System.String)
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(System.String,System.String,System.String,System.String)
+  id: ShouldCreateUserWithValidName(System.String,System.String,System.String,System.String)
+  parent: Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldCreateUserWithValidName(string, string, string, string)
+  nameWithType: RegisterTests.ShouldCreateUserWithValidName(string, string, string, string)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldCreateUserWithValidName
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 10
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "John", "Doe", "john@example.com", "Str0ngP@ss" })]
+
+      public Task ShouldCreateUserWithValidName(string firstName, string lastName, string email, string password)
+    parameters:
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "John", "Doe", "john@example.com", "Str0ngP@ss" })>
+
+      Public Function ShouldCreateUserWithValidName(firstName As String, lastName As String, email As String, password As String) As Task
+  overload: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RegisterTests.ShouldCreateUserWithValidName(String, String, String, String)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(String, String, String, String)
+  name.vb: ShouldCreateUserWithValidName(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(System.String,System.String,System.String,System.String)
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(System.String,System.String,System.String,System.String)
+  id: ShouldNotCreateUserWithInvalidName(System.String,System.String,System.String,System.String)
+  parent: Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldNotCreateUserWithInvalidName(string, string, string, string)
+  nameWithType: RegisterTests.ShouldNotCreateUserWithInvalidName(string, string, string, string)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldNotCreateUserWithInvalidName
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 28
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Jo", "Doe", "jo@example.com", "Str0ngP@ss" })]
+
+      [InlineData(new object[] { "John", "D@", "john@example.com", "Str0ngP@ss" })]
+
+      [InlineData(new object[] { "Jane", "123", "jane@example.com", "Str0ngP@ss" })]
+
+      public Task ShouldNotCreateUserWithInvalidName(string firstName, string lastName, string email, string password)
+    parameters:
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Jo", "Doe", "jo@example.com", "Str0ngP@ss" })>
+
+      <InlineData(New Object() { "John", "D@", "john@example.com", "Str0ngP@ss" })>
+
+      <InlineData(New Object() { "Jane", "123", "jane@example.com", "Str0ngP@ss" })>
+
+      Public Function ShouldNotCreateUserWithInvalidName(firstName As String, lastName As String, email As String, password As String) As Task
+  overload: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RegisterTests.ShouldNotCreateUserWithInvalidName(String, String, String, String)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(String, String, String, String)
+  name.vb: ShouldNotCreateUserWithInvalidName(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(System.String,System.String,System.String,System.String)
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(System.String,System.String,System.String,System.String)
+  id: ShouldNotCreateUserWithWeakPassword(System.String,System.String,System.String,System.String)
+  parent: Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldNotCreateUserWithWeakPassword(string, string, string, string)
+  nameWithType: RegisterTests.ShouldNotCreateUserWithWeakPassword(string, string, string, string)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldNotCreateUserWithWeakPassword
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 45
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "John", "Doe", "john1@example.com", "123" })]
+
+      [InlineData(new object[] { "Jane", "Doe", "jane1@example.com", "password" })]
+
+      public Task ShouldNotCreateUserWithWeakPassword(string firstName, string lastName, string email, string password)
+    parameters:
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "John", "Doe", "john1@example.com", "123" })>
+
+      <InlineData(New Object() { "Jane", "Doe", "jane1@example.com", "password" })>
+
+      Public Function ShouldNotCreateUserWithWeakPassword(firstName As String, lastName As String, email As String, password As String) As Task
+  overload: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RegisterTests.ShouldNotCreateUserWithWeakPassword(String, String, String, String)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(String, String, String, String)
+  name.vb: ShouldNotCreateUserWithWeakPassword(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  id: ShouldNotCreateUserWithDuplicateEmail
+  parent: Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldNotCreateUserWithDuplicateEmail()
+  nameWithType: RegisterTests.ShouldNotCreateUserWithDuplicateEmail()
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldNotCreateUserWithDuplicateEmail
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 61
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task ShouldNotCreateUserWithDuplicateEmail()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function ShouldNotCreateUserWithDuplicateEmail() As Task
+  overload: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(System.String,System.String,System.String,System.String)
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(System.String,System.String,System.String,System.String)
+  id: ShouldAllowValidEdgeCaseNames(System.String,System.String,System.String,System.String)
+  parent: Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldAllowValidEdgeCaseNames(string, string, string, string)
+  nameWithType: RegisterTests.ShouldAllowValidEdgeCaseNames(string, string, string, string)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldAllowValidEdgeCaseNames
+    path: ../src/tests/Project.Tests.Integration/Account/RegisterTests.cs
+    startLine: 80
+  assemblies:
+  - Project.Tests.Integration
+  namespace: Project.Tests.Integration.Account
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "Ana Maria", "Silva", "ana@example.com", "Str0ngP@ss" })]
+
+      [InlineData(new object[] { "Éric", "Dupont", "eric@example.com", "Str0ngP@ss" })]
+
+      public Task ShouldAllowValidEdgeCaseNames(string firstName, string lastName, string email, string password)
+    parameters:
+    - id: firstName
+      type: System.String
+    - id: lastName
+      type: System.String
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "Ana Maria", "Silva", "ana@example.com", "Str0ngP@ss" })>
+
+      <InlineData(New Object() { "Éric", "Dupont", "eric@example.com", "Str0ngP@ss" })>
+
+      Public Function ShouldAllowValidEdgeCaseNames(firstName As String, lastName As String, email As String, password As String) As Task
+  overload: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RegisterTests.ShouldAllowValidEdgeCaseNames(String, String, String, String)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(String, String, String, String)
+  name.vb: ShouldAllowValidEdgeCaseNames(String, String, String, String)
+references:
+- uid: Project.Tests.Integration.Account
+  commentId: N:Project.Tests.Integration.Account
+  href: Project.html
+  name: Project.Tests.Integration.Account
+  nameWithType: Project.Tests.Integration.Account
+  fullName: Project.Tests.Integration.Account
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.Integration
+    name: Integration
+    href: Project.Tests.Integration.html
+  - name: .
+  - uid: Project.Tests.Integration.Account
+    name: Account
+    href: Project.Tests.Integration.Account.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.Integration
+    name: Integration
+    href: Project.Tests.Integration.html
+  - name: .
+  - uid: Project.Tests.Integration.Account
+    name: Account
+    href: Project.Tests.Integration.Account.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Tests.Integration.IntegrationTestBase
+  commentId: T:Project.Tests.Integration.IntegrationTestBase
+  parent: Project.Tests.Integration
+  href: Project.Tests.Integration.IntegrationTestBase.html
+  name: IntegrationTestBase
+  nameWithType: IntegrationTestBase
+  fullName: Project.Tests.Integration.IntegrationTestBase
+- uid: Xunit.IClassFixture{Project.Tests.Integration.SharedDatabaseFixture}
+  commentId: T:Xunit.IClassFixture{Project.Tests.Integration.SharedDatabaseFixture}
+  parent: Xunit
+  definition: Xunit.IClassFixture`1
+  href: Project.Tests.Integration.SharedDatabaseFixture.html
+  name: IClassFixture<SharedDatabaseFixture>
+  nameWithType: IClassFixture<SharedDatabaseFixture>
+  fullName: Xunit.IClassFixture<Project.Tests.Integration.SharedDatabaseFixture>
+  nameWithType.vb: IClassFixture(Of SharedDatabaseFixture)
+  fullName.vb: Xunit.IClassFixture(Of Project.Tests.Integration.SharedDatabaseFixture)
+  name.vb: IClassFixture(Of SharedDatabaseFixture)
+  spec.csharp:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    isExternal: true
+  - name: <
+  - uid: Project.Tests.Integration.SharedDatabaseFixture
+    name: SharedDatabaseFixture
+    href: Project.Tests.Integration.SharedDatabaseFixture.html
+  - name: '>'
+  spec.vb:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Tests.Integration.SharedDatabaseFixture
+    name: SharedDatabaseFixture
+    href: Project.Tests.Integration.SharedDatabaseFixture.html
+  - name: )
+- uid: Xunit.IAsyncLifetime
+  commentId: T:Xunit.IAsyncLifetime
+  parent: Xunit
+  isExternal: true
+  name: IAsyncLifetime
+  nameWithType: IAsyncLifetime
+  fullName: Xunit.IAsyncLifetime
+- uid: Project.Tests.Integration.IntegrationTestBase.DbFixture
+  commentId: F:Project.Tests.Integration.IntegrationTestBase.DbFixture
+  parent: Project.Tests.Integration.IntegrationTestBase
+  href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DbFixture
+  name: DbFixture
+  nameWithType: IntegrationTestBase.DbFixture
+  fullName: Project.Tests.Integration.IntegrationTestBase.DbFixture
+- uid: Project.Tests.Integration.IntegrationTestBase.Client
+  commentId: F:Project.Tests.Integration.IntegrationTestBase.Client
+  parent: Project.Tests.Integration.IntegrationTestBase
+  href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_Client
+  name: Client
+  nameWithType: IntegrationTestBase.Client
+  fullName: Project.Tests.Integration.IntegrationTestBase.Client
+- uid: Project.Tests.Integration.IntegrationTestBase.DbContext
+  commentId: F:Project.Tests.Integration.IntegrationTestBase.DbContext
+  parent: Project.Tests.Integration.IntegrationTestBase
+  href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DbContext
+  name: DbContext
+  nameWithType: IntegrationTestBase.DbContext
+  fullName: Project.Tests.Integration.IntegrationTestBase.DbContext
+- uid: Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  parent: Project.Tests.Integration.IntegrationTestBase
+  href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IntegrationTestBase.InitializeAsync()
+  fullName: Project.Tests.Integration.IntegrationTestBase.InitializeAsync()
+  spec.csharp:
+  - uid: Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+    name: InitializeAsync
+    href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+    name: InitializeAsync
+    href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_InitializeAsync
+  - name: (
+  - name: )
+- uid: Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  parent: Project.Tests.Integration.IntegrationTestBase
+  href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: IntegrationTestBase.DisposeAsync()
+  fullName: Project.Tests.Integration.IntegrationTestBase.DisposeAsync()
+  spec.csharp:
+  - uid: Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+    name: DisposeAsync
+    href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+    name: DisposeAsync
+    href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DisposeAsync
+  - name: (
+  - name: )
+- uid: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+  parent: Project.Tests.Integration.IntegrationTestBase
+  isExternal: true
+  href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_AuthenticateClient_System_String_
+  name: AuthenticateClient(string)
+  nameWithType: IntegrationTestBase.AuthenticateClient(string)
+  fullName: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(string)
+  nameWithType.vb: IntegrationTestBase.AuthenticateClient(String)
+  fullName.vb: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(String)
+  name.vb: AuthenticateClient(String)
+  spec.csharp:
+  - uid: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+    name: AuthenticateClient
+    href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_AuthenticateClient_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+    name: AuthenticateClient
+    href: Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_AuthenticateClient_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.Integration
+  commentId: N:Project.Tests.Integration
+  href: Project.html
+  name: Project.Tests.Integration
+  nameWithType: Project.Tests.Integration
+  fullName: Project.Tests.Integration
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.Integration
+    name: Integration
+    href: Project.Tests.Integration.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.Integration
+    name: Integration
+    href: Project.Tests.Integration.html
+- uid: Xunit.IClassFixture`1
+  commentId: T:Xunit.IClassFixture`1
+  isExternal: true
+  name: IClassFixture<TFixture>
+  nameWithType: IClassFixture<TFixture>
+  fullName: Xunit.IClassFixture<TFixture>
+  nameWithType.vb: IClassFixture(Of TFixture)
+  fullName.vb: Xunit.IClassFixture(Of TFixture)
+  name.vb: IClassFixture(Of TFixture)
+  spec.csharp:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    isExternal: true
+  - name: <
+  - name: TFixture
+  - name: '>'
+  spec.vb:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TFixture
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  isExternal: true
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Project.Tests.Integration.Account.RegisterTests.#ctor*
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.#ctor
+  href: Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests__ctor_Project_Tests_Integration_SharedDatabaseFixture_
+  name: RegisterTests
+  nameWithType: RegisterTests.RegisterTests
+  fullName: Project.Tests.Integration.Account.RegisterTests.RegisterTests
+  nameWithType.vb: RegisterTests.New
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.New
+  name.vb: New
+- uid: Project.Tests.Integration.SharedDatabaseFixture
+  commentId: T:Project.Tests.Integration.SharedDatabaseFixture
+  parent: Project.Tests.Integration
+  href: Project.Tests.Integration.SharedDatabaseFixture.html
+  name: SharedDatabaseFixture
+  nameWithType: SharedDatabaseFixture
+  fullName: Project.Tests.Integration.SharedDatabaseFixture
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName*
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName
+  href: Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldCreateUserWithValidName_System_String_System_String_System_String_System_String_
+  name: ShouldCreateUserWithValidName
+  nameWithType: RegisterTests.ShouldCreateUserWithValidName
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName*
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName
+  href: Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithInvalidName_System_String_System_String_System_String_System_String_
+  name: ShouldNotCreateUserWithInvalidName
+  nameWithType: RegisterTests.ShouldNotCreateUserWithInvalidName
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword*
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword
+  href: Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithWeakPassword_System_String_System_String_System_String_System_String_
+  name: ShouldNotCreateUserWithWeakPassword
+  nameWithType: RegisterTests.ShouldNotCreateUserWithWeakPassword
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail*
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  href: Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithDuplicateEmail
+  name: ShouldNotCreateUserWithDuplicateEmail
+  nameWithType: RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames*
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames
+  href: Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldAllowValidEdgeCaseNames_System_String_System_String_System_String_System_String_
+  name: ShouldAllowValidEdgeCaseNames
+  nameWithType: RegisterTests.ShouldAllowValidEdgeCaseNames
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames

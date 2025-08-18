@@ -5,6 +5,8 @@ items:
   id: Project.Api.Configurations
   children:
   - Project.Api.Configurations.ConfigurationsModule
+  - Project.Api.Configurations.CorsConfiguration
+  - Project.Api.Configurations.ExecutionContextAccessor
   langs:
   - csharp
   - vb
@@ -21,3 +23,15 @@ references:
   name: ConfigurationsModule
   nameWithType: ConfigurationsModule
   fullName: Project.Api.Configurations.ConfigurationsModule
+- uid: Project.Api.Configurations.CorsConfiguration
+  commentId: T:Project.Api.Configurations.CorsConfiguration
+  href: Project.Api.Configurations.CorsConfiguration.html
+  name: CorsConfiguration
+  nameWithType: CorsConfiguration
+  fullName: Project.Api.Configurations.CorsConfiguration
+- uid: Project.Api.Configurations.ExecutionContextAccessor
+  commentId: T:Project.Api.Configurations.ExecutionContextAccessor
+  href: Project.Api.Configurations.ExecutionContextAccessor.html
+  name: ExecutionContextAccessor
+  nameWithType: ExecutionContextAccessor
+  fullName: Project.Api.Configurations.ExecutionContextAccessor

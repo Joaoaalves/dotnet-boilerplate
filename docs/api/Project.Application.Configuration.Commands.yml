@@ -7,6 +7,7 @@ items:
   - Project.Application.Configuration.Commands.BaseCommand`1
   - Project.Application.Configuration.Commands.ICommand
   - Project.Application.Configuration.Commands.ICommandHandler`2
+  - Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
   - Project.Application.Configuration.Commands.ICommand`1
   - Project.Application.Configuration.Commands.InternalCommandBase`1
   - Project.Application.Configuration.Commands.Unit
@@ -108,6 +109,37 @@ references:
   - uid: Project.Application.Configuration.Commands.ICommandHandler`2
     name: ICommandHandler
     href: Project.Application.Configuration.Commands.ICommandHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  commentId: T:Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
+  name: ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult)
+  name.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
+  spec.csharp:
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour
+    href: Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
   - name: (
   - name: Of
   - name: " "

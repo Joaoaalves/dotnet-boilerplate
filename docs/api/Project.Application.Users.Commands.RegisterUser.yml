@@ -6,6 +6,7 @@ items:
   children:
   - Project.Application.Users.Commands.RegisterUser.RegisterUserCommand
   - Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+  - Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
   langs:
   - csharp
   - vb
@@ -29,6 +30,12 @@ references:
   name: RegisterUserCommandHandler
   nameWithType: RegisterUserCommandHandler
   fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
+  href: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.html
+  name: RegisterUserCommandValidator
+  nameWithType: RegisterUserCommandValidator
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
 - uid: Project.Application.Users.Commands.RegisterUser
   commentId: N:Project.Application.Users.Commands.RegisterUser
   href: Project.html

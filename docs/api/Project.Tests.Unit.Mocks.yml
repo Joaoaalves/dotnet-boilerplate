@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Unit.Mocks
+  commentId: N:Project.Tests.Unit.Mocks
+  id: Project.Tests.Unit.Mocks
+  children:
+  - Project.Tests.Unit.Mocks.UserManagerMock
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.Unit.Mocks
+  nameWithType: Project.Tests.Unit.Mocks
+  fullName: Project.Tests.Unit.Mocks
+  type: Namespace
+  assemblies:
+  - Project.Tests.Unit
+references:
+- uid: Project.Tests.Unit.Mocks.UserManagerMock
+  commentId: T:Project.Tests.Unit.Mocks.UserManagerMock
+  href: Project.Tests.Unit.Mocks.UserManagerMock.html
+  name: UserManagerMock
+  nameWithType: UserManagerMock
+  fullName: Project.Tests.Unit.Mocks.UserManagerMock

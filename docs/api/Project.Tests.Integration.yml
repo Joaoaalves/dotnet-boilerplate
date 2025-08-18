@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Integration
+  commentId: N:Project.Tests.Integration
+  id: Project.Tests.Integration
+  children:
+  - Project.Tests.Integration.IntegrationTestBase
+  - Project.Tests.Integration.SharedDatabaseFixture
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.Integration
+  nameWithType: Project.Tests.Integration
+  fullName: Project.Tests.Integration
+  type: Namespace
+  assemblies:
+  - Project.Tests.Integration
+references:
+- uid: Project.Tests.Integration.IntegrationTestBase
+  commentId: T:Project.Tests.Integration.IntegrationTestBase
+  parent: Project.Tests.Integration
+  href: Project.Tests.Integration.IntegrationTestBase.html
+  name: IntegrationTestBase
+  nameWithType: IntegrationTestBase
+  fullName: Project.Tests.Integration.IntegrationTestBase
+- uid: Project.Tests.Integration.SharedDatabaseFixture
+  commentId: T:Project.Tests.Integration.SharedDatabaseFixture
+  parent: Project.Tests.Integration
+  href: Project.Tests.Integration.SharedDatabaseFixture.html
+  name: SharedDatabaseFixture
+  nameWithType: SharedDatabaseFixture
+  fullName: Project.Tests.Integration.SharedDatabaseFixture
+- uid: Project.Tests.Integration
+  commentId: N:Project.Tests.Integration
+  href: Project.html
+  name: Project.Tests.Integration
+  nameWithType: Project.Tests.Integration
+  fullName: Project.Tests.Integration
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.Integration
+    name: Integration
+    href: Project.Tests.Integration.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.Integration
+    name: Integration
+    href: Project.Tests.Integration.html

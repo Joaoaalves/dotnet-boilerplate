@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Integration.Setup
+  commentId: N:Project.Tests.Integration.Setup
+  id: Project.Tests.Integration.Setup
+  children:
+  - Project.Tests.Integration.Setup.CustomWebApplicationFactory
+  - Project.Tests.Integration.Setup.EnvLoader
+  - Project.Tests.Integration.Setup.TestAuthHandler
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.Integration.Setup
+  nameWithType: Project.Tests.Integration.Setup
+  fullName: Project.Tests.Integration.Setup
+  type: Namespace
+  assemblies:
+  - Project.Tests.Integration
+references:
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory
+  commentId: T:Project.Tests.Integration.Setup.CustomWebApplicationFactory
+  href: Project.Tests.Integration.Setup.CustomWebApplicationFactory.html
+  name: CustomWebApplicationFactory
+  nameWithType: CustomWebApplicationFactory
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory
+- uid: Project.Tests.Integration.Setup.EnvLoader
+  commentId: T:Project.Tests.Integration.Setup.EnvLoader
+  href: Project.Tests.Integration.Setup.EnvLoader.html
+  name: EnvLoader
+  nameWithType: EnvLoader
+  fullName: Project.Tests.Integration.Setup.EnvLoader
+- uid: Project.Tests.Integration.Setup.TestAuthHandler
+  commentId: T:Project.Tests.Integration.Setup.TestAuthHandler
+  href: Project.Tests.Integration.Setup.TestAuthHandler.html
+  name: TestAuthHandler
+  nameWithType: TestAuthHandler
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler

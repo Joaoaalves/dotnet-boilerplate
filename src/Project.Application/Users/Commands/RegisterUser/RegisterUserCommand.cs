@@ -1,5 +1,4 @@
 using Project.Application.Configuration.Commands;
-using Project.Domain.Users;
 
 namespace Project.Application.Users.Commands.RegisterUser
 {

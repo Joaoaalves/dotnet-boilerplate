@@ -27,7 +27,7 @@ namespace Project.Application.Configuration.Validation
                     .ToList();
 
                 if (failures.Count != 0)
-                    throw new Exception(failures[0].ErrorMessage);
+                    throw new InvalidCommandException(failures[0].ErrorMessage, failures[0].ErrorMessage);
             }
 
             return await next();

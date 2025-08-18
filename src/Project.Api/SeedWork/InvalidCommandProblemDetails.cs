@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Project.Application.Configuration.Validation;
 
-namespace Project.API.SeedWork
+namespace Project.Api.SeedWork
 {
     /// <summary>
     /// Represents problem details for an <see cref="InvalidCommandException"/> error.

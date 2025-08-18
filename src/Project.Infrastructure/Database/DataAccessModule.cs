@@ -29,7 +29,7 @@ namespace Project.Infrastructure.Database
             });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            services.AddScoped<DbContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
             // Register repositories
             services.AddScoped<IUserRepository, UserRepository>();
 

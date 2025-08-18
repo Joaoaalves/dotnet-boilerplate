@@ -1,4 +1,4 @@
-namespace Project.API.Configurations
+namespace Project.Api.Configurations
 {
     /// <summary>
     /// Middleware that adds a unique correlation ID to each HTTP request.

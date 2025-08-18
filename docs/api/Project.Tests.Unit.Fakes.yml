@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Unit.Fakes
+  commentId: N:Project.Tests.Unit.Fakes
+  id: Project.Tests.Unit.Fakes
+  children:
+  - Project.Tests.Unit.Fakes.FakeDbContext`1
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.Unit.Fakes
+  nameWithType: Project.Tests.Unit.Fakes
+  fullName: Project.Tests.Unit.Fakes
+  type: Namespace
+  assemblies:
+  - Project.Tests.Unit
+references:
+- uid: Project.Tests.Unit.Fakes.FakeDbContext`1
+  commentId: T:Project.Tests.Unit.Fakes.FakeDbContext`1
+  href: Project.Tests.Unit.Fakes.FakeDbContext-1.html
+  name: FakeDbContext<TUser>
+  nameWithType: FakeDbContext<TUser>
+  fullName: Project.Tests.Unit.Fakes.FakeDbContext<TUser>
+  nameWithType.vb: FakeDbContext(Of TUser)
+  fullName.vb: Project.Tests.Unit.Fakes.FakeDbContext(Of TUser)
+  name.vb: FakeDbContext(Of TUser)
+  spec.csharp:
+  - uid: Project.Tests.Unit.Fakes.FakeDbContext`1
+    name: FakeDbContext
+    href: Project.Tests.Unit.Fakes.FakeDbContext-1.html
+  - name: <
+  - name: TUser
+  - name: '>'
+  spec.vb:
+  - uid: Project.Tests.Unit.Fakes.FakeDbContext`1
+    name: FakeDbContext
+    href: Project.Tests.Unit.Fakes.FakeDbContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TUser
+  - name: )

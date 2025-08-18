@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project.Domain.SeedWork;
 
-namespace Project.API.SeedWork
+namespace Project.Api.SeedWork
 {
     /// <summary>
     /// Represents a standardized HTTP response for business rule validation exceptions.

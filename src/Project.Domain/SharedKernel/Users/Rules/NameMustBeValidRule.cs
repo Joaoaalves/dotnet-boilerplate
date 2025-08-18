@@ -28,7 +28,7 @@ namespace Project.Domain.SharedKernel.Users.Rules
         /// Regex to validate name formatting (only letters and spaces).
         /// </summary>
         /// <returns>A compiled regular expression.</returns>
-        [GeneratedRegex(@"^([a-zA-Z0]+ ?)*$")]
+        [GeneratedRegex(@"^([\p{L}]+ ?)*$")]
         private static partial Regex NameRegex();
     }
 }

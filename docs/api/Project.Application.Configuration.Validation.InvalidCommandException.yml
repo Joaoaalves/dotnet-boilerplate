@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: InvalidCommandException
     path: ../src/Project.Application/Configuration/Validation/InvalidCommandException.cs
-    startLine: 4
+    startLine: 2
   assemblies:
   - Project.Application
   namespace: Project.Application.Configuration.Validation
@@ -69,7 +69,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Application/Configuration/Validation/InvalidCommandException.cs
-    startLine: 4
+    startLine: 2
   assemblies:
   - Project.Application
   namespace: Project.Application.Configuration.Validation
@@ -103,7 +103,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Details
     path: ../src/Project.Application/Configuration/Validation/InvalidCommandException.cs
-    startLine: 6
+    startLine: 4
   assemblies:
   - Project.Application
   namespace: Project.Application.Configuration.Validation

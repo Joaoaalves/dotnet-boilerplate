@@ -6,10 +6,10 @@ items:
   parent: Project.Domain.Users
   children:
   - Project.Domain.Users.User.#ctor
-  - Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
   - Project.Domain.Users.User.Create(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.UserName,Project.Domain.SharedKernel.Users.Email)
   - Project.Domain.Users.User.FirstName
   - Project.Domain.Users.User.LastName
+  - Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
   langs:
   - csharp
   - vb
@@ -163,44 +163,6 @@ items:
   nameWithType.vb: User.New()
   fullName.vb: Project.Domain.Users.User.New()
   name.vb: New()
-- uid: Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
-  commentId: M:Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
-  id: '#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)'
-  parent: Project.Domain.Users.User
-  langs:
-  - csharp
-  - vb
-  name: User(string, string, Name, Name)
-  nameWithType: User.User(string, string, Name, Name)
-  fullName: Project.Domain.Users.User.User(string, string, Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
-  type: Constructor
-  source:
-    remote:
-      path: src/Project.Domain/Users/User.cs
-      branch: main
-      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: .ctor
-    path: ../src/Project.Domain/Users/User.cs
-    startLine: 19
-  assemblies:
-  - Project.Domain
-  namespace: Project.Domain.Users
-  syntax:
-    content: public User(string userName, string email, Name firstName, Name lastName)
-    parameters:
-    - id: userName
-      type: System.String
-    - id: email
-      type: System.String
-    - id: firstName
-      type: Project.Domain.SharedKernel.Users.Name
-    - id: lastName
-      type: Project.Domain.SharedKernel.Users.Name
-    content.vb: Public Sub New(userName As String, email As String, firstName As Name, lastName As Name)
-  overload: Project.Domain.Users.User.#ctor*
-  nameWithType.vb: User.New(String, String, Name, Name)
-  fullName.vb: Project.Domain.Users.User.New(String, String, Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
-  name.vb: New(String, String, Name, Name)
 - uid: Project.Domain.Users.User.Create(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.UserName,Project.Domain.SharedKernel.Users.Email)
   commentId: M:Project.Domain.Users.User.Create(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.UserName,Project.Domain.SharedKernel.Users.Email)
   id: Create(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.UserName,Project.Domain.SharedKernel.Users.Email)
@@ -240,6 +202,40 @@ items:
       type: Project.Domain.Users.User
     content.vb: Public Shared Function Create(firstName As Name, lastName As Name, userName As UserName, email As Email) As User
   overload: Project.Domain.Users.User.Create*
+- uid: Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  commentId: M:Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  id: Rename(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  parent: Project.Domain.Users.User
+  langs:
+  - csharp
+  - vb
+  name: Rename(Name?, Name?)
+  nameWithType: User.Rename(Name?, Name?)
+  fullName: Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name?, Project.Domain.SharedKernel.Users.Name?)
+  type: Method
+  source:
+    remote:
+      path: src/Project.Domain/Users/User.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Rename
+    path: ../src/Project.Domain/Users/User.cs
+    startLine: 36
+  assemblies:
+  - Project.Domain
+  namespace: Project.Domain.Users
+  syntax:
+    content: public void Rename(Name? firstName, Name? lastName)
+    parameters:
+    - id: firstName
+      type: Project.Domain.SharedKernel.Users.Name
+    - id: lastName
+      type: Project.Domain.SharedKernel.Users.Name
+    content.vb: Public Sub Rename(firstName As Name, lastName As Name)
+  overload: Project.Domain.Users.User.Rename*
+  nameWithType.vb: User.Rename(Name, Name)
+  fullName.vb: Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
+  name.vb: Rename(Name, Name)
 references:
 - uid: Project.Domain.Users
   commentId: N:Project.Domain.Users
@@ -1027,17 +1023,6 @@ references:
   nameWithType.vb: User.New
   fullName.vb: Project.Domain.Users.User.New
   name.vb: New
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: Project.Domain.Users.User.Create*
   commentId: Overload:Project.Domain.Users.User.Create
   href: Project.Domain.Users.User.html#Project_Domain_Users_User_Create_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_UserName_Project_Domain_SharedKernel_Users_Email_
@@ -1065,3 +1050,9 @@ references:
   name: User
   nameWithType: User
   fullName: Project.Domain.Users.User
+- uid: Project.Domain.Users.User.Rename*
+  commentId: Overload:Project.Domain.Users.User.Rename
+  href: Project.Domain.Users.User.html#Project_Domain_Users_User_Rename_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_
+  name: Rename
+  nameWithType: User.Rename
+  fullName: Project.Domain.Users.User.Rename

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.Integration.Account
+  commentId: N:Project.Tests.Integration.Account
+  id: Project.Tests.Integration.Account
+  children:
+  - Project.Tests.Integration.Account.InfoTests
+  - Project.Tests.Integration.Account.RegisterTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.Integration.Account
+  nameWithType: Project.Tests.Integration.Account
+  fullName: Project.Tests.Integration.Account
+  type: Namespace
+  assemblies:
+  - Project.Tests.Integration
+references:
+- uid: Project.Tests.Integration.Account.InfoTests
+  commentId: T:Project.Tests.Integration.Account.InfoTests
+  href: Project.Tests.Integration.Account.InfoTests.html
+  name: InfoTests
+  nameWithType: InfoTests
+  fullName: Project.Tests.Integration.Account.InfoTests
+- uid: Project.Tests.Integration.Account.RegisterTests
+  commentId: T:Project.Tests.Integration.Account.RegisterTests
+  href: Project.Tests.Integration.Account.RegisterTests.html
+  name: RegisterTests
+  nameWithType: RegisterTests
+  fullName: Project.Tests.Integration.Account.RegisterTests

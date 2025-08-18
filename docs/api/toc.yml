@@ -1,25 +1,5 @@
 ### YamlMime:TableOfContent
 items:
-- uid: Project.API.Configurations
-  name: Project.API.Configurations
-  type: Namespace
-  items:
-  - uid: Project.API.Configurations.CorsConfiguration
-    name: CorsConfiguration
-    type: Class
-  - uid: Project.API.Configurations.ExecutionContextAccessor
-    name: ExecutionContextAccessor
-    type: Class
-- uid: Project.API.SeedWork
-  name: Project.API.SeedWork
-  type: Namespace
-  items:
-  - uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
-    name: BusinessRuleValidationExceptionProblemDetails
-    type: Class
-  - uid: Project.API.SeedWork.InvalidCommandProblemDetails
-    name: InvalidCommandProblemDetails
-    type: Class
 - uid: Project.Api.Auth
   name: Project.Api.Auth
   type: Namespace
@@ -40,6 +20,12 @@ items:
   - uid: Project.Api.Configurations.ConfigurationsModule
     name: ConfigurationsModule
     type: Class
+  - uid: Project.Api.Configurations.CorsConfiguration
+    name: CorsConfiguration
+    type: Class
+  - uid: Project.Api.Configurations.ExecutionContextAccessor
+    name: ExecutionContextAccessor
+    type: Class
 - uid: Project.Api.Controllers.Users
   name: Project.Api.Controllers.Users
   type: Namespace
@@ -53,6 +39,19 @@ items:
   items:
   - uid: Project.Api.Extensions.SwaggerExtensions
     name: SwaggerExtensions
+    type: Class
+  - uid: Project.Api.Extensions.ValidationExtension
+    name: ValidationExtension
+    type: Class
+- uid: Project.Api.SeedWork
+  name: Project.Api.SeedWork
+  type: Namespace
+  items:
+  - uid: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+    name: BusinessRuleValidationExceptionProblemDetails
+    type: Class
+  - uid: Project.Api.SeedWork.InvalidCommandProblemDetails
+    name: InvalidCommandProblemDetails
     type: Class
 - uid: Project.Application.Configuration
   name: Project.Application.Configuration
@@ -74,6 +73,9 @@ items:
   - uid: Project.Application.Configuration.Commands.ICommandHandler`2
     name: ICommandHandler<TCommand, TResult>
     type: Interface
+  - uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+    name: ICommandPipelineBehaviour<TCommand, TResult>
+    type: Interface
   - uid: Project.Application.Configuration.Commands.ICommand`1
     name: ICommand<TResult>
     type: Interface
@@ -90,9 +92,6 @@ items:
   name: Project.Application.Configuration.Commands.Behaviors
   type: Namespace
   items:
-  - uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-    name: ICommandPipelineBehavior<TCommand, TResult>
-    type: Interface
   - uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
     name: UserInjectionCommandBehavior<TCommand, TResult>
     type: Class
@@ -155,6 +154,9 @@ items:
     type: Class
   - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler
     name: RegisterUserCommandHandler
+    type: Class
+  - uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
+    name: RegisterUserCommandValidator
     type: Class
 - uid: Project.Application.Users.Mappers
   name: Project.Application.Users.Mappers
@@ -399,11 +401,84 @@ items:
   - uid: Project.Logging.Users.UserLogIndexDefinition
     name: UserLogIndexDefinition
     type: Class
-- uid: Project.Tests
-  name: Project.Tests
+- uid: Project.Tests.Integration
+  name: Project.Tests.Integration
   type: Namespace
   items:
-  - uid: Project.Tests.UnitTest1
-    name: UnitTest1
+  - uid: Project.Tests.Integration.IntegrationTestBase
+    name: IntegrationTestBase
+    type: Class
+  - uid: Project.Tests.Integration.SharedDatabaseFixture
+    name: SharedDatabaseFixture
+    type: Class
+- uid: Project.Tests.Integration.Account
+  name: Project.Tests.Integration.Account
+  type: Namespace
+  items:
+  - uid: Project.Tests.Integration.Account.InfoTests
+    name: InfoTests
+    type: Class
+  - uid: Project.Tests.Integration.Account.RegisterTests
+    name: RegisterTests
+    type: Class
+- uid: Project.Tests.Integration.Setup
+  name: Project.Tests.Integration.Setup
+  type: Namespace
+  items:
+  - uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory
+    name: CustomWebApplicationFactory
+    type: Class
+  - uid: Project.Tests.Integration.Setup.EnvLoader
+    name: EnvLoader
+    type: Class
+  - uid: Project.Tests.Integration.Setup.TestAuthHandler
+    name: TestAuthHandler
+    type: Class
+- uid: Project.Tests.Unit.Application.UsersTests
+  name: Project.Tests.Unit.Application.UsersTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests
+    name: GetUserDetailsQueryHandlerTests
+    type: Class
+  - uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests
+    name: RegisterUserCommandTests
+    type: Class
+- uid: Project.Tests.Unit.Builders
+  name: Project.Tests.Unit.Builders
+  type: Namespace
+  items:
+  - uid: Project.Tests.Unit.Builders.UserBuilder
+    name: UserBuilder
+    type: Class
+- uid: Project.Tests.Unit.Domain.UsersTests
+  name: Project.Tests.Unit.Domain.UsersTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.Unit.Domain.UsersTests.EmailTests
+    name: EmailTests
+    type: Class
+  - uid: Project.Tests.Unit.Domain.UsersTests.NameTests
+    name: NameTests
+    type: Class
+  - uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests
+    name: UserNameTests
+    type: Class
+  - uid: Project.Tests.Unit.Domain.UsersTests.UserTests
+    name: UserTests
+    type: Class
+- uid: Project.Tests.Unit.Fakes
+  name: Project.Tests.Unit.Fakes
+  type: Namespace
+  items:
+  - uid: Project.Tests.Unit.Fakes.FakeDbContext`1
+    name: FakeDbContext<TUser>
+    type: Class
+- uid: Project.Tests.Unit.Mocks
+  name: Project.Tests.Unit.Mocks
+  type: Namespace
+  items:
+  - uid: Project.Tests.Unit.Mocks.UserManagerMock
+    name: UserManagerMock
     type: Class
 memberLayout: SamePage

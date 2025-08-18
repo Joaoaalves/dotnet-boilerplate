@@ -6,7 +6,7 @@ namespace Project.Logging
     /// </summary>
     public class LogEntry : ILogEntry
     {
-        /// <summary>
+        /// <summary>-
         /// Gets the unique identifier for the log entry.
         /// </summary>
         public string Id { get; } = Guid.NewGuid().ToString();

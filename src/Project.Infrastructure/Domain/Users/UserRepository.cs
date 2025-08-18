@@ -6,6 +6,7 @@ using Project.Domain.Users;
 using Project.Infrastructure.Database;
 
 using Project.Application.Users;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Project.Infrastructure.Domain.Users
 {
@@ -14,11 +15,11 @@ namespace Project.Infrastructure.Domain.Users
     /// </summary>
     public class UserRepository(
         UserManager<User> userManager,
-        ApplicationDbContext applicationDbContext
+        DbContext applicationDbContext
     ) : IUserRepository
     {
         private readonly UserManager<User> _userManager = userManager;
-        private readonly ApplicationDbContext _dbContext = applicationDbContext;
+        private readonly DbContext _dbContext = applicationDbContext;
 
         /// <inheritdoc />
         public async Task<IdentityResult> CreateAsync(User user, string password)
@@ -37,7 +38,7 @@ namespace Project.Infrastructure.Domain.Users
         /// <inheritdoc />
         public async Task<User?> GetByEmailAsync(string email)
         {
-            return await _dbContext.Users
+            return await _dbContext.Set<User>()
                 .FirstOrDefaultAsync(u => u.Email == email);
         }
 
@@ -45,7 +46,7 @@ namespace Project.Infrastructure.Domain.Users
         /// <inheritdoc />
         public async Task<User?> GetByIdAsync(string userId)
         {
-            return await _dbContext.Users
+            return await _dbContext.Set<User>()
                 .FirstOrDefaultAsync(u => u.Id == userId);
         }
 

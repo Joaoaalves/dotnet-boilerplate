@@ -6,7 +6,7 @@ items:
   parent: Project.Application.Users.Queries.GetUserDetails
   children:
   - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.Security.Claims.ClaimsPrincipal)
-  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
   langs:
   - csharp
   - vb
@@ -26,7 +26,7 @@ items:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
   syntax:
-    content: 'public class GetUserDetailsQuery : IQuery<UserDetailsDTO>, IRequest<UserDetailsDTO>'
+    content: 'public class GetUserDetailsQuery : IQuery<UserDetailsDTO?>, IRequest<UserDetailsDTO?>'
     content.vb: Public Class GetUserDetailsQuery Implements IQuery(Of UserDetailsDTO), IRequest(Of UserDetailsDTO)
   inheritance:
   - System.Object
@@ -73,35 +73,35 @@ items:
   nameWithType.vb: GetUserDetailsQuery.New(ClaimsPrincipal)
   fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New(System.Security.Claims.ClaimsPrincipal)
   name.vb: New(ClaimsPrincipal)
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  commentId: P:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  id: Principal
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  commentId: P:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  id: Email
   parent: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
   langs:
   - csharp
   - vb
-  name: Principal
-  nameWithType: GetUserDetailsQuery.Principal
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+  name: Email
+  nameWithType: GetUserDetailsQuery.Email
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
   type: Property
   source:
     remote:
       path: src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQuery.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
-    id: Principal
+    id: Email
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQuery.cs
     startLine: 9
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
   syntax:
-    content: public ClaimsPrincipal Principal { get; }
+    content: public string? Email { get; }
     parameters: []
     return:
-      type: System.Security.Claims.ClaimsPrincipal
-    content.vb: Public ReadOnly Property Principal As ClaimsPrincipal
-  overload: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal*
+      type: System.String
+    content.vb: Public ReadOnly Property Email As String
+  overload: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email*
 references:
 - uid: Project.Application.Users.Queries.GetUserDetails
   commentId: N:Project.Application.Users.Queries.GetUserDetails
@@ -618,9 +618,20 @@ references:
     name: Claims
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.security.claims
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal*
-  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal
-  name: Principal
-  nameWithType: GetUserDetailsQuery.Principal
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email*
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email
+  name: Email
+  nameWithType: GetUserDetailsQuery.Email
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

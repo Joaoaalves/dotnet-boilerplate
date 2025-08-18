@@ -1,4 +1,4 @@
-using Project.API.Configurations;
+using Project.Api.Configurations;
 using Project.Application.Configuration;
 
 namespace Project.Api.Configurations

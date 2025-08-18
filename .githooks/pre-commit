@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 echo "Running dotnet format..."
 cd src
@@ -15,10 +16,8 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 cd ..
-echo "Generating documentation..."
-make clean-docs
-make docs
 
 git add .
 
+echo "Pre-commit checks passed."
 exit 0

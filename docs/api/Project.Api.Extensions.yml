@@ -5,6 +5,7 @@ items:
   id: Project.Api.Extensions
   children:
   - Project.Api.Extensions.SwaggerExtensions
+  - Project.Api.Extensions.ValidationExtension
   langs:
   - csharp
   - vb
@@ -21,3 +22,9 @@ references:
   name: SwaggerExtensions
   nameWithType: SwaggerExtensions
   fullName: Project.Api.Extensions.SwaggerExtensions
+- uid: Project.Api.Extensions.ValidationExtension
+  commentId: T:Project.Api.Extensions.ValidationExtension
+  href: Project.Api.Extensions.ValidationExtension.html
+  name: ValidationExtension
+  nameWithType: ValidationExtension
+  fullName: Project.Api.Extensions.ValidationExtension

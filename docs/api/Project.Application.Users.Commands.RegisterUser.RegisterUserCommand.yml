@@ -24,7 +24,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: RegisterUserCommand
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
-    startLine: 5
+    startLine: 4
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
-    startLine: 5
+    startLine: 4
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: FirstName
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -131,7 +131,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: LastName
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Email
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser
@@ -189,7 +189,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Password
     path: ../src/Project.Application/Users/Commands/RegisterUser/RegisterUserCommand.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Commands.RegisterUser

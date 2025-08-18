@@ -166,7 +166,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: SetValue
     path: ../src/Project.Domain/SharedKernel/Users/Name.cs
-    startLine: 40
+    startLine: 38
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users
@@ -205,7 +205,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ToString
     path: ../src/Project.Domain/SharedKernel/Users/Name.cs
-    startLine: 48
+    startLine: 46
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users
@@ -237,7 +237,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
     path: ../src/Project.Domain/SharedKernel/Users/Name.cs
-    startLine: 51
+    startLine: 49
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users
@@ -276,7 +276,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetHashCode
     path: ../src/Project.Domain/SharedKernel/Users/Name.cs
-    startLine: 61
+    startLine: 59
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users

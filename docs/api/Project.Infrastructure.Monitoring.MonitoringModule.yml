@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
+      path: src/Project.Infrastructure/Monitoring/MonitoringModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: MonitoringModule
-    path: ../src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
+    path: ../src/Project.Infrastructure/Monitoring/MonitoringModule.cs
     startLine: 10
   assemblies:
   - Project.Infrastructure
@@ -53,11 +53,11 @@ items:
   type: Method
   source:
     remote:
-      path: src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
+      path: src/Project.Infrastructure/Monitoring/MonitoringModule.cs
       branch: main
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddMonitoringModule
-    path: ../src/Project.Infrastructure/MonitoringModule/MonitoringModule.cs
+    path: ../src/Project.Infrastructure/Monitoring/MonitoringModule.cs
     startLine: 21
   assemblies:
   - Project.Infrastructure

@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler" class="text-break">
-Class GetUserDetailsQueryHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class GetUserDetailsQueryHandler  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class GetUserDetailsQueryHandler  <a class="header-action link-secondary" title=
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GetUserDetailsQueryHandler : IQueryHandler&lt;GetUserDetailsQuery, UserDetailsDTO&gt;, IRequestHandler&lt;GetUserDetailsQuery, UserDetailsDTO&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class GetUserDetailsQueryHandler : IQueryHandler&lt;GetUserDetailsQuery, UserDetailsDTO?&gt;, IRequestHandler&lt;GetUserDetailsQuery, UserDetailsDTO?&gt;</code></pre>
   </div>
 
 
@@ -161,21 +161,21 @@ Class GetUserDetailsQueryHandler  <a class="header-action link-secondary" title=
 
   <a id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor*"></a>
 
-  <h3 id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})">
-  GetUserDetailsQueryHandler(UserManager&lt;User&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Project_Application_Users_IUserRepository_" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Project.Application.Users.IUserRepository)">
+  GetUserDetailsQueryHandler(IUserRepository)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GetUserDetailsQueryHandler(UserManager&lt;User&gt; userManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public GetUserDetailsQueryHandler(IUserRepository userRepository)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>userManager</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dt><code>userRepository</code> <a class="xref" href="Project.Application.Users.IUserRepository.html">IUserRepository</a></dt>
     <dd></dd>
   </dl>
 
@@ -198,14 +198,14 @@ Class GetUserDetailsQueryHandler  <a class="header-action link-secondary" title=
 
   <h3 id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler_Handle_Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_System_Threading_CancellationToken_" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.Handle(Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery,System.Threading.CancellationToken)">
   Handle(GetUserDetailsQuery, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UserDetailsDTO&gt; Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;UserDetailsDTO?&gt; Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -236,7 +236,7 @@ Class GetUserDetailsQueryHandler  <a class="header-action link-secondary" title=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQueryHandler.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
 

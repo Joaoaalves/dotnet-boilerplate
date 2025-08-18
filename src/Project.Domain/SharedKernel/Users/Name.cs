@@ -26,9 +26,7 @@ namespace Project.Domain.SharedKernel.Users
         /// </exception>
         public Name(string value)
         {
-            value = value.Trim();
-            CheckRule(new Rules.NameMustBeValidRule(value));
-            Value = value;
+            SetValue(value);
         }
 
         /// <summary>

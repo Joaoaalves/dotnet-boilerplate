@@ -1,138 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Project.API.Configurations
-  name: Project.API.Configurations
-  href: api/Project.API.Configurations_1.html
-  commentId: N:Project.API.Configurations
-  fullName: Project.API.Configurations
-  nameWithType: Project.API.Configurations
-- uid: Project.API.Configurations.CorsConfiguration
-  name: CorsConfiguration
-  href: api/Project.API.Configurations.CorsConfiguration.html
-  commentId: T:Project.API.Configurations.CorsConfiguration
-  fullName: Project.API.Configurations.CorsConfiguration
-  nameWithType: CorsConfiguration
-- uid: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddCorsConfiguration(IServiceCollection)
-  href: api/Project.API.Configurations.CorsConfiguration.html#Project_API_Configurations_CorsConfiguration_AddCorsConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Project.API.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: CorsConfiguration.AddCorsConfiguration(IServiceCollection)
-- uid: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration*
-  name: AddCorsConfiguration
-  href: api/Project.API.Configurations.CorsConfiguration.html#Project_API_Configurations_CorsConfiguration_AddCorsConfiguration_
-  commentId: Overload:Project.API.Configurations.CorsConfiguration.AddCorsConfiguration
-  isSpec: "True"
-  fullName: Project.API.Configurations.CorsConfiguration.AddCorsConfiguration
-  nameWithType: CorsConfiguration.AddCorsConfiguration
-- uid: Project.API.Configurations.ExecutionContextAccessor
-  name: ExecutionContextAccessor
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html
-  commentId: T:Project.API.Configurations.ExecutionContextAccessor
-  fullName: Project.API.Configurations.ExecutionContextAccessor
-  nameWithType: ExecutionContextAccessor
-- uid: Project.API.Configurations.ExecutionContextAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
-  name: ExecutionContextAccessor(IHttpContextAccessor)
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_
-  commentId: M:Project.API.Configurations.ExecutionContextAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
-  name.vb: New(IHttpContextAccessor)
-  fullName: Project.API.Configurations.ExecutionContextAccessor.ExecutionContextAccessor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
-  fullName.vb: Project.API.Configurations.ExecutionContextAccessor.New(Microsoft.AspNetCore.Http.IHttpContextAccessor)
-  nameWithType: ExecutionContextAccessor.ExecutionContextAccessor(IHttpContextAccessor)
-  nameWithType.vb: ExecutionContextAccessor.New(IHttpContextAccessor)
-- uid: Project.API.Configurations.ExecutionContextAccessor.#ctor*
-  name: ExecutionContextAccessor
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor__ctor_
-  commentId: Overload:Project.API.Configurations.ExecutionContextAccessor.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Project.API.Configurations.ExecutionContextAccessor.ExecutionContextAccessor
-  fullName.vb: Project.API.Configurations.ExecutionContextAccessor.New
-  nameWithType: ExecutionContextAccessor.ExecutionContextAccessor
-  nameWithType.vb: ExecutionContextAccessor.New
-- uid: Project.API.Configurations.ExecutionContextAccessor.CorrelationId
-  name: CorrelationId
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_CorrelationId
-  commentId: P:Project.API.Configurations.ExecutionContextAccessor.CorrelationId
-  fullName: Project.API.Configurations.ExecutionContextAccessor.CorrelationId
-  nameWithType: ExecutionContextAccessor.CorrelationId
-- uid: Project.API.Configurations.ExecutionContextAccessor.CorrelationId*
-  name: CorrelationId
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_CorrelationId_
-  commentId: Overload:Project.API.Configurations.ExecutionContextAccessor.CorrelationId
-  isSpec: "True"
-  fullName: Project.API.Configurations.ExecutionContextAccessor.CorrelationId
-  nameWithType: ExecutionContextAccessor.CorrelationId
-- uid: Project.API.Configurations.ExecutionContextAccessor.IsAvailable
-  name: IsAvailable
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_IsAvailable
-  commentId: P:Project.API.Configurations.ExecutionContextAccessor.IsAvailable
-  fullName: Project.API.Configurations.ExecutionContextAccessor.IsAvailable
-  nameWithType: ExecutionContextAccessor.IsAvailable
-- uid: Project.API.Configurations.ExecutionContextAccessor.IsAvailable*
-  name: IsAvailable
-  href: api/Project.API.Configurations.ExecutionContextAccessor.html#Project_API_Configurations_ExecutionContextAccessor_IsAvailable_
-  commentId: Overload:Project.API.Configurations.ExecutionContextAccessor.IsAvailable
-  isSpec: "True"
-  fullName: Project.API.Configurations.ExecutionContextAccessor.IsAvailable
-  nameWithType: ExecutionContextAccessor.IsAvailable
-- uid: Project.API.SeedWork
-  name: Project.API.SeedWork
-  href: api/Project.API.SeedWork.html
-  commentId: N:Project.API.SeedWork
-  fullName: Project.API.SeedWork
-  nameWithType: Project.API.SeedWork
-- uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
-  name: BusinessRuleValidationExceptionProblemDetails
-  href: api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html
-  commentId: T:Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
-  fullName: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails
-  nameWithType: BusinessRuleValidationExceptionProblemDetails
-- uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor(Project.Domain.SeedWork.BusinessRuleValidationException)
-  name: BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException)
-  href: api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html#Project_API_SeedWork_BusinessRuleValidationExceptionProblemDetails__ctor_Project_Domain_SeedWork_BusinessRuleValidationException_
-  commentId: M:Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor(Project.Domain.SeedWork.BusinessRuleValidationException)
-  name.vb: New(BusinessRuleValidationException)
-  fullName: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails(Project.Domain.SeedWork.BusinessRuleValidationException)
-  fullName.vb: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.New(Project.Domain.SeedWork.BusinessRuleValidationException)
-  nameWithType: BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException)
-  nameWithType.vb: BusinessRuleValidationExceptionProblemDetails.New(BusinessRuleValidationException)
-- uid: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor*
-  name: BusinessRuleValidationExceptionProblemDetails
-  href: api/Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.html#Project_API_SeedWork_BusinessRuleValidationExceptionProblemDetails__ctor_
-  commentId: Overload:Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails
-  fullName.vb: Project.API.SeedWork.BusinessRuleValidationExceptionProblemDetails.New
-  nameWithType: BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails
-  nameWithType.vb: BusinessRuleValidationExceptionProblemDetails.New
-- uid: Project.API.SeedWork.InvalidCommandProblemDetails
-  name: InvalidCommandProblemDetails
-  href: api/Project.API.SeedWork.InvalidCommandProblemDetails.html
-  commentId: T:Project.API.SeedWork.InvalidCommandProblemDetails
-  fullName: Project.API.SeedWork.InvalidCommandProblemDetails
-  nameWithType: InvalidCommandProblemDetails
-- uid: Project.API.SeedWork.InvalidCommandProblemDetails.#ctor(Project.Application.Configuration.Validation.InvalidCommandException)
-  name: InvalidCommandProblemDetails(InvalidCommandException)
-  href: api/Project.API.SeedWork.InvalidCommandProblemDetails.html#Project_API_SeedWork_InvalidCommandProblemDetails__ctor_Project_Application_Configuration_Validation_InvalidCommandException_
-  commentId: M:Project.API.SeedWork.InvalidCommandProblemDetails.#ctor(Project.Application.Configuration.Validation.InvalidCommandException)
-  name.vb: New(InvalidCommandException)
-  fullName: Project.API.SeedWork.InvalidCommandProblemDetails.InvalidCommandProblemDetails(Project.Application.Configuration.Validation.InvalidCommandException)
-  fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New(Project.Application.Configuration.Validation.InvalidCommandException)
-  nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails(InvalidCommandException)
-  nameWithType.vb: InvalidCommandProblemDetails.New(InvalidCommandException)
-- uid: Project.API.SeedWork.InvalidCommandProblemDetails.#ctor*
-  name: InvalidCommandProblemDetails
-  href: api/Project.API.SeedWork.InvalidCommandProblemDetails.html#Project_API_SeedWork_InvalidCommandProblemDetails__ctor_
-  commentId: Overload:Project.API.SeedWork.InvalidCommandProblemDetails.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Project.API.SeedWork.InvalidCommandProblemDetails.InvalidCommandProblemDetails
-  fullName.vb: Project.API.SeedWork.InvalidCommandProblemDetails.New
-  nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails
-  nameWithType.vb: InvalidCommandProblemDetails.New
 - uid: Project.Api.Auth
   name: Project.Api.Auth
   href: api/Project.Api.Auth.html
@@ -265,6 +133,76 @@ references:
   isSpec: "True"
   fullName: Project.Api.Configurations.ConfigurationsModule.AddConfigurations
   nameWithType: ConfigurationsModule.AddConfigurations
+- uid: Project.Api.Configurations.CorsConfiguration
+  name: CorsConfiguration
+  href: api/Project.Api.Configurations.CorsConfiguration.html
+  commentId: T:Project.Api.Configurations.CorsConfiguration
+  fullName: Project.Api.Configurations.CorsConfiguration
+  nameWithType: CorsConfiguration
+- uid: Project.Api.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddCorsConfiguration(IServiceCollection)
+  href: api/Project.Api.Configurations.CorsConfiguration.html#Project_Api_Configurations_CorsConfiguration_AddCorsConfiguration_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Api.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Api.Configurations.CorsConfiguration.AddCorsConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: CorsConfiguration.AddCorsConfiguration(IServiceCollection)
+- uid: Project.Api.Configurations.CorsConfiguration.AddCorsConfiguration*
+  name: AddCorsConfiguration
+  href: api/Project.Api.Configurations.CorsConfiguration.html#Project_Api_Configurations_CorsConfiguration_AddCorsConfiguration_
+  commentId: Overload:Project.Api.Configurations.CorsConfiguration.AddCorsConfiguration
+  isSpec: "True"
+  fullName: Project.Api.Configurations.CorsConfiguration.AddCorsConfiguration
+  nameWithType: CorsConfiguration.AddCorsConfiguration
+- uid: Project.Api.Configurations.ExecutionContextAccessor
+  name: ExecutionContextAccessor
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html
+  commentId: T:Project.Api.Configurations.ExecutionContextAccessor
+  fullName: Project.Api.Configurations.ExecutionContextAccessor
+  nameWithType: ExecutionContextAccessor
+- uid: Project.Api.Configurations.ExecutionContextAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name: ExecutionContextAccessor(IHttpContextAccessor)
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html#Project_Api_Configurations_ExecutionContextAccessor__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_
+  commentId: M:Project.Api.Configurations.ExecutionContextAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name.vb: New(IHttpContextAccessor)
+  fullName: Project.Api.Configurations.ExecutionContextAccessor.ExecutionContextAccessor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  fullName.vb: Project.Api.Configurations.ExecutionContextAccessor.New(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  nameWithType: ExecutionContextAccessor.ExecutionContextAccessor(IHttpContextAccessor)
+  nameWithType.vb: ExecutionContextAccessor.New(IHttpContextAccessor)
+- uid: Project.Api.Configurations.ExecutionContextAccessor.#ctor*
+  name: ExecutionContextAccessor
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html#Project_Api_Configurations_ExecutionContextAccessor__ctor_
+  commentId: Overload:Project.Api.Configurations.ExecutionContextAccessor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Api.Configurations.ExecutionContextAccessor.ExecutionContextAccessor
+  fullName.vb: Project.Api.Configurations.ExecutionContextAccessor.New
+  nameWithType: ExecutionContextAccessor.ExecutionContextAccessor
+  nameWithType.vb: ExecutionContextAccessor.New
+- uid: Project.Api.Configurations.ExecutionContextAccessor.CorrelationId
+  name: CorrelationId
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html#Project_Api_Configurations_ExecutionContextAccessor_CorrelationId
+  commentId: P:Project.Api.Configurations.ExecutionContextAccessor.CorrelationId
+  fullName: Project.Api.Configurations.ExecutionContextAccessor.CorrelationId
+  nameWithType: ExecutionContextAccessor.CorrelationId
+- uid: Project.Api.Configurations.ExecutionContextAccessor.CorrelationId*
+  name: CorrelationId
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html#Project_Api_Configurations_ExecutionContextAccessor_CorrelationId_
+  commentId: Overload:Project.Api.Configurations.ExecutionContextAccessor.CorrelationId
+  isSpec: "True"
+  fullName: Project.Api.Configurations.ExecutionContextAccessor.CorrelationId
+  nameWithType: ExecutionContextAccessor.CorrelationId
+- uid: Project.Api.Configurations.ExecutionContextAccessor.IsAvailable
+  name: IsAvailable
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html#Project_Api_Configurations_ExecutionContextAccessor_IsAvailable
+  commentId: P:Project.Api.Configurations.ExecutionContextAccessor.IsAvailable
+  fullName: Project.Api.Configurations.ExecutionContextAccessor.IsAvailable
+  nameWithType: ExecutionContextAccessor.IsAvailable
+- uid: Project.Api.Configurations.ExecutionContextAccessor.IsAvailable*
+  name: IsAvailable
+  href: api/Project.Api.Configurations.ExecutionContextAccessor.html#Project_Api_Configurations_ExecutionContextAccessor_IsAvailable_
+  commentId: Overload:Project.Api.Configurations.ExecutionContextAccessor.IsAvailable
+  isSpec: "True"
+  fullName: Project.Api.Configurations.ExecutionContextAccessor.IsAvailable
+  nameWithType: ExecutionContextAccessor.IsAvailable
 - uid: Project.Api.Controllers.Users
   name: Project.Api.Controllers.Users
   href: api/Project.Api.Controllers.Users.html
@@ -347,6 +285,81 @@ references:
   isSpec: "True"
   fullName: Project.Api.Extensions.SwaggerExtensions.AddSwaggerConfiguration
   nameWithType: SwaggerExtensions.AddSwaggerConfiguration
+- uid: Project.Api.Extensions.ValidationExtension
+  name: ValidationExtension
+  href: api/Project.Api.Extensions.ValidationExtension.html
+  commentId: T:Project.Api.Extensions.ValidationExtension
+  fullName: Project.Api.Extensions.ValidationExtension
+  nameWithType: ValidationExtension
+- uid: Project.Api.Extensions.ValidationExtension.AddValidations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddValidations(IServiceCollection)
+  href: api/Project.Api.Extensions.ValidationExtension.html#Project_Api_Extensions_ValidationExtension_AddValidations_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Project.Api.Extensions.ValidationExtension.AddValidations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Project.Api.Extensions.ValidationExtension.AddValidations(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ValidationExtension.AddValidations(IServiceCollection)
+- uid: Project.Api.Extensions.ValidationExtension.AddValidations*
+  name: AddValidations
+  href: api/Project.Api.Extensions.ValidationExtension.html#Project_Api_Extensions_ValidationExtension_AddValidations_
+  commentId: Overload:Project.Api.Extensions.ValidationExtension.AddValidations
+  isSpec: "True"
+  fullName: Project.Api.Extensions.ValidationExtension.AddValidations
+  nameWithType: ValidationExtension.AddValidations
+- uid: Project.Api.SeedWork
+  name: Project.Api.SeedWork
+  href: api/Project.Api.SeedWork.html
+  commentId: N:Project.Api.SeedWork
+  fullName: Project.Api.SeedWork
+  nameWithType: Project.Api.SeedWork
+- uid: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  name: BusinessRuleValidationExceptionProblemDetails
+  href: api/Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.html
+  commentId: T:Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  fullName: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails
+  nameWithType: BusinessRuleValidationExceptionProblemDetails
+- uid: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor(Project.Domain.SeedWork.BusinessRuleValidationException)
+  name: BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException)
+  href: api/Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.html#Project_Api_SeedWork_BusinessRuleValidationExceptionProblemDetails__ctor_Project_Domain_SeedWork_BusinessRuleValidationException_
+  commentId: M:Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor(Project.Domain.SeedWork.BusinessRuleValidationException)
+  name.vb: New(BusinessRuleValidationException)
+  fullName: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails(Project.Domain.SeedWork.BusinessRuleValidationException)
+  fullName.vb: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.New(Project.Domain.SeedWork.BusinessRuleValidationException)
+  nameWithType: BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails(BusinessRuleValidationException)
+  nameWithType.vb: BusinessRuleValidationExceptionProblemDetails.New(BusinessRuleValidationException)
+- uid: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor*
+  name: BusinessRuleValidationExceptionProblemDetails
+  href: api/Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.html#Project_Api_SeedWork_BusinessRuleValidationExceptionProblemDetails__ctor_
+  commentId: Overload:Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails
+  fullName.vb: Project.Api.SeedWork.BusinessRuleValidationExceptionProblemDetails.New
+  nameWithType: BusinessRuleValidationExceptionProblemDetails.BusinessRuleValidationExceptionProblemDetails
+  nameWithType.vb: BusinessRuleValidationExceptionProblemDetails.New
+- uid: Project.Api.SeedWork.InvalidCommandProblemDetails
+  name: InvalidCommandProblemDetails
+  href: api/Project.Api.SeedWork.InvalidCommandProblemDetails.html
+  commentId: T:Project.Api.SeedWork.InvalidCommandProblemDetails
+  fullName: Project.Api.SeedWork.InvalidCommandProblemDetails
+  nameWithType: InvalidCommandProblemDetails
+- uid: Project.Api.SeedWork.InvalidCommandProblemDetails.#ctor(Project.Application.Configuration.Validation.InvalidCommandException)
+  name: InvalidCommandProblemDetails(InvalidCommandException)
+  href: api/Project.Api.SeedWork.InvalidCommandProblemDetails.html#Project_Api_SeedWork_InvalidCommandProblemDetails__ctor_Project_Application_Configuration_Validation_InvalidCommandException_
+  commentId: M:Project.Api.SeedWork.InvalidCommandProblemDetails.#ctor(Project.Application.Configuration.Validation.InvalidCommandException)
+  name.vb: New(InvalidCommandException)
+  fullName: Project.Api.SeedWork.InvalidCommandProblemDetails.InvalidCommandProblemDetails(Project.Application.Configuration.Validation.InvalidCommandException)
+  fullName.vb: Project.Api.SeedWork.InvalidCommandProblemDetails.New(Project.Application.Configuration.Validation.InvalidCommandException)
+  nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails(InvalidCommandException)
+  nameWithType.vb: InvalidCommandProblemDetails.New(InvalidCommandException)
+- uid: Project.Api.SeedWork.InvalidCommandProblemDetails.#ctor*
+  name: InvalidCommandProblemDetails
+  href: api/Project.Api.SeedWork.InvalidCommandProblemDetails.html#Project_Api_SeedWork_InvalidCommandProblemDetails__ctor_
+  commentId: Overload:Project.Api.SeedWork.InvalidCommandProblemDetails.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Api.SeedWork.InvalidCommandProblemDetails.InvalidCommandProblemDetails
+  fullName.vb: Project.Api.SeedWork.InvalidCommandProblemDetails.New
+  nameWithType: InvalidCommandProblemDetails.InvalidCommandProblemDetails
+  nameWithType.vb: InvalidCommandProblemDetails.New
 - uid: Project.Application.Configuration
   name: Project.Application.Configuration
   href: api/Project.Application.Configuration.html
@@ -391,33 +404,6 @@ references:
   commentId: N:Project.Application.Configuration.Commands.Behaviors
   fullName: Project.Application.Configuration.Commands.Behaviors
   nameWithType: Project.Application.Configuration.Commands.Behaviors
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-  name: ICommandPipelineBehavior<TCommand, TResult>
-  href: api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html
-  commentId: T:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2
-  name.vb: ICommandPipelineBehavior(Of TCommand, TResult)
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult)
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult)
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  href: api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
-  commentId: M:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
-  name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
-- uid: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle*
-  name: Handle
-  href: api/Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior-2.html#Project_Application_Configuration_Commands_Behaviors_ICommandPipelineBehavior_2_Handle_
-  commentId: Overload:Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior`2.Handle
-  isSpec: "True"
-  fullName: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior<TCommand, TResult>.Handle
-  fullName.vb: Project.Application.Configuration.Commands.Behaviors.ICommandPipelineBehavior(Of TCommand, TResult).Handle
-  nameWithType: ICommandPipelineBehavior<TCommand, TResult>.Handle
-  nameWithType.vb: ICommandPipelineBehavior(Of TCommand, TResult).Handle
 - uid: Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior`2
   name: UserInjectionCommandBehavior<TCommand, TResult>
   href: api/Project.Application.Configuration.Commands.Behaviors.UserInjectionCommandBehavior-2.html
@@ -492,6 +478,33 @@ references:
   fullName.vb: Project.Application.Configuration.Commands.ICommandHandler(Of TCommand, TResult)
   nameWithType: ICommandHandler<TCommand, TResult>
   nameWithType.vb: ICommandHandler(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  name: ICommandPipelineBehaviour<TCommand, TResult>
+  href: api/Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html
+  commentId: T:Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2
+  name.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult)
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult)
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name: Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  href: api/Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle__0_System_Func__0_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_
+  commentId: M:Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle(`0,System.Func{`0,System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)
+  name.vb: Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>.Handle(TCommand, System.Func<TCommand, System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult).Handle(TCommand, System.Func(Of TCommand, System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>.Handle(TCommand, Func<TCommand, Task<TResult>>, CancellationToken)
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult).Handle(TCommand, Func(Of TCommand, Task(Of TResult)), CancellationToken)
+- uid: Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle*
+  name: Handle
+  href: api/Project.Application.Configuration.Commands.ICommandPipelineBehaviour-2.html#Project_Application_Configuration_Commands_ICommandPipelineBehaviour_2_Handle_
+  commentId: Overload:Project.Application.Configuration.Commands.ICommandPipelineBehaviour`2.Handle
+  isSpec: "True"
+  fullName: Project.Application.Configuration.Commands.ICommandPipelineBehaviour<TCommand, TResult>.Handle
+  fullName.vb: Project.Application.Configuration.Commands.ICommandPipelineBehaviour(Of TCommand, TResult).Handle
+  nameWithType: ICommandPipelineBehaviour<TCommand, TResult>.Handle
+  nameWithType.vb: ICommandPipelineBehaviour(Of TCommand, TResult).Handle
 - uid: Project.Application.Configuration.Commands.ICommand`1
   name: ICommand<TResult>
   href: api/Project.Application.Configuration.Commands.ICommand-1.html
@@ -1125,6 +1138,31 @@ references:
   isSpec: "True"
   fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandHandler.Handle
   nameWithType: RegisterUserCommandHandler.Handle
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
+  name: RegisterUserCommandValidator
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.html
+  commentId: T:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator
+  nameWithType: RegisterUserCommandValidator
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.#ctor
+  name: RegisterUserCommandValidator()
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandValidator__ctor
+  commentId: M:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.#ctor
+  name.vb: New()
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.RegisterUserCommandValidator()
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.New()
+  nameWithType: RegisterUserCommandValidator.RegisterUserCommandValidator()
+  nameWithType.vb: RegisterUserCommandValidator.New()
+- uid: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.#ctor*
+  name: RegisterUserCommandValidator
+  href: api/Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.html#Project_Application_Users_Commands_RegisterUser_RegisterUserCommandValidator__ctor_
+  commentId: Overload:Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.RegisterUserCommandValidator
+  fullName.vb: Project.Application.Users.Commands.RegisterUser.RegisterUserCommandValidator.New
+  nameWithType: RegisterUserCommandValidator.RegisterUserCommandValidator
+  nameWithType.vb: RegisterUserCommandValidator.New
 - uid: Project.Application.Users.IUserRepository
   name: IUserRepository
   href: api/Project.Application.Users.IUserRepository.html
@@ -1296,34 +1334,34 @@ references:
   fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New
   nameWithType: GetUserDetailsQuery.GetUserDetailsQuery
   nameWithType.vb: GetUserDetailsQuery.New
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  name: Principal
-  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal
-  commentId: P:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  nameWithType: GetUserDetailsQuery.Principal
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal*
-  name: Principal
-  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal_
-  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  name: Email
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email
+  commentId: P:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  nameWithType: GetUserDetailsQuery.Email
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email*
+  name: Email
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email_
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
   isSpec: "True"
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal
-  nameWithType: GetUserDetailsQuery.Principal
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  nameWithType: GetUserDetailsQuery.Email
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
   name: GetUserDetailsQueryHandler
   href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html
   commentId: T:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
   fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler
   nameWithType: GetUserDetailsQueryHandler
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  name: GetUserDetailsQueryHandler(UserManager<User>)
-  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__
-  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})
-  name.vb: New(UserManager(Of User))
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>)
-  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User))
-  nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(UserManager<User>)
-  nameWithType.vb: GetUserDetailsQueryHandler.New(UserManager(Of User))
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Project.Application.Users.IUserRepository)
+  name: GetUserDetailsQueryHandler(IUserRepository)
+  href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_Project_Application_Users_IUserRepository_
+  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor(Project.Application.Users.IUserRepository)
+  name.vb: New(IUserRepository)
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(Project.Application.Users.IUserRepository)
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.New(Project.Application.Users.IUserRepository)
+  nameWithType: GetUserDetailsQueryHandler.GetUserDetailsQueryHandler(IUserRepository)
+  nameWithType.vb: GetUserDetailsQueryHandler.New(IUserRepository)
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.#ctor*
   name: GetUserDetailsQueryHandler
   href: api/Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQueryHandler.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQueryHandler__ctor_
@@ -2482,15 +2520,6 @@ references:
   fullName.vb: Project.Domain.Users.User.New()
   nameWithType: User.User()
   nameWithType.vb: User.New()
-- uid: Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
-  name: User(string, string, Name, Name)
-  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User__ctor_System_String_System_String_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_
-  commentId: M:Project.Domain.Users.User.#ctor(System.String,System.String,Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
-  name.vb: New(String, String, Name, Name)
-  fullName: Project.Domain.Users.User.User(string, string, Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
-  fullName.vb: Project.Domain.Users.User.New(String, String, Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
-  nameWithType: User.User(string, string, Name, Name)
-  nameWithType.vb: User.New(String, String, Name, Name)
 - uid: Project.Domain.Users.User.#ctor*
   name: User
   href: api/Project.Domain.Users.User.html#Project_Domain_Users_User__ctor_
@@ -2540,6 +2569,22 @@ references:
   isSpec: "True"
   fullName: Project.Domain.Users.User.LastName
   nameWithType: User.LastName
+- uid: Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  name: Rename(Name?, Name?)
+  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Rename_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_
+  commentId: M:Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  name.vb: Rename(Name, Name)
+  fullName: Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name?, Project.Domain.SharedKernel.Users.Name?)
+  fullName.vb: Project.Domain.Users.User.Rename(Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
+  nameWithType: User.Rename(Name?, Name?)
+  nameWithType.vb: User.Rename(Name, Name)
+- uid: Project.Domain.Users.User.Rename*
+  name: Rename
+  href: api/Project.Domain.Users.User.html#Project_Domain_Users_User_Rename_
+  commentId: Overload:Project.Domain.Users.User.Rename
+  isSpec: "True"
+  fullName: Project.Domain.Users.User.Rename
+  nameWithType: User.Rename
 - uid: Project.Infrastructure.Database
   name: Project.Infrastructure.Database
   href: api/Project.Infrastructure.Database.html
@@ -2672,15 +2717,15 @@ references:
   commentId: T:Project.Infrastructure.Domain.Users.UserRepository
   fullName: Project.Infrastructure.Domain.Users.UserRepository
   nameWithType: UserRepository
-- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
-  name: UserRepository(UserManager<User>, ApplicationDbContext)
-  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Project_Infrastructure_Database_ApplicationDbContext_
-  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Project.Infrastructure.Database.ApplicationDbContext)
-  name.vb: New(UserManager(Of User), ApplicationDbContext)
-  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Project.Infrastructure.Database.ApplicationDbContext)
-  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Project.Infrastructure.Database.ApplicationDbContext)
-  nameWithType: UserRepository.UserRepository(UserManager<User>, ApplicationDbContext)
-  nameWithType.vb: UserRepository.New(UserManager(Of User), ApplicationDbContext)
+- uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.EntityFrameworkCore.DbContext)
+  name: UserRepository(UserManager<User>, DbContext)
+  href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__Microsoft_EntityFrameworkCore_DbContext_
+  commentId: M:Project.Infrastructure.Domain.Users.UserRepository.#ctor(Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User},Microsoft.EntityFrameworkCore.DbContext)
+  name.vb: New(UserManager(Of User), DbContext)
+  fullName: Project.Infrastructure.Domain.Users.UserRepository.UserRepository(Microsoft.AspNetCore.Identity.UserManager<Project.Domain.Users.User>, Microsoft.EntityFrameworkCore.DbContext)
+  fullName.vb: Project.Infrastructure.Domain.Users.UserRepository.New(Microsoft.AspNetCore.Identity.UserManager(Of Project.Domain.Users.User), Microsoft.EntityFrameworkCore.DbContext)
+  nameWithType: UserRepository.UserRepository(UserManager<User>, DbContext)
+  nameWithType.vb: UserRepository.New(UserManager(Of User), DbContext)
 - uid: Project.Infrastructure.Domain.Users.UserRepository.#ctor*
   name: UserRepository
   href: api/Project.Infrastructure.Domain.Users.UserRepository.html#Project_Infrastructure_Domain_Users_UserRepository__ctor_
@@ -2812,12 +2857,12 @@ references:
   commentId: T:Project.Infrastructure.Logging.LoggingModule
   fullName: Project.Infrastructure.Logging.LoggingModule
   nameWithType: LoggingModule
-- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddLogginModule(IServiceCollection)
-  href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: LoggingModule.AddLogginModule(IServiceCollection)
+- uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)
+  name: AddLogginModule(IServiceCollection, IHostEnvironment)
+  href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Hosting_IHostEnvironment_
+  commentId: M:Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Hosting.IHostEnvironment)
+  fullName: Project.Infrastructure.Logging.LoggingModule.AddLogginModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Hosting.IHostEnvironment)
+  nameWithType: LoggingModule.AddLogginModule(IServiceCollection, IHostEnvironment)
 - uid: Project.Infrastructure.Logging.LoggingModule.AddLogginModule*
   name: AddLogginModule
   href: api/Project.Infrastructure.Logging.LoggingModule.html#Project_Infrastructure_Logging_LoggingModule_AddLogginModule_
@@ -4022,28 +4067,1051 @@ references:
   isSpec: "True"
   fullName: Project.Logging.Users.UserLogIndexDefinition.IndexName
   nameWithType: UserLogIndexDefinition.IndexName
-- uid: Project.Tests
-  name: Project.Tests
-  href: api/Project.Tests.html
-  commentId: N:Project.Tests
-  fullName: Project.Tests
-  nameWithType: Project.Tests
-- uid: Project.Tests.UnitTest1
-  name: UnitTest1
-  href: api/Project.Tests.UnitTest1.html
-  commentId: T:Project.Tests.UnitTest1
-  fullName: Project.Tests.UnitTest1
-  nameWithType: UnitTest1
-- uid: Project.Tests.UnitTest1.Test1
-  name: Test1()
-  href: api/Project.Tests.UnitTest1.html#Project_Tests_UnitTest1_Test1
-  commentId: M:Project.Tests.UnitTest1.Test1
-  fullName: Project.Tests.UnitTest1.Test1()
-  nameWithType: UnitTest1.Test1()
-- uid: Project.Tests.UnitTest1.Test1*
-  name: Test1
-  href: api/Project.Tests.UnitTest1.html#Project_Tests_UnitTest1_Test1_
-  commentId: Overload:Project.Tests.UnitTest1.Test1
+- uid: Project.Tests.Integration
+  name: Project.Tests.Integration
+  href: api/Project.Tests.Integration.html
+  commentId: N:Project.Tests.Integration
+  fullName: Project.Tests.Integration
+  nameWithType: Project.Tests.Integration
+- uid: Project.Tests.Integration.Account
+  name: Project.Tests.Integration.Account
+  href: api/Project.Tests.Integration.Account.html
+  commentId: N:Project.Tests.Integration.Account
+  fullName: Project.Tests.Integration.Account
+  nameWithType: Project.Tests.Integration.Account
+- uid: Project.Tests.Integration.Account.InfoTests
+  name: InfoTests
+  href: api/Project.Tests.Integration.Account.InfoTests.html
+  commentId: T:Project.Tests.Integration.Account.InfoTests
+  fullName: Project.Tests.Integration.Account.InfoTests
+  nameWithType: InfoTests
+- uid: Project.Tests.Integration.Account.InfoTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  name: InfoTests(SharedDatabaseFixture)
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests__ctor_Project_Tests_Integration_SharedDatabaseFixture_
+  commentId: M:Project.Tests.Integration.Account.InfoTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  name.vb: New(SharedDatabaseFixture)
+  fullName: Project.Tests.Integration.Account.InfoTests.InfoTests(Project.Tests.Integration.SharedDatabaseFixture)
+  fullName.vb: Project.Tests.Integration.Account.InfoTests.New(Project.Tests.Integration.SharedDatabaseFixture)
+  nameWithType: InfoTests.InfoTests(SharedDatabaseFixture)
+  nameWithType.vb: InfoTests.New(SharedDatabaseFixture)
+- uid: Project.Tests.Integration.Account.InfoTests.#ctor*
+  name: InfoTests
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests__ctor_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.#ctor
   isSpec: "True"
-  fullName: Project.Tests.UnitTest1.Test1
-  nameWithType: UnitTest1.Test1
+  name.vb: New
+  fullName: Project.Tests.Integration.Account.InfoTests.InfoTests
+  fullName.vb: Project.Tests.Integration.Account.InfoTests.New
+  nameWithType: InfoTests.InfoTests
+  nameWithType.vb: InfoTests.New
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldRespectAuthorizationScheme
+  name: ShouldRespectAuthorizationScheme()
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldRespectAuthorizationScheme
+  commentId: M:Project.Tests.Integration.Account.InfoTests.ShouldRespectAuthorizationScheme
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldRespectAuthorizationScheme()
+  nameWithType: InfoTests.ShouldRespectAuthorizationScheme()
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldRespectAuthorizationScheme*
+  name: ShouldRespectAuthorizationScheme
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldRespectAuthorizationScheme_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.ShouldRespectAuthorizationScheme
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldRespectAuthorizationScheme
+  nameWithType: InfoTests.ShouldRespectAuthorizationScheme
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnCorrectClaimsData
+  name: ShouldReturnCorrectClaimsData()
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnCorrectClaimsData
+  commentId: M:Project.Tests.Integration.Account.InfoTests.ShouldReturnCorrectClaimsData
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnCorrectClaimsData()
+  nameWithType: InfoTests.ShouldReturnCorrectClaimsData()
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnCorrectClaimsData*
+  name: ShouldReturnCorrectClaimsData
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnCorrectClaimsData_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.ShouldReturnCorrectClaimsData
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnCorrectClaimsData
+  nameWithType: InfoTests.ShouldReturnCorrectClaimsData
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated
+  name: ShouldReturnUnauthorized_WhenNotAuthenticated()
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUnauthorized_WhenNotAuthenticated
+  commentId: M:Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated()
+  nameWithType: InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated()
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated*
+  name: ShouldReturnUnauthorized_WhenNotAuthenticated
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUnauthorized_WhenNotAuthenticated_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated
+  nameWithType: InfoTests.ShouldReturnUnauthorized_WhenNotAuthenticated
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid
+  name: ShouldReturnUnauthorized_WhenTokenIsInvalid()
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUnauthorized_WhenTokenIsInvalid
+  commentId: M:Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid()
+  nameWithType: InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid()
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid*
+  name: ShouldReturnUnauthorized_WhenTokenIsInvalid
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUnauthorized_WhenTokenIsInvalid_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid
+  nameWithType: InfoTests.ShouldReturnUnauthorized_WhenTokenIsInvalid
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists
+  name: ShouldReturnUnauthorized_WhenUserNoLongerExists()
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUnauthorized_WhenUserNoLongerExists
+  commentId: M:Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists()
+  nameWithType: InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists()
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists*
+  name: ShouldReturnUnauthorized_WhenUserNoLongerExists
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUnauthorized_WhenUserNoLongerExists_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists
+  nameWithType: InfoTests.ShouldReturnUnauthorized_WhenUserNoLongerExists
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUserInfo_WhenAuthenticated
+  name: ShouldReturnUserInfo_WhenAuthenticated()
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUserInfo_WhenAuthenticated
+  commentId: M:Project.Tests.Integration.Account.InfoTests.ShouldReturnUserInfo_WhenAuthenticated
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUserInfo_WhenAuthenticated()
+  nameWithType: InfoTests.ShouldReturnUserInfo_WhenAuthenticated()
+- uid: Project.Tests.Integration.Account.InfoTests.ShouldReturnUserInfo_WhenAuthenticated*
+  name: ShouldReturnUserInfo_WhenAuthenticated
+  href: api/Project.Tests.Integration.Account.InfoTests.html#Project_Tests_Integration_Account_InfoTests_ShouldReturnUserInfo_WhenAuthenticated_
+  commentId: Overload:Project.Tests.Integration.Account.InfoTests.ShouldReturnUserInfo_WhenAuthenticated
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.InfoTests.ShouldReturnUserInfo_WhenAuthenticated
+  nameWithType: InfoTests.ShouldReturnUserInfo_WhenAuthenticated
+- uid: Project.Tests.Integration.Account.RegisterTests
+  name: RegisterTests
+  href: api/Project.Tests.Integration.Account.RegisterTests.html
+  commentId: T:Project.Tests.Integration.Account.RegisterTests
+  fullName: Project.Tests.Integration.Account.RegisterTests
+  nameWithType: RegisterTests
+- uid: Project.Tests.Integration.Account.RegisterTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  name: RegisterTests(SharedDatabaseFixture)
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests__ctor_Project_Tests_Integration_SharedDatabaseFixture_
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  name.vb: New(SharedDatabaseFixture)
+  fullName: Project.Tests.Integration.Account.RegisterTests.RegisterTests(Project.Tests.Integration.SharedDatabaseFixture)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.New(Project.Tests.Integration.SharedDatabaseFixture)
+  nameWithType: RegisterTests.RegisterTests(SharedDatabaseFixture)
+  nameWithType.vb: RegisterTests.New(SharedDatabaseFixture)
+- uid: Project.Tests.Integration.Account.RegisterTests.#ctor*
+  name: RegisterTests
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests__ctor_
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Integration.Account.RegisterTests.RegisterTests
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.New
+  nameWithType: RegisterTests.RegisterTests
+  nameWithType.vb: RegisterTests.New
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(System.String,System.String,System.String,System.String)
+  name: ShouldAllowValidEdgeCaseNames(string, string, string, string)
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldAllowValidEdgeCaseNames_System_String_System_String_System_String_System_String_
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(System.String,System.String,System.String,System.String)
+  name.vb: ShouldAllowValidEdgeCaseNames(String, String, String, String)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(string, string, string, string)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames(String, String, String, String)
+  nameWithType: RegisterTests.ShouldAllowValidEdgeCaseNames(string, string, string, string)
+  nameWithType.vb: RegisterTests.ShouldAllowValidEdgeCaseNames(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames*
+  name: ShouldAllowValidEdgeCaseNames
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldAllowValidEdgeCaseNames_
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldAllowValidEdgeCaseNames
+  nameWithType: RegisterTests.ShouldAllowValidEdgeCaseNames
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(System.String,System.String,System.String,System.String)
+  name: ShouldCreateUserWithValidName(string, string, string, string)
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldCreateUserWithValidName_System_String_System_String_System_String_System_String_
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(System.String,System.String,System.String,System.String)
+  name.vb: ShouldCreateUserWithValidName(String, String, String, String)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(string, string, string, string)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName(String, String, String, String)
+  nameWithType: RegisterTests.ShouldCreateUserWithValidName(string, string, string, string)
+  nameWithType.vb: RegisterTests.ShouldCreateUserWithValidName(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName*
+  name: ShouldCreateUserWithValidName
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldCreateUserWithValidName_
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldCreateUserWithValidName
+  nameWithType: RegisterTests.ShouldCreateUserWithValidName
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  name: ShouldNotCreateUserWithDuplicateEmail()
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithDuplicateEmail
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail()
+  nameWithType: RegisterTests.ShouldNotCreateUserWithDuplicateEmail()
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail*
+  name: ShouldNotCreateUserWithDuplicateEmail
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithDuplicateEmail_
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+  nameWithType: RegisterTests.ShouldNotCreateUserWithDuplicateEmail
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(System.String,System.String,System.String,System.String)
+  name: ShouldNotCreateUserWithInvalidName(string, string, string, string)
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithInvalidName_System_String_System_String_System_String_System_String_
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(System.String,System.String,System.String,System.String)
+  name.vb: ShouldNotCreateUserWithInvalidName(String, String, String, String)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(string, string, string, string)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName(String, String, String, String)
+  nameWithType: RegisterTests.ShouldNotCreateUserWithInvalidName(string, string, string, string)
+  nameWithType.vb: RegisterTests.ShouldNotCreateUserWithInvalidName(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName*
+  name: ShouldNotCreateUserWithInvalidName
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithInvalidName_
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithInvalidName
+  nameWithType: RegisterTests.ShouldNotCreateUserWithInvalidName
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(System.String,System.String,System.String,System.String)
+  name: ShouldNotCreateUserWithWeakPassword(string, string, string, string)
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithWeakPassword_System_String_System_String_System_String_System_String_
+  commentId: M:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(System.String,System.String,System.String,System.String)
+  name.vb: ShouldNotCreateUserWithWeakPassword(String, String, String, String)
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(string, string, string, string)
+  fullName.vb: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword(String, String, String, String)
+  nameWithType: RegisterTests.ShouldNotCreateUserWithWeakPassword(string, string, string, string)
+  nameWithType.vb: RegisterTests.ShouldNotCreateUserWithWeakPassword(String, String, String, String)
+- uid: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword*
+  name: ShouldNotCreateUserWithWeakPassword
+  href: api/Project.Tests.Integration.Account.RegisterTests.html#Project_Tests_Integration_Account_RegisterTests_ShouldNotCreateUserWithWeakPassword_
+  commentId: Overload:Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Account.RegisterTests.ShouldNotCreateUserWithWeakPassword
+  nameWithType: RegisterTests.ShouldNotCreateUserWithWeakPassword
+- uid: Project.Tests.Integration.IntegrationTestBase
+  name: IntegrationTestBase
+  href: api/Project.Tests.Integration.IntegrationTestBase.html
+  commentId: T:Project.Tests.Integration.IntegrationTestBase
+  fullName: Project.Tests.Integration.IntegrationTestBase
+  nameWithType: IntegrationTestBase
+- uid: Project.Tests.Integration.IntegrationTestBase.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  name: IntegrationTestBase(SharedDatabaseFixture)
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase__ctor_Project_Tests_Integration_SharedDatabaseFixture_
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.#ctor(Project.Tests.Integration.SharedDatabaseFixture)
+  name.vb: New(SharedDatabaseFixture)
+  fullName: Project.Tests.Integration.IntegrationTestBase.IntegrationTestBase(Project.Tests.Integration.SharedDatabaseFixture)
+  fullName.vb: Project.Tests.Integration.IntegrationTestBase.New(Project.Tests.Integration.SharedDatabaseFixture)
+  nameWithType: IntegrationTestBase.IntegrationTestBase(SharedDatabaseFixture)
+  nameWithType.vb: IntegrationTestBase.New(SharedDatabaseFixture)
+- uid: Project.Tests.Integration.IntegrationTestBase.#ctor*
+  name: IntegrationTestBase
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase__ctor_
+  commentId: Overload:Project.Tests.Integration.IntegrationTestBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Integration.IntegrationTestBase.IntegrationTestBase
+  fullName.vb: Project.Tests.Integration.IntegrationTestBase.New
+  nameWithType: IntegrationTestBase.IntegrationTestBase
+  nameWithType.vb: IntegrationTestBase.New
+- uid: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+  name: AuthenticateClient(string)
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_AuthenticateClient_System_String_
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(System.String)
+  name.vb: AuthenticateClient(String)
+  fullName: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(string)
+  fullName.vb: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient(String)
+  nameWithType: IntegrationTestBase.AuthenticateClient(string)
+  nameWithType.vb: IntegrationTestBase.AuthenticateClient(String)
+- uid: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient*
+  name: AuthenticateClient
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_AuthenticateClient_
+  commentId: Overload:Project.Tests.Integration.IntegrationTestBase.AuthenticateClient
+  isSpec: "True"
+  fullName: Project.Tests.Integration.IntegrationTestBase.AuthenticateClient
+  nameWithType: IntegrationTestBase.AuthenticateClient
+- uid: Project.Tests.Integration.IntegrationTestBase.Client
+  name: Client
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_Client
+  commentId: F:Project.Tests.Integration.IntegrationTestBase.Client
+  fullName: Project.Tests.Integration.IntegrationTestBase.Client
+  nameWithType: IntegrationTestBase.Client
+- uid: Project.Tests.Integration.IntegrationTestBase.DbContext
+  name: DbContext
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DbContext
+  commentId: F:Project.Tests.Integration.IntegrationTestBase.DbContext
+  fullName: Project.Tests.Integration.IntegrationTestBase.DbContext
+  nameWithType: IntegrationTestBase.DbContext
+- uid: Project.Tests.Integration.IntegrationTestBase.DbFixture
+  name: DbFixture
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DbFixture
+  commentId: F:Project.Tests.Integration.IntegrationTestBase.DbFixture
+  fullName: Project.Tests.Integration.IntegrationTestBase.DbFixture
+  nameWithType: IntegrationTestBase.DbFixture
+- uid: Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  name: DisposeAsync()
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DisposeAsync
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  fullName: Project.Tests.Integration.IntegrationTestBase.DisposeAsync()
+  nameWithType: IntegrationTestBase.DisposeAsync()
+- uid: Project.Tests.Integration.IntegrationTestBase.DisposeAsync*
+  name: DisposeAsync
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_DisposeAsync_
+  commentId: Overload:Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  isSpec: "True"
+  fullName: Project.Tests.Integration.IntegrationTestBase.DisposeAsync
+  nameWithType: IntegrationTestBase.DisposeAsync
+- uid: Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  name: InitializeAsync()
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_InitializeAsync
+  commentId: M:Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  fullName: Project.Tests.Integration.IntegrationTestBase.InitializeAsync()
+  nameWithType: IntegrationTestBase.InitializeAsync()
+- uid: Project.Tests.Integration.IntegrationTestBase.InitializeAsync*
+  name: InitializeAsync
+  href: api/Project.Tests.Integration.IntegrationTestBase.html#Project_Tests_Integration_IntegrationTestBase_InitializeAsync_
+  commentId: Overload:Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  isSpec: "True"
+  fullName: Project.Tests.Integration.IntegrationTestBase.InitializeAsync
+  nameWithType: IntegrationTestBase.InitializeAsync
+- uid: Project.Tests.Integration.Setup
+  name: Project.Tests.Integration.Setup
+  href: api/Project.Tests.Integration.Setup.html
+  commentId: N:Project.Tests.Integration.Setup
+  fullName: Project.Tests.Integration.Setup
+  nameWithType: Project.Tests.Integration.Setup
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory
+  name: CustomWebApplicationFactory
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html
+  commentId: T:Project.Tests.Integration.Setup.CustomWebApplicationFactory
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory
+  nameWithType: CustomWebApplicationFactory
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.#ctor
+  name: CustomWebApplicationFactory()
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory__ctor
+  commentId: M:Project.Tests.Integration.Setup.CustomWebApplicationFactory.#ctor
+  name.vb: New()
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.CustomWebApplicationFactory()
+  fullName.vb: Project.Tests.Integration.Setup.CustomWebApplicationFactory.New()
+  nameWithType: CustomWebApplicationFactory.CustomWebApplicationFactory()
+  nameWithType.vb: CustomWebApplicationFactory.New()
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.#ctor*
+  name: CustomWebApplicationFactory
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory__ctor_
+  commentId: Overload:Project.Tests.Integration.Setup.CustomWebApplicationFactory.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.CustomWebApplicationFactory
+  fullName.vb: Project.Tests.Integration.Setup.CustomWebApplicationFactory.New
+  nameWithType: CustomWebApplicationFactory.CustomWebApplicationFactory
+  nameWithType.vb: CustomWebApplicationFactory.New
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConfigureWebHost(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  name: ConfigureWebHost(IWebHostBuilder)
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory_ConfigureWebHost_Microsoft_AspNetCore_Hosting_IWebHostBuilder_
+  commentId: M:Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConfigureWebHost(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConfigureWebHost(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
+  nameWithType: CustomWebApplicationFactory.ConfigureWebHost(IWebHostBuilder)
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConfigureWebHost*
+  name: ConfigureWebHost
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory_ConfigureWebHost_
+  commentId: Overload:Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConfigureWebHost
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConfigureWebHost
+  nameWithType: CustomWebApplicationFactory.ConfigureWebHost
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConnectionString
+  name: ConnectionString
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory_ConnectionString
+  commentId: P:Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConnectionString
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConnectionString
+  nameWithType: CustomWebApplicationFactory.ConnectionString
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConnectionString*
+  name: ConnectionString
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory_ConnectionString_
+  commentId: Overload:Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConnectionString
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.ConnectionString
+  nameWithType: CustomWebApplicationFactory.ConnectionString
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString(System.String)
+  name: SetConnectionString(string)
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory_SetConnectionString_System_String_
+  commentId: M:Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString(System.String)
+  name.vb: SetConnectionString(String)
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString(string)
+  fullName.vb: Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString(String)
+  nameWithType: CustomWebApplicationFactory.SetConnectionString(string)
+  nameWithType.vb: CustomWebApplicationFactory.SetConnectionString(String)
+- uid: Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString*
+  name: SetConnectionString
+  href: api/Project.Tests.Integration.Setup.CustomWebApplicationFactory.html#Project_Tests_Integration_Setup_CustomWebApplicationFactory_SetConnectionString_
+  commentId: Overload:Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Setup.CustomWebApplicationFactory.SetConnectionString
+  nameWithType: CustomWebApplicationFactory.SetConnectionString
+- uid: Project.Tests.Integration.Setup.EnvLoader
+  name: EnvLoader
+  href: api/Project.Tests.Integration.Setup.EnvLoader.html
+  commentId: T:Project.Tests.Integration.Setup.EnvLoader
+  fullName: Project.Tests.Integration.Setup.EnvLoader
+  nameWithType: EnvLoader
+- uid: Project.Tests.Integration.Setup.EnvLoader.EnsureLoaded
+  name: EnsureLoaded()
+  href: api/Project.Tests.Integration.Setup.EnvLoader.html#Project_Tests_Integration_Setup_EnvLoader_EnsureLoaded
+  commentId: M:Project.Tests.Integration.Setup.EnvLoader.EnsureLoaded
+  fullName: Project.Tests.Integration.Setup.EnvLoader.EnsureLoaded()
+  nameWithType: EnvLoader.EnsureLoaded()
+- uid: Project.Tests.Integration.Setup.EnvLoader.EnsureLoaded*
+  name: EnsureLoaded
+  href: api/Project.Tests.Integration.Setup.EnvLoader.html#Project_Tests_Integration_Setup_EnvLoader_EnsureLoaded_
+  commentId: Overload:Project.Tests.Integration.Setup.EnvLoader.EnsureLoaded
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Setup.EnvLoader.EnsureLoaded
+  nameWithType: EnvLoader.EnsureLoaded
+- uid: Project.Tests.Integration.Setup.TestAuthHandler
+  name: TestAuthHandler
+  href: api/Project.Tests.Integration.Setup.TestAuthHandler.html
+  commentId: T:Project.Tests.Integration.Setup.TestAuthHandler
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler
+  nameWithType: TestAuthHandler
+- uid: Project.Tests.Integration.Setup.TestAuthHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)
+  name: TestAuthHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)
+  href: api/Project.Tests.Integration.Setup.TestAuthHandler.html#Project_Tests_Integration_Setup_TestAuthHandler__ctor_Microsoft_Extensions_Options_IOptionsMonitor_Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions__Microsoft_Extensions_Logging_ILoggerFactory_System_Text_Encodings_Web_UrlEncoder_Microsoft_AspNetCore_Authentication_ISystemClock_
+  commentId: M:Project.Tests.Integration.Setup.TestAuthHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)
+  name.vb: New(IOptionsMonitor(Of AuthenticationSchemeOptions), ILoggerFactory, UrlEncoder, ISystemClock)
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler.TestAuthHandler(Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)
+  fullName.vb: Project.Tests.Integration.Setup.TestAuthHandler.New(Microsoft.Extensions.Options.IOptionsMonitor(Of Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions), Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)
+  nameWithType: TestAuthHandler.TestAuthHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)
+  nameWithType.vb: TestAuthHandler.New(IOptionsMonitor(Of AuthenticationSchemeOptions), ILoggerFactory, UrlEncoder, ISystemClock)
+- uid: Project.Tests.Integration.Setup.TestAuthHandler.#ctor*
+  name: TestAuthHandler
+  href: api/Project.Tests.Integration.Setup.TestAuthHandler.html#Project_Tests_Integration_Setup_TestAuthHandler__ctor_
+  commentId: Overload:Project.Tests.Integration.Setup.TestAuthHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler.TestAuthHandler
+  fullName.vb: Project.Tests.Integration.Setup.TestAuthHandler.New
+  nameWithType: TestAuthHandler.TestAuthHandler
+  nameWithType.vb: TestAuthHandler.New
+- uid: Project.Tests.Integration.Setup.TestAuthHandler.HandleAuthenticateAsync
+  name: HandleAuthenticateAsync()
+  href: api/Project.Tests.Integration.Setup.TestAuthHandler.html#Project_Tests_Integration_Setup_TestAuthHandler_HandleAuthenticateAsync
+  commentId: M:Project.Tests.Integration.Setup.TestAuthHandler.HandleAuthenticateAsync
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler.HandleAuthenticateAsync()
+  nameWithType: TestAuthHandler.HandleAuthenticateAsync()
+- uid: Project.Tests.Integration.Setup.TestAuthHandler.HandleAuthenticateAsync*
+  name: HandleAuthenticateAsync
+  href: api/Project.Tests.Integration.Setup.TestAuthHandler.html#Project_Tests_Integration_Setup_TestAuthHandler_HandleAuthenticateAsync_
+  commentId: Overload:Project.Tests.Integration.Setup.TestAuthHandler.HandleAuthenticateAsync
+  isSpec: "True"
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler.HandleAuthenticateAsync
+  nameWithType: TestAuthHandler.HandleAuthenticateAsync
+- uid: Project.Tests.Integration.Setup.TestAuthHandler.TestScheme
+  name: TestScheme
+  href: api/Project.Tests.Integration.Setup.TestAuthHandler.html#Project_Tests_Integration_Setup_TestAuthHandler_TestScheme
+  commentId: F:Project.Tests.Integration.Setup.TestAuthHandler.TestScheme
+  fullName: Project.Tests.Integration.Setup.TestAuthHandler.TestScheme
+  nameWithType: TestAuthHandler.TestScheme
+- uid: Project.Tests.Integration.SharedDatabaseFixture
+  name: SharedDatabaseFixture
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html
+  commentId: T:Project.Tests.Integration.SharedDatabaseFixture
+  fullName: Project.Tests.Integration.SharedDatabaseFixture
+  nameWithType: SharedDatabaseFixture
+- uid: Project.Tests.Integration.SharedDatabaseFixture.#ctor
+  name: SharedDatabaseFixture()
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture__ctor
+  commentId: M:Project.Tests.Integration.SharedDatabaseFixture.#ctor
+  name.vb: New()
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.SharedDatabaseFixture()
+  fullName.vb: Project.Tests.Integration.SharedDatabaseFixture.New()
+  nameWithType: SharedDatabaseFixture.SharedDatabaseFixture()
+  nameWithType.vb: SharedDatabaseFixture.New()
+- uid: Project.Tests.Integration.SharedDatabaseFixture.#ctor*
+  name: SharedDatabaseFixture
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture__ctor_
+  commentId: Overload:Project.Tests.Integration.SharedDatabaseFixture.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.SharedDatabaseFixture
+  fullName.vb: Project.Tests.Integration.SharedDatabaseFixture.New
+  nameWithType: SharedDatabaseFixture.SharedDatabaseFixture
+  nameWithType.vb: SharedDatabaseFixture.New
+- uid: Project.Tests.Integration.SharedDatabaseFixture.ConnectionString
+  name: ConnectionString
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_ConnectionString
+  commentId: P:Project.Tests.Integration.SharedDatabaseFixture.ConnectionString
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.ConnectionString
+  nameWithType: SharedDatabaseFixture.ConnectionString
+- uid: Project.Tests.Integration.SharedDatabaseFixture.ConnectionString*
+  name: ConnectionString
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_ConnectionString_
+  commentId: Overload:Project.Tests.Integration.SharedDatabaseFixture.ConnectionString
+  isSpec: "True"
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.ConnectionString
+  nameWithType: SharedDatabaseFixture.ConnectionString
+- uid: Project.Tests.Integration.SharedDatabaseFixture.DisposeAsync
+  name: DisposeAsync()
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_DisposeAsync
+  commentId: M:Project.Tests.Integration.SharedDatabaseFixture.DisposeAsync
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.DisposeAsync()
+  nameWithType: SharedDatabaseFixture.DisposeAsync()
+- uid: Project.Tests.Integration.SharedDatabaseFixture.DisposeAsync*
+  name: DisposeAsync
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_DisposeAsync_
+  commentId: Overload:Project.Tests.Integration.SharedDatabaseFixture.DisposeAsync
+  isSpec: "True"
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.DisposeAsync
+  nameWithType: SharedDatabaseFixture.DisposeAsync
+- uid: Project.Tests.Integration.SharedDatabaseFixture.InitializeAsync
+  name: InitializeAsync()
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_InitializeAsync
+  commentId: M:Project.Tests.Integration.SharedDatabaseFixture.InitializeAsync
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.InitializeAsync()
+  nameWithType: SharedDatabaseFixture.InitializeAsync()
+- uid: Project.Tests.Integration.SharedDatabaseFixture.InitializeAsync*
+  name: InitializeAsync
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_InitializeAsync_
+  commentId: Overload:Project.Tests.Integration.SharedDatabaseFixture.InitializeAsync
+  isSpec: "True"
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.InitializeAsync
+  nameWithType: SharedDatabaseFixture.InitializeAsync
+- uid: Project.Tests.Integration.SharedDatabaseFixture.ResetDbAsync
+  name: ResetDbAsync()
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_ResetDbAsync
+  commentId: M:Project.Tests.Integration.SharedDatabaseFixture.ResetDbAsync
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.ResetDbAsync()
+  nameWithType: SharedDatabaseFixture.ResetDbAsync()
+- uid: Project.Tests.Integration.SharedDatabaseFixture.ResetDbAsync*
+  name: ResetDbAsync
+  href: api/Project.Tests.Integration.SharedDatabaseFixture.html#Project_Tests_Integration_SharedDatabaseFixture_ResetDbAsync_
+  commentId: Overload:Project.Tests.Integration.SharedDatabaseFixture.ResetDbAsync
+  isSpec: "True"
+  fullName: Project.Tests.Integration.SharedDatabaseFixture.ResetDbAsync
+  nameWithType: SharedDatabaseFixture.ResetDbAsync
+- uid: Project.Tests.Unit.Application.UsersTests
+  name: Project.Tests.Unit.Application.UsersTests
+  href: api/Project.Tests.Unit.Application.UsersTests.html
+  commentId: N:Project.Tests.Unit.Application.UsersTests
+  fullName: Project.Tests.Unit.Application.UsersTests
+  nameWithType: Project.Tests.Unit.Application.UsersTests
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests
+  name: GetUserDetailsQueryHandlerTests
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html
+  commentId: T:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests
+  nameWithType: GetUserDetailsQueryHandlerTests
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  name: GetUserDetailsQueryHandlerTests(ITestOutputHelper)
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests__ctor_Xunit_Abstractions_ITestOutputHelper_
+  commentId: M:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  name.vb: New(ITestOutputHelper)
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.GetUserDetailsQueryHandlerTests(Xunit.Abstractions.ITestOutputHelper)
+  fullName.vb: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.New(Xunit.Abstractions.ITestOutputHelper)
+  nameWithType: GetUserDetailsQueryHandlerTests.GetUserDetailsQueryHandlerTests(ITestOutputHelper)
+  nameWithType.vb: GetUserDetailsQueryHandlerTests.New(ITestOutputHelper)
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.#ctor*
+  name: GetUserDetailsQueryHandlerTests
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests__ctor_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.GetUserDetailsQueryHandlerTests
+  fullName.vb: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.New
+  nameWithType: GetUserDetailsQueryHandlerTests.GetUserDetailsQueryHandlerTests
+  nameWithType.vb: GetUserDetailsQueryHandlerTests.New
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing
+  name: ShouldReturnNull_WhenEmailClaimIsMissing()
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests_ShouldReturnNull_WhenEmailClaimIsMissing
+  commentId: M:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing()
+  nameWithType: GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing()
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing*
+  name: ShouldReturnNull_WhenEmailClaimIsMissing
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests_ShouldReturnNull_WhenEmailClaimIsMissing_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing
+  nameWithType: GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenEmailClaimIsMissing
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist
+  name: ShouldReturnNull_WhenUserDoesNotExist()
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests_ShouldReturnNull_WhenUserDoesNotExist
+  commentId: M:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist()
+  nameWithType: GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist()
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist*
+  name: ShouldReturnNull_WhenUserDoesNotExist
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests_ShouldReturnNull_WhenUserDoesNotExist_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist
+  nameWithType: GetUserDetailsQueryHandlerTests.ShouldReturnNull_WhenUserDoesNotExist
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists
+  name: ShouldReturnUserDetails_WhenUserExists()
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests_ShouldReturnUserDetails_WhenUserExists
+  commentId: M:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists()
+  nameWithType: GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists()
+- uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists*
+  name: ShouldReturnUserDetails_WhenUserExists
+  href: api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html#Project_Tests_Unit_Application_UsersTests_GetUserDetailsQueryHandlerTests_ShouldReturnUserDetails_WhenUserExists_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists
+  nameWithType: GetUserDetailsQueryHandlerTests.ShouldReturnUserDetails_WhenUserExists
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests
+  name: RegisterUserCommandTests
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html
+  commentId: T:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests
+  nameWithType: RegisterUserCommandTests
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.#ctor
+  name: RegisterUserCommandTests()
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests__ctor
+  commentId: M:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.#ctor
+  name.vb: New()
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests()
+  fullName.vb: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.New()
+  nameWithType: RegisterUserCommandTests.RegisterUserCommandTests()
+  nameWithType.vb: RegisterUserCommandTests.New()
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.#ctor*
+  name: RegisterUserCommandTests
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests__ctor_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests
+  fullName.vb: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.New
+  nameWithType: RegisterUserCommandTests.RegisterUserCommandTests
+  nameWithType.vb: RegisterUserCommandTests.New
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully
+  name: Handle_ShouldCreateUserSuccessfully()
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldCreateUserSuccessfully
+  commentId: M:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully()
+  nameWithType: RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully()
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully*
+  name: Handle_ShouldCreateUserSuccessfully
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldCreateUserSuccessfully_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully
+  nameWithType: RegisterUserCommandTests.Handle_ShouldCreateUserSuccessfully
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails
+  name: Handle_ShouldReturnErrors_WhenCreateFails()
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldReturnErrors_WhenCreateFails
+  commentId: M:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails()
+  nameWithType: RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails()
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails*
+  name: Handle_ShouldReturnErrors_WhenCreateFails
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldReturnErrors_WhenCreateFails_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails
+  nameWithType: RegisterUserCommandTests.Handle_ShouldReturnErrors_WhenCreateFails
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail
+  name: Handle_ShouldThrowOnInvalidEmail()
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldThrowOnInvalidEmail
+  commentId: M:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail()
+  nameWithType: RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail()
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail*
+  name: Handle_ShouldThrowOnInvalidEmail
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldThrowOnInvalidEmail_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail
+  nameWithType: RegisterUserCommandTests.Handle_ShouldThrowOnInvalidEmail
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName
+  name: Handle_ShouldThrowOnInvalidName()
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldThrowOnInvalidName
+  commentId: M:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName()
+  nameWithType: RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName()
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName*
+  name: Handle_ShouldThrowOnInvalidName
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldThrowOnInvalidName_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName
+  nameWithType: RegisterUserCommandTests.Handle_ShouldThrowOnInvalidName
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail
+  name: Handle_ShouldTrimNamesAndEmail()
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldTrimNamesAndEmail
+  commentId: M:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail()
+  nameWithType: RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail()
+- uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail*
+  name: Handle_ShouldTrimNamesAndEmail
+  href: api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html#Project_Tests_Unit_Application_UsersTests_RegisterUserCommandTests_Handle_ShouldTrimNamesAndEmail_
+  commentId: Overload:Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail
+  nameWithType: RegisterUserCommandTests.Handle_ShouldTrimNamesAndEmail
+- uid: Project.Tests.Unit.Builders
+  name: Project.Tests.Unit.Builders
+  href: api/Project.Tests.Unit.Builders.html
+  commentId: N:Project.Tests.Unit.Builders
+  fullName: Project.Tests.Unit.Builders
+  nameWithType: Project.Tests.Unit.Builders
+- uid: Project.Tests.Unit.Builders.UserBuilder
+  name: UserBuilder
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html
+  commentId: T:Project.Tests.Unit.Builders.UserBuilder
+  fullName: Project.Tests.Unit.Builders.UserBuilder
+  nameWithType: UserBuilder
+- uid: Project.Tests.Unit.Builders.UserBuilder.Build
+  name: Build()
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_Build
+  commentId: M:Project.Tests.Unit.Builders.UserBuilder.Build
+  fullName: Project.Tests.Unit.Builders.UserBuilder.Build()
+  nameWithType: UserBuilder.Build()
+- uid: Project.Tests.Unit.Builders.UserBuilder.Build*
+  name: Build
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_Build_
+  commentId: Overload:Project.Tests.Unit.Builders.UserBuilder.Build
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Builders.UserBuilder.Build
+  nameWithType: UserBuilder.Build
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithDefaultValues
+  name: WithDefaultValues()
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithDefaultValues
+  commentId: M:Project.Tests.Unit.Builders.UserBuilder.WithDefaultValues
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithDefaultValues()
+  nameWithType: UserBuilder.WithDefaultValues()
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithDefaultValues*
+  name: WithDefaultValues
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithDefaultValues_
+  commentId: Overload:Project.Tests.Unit.Builders.UserBuilder.WithDefaultValues
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithDefaultValues
+  nameWithType: UserBuilder.WithDefaultValues
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithEmail(Project.Domain.SharedKernel.Users.Email)
+  name: WithEmail(Email)
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithEmail_Project_Domain_SharedKernel_Users_Email_
+  commentId: M:Project.Tests.Unit.Builders.UserBuilder.WithEmail(Project.Domain.SharedKernel.Users.Email)
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithEmail(Project.Domain.SharedKernel.Users.Email)
+  nameWithType: UserBuilder.WithEmail(Email)
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithEmail*
+  name: WithEmail
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithEmail_
+  commentId: Overload:Project.Tests.Unit.Builders.UserBuilder.WithEmail
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithEmail
+  nameWithType: UserBuilder.WithEmail
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithName(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  name: WithName(Name, Name)
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithName_Project_Domain_SharedKernel_Users_Name_Project_Domain_SharedKernel_Users_Name_
+  commentId: M:Project.Tests.Unit.Builders.UserBuilder.WithName(Project.Domain.SharedKernel.Users.Name,Project.Domain.SharedKernel.Users.Name)
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithName(Project.Domain.SharedKernel.Users.Name, Project.Domain.SharedKernel.Users.Name)
+  nameWithType: UserBuilder.WithName(Name, Name)
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithName*
+  name: WithName
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithName_
+  commentId: Overload:Project.Tests.Unit.Builders.UserBuilder.WithName
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithName
+  nameWithType: UserBuilder.WithName
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithUserName(Project.Domain.SharedKernel.Users.UserName)
+  name: WithUserName(UserName)
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithUserName_Project_Domain_SharedKernel_Users_UserName_
+  commentId: M:Project.Tests.Unit.Builders.UserBuilder.WithUserName(Project.Domain.SharedKernel.Users.UserName)
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithUserName(Project.Domain.SharedKernel.Users.UserName)
+  nameWithType: UserBuilder.WithUserName(UserName)
+- uid: Project.Tests.Unit.Builders.UserBuilder.WithUserName*
+  name: WithUserName
+  href: api/Project.Tests.Unit.Builders.UserBuilder.html#Project_Tests_Unit_Builders_UserBuilder_WithUserName_
+  commentId: Overload:Project.Tests.Unit.Builders.UserBuilder.WithUserName
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Builders.UserBuilder.WithUserName
+  nameWithType: UserBuilder.WithUserName
+- uid: Project.Tests.Unit.Domain.UsersTests
+  name: Project.Tests.Unit.Domain.UsersTests
+  href: api/Project.Tests.Unit.Domain.UsersTests.html
+  commentId: N:Project.Tests.Unit.Domain.UsersTests
+  fullName: Project.Tests.Unit.Domain.UsersTests
+  nameWithType: Project.Tests.Unit.Domain.UsersTests
+- uid: Project.Tests.Unit.Domain.UsersTests.EmailTests
+  name: EmailTests
+  href: api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.EmailTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.EmailTests
+  nameWithType: EmailTests
+- uid: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue(System.String)
+  name: ShouldCreateWithValidValue(string)
+  href: api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html#Project_Tests_Unit_Domain_UsersTests_EmailTests_ShouldCreateWithValidValue_System_String_
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue(System.String)
+  name.vb: ShouldCreateWithValidValue(String)
+  fullName: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue(string)
+  fullName.vb: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue(String)
+  nameWithType: EmailTests.ShouldCreateWithValidValue(string)
+  nameWithType.vb: EmailTests.ShouldCreateWithValidValue(String)
+- uid: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue*
+  name: ShouldCreateWithValidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html#Project_Tests_Unit_Domain_UsersTests_EmailTests_ShouldCreateWithValidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldCreateWithValidValue
+  nameWithType: EmailTests.ShouldCreateWithValidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue(System.String)
+  name: ShouldNotCreateWithInvalidValue(string)
+  href: api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html#Project_Tests_Unit_Domain_UsersTests_EmailTests_ShouldNotCreateWithInvalidValue_System_String_
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue(System.String)
+  name.vb: ShouldNotCreateWithInvalidValue(String)
+  fullName: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue(string)
+  fullName.vb: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue(String)
+  nameWithType: EmailTests.ShouldNotCreateWithInvalidValue(string)
+  nameWithType.vb: EmailTests.ShouldNotCreateWithInvalidValue(String)
+- uid: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue*
+  name: ShouldNotCreateWithInvalidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html#Project_Tests_Unit_Domain_UsersTests_EmailTests_ShouldNotCreateWithInvalidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.EmailTests.ShouldNotCreateWithInvalidValue
+  nameWithType: EmailTests.ShouldNotCreateWithInvalidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests
+  name: NameTests
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.NameTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests
+  nameWithType: NameTests
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue(System.String)
+  name: ShouldCreateWithValidValue(string)
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldCreateWithValidValue_System_String_
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue(System.String)
+  name.vb: ShouldCreateWithValidValue(String)
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue(string)
+  fullName.vb: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue(String)
+  nameWithType: NameTests.ShouldCreateWithValidValue(string)
+  nameWithType.vb: NameTests.ShouldCreateWithValidValue(String)
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue*
+  name: ShouldCreateWithValidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldCreateWithValidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldCreateWithValidValue
+  nameWithType: NameTests.ShouldCreateWithValidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue(System.String)
+  name: ShouldNotCreateWithInvalidValue(string)
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldNotCreateWithInvalidValue_System_String_
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue(System.String)
+  name.vb: ShouldNotCreateWithInvalidValue(String)
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue(string)
+  fullName.vb: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue(String)
+  nameWithType: NameTests.ShouldNotCreateWithInvalidValue(string)
+  nameWithType.vb: NameTests.ShouldNotCreateWithInvalidValue(String)
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue*
+  name: ShouldNotCreateWithInvalidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldNotCreateWithInvalidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotCreateWithInvalidValue
+  nameWithType: NameTests.ShouldNotCreateWithInvalidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotUpdateNameWithInvalidValue
+  name: ShouldNotUpdateNameWithInvalidValue()
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldNotUpdateNameWithInvalidValue
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotUpdateNameWithInvalidValue
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotUpdateNameWithInvalidValue()
+  nameWithType: NameTests.ShouldNotUpdateNameWithInvalidValue()
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotUpdateNameWithInvalidValue*
+  name: ShouldNotUpdateNameWithInvalidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldNotUpdateNameWithInvalidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotUpdateNameWithInvalidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldNotUpdateNameWithInvalidValue
+  nameWithType: NameTests.ShouldNotUpdateNameWithInvalidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldUpdateNameWithValidValue
+  name: ShouldUpdateNameWithValidValue()
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldUpdateNameWithValidValue
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldUpdateNameWithValidValue
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldUpdateNameWithValidValue()
+  nameWithType: NameTests.ShouldUpdateNameWithValidValue()
+- uid: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldUpdateNameWithValidValue*
+  name: ShouldUpdateNameWithValidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.NameTests.html#Project_Tests_Unit_Domain_UsersTests_NameTests_ShouldUpdateNameWithValidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldUpdateNameWithValidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.NameTests.ShouldUpdateNameWithValidValue
+  nameWithType: NameTests.ShouldUpdateNameWithValidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  name: UserNameTests
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  nameWithType: UserNameTests
+- uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue(System.String)
+  name: ShouldCreateWithValidValue(string)
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html#Project_Tests_Unit_Domain_UsersTests_UserNameTests_ShouldCreateWithValidValue_System_String_
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue(System.String)
+  name.vb: ShouldCreateWithValidValue(String)
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue(string)
+  fullName.vb: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue(String)
+  nameWithType: UserNameTests.ShouldCreateWithValidValue(string)
+  nameWithType.vb: UserNameTests.ShouldCreateWithValidValue(String)
+- uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue*
+  name: ShouldCreateWithValidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html#Project_Tests_Unit_Domain_UsersTests_UserNameTests_ShouldCreateWithValidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldCreateWithValidValue
+  nameWithType: UserNameTests.ShouldCreateWithValidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue(System.String)
+  name: ShouldNotCreateWithInvalidValue(string)
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html#Project_Tests_Unit_Domain_UsersTests_UserNameTests_ShouldNotCreateWithInvalidValue_System_String_
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue(System.String)
+  name.vb: ShouldNotCreateWithInvalidValue(String)
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue(string)
+  fullName.vb: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue(String)
+  nameWithType: UserNameTests.ShouldNotCreateWithInvalidValue(string)
+  nameWithType.vb: UserNameTests.ShouldNotCreateWithInvalidValue(String)
+- uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue*
+  name: ShouldNotCreateWithInvalidValue
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html#Project_Tests_Unit_Domain_UsersTests_UserNameTests_ShouldNotCreateWithInvalidValue_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserNameTests.ShouldNotCreateWithInvalidValue
+  nameWithType: UserNameTests.ShouldNotCreateWithInvalidValue
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests
+  name: UserTests
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html
+  commentId: T:Project.Tests.Unit.Domain.UsersTests.UserTests
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests
+  nameWithType: UserTests
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowPartialRenaming
+  name: ShouldAllowPartialRenaming()
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_ShouldAllowPartialRenaming
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowPartialRenaming
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowPartialRenaming()
+  nameWithType: UserTests.ShouldAllowPartialRenaming()
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowPartialRenaming*
+  name: ShouldAllowPartialRenaming
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_ShouldAllowPartialRenaming_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowPartialRenaming
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowPartialRenaming
+  nameWithType: UserTests.ShouldAllowPartialRenaming
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowRenamingUser
+  name: ShouldAllowRenamingUser()
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_ShouldAllowRenamingUser
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowRenamingUser
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowRenamingUser()
+  nameWithType: UserTests.ShouldAllowRenamingUser()
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowRenamingUser*
+  name: ShouldAllowRenamingUser
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_ShouldAllowRenamingUser_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowRenamingUser
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldAllowRenamingUser
+  nameWithType: UserTests.ShouldAllowRenamingUser
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldCreateUserWithValidData
+  name: ShouldCreateUserWithValidData()
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_ShouldCreateUserWithValidData
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldCreateUserWithValidData
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldCreateUserWithValidData()
+  nameWithType: UserTests.ShouldCreateUserWithValidData()
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldCreateUserWithValidData*
+  name: ShouldCreateUserWithValidData
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_ShouldCreateUserWithValidData_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldCreateUserWithValidData
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.ShouldCreateUserWithValidData
+  nameWithType: UserTests.ShouldCreateUserWithValidData
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithDifferentDataShouldNotBeEqual
+  name: UsersWithDifferentDataShouldNotBeEqual()
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_UsersWithDifferentDataShouldNotBeEqual
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithDifferentDataShouldNotBeEqual
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithDifferentDataShouldNotBeEqual()
+  nameWithType: UserTests.UsersWithDifferentDataShouldNotBeEqual()
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithDifferentDataShouldNotBeEqual*
+  name: UsersWithDifferentDataShouldNotBeEqual
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_UsersWithDifferentDataShouldNotBeEqual_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithDifferentDataShouldNotBeEqual
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithDifferentDataShouldNotBeEqual
+  nameWithType: UserTests.UsersWithDifferentDataShouldNotBeEqual
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithSameDataShouldBeEqual
+  name: UsersWithSameDataShouldBeEqual()
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_UsersWithSameDataShouldBeEqual
+  commentId: M:Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithSameDataShouldBeEqual
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithSameDataShouldBeEqual()
+  nameWithType: UserTests.UsersWithSameDataShouldBeEqual()
+- uid: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithSameDataShouldBeEqual*
+  name: UsersWithSameDataShouldBeEqual
+  href: api/Project.Tests.Unit.Domain.UsersTests.UserTests.html#Project_Tests_Unit_Domain_UsersTests_UserTests_UsersWithSameDataShouldBeEqual_
+  commentId: Overload:Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithSameDataShouldBeEqual
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Domain.UsersTests.UserTests.UsersWithSameDataShouldBeEqual
+  nameWithType: UserTests.UsersWithSameDataShouldBeEqual
+- uid: Project.Tests.Unit.Fakes
+  name: Project.Tests.Unit.Fakes
+  href: api/Project.Tests.Unit.Fakes.html
+  commentId: N:Project.Tests.Unit.Fakes
+  fullName: Project.Tests.Unit.Fakes
+  nameWithType: Project.Tests.Unit.Fakes
+- uid: Project.Tests.Unit.Fakes.FakeDbContext`1
+  name: FakeDbContext<TUser>
+  href: api/Project.Tests.Unit.Fakes.FakeDbContext-1.html
+  commentId: T:Project.Tests.Unit.Fakes.FakeDbContext`1
+  name.vb: FakeDbContext(Of TUser)
+  fullName: Project.Tests.Unit.Fakes.FakeDbContext<TUser>
+  fullName.vb: Project.Tests.Unit.Fakes.FakeDbContext(Of TUser)
+  nameWithType: FakeDbContext<TUser>
+  nameWithType.vb: FakeDbContext(Of TUser)
+- uid: Project.Tests.Unit.Fakes.FakeDbContext`1.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Project.Tests.Unit.Fakes.FakeDbContext{`0}})
+  name: FakeDbContext(DbContextOptions<FakeDbContext<TUser>>)
+  href: api/Project.Tests.Unit.Fakes.FakeDbContext-1.html#Project_Tests_Unit_Fakes_FakeDbContext_1__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_Project_Tests_Unit_Fakes_FakeDbContext__0___
+  commentId: M:Project.Tests.Unit.Fakes.FakeDbContext`1.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Project.Tests.Unit.Fakes.FakeDbContext{`0}})
+  name.vb: New(DbContextOptions(Of FakeDbContext(Of TUser)))
+  fullName: Project.Tests.Unit.Fakes.FakeDbContext<TUser>.FakeDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<Project.Tests.Unit.Fakes.FakeDbContext<TUser>>)
+  fullName.vb: Project.Tests.Unit.Fakes.FakeDbContext(Of TUser).New(Microsoft.EntityFrameworkCore.DbContextOptions(Of Project.Tests.Unit.Fakes.FakeDbContext(Of TUser)))
+  nameWithType: FakeDbContext<TUser>.FakeDbContext(DbContextOptions<FakeDbContext<TUser>>)
+  nameWithType.vb: FakeDbContext(Of TUser).New(DbContextOptions(Of FakeDbContext(Of TUser)))
+- uid: Project.Tests.Unit.Fakes.FakeDbContext`1.#ctor*
+  name: FakeDbContext
+  href: api/Project.Tests.Unit.Fakes.FakeDbContext-1.html#Project_Tests_Unit_Fakes_FakeDbContext_1__ctor_
+  commentId: Overload:Project.Tests.Unit.Fakes.FakeDbContext`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Project.Tests.Unit.Fakes.FakeDbContext<TUser>.FakeDbContext
+  fullName.vb: Project.Tests.Unit.Fakes.FakeDbContext(Of TUser).New
+  nameWithType: FakeDbContext<TUser>.FakeDbContext
+  nameWithType.vb: FakeDbContext(Of TUser).New
+- uid: Project.Tests.Unit.Fakes.FakeDbContext`1.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: OnModelCreating(ModelBuilder)
+  href: api/Project.Tests.Unit.Fakes.FakeDbContext-1.html#Project_Tests_Unit_Fakes_FakeDbContext_1_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:Project.Tests.Unit.Fakes.FakeDbContext`1.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: Project.Tests.Unit.Fakes.FakeDbContext<TUser>.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName.vb: Project.Tests.Unit.Fakes.FakeDbContext(Of TUser).OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: FakeDbContext<TUser>.OnModelCreating(ModelBuilder)
+  nameWithType.vb: FakeDbContext(Of TUser).OnModelCreating(ModelBuilder)
+- uid: Project.Tests.Unit.Fakes.FakeDbContext`1.OnModelCreating*
+  name: OnModelCreating
+  href: api/Project.Tests.Unit.Fakes.FakeDbContext-1.html#Project_Tests_Unit_Fakes_FakeDbContext_1_OnModelCreating_
+  commentId: Overload:Project.Tests.Unit.Fakes.FakeDbContext`1.OnModelCreating
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Fakes.FakeDbContext<TUser>.OnModelCreating
+  fullName.vb: Project.Tests.Unit.Fakes.FakeDbContext(Of TUser).OnModelCreating
+  nameWithType: FakeDbContext<TUser>.OnModelCreating
+  nameWithType.vb: FakeDbContext(Of TUser).OnModelCreating
+- uid: Project.Tests.Unit.Mocks
+  name: Project.Tests.Unit.Mocks
+  href: api/Project.Tests.Unit.Mocks.html
+  commentId: N:Project.Tests.Unit.Mocks
+  fullName: Project.Tests.Unit.Mocks
+  nameWithType: Project.Tests.Unit.Mocks
+- uid: Project.Tests.Unit.Mocks.UserManagerMock
+  name: UserManagerMock
+  href: api/Project.Tests.Unit.Mocks.UserManagerMock.html
+  commentId: T:Project.Tests.Unit.Mocks.UserManagerMock
+  fullName: Project.Tests.Unit.Mocks.UserManagerMock
+  nameWithType: UserManagerMock
+- uid: Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager*
+  name: MockUserManager
+  href: api/Project.Tests.Unit.Mocks.UserManagerMock.html#Project_Tests_Unit_Mocks_UserManagerMock_MockUserManager_
+  commentId: Overload:Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager
+  isSpec: "True"
+  fullName: Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager
+  nameWithType: UserManagerMock.MockUserManager
+- uid: Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager``1(System.Collections.Generic.List{``0})
+  name: MockUserManager<TUser>(List<TUser>)
+  href: api/Project.Tests.Unit.Mocks.UserManagerMock.html#Project_Tests_Unit_Mocks_UserManagerMock_MockUserManager__1_System_Collections_Generic_List___0__
+  commentId: M:Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager``1(System.Collections.Generic.List{``0})
+  name.vb: MockUserManager(Of TUser)(List(Of TUser))
+  fullName: Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager<TUser>(System.Collections.Generic.List<TUser>)
+  fullName.vb: Project.Tests.Unit.Mocks.UserManagerMock.MockUserManager(Of TUser)(System.Collections.Generic.List(Of TUser))
+  nameWithType: UserManagerMock.MockUserManager<TUser>(List<TUser>)
+  nameWithType.vb: UserManagerMock.MockUserManager(Of TUser)(List(Of TUser))

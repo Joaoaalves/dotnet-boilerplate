@@ -101,7 +101,7 @@ Class GetUserDetailsQuery  <a class="header-action link-secondary" title="View s
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GetUserDetailsQuery : IQuery&lt;UserDetailsDTO&gt;, IRequest&lt;UserDetailsDTO&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class GetUserDetailsQuery : IQuery&lt;UserDetailsDTO?&gt;, IRequest&lt;UserDetailsDTO?&gt;</code></pre>
   </div>
 
 
@@ -194,10 +194,10 @@ Class GetUserDetailsQuery  <a class="header-action link-secondary" title="View s
 </h2>
 
 
-  <a id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal_" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal*"></a>
+  <a id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email_" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email*"></a>
 
-  <h3 id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Principal" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Principal">
-  Principal
+  <h3 id="Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email" data-uid="Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email">
+  Email
   <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQuery.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -205,7 +205,7 @@ Class GetUserDetailsQuery  <a class="header-action link-secondary" title="View s
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClaimsPrincipal Principal { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? Email { get; }</code></pre>
   </div>
 
 
@@ -214,7 +214,7 @@ Class GetUserDetailsQuery  <a class="header-action link-secondary" title="View s
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
