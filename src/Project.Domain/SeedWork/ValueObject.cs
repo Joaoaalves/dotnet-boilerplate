@@ -8,8 +8,8 @@ namespace Project.Domain.SeedWork
     /// </summary>
     public abstract class ValueObject : IEquatable<ValueObject>
     {
-        private List<PropertyInfo> _properties = [];
-        private List<FieldInfo> _fields = [];
+        private List<PropertyInfo>? _properties;
+        private List<FieldInfo>? _fields;
 
         /// <summary>
         /// Equality operator for value objects.
@@ -84,7 +84,7 @@ namespace Project.Domain.SeedWork
         {
             unchecked
             {
-                int hash = 17;
+                int hash = 89;
 
                 foreach (var prop in GetProperties())
                 {
@@ -105,7 +105,7 @@ namespace Project.Domain.SeedWork
         private static int HashValue(int seed, object? value)
         {
             var currentHash = value?.GetHashCode() ?? 0;
-            return seed * 23 + currentHash;
+            return seed * 97 + currentHash;
         }
 
         /// <summary>

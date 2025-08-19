@@ -59,7 +59,8 @@ namespace Project.Domain.SharedKernel.Users
         /// <inheritdoc />
         public override int GetHashCode()
         {
-            return Value?.GetHashCode() ?? 0;
+            var lower = Value?.ToLowerInvariant();
+            return lower?.GetHashCode() ?? 0;
         }
     }
 }

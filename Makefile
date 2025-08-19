@@ -44,3 +44,20 @@ test-integration:
 	dotnet test src/tests/Project.Tests.Integration/Project.Tests.Integration.csproj
 test:
 	dotnet test src
+coverage:
+	dotnet build ./src
+	-rm -rf ./src/tests/coverage/test-results
+	dotnet test src/tests/Project.Tests.Unit/Project.Tests.Unit.csproj \
+		--collect:"XPlat Code Coverage" \
+		--no-build \
+		--results-directory ./src/tests/coverage/test-results \
+		--settings coverage.runsettings
+	reportgenerator \
+		-reports:./src/tests/coverage/test-results/**/coverage.cobertura.xml \
+		-targetdir:./src/tests/coverage/report \
+		-reporttypes:Html
+ifeq ($(OS),Windows_NT)
+	powershell -Command "Set-Location -Path '$(CURDIR)'; Invoke-Item 'src\tests\coverage\report\index.html'"
+else
+	xdg-open src/tests/coverage/report/index.html || open src/tests/coverage/report/index.html
+endif

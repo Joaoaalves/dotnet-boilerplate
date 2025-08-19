@@ -15,10 +15,10 @@ namespace Project.Application.Users.Commands.RegisterUser
         private readonly IUserLoggerService _userLoggerService = userLoggerService;
         public async Task<(string userId, IEnumerable<string> Errors)> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
         {
-            var firstName = new Name(request.FirstName.Trim());
-            var lastName = new Name(request.LastName.Trim());
-            var email = new Email(request.Email.Trim());
-            var userName = new UserName(request.Email.Trim());
+            var firstName = new Name(request.FirstName);
+            var lastName = new Name(request.LastName);
+            var email = new Email(request.Email);
+            var userName = new UserName(request.Email);
 
             var user = User.Create(firstName, lastName, userName, email);
 

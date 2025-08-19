@@ -26,15 +26,16 @@ namespace Project.Domain.SharedKernel.Users
         /// </exception>
         public UserName(string value)
         {
-            CheckRule(new Rules.UserNameMustBeValidRule(value));
-            Value = value;
+            var userName = value.Trim();
+            CheckRule(new Rules.UserNameMustBeValidRule(userName));
+            Value = userName;
         }
 
         /// <summary>
         /// Implicit conversion from <see cref="UserName"/> to <see cref="string"/>.
         /// </summary>
         /// <param name="userName">The <see cref="UserName"/> instance.</param>
-        public static implicit operator string(UserName userName) => userName.Value;
+        public static implicit operator string(UserName userName) => userName?.Value ?? string.Empty;
 
         /// <inheritdoc />
         public override string ToString() => Value;
@@ -52,7 +53,9 @@ namespace Project.Domain.SharedKernel.Users
         /// <inheritdoc />
         public override int GetHashCode()
         {
-            return Value?.GetHashCode() ?? 0;
+            var lower = Value?.ToLowerInvariant();
+
+            return lower?.GetHashCode() ?? 0;
         }
     }
 }

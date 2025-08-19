@@ -1,4 +1,3 @@
-using System.Security.Claims;
 using FluentAssertions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +10,7 @@ using Project.Tests.Unit.Fakes;
 using Project.Tests.Unit.Mocks;
 using Xunit.Abstractions;
 
-namespace Project.Tests.Unit.Application.UsersTests
+namespace Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryTests
 {
     public class GetUserDetailsQueryHandlerTests
     {
@@ -51,12 +50,8 @@ namespace Project.Tests.Unit.Application.UsersTests
             var user = UserBuilder.WithDefaultValues();
             await AddUserToDatabase(user);
 
-            var principal = new ClaimsPrincipal(new ClaimsIdentity(
-            [
-                new(ClaimTypes.Email, user.Email!)
-            ]));
 
-            var query = new GetUserDetailsQuery(principal);
+            var query = new GetUserDetailsQuery(user.Email);
             var res = await _dbContext.Users.ToListAsync();
             _output.WriteLine($"\n\n\n\n\n {res.Count} \n\n\n\n\n");
             // Act
@@ -73,12 +68,7 @@ namespace Project.Tests.Unit.Application.UsersTests
         public async Task ShouldReturnNull_WhenUserDoesNotExist()
         {
             // Arrange
-            var principal = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
-            {
-                new(ClaimTypes.Email, "nonexistent@example.com")
-            }));
-
-            var query = new GetUserDetailsQuery(principal);
+            var query = new GetUserDetailsQuery("nonexistent@example.com");
 
             // Act
             var dto = await _handler.Handle(query, CancellationToken.None);
@@ -91,9 +81,7 @@ namespace Project.Tests.Unit.Application.UsersTests
         public async Task ShouldReturnNull_WhenEmailClaimIsMissing()
         {
             // Arrange
-            var principal = new ClaimsPrincipal(new ClaimsIdentity());
-
-            var query = new GetUserDetailsQuery(principal);
+            var query = new GetUserDetailsQuery();
 
             // Act
             var dto = await _handler.Handle(query, CancellationToken.None);

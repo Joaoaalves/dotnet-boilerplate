@@ -6,6 +6,7 @@ using Project.Application.Users.Commands.RegisterUser;
 
 using Project.Infrastructure.Processing;
 using Project.Application.Configuration.Validation;
+using System.Security.Claims;
 
 namespace Project.Api.Controllers.Users
 {
@@ -67,7 +68,7 @@ namespace Project.Api.Controllers.Users
         [Authorize]
         public async Task<IActionResult> GetUserInfo()
         {
-            var query = new GetUserDetailsQuery(User);
+            var query = new GetUserDetailsQuery(User.FindFirstValue(ClaimTypes.Email));
 
             var dto = await _queriesExecutor.Execute(query);
 

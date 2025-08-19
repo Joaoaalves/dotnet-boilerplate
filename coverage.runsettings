@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage">
+        <Configuration>
+          <!-- Output format -->
+          <Format>cobertura</Format>
+
+          <!-- Only include your product assemblies (adjust if needed) -->
+          <Include>
+            [Project.Domain]*;[Project.Application]*;[Project.Infrastructure]*;[Project.Api]*
+          </Include>
+
+          <!-- Exclude common noise: BCL/framework, test libs, and migrations -->
+          <Exclude>
+            [xunit.*]*;[Moq]*;[FluentAssertions]*;
+            [System.*]*;[Microsoft.*]*;[netstandard]*;
+            [*]Migrations.*
+          </Exclude>
+          
+          <!-- Exclude by attribute: anything marked as generated/non-user/ignored -->
+          <ExcludeByAttribute>
+            System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute;
+            System.CodeDom.Compiler.GeneratedCodeAttribute;
+            System.Runtime.CompilerServices.CompilerGeneratedAttribute;
+            System.Diagnostics.DebuggerNonUserCodeAttribute
+          </ExcludeByAttribute>
+
+          <!-- Exclude by file: code-behind, generated, designer, assembly attrs, and the Regex generator -->
+          <ExcludeByFile>
+            **/*.g.cs;**/*.g.i.cs;**/*/*.g.cs;**/*/*.g.i.cs;
+            **/*Designer.cs;**/*designercs;
+            **/*AssemblyInfo.cs;**/*.AssemblyAttributes.cs;
+            **/bin/**;**/obj/**;
+            **/Migrations/**;
+            **/System.Text.RegularExpressions.Generated*;
+            **/System.Text.RegularExpressions.Generator/**; 
+            **/System.Text.RegularExpressions/**/RegexGenerator*.g.cs
+          </ExcludeByFile>
+
+          <!-- Useful flags -->
+          <IncludeTestAssembly>false</IncludeTestAssembly>
+          <SingleHit>true</SingleHit>
+          <UseSourceLink>true</UseSourceLink>
+          <SkipAutoProps>true</SkipAutoProps>
+          <ExcludeAssembliesWithoutSources>true</ExcludeAssembliesWithoutSources>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 using Project.Domain.SeedWork;
 
 namespace Project.Domain.SharedKernel.Users.Rules
@@ -21,13 +23,11 @@ namespace Project.Domain.SharedKernel.Users.Rules
         public bool IsBroken() =>
             string.IsNullOrWhiteSpace(_userName) ||
             _userName.Length < 3 ||
-            !UserNameRegex().IsMatch(_userName);
+            !_userNameRegex.IsMatch(_userName);
 
         /// <summary>
         /// Regex to validate username format (letters, numbers, underscores).
         /// </summary>
-        /// <returns>A compiled regular expression.</returns>
-        [System.Text.RegularExpressions.GeneratedRegex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$")]
-        private static partial System.Text.RegularExpressions.Regex UserNameRegex();
+        private static readonly Regex _userNameRegex = new(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");
     }
 }

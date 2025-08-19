@@ -26,8 +26,9 @@ namespace Project.Domain.SharedKernel.Users
         /// </exception>
         public Email(string value)
         {
-            CheckRule(new Rules.EmailMustBeValidRule(value));
-            Value = value;
+            var email = value.Trim();
+            CheckRule(new Rules.EmailMustBeValidRule(email));
+            Value = email;
         }
 
         /// <summary>
@@ -36,7 +37,7 @@ namespace Project.Domain.SharedKernel.Users
         /// <param name="email">The <see cref="Email"/> instance.</param>
         public static implicit operator string(Email email)
         {
-            return email.Value;
+            return email?.Value ?? string.Empty;
         }
 
         /// <inheritdoc />
@@ -55,7 +56,8 @@ namespace Project.Domain.SharedKernel.Users
         /// <inheritdoc />
         public override int GetHashCode()
         {
-            return Value?.GetHashCode() ?? 0;
+            var lower = Value?.ToLowerInvariant();
+            return lower?.GetHashCode() ?? 0;
         }
     }
 }
