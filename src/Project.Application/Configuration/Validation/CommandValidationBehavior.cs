@@ -3,7 +3,7 @@ using Project.Domain.SeedWork;
 
 namespace Project.Application.Configuration.Validation
 {
-    public class ValidationBehavior<TRequest, TResponse>(IEnumerable<IValidator<TRequest>> validators) : IRequestPipelineBehavior<TRequest, TResponse>
+    public class CommandValidationBehavior<TRequest, TResponse>(IEnumerable<IValidator<TRequest>> validators) : IRequestPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse>
     {
         private readonly IEnumerable<IValidator<TRequest>> _validators = validators;

@@ -38,7 +38,7 @@ endif
 ### TESTS
 ###
 test-unit:
-	dotnet test src/tests/Project.Tests.Unit/Project.Tests.Unit.csproj
+	dotnet test src/tests/Project.Tests.UnitTests/Project.Tests.UnitTests.csproj
 
 test-integration:
 	dotnet test src/tests/Project.Tests.Integration/Project.Tests.Integration.csproj
@@ -46,12 +46,17 @@ test:
 	dotnet test src
 coverage:
 	dotnet build ./src
-	-rm -rf ./src/tests/coverage/test-results
-	dotnet test src/tests/Project.Tests.Unit/Project.Tests.Unit.csproj \
+ifeq ($(OS),Windows_NT)
+	if exist src\tests\coverage\test-results rmdir /s /q src\tests\coverage\test-results
+	if exist src\tests\coverage\report rmdir /s /q src\tests\coverage\report
+else
+	rm -rf $(CURDIR)/src/tests/coverage/test-results $(CURDIR)/src/tests/coverage/report
+endif
+	dotnet test src/tests/Project.Tests.UnitTests/Project.Tests.UnitTests.csproj \
 		--collect:"XPlat Code Coverage" \
 		--no-build \
 		--results-directory ./src/tests/coverage/test-results \
-		--settings coverage.runsettings
+		--settings src/tests/coverage/runsettings.xml
 	reportgenerator \
 		-reports:./src/tests/coverage/test-results/**/coverage.cobertura.xml \
 		-targetdir:./src/tests/coverage/report \

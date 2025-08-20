@@ -15,7 +15,7 @@ COPY ["Project.Domain/Project.Domain.csproj", "Project.Domain/"]
 COPY ["Project.Infrastructure/Project.Infrastructure.csproj", "Project.Infrastructure/"]
 COPY ["Project.Application/Project.Application.csproj", "Project.Application/"]
 COPY ["Project.Api/Project.Api.csproj", "Project.Api/"]
-COPY ["tests/Project.Tests.Unit/Project.Tests.Unit.csproj", "tests/Project.Tests.Unit/Project.Tests.Unit.csproj"]
+COPY ["tests/Project.Tests.Unit/Project.Tests.UnitTests.csproj", "tests/Project.Tests.Unit/Project.Tests.UnitTests.csproj"]
 COPY ["tests/Project.Tests.Integration/Project.Tests.Integration.csproj", "tests/Project.Tests.Integration/Project.Tests.Integration.csproj"]
 
 RUN dotnet restore Project.sln

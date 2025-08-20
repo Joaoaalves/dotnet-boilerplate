@@ -489,4 +489,5 @@ $RECYCLE.BIN/
 ./observability/grafana/data/*
 
 # Tests
-src/tests/coverage/*
+src/tests/coverage/*/*
+!src/tests/runsettings.xml

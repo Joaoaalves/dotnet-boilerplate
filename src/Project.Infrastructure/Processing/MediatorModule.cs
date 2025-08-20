@@ -32,7 +32,7 @@ namespace Project.Infrastructure.Processing
             services.AddScoped<CommandsExecutor>();
             services.AddScoped<QueriesExecutor>();
 
-            services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+            services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(CommandValidationBehavior<,>));
             services.AddScoped(typeof(ICommandPipelineBehaviour<,>), typeof(UserInjectionCommandBehavior<,>));
             services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UserInjectionQueryBehavior<,>));
             services.AddScoped(typeof(IRequestPipelineBehavior<,>), typeof(UnitOfWorkPipelineBehavior<,>));

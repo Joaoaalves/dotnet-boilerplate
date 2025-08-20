@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Logging", "Project.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tests.Unit", "tests\Project.Tests.Unit\Project.Tests.Unit.csproj", "{398E04A8-57EC-49FA-9F53-FACEF8492DC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tests.UnitTests", "tests\Project.Tests.UnitTests\Project.Tests.UnitTests.csproj", "{398E04A8-57EC-49FA-9F53-FACEF8492DC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tests.Integration", "tests\Project.Tests.Integration\Project.Tests.Integration.csproj", "{4DE3ACE4-B4E5-4567-9796-1B60B944665E}"
 EndProject

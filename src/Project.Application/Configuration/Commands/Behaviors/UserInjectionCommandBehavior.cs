@@ -27,7 +27,7 @@ namespace Project.Application.Configuration.Commands.Behaviors
                 var claimsPrincipal = _httpContextAccessor.HttpContext?.User
                     ?? throw new Exception("User not found in context.");
 
-                var userId = claimsPrincipal?.Identity?.Name
+                var userId = claimsPrincipal.Identity?.Name
                     ?? throw new Exception("Failed to resolve authenticated user.");
 
                 var user = await _userRepository.GetByEmailAsync(userId) ?? throw new Exception("Failed to resolve authenticated user from repository.");
