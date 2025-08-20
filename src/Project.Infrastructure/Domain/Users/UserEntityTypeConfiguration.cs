@@ -1,14 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Project.Domain.Users;
-using Project.Infrastructure.SeedWork.Resilience;
+using Project.Infrastructure.SeedWork;
 
 namespace Project.Infrastructure.Domain.Users
 {
     /// <summary>
     /// Entity configuration for <see cref="IdentityUserAdapter"/>.
     /// </summary>
-    internal sealed class UserTypeConfiguration : IEntityTypeConfiguration<User>
+    internal sealed class UserEntityTypeConfiguration : IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {

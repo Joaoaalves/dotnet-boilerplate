@@ -4,7 +4,7 @@ using Project.Domain.SharedKernel.Users;
 using Project.Tests.UnitTests.Builders;
 
 
-namespace Project.Tests.UnitTests.Domain.UsersTests
+namespace Project.Tests.UnitTests.Domain.Users
 {
     public class UserTests
     {

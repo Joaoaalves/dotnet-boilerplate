@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Project.Application.Configuration.Commands;
@@ -12,6 +13,7 @@ namespace Project.Infrastructure.Processing
     /// <summary>
     /// Provides methods to configure the mediator module, including command/query handlers and pipeline behaviors.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public static class MediatorModule
     {
         /// <summary>

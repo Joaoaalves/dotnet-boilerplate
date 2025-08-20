@@ -7,4 +7,9 @@ namespace Project.Tests.UnitTests.Application.Fakes
     {
         public string Name { get; set; } = string.Empty;
     }
+
+    public class FakeCommandString : ICommand<string>
+    {
+        public Guid Id => Guid.NewGuid();
+    }
 }

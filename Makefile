@@ -56,7 +56,7 @@ endif
 		--collect:"XPlat Code Coverage" \
 		--no-build \
 		--results-directory ./src/tests/coverage/test-results \
-		--settings src/tests/coverage/runsettings.xml
+		--settings src/tests/coverage/coverlet.runsettings
 	reportgenerator \
 		-reports:./src/tests/coverage/test-results/**/coverage.cobertura.xml \
 		-targetdir:./src/tests/coverage/report \

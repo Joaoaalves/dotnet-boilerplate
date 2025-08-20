@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Project.Domain.SharedKernel.Users;
 
-namespace Project.Infrastructure.SeedWork.Resilience
+namespace Project.Infrastructure.SeedWork
 {
     /// <summary>
     /// Converts between the domain-specific <see cref="Name"/> type and its string representation for persistence.

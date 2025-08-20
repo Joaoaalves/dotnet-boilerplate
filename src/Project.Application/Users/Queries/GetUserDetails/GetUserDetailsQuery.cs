@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Project.Application.Configuration.Queries;
 
 namespace Project.Application.Users.Queries.GetUserDetails

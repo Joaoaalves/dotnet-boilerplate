@@ -26,10 +26,14 @@ namespace Project.Tests.Integration.Account
             string email = "ana.silva@example.com",
             string password = "Str0ngP@ss")
         {
+            // Arrange
             var command = new RegisterUserCommand(firstName, lastName, email, password);
+
+            // Act
             var response = await Client.PostAsJsonAsync("/api/register", command);
 
-            response.StatusCode.Should().Be(HttpStatusCode.Created);
+            // Assert
+            Assert.Equal(HttpStatusCode.Created, response.StatusCode);
 
             return email; // we will later authenticate using this email
         }

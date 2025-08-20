@@ -4,7 +4,7 @@ using Project.Domain.SeedWork;
 using Project.Domain.SharedKernel.Users;
 using Project.Domain.SharedKernel.Users.Rules;
 
-namespace Project.Tests.UnitTests.Domain.UsersTests
+namespace Project.Tests.UnitTests.Domain.Users
 {
     public class NameTests
     {

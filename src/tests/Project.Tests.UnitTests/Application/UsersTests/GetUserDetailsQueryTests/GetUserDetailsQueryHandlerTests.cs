@@ -17,19 +17,14 @@ namespace Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTest
         private readonly UserManager<User> _userManager;
         private readonly GetUserDetailsQueryHandler _handler;
         private readonly FakeDbContext<User> _dbContext;
-
-        private readonly ITestOutputHelper _output;
         private readonly IUserRepository _userRepo;
+
         public GetUserDetailsQueryHandlerTests(ITestOutputHelper output)
         {
-
-            _output = output;
             _userManager = UserManagerMock.MockUserManager<User>([]).Object;
-            var options = new DbContextOptionsBuilder<FakeDbContext<User>>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-                .Options;
 
-            _dbContext = new FakeDbContext<User>(options);
+            _dbContext = DatabaseBuilder.InMemoryDatabase();
+
             _userRepo = new UserRepository(_userManager, _dbContext);
 
             _handler = new GetUserDetailsQueryHandler(_userRepo);
@@ -53,7 +48,7 @@ namespace Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTest
 
             var query = new GetUserDetailsQuery(user.Email);
             var res = await _dbContext.Users.ToListAsync();
-            _output.WriteLine($"\n\n\n\n\n {res.Count} \n\n\n\n\n");
+
             // Act
             var dto = await _handler.Handle(query, CancellationToken.None);
 

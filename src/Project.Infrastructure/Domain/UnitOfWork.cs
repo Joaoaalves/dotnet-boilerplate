@@ -1,25 +1,24 @@
 using Project.Domain.SeedWork;
-using Project.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Project.Infrastructure.Processing;
 
 namespace Project.Infrastructure.Domain
 {
     public class UnitOfWork(
-        ApplicationDbContext ordersContext,
+        DbContext context,
         IDomainEventsDispatcher domainEventsDispatcher) : IUnitOfWork
     {
-        private readonly ApplicationDbContext _ordersContext = ordersContext;
+        private readonly DbContext _context = context;
         private readonly IDomainEventsDispatcher _domainEventsDispatcher = domainEventsDispatcher;
         public async Task<int> CommitAsync(CancellationToken cancellationToken = default)
         {
             await _domainEventsDispatcher.DispatchEventsAsync();
-            return await _ordersContext.SaveChangesAsync(cancellationToken);
+            return await _context.SaveChangesAsync(cancellationToken);
         }
 
         public Task RevertAsync()
         {
-            foreach (var entry in _ordersContext.ChangeTracker.Entries())
+            foreach (var entry in _context.ChangeTracker.Entries())
             {
                 switch (entry.State)
                 {

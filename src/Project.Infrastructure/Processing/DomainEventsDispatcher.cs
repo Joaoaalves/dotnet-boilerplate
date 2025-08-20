@@ -1,5 +1,5 @@
+using Microsoft.EntityFrameworkCore;
 using Project.Domain.SeedWork;
-using Project.Infrastructure.Database;
 
 namespace Project.Infrastructure.Processing
 {
@@ -8,10 +8,10 @@ namespace Project.Infrastructure.Processing
     /// </summary>
     /// <param name="mediator">The mediator used to publish domain events.</param>
     /// <param name="context">The database context from which domain events are collected.</param>
-    public class DomainEventsDispatcher(IMediator mediator, ApplicationDbContext context) : IDomainEventsDispatcher
+    public class DomainEventsDispatcher(IMediator mediator, DbContext context) : IDomainEventsDispatcher
     {
         private readonly IMediator _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
-        private readonly ApplicationDbContext _context = context ?? throw new ArgumentNullException(nameof(context));
+        private readonly DbContext _context = context ?? throw new ArgumentNullException(nameof(context));
 
         /// <inheritdoc />
         public async Task DispatchEventsAsync()
