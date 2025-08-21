@@ -30,9 +30,8 @@ services:
       - internal
 
   nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
+    image: nginx:alpine
+    container_name: project_nginx
     depends_on:
       - api
       - docs
@@ -40,11 +39,11 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/certbot:/var/www/certbot
+      - ./nginx/templates:/etc/nginx/templates/
       - /etc/letsencrypt:/etc/letsencrypt:ro
     environment:
-      - DOMAIN=${DOMAIN}
+      DOMAIN: ${DOMAIN}
     restart: always
     networks:
       - internal
