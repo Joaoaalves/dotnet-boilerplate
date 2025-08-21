@@ -9,8 +9,6 @@ services:
       ASPNETCORE_URLS: http://+:5000
     env_file:
       - .env
-    ports:
-      - "5000:5000"
     restart: always
     depends_on:
       postgres:
@@ -27,15 +25,14 @@ services:
     container_name: project_docs
     environment:
       - DOMAIN=${DOMAIN}
-    ports:
-      - "8080:80"
     restart: always
     networks:
       - internal
 
   nginx:
-    image: nginx:alpine
-    container_name: project_nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
     depends_on:
       - api
       - docs
@@ -44,20 +41,21 @@ services:
       - "443:443"
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./certs:/etc/nginx/certs
+      - ./nginx/certbot:/var/www/certbot
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     environment:
       - DOMAIN=${DOMAIN}
     restart: always
     networks:
       - internal
+      - logging
+      - monitoring
   postgres:
     image: postgres:13
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: database
-    ports:
-      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
@@ -75,8 +73,6 @@ services:
   postgresql-exporter:
     image: prometheuscommunity/postgres-exporter
     profiles: ["monitoring", "observability"]
-    ports:
-      - "9187:9187"
     environment:
       DATA_SOURCE_NAME: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres/${POSTGRES_DB}?sslmode=disable"
     depends_on:
@@ -91,8 +87,6 @@ services:
     image: prom/prometheus
     container_name: prometheus
     profiles: ["monitoring", "observability"]
-    ports:
-      - "${PROMETHEUS_PORT}:9090"
     volumes:
       - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml
     restart: unless-stopped
@@ -103,8 +97,6 @@ services:
     image: grafana/grafana
     container_name: grafana
     profiles: ["monitoring", "observability"]
-    ports:
-      - "${GRAFANA_PORT}:3000"
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
@@ -132,8 +124,6 @@ services:
         hard: -1
     volumes:
       - elastic_data:/usr/share/elasticsearch/data
-    ports:
-      - "9200:9200"
     networks:
       - logging
     restart: unless-stopped
@@ -143,12 +133,16 @@ services:
     profiles: ["observability", "logging"]
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-    ports:
-      - "5601:5601"
     depends_on:
       - elasticsearch
     networks:
       - logging
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5601/api/status"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
     restart: unless-stopped
 
   kibana-importer:
@@ -178,9 +172,6 @@ services:
     profiles: ["observability", "logging"]
     volumes:
       - ./observability/logstash/pipeline:/usr/share/logstash/pipeline
-    ports:
-      - "5044:5044"  # Beats input (Filebeat, etc)
-      - "5000:5000"  # TCP input
     depends_on:
       - elasticsearch
     networks:

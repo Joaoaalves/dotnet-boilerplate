@@ -11,7 +11,8 @@ COPY ./Project.Api/*.csproj ./Project.Api/
 COPY ./Project.Application/*.csproj ./Project.Application/
 COPY ./Project.Domain/*.csproj ./Project.Domain/
 COPY ./Project.Infrastructure/*.csproj ./Project.Infrastructure/
-COPY ["tests/Project.Tests.Unit/Project.Tests.UnitTests.csproj", "tests/Project.Tests.Unit/Project.Tests.UnitTests.csproj"]
+COPY ./Project.Logging/*.csproj ./Project.Logging/
+COPY ["tests/Project.Tests.UnitTests/Project.Tests.UnitTests.csproj", "tests/Project.Tests.UnitTests/Project.Tests.UnitTests.csproj"]
 COPY ["tests/Project.Tests.Integration/Project.Tests.Integration.csproj", "tests/Project.Tests.Integration/Project.Tests.Integration.csproj"]
 
 RUN dotnet restore ./Project.Api/Project.Api.csproj

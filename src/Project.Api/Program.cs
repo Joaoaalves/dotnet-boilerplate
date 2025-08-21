@@ -8,6 +8,7 @@ using Project.Infrastructure.Monitoring;
 using Project.Infrastructure.Processing;
 
 var builder = WebApplication.CreateBuilder(args);
+bool.TryParse(Environment.GetEnvironmentVariable("ENABLE_MONITORING"), out bool isMonitoringEnabled);
 var configuration = builder.Configuration;
 var env = builder.Environment;
 
@@ -30,7 +31,7 @@ services.AddAuthModule();
 services.AddConfigurations();
 services.AddDataAccessModule();
 services.AddMediatorModule();
-services.AddMonitoringModule();
+services.AddMonitoringModule(isMonitoringEnabled);
 
 // LoggingModule precisa do env
 services.AddLogginModule(env);
@@ -54,7 +55,10 @@ app.MapControllers();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseOpenTelemetryPrometheusScrapingEndpoint();
+if (isMonitoringEnabled)
+{
+    app.UseOpenTelemetryPrometheusScrapingEndpoint();
+}
 
 app.MapIdentityApi<User>();
 

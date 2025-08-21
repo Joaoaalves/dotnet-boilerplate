@@ -19,9 +19,8 @@ namespace Project.Infrastructure.Monitoring
         /// Monitoring is conditionally enabled via the ENABLE_MONITORING environment variable.
         /// Metrics include ASP.NET Core, runtime, and process metrics with a Prometheus exporter.
         /// </remarks>
-        public static IServiceCollection AddMonitoringModule(this IServiceCollection services)
+        public static IServiceCollection AddMonitoringModule(this IServiceCollection services, bool isMonitoringEnabled)
         {
-            bool.TryParse(Environment.GetEnvironmentVariable("ENABLE_MONITORING"), out bool isMonitoringEnabled);
 
             if (isMonitoringEnabled)
             {
