@@ -1,0 +1,967 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  id: TypedIdValueBaseTests
+  parent: Project.Tests.UnitTests.Domain.SharedKernel
+  children:
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid
+  langs:
+  - csharp
+  - vb
+  name: TypedIdValueBaseTests
+  nameWithType: TypedIdValueBaseTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: TypedIdValueBaseTests
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 4
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: public class TypedIdValueBaseTests
+    content.vb: Public Class TypedIdValueBaseTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid
+  id: Value_ShouldReturnProvidedGuid
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Value_ShouldReturnProvidedGuid()
+  nameWithType: TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Value_ShouldReturnProvidedGuid
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 6
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Value_ShouldReturnProvidedGuid()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Value_ShouldReturnProvidedGuid()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue
+  id: Equals_ShouldReturnTrue_ForSameValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnTrue_ForSameValue()
+  nameWithType: TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnTrue_ForSameValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 19
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnTrue_ForSameValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnTrue_ForSameValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue
+  id: Equals_ShouldReturnFalse_ForDifferentValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_ForDifferentValue()
+  nameWithType: TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_ForDifferentValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 34
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_ForDifferentValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_ForDifferentValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull
+  id: Equals_ShouldReturnFalse_WhenOtherIsNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenOtherIsNull()
+  nameWithType: TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenOtherIsNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 48
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenOtherIsNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenOtherIsNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  id: Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ObjectOverride_ShouldReturnTrue_ForSameValue()
+  nameWithType: TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 61
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ObjectOverride_ShouldReturnTrue_ForSameValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ObjectOverride_ShouldReturnTrue_ForSameValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  id: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull()
+  nameWithType: TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 76
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  id: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType()
+  nameWithType: TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 89
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue
+  id: OperatorEqual_ShouldReturnTrue_ForSameValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: OperatorEqual_ShouldReturnTrue_ForSameValue()
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: OperatorEqual_ShouldReturnTrue_ForSameValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 103
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OperatorEqual_ShouldReturnTrue_ForSameValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OperatorEqual_ShouldReturnTrue_ForSameValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  id: OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: OperatorEqual_ShouldReturnFalse_ForDifferentValues()
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: OperatorEqual_ShouldReturnFalse_ForDifferentValues
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 118
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OperatorEqual_ShouldReturnFalse_ForDifferentValues()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OperatorEqual_ShouldReturnFalse_ForDifferentValues()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  id: OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: OperatorEqual_ShouldReturnTrue_WhenBothAreNull()
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 132
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OperatorEqual_ShouldReturnTrue_WhenBothAreNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OperatorEqual_ShouldReturnTrue_WhenBothAreNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  id: OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull()
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 146
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  id: OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: OperatorNotEqual_ShouldReturnTrue_ForDifferentValues()
+  nameWithType: TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 162
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OperatorNotEqual_ShouldReturnTrue_ForDifferentValues()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OperatorNotEqual_ShouldReturnTrue_ForDifferentValues()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  id: OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: OperatorNotEqual_ShouldReturnFalse_ForSameValues()
+  nameWithType: TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: OperatorNotEqual_ShouldReturnFalse_ForSameValues
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 176
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OperatorNotEqual_ShouldReturnFalse_ForSameValues()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OperatorNotEqual_ShouldReturnFalse_ForSameValues()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid
+  id: GetHashCode_ShouldReturnSameValue_ForSameGuid
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode_ShouldReturnSameValue_ForSameGuid()
+  nameWithType: TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode_ShouldReturnSameValue_ForSameGuid
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 191
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetHashCode_ShouldReturnSameValue_ForSameGuid()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetHashCode_ShouldReturnSameValue_ForSameGuid()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  id: GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids()
+  nameWithType: TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/TypedIdValueBaseTests.cs
+    startLine: 207
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel
+  commentId: N:Project.Tests.UnitTests.Domain.SharedKernel
+  href: Project.html
+  name: Project.Tests.UnitTests.Domain.SharedKernel
+  nameWithType: Project.Tests.UnitTests.Domain.SharedKernel
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Tests.UnitTests.Domain.SharedKernel.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Tests.UnitTests.Domain.SharedKernel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Value_ShouldReturnProvidedGuid
+  name: Value_ShouldReturnProvidedGuid
+  nameWithType: TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Value_ShouldReturnProvidedGuid
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Equals_ShouldReturnTrue_ForSameValue
+  name: Equals_ShouldReturnTrue_ForSameValue
+  nameWithType: TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnTrue_ForSameValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Equals_ShouldReturnFalse_ForDifferentValue
+  name: Equals_ShouldReturnFalse_ForDifferentValue
+  nameWithType: TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_ForDifferentValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Equals_ShouldReturnFalse_WhenOtherIsNull
+  name: Equals_ShouldReturnFalse_WhenOtherIsNull
+  nameWithType: TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ShouldReturnFalse_WhenOtherIsNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  name: Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  nameWithType: TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnTrue_ForSameValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  name: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  nameWithType: TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  name: Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  nameWithType: TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.Equals_ObjectOverride_ShouldReturnFalse_WhenOtherIsDifferentType
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_OperatorEqual_ShouldReturnTrue_ForSameValue
+  name: OperatorEqual_ShouldReturnTrue_ForSameValue
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_ForSameValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  name: OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_ForDifferentValues
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  name: OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnTrue_WhenBothAreNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  name: OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  nameWithType: TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorEqual_ShouldReturnFalse_WhenOnlyOneIsNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  name: OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  nameWithType: TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnTrue_ForDifferentValues
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  name: OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  nameWithType: TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.OperatorNotEqual_ShouldReturnFalse_ForSameValues
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_GetHashCode_ShouldReturnSameValue_ForSameGuid
+  name: GetHashCode_ShouldReturnSameValue_ForSameGuid
+  nameWithType: TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnSameValue_ForSameGuid
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html#Project_Tests_UnitTests_Domain_SharedKernel_TypedIdValueBaseTests_GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  name: GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  nameWithType: TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.GetHashCode_ShouldReturnDifferentValue_ForDifferentGuids

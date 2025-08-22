@@ -1,0 +1,881 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  id: ValueObjectTests
+  parent: Project.Tests.UnitTests.Domain.SharedKernel
+  children:
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  langs:
+  - csharp
+  - vb
+  name: ValueObjectTests
+  nameWithType: ValueObjectTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ValueObjectTests
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 4
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: public class ValueObjectTests
+    content.vb: Public Class ValueObjectTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue
+  id: Equals_ShouldReturnTrue_ForSamePropertyValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnTrue_ForSamePropertyValue()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnTrue_ForSamePropertyValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 6
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnTrue_ForSamePropertyValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnTrue_ForSamePropertyValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  id: Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_ForDifferentPropertyValue()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_ForDifferentPropertyValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 17
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_ForDifferentPropertyValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_ForDifferentPropertyValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  id: Equals_ShouldReturnFalse_WhenComparingWithNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenComparingWithNull()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenComparingWithNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 28
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenComparingWithNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenComparingWithNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  id: Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 40
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  id: Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenComparingDifferentTypes()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 49
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenComparingDifferentTypes()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenComparingDifferentTypes()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue
+  id: Equals_ShouldReturnTrue_ForSameFieldValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnTrue_ForSameFieldValue()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnTrue_ForSameFieldValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 58
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnTrue_ForSameFieldValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnTrue_ForSameFieldValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue
+  id: Equals_ShouldReturnFalse_ForDifferentFieldValue
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_ForDifferentFieldValue()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_ForDifferentFieldValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 67
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_ForDifferentFieldValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_ForDifferentFieldValue()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  id: Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 76
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  id: Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers()
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 85
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  id: EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: EqualityOperator_ShouldReturnTrue_WhenBothAreNull()
+  nameWithType: ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 94
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void EqualityOperator_ShouldReturnTrue_WhenBothAreNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub EqualityOperator_ShouldReturnTrue_WhenBothAreNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects
+  id: GetHashCode_ShouldBeEqual_ForEqualObjects
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode_ShouldBeEqual_ForEqualObjects()
+  nameWithType: ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode_ShouldBeEqual_ForEqualObjects
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 104
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetHashCode_ShouldBeEqual_ForEqualObjects()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetHashCode_ShouldBeEqual_ForEqualObjects()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects
+  id: GetHashCode_ShouldDiffer_ForDifferentObjects
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode_ShouldDiffer_ForDifferentObjects()
+  nameWithType: ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode_ShouldDiffer_ForDifferentObjects
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 113
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetHashCode_ShouldDiffer_ForDifferentObjects()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetHashCode_ShouldDiffer_ForDifferentObjects()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  id: IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: IgnoredMembers_ShouldNotAffectEqualityOrHashCode()
+  nameWithType: ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/ValueObjectTests.cs
+    startLine: 122
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IgnoredMembers_ShouldNotAffectEqualityOrHashCode()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IgnoredMembers_ShouldNotAffectEqualityOrHashCode()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel
+  commentId: N:Project.Tests.UnitTests.Domain.SharedKernel
+  href: Project.html
+  name: Project.Tests.UnitTests.Domain.SharedKernel
+  nameWithType: Project.Tests.UnitTests.Domain.SharedKernel
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Tests.UnitTests.Domain.SharedKernel.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Tests.UnitTests.Domain.SharedKernel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnTrue_ForSamePropertyValue
+  name: Equals_ShouldReturnTrue_ForSamePropertyValue
+  nameWithType: ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSamePropertyValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  name: Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentPropertyValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnFalse_WhenComparingWithNull
+  name: Equals_ShouldReturnFalse_WhenComparingWithNull
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  name: Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypesWithSecondBeingNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  name: Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenComparingDifferentTypes
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnTrue_ForSameFieldValue
+  name: Equals_ShouldReturnTrue_ForSameFieldValue
+  nameWithType: ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_ForSameFieldValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnFalse_ForDifferentFieldValue
+  name: Equals_ShouldReturnFalse_ForDifferentFieldValue
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_ForDifferentFieldValue
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  name: Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  nameWithType: ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnTrue_WhenAllFieldsAndPropertiesAreEqual
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  name: Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  nameWithType: ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.Equals_ShouldReturnFalse_WhenAnyFieldOrPropertyDiffers
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  name: EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  nameWithType: ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.EqualityOperator_ShouldReturnTrue_WhenBothAreNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_GetHashCode_ShouldBeEqual_ForEqualObjects
+  name: GetHashCode_ShouldBeEqual_ForEqualObjects
+  nameWithType: ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldBeEqual_ForEqualObjects
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_GetHashCode_ShouldDiffer_ForDifferentObjects
+  name: GetHashCode_ShouldDiffer_ForDifferentObjects
+  nameWithType: ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.GetHashCode_ShouldDiffer_ForDifferentObjects
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html#Project_Tests_UnitTests_Domain_SharedKernel_ValueObjectTests_IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  name: IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  nameWithType: ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.IgnoredMembers_ShouldNotAffectEqualityOrHashCode

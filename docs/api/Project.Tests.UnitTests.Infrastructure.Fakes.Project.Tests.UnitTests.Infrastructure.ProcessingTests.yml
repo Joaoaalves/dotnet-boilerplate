@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  commentId: N:Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  id: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  children:
+  - Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  nameWithType: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator
+  commentId: T:Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator.html
+  name: FakeMediator
+  nameWithType: FakeMediator
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator

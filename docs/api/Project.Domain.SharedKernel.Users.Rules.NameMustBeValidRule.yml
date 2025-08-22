@@ -16,8 +16,12 @@ items:
   fullName: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Rules/NameMustBeValidRule.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: NameMustBeValidRule
-    path: System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs
+    path: ../src/Project.Domain/SharedKernel/Users/Rules/NameMustBeValidRule.cs
     startLine: 8
   assemblies:
   - Project.Domain
@@ -25,8 +29,8 @@ items:
   summary: Business rule to ensure a name is valid.
   example: []
   syntax:
-    content: 'public class NameMustBeValidRule : IBusinessRule'
-    content.vb: Public Class NameMustBeValidRule Implements IBusinessRule
+    content: 'public sealed class NameMustBeValidRule : IBusinessRule'
+    content.vb: Public NotInheritable Class NameMustBeValidRule Implements IBusinessRule
   inheritance:
   - System.Object
   implements:
@@ -36,7 +40,6 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
-  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
 - uid: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule.#ctor(System.String)
@@ -124,7 +127,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IsBroken
     path: ../src/Project.Domain/SharedKernel/Users/Rules/NameMustBeValidRule.cs
-    startLine: 21
+    startLine: 25
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -134,7 +137,6 @@ items:
     content: public bool IsBroken()
     return:
       type: System.Boolean
-      description: <code>true</code> if the name is invalid; otherwise, <code>false</code>.
     content.vb: Public Function IsBroken() As Boolean
   overload: Project.Domain.SharedKernel.Users.Rules.NameMustBeValidRule.IsBroken*
   implements:
@@ -328,30 +330,6 @@ references:
     name: GetType
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)

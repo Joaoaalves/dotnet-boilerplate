@@ -4,6 +4,7 @@ items:
   commentId: N:Project.Infrastructure.SeedWork
   id: Project.Infrastructure.SeedWork
   children:
+  - Project.Infrastructure.SeedWork.NameConverter
   - Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
   - Project.Infrastructure.SeedWork.TypedIdValueConverter`1
   langs:
@@ -16,6 +17,12 @@ items:
   assemblies:
   - Project.Infrastructure
 references:
+- uid: Project.Infrastructure.SeedWork.NameConverter
+  commentId: T:Project.Infrastructure.SeedWork.NameConverter
+  href: Project.Infrastructure.SeedWork.NameConverter.html
+  name: NameConverter
+  nameWithType: NameConverter
+  fullName: Project.Infrastructure.SeedWork.NameConverter
 - uid: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
   commentId: T:Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
   href: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector.html

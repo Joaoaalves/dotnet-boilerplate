@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes
+  commentId: N:Project.Tests.UnitTests.Infrastructure.Fakes
+  id: Project.Tests.UnitTests.Infrastructure.Fakes
+  children:
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext`1
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger`1
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Infrastructure.Fakes
+  nameWithType: Project.Tests.UnitTests.Infrastructure.Fakes
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext`1
+  commentId: T:Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext`1
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext-1.html
+  name: FakeDbContext<TUser>
+  nameWithType: FakeDbContext<TUser>
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext<TUser>
+  nameWithType.vb: FakeDbContext(Of TUser)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext(Of TUser)
+  name.vb: FakeDbContext(Of TUser)
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext`1
+    name: FakeDbContext
+    href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext-1.html
+  - name: <
+  - name: TUser
+  - name: '>'
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext`1
+    name: FakeDbContext
+    href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TUser
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger`1
+  commentId: T:Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger`1
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger-1.html
+  name: FakeLogger<T>
+  nameWithType: FakeLogger<T>
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger<T>
+  nameWithType.vb: FakeLogger(Of T)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger(Of T)
+  name.vb: FakeLogger(Of T)
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger`1
+    name: FakeLogger
+    href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger`1
+    name: FakeLogger
+    href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest
+  commentId: T:Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest.html
+  name: FakeRequest
+  nameWithType: FakeRequest
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  commentId: T:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html
+  name: FakeUserRepository
+  nameWithType: FakeUserRepository
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository

@@ -1,0 +1,143 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  commentId: N:Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  id: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  children:
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+  - Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  nameWithType: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  name: CommandsExecutorTests
+  nameWithType: CommandsExecutorTests
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  name: CommandsExecutorTests.TestCommand
+  nameWithType: CommandsExecutorTests.TestCommand
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+    name: CommandsExecutorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+    name: TestCommand
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand.html
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+    name: CommandsExecutorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+    name: TestCommand
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand.html
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  name: CommandsExecutorTests.TestCommandNoResult
+  nameWithType: CommandsExecutorTests.TestCommandNoResult
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+    name: CommandsExecutorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+    name: TestCommandNoResult
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult.html
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+    name: CommandsExecutorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+    name: TestCommandNoResult
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult.html
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests.html
+  name: DomainEventsDispatcherTests
+  nameWithType: DomainEventsDispatcherTests
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.html
+  name: MediatorTests
+  nameWithType: MediatorTests
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.html
+  name: MediatorTests.TestQuery
+  nameWithType: MediatorTests.TestQuery
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+    name: MediatorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+    name: TestQuery
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery.html
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+    name: MediatorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+    name: TestQuery
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery.html
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.html
+  name: QueriesExecutorTests
+  nameWithType: QueriesExecutorTests
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.html
+  name: QueriesExecutorTests.TestQuery
+  nameWithType: QueriesExecutorTests.TestQuery
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+    name: QueriesExecutorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+    name: TestQuery
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery.html
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+    name: QueriesExecutorTests
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+    name: TestQuery
+    href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery.html
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests
+  href: Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests.html
+  name: UnitOfWorkPipelineBehaviorTests
+  nameWithType: UnitOfWorkPipelineBehaviorTests
+  fullName: Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests

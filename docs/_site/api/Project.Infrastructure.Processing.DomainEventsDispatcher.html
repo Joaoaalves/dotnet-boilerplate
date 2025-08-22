@@ -161,8 +161,8 @@ Class DomainEventsDispatcher  <a class="header-action link-secondary" title="Vie
 
   <a id="Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_" data-uid="Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor*"></a>
 
-  <h3 id="Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_Project_Domain_SeedWork_IMediator_Project_Infrastructure_Database_ApplicationDbContext_" data-uid="Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)">
-  DomainEventsDispatcher(IMediator, ApplicationDbContext)
+  <h3 id="Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_Project_Domain_SeedWork_IMediator_Microsoft_EntityFrameworkCore_DbContext_" data-uid="Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Microsoft.EntityFrameworkCore.DbContext)">
+  DomainEventsDispatcher(IMediator, DbContext)
   <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Processing/DomainEventsDispatcher.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -171,7 +171,7 @@ Class DomainEventsDispatcher  <a class="header-action link-secondary" title="Vie
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DomainEventsDispatcher(IMediator mediator, ApplicationDbContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public DomainEventsDispatcher(IMediator mediator, DbContext context)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -179,7 +179,7 @@ Class DomainEventsDispatcher  <a class="header-action link-secondary" title="Vie
     <dt><code>mediator</code> <a class="xref" href="Project.Domain.SeedWork.IMediator.html">IMediator</a></dt>
     <dd><p>The mediator used to publish domain events.</p>
 </dd>
-    <dt><code>context</code> <a class="xref" href="Project.Infrastructure.Database.ApplicationDbContext.html">ApplicationDbContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a></dt>
     <dd><p>The database context from which domain events are collected.</p>
 </dd>
   </dl>

@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2" data-uid="Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2" class="text-break">
-Class UserInjectionQueryBehavior&lt;TQuery, TResult&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class UserInjectionQueryBehavior&lt;TQuery, TResult&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -167,23 +167,23 @@ Class UserInjectionQueryBehavior&lt;TQuery, TResult&gt;  <a class="header-action
 
   <a id="Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2__ctor_" data-uid="Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor*"></a>
 
-  <h3 id="Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_AspNetCore_Identity_UserManager_Project_Domain_Users_User__" data-uid="Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.UserManager{Project.Domain.Users.User})">
-  UserInjectionQueryBehavior(IHttpContextAccessor, UserManager&lt;User&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Project_Application_Users_IUserRepository_" data-uid="Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Project.Application.Users.IUserRepository)">
+  UserInjectionQueryBehavior(IHttpContextAccessor, IUserRepository)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UserInjectionQueryBehavior(IHttpContextAccessor httpContextAccessor, UserManager&lt;User&gt; userManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public UserInjectionQueryBehavior(IHttpContextAccessor httpContextAccessor, IUserRepository userRepository)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>httpContextAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor">IHttpContextAccessor</a></dt>
     <dd></dd>
-    <dt><code>userManager</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager</a>&lt;<a class="xref" href="Project.Domain.Users.User.html">User</a>&gt;</dt>
+    <dt><code>userRepository</code> <a class="xref" href="Project.Application.Users.IUserRepository.html">IUserRepository</a></dt>
     <dd></dd>
   </dl>
 
@@ -206,7 +206,7 @@ Class UserInjectionQueryBehavior&lt;TQuery, TResult&gt;  <a class="header-action
 
   <h3 id="Project_Application_Configuration_Queries_Behaviors_UserInjectionQueryBehavior_2_Handle__0_System_Func_System_Threading_Tasks_Task__1___System_Threading_CancellationToken_" data-uid="Project.Application.Configuration.Queries.Behaviors.UserInjectionQueryBehavior`2.Handle(`0,System.Func{System.Threading.Tasks.Task{`1}},System.Threading.CancellationToken)">
   Handle(TQuery, Func&lt;Task&lt;TResult&gt;&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -246,7 +246,7 @@ Class UserInjectionQueryBehavior&lt;TQuery, TResult&gt;  <a class="header-action
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Application/Configuration/Queries/Behaviors/UserInjectionQueryBehavior.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

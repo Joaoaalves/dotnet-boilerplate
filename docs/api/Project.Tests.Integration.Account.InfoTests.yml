@@ -113,7 +113,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ShouldReturnUserInfo_WhenAuthenticated
     path: ../src/tests/Project.Tests.Integration/Account/InfoTests.cs
-    startLine: 36
+    startLine: 40
   assemblies:
   - Project.Tests.Integration
   namespace: Project.Tests.Integration.Account
@@ -151,7 +151,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ShouldReturnUnauthorized_WhenNotAuthenticated
     path: ../src/tests/Project.Tests.Integration/Account/InfoTests.cs
-    startLine: 53
+    startLine: 57
   assemblies:
   - Project.Tests.Integration
   namespace: Project.Tests.Integration.Account
@@ -189,7 +189,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ShouldReturnUnauthorized_WhenTokenIsInvalid
     path: ../src/tests/Project.Tests.Integration/Account/InfoTests.cs
-    startLine: 61
+    startLine: 65
   assemblies:
   - Project.Tests.Integration
   namespace: Project.Tests.Integration.Account
@@ -227,7 +227,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ShouldReturnUnauthorized_WhenUserNoLongerExists
     path: ../src/tests/Project.Tests.Integration/Account/InfoTests.cs
-    startLine: 72
+    startLine: 76
   assemblies:
   - Project.Tests.Integration
   namespace: Project.Tests.Integration.Account
@@ -265,7 +265,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ShouldRespectAuthorizationScheme
     path: ../src/tests/Project.Tests.Integration/Account/InfoTests.cs
-    startLine: 88
+    startLine: 92
   assemblies:
   - Project.Tests.Integration
   namespace: Project.Tests.Integration.Account
@@ -303,7 +303,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ShouldReturnCorrectClaimsData
     path: ../src/tests/Project.Tests.Integration/Account/InfoTests.cs
-    startLine: 103
+    startLine: 107
   assemblies:
   - Project.Tests.Integration
   namespace: Project.Tests.Integration.Account

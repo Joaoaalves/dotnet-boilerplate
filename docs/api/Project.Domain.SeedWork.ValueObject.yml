@@ -43,6 +43,10 @@ items:
   - Project.Domain.SharedKernel.Users.Email
   - Project.Domain.SharedKernel.Users.Name
   - Project.Domain.SharedKernel.Users.UserName
+  - Project.Tests.UnitTests.Domain.Fakes.FieldValueObject
+  - Project.Tests.UnitTests.Domain.Fakes.IgnoredValueObject
+  - Project.Tests.UnitTests.Domain.Fakes.MixedValueObject
+  - Project.Tests.UnitTests.Domain.Fakes.SimpleValueObject
   implements:
   - System.IEquatable{Project.Domain.SeedWork.ValueObject}
   inheritedMembers:

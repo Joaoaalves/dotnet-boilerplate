@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  commentId: N:Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  id: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  children:
+  - Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests
+  - Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  nameWithType: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests
+  commentId: T:Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests
+  href: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests.html
+  name: RegisterUserCommandTests
+  nameWithType: RegisterUserCommandTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests
+- uid: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests
+  commentId: T:Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests
+  href: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests.html
+  name: RegisterUserCommandValidatorTests
+  nameWithType: RegisterUserCommandValidatorTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests

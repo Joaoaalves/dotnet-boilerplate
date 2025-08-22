@@ -544,6 +544,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Project.Application.Configuration.Validation.CommandValidationBehavior-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Application.Configuration.Validation.CommandValidationBehavior-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Application.Configuration.Validation.CommandValidationBehavior<TRequest, TResponse>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Project.Application.Configuration.Validation.InvalidCommandException.yml",
       "output": {
         ".html": {
@@ -554,20 +568,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Project.Application.Configuration.Validation.InvalidCommandException",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Application.Configuration.Validation.ValidationBehavior-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Application.Configuration.Validation.ValidationBehavior-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>",
       "Summary": null
     },
     {
@@ -1496,31 +1496,17 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.SeedWork.Resilience.NameConverter.yml",
+      "source_relative_path": "api/Project.Infrastructure.SeedWork.NameConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Infrastructure.SeedWork.Resilience.NameConverter.html"
+          "relative_path": "api/Project.Infrastructure.SeedWork.NameConverter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Infrastructure.SeedWork.Resilience.NameConverter",
-      "Summary": "<p sourcefile=\"api/Project.Infrastructure.SeedWork.Resilience.NameConverter.yml\" sourcestartlinenumber=\"1\">Converts between the domain-specific <xref href=\"Project.Domain.SharedKernel.Users.Name\" data-throw-if-not-resolved=\"false\"></xref> type and its string representation for persistence.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Project.Infrastructure.SeedWork.Resilience.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Project.Infrastructure.SeedWork.Resilience.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Project.Infrastructure.SeedWork.Resilience",
-      "Summary": null
+      "Title": "Project.Infrastructure.SeedWork.NameConverter",
+      "Summary": "<p sourcefile=\"api/Project.Infrastructure.SeedWork.NameConverter.yml\" sourcestartlinenumber=\"1\">Converts between the domain-specific <xref href=\"Project.Domain.SharedKernel.Users.Name\" data-throw-if-not-resolved=\"false\"></xref> type and its string representation for persistence.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1874,198 +1860,1122 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Application.UsersTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Application.UsersTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Application.UsersTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Builders.UserBuilder.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Builders.UserBuilder.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Commands.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Builders.UserBuilder",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Commands",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Builders.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Builders.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Builders",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.EmailTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.EmailTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Domain.UsersTests.EmailTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.NameTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.NameTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Domain.UsersTests.NameTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserNameTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Domain.UsersTests.UserNameTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Queries.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.UserTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Queries.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Domain.UsersTests.UserTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Queries",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Domain.UsersTests.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Domain.UsersTests.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Domain.UsersTests",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Fakes.FakeDbContext-1.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Fakes.FakeDbContext-1.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Fakes.FakeDbContext<TUser>",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Fakes.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Validations.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Fakes.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.ConfigurationTests.Validations.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Fakes",
+      "Title": "Project.Tests.UnitTests.Application.ConfigurationTests.Validations",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Mocks.UserManagerMock.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Dummies.DummyQuery.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Mocks.UserManagerMock.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.Dummies.DummyQuery.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Mocks.UserManagerMock",
+      "Title": "Project.Tests.UnitTests.Application.Dummies.DummyQuery",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Project.Tests.Unit.Mocks.yml",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Dummies.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Project.Tests.Unit.Mocks.html"
+          "relative_path": "api/Project.Tests.UnitTests.Application.Dummies.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Project.Tests.Unit.Mocks",
+      "Title": "Project.Tests.UnitTests.Application.Dummies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.Fakes.FakeCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeCommandString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeCommandString.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.Fakes.FakeCommandString",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery<TResult>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.Fakes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.Fakes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.Fakes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.UserMapperTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.UserMapperTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests.UserMapperTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Application.UsersTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Application.UsersTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Builders.DatabaseBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Builders.DatabaseBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Builders.DatabaseBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Builders.RegisterUserCommandBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Builders.RegisterUserCommandBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Builders.RegisterUserCommandBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Builders.UserBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Builders.UserBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Builders.UserBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Builders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Builders",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeBrokenRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeBrokenRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.FakeBrokenRule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeDomainEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeDomainEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.FakeDomainEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.FakeEntity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.FakeTypedId",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeValidRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FakeValidRule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.FakeValidRule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FieldValueObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.FieldValueObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.FieldValueObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.IgnoredValueObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.IgnoredValueObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.IgnoredValueObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.MixedValueObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.MixedValueObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.MixedValueObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.SimpleValueObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.SimpleValueObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes.SimpleValueObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Fakes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Fakes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.SharedKernel.EntityTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.SharedKernel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.SharedKernel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Users.EmailTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Users.EmailTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Users.EmailTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Users.NameTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Users.NameTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Users.NameTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Users.UserNameTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Users.UserNameTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Users.UserNameTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Users.UserTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Users.UserTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Users.UserTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Domain.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Domain.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Domain.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.DomainTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.DomainTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.DomainTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext<TUser>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.Fakes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.Fakes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests.Users",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.LoggingTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.LoggingTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Infrastructure.ProcessingTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Infrastructure.ProcessingTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Mocks.UserManagerMock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Mocks.UserManagerMock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Mocks.UserManagerMock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Project.Tests.UnitTests.Mocks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Project.Tests.UnitTests.Mocks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Project.Tests.UnitTests.Mocks",
       "Summary": null
     },
     {
@@ -2077,6 +2987,26 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ci-cd-pipeline.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ci-cd-pipeline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/deploy-ubuntu-vps.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/deploy-ubuntu-vps.html"
         }
       },
       "version": ""

@@ -1,10 +1,3 @@
-Perfect, Cláudin 🙌
-Here’s a clean **Markdown guide in English** that you can drop directly into your official documentation.
-I’ve structured it with sections, code blocks, and hints. At the end, I added a placeholder for the **CI/CD with GitHub Actions** so you can extend it later.
-
----
-
-````markdown
 # Deploy VPS Ubuntu
 
 This document explains how to set up a fresh VPS from scratch, configure Docker + Docker Compose, secure the server, and deploy your application.  
@@ -19,9 +12,6 @@ Log into the VPS using the root account:
 ```bash
 ssh root@YOUR_SERVER_IP
 ```
-````
-
----
 
 ## 2. Create a Non-Root User
 
@@ -31,20 +21,18 @@ Create a new user (e.g. `www-data`):
 adduser www-data
 ```
 
-Grant sudo privileges:
+if your user already exists, you can change his password with:
 
 ```bash
-usermod -aG sudo www-data
+sudo passwd www-data
 ```
-
----
 
 ## 3. Configure SSH Access
 
 Copy your SSH keys to the new user:
 
 ```bash
-rsync --archive --chown=www-data:www-data ~/.ssh /home/www-data
+rsync --archive --chown=www-data:www-data ~/.ssh/authorized_keys
 ```
 
 Test login:
@@ -154,13 +142,12 @@ Inside the `www-data` home directory:
 
 ```bash
 cd /home/www-data
-mkdir -p projects/myapp
-cd projects/myapp
+mkdir -p projects/
+git clone https://github.com/Joaoaalves/dotnet-boilerplate
+cd dotnet-boilerplate
 ```
 
-Place your `docker-compose.yml` here.
-
----
+Setup your .env file
 
 ## 10. Deploy with Docker Compose
 
@@ -218,10 +205,3 @@ In the next step, we will configure **GitHub Actions** so that every push to `ma
 This will ensure **zero-downtime automatic deployments**.
 
 ---
-
-```
-
----
-
-Would you like me to go ahead and **draft the full GitHub Actions workflow file** (`.github/workflows/deploy.yml`) that connects to your VPS via SSH and redeploys automatically?
-```

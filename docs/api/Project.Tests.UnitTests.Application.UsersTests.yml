@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.UsersTests
+  commentId: N:Project.Tests.UnitTests.Application.UsersTests
+  id: Project.Tests.UnitTests.Application.UsersTests
+  children:
+  - Project.Tests.UnitTests.Application.UsersTests.UserMapperTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.UsersTests
+  nameWithType: Project.Tests.UnitTests.Application.UsersTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.UsersTests.UserMapperTests
+  commentId: T:Project.Tests.UnitTests.Application.UsersTests.UserMapperTests
+  href: Project.Tests.UnitTests.Application.UsersTests.UserMapperTests.html
+  name: UserMapperTests
+  nameWithType: UserMapperTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.UserMapperTests

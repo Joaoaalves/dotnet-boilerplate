@@ -136,7 +136,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Publish
     path: ../src/Project.Infrastructure/Processing/Mediator.cs
-    startLine: 37
+    startLine: 34
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing

@@ -5,7 +5,7 @@ items:
   id: DomainEventsDispatcher
   parent: Project.Infrastructure.Processing
   children:
-  - Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)
+  - Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Microsoft.EntityFrameworkCore.DbContext)
   - Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
   langs:
   - csharp
@@ -42,16 +42,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)
-  commentId: M:Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)
-  id: '#ctor(Project.Domain.SeedWork.IMediator,Project.Infrastructure.Database.ApplicationDbContext)'
+- uid: Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Microsoft.EntityFrameworkCore.DbContext)
+  commentId: M:Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor(Project.Domain.SeedWork.IMediator,Microsoft.EntityFrameworkCore.DbContext)
+  id: '#ctor(Project.Domain.SeedWork.IMediator,Microsoft.EntityFrameworkCore.DbContext)'
   parent: Project.Infrastructure.Processing.DomainEventsDispatcher
   langs:
   - csharp
   - vb
-  name: DomainEventsDispatcher(IMediator, ApplicationDbContext)
-  nameWithType: DomainEventsDispatcher.DomainEventsDispatcher(IMediator, ApplicationDbContext)
-  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DomainEventsDispatcher(Project.Domain.SeedWork.IMediator, Project.Infrastructure.Database.ApplicationDbContext)
+  name: DomainEventsDispatcher(IMediator, DbContext)
+  nameWithType: DomainEventsDispatcher.DomainEventsDispatcher(IMediator, DbContext)
+  fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DomainEventsDispatcher(Project.Domain.SeedWork.IMediator, Microsoft.EntityFrameworkCore.DbContext)
   type: Constructor
   source:
     remote:
@@ -67,19 +67,19 @@ items:
   summary: Dispatches domain events collected from tracked entities.
   example: []
   syntax:
-    content: public DomainEventsDispatcher(IMediator mediator, ApplicationDbContext context)
+    content: public DomainEventsDispatcher(IMediator mediator, DbContext context)
     parameters:
     - id: mediator
       type: Project.Domain.SeedWork.IMediator
       description: The mediator used to publish domain events.
     - id: context
-      type: Project.Infrastructure.Database.ApplicationDbContext
+      type: Microsoft.EntityFrameworkCore.DbContext
       description: The database context from which domain events are collected.
-    content.vb: Public Sub New(mediator As IMediator, context As ApplicationDbContext)
+    content.vb: Public Sub New(mediator As IMediator, context As DbContext)
   overload: Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor*
-  nameWithType.vb: DomainEventsDispatcher.New(IMediator, ApplicationDbContext)
-  fullName.vb: Project.Infrastructure.Processing.DomainEventsDispatcher.New(Project.Domain.SeedWork.IMediator, Project.Infrastructure.Database.ApplicationDbContext)
-  name.vb: New(IMediator, ApplicationDbContext)
+  nameWithType.vb: DomainEventsDispatcher.New(IMediator, DbContext)
+  fullName.vb: Project.Infrastructure.Processing.DomainEventsDispatcher.New(Project.Domain.SeedWork.IMediator, Microsoft.EntityFrameworkCore.DbContext)
+  name.vb: New(IMediator, DbContext)
 - uid: Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
   commentId: M:Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
   id: DispatchEventsAsync
@@ -389,7 +389,7 @@ references:
   fullName: System
 - uid: Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor*
   commentId: Overload:Project.Infrastructure.Processing.DomainEventsDispatcher.#ctor
-  href: Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_Project_Domain_SeedWork_IMediator_Project_Infrastructure_Database_ApplicationDbContext_
+  href: Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher__ctor_Project_Domain_SeedWork_IMediator_Microsoft_EntityFrameworkCore_DbContext_
   name: DomainEventsDispatcher
   nameWithType: DomainEventsDispatcher.DomainEventsDispatcher
   fullName: Project.Infrastructure.Processing.DomainEventsDispatcher.DomainEventsDispatcher
@@ -403,13 +403,14 @@ references:
   name: IMediator
   nameWithType: IMediator
   fullName: Project.Domain.SeedWork.IMediator
-- uid: Project.Infrastructure.Database.ApplicationDbContext
-  commentId: T:Project.Infrastructure.Database.ApplicationDbContext
-  parent: Project.Infrastructure.Database
-  href: Project.Infrastructure.Database.ApplicationDbContext.html
-  name: ApplicationDbContext
-  nameWithType: ApplicationDbContext
-  fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Microsoft.EntityFrameworkCore.DbContext
+  commentId: T:Microsoft.EntityFrameworkCore.DbContext
+  parent: Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext
+  name: DbContext
+  nameWithType: DbContext
+  fullName: Microsoft.EntityFrameworkCore.DbContext
 - uid: Project.Domain.SeedWork
   commentId: N:Project.Domain.SeedWork
   href: Project.html
@@ -440,36 +441,33 @@ references:
   - uid: Project.Domain.SeedWork
     name: SeedWork
     href: Project.Domain.SeedWork.html
-- uid: Project.Infrastructure.Database
-  commentId: N:Project.Infrastructure.Database
-  href: Project.html
-  name: Project.Infrastructure.Database
-  nameWithType: Project.Infrastructure.Database
-  fullName: Project.Infrastructure.Database
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
   spec.csharp:
-  - uid: Project
-    name: Project
-    href: Project.html
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
-  - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
   spec.vb:
-  - uid: Project
-    name: Project
-    href: Project.html
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
-  - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
 - uid: Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync*
   commentId: Overload:Project.Infrastructure.Processing.DomainEventsDispatcher.DispatchEventsAsync
   href: Project.Infrastructure.Processing.DomainEventsDispatcher.html#Project_Infrastructure_Processing_DomainEventsDispatcher_DispatchEventsAsync

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Deploy VPS Ubuntu | Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Deploy VPS Ubuntu | Project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/docs/docs/deploy-ubuntu-vps.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Project">
+            Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="deploy-vps-ubuntu">Deploy VPS Ubuntu</h1>
+
+<p>This document explains how to set up a fresh VPS from scratch, configure Docker + Docker Compose, secure the server, and deploy your application.<br>
+Later, we will extend this guide with <strong>CI/CD via GitHub Actions</strong> to automate deployments on every push to <code>main</code>.</p>
+<hr>
+<h2 id="1-connect-to-vps">1. Connect to VPS</h2>
+<p>Log into the VPS using the root account:</p>
+<pre><code class="lang-bash">ssh root@YOUR_SERVER_IP
+</code></pre>
+<h2 id="2-create-a-non-root-user">2. Create a Non-Root User</h2>
+<p>Create a new user (e.g. <code>www-data</code>):</p>
+<pre><code class="lang-bash">adduser www-data
+</code></pre>
+<p>if your user already exists, you can change his password with:</p>
+<pre><code class="lang-bash">sudo passwd www-data
+</code></pre>
+<h2 id="3-configure-ssh-access">3. Configure SSH Access</h2>
+<p>Copy your SSH keys to the new user:</p>
+<pre><code class="lang-bash">rsync --archive --chown=www-data:www-data ~/.ssh/authorized_keys
+</code></pre>
+<p>Test login:</p>
+<pre><code class="lang-bash">ssh www-data@YOUR_SERVER_IP
+</code></pre>
+<hr>
+<h2 id="4-install-system-packages">4. Install System Packages</h2>
+<p>Update and install basic tools:</p>
+<pre><code class="lang-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt install -y curl git ufw htop unzip
+</code></pre>
+<hr>
+<h2 id="5-install-docker">5. Install Docker</h2>
+<p>Install Docker via the official script:</p>
+<pre><code class="lang-bash">curl -fsSL https://get.docker.com | sh
+</code></pre>
+<p>Add the new user to the Docker group:</p>
+<pre><code class="lang-bash">sudo usermod -aG docker www-data
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> You must log out and log back in for group changes to take effect.</p>
+</blockquote>
+<p>Verify installation:</p>
+<pre><code class="lang-bash">docker ps
+</code></pre>
+<hr>
+<h2 id="6-install-docker-compose">6. Install Docker Compose</h2>
+<p>Download Docker Compose binary:</p>
+<pre><code class="lang-bash">sudo curl -L &quot;https://github.com/docker/compose/releases/download/v2.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre>
+<p>Apply execution permissions:</p>
+<pre><code class="lang-bash">sudo chmod +x /usr/local/bin/docker-compose
+</code></pre>
+<p>Verify:</p>
+<pre><code class="lang-bash">docker-compose --version
+</code></pre>
+<hr>
+<h2 id="7-enable-docker-on-boot">7. Enable Docker on Boot</h2>
+<p>Enable Docker service at startup:</p>
+<pre><code class="lang-bash">sudo systemctl enable docker
+sudo systemctl start docker
+</code></pre>
+<p>Check status:</p>
+<pre><code class="lang-bash">systemctl status docker
+</code></pre>
+<hr>
+<h2 id="8-configure-firewall">8. Configure Firewall</h2>
+<p>Allow only required ports (SSH, HTTP, HTTPS):</p>
+<pre><code class="lang-bash">sudo ufw allow OpenSSH
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw enable
+</code></pre>
+<p>Check firewall status:</p>
+<pre><code class="lang-bash">sudo ufw status
+</code></pre>
+<hr>
+<h2 id="9-prepare-project-directory">9. Prepare Project Directory</h2>
+<p>Inside the <code>www-data</code> home directory:</p>
+<pre><code class="lang-bash">cd /home/www-data
+mkdir -p projects/
+git clone https://github.com/Joaoaalves/dotnet-boilerplate
+cd dotnet-boilerplate
+</code></pre>
+<p>Setup your .env file</p>
+<h2 id="10-deploy-with-docker-compose">10. Deploy with Docker Compose</h2>
+<p>Start services:</p>
+<pre><code class="lang-bash">docker-compose up -d
+</code></pre>
+<p>Verify running containers:</p>
+<pre><code class="lang-bash">docker ps
+</code></pre>
+<hr>
+<h2 id="11-auto-restart-policy">11. Auto-Restart Policy</h2>
+<p>In <code>docker-compose.yml</code>, make sure each service has a restart policy:</p>
+<pre><code class="lang-yaml">version: &quot;3.9&quot;
+services:
+  nginx:
+    image: nginx:latest
+    restart: always
+    ports:
+      - &quot;80:80&quot;
+      - &quot;443:443&quot;
+</code></pre>
+<p>This ensures services automatically restart on VPS reboot.</p>
+<hr>
+<h2 id="12-logs-and-monitoring">12. Logs and Monitoring</h2>
+<p>View logs of a container:</p>
+<pre><code class="lang-bash">docker logs -f &lt;container_name&gt;
+</code></pre>
+<hr>
+<h2 id="13-next-step-cicd-with-github-actions">13. Next Step: CI/CD with GitHub Actions</h2>
+<p>In the next step, we will configure <strong>GitHub Actions</strong> so that every push to <code>main</code> will:</p>
+<ol>
+<li>SSH into the VPS</li>
+<li>Pull the latest code</li>
+<li>Run <code>docker-compose up -d --build</code> to redeploy the application</li>
+</ol>
+<p>This will ensure <strong>zero-downtime automatic deployments</strong>.</p>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/docs/docs/deploy-ubuntu-vps.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

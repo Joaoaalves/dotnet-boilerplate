@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  commentId: N:Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  id: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  children:
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  nameWithType: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests.html
+  name: UserAwareQueryTests
+  nameWithType: UserAwareQueryTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests.html
+  name: UserInjectionQueryBehaviorTests
+  nameWithType: UserInjectionQueryBehaviorTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests

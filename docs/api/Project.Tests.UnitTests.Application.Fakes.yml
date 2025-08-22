@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.Fakes
+  commentId: N:Project.Tests.UnitTests.Application.Fakes
+  id: Project.Tests.UnitTests.Application.Fakes
+  children:
+  - Project.Tests.UnitTests.Application.Fakes.FakeCommand
+  - Project.Tests.UnitTests.Application.Fakes.FakeCommandString
+  - Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator
+  - Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor
+  - Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery`1
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.Fakes
+  nameWithType: Project.Tests.UnitTests.Application.Fakes
+  fullName: Project.Tests.UnitTests.Application.Fakes
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.Fakes.FakeCommand
+  commentId: T:Project.Tests.UnitTests.Application.Fakes.FakeCommand
+  href: Project.Tests.UnitTests.Application.Fakes.FakeCommand.html
+  name: FakeCommand
+  nameWithType: FakeCommand
+  fullName: Project.Tests.UnitTests.Application.Fakes.FakeCommand
+- uid: Project.Tests.UnitTests.Application.Fakes.FakeCommandString
+  commentId: T:Project.Tests.UnitTests.Application.Fakes.FakeCommandString
+  href: Project.Tests.UnitTests.Application.Fakes.FakeCommandString.html
+  name: FakeCommandString
+  nameWithType: FakeCommandString
+  fullName: Project.Tests.UnitTests.Application.Fakes.FakeCommandString
+- uid: Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator
+  commentId: T:Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator
+  href: Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator.html
+  name: FakeCommandValidator
+  nameWithType: FakeCommandValidator
+  fullName: Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator
+- uid: Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor
+  commentId: T:Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor
+  parent: Project.Tests.UnitTests.Application.Fakes
+  href: Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor.html
+  name: FakeHttpContextAccessor
+  nameWithType: FakeHttpContextAccessor
+  fullName: Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor
+- uid: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery`1
+  commentId: T:Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery`1
+  href: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery-1.html
+  name: FakeUserAwareQuery<TResult>
+  nameWithType: FakeUserAwareQuery<TResult>
+  fullName: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery<TResult>
+  nameWithType.vb: FakeUserAwareQuery(Of TResult)
+  fullName.vb: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery(Of TResult)
+  name.vb: FakeUserAwareQuery(Of TResult)
+  spec.csharp:
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery`1
+    name: FakeUserAwareQuery
+    href: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery`1
+    name: FakeUserAwareQuery
+    href: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Project.Tests.UnitTests.Application.Fakes
+  commentId: N:Project.Tests.UnitTests.Application.Fakes
+  href: Project.html
+  name: Project.Tests.UnitTests.Application.Fakes
+  nameWithType: Project.Tests.UnitTests.Application.Fakes
+  fullName: Project.Tests.UnitTests.Application.Fakes
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application
+    name: Application
+    href: Project.Tests.UnitTests.Application.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application.Fakes
+    name: Fakes
+    href: Project.Tests.UnitTests.Application.Fakes.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application
+    name: Application
+    href: Project.Tests.UnitTests.Application.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application.Fakes
+    name: Fakes
+    href: Project.Tests.UnitTests.Application.Fakes.html

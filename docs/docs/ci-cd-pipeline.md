@@ -14,7 +14,7 @@ This document describes the **CI/CD pipeline** for deploying the application to 
 
 ---
 
-## 🛠 VPS Setup
+## VPS Setup
 
 1. **Create the deployment user**:
 
@@ -72,7 +72,7 @@ and configure the following secrets:
 
 ---
 
-## ⚙️ GitHub Actions Workflow
+## GitHub Actions Workflow
 
 Create the file:
 `.github/workflows/deploy.yml`
@@ -124,7 +124,7 @@ jobs:
 
 ---
 
-## 🔄 Workflow Execution
+## Workflow Execution
 
 1. Developer pushes to **main** branch.
 2. GitHub Actions is triggered.

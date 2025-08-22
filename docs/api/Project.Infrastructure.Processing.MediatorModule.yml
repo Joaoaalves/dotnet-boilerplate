@@ -22,7 +22,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: MediatorModule
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: AddMediatorModule
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ResolveAssemblies
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 48
+    startLine: 50
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing
@@ -139,7 +139,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: RegisterHandlers
     path: ../src/Project.Infrastructure/Processing/MediatorModule.cs
-    startLine: 78
+    startLine: 80
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Processing

@@ -166,7 +166,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: op_Implicit
     path: ../src/Project.Domain/SharedKernel/Users/Email.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users
@@ -203,7 +203,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: ToString
     path: ../src/Project.Domain/SharedKernel/Users/Email.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users
@@ -235,7 +235,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Equals
     path: ../src/Project.Domain/SharedKernel/Users/Email.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users
@@ -274,7 +274,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetHashCode
     path: ../src/Project.Domain/SharedKernel/Users/Email.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users

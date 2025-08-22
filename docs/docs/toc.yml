@@ -3,4 +3,6 @@
 - name: Getting Started
   href: getting-started.md
 - name: Deploy
-  href: deploy.md
+  href: deploy-ubuntu-vps.md
+- name: CI/CD
+  href: ci-cd-pipeline.md

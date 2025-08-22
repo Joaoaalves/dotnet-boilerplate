@@ -1,2 +1,25 @@
-
-{"items":[{"name":"Introduction","href":"introduction.html","topicHref":"introduction.html"},{"name":"Getting Started","href":"getting-started.html","topicHref":"getting-started.html"}],"pdf":false}
+{
+    "items": [
+        {
+            "name": "Introduction",
+            "href": "introduction.html",
+            "topicHref": "introduction.html"
+        },
+        {
+            "name": "Getting Started",
+            "href": "getting-started.html",
+            "topicHref": "getting-started.html"
+        },
+        {
+            "name": "Deploy",
+            "href": "deploy-ubuntu-vps.html",
+            "topicHref": "deploy-ubuntu-vps.html"
+        },
+        {
+            "name": "CI/CD",
+            "href": "ci-cd-pipeline.html",
+            "topicHref": "ci-cd-pipeline.html"
+        }
+    ],
+    "pdf": false
+}

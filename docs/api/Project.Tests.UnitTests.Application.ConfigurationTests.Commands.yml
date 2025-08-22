@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  commentId: N:Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  id: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  children:
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  nameWithType: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests.html
+  name: InternalCommandBaseTests
+  nameWithType: InternalCommandBaseTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest.html
+  name: UserAwareCommandsTest
+  nameWithType: UserAwareCommandsTest
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests.html
+  name: UserInjectionCommandBehaviorTests
+  nameWithType: UserInjectionCommandBehaviorTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests

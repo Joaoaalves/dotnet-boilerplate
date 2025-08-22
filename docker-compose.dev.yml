@@ -1,10 +1,10 @@
 
 services:
   api:
+    container_name: api
     build:
       context: ./src
       dockerfile: Dockerfile.dev
-    container_name: project_api_dev
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:5000
@@ -29,10 +29,10 @@ services:
       - monitoring
       - logging
   docs:
+    container_name: docs
     build:
       context: ./docs
       dockerfile: Dockerfile
-    container_name: project_docs_dev
     ports:
       - "5001:80"
     volumes:
@@ -42,6 +42,7 @@ services:
       - internal
   
   postgres:
+    container_name: postgres
     image: postgres:13
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -65,6 +66,7 @@ services:
 # MONITORING
 #
   postgresql-exporter:
+    container_name: postgres-exporter
     image: prometheuscommunity/postgres-exporter
     profiles: ["observability", "monitoring"]
     ports:
@@ -80,6 +82,7 @@ services:
     networks:
       - monitoring
   prometheus:
+    container_name: prometheus
     image: prom/prometheus
     profiles: ["observability", "monitoring"]
     ports:
@@ -92,6 +95,7 @@ services:
     networks:
       - monitoring
   grafana:
+    container_name: grafana
     image: grafana/grafana
     profiles: ["observability", "monitoring"]
     ports:
@@ -110,6 +114,7 @@ services:
     restart: unless-stopped
 
   node_exporter:
+    container_name: node-exporter
     image: quay.io/prometheus/node-exporter:v1.5.0
     profiles: ["observability", "monitoring"]
     command: '--path.rootfs=/host'
@@ -125,6 +130,7 @@ services:
 # LOGGING
 #
   elasticsearch:
+    container_name: elasticsearch
     image: docker.elastic.co/elasticsearch/elasticsearch:9.1.1
     profiles: ["observability", "logging"]
     environment:
@@ -142,6 +148,7 @@ services:
     restart: unless-stopped
 
   kibana:
+    container_name: kibana
     image: docker.elastic.co/kibana/kibana:9.1.1
     profiles: ["observability", "logging"]
     environment:
@@ -164,6 +171,7 @@ services:
     restart: unless-stopped
 
   logstash:
+    container_name: logstash
     image: docker.elastic.co/logstash/logstash:9.1.1
     profiles: ["observability", "logging"]
     volumes:
@@ -180,6 +188,7 @@ services:
     restart: unless-stopped
 
   kibana-importer:
+    container_name: kibana-importer
     image: curlimages/curl:latest
     profiles: ["observability", "logging"]
     command: 

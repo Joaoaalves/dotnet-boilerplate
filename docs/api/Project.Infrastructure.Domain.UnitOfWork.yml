@@ -5,7 +5,7 @@ items:
   id: UnitOfWork
   parent: Project.Infrastructure.Domain
   children:
-  - Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  - Project.Infrastructure.Domain.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
   - Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
   - Project.Infrastructure.Domain.UnitOfWork.RevertAsync
   langs:
@@ -22,7 +22,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UnitOfWork
     path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain
@@ -41,16 +41,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
-  commentId: M:Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
-  id: '#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)'
+- uid: Project.Infrastructure.Domain.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  commentId: M:Project.Infrastructure.Domain.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  id: '#ctor(Microsoft.EntityFrameworkCore.DbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)'
   parent: Project.Infrastructure.Domain.UnitOfWork
   langs:
   - csharp
   - vb
-  name: UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
-  nameWithType: UnitOfWork.UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
-  fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork(Project.Infrastructure.Database.ApplicationDbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  name: UnitOfWork(DbContext, IDomainEventsDispatcher)
+  nameWithType: UnitOfWork.UnitOfWork(DbContext, IDomainEventsDispatcher)
+  fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork(Microsoft.EntityFrameworkCore.DbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
   type: Constructor
   source:
     remote:
@@ -59,22 +59,22 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain
   syntax:
-    content: public UnitOfWork(ApplicationDbContext ordersContext, IDomainEventsDispatcher domainEventsDispatcher)
+    content: public UnitOfWork(DbContext context, IDomainEventsDispatcher domainEventsDispatcher)
     parameters:
-    - id: ordersContext
-      type: Project.Infrastructure.Database.ApplicationDbContext
+    - id: context
+      type: Microsoft.EntityFrameworkCore.DbContext
     - id: domainEventsDispatcher
       type: Project.Infrastructure.Processing.IDomainEventsDispatcher
-    content.vb: Public Sub New(ordersContext As ApplicationDbContext, domainEventsDispatcher As IDomainEventsDispatcher)
+    content.vb: Public Sub New(context As DbContext, domainEventsDispatcher As IDomainEventsDispatcher)
   overload: Project.Infrastructure.Domain.UnitOfWork.#ctor*
-  nameWithType.vb: UnitOfWork.New(ApplicationDbContext, IDomainEventsDispatcher)
-  fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New(Project.Infrastructure.Database.ApplicationDbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
-  name.vb: New(ApplicationDbContext, IDomainEventsDispatcher)
+  nameWithType.vb: UnitOfWork.New(DbContext, IDomainEventsDispatcher)
+  fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New(Microsoft.EntityFrameworkCore.DbContext, Project.Infrastructure.Processing.IDomainEventsDispatcher)
+  name.vb: New(DbContext, IDomainEventsDispatcher)
 - uid: Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
   commentId: M:Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)
   id: CommitAsync(System.Threading.CancellationToken)
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: CommitAsync
     path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain
@@ -127,7 +127,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: RevertAsync
     path: ../src/Project.Infrastructure/Domain/UnitOfWork.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - Project.Infrastructure
   namespace: Project.Infrastructure.Domain
@@ -447,20 +447,21 @@ references:
     href: Project.Domain.SeedWork.html
 - uid: Project.Infrastructure.Domain.UnitOfWork.#ctor*
   commentId: Overload:Project.Infrastructure.Domain.UnitOfWork.#ctor
-  href: Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork__ctor_Project_Infrastructure_Database_ApplicationDbContext_Project_Infrastructure_Processing_IDomainEventsDispatcher_
+  href: Project.Infrastructure.Domain.UnitOfWork.html#Project_Infrastructure_Domain_UnitOfWork__ctor_Microsoft_EntityFrameworkCore_DbContext_Project_Infrastructure_Processing_IDomainEventsDispatcher_
   name: UnitOfWork
   nameWithType: UnitOfWork.UnitOfWork
   fullName: Project.Infrastructure.Domain.UnitOfWork.UnitOfWork
   nameWithType.vb: UnitOfWork.New
   fullName.vb: Project.Infrastructure.Domain.UnitOfWork.New
   name.vb: New
-- uid: Project.Infrastructure.Database.ApplicationDbContext
-  commentId: T:Project.Infrastructure.Database.ApplicationDbContext
-  parent: Project.Infrastructure.Database
-  href: Project.Infrastructure.Database.ApplicationDbContext.html
-  name: ApplicationDbContext
-  nameWithType: ApplicationDbContext
-  fullName: Project.Infrastructure.Database.ApplicationDbContext
+- uid: Microsoft.EntityFrameworkCore.DbContext
+  commentId: T:Microsoft.EntityFrameworkCore.DbContext
+  parent: Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext
+  name: DbContext
+  nameWithType: DbContext
+  fullName: Microsoft.EntityFrameworkCore.DbContext
 - uid: Project.Infrastructure.Processing.IDomainEventsDispatcher
   commentId: T:Project.Infrastructure.Processing.IDomainEventsDispatcher
   parent: Project.Infrastructure.Processing
@@ -468,36 +469,33 @@ references:
   name: IDomainEventsDispatcher
   nameWithType: IDomainEventsDispatcher
   fullName: Project.Infrastructure.Processing.IDomainEventsDispatcher
-- uid: Project.Infrastructure.Database
-  commentId: N:Project.Infrastructure.Database
-  href: Project.html
-  name: Project.Infrastructure.Database
-  nameWithType: Project.Infrastructure.Database
-  fullName: Project.Infrastructure.Database
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
   spec.csharp:
-  - uid: Project
-    name: Project
-    href: Project.html
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
-  - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
   spec.vb:
-  - uid: Project
-    name: Project
-    href: Project.html
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
   - name: .
-  - uid: Project.Infrastructure
-    name: Infrastructure
-    href: Project.Infrastructure.html
-  - name: .
-  - uid: Project.Infrastructure.Database
-    name: Database
-    href: Project.Infrastructure.Database.html
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
 - uid: Project.Infrastructure.Processing
   commentId: N:Project.Infrastructure.Processing
   href: Project.html

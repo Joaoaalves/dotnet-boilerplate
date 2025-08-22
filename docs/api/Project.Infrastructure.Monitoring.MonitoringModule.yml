@@ -5,7 +5,7 @@ items:
   id: MonitoringModule
   parent: Project.Infrastructure.Monitoring
   children:
-  - Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
   langs:
   - csharp
   - vb
@@ -39,17 +39,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  commentId: M:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  id: AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  commentId: M:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  id: AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
   isExtensionMethod: true
   parent: Project.Infrastructure.Monitoring.MonitoringModule
   langs:
   - csharp
   - vb
-  name: AddMonitoringModule(IServiceCollection)
-  nameWithType: MonitoringModule.AddMonitoringModule(IServiceCollection)
-  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddMonitoringModule(IServiceCollection, bool)
+  nameWithType: MonitoringModule.AddMonitoringModule(IServiceCollection, bool)
+  fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, bool)
   type: Method
   source:
     remote:
@@ -69,16 +69,21 @@ items:
     Metrics include ASP.NET Core, runtime, and process metrics with a Prometheus exporter.
   example: []
   syntax:
-    content: public static IServiceCollection AddMonitoringModule(this IServiceCollection services)
+    content: public static IServiceCollection AddMonitoringModule(this IServiceCollection services, bool isMonitoringEnabled)
     parameters:
     - id: services
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
       description: The service collection used to register services.
+    - id: isMonitoringEnabled
+      type: System.Boolean
     return:
       type: Microsoft.Extensions.DependencyInjection.IServiceCollection
       description: The updated <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Shared Function AddMonitoringModule(services As IServiceCollection) As IServiceCollection
+    content.vb: Public Shared Function AddMonitoringModule(services As IServiceCollection, isMonitoringEnabled As Boolean) As IServiceCollection
   overload: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
+  nameWithType.vb: MonitoringModule.AddMonitoringModule(IServiceCollection, Boolean)
+  fullName.vb: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, Boolean)
+  name.vb: AddMonitoringModule(IServiceCollection, Boolean)
 references:
 - uid: Project.Infrastructure.Monitoring
   commentId: N:Project.Infrastructure.Monitoring
@@ -357,10 +362,21 @@ references:
   fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
 - uid: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*
   commentId: Overload:Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
-  href: Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  href: Project.Infrastructure.Monitoring.MonitoringModule.html#Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_
   name: AddMonitoringModule
   nameWithType: MonitoringModule.AddMonitoringModule
   fullName: Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Microsoft.Extensions.DependencyInjection
   commentId: N:Microsoft.Extensions.DependencyInjection
   isExternal: true

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  commentId: N:Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  id: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  children:
+  - Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  nameWithType: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests.html
+  name: DomainNotificationBaseTests
+  nameWithType: DomainNotificationBaseTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests

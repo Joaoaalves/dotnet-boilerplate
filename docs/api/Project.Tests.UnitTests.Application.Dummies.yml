@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.Dummies
+  commentId: N:Project.Tests.UnitTests.Application.Dummies
+  id: Project.Tests.UnitTests.Application.Dummies
+  children:
+  - Project.Tests.UnitTests.Application.Dummies.DummyQuery
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.Dummies
+  nameWithType: Project.Tests.UnitTests.Application.Dummies
+  fullName: Project.Tests.UnitTests.Application.Dummies
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.Dummies.DummyQuery
+  commentId: T:Project.Tests.UnitTests.Application.Dummies.DummyQuery
+  href: Project.Tests.UnitTests.Application.Dummies.DummyQuery.html
+  name: DummyQuery
+  nameWithType: DummyQuery
+  fullName: Project.Tests.UnitTests.Application.Dummies.DummyQuery

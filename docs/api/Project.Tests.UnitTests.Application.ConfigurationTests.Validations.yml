@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  commentId: N:Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  id: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  children:
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests
+  - Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  nameWithType: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests.html
+  name: CommandValidationBehaviorTests
+  nameWithType: CommandValidationBehaviorTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests
+  commentId: T:Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests
+  href: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests.html
+  name: InvalidCommandExceptionTests
+  nameWithType: InvalidCommandExceptionTests
+  fullName: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests

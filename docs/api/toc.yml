@@ -132,11 +132,11 @@ items:
   name: Project.Application.Configuration.Validation
   type: Namespace
   items:
+  - uid: Project.Application.Configuration.Validation.CommandValidationBehavior`2
+    name: CommandValidationBehavior<TRequest, TResponse>
+    type: Class
   - uid: Project.Application.Configuration.Validation.InvalidCommandException
     name: InvalidCommandException
-    type: Class
-  - uid: Project.Application.Configuration.Validation.ValidationBehavior`2
-    name: ValidationBehavior<TRequest, TResponse>
     type: Class
 - uid: Project.Application.Users
   name: Project.Application.Users
@@ -350,18 +350,14 @@ items:
   name: Project.Infrastructure.SeedWork
   type: Namespace
   items:
+  - uid: Project.Infrastructure.SeedWork.NameConverter
+    name: NameConverter
+    type: Class
   - uid: Project.Infrastructure.SeedWork.StronglyTypedIdValueConverterSelector
     name: StronglyTypedIdValueConverterSelector
     type: Class
   - uid: Project.Infrastructure.SeedWork.TypedIdValueConverter`1
     name: TypedIdValueConverter<TTypedIdValue>
-    type: Class
-- uid: Project.Infrastructure.SeedWork.Resilience
-  name: Project.Infrastructure.SeedWork.Resilience
-  type: Namespace
-  items:
-  - uid: Project.Infrastructure.SeedWork.Resilience.NameConverter
-    name: NameConverter
     type: Class
 - uid: Project.Logging
   name: Project.Logging
@@ -434,51 +430,264 @@ items:
   - uid: Project.Tests.Integration.Setup.TestAuthHandler
     name: TestAuthHandler
     type: Class
-- uid: Project.Tests.Unit.Application.UsersTests
-  name: Project.Tests.Unit.Application.UsersTests
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.Commands
   type: Namespace
   items:
-  - uid: Project.Tests.Unit.Application.UsersTests.GetUserDetailsQueryHandlerTests
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.InternalCommandBaseTests
+    name: InternalCommandBaseTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserAwareCommandsTest
+    name: UserAwareCommandsTest
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Commands.UserInjectionCommandBehaviorTests
+    name: UserInjectionCommandBehaviorTests
+    type: Class
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.DomainEvents.DomainNotificationBaseTests
+    name: DomainNotificationBaseTests
+    type: Class
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.Queries
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserAwareQueryTests
+    name: UserAwareQueryTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Queries.UserInjectionQueryBehaviorTests
+    name: UserInjectionQueryBehaviorTests
+    type: Class
+- uid: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  name: Project.Tests.UnitTests.Application.ConfigurationTests.Validations
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.CommandValidationBehaviorTests
+    name: CommandValidationBehaviorTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.ConfigurationTests.Validations.InvalidCommandExceptionTests
+    name: InvalidCommandExceptionTests
+    type: Class
+- uid: Project.Tests.UnitTests.Application.Dummies
+  name: Project.Tests.UnitTests.Application.Dummies
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.Dummies.DummyQuery
+    name: DummyQuery
+    type: Class
+- uid: Project.Tests.UnitTests.Application.Fakes
+  name: Project.Tests.UnitTests.Application.Fakes
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeCommand
+    name: FakeCommand
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeCommandString
+    name: FakeCommandString
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeCommandValidator
+    name: FakeCommandValidator
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeHttpContextAccessor
+    name: FakeHttpContextAccessor
+    type: Class
+  - uid: Project.Tests.UnitTests.Application.Fakes.FakeUserAwareQuery`1
+    name: FakeUserAwareQuery<TResult>
+    type: Class
+- uid: Project.Tests.UnitTests.Application.UsersTests
+  name: Project.Tests.UnitTests.Application.UsersTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.UsersTests.UserMapperTests
+    name: UserMapperTests
+    type: Class
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  name: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests
     name: GetUserDetailsQueryHandlerTests
     type: Class
-  - uid: Project.Tests.Unit.Application.UsersTests.RegisterUserCommandTests
+  - uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+    name: GetUserDetailsQueryTests
+    type: Class
+- uid: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  name: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandTests
     name: RegisterUserCommandTests
     type: Class
-- uid: Project.Tests.Unit.Builders
-  name: Project.Tests.Unit.Builders
+  - uid: Project.Tests.UnitTests.Application.UsersTests.RegisterUserCommandTests.RegisterUserCommandValidatorTests
+    name: RegisterUserCommandValidatorTests
+    type: Class
+- uid: Project.Tests.UnitTests.Builders
+  name: Project.Tests.UnitTests.Builders
   type: Namespace
   items:
-  - uid: Project.Tests.Unit.Builders.UserBuilder
+  - uid: Project.Tests.UnitTests.Builders.DatabaseBuilder
+    name: DatabaseBuilder
+    type: Class
+  - uid: Project.Tests.UnitTests.Builders.RegisterUserCommandBuilder
+    name: RegisterUserCommandBuilder
+    type: Class
+  - uid: Project.Tests.UnitTests.Builders.UserBuilder
     name: UserBuilder
     type: Class
-- uid: Project.Tests.Unit.Domain.UsersTests
-  name: Project.Tests.Unit.Domain.UsersTests
+- uid: Project.Tests.UnitTests.Domain.Fakes
+  name: Project.Tests.UnitTests.Domain.Fakes
   type: Namespace
   items:
-  - uid: Project.Tests.Unit.Domain.UsersTests.EmailTests
+  - uid: Project.Tests.UnitTests.Domain.Fakes.FakeBrokenRule
+    name: FakeBrokenRule
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.FakeDomainEvent
+    name: FakeDomainEvent
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.FakeEntity
+    name: FakeEntity
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId
+    name: FakeTypedId
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.FakeValidRule
+    name: FakeValidRule
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.FieldValueObject
+    name: FieldValueObject
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.IgnoredValueObject
+    name: IgnoredValueObject
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.MixedValueObject
+    name: MixedValueObject
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.Fakes.SimpleValueObject
+    name: SimpleValueObject
+    type: Class
+- uid: Project.Tests.UnitTests.Domain.SharedKernel
+  name: Project.Tests.UnitTests.Domain.SharedKernel
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests
+    name: BusinessRuleValidationExceptionTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+    name: EntityTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+    name: TypedIdValueBaseTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+    name: ValueObjectTests
+    type: Class
+- uid: Project.Tests.UnitTests.Domain.Users
+  name: Project.Tests.UnitTests.Domain.Users
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Domain.Users.EmailTests
     name: EmailTests
     type: Class
-  - uid: Project.Tests.Unit.Domain.UsersTests.NameTests
+  - uid: Project.Tests.UnitTests.Domain.Users.NameTests
     name: NameTests
     type: Class
-  - uid: Project.Tests.Unit.Domain.UsersTests.UserNameTests
+  - uid: Project.Tests.UnitTests.Domain.Users.UserNameTests
     name: UserNameTests
     type: Class
-  - uid: Project.Tests.Unit.Domain.UsersTests.UserTests
+  - uid: Project.Tests.UnitTests.Domain.Users.UserTests
     name: UserTests
     type: Class
-- uid: Project.Tests.Unit.Fakes
-  name: Project.Tests.Unit.Fakes
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests
+  name: Project.Tests.UnitTests.Infrastructure.DomainTests
   type: Namespace
   items:
-  - uid: Project.Tests.Unit.Fakes.FakeDbContext`1
+  - uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+    name: UnitOfWorkTests
+    type: Class
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes
+  name: Project.Tests.UnitTests.Infrastructure.Fakes
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeDbContext`1
     name: FakeDbContext<TUser>
     type: Class
-- uid: Project.Tests.Unit.Mocks
-  name: Project.Tests.Unit.Mocks
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeLogger`1
+    name: FakeLogger<T>
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeRequest
+    name: FakeRequest
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+    name: FakeUserRepository
+    type: Class
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  name: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests
   type: Namespace
   items:
-  - uid: Project.Tests.Unit.Mocks.UserManagerMock
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes.Project.Tests.UnitTests.Infrastructure.ProcessingTests.FakeMediator
+    name: FakeMediator
+    type: Class
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  name: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor
+    name: FakeExecutionContextAccessor
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests
+    name: LoggingPipelineBehaviorTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests
+    name: RequestLogEnricherTests
+    type: Class
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  name: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests
+    name: DefaultUserLoggerServiceTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests
+    name: ElasticUserLoggerServiceTests
+    type: Class
+- uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  name: Project.Tests.UnitTests.Infrastructure.ProcessingTests
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests
+    name: CommandsExecutorTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommand
+    name: CommandsExecutorTests.TestCommand
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.CommandsExecutorTests.TestCommandNoResult
+    name: CommandsExecutorTests.TestCommandNoResult
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.DomainEventsDispatcherTests
+    name: DomainEventsDispatcherTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests
+    name: MediatorTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.MediatorTests.TestQuery
+    name: MediatorTests.TestQuery
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests
+    name: QueriesExecutorTests
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.QueriesExecutorTests.TestQuery
+    name: QueriesExecutorTests.TestQuery
+    type: Class
+  - uid: Project.Tests.UnitTests.Infrastructure.ProcessingTests.UnitOfWorkPipelineBehaviorTests
+    name: UnitOfWorkPipelineBehaviorTests
+    type: Class
+- uid: Project.Tests.UnitTests.Mocks
+  name: Project.Tests.UnitTests.Mocks
+  type: Namespace
+  items:
+  - uid: Project.Tests.UnitTests.Mocks.UserManagerMock
     name: UserManagerMock
     type: Class
 memberLayout: SamePage

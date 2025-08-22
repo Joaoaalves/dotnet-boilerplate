@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel
+  commentId: N:Project.Tests.UnitTests.Domain.SharedKernel
+  id: Project.Tests.UnitTests.Domain.SharedKernel
+  children:
+  - Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  - Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  - Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Domain.SharedKernel
+  nameWithType: Project.Tests.UnitTests.Domain.SharedKernel
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests
+  href: Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests.html
+  name: BusinessRuleValidationExceptionTests
+  nameWithType: BusinessRuleValidationExceptionTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.BusinessRuleValidationExceptionTests
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html
+  name: EntityTests
+  nameWithType: EntityTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+  href: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests.html
+  name: TypedIdValueBaseTests
+  nameWithType: TypedIdValueBaseTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.TypedIdValueBaseTests
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests
+  href: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests.html
+  name: ValueObjectTests
+  nameWithType: ValueObjectTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.ValueObjectTests

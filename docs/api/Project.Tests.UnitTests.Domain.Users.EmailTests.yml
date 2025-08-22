@@ -1,0 +1,889 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests
+  commentId: T:Project.Tests.UnitTests.Domain.Users.EmailTests
+  id: EmailTests
+  parent: Project.Tests.UnitTests.Domain.Users
+  children:
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue(System.String)
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue(System.String)
+  - Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue
+  langs:
+  - csharp
+  - vb
+  name: EmailTests
+  nameWithType: EmailTests
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: EmailTests
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 8
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: public class EmailTests
+    content.vb: Public Class EmailTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue(System.String)
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue(System.String)
+  id: ShouldCreateWithValidValue(System.String)
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldCreateWithValidValue(string)
+  nameWithType: EmailTests.ShouldCreateWithValidValue(string)
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldCreateWithValidValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 10
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "john.doe@example.com" })]
+
+      [InlineData(new object[] { "user+alias@gmail.com" })]
+
+      [InlineData(new object[] { "Éric@example.fr" })]
+
+      [InlineData(new object[] { "john@mail.example.co.uk" })]
+
+      public void ShouldCreateWithValidValue(string emailStr)
+    parameters:
+    - id: emailStr
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "john.doe@example.com" })>
+
+      <InlineData(New Object() { "user+alias@gmail.com" })>
+
+      <InlineData(New Object() { "Éric@example.fr" })>
+
+      <InlineData(New Object() { "john@mail.example.co.uk" })>
+
+      Public Sub ShouldCreateWithValidValue(emailStr As String)
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: EmailTests.ShouldCreateWithValidValue(String)
+  fullName.vb: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue(String)
+  name.vb: ShouldCreateWithValidValue(String)
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue(System.String)
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue(System.String)
+  id: ShouldNotCreateWithInvalidValue(System.String)
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldNotCreateWithInvalidValue(string)
+  nameWithType: EmailTests.ShouldNotCreateWithInvalidValue(string)
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldNotCreateWithInvalidValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 25
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "" })]
+
+      [InlineData(new object[] { "invalid-email" })]
+
+      [InlineData(new object[] { "user@com" })]
+
+      public void ShouldNotCreateWithInvalidValue(string emailStr)
+    parameters:
+    - id: emailStr
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "" })>
+
+      <InlineData(New Object() { "invalid-email" })>
+
+      <InlineData(New Object() { "user@com" })>
+
+      Public Sub ShouldNotCreateWithInvalidValue(emailStr As String)
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: EmailTests.ShouldNotCreateWithInvalidValue(String)
+  fullName.vb: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue(String)
+  name.vb: ShouldNotCreateWithInvalidValue(String)
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  id: Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase()
+  nameWithType: EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 43
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  id: Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenValuesAreDifferent()
+  nameWithType: EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenValuesAreDifferent
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 57
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenValuesAreDifferent()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenValuesAreDifferent()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  id: Equals_ShouldReturnFalse_WhenComparingWithNull
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenComparingWithNull()
+  nameWithType: EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenComparingWithNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 72
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenComparingWithNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenComparingWithNull()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  id: Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType()
+  nameWithType: EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 86
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull
+  id: Equals_ShouldThrow_WhenValueIsNull
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: Equals_ShouldThrow_WhenValueIsNull()
+  nameWithType: EmailTests.Equals_ShouldThrow_WhenValueIsNull()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: Equals_ShouldThrow_WhenValueIsNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 100
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Equals_ShouldThrow_WhenValueIsNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Equals_ShouldThrow_WhenValueIsNull()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  id: GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase()
+  nameWithType: EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 118
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull
+  id: GetHashCode_ShouldReturnZero_WhenValueIsNull
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode_ShouldReturnZero_WhenValueIsNull()
+  nameWithType: EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetHashCode_ShouldReturnZero_WhenValueIsNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 133
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetHashCode_ShouldReturnZero_WhenValueIsNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetHashCode_ShouldReturnZero_WhenValueIsNull()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue
+  id: ToString_ShouldReturnEmailValue
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: ToString_ShouldReturnEmailValue()
+  nameWithType: EmailTests.ToString_ShouldReturnEmailValue()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ToString_ShouldReturnEmailValue
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 151
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ToString_ShouldReturnEmailValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ToString_ShouldReturnEmailValue()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString
+  id: ImplicitOperator_ShouldReturnString
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: ImplicitOperator_ShouldReturnString()
+  nameWithType: EmailTests.ImplicitOperator_ShouldReturnString()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ImplicitOperator_ShouldReturnString
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 161
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ImplicitOperator_ShouldReturnString()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ImplicitOperator_ShouldReturnString()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  commentId: M:Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  id: ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  parent: Project.Tests.UnitTests.Domain.Users.EmailTests
+  langs:
+  - csharp
+  - vb
+  name: ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull()
+  nameWithType: EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull()
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Users/EmailTests.cs
+    startLine: 174
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Users
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull()
+  overload: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Project.Tests.UnitTests.Domain.Users
+  commentId: N:Project.Tests.UnitTests.Domain.Users
+  href: Project.html
+  name: Project.Tests.UnitTests.Domain.Users
+  nameWithType: Project.Tests.UnitTests.Domain.Users
+  fullName: Project.Tests.UnitTests.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.Users
+    name: Users
+    href: Project.Tests.UnitTests.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.Users
+    name: Users
+    href: Project.Tests.UnitTests.Domain.Users.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_ShouldCreateWithValidValue_System_String_
+  name: ShouldCreateWithValidValue
+  nameWithType: EmailTests.ShouldCreateWithValidValue
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldCreateWithValidValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_ShouldNotCreateWithInvalidValue_System_String_
+  name: ShouldNotCreateWithInvalidValue
+  nameWithType: EmailTests.ShouldNotCreateWithInvalidValue
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ShouldNotCreateWithInvalidValue
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  name: Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  nameWithType: EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnTrue_WhenValuesAreEqualIgnoringCase
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  name: Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  nameWithType: EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenValuesAreDifferent
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_Equals_ShouldReturnFalse_WhenComparingWithNull
+  name: Equals_ShouldReturnFalse_WhenComparingWithNull
+  nameWithType: EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithNull
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  name: Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  nameWithType: EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldReturnFalse_WhenComparingWithDifferentObjectType
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_Equals_ShouldThrow_WhenValueIsNull
+  name: Equals_ShouldThrow_WhenValueIsNull
+  nameWithType: EmailTests.Equals_ShouldThrow_WhenValueIsNull
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.Equals_ShouldThrow_WhenValueIsNull
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  name: GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  nameWithType: EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldBeEqual_ForSameValuesIgnoringCase
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_GetHashCode_ShouldReturnZero_WhenValueIsNull
+  name: GetHashCode_ShouldReturnZero_WhenValueIsNull
+  nameWithType: EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.GetHashCode_ShouldReturnZero_WhenValueIsNull
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_ToString_ShouldReturnEmailValue
+  name: ToString_ShouldReturnEmailValue
+  nameWithType: EmailTests.ToString_ShouldReturnEmailValue
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ToString_ShouldReturnEmailValue
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_ImplicitOperator_ShouldReturnString
+  name: ImplicitOperator_ShouldReturnString
+  nameWithType: EmailTests.ImplicitOperator_ShouldReturnString
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnString
+- uid: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  href: Project.Tests.UnitTests.Domain.Users.EmailTests.html#Project_Tests_UnitTests_Domain_Users_EmailTests_ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  name: ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  nameWithType: EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull
+  fullName: Project.Tests.UnitTests.Domain.Users.EmailTests.ImplicitOperator_ShouldReturnEmptyString_WhenEmailIsNull

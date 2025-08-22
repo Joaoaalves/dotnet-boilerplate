@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  commentId: N:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  id: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  children:
+  - Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests
+  - Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  nameWithType: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests
+  commentId: T:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests
+  href: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests.html
+  name: GetUserDetailsQueryHandlerTests
+  nameWithType: GetUserDetailsQueryHandlerTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryHandlerTests
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  commentId: T:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  href: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.html
+  name: GetUserDetailsQueryTests
+  nameWithType: GetUserDetailsQueryTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests

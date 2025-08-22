@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  commentId: N:Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  id: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  children:
+  - Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests
+  - Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  nameWithType: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests
+  href: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests.html
+  name: DefaultUserLoggerServiceTests
+  nameWithType: DefaultUserLoggerServiceTests
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.DefaultUserLoggerServiceTests
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests
+  href: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests.html
+  name: ElasticUserLoggerServiceTests
+  nameWithType: ElasticUserLoggerServiceTests
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests.Users.ElasticUserLoggerServiceTests

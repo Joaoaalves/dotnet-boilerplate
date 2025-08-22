@@ -39,6 +39,7 @@ references:
   fullName: Project.Domain.SeedWork.BusinessRuleValidationException
 - uid: Project.Domain.SeedWork.Entity
   commentId: T:Project.Domain.SeedWork.Entity
+  parent: Project.Domain.SeedWork
   href: Project.Domain.SeedWork.Entity.html
   name: Entity
   nameWithType: Entity

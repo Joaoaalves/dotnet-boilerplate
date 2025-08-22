@@ -89,7 +89,7 @@
 
 
   <h1 id="Project_Infrastructure_Domain_UnitOfWork" data-uid="Project.Infrastructure.Domain.UnitOfWork" class="text-break">
-Class UnitOfWork  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class UnitOfWork  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -160,21 +160,21 @@ Class UnitOfWork  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Project_Infrastructure_Domain_UnitOfWork__ctor_" data-uid="Project.Infrastructure.Domain.UnitOfWork.#ctor*"></a>
 
-  <h3 id="Project_Infrastructure_Domain_UnitOfWork__ctor_Project_Infrastructure_Database_ApplicationDbContext_Project_Infrastructure_Processing_IDomainEventsDispatcher_" data-uid="Project.Infrastructure.Domain.UnitOfWork.#ctor(Project.Infrastructure.Database.ApplicationDbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)">
-  UnitOfWork(ApplicationDbContext, IDomainEventsDispatcher)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Project_Infrastructure_Domain_UnitOfWork__ctor_Microsoft_EntityFrameworkCore_DbContext_Project_Infrastructure_Processing_IDomainEventsDispatcher_" data-uid="Project.Infrastructure.Domain.UnitOfWork.#ctor(Microsoft.EntityFrameworkCore.DbContext,Project.Infrastructure.Processing.IDomainEventsDispatcher)">
+  UnitOfWork(DbContext, IDomainEventsDispatcher)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnitOfWork(ApplicationDbContext ordersContext, IDomainEventsDispatcher domainEventsDispatcher)</code></pre>
+    <pre><code class="lang-csharp hljs">public UnitOfWork(DbContext context, IDomainEventsDispatcher domainEventsDispatcher)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>ordersContext</code> <a class="xref" href="Project.Infrastructure.Database.ApplicationDbContext.html">ApplicationDbContext</a></dt>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a></dt>
     <dd></dd>
     <dt><code>domainEventsDispatcher</code> <a class="xref" href="Project.Infrastructure.Processing.IDomainEventsDispatcher.html">IDomainEventsDispatcher</a></dt>
     <dd></dd>
@@ -199,7 +199,7 @@ Class UnitOfWork  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Project_Infrastructure_Domain_UnitOfWork_CommitAsync_System_Threading_CancellationToken_" data-uid="Project.Infrastructure.Domain.UnitOfWork.CommitAsync(System.Threading.CancellationToken)">
   CommitAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -235,7 +235,7 @@ Class UnitOfWork  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Project_Infrastructure_Domain_UnitOfWork_RevertAsync" data-uid="Project.Infrastructure.Domain.UnitOfWork.RevertAsync">
   RevertAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -266,7 +266,7 @@ Class UnitOfWork  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Domain/UnitOfWork.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

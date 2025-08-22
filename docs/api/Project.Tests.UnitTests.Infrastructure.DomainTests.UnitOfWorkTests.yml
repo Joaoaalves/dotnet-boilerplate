@@ -1,0 +1,676 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  id: UnitOfWorkTests
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests
+  children:
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.#ctor
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  - Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkTests
+  nameWithType: UnitOfWorkTests
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UnitOfWorkTests
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 12
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: public class UnitOfWorkTests
+    content.vb: Public Class UnitOfWorkTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.#ctor
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.#ctor
+  id: '#ctor'
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkTests()
+  nameWithType: UnitOfWorkTests.UnitOfWorkTests()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.UnitOfWorkTests()
+  type: Constructor
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 17
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: public UnitOfWorkTests()
+    content.vb: Public Sub New()
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.#ctor*
+  nameWithType.vb: UnitOfWorkTests.New()
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.New()
+  name.vb: New()
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges
+  id: CommitAsync_ShouldDispatchEventsAndSaveChanges
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: CommitAsync_ShouldDispatchEventsAndSaveChanges()
+  nameWithType: UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CommitAsync_ShouldDispatchEventsAndSaveChanges
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 23
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task CommitAsync_ShouldDispatchEventsAndSaveChanges()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function CommitAsync_ShouldDispatchEventsAndSaveChanges() As Task
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities
+  id: RevertAsync_ShouldDetachAddedEntities
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync_ShouldDetachAddedEntities()
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync_ShouldDetachAddedEntities
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 40
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task RevertAsync_ShouldDetachAddedEntities()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function RevertAsync_ShouldDetachAddedEntities() As Task
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  id: RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync_ShouldResetModifiedEntitiesToUnchanged()
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 57
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task RevertAsync_ShouldResetModifiedEntitiesToUnchanged()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function RevertAsync_ShouldResetModifiedEntitiesToUnchanged() As Task
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  id: RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync_ShouldResetDeletedEntitiesToUnchanged()
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 76
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task RevertAsync_ShouldResetDeletedEntitiesToUnchanged()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function RevertAsync_ShouldResetDeletedEntitiesToUnchanged() As Task
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  id: RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged()
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 94
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged() As Task
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges
+  commentId: M:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges
+  id: RevertAsync_ShouldClearAllPendingChanges
+  parent: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests
+  langs:
+  - csharp
+  - vb
+  name: RevertAsync_ShouldClearAllPendingChanges()
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges()
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: RevertAsync_ShouldClearAllPendingChanges
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/DomainTests/UnitOfWorkTests.cs
+    startLine: 111
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.DomainTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public Task RevertAsync_ShouldClearAllPendingChanges()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Fact>
+
+      Public Function RevertAsync_ShouldClearAllPendingChanges() As Task
+  overload: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests
+  commentId: N:Project.Tests.UnitTests.Infrastructure.DomainTests
+  href: Project.html
+  name: Project.Tests.UnitTests.Infrastructure.DomainTests
+  nameWithType: Project.Tests.UnitTests.Infrastructure.DomainTests
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure
+    name: Infrastructure
+    href: Project.Tests.UnitTests.Infrastructure.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.DomainTests
+    name: DomainTests
+    href: Project.Tests.UnitTests.Infrastructure.DomainTests.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure
+    name: Infrastructure
+    href: Project.Tests.UnitTests.Infrastructure.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.DomainTests
+    name: DomainTests
+    href: Project.Tests.UnitTests.Infrastructure.DomainTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.#ctor*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.#ctor
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests__ctor
+  name: UnitOfWorkTests
+  nameWithType: UnitOfWorkTests.UnitOfWorkTests
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.UnitOfWorkTests
+  nameWithType.vb: UnitOfWorkTests.New
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.New
+  name.vb: New
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests_CommitAsync_ShouldDispatchEventsAndSaveChanges
+  name: CommitAsync_ShouldDispatchEventsAndSaveChanges
+  nameWithType: UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.CommitAsync_ShouldDispatchEventsAndSaveChanges
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests_RevertAsync_ShouldDetachAddedEntities
+  name: RevertAsync_ShouldDetachAddedEntities
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldDetachAddedEntities
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests_RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  name: RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetModifiedEntitiesToUnchanged
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests_RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  name: RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldResetDeletedEntitiesToUnchanged
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests_RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  name: RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldLeaveUnchangedEntitiesUnchanged
+- uid: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges
+  href: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.html#Project_Tests_UnitTests_Infrastructure_DomainTests_UnitOfWorkTests_RevertAsync_ShouldClearAllPendingChanges
+  name: RevertAsync_ShouldClearAllPendingChanges
+  nameWithType: UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges
+  fullName: Project.Tests.UnitTests.Infrastructure.DomainTests.UnitOfWorkTests.RevertAsync_ShouldClearAllPendingChanges

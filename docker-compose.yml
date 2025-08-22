@@ -30,8 +30,13 @@ services:
       - internal
 
   nginx:
-    image: nginx:alpine
-    container_name: project_nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      args:
+        ENABLE_MONITORING: ${ENABLE_MONITORING}
+        ENABLE_LOGGING: ${ENABLE_LOGGING}
+    container_name: nginx
     depends_on:
       - api
       - docs
@@ -40,7 +45,7 @@ services:
       - "443:443"
     volumes:
       - ./nginx/certbot:/var/www/certbot
-      - ./nginx/templates:/etc/nginx/templates/
+      - ./nginx/templates/default.conf.template:/etc/nginx/templates/default.conf.template:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro
     environment:
       DOMAIN: ${DOMAIN}

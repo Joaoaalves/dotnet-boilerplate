@@ -1,0 +1,666 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  commentId: T:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  id: EntityTests
+  parent: Project.Tests.UnitTests.Domain.SharedKernel
+  children:
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  - Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  langs:
+  - csharp
+  - vb
+  name: EntityTests
+  nameWithType: EntityTests
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: EntityTests
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 6
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: public class EntityTests
+    content.vb: Public Class EntityTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  id: DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: DomainEvents_ShouldBeNull_WhenNoEventsAdded()
+  nameWithType: EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DomainEvents_ShouldBeNull_WhenNoEventsAdded
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 8
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void DomainEvents_ShouldBeNull_WhenNoEventsAdded()
+    content.vb: >-
+      <Fact>
+
+      Public Sub DomainEvents_ShouldBeNull_WhenNoEventsAdded()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull
+  id: AddDomainEvent_ShouldInitializeList_IfNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: AddDomainEvent_ShouldInitializeList_IfNull()
+  nameWithType: EntityTests.AddDomainEvent_ShouldInitializeList_IfNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: AddDomainEvent_ShouldInitializeList_IfNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 18
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void AddDomainEvent_ShouldInitializeList_IfNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AddDomainEvent_ShouldInitializeList_IfNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList
+  id: AddDomainEvent_ShouldAddToExistingList
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: AddDomainEvent_ShouldAddToExistingList()
+  nameWithType: EntityTests.AddDomainEvent_ShouldAddToExistingList()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: AddDomainEvent_ShouldAddToExistingList
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 34
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void AddDomainEvent_ShouldAddToExistingList()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AddDomainEvent_ShouldAddToExistingList()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents
+  id: ClearDomainEvents_ShouldRemoveAllEvents
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: ClearDomainEvents_ShouldRemoveAllEvents()
+  nameWithType: EntityTests.ClearDomainEvents_ShouldRemoveAllEvents()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ClearDomainEvents_ShouldRemoveAllEvents
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 53
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ClearDomainEvents_ShouldRemoveAllEvents()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ClearDomainEvents_ShouldRemoveAllEvents()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid
+  id: CheckRule_ShouldNotThrow_WhenRuleIsValid
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: CheckRule_ShouldNotThrow_WhenRuleIsValid()
+  nameWithType: EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CheckRule_ShouldNotThrow_WhenRuleIsValid
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 69
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CheckRule_ShouldNotThrow_WhenRuleIsValid()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CheckRule_ShouldNotThrow_WhenRuleIsValid()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken
+  id: CheckRule_ShouldThrow_WhenRuleIsBroken
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: CheckRule_ShouldThrow_WhenRuleIsBroken()
+  nameWithType: EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CheckRule_ShouldThrow_WhenRuleIsBroken
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 83
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CheckRule_ShouldThrow_WhenRuleIsBroken()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CheckRule_ShouldThrow_WhenRuleIsBroken()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  id: DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: DomainEvents_ShouldReturnNull_IfListClearedWithNull()
+  nameWithType: EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DomainEvents_ShouldReturnNull_IfListClearedWithNull
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 94
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void DomainEvents_ShouldReturnNull_IfListClearedWithNull()
+    content.vb: >-
+      <Fact>
+
+      Public Sub DomainEvents_ShouldReturnNull_IfListClearedWithNull()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully
+  commentId: M:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully
+  id: ClearDomainEvents_ShouldHandleNullListGracefully
+  parent: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests
+  langs:
+  - csharp
+  - vb
+  name: ClearDomainEvents_ShouldHandleNullListGracefully()
+  nameWithType: EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully()
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ClearDomainEvents_ShouldHandleNullListGracefully
+    path: ../src/tests/Project.Tests.UnitTests/Domain/SharedKernel/EntityTests.cs
+    startLine: 111
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.SharedKernel
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ClearDomainEvents_ShouldHandleNullListGracefully()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ClearDomainEvents_ShouldHandleNullListGracefully()
+  overload: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Project.Tests.UnitTests.Domain.SharedKernel
+  commentId: N:Project.Tests.UnitTests.Domain.SharedKernel
+  href: Project.html
+  name: Project.Tests.UnitTests.Domain.SharedKernel
+  nameWithType: Project.Tests.UnitTests.Domain.SharedKernel
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Tests.UnitTests.Domain.SharedKernel.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.SharedKernel
+    name: SharedKernel
+    href: Project.Tests.UnitTests.Domain.SharedKernel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  name: DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  nameWithType: EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldBeNull_WhenNoEventsAdded
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_AddDomainEvent_ShouldInitializeList_IfNull
+  name: AddDomainEvent_ShouldInitializeList_IfNull
+  nameWithType: EntityTests.AddDomainEvent_ShouldInitializeList_IfNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldInitializeList_IfNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_AddDomainEvent_ShouldAddToExistingList
+  name: AddDomainEvent_ShouldAddToExistingList
+  nameWithType: EntityTests.AddDomainEvent_ShouldAddToExistingList
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.AddDomainEvent_ShouldAddToExistingList
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_ClearDomainEvents_ShouldRemoveAllEvents
+  name: ClearDomainEvents_ShouldRemoveAllEvents
+  nameWithType: EntityTests.ClearDomainEvents_ShouldRemoveAllEvents
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldRemoveAllEvents
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_CheckRule_ShouldNotThrow_WhenRuleIsValid
+  name: CheckRule_ShouldNotThrow_WhenRuleIsValid
+  nameWithType: EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldNotThrow_WhenRuleIsValid
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_CheckRule_ShouldThrow_WhenRuleIsBroken
+  name: CheckRule_ShouldThrow_WhenRuleIsBroken
+  nameWithType: EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.CheckRule_ShouldThrow_WhenRuleIsBroken
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  name: DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  nameWithType: EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.DomainEvents_ShouldReturnNull_IfListClearedWithNull
+- uid: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully*
+  commentId: Overload:Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully
+  href: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.html#Project_Tests_UnitTests_Domain_SharedKernel_EntityTests_ClearDomainEvents_ShouldHandleNullListGracefully
+  name: ClearDomainEvents_ShouldHandleNullListGracefully
+  nameWithType: EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully
+  fullName: Project.Tests.UnitTests.Domain.SharedKernel.EntityTests.ClearDomainEvents_ShouldHandleNullListGracefully

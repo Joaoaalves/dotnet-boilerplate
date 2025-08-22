@@ -4,8 +4,8 @@ items:
   commentId: N:Project.Application.Configuration.Validation
   id: Project.Application.Configuration.Validation
   children:
+  - Project.Application.Configuration.Validation.CommandValidationBehavior`2
   - Project.Application.Configuration.Validation.InvalidCommandException
-  - Project.Application.Configuration.Validation.ValidationBehavior`2
   langs:
   - csharp
   - vb
@@ -16,19 +16,19 @@ items:
   assemblies:
   - Project.Application
 references:
-- uid: Project.Application.Configuration.Validation.ValidationBehavior`2
-  commentId: T:Project.Application.Configuration.Validation.ValidationBehavior`2
-  href: Project.Application.Configuration.Validation.ValidationBehavior-2.html
-  name: ValidationBehavior<TRequest, TResponse>
-  nameWithType: ValidationBehavior<TRequest, TResponse>
-  fullName: Project.Application.Configuration.Validation.ValidationBehavior<TRequest, TResponse>
-  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse)
-  fullName.vb: Project.Application.Configuration.Validation.ValidationBehavior(Of TRequest, TResponse)
-  name.vb: ValidationBehavior(Of TRequest, TResponse)
+- uid: Project.Application.Configuration.Validation.CommandValidationBehavior`2
+  commentId: T:Project.Application.Configuration.Validation.CommandValidationBehavior`2
+  href: Project.Application.Configuration.Validation.CommandValidationBehavior-2.html
+  name: CommandValidationBehavior<TRequest, TResponse>
+  nameWithType: CommandValidationBehavior<TRequest, TResponse>
+  fullName: Project.Application.Configuration.Validation.CommandValidationBehavior<TRequest, TResponse>
+  nameWithType.vb: CommandValidationBehavior(Of TRequest, TResponse)
+  fullName.vb: Project.Application.Configuration.Validation.CommandValidationBehavior(Of TRequest, TResponse)
+  name.vb: CommandValidationBehavior(Of TRequest, TResponse)
   spec.csharp:
-  - uid: Project.Application.Configuration.Validation.ValidationBehavior`2
-    name: ValidationBehavior
-    href: Project.Application.Configuration.Validation.ValidationBehavior-2.html
+  - uid: Project.Application.Configuration.Validation.CommandValidationBehavior`2
+    name: CommandValidationBehavior
+    href: Project.Application.Configuration.Validation.CommandValidationBehavior-2.html
   - name: <
   - name: TRequest
   - name: ','
@@ -36,9 +36,9 @@ references:
   - name: TResponse
   - name: '>'
   spec.vb:
-  - uid: Project.Application.Configuration.Validation.ValidationBehavior`2
-    name: ValidationBehavior
-    href: Project.Application.Configuration.Validation.ValidationBehavior-2.html
+  - uid: Project.Application.Configuration.Validation.CommandValidationBehavior`2
+    name: CommandValidationBehavior
+    href: Project.Application.Configuration.Validation.CommandValidationBehavior-2.html
   - name: (
   - name: Of
   - name: " "

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  commentId: N:Project.Tests.UnitTests.Infrastructure.LoggingTests
+  id: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  children:
+  - Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor
+  - Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests
+  - Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests
+  langs:
+  - csharp
+  - vb
+  name: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  nameWithType: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests
+  type: Namespace
+  assemblies:
+  - Project.Tests.UnitTests
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor
+  commentId: T:Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor
+  href: Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor.html
+  name: FakeExecutionContextAccessor
+  nameWithType: FakeExecutionContextAccessor
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests.FakeExecutionContextAccessor
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests
+  href: Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests.html
+  name: LoggingPipelineBehaviorTests
+  nameWithType: LoggingPipelineBehaviorTests
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests.LoggingPipelineBehaviorTests
+- uid: Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests
+  commentId: T:Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests
+  href: Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests.html
+  name: RequestLogEnricherTests
+  nameWithType: RequestLogEnricherTests
+  fullName: Project.Tests.UnitTests.Infrastructure.LoggingTests.RequestLogEnricherTests

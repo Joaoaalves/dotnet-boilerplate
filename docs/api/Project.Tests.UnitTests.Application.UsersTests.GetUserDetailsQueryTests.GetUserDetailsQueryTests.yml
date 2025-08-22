@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  commentId: T:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  id: GetUserDetailsQueryTests
+  parent: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  children:
+  - Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(System.String)
+  - Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided
+  langs:
+  - csharp
+  - vb
+  name: GetUserDetailsQueryTests
+  nameWithType: GetUserDetailsQueryTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Application/UsersTests/GetUserDetailsQueryTests/GetUserDetailsQueryTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetUserDetailsQueryTests
+    path: ../src/tests/Project.Tests.UnitTests/Application/UsersTests/GetUserDetailsQueryTests/GetUserDetailsQueryTests.cs
+    startLine: 5
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  syntax:
+    content: public class GetUserDetailsQueryTests
+    content.vb: Public Class GetUserDetailsQueryTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(System.String)
+  commentId: M:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(System.String)
+  id: ShouldReturnEmail_WhenEmailIsProvided(System.String)
+  parent: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldReturnEmail_WhenEmailIsProvided(string)
+  nameWithType: GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(string)
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Application/UsersTests/GetUserDetailsQueryTests/GetUserDetailsQueryTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldReturnEmail_WhenEmailIsProvided
+    path: ../src/tests/Project.Tests.UnitTests/Application/UsersTests/GetUserDetailsQueryTests/GetUserDetailsQueryTests.cs
+    startLine: 7
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[] { "email@test.com" })]
+
+      [InlineData(new object[] { "q@q.c" })]
+
+      [InlineData(new object[] { "email@with.subdomain.com" })]
+
+      public void ShouldReturnEmail_WhenEmailIsProvided(string email)
+    parameters:
+    - id: email
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() { "email@test.com" })>
+
+      <InlineData(New Object() { "q@q.c" })>
+
+      <InlineData(New Object() { "email@with.subdomain.com" })>
+
+      Public Sub ShouldReturnEmail_WhenEmailIsProvided(email As String)
+  overload: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  nameWithType.vb: GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(String)
+  fullName.vb: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided(String)
+  name.vb: ShouldReturnEmail_WhenEmailIsProvided(String)
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided
+  commentId: M:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided
+  id: ShouldReturnNull_WhenNoEmailIsProvided
+  parent: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests
+  langs:
+  - csharp
+  - vb
+  name: ShouldReturnNull_WhenNoEmailIsProvided()
+  nameWithType: GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided()
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided()
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Application/UsersTests/GetUserDetailsQueryTests/GetUserDetailsQueryTests.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: ShouldReturnNull_WhenNoEmailIsProvided
+    path: ../src/tests/Project.Tests.UnitTests/Application/UsersTests/GetUserDetailsQueryTests/GetUserDetailsQueryTests.cs
+    startLine: 21
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  syntax:
+    content: >-
+      [Fact]
+
+      public void ShouldReturnNull_WhenNoEmailIsProvided()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ShouldReturnNull_WhenNoEmailIsProvided()
+  overload: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  commentId: N:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  href: Project.html
+  name: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  nameWithType: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application
+    name: Application
+    href: Project.Tests.UnitTests.Application.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application.UsersTests
+    name: UsersTests
+    href: Project.Tests.UnitTests.Application.UsersTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+    name: GetUserDetailsQueryTests
+    href: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application
+    name: Application
+    href: Project.Tests.UnitTests.Application.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application.UsersTests
+    name: UsersTests
+    href: Project.Tests.UnitTests.Application.UsersTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests
+    name: GetUserDetailsQueryTests
+    href: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided*
+  commentId: Overload:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided
+  href: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.html#Project_Tests_UnitTests_Application_UsersTests_GetUserDetailsQueryTests_GetUserDetailsQueryTests_ShouldReturnEmail_WhenEmailIsProvided_System_String_
+  name: ShouldReturnEmail_WhenEmailIsProvided
+  nameWithType: GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnEmail_WhenEmailIsProvided
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided*
+  commentId: Overload:Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided
+  href: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.html#Project_Tests_UnitTests_Application_UsersTests_GetUserDetailsQueryTests_GetUserDetailsQueryTests_ShouldReturnNull_WhenNoEmailIsProvided
+  name: ShouldReturnNull_WhenNoEmailIsProvided
+  nameWithType: GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided
+  fullName: Project.Tests.UnitTests.Application.UsersTests.GetUserDetailsQueryTests.GetUserDetailsQueryTests.ShouldReturnNull_WhenNoEmailIsProvided

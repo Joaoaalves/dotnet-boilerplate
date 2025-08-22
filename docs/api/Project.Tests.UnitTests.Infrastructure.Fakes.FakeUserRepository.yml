@@ -1,0 +1,1166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  commentId: T:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  id: FakeUserRepository
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes
+  children:
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.#ctor(Project.Domain.Users.User)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync(System.String)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync(System.String)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync(System.String)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync(System.String)
+  - Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync(Project.Domain.Users.User)
+  langs:
+  - csharp
+  - vb
+  name: FakeUserRepository
+  nameWithType: FakeUserRepository
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: FakeUserRepository
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 7
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  syntax:
+    content: 'public class FakeUserRepository : IUserRepository'
+    content.vb: Public Class FakeUserRepository Implements IUserRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Project.Application.Users.IUserRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.#ctor(Project.Domain.Users.User)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.#ctor(Project.Domain.Users.User)
+  id: '#ctor(Project.Domain.Users.User)'
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: FakeUserRepository(User?)
+  nameWithType: FakeUserRepository.FakeUserRepository(User?)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.FakeUserRepository(Project.Domain.Users.User?)
+  type: Constructor
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 7
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  syntax:
+    content: public FakeUserRepository(User? userToReturn = null)
+    parameters:
+    - id: userToReturn
+      type: Project.Domain.Users.User
+    content.vb: Public Sub New(userToReturn As User = Nothing)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.#ctor*
+  nameWithType.vb: FakeUserRepository.New(User)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.New(Project.Domain.Users.User)
+  name.vb: New(User)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  id: CheckPassowrd(Project.Domain.Users.User,System.String)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: CheckPassowrd(User, string)
+  nameWithType: FakeUserRepository.CheckPassowrd(User, string)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd(Project.Domain.Users.User, string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CheckPassowrd
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 11
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Validates the provided password against the stored credentials for the specified user.
+  example: []
+  syntax:
+    content: public Task<bool> CheckPassowrd(User user, string password)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+      description: The user to validate.
+    - id: password
+      type: System.String
+      description: The plain-text password to check.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the password is valid; otherwise, <code>false</code>.
+    content.vb: Public Function CheckPassowrd(user As User, password As String) As Task(Of Boolean)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd*
+  implements:
+  - Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  nameWithType.vb: FakeUserRepository.CheckPassowrd(User, String)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd(Project.Domain.Users.User, String)
+  name.vb: CheckPassowrd(User, String)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  id: CreateAsync(Project.Domain.Users.User,System.String)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(User, string)
+  nameWithType: FakeUserRepository.CreateAsync(User, string)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync(Project.Domain.Users.User, string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: CreateAsync
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 19
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Creates a new user with the specified password.
+  example: []
+  syntax:
+    content: public Task<IdentityResult> CreateAsync(User user, string password)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+      description: The user to create.
+    - id: password
+      type: System.String
+      description: The user's password.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
+    content.vb: Public Function CreateAsync(user As User, password As String) As Task(Of IdentityResult)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  nameWithType.vb: FakeUserRepository.CreateAsync(User, String)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync(Project.Domain.Users.User, String)
+  name.vb: CreateAsync(User, String)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync(System.String)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync(System.String)
+  id: DeleteAsync(System.String)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string)
+  nameWithType: FakeUserRepository.DeleteAsync(string)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: DeleteAsync
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 25
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Deletes a user by their unique identifier.
+  example: []
+  syntax:
+    content: public Task<IdentityResult> DeleteAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The identifier of the user to delete.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
+    content.vb: Public Function DeleteAsync(userId As String) As Task(Of IdentityResult)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  nameWithType.vb: FakeUserRepository.DeleteAsync(String)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync(String)
+  name.vb: DeleteAsync(String)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync(System.String)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync(System.String)
+  id: GetByEmailAsync(System.String)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByEmailAsync(string)
+  nameWithType: FakeUserRepository.GetByEmailAsync(string)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetByEmailAsync
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 31
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Retrieves a user by email address.
+  example: []
+  syntax:
+    content: public Task<User?> GetByEmailAsync(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: The email address to search for.
+    return:
+      type: System.Threading.Tasks.Task{Project.Domain.Users.User}
+      description: The user if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetByEmailAsync(email As String) As Task(Of User)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+  nameWithType.vb: FakeUserRepository.GetByEmailAsync(String)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync(String)
+  name.vb: GetByEmailAsync(String)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync(System.String)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync(System.String)
+  id: GetByIdAsync(System.String)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(string)
+  nameWithType: FakeUserRepository.GetByIdAsync(string)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetByIdAsync
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 36
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Retrieves a user by their unique identifier.
+  example: []
+  syntax:
+    content: public Task<User?> GetByIdAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+      description: The user's unique identifier.
+    return:
+      type: System.Threading.Tasks.Task{Project.Domain.Users.User}
+      description: The user if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetByIdAsync(userId As String) As Task(Of User)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  nameWithType.vb: FakeUserRepository.GetByIdAsync(String)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync(String)
+  name.vb: GetByIdAsync(String)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync(System.String)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync(System.String)
+  id: GetUserByUsernameAsync(System.String)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByUsernameAsync(string)
+  nameWithType: FakeUserRepository.GetUserByUsernameAsync(string)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync(string)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: GetUserByUsernameAsync
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 41
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Retrieves a user by their username.
+  example: []
+  syntax:
+    content: public Task<User?> GetUserByUsernameAsync(string username)
+    parameters:
+    - id: username
+      type: System.String
+      description: The username to search for.
+    return:
+      type: System.Threading.Tasks.Task{Project.Domain.Users.User}
+      description: The user if found; otherwise, <code>null</code>.
+    content.vb: Public Function GetUserByUsernameAsync(username As String) As Task(Of User)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+  nameWithType.vb: FakeUserRepository.GetUserByUsernameAsync(String)
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync(String)
+  name.vb: GetUserByUsernameAsync(String)
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync(Project.Domain.Users.User)
+  commentId: M:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync(Project.Domain.Users.User)
+  id: UpdateAsync(Project.Domain.Users.User)
+  parent: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(User)
+  nameWithType: FakeUserRepository.UpdateAsync(User)
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync(Project.Domain.Users.User)
+  type: Method
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: UpdateAsync
+    path: ../src/tests/Project.Tests.UnitTests/Infrastructure/Fakes/FakeUserRepository.cs
+    startLine: 46
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Infrastructure.Fakes
+  summary: Updates an existing user.
+  example: []
+  syntax:
+    content: public Task<IdentityResult> UpdateAsync(User user)
+    parameters:
+    - id: user
+      type: Project.Domain.Users.User
+      description: The user with updated data.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityResult" data-throw-if-not-resolved="false"></xref> indicating the result of the operation.
+    content.vb: Public Function UpdateAsync(user As User) As Task(Of IdentityResult)
+  overload: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync*
+  implements:
+  - Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+references:
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes
+  commentId: N:Project.Tests.UnitTests.Infrastructure.Fakes
+  href: Project.html
+  name: Project.Tests.UnitTests.Infrastructure.Fakes
+  nameWithType: Project.Tests.UnitTests.Infrastructure.Fakes
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure
+    name: Infrastructure
+    href: Project.Tests.UnitTests.Infrastructure.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes
+    name: Fakes
+    href: Project.Tests.UnitTests.Infrastructure.Fakes.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure
+    name: Infrastructure
+    href: Project.Tests.UnitTests.Infrastructure.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Infrastructure.Fakes
+    name: Fakes
+    href: Project.Tests.UnitTests.Infrastructure.Fakes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Application.Users.IUserRepository
+  commentId: T:Project.Application.Users.IUserRepository
+  parent: Project.Application.Users
+  href: Project.Application.Users.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Project.Application.Users.IUserRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Application.Users
+  commentId: N:Project.Application.Users
+  href: Project.html
+  name: Project.Application.Users
+  nameWithType: Project.Application.Users
+  fullName: Project.Application.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Application
+    name: Application
+    href: Project.Application.html
+  - name: .
+  - uid: Project.Application.Users
+    name: Users
+    href: Project.Application.Users.html
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.#ctor*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.#ctor
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository__ctor_Project_Domain_Users_User_
+  name: FakeUserRepository
+  nameWithType: FakeUserRepository.FakeUserRepository
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.FakeUserRepository
+  nameWithType.vb: FakeUserRepository.New
+  fullName.vb: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.New
+  name.vb: New
+- uid: Project.Domain.Users.User
+  commentId: T:Project.Domain.Users.User
+  parent: Project.Domain.Users
+  href: Project.Domain.Users.User.html
+  name: User
+  nameWithType: User
+  fullName: Project.Domain.Users.User
+- uid: Project.Domain.Users
+  commentId: N:Project.Domain.Users
+  href: Project.html
+  name: Project.Domain.Users
+  nameWithType: Project.Domain.Users
+  fullName: Project.Domain.Users
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.Users
+    name: Users
+    href: Project.Domain.Users.html
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_CheckPassowrd_Project_Domain_Users_User_System_String_
+  name: CheckPassowrd
+  nameWithType: FakeUserRepository.CheckPassowrd
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CheckPassowrd
+- uid: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CheckPassowrd(User, string)
+  nameWithType: IUserRepository.CheckPassowrd(User, string)
+  fullName: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User, string)
+  nameWithType.vb: IUserRepository.CheckPassowrd(User, String)
+  fullName.vb: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User, String)
+  name.vb: CheckPassowrd(User, String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+    name: CheckPassowrd
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.CheckPassowrd(Project.Domain.Users.User,System.String)
+    name: CheckPassowrd
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.AspNetCore.Identity.IdentityResult
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityResult
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult
+  name: IdentityResult
+  nameWithType: IdentityResult
+  fullName: Microsoft.AspNetCore.Identity.IdentityResult
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_CreateAsync_Project_Domain_Users_User_System_String_
+  name: CreateAsync
+  nameWithType: FakeUserRepository.CreateAsync
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.CreateAsync
+- uid: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  commentId: M:Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CreateAsync(User, string)
+  nameWithType: IUserRepository.CreateAsync(User, string)
+  fullName: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User, string)
+  nameWithType.vb: IUserRepository.CreateAsync(User, String)
+  fullName.vb: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User, String)
+  name.vb: CreateAsync(User, String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+    name: CreateAsync
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.CreateAsync(Project.Domain.Users.User,System.String)
+    name: CreateAsync
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IdentityResult>
+  nameWithType: Task<IdentityResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult>
+  nameWithType.vb: Task(Of IdentityResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Identity.IdentityResult)
+  name.vb: Task(Of IdentityResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Identity.IdentityResult
+    name: IdentityResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Identity.IdentityResult
+    name: IdentityResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityresult
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_DeleteAsync_System_String_
+  name: DeleteAsync
+  nameWithType: FakeUserRepository.DeleteAsync
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.DeleteAsync
+- uid: Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DeleteAsync(string)
+  nameWithType: IUserRepository.DeleteAsync(string)
+  fullName: Project.Application.Users.IUserRepository.DeleteAsync(string)
+  nameWithType.vb: IUserRepository.DeleteAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.DeleteAsync(String)
+  name.vb: DeleteAsync(String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+    name: DeleteAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.DeleteAsync(System.String)
+    name: DeleteAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_GetByEmailAsync_System_String_
+  name: GetByEmailAsync
+  nameWithType: FakeUserRepository.GetByEmailAsync
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByEmailAsync
+- uid: Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetByEmailAsync(string)
+  nameWithType: IUserRepository.GetByEmailAsync(string)
+  fullName: Project.Application.Users.IUserRepository.GetByEmailAsync(string)
+  nameWithType.vb: IUserRepository.GetByEmailAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.GetByEmailAsync(String)
+  name.vb: GetByEmailAsync(String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+    name: GetByEmailAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.GetByEmailAsync(System.String)
+    name: GetByEmailAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Project.Domain.Users.User}
+  commentId: T:System.Threading.Tasks.Task{Project.Domain.Users.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<Project.Domain.Users.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of Project.Domain.Users.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_GetByIdAsync_System_String_
+  name: GetByIdAsync
+  nameWithType: FakeUserRepository.GetByIdAsync
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetByIdAsync
+- uid: Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetByIdAsync(string)
+  nameWithType: IUserRepository.GetByIdAsync(string)
+  fullName: Project.Application.Users.IUserRepository.GetByIdAsync(string)
+  nameWithType.vb: IUserRepository.GetByIdAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.GetByIdAsync(String)
+  name.vb: GetByIdAsync(String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+    name: GetByIdAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.GetByIdAsync(System.String)
+    name: GetByIdAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_GetUserByUsernameAsync_System_String_
+  name: GetUserByUsernameAsync
+  nameWithType: FakeUserRepository.GetUserByUsernameAsync
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.GetUserByUsernameAsync
+- uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+  commentId: M:Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+  parent: Project.Application.Users.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUserByUsernameAsync(string)
+  nameWithType: IUserRepository.GetUserByUsernameAsync(string)
+  fullName: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(string)
+  nameWithType.vb: IUserRepository.GetUserByUsernameAsync(String)
+  fullName.vb: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(String)
+  name.vb: GetUserByUsernameAsync(String)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+    name: GetUserByUsernameAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.GetUserByUsernameAsync(System.String)
+    name: GetUserByUsernameAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync*
+  commentId: Overload:Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync
+  href: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.html#Project_Tests_UnitTests_Infrastructure_Fakes_FakeUserRepository_UpdateAsync_Project_Domain_Users_User_
+  name: UpdateAsync
+  nameWithType: FakeUserRepository.UpdateAsync
+  fullName: Project.Tests.UnitTests.Infrastructure.Fakes.FakeUserRepository.UpdateAsync
+- uid: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+  commentId: M:Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+  parent: Project.Application.Users.IUserRepository
+  name: UpdateAsync(User)
+  nameWithType: IUserRepository.UpdateAsync(User)
+  fullName: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+  spec.csharp:
+  - uid: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+    name: UpdateAsync
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: )
+  spec.vb:
+  - uid: Project.Application.Users.IUserRepository.UpdateAsync(Project.Domain.Users.User)
+    name: UpdateAsync
+  - name: (
+  - uid: Project.Domain.Users.User
+    name: User
+  - name: )

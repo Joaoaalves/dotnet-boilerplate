@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId
+  commentId: T:Project.Tests.UnitTests.Domain.Fakes.FakeTypedId
+  id: FakeTypedId
+  parent: Project.Tests.UnitTests.Domain.Fakes
+  children:
+  - Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.#ctor(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: FakeTypedId
+  nameWithType: FakeTypedId
+  fullName: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId
+  type: Class
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Fakes/FakeTypedId.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: FakeTypedId
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Fakes/FakeTypedId.cs
+    startLine: 4
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Fakes
+  syntax:
+    content: 'public class FakeTypedId : TypedIdValueBase, IEquatable<TypedIdValueBase>'
+    content.vb: Public Class FakeTypedId Inherits TypedIdValueBase Implements IEquatable(Of TypedIdValueBase)
+  inheritance:
+  - System.Object
+  - Project.Domain.SeedWork.TypedIdValueBase
+  implements:
+  - System.IEquatable{Project.Domain.SeedWork.TypedIdValueBase}
+  inheritedMembers:
+  - Project.Domain.SeedWork.TypedIdValueBase.Value
+  - Project.Domain.SeedWork.TypedIdValueBase.Equals(System.Object)
+  - Project.Domain.SeedWork.TypedIdValueBase.GetHashCode
+  - Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.#ctor(System.Guid)
+  commentId: M:Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.#ctor(System.Guid)
+  id: '#ctor(System.Guid)'
+  parent: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId
+  langs:
+  - csharp
+  - vb
+  name: FakeTypedId(Guid)
+  nameWithType: FakeTypedId.FakeTypedId(Guid)
+  fullName: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.FakeTypedId(System.Guid)
+  type: Constructor
+  source:
+    remote:
+      path: src/tests/Project.Tests.UnitTests/Domain/Fakes/FakeTypedId.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
+    id: .ctor
+    path: ../src/tests/Project.Tests.UnitTests/Domain/Fakes/FakeTypedId.cs
+    startLine: 4
+  assemblies:
+  - Project.Tests.UnitTests
+  namespace: Project.Tests.UnitTests.Domain.Fakes
+  syntax:
+    content: public FakeTypedId(Guid value)
+    parameters:
+    - id: value
+      type: System.Guid
+    content.vb: Public Sub New(value As Guid)
+  overload: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.#ctor*
+  nameWithType.vb: FakeTypedId.New(Guid)
+  fullName.vb: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.New(System.Guid)
+  name.vb: New(Guid)
+references:
+- uid: Project.Tests.UnitTests.Domain.Fakes
+  commentId: N:Project.Tests.UnitTests.Domain.Fakes
+  href: Project.html
+  name: Project.Tests.UnitTests.Domain.Fakes
+  nameWithType: Project.Tests.UnitTests.Domain.Fakes
+  fullName: Project.Tests.UnitTests.Domain.Fakes
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.Fakes
+    name: Fakes
+    href: Project.Tests.UnitTests.Domain.Fakes.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Tests
+    name: Tests
+    href: Project.Tests.html
+  - name: .
+  - uid: Project.Tests.UnitTests
+    name: UnitTests
+    href: Project.Tests.UnitTests.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain
+    name: Domain
+    href: Project.Tests.UnitTests.Domain.html
+  - name: .
+  - uid: Project.Tests.UnitTests.Domain.Fakes
+    name: Fakes
+    href: Project.Tests.UnitTests.Domain.Fakes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Project.Domain.SeedWork.TypedIdValueBase
+  commentId: T:Project.Domain.SeedWork.TypedIdValueBase
+  parent: Project.Domain.SeedWork
+  href: Project.Domain.SeedWork.TypedIdValueBase.html
+  name: TypedIdValueBase
+  nameWithType: TypedIdValueBase
+  fullName: Project.Domain.SeedWork.TypedIdValueBase
+- uid: System.IEquatable{Project.Domain.SeedWork.TypedIdValueBase}
+  commentId: T:System.IEquatable{Project.Domain.SeedWork.TypedIdValueBase}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TypedIdValueBase>
+  nameWithType: IEquatable<TypedIdValueBase>
+  fullName: System.IEquatable<Project.Domain.SeedWork.TypedIdValueBase>
+  nameWithType.vb: IEquatable(Of TypedIdValueBase)
+  fullName.vb: System.IEquatable(Of Project.Domain.SeedWork.TypedIdValueBase)
+  name.vb: IEquatable(Of TypedIdValueBase)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Project.Domain.SeedWork.TypedIdValueBase
+    name: TypedIdValueBase
+    href: Project.Domain.SeedWork.TypedIdValueBase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Project.Domain.SeedWork.TypedIdValueBase
+    name: TypedIdValueBase
+    href: Project.Domain.SeedWork.TypedIdValueBase.html
+  - name: )
+- uid: Project.Domain.SeedWork.TypedIdValueBase.Value
+  commentId: P:Project.Domain.SeedWork.TypedIdValueBase.Value
+  parent: Project.Domain.SeedWork.TypedIdValueBase
+  name: Value
+  nameWithType: TypedIdValueBase.Value
+  fullName: Project.Domain.SeedWork.TypedIdValueBase.Value
+- uid: Project.Domain.SeedWork.TypedIdValueBase.Equals(System.Object)
+  commentId: M:Project.Domain.SeedWork.TypedIdValueBase.Equals(System.Object)
+  parent: Project.Domain.SeedWork.TypedIdValueBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: TypedIdValueBase.Equals(object)
+  fullName: Project.Domain.SeedWork.TypedIdValueBase.Equals(object)
+  nameWithType.vb: TypedIdValueBase.Equals(Object)
+  fullName.vb: Project.Domain.SeedWork.TypedIdValueBase.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.TypedIdValueBase.Equals(System.Object)
+    name: Equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.TypedIdValueBase.Equals(System.Object)
+    name: Equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Project.Domain.SeedWork.TypedIdValueBase.GetHashCode
+  commentId: M:Project.Domain.SeedWork.TypedIdValueBase.GetHashCode
+  parent: Project.Domain.SeedWork.TypedIdValueBase
+  name: GetHashCode()
+  nameWithType: TypedIdValueBase.GetHashCode()
+  fullName: Project.Domain.SeedWork.TypedIdValueBase.GetHashCode()
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.TypedIdValueBase.GetHashCode
+    name: GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.TypedIdValueBase.GetHashCode
+    name: GetHashCode
+  - name: (
+  - name: )
+- uid: Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase)
+  commentId: M:Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase)
+  parent: Project.Domain.SeedWork.TypedIdValueBase
+  name: Equals(TypedIdValueBase)
+  nameWithType: TypedIdValueBase.Equals(TypedIdValueBase)
+  fullName: Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase)
+  spec.csharp:
+  - uid: Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase)
+    name: Equals
+  - name: (
+  - uid: Project.Domain.SeedWork.TypedIdValueBase
+    name: TypedIdValueBase
+  - name: )
+  spec.vb:
+  - uid: Project.Domain.SeedWork.TypedIdValueBase.Equals(Project.Domain.SeedWork.TypedIdValueBase)
+    name: Equals
+  - name: (
+  - uid: Project.Domain.SeedWork.TypedIdValueBase
+    name: TypedIdValueBase
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Project.Domain.SeedWork
+  commentId: N:Project.Domain.SeedWork
+  href: Project.html
+  name: Project.Domain.SeedWork
+  nameWithType: Project.Domain.SeedWork
+  fullName: Project.Domain.SeedWork
+  spec.csharp:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+  spec.vb:
+  - uid: Project
+    name: Project
+    href: Project.html
+  - name: .
+  - uid: Project.Domain
+    name: Domain
+    href: Project.Domain.html
+  - name: .
+  - uid: Project.Domain.SeedWork
+    name: SeedWork
+    href: Project.Domain.SeedWork.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.#ctor*
+  commentId: Overload:Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.#ctor
+  href: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.html#Project_Tests_UnitTests_Domain_Fakes_FakeTypedId__ctor_System_Guid_
+  name: FakeTypedId
+  nameWithType: FakeTypedId.FakeTypedId
+  fullName: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.FakeTypedId
+  nameWithType.vb: FakeTypedId.New
+  fullName.vb: Project.Tests.UnitTests.Domain.Fakes.FakeTypedId.New
+  name.vb: New
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

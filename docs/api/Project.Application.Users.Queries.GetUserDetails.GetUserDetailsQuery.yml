@@ -5,7 +5,7 @@ items:
   id: GetUserDetailsQuery
   parent: Project.Application.Users.Queries.GetUserDetails
   children:
-  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.Security.Claims.ClaimsPrincipal)
+  - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.String)
   - Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
   langs:
   - csharp
@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: GetUserDetailsQuery
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQuery.cs
-    startLine: 5
+    startLine: 4
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
@@ -41,16 +41,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.Security.Claims.ClaimsPrincipal)
-  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.Security.Claims.ClaimsPrincipal)
-  id: '#ctor(System.Security.Claims.ClaimsPrincipal)'
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.String)
+  commentId: M:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor(System.String)
+  id: '#ctor(System.String)'
   parent: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery
   langs:
   - csharp
   - vb
-  name: GetUserDetailsQuery(ClaimsPrincipal)
-  nameWithType: GetUserDetailsQuery.GetUserDetailsQuery(ClaimsPrincipal)
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.GetUserDetailsQuery(System.Security.Claims.ClaimsPrincipal)
+  name: GetUserDetailsQuery(string?)
+  nameWithType: GetUserDetailsQuery.GetUserDetailsQuery(string?)
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.GetUserDetailsQuery(string?)
   type: Constructor
   source:
     remote:
@@ -59,20 +59,20 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQuery.cs
-    startLine: 5
+    startLine: 4
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
   syntax:
-    content: public GetUserDetailsQuery(ClaimsPrincipal claimsPrincipal)
+    content: public GetUserDetailsQuery(string? email = null)
     parameters:
-    - id: claimsPrincipal
-      type: System.Security.Claims.ClaimsPrincipal
-    content.vb: Public Sub New(claimsPrincipal As ClaimsPrincipal)
+    - id: email
+      type: System.String
+    content.vb: Public Sub New(email As String = Nothing)
   overload: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor*
-  nameWithType.vb: GetUserDetailsQuery.New(ClaimsPrincipal)
-  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New(System.Security.Claims.ClaimsPrincipal)
-  name.vb: New(ClaimsPrincipal)
+  nameWithType.vb: GetUserDetailsQuery.New(String)
+  fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New(String)
+  name.vb: New(String)
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
   commentId: P:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
   id: Email
@@ -91,7 +91,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Email
     path: ../src/Project.Application/Users/Queries/GetUserDetails/GetUserDetailsQuery.cs
-    startLine: 9
+    startLine: 8
   assemblies:
   - Project.Application
   namespace: Project.Application.Users.Queries.GetUserDetails
@@ -566,64 +566,13 @@ references:
     href: Project.Domain.SeedWork.html
 - uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor*
   commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.#ctor
-  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery__ctor_System_Security_Claims_ClaimsPrincipal_
+  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery__ctor_System_String_
   name: GetUserDetailsQuery
   nameWithType: GetUserDetailsQuery.GetUserDetailsQuery
   fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.GetUserDetailsQuery
   nameWithType.vb: GetUserDetailsQuery.New
   fullName.vb: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.New
   name.vb: New
-- uid: System.Security.Claims.ClaimsPrincipal
-  commentId: T:System.Security.Claims.ClaimsPrincipal
-  parent: System.Security.Claims
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
-  name: ClaimsPrincipal
-  nameWithType: ClaimsPrincipal
-  fullName: System.Security.Claims.ClaimsPrincipal
-- uid: System.Security.Claims
-  commentId: N:System.Security.Claims
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Security.Claims
-  nameWithType: System.Security.Claims
-  fullName: System.Security.Claims
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Security
-    name: Security
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.security
-  - name: .
-  - uid: System.Security.Claims
-    name: Claims
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.security.claims
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Security
-    name: Security
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.security
-  - name: .
-  - uid: System.Security.Claims
-    name: Claims
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.security.claims
-- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email*
-  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
-  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email
-  name: Email
-  nameWithType: GetUserDetailsQuery.Email
-  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -635,3 +584,9 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email*
+  commentId: Overload:Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email
+  href: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.html#Project_Application_Users_Queries_GetUserDetails_GetUserDetailsQuery_Email
+  name: Email
+  nameWithType: GetUserDetailsQuery.Email
+  fullName: Project.Application.Users.Queries.GetUserDetails.GetUserDetailsQuery.Email

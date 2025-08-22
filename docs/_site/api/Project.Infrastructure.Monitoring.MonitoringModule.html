@@ -155,8 +155,8 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
 
   <a id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_" data-uid="Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule*"></a>
 
-  <h3 id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-  AddMonitoringModule(IServiceCollection)
+  <h3 id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_" data-uid="Project.Infrastructure.Monitoring.MonitoringModule.AddMonitoringModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)">
+  AddMonitoringModule(IServiceCollection, bool)
   <a class="header-action link-secondary" title="View source" href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/src/Project.Infrastructure/Monitoring/MonitoringModule.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -165,7 +165,7 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddMonitoringModule(this IServiceCollection services)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddMonitoringModule(this IServiceCollection services, bool isMonitoringEnabled)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -173,6 +173,8 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
     <dd><p>The service collection used to register services.</p>
 </dd>
+    <dt><code>isMonitoringEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -188,7 +190,7 @@ Class MonitoringModule  <a class="header-action link-secondary" title="View sour
 
 
 
-  <h4 class="section" id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection__remarks">Remarks</h4>
+  <h4 class="section" id="Project_Infrastructure_Monitoring_MonitoringModule_AddMonitoringModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Monitoring is conditionally enabled via the ENABLE_MONITORING environment variable.
 Metrics include ASP.NET Core, runtime, and process metrics with a Prometheus exporter.</p>
 </div>

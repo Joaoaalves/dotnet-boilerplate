@@ -16,9 +16,13 @@ items:
   fullName: Project.Domain.SharedKernel.Users.Rules.UserNameMustBeValidRule
   type: Class
   source:
+    remote:
+      path: src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs
+      branch: main
+      repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: UserNameMustBeValidRule
-    path: System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs
-    startLine: 30
+    path: ../src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs
+    startLine: 8
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -57,7 +61,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: .ctor
     path: ../src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -91,7 +95,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: Message
     path: ../src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules
@@ -124,7 +128,7 @@ items:
       repo: https://github.com/Joaoaalves/dotnet-boilerplate.git
     id: IsBroken
     path: ../src/Project.Domain/SharedKernel/Users/Rules/UserNameMustBeValidRule.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Project.Domain
   namespace: Project.Domain.SharedKernel.Users.Rules

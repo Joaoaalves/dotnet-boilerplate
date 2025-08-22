@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CI/CD Pipeline | Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CI/CD Pipeline | Project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/docs/docs/ci-cd-pipeline.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Project">
+            Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="cicd-pipeline">CI/CD Pipeline</h1>
+
+<p>This document describes the <strong>CI/CD pipeline</strong> for deploying the application to the VPS using <strong>GitHub Actions</strong> and <strong>Docker Compose</strong>.</p>
+<hr>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>A <strong>VPS</strong> (Ubuntu 22.04 recommended).</li>
+<li>A non-root user (we use <code>www-data</code>) with <strong>SSH access</strong>.</li>
+<li><strong>Docker</strong> and <strong>Docker Compose</strong> installed on the VPS.</li>
+<li>A GitHub repository with the application source code.</li>
+<li>GitHub <strong>Secrets</strong> configured for secure authentication.</li>
+</ul>
+<hr>
+<h2 id="vps-setup">VPS Setup</h2>
+<ol>
+<li><p><strong>Create the deployment user</strong>:</p>
+<pre><code class="lang-bash">sudo adduser www-data
+sudo usermod -aG sudo www-data
+</code></pre>
+</li>
+<li><p><strong>Add SSH key for GitHub Actions</strong>:</p>
+<pre><code class="lang-bash">mkdir -p /home/www-data/.ssh
+nano /home/www-data/.ssh/authorized_keys
+chmod 700 /home/www-data/.ssh
+chmod 600 /home/www-data/.ssh/authorized_keys
+chown -R www-data:www-data /home/www-data/.ssh
+</code></pre>
+<p>Paste your <strong>public key</strong> here. The matching <strong>private key</strong> will be stored in GitHub Secrets.</p>
+</li>
+<li><p><strong>Install Docker and Docker Compose</strong>:</p>
+<pre><code class="lang-bash">sudo apt update
+sudo apt install -y docker.io docker-compose git
+sudo usermod -aG docker www-data
+</code></pre>
+</li>
+<li><p><strong>Enable Docker on startup</strong>:</p>
+<pre><code class="lang-bash">sudo systemctl enable docker
+sudo systemctl start docker
+</code></pre>
+</li>
+<li><p><strong>Create project directory</strong>:</p>
+<pre><code class="lang-bash">mkdir -p /home/www-data/projects/myapp
+cd /home/www-data/projects/myapp
+git clone git@github.com:your-org/your-repo.git .
+</code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="github-secrets">GitHub Secrets</h2>
+<p>In your repository, go to
+<strong>Settings → Secrets and variables → Actions</strong>
+and configure the following secrets:</p>
+<ul>
+<li><code>VPS_HOST</code> → Your VPS IP or hostname (e.g. <code>123.45.67.89</code>)</li>
+<li><code>VPS_USER</code> → Deployment user (e.g. <code>www-data</code>)</li>
+<li><code>SSH_PRIVATE_KEY</code> → Private key that matches the public key in <code>/home/www-data/.ssh/authorized_keys</code></li>
+</ul>
+<hr>
+<h2 id="github-actions-workflow">GitHub Actions Workflow</h2>
+<p>Create the file:
+<code>.github/workflows/deploy.yml</code></p>
+<pre><code class="lang-yaml">name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main # Trigger only on push to main branch
+
+jobs:
+  deploy:
+    name: Deploy to VPS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy via SSH
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} &lt;&lt; 'EOF'
+            set -e
+
+            echo &quot;&gt;&gt;&gt; Navigating to project directory...&quot;
+            cd /home/www-data/projects/myapp
+
+            echo &quot;&gt;&gt;&gt; Pulling latest changes...&quot;
+            git fetch origin main
+            git reset --hard origin/main
+
+            echo &quot;&gt;&gt;&gt; Updating Docker services...&quot;
+            docker-compose pull
+            docker-compose up -d --build
+
+            echo &quot;&gt;&gt;&gt; Cleaning unused resources...&quot;
+            docker system prune -af
+
+            echo &quot;&gt;&gt;&gt; Deployment finished!&quot;
+          EOF
+</code></pre>
+<hr>
+<h2 id="workflow-execution">Workflow Execution</h2>
+<ol>
+<li>Developer pushes to <strong>main</strong> branch.</li>
+<li>GitHub Actions is triggered.</li>
+<li>The workflow connects to the VPS via SSH.</li>
+<li>The latest code is pulled.</li>
+<li>Docker Compose rebuilds and restarts containers.</li>
+<li>Old containers and images are cleaned.</li>
+</ol>
+<hr>
+<h2 id="optional-run-tests-before-deploy">Optional: Run Tests Before Deploy</h2>
+<p>You can add a <strong>test job</strong> before deployment:</p>
+<pre><code class="lang-yaml">jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: |
+          dotnet test --no-build --verbosity normal
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps: ...
+</code></pre>
+<p>This ensures <strong>deployment only happens if tests pass</strong>.</p>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/docs/docs/ci-cd-pipeline.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
