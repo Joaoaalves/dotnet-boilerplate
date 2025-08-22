@@ -2993,6 +2993,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/autorenew-ssl-cronjob.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/autorenew-ssl-cronjob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/ci-cd-pipeline.md",
       "output": {
         ".html": {
@@ -3037,6 +3047,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/observability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ssl-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ssl-setup.html"
         }
       },
       "version": ""

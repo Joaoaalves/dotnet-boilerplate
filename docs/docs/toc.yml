@@ -6,3 +6,5 @@
   href: deploy-ubuntu-vps.md
 - name: CI/CD
   href: ci-cd-pipeline.md
+- name: SSL Setup
+  href: ssl-setup.md

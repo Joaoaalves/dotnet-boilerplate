@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>SSL Setup with Certbot | Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="SSL Setup with Certbot | Project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/docs/docs/ssl-setup.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Project">
+            Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ssl-setup-with-certbot">SSL Setup with Certbot</h1>
+
+<p>This section explains how to secure your domains with <strong>Let's Encrypt SSL certificates</strong> using <strong>Certbot</strong>.
+We will use the <strong>DNS challenge</strong> method, which allows SSL generation even when Nginx is already running inside Docker.</p>
+<h2 id="1-run-certbot-for-your-api-domain">1. Run Certbot for Your API Domain</h2>
+<p>Run the following command to generate a certificate for your API domain:</p>
+<pre><code class="lang-bash">docker run -it --rm \
+  -p 8080:80 \
+  -v /etc/letsencrypt:/etc/letsencrypt \
+  -v /var/lib/letsencrypt:/var/lib/letsencrypt \
+  certbot/certbot certonly \
+  -d api.{YOUR_DOMAIN} \
+  --manual --preferred-challenges dns
+</code></pre>
+<ul>
+<li><code>-d api.{YOUR_DOMAIN}</code> → replace with your API domain.</li>
+<li>You will be prompted to add a <strong>DNS TXT record</strong>. Do this in your domain registrar’s DNS panel.</li>
+<li>Once propagation is complete, Certbot will validate and issue the certificate.</li>
+</ul>
+<p>The certificates will be stored under:</p>
+<pre><code>/etc/letsencrypt/live/api.{YOUR_DOMAIN}/
+</code></pre>
+<hr>
+<h2 id="2-run-certbot-for-docs-domain">2. Run Certbot for Docs Domain</h2>
+<p>Repeat the same process for your <strong>Docs</strong> domain:</p>
+<pre><code class="lang-bash">docker run -it --rm \
+  -p 8080:80 \
+  -v /etc/letsencrypt:/etc/letsencrypt \
+  -v /var/lib/letsencrypt:/var/lib/letsencrypt \
+  certbot/certbot certonly \
+  -d docs.{YOUR_DOMAIN} \
+  --manual --preferred-challenges dns
+</code></pre>
+<p>Certificates will be stored under:</p>
+<pre><code>/etc/letsencrypt/live/docs.{YOUR_DOMAIN}/
+</code></pre>
+<hr>
+<h2 id="3-run-certbot-for-additional-services">3. Run Certbot for Additional Services</h2>
+<p>If you have other subdomains (e.g., <strong>Grafana</strong> and <strong>Kibana</strong>), repeat the same command for each:</p>
+<pre><code class="lang-bash"># Grafana
+docker run -it --rm \
+  -p 8080:80 \
+  -v /etc/letsencrypt:/etc/letsencrypt \
+  -v /var/lib/letsencrypt:/var/lib/letsencrypt \
+  certbot/certbot certonly \
+  -d grafana.{YOUR_DOMAIN} \
+  --manual --preferred-challenges dns
+
+# Kibana
+docker run -it --rm \
+  -p 8080:80 \
+  -v /etc/letsencrypt:/etc/letsencrypt \
+  -v /var/lib/letsencrypt:/var/lib/letsencrypt \
+  certbot/certbot certonly \
+  -d kibana.{YOUR_DOMAIN} \
+  --manual --preferred-challenges dns
+</code></pre>
+<hr>
+<h2 id="4-verify-certificates">4. Verify Certificates</h2>
+<p>After issuing all certificates, verify:</p>
+<pre><code class="lang-bash">ls /etc/letsencrypt/live/
+</code></pre>
+<p>You should see one folder per domain:</p>
+<pre><code>api.{YOUR_DOMAIN}
+docs.{YOUR_DOMAIN}
+grafana.{YOUR_DOMAIN}
+kibana.{YOUR_DOMAIN}
+</code></pre>
+<hr>
+<h2 id="5-renew-certificates">5. Renew Certificates</h2>
+<p>Let's Encrypt certificates expire every <strong>90 days</strong>.
+To renew all at once, run:</p>
+<pre><code class="lang-bash">docker run -it --rm \
+  -p 8080:80 \
+  -v /etc/letsencrypt:/etc/letsencrypt \
+  -v /var/lib/letsencrypt:/var/lib/letsencrypt \
+  certbot/certbot renew
+</code></pre>
+<blockquote>
+<p><strong>Tip:</strong> You can automate this with a cron job to ensure your certificates never expire.</p>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Joaoaalves/dotnet-boilerplate/blob/main/docs/docs/ssl-setup.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
